@@ -1,20 +1,31 @@
 # ============================================================================
-# Source material — kept on disk, deliberately not versioned
+# Source material — the OCR text is versioned, the scans are not
 # ============================================================================
-# _source/ holds the 57 scanned note pages (~9.5 MB of JPEGs) and their OCR
-# text. They are inputs to tools/render_notes.py and
-# tools/extract_occurrences.py, not part of the site, and they are roughly
-# six times everything the site needs put together. The site itself is
-# self-contained: nothing under index.html, ch*.js or assets/ reads them.
-_source/
+# _source/ holds three OCR text files (~255 KB) and the rendered note pages
+# (~12 MB of JPEGs). The OCR text is committed because the occurrence trail is
+# rebuilt from it: tools/extract_occurrences.py reads
+# _source/past_questions.ocr.txt to find which papers asked each question, and
+# _source/note{1,2}.ocr.txt is the page index for the notes cross-check.
+# (tools/render_notes.py renders from the source PDFs, not the OCR.)
+#
+# The page images, and the PDFs they are rendered from, are inputs only —
+# roughly six times everything the site needs put together, and the PDFs live
+# outside the repo — so they stay on disk, untracked. The site itself is
+# self-contained: nothing under index.html, app.js, ch*.js or assets/ reads
+# any of it.
+_source/*
+!_source/*.ocr.txt
 
 # ============================================================================
 # Scratch — regenerated on every run
 # ============================================================================
 # .freebuff/ is the coding agent's session state (project id, tmp scripts,
-# .freebuff/tmp/chapters.json dumps); every __pycache__ is bytecode Python
-# rewrites on each invocation.
-.freebuff/
+# .freebuff/tmp/chapters.json dumps, preview logs). .freebuff/run.md is the one
+# exception: it documents how to preview a fresh clone on a free port and how
+# to rebuild every generated artifact, so it is committed. Every __pycache__ is
+# bytecode Python rewrites on each invocation.
+.freebuff/*
+!.freebuff/run.md
 __pycache__/
 
 # build_pdf.py dumps the html it hands to xhtml2pdf here so a failed run can be

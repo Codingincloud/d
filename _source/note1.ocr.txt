@@ -1,0 +1,2426 @@
+          ;   |  |                                          e
+Sim lotton
+
+The i mirtintion of TO! toor Id prorecs Or SY stom Over a   -
+
+Hime Feu of' the Ud0rEG can he dono direc ty or done        ¥
+
+Through the simulated envivonamte. \P we hod to Droctice how
+
+to vido GQ cor or Q@ hike wwe can Airooty perform Avafateg 7
+
+On them -Bur, i Ldse© ae tO run the Aeroplane, We mus 4     ;
+
+Yun T+ On Amuylated onvironment Which may, mix the          B
+
+                                                            --
+
+The procecs to create a made for the simulation Ts Know
+
+Os modellfac                            2
+
+The een a aimy ta4+%on Nag to he done for tne fol austen 2
+
+YOCESS :            |  |                        3           =
+
+TO__veduce" the foilure ,ta meet specif¥ca+fon     ie       :
+
+To elfminate _unfor seen bottle- neck.          resources.
+
+To preyent under On oer utilization of
+
+"To Optimize nN SysTean pe rtarmance _
+
+Simu tatfon Mode fag iS the proce SS of' creating by        =
+
+Gnalszing Orn digital protety pe of O Pru sical model +n    :
+
+mwdicr ~`its Perkor mance in tne eal waorid. \+ fs use _
+
+ty help the decfqners. and Cn dinee understand uhether :
+
+under udhat condition and fa) what toys a path could_
+
+atl aad What load Tt can be withstand.
+
+Model tag iS the process of representing A_model_whfch
+
+includes. disconctyuction. concuethn > unaret ne _ TAs rede!
+
+1c Gert, tp the yoo! aysiPm _culich helps aaatize to _} prodtc4_
+                                       er |
+
+                                       Paagge|                =)
+
+the effect of Chaagec to tthe system.
+
+Simulation of O ~SYSteen 1S O Ope ratton of A model fn
+
+terms of QO time Or Space. Tel atiaal helPs to anqiize `ne
+
+herfdr mance av On onisting Si O DuUY BOSe - System
+
+History of! Sfmoulation                was developed by
+
+    IA4o ,O method name Mante Carlo
+
+John Von: Neumann and_ other Phustcict Luorting On 2
+
+    Man | Hattan_ Proyec f 1. Study Neutta n Scorherins .
+
+    IAGO tne First" Specfal_ purpose language Loere. develop Such
+
+        Simecript by Horry Marcowit2 a4 the rand
+
+cor poratya nN.  FS.
+
+I9 40 _uria      ris period research War Tmated On
+
+\Q20, 0 uring : ANTS period: PC bage SsimutgotTron sSoftaare
+
+GU\_and Objet arfented Programmtag web develop.                    i
+
+--                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       gn
+
+ 990. during thie period web hace Amulation ,sfmrulation _
+
+\\\o0.¢¢ Optimization , Markov chon Method web develop. as
+
+                                                                   =
+
+                                                                   ----
+
+                                                                   aom
+                                                               _--
+                                                               --_
+
+Difference -hetween Modeling by Stmrulation .                  :
+
+                               ear Re                          --.
+
+   M adel fag                             Simulation
+
+A made | 1s 0 product Phusfcal A Simulation is the Process
+
+lor _dfattal nok reprecent o |of ustag a.mode| to thody th
+
+Systorn of - InterestN model fs| behaviour (3 performance of)_
+
+Similar but _Simpler than the | an actual or theore tral Syston
+
+ONigiAal product .             om
+
+Nogcd model i o fudfefoos lin a sfmulaton :mode! can he
+
+tyade_off' beturean yealise>_or used ty study existing *Laebtesiodd
+
+   implicity - |                       y  ChoroctorRH Cs of (( See
+
+|  v                               Sy Stem "Tne purposoef C¥multdn
+
+   mode! can be Phugcih\( tne      Ts to Stud the characte ristis
+
+modo! fg- hoot or Ship) __Or           of yea! world ar  Yerfo nah _
+
+Conceptual Mode | ce . computar | Septem ey mantpulatin: varrohle
+
+ZO model ,Statistical or mathema-|thak Mnnot he contro led_ 1 _
+
+tical model,or business meade) | tne sea| System
+
+Modeling Ys the act of bulidiog {Sfaulating ic a_act of ushrs
+iSUCh models.                      OA Mod\ for Simulation.
+                                                     a ,  ,J CJ     C di ]
+                                                            Ww iW)
+                                                                    { i  ©
+
+| Stsiema                 sysrre Boundary
+
+          |            |
+
+                          =~ SYsTom ErNironm eat
+
+                       otfect of acy stom
+
+The Tey m S           Ss derived from, ager usd _sustema
+
+hich meang On Spasaahwlatioris                 Tonal unt or                     a
+
+corm onent unit oO, COMOAMNen tt:                 .                         ai  _
+
+\ne Pale ractton & interdependence ea" tne Ob et x AG
+
+ine parhewlar abjertive iS also known aap S4STemn,
+
+A. TMAGROHAHER Syston
+
+YE "Telephone system               ni
+
+3- ||Production Syshenn |  :                                                    =
+
+=, Accounts. Sy Sree                                                            -
+
+             ew                                                                 =
+
+             : Jat ot                                                           -
+
+Custom       ace                         _                                      --
+
+in lye:               a raanage                                                 --
+
+Holiday or                                  -                                   i
+
+NO}          Tellier                                                            =
+
+                           Manager
+
+|                     Account?`l System
+                                                                     Feinaie |         ..
+
+                                                                         Page |                    AY
+
+`               An arc rof'} | Sysh0 on                                                              :
+
+=  Deotred         \UITOSCOPE            Contr)                 i AirPra mc
+
+t nee `                                  Surface
+
+j  agtual                         a                   :  |
+   head
+
+                Congider An aircrof's fifing under the contra of an autoptot
+
+    A op On The Autopilot Aerects -the differ-- ebentwceeen
+
+   actual heading A desired head tng: I} end a Sqad) to move the _
+
+       vaunae)| surfaces la resPonee. to the contol surdoce MOvVEVONntT to
+
+   Olframe Steer Towards ne desfred head fg fy tne denteok
+
+                dest? aaton.             |                  Ke       :
+
+                A yactory system                                                       ca
+
+   Cuoco tomer                    Production Conto| Ldenpartment
+
+            oder
+
+  Ravd          `--_1POrchasi 4.`           °            Assemb!             Shiney "  5
+
+--pagretoi |       department        Alri calfon         deportment                    riment :
+
+    3                                 department                                 :
+
+             |                                    oa
+
+                                                                        `i no\fze_preduct
+
+                                                                                       ! Scanned with --!
+                                                        ee        a
+
+                                                        | Dale |
+
+                                                            Pago |             |  )
+
+                                                        =
+
+                                                           --_--     _-  a  =              i
+
+                                                                                     as
+
+   "NL  "A Qyshem Must be desfgned to achieve the predeffned _ objective
+
+   Oy IIb tev relat cubipls inter depende ace must exist Genes the                   "a
+
+        compoe nts.                         As GO       ,
+
+   2) Vhe Objective of' {he _ organization         whole havO
+
+        Higher eae tnan tne object ive_of' the oof} Septem poate
+
+        : ` ts_On object of! Foteres+tn_a_Systen4:nf-o factory --
+
+        sya Aepar tents order, Part= and Prodact                               | U m2
+
+   9. ||Aa++yiovute                                "a4                               =
+
+=  = r\ attibte denotes the Properties of On _entitu. eq:                            So
+
+=       es for each order type of part umber f mach fne
+
+5       In Qa  epartment Qre_kne Arty Thutes of CO. Factory system ;
+
+        Any eepenre tear | changes _fa a_Syctenn is called OA an
+
+        acti 29: Manufach ring procesOsf the department-                             :
+
+   liState of tne Syste nn                         iat                               Ss
+
+        "\he state of Tne system 1S delfrc as +e : collection of the =
+
+        iVOrtob\e , AeCe ssn ww: deine Oa SYSLen At Gs Vero,                         i=
+
+                                                                                  ---- a
+
+   || Evens                                                                       By
+
+        A\n event fs defined Ag Gn Inttan taneous Occurence "that mq
+
+        change tre Stote of the SYStem. 2 ty per of' vents:                       at
+
+        Endagensus --~Lvent that are Sculy itaWe! systenn As Rnown
+   +}
+
+                                                        ("ie |
+
+                                                        Page |     ty
+
+       AS Ondogenaus _eve ots -
+
+2) || Exage nous Syents - Exogenwve events Ore those event thol
+
+          ur faa Susfe en environment +tnok affect Tre. Supter .
+
+a) Reet Syston
+
+   Entities : 3) Cifent          ,      AAtpute:sTty Name of clfente
+                                                         i) Transact} ny history :
+          IiB) ank teller
+                                                          iti) Actoun+ Numre+
+          ii) ATTM
+
+          ty) Account               ;   tv) Balance
+
+                                        v)Teller ID                                      :
+
+                                        Vi) Service lime                                 :
+
+   Activity: )Openta account _          State:f) Number of veatetor olfent
+
+                 Ti) Depos tag amount   1t)Num ber of Cuctomer nai tes tac
+
+                 11) Tronsbor- balance  Tine
+
+          ina Processing loan           i) Num be of busy teller       Es
+
+|         V) Inte cest COloulation      Tv) Service Hime OPA Customer
+
+Events :                                                        )
+
+   The _Orrfval of" Customer Is Gn _axXOGenous events-                                   `
+
+H}_COmMle Hon of a Price of cUstormer iS On. endocenous  Vente.
+
+                                                                       : Scanned with |
+                                                        Page |        a
+
+2: System (Rapid Rav!) -- Bullet -trau'n                                   z
+
+ene fties  Attributes          Activities         Events              ae.
+
+Riders     Origiaadion        Trove liiog         Arrfvolat Statfon        :
+
+           Destination                            Arrival at destination _
+
+Store VOriab 12° ?                  |                           |     :
+
+IINo- af viders wolting at station                      Li            E
+
+[Number ovfiders fn tronstt                                           :
+
+e "lupes of System                         3         |                :
+
+1) Endogenous System       3                                          :
+
+             rry) eadagenoss is used to deseythe        fvi and even_
+
+oat Ly thina a Eg: withdraustn                       Cach , = G       :
+
+Ou\jure testival faa emai «5 Benes            d   .                   ¥.
+
+                                                                      --
+
+   Exogenous System     |                                             BS
+
+   Exagenovs _system *s used ty deserfbe      activity And _ events
+
+| tn the _@nvironmen} thak affect tne         sySteon ei arrfval af
+
+i CUShumer, Strike Tn unfversity scuSTRen                          |  y Bae
+
+|
+|
+
+   Close and Open System                                                                              |        ;
+
+   Close SU STEN
+
+   ALsysieen In which there {s M9 EXO Gen OMS spear                                                      and
+
+   event is said to be @*cbloce-isysterm. oy waterfa an tnsulated
+
+   Flack
+
+   | Open syste                                                                                                2
+
+   A\ SUSH on 9A iwnich there fs exogenqus octivPt, (y Events
+
+   Is_So%d 40 be a open system. eq: bank suse,                                                                 :
+
+   COnh anvouUs And Disc roto                                           system
+
+                                 CONFI nV  UL Sysrem
+
+                             7                                                                                                          z
+
+                             | [ase N Sess                              Sygen fim UDATCH Sno Ae Are Dredomfnent
+
+     Head [pt                                  |                        erin, Ore called co Yan Sus _SUSte
+                                                                                              = arms           acer
+   USM FOr behin                           Steaua                       Example: head of a wrater behind tne _
+
+          m
+
+                                                >                       dam , tne MmOVOMe nt of Ovrc ral Oc cuye
+
+                                           timo t                               \,  é  vane              °
+
+                                                                        : amesiniy SO Are mrt Susean 16
+
+                                                                        contfnuays sy chem .                   2
+
+              r f             Discrete     System                       "The System Ra Which tne changes >
+
+                         »O            |       ,                                              -  :
+                                                                        Ore a gro discontavou, are __
+   ae                               =             n
+                                                                        Called dkicrfee eusherm 2g: CUetomer __
+       UStome rf             :                  Bs
+                             \ }-
+--unttingtn                                                          t
+
+                                                                        ats at honk.                           :
+
+                                                                                              ;             .
+                                                   I ]
+| Model
+
+ Model is cfmolify _Yepresectatton or obstrackfYona, Yea \ nil
+
+ | SY Sto m proces Or Phenomenon: I+ Is used to Simulate the __
+ Ihehavbu rol! System onder Vor dus cond?tfon that allows
+
+ LVeseorcher to__analsyze Predict Onde apiimize tne perfor mance of
+
+  Syste m ac directly enplement ys -- on the ACU! -Systenn_
+
+   Ushi ---- he ape time ed eRe tenprecticad
+
+lu pes of Model
+
+                      Mode!
+
+              Phusicad        ee
+
+       aS X             SZ tatio c ne
+
+Srahc gegen
+
+                      NumerGtale. a    a  S03)
+
+                                       oe
+
+                                       simulate n
+
+                                                   ----
+
+                        (ea aa)                    --
+Phystol Modet- 14 fea tangible 2 dimensional repwentation of|
+
+|¥eO\ userid. sy crem, pw cegs Or Png nome nan Unitice the wise (SS
+
+model whkfh rely gun arian rant Or a               =
+
+                                                   mn
+
+There ve2 types of ne model2-                      --
+
+Scale - UP Mode |
+
+|Scaie- Down Model ,
+
+Kone\Seale Made!
+                                                 Spee |
+
+                                                 Fece |      J
+
+`bide +Qerepiane ehs oe 45 eign                  Thom fa tox Fics
+
+  in mmoro Mar aMorie LWO +
+
+ Seate Up Model are used for Vers Smal           porticle SMth as
+ moleculec, etettron ,Nroton, mi¥crostwcture     tg matice ther.
+`caster tO abserw & understand-
+
+Fu Scale Mode- Sometimes mode! are bulit at ao size of
+
+ aChial Qe cts Spe cia Ny 1) the cace there reo) usorid 7
+
+0 1S required : exam! mabe Geroniane crach Lasting:
+
+2) | Mathematf%o? mode!
+
+-- A rate aaa model In Simulgtfon (5 es 1S a
+
+  YROYe entation of rea) wdrid | Syste ee usin mane ma Hea?
+
+egy bs concert This models uesqe uations, Ineoualities,
+
+    AcHon and   ages Moa tre matical Stwchur to  ree pe      ho
+
+ere fs         component: Of the Syptenn -
+
+7 Dyndmis Mode!
+
+  ae Model anat- derihes how 0 Saate en evolves Over time They Gre
+
+         Hypicalyy represented bbyy difPorens$al equation. exOmple : PON lat Bw
+
+fvowtn mode's                                 ?          zi
+
+~~
+
+# Soc Mode'
+
+= Mode! me aléts donat Consider Changer Ove r- ttme _rocusing
+
+  instead on a _sPapshet of 0 tern ak 0 particular --ranment»
+
+EXOnA Ole : eupply (s demand models Pra CCOnOmsctt:      |       | :
+                                                 (ate eee            qe
+
+                                                    Page |
+
+      Avalutical Mode |                          E                       a
+
+ Analytical Model. uted exact mathematical expression _ +o
+
+`deserine tine rotatfonshtp_ ustitntn 0 tom finding Analystea) solution
+
+Aor On COmmolex (faa =a he di freult or. `Im Possible -                  i
+
+                                                                         --
+
+      Numerfcad Mode!                                                    =
+
+      yt Use Computational Wetiads xo approximate the soutien to
+
+      mathemal-frad Probiens thof are Aiffreult to solve 7 analy ticag _
+
+!                          random etement no Uncertamiti ns singe &
+
+Dohrefaistic Model                                               '
+
+\t donnt hove )
+
+        Schahl e- Out put
+
+| Gtochostic. Model        'Ondom Clements | Tange of_passibis aoe
+
+ Having One Or More                  ----                            uaa
+
+Ouftnmes Uncertainty
+
++ --  nee at sete Model produce SOM e autpus dor qe Get ot               e
+
+      Inputs eta ea =i ruin.               ?                   |         =
+
+      CcXrOammnle :                                               é      xe
+
+{| Popu iahon --grourtin Mode!             its) Neucton'¢ lau 0? mote _
+
+|| P)s Pee"                                Fema                          *
+
+      : iCCly ae                           a= hn                         3
+
+= oa fh(4)' 2 PODIOHON at time +              :             7            Ph
+
+My Po > Tritt population          .                                      ae
+
+      42 time                        :                                   a
+                                         ror |
+
+                                         Page |                iJ
+
+i
+
+   chaciic Model produce | different output Kor dilforens ol a
+
+   | In SA@me Set of Tapus -
+
+   Ramo : Stock WMiaricet MNlode!                                  ;
+
+   Depends on Va riovs Fo ctors QF ee Tavestm ent hehavrour , Cron mic
+
+   Sadia tors ds news Oventc. _                                    ,
+
+   ! ----_- ------
+
+   |' ConfMmuous Model                                             ba
+
+   = Represomts tne SHAVE on that changes state contiquously.
+
+   || XA Ple: population a pees modo | 399 read o! dicease 3       :
+
+         Discrete Model                  changes OCour ad Specr' (oe
+
+     = Ke prorents the Syste nn Udhe re                            a
+
+          Pont ita\ Time:
+
+      ifxample : Sueutog Systema -- |
+
+   ¥_|\Stops fa _Sfmulation Study
+a             O Prohiem -Foy mulation                       =   .     ES.
+
+str  _@lse+4} r obyective and nla r                         4:  IRE oo eed
+
+at   [EES     SELES AA                 :                    i
+     Model conceptuadiza+ion|         Data collection
+
+¥    Yes
+
+     .                                                 Yes
+
+i          |
+
+tee                               sa                               .  %
+
+ba            MT Documentalton & ropor tin.
+
+".!                            j                                                     ------
+
+              (12) Im pnliementatfor -                                     -:
+
+                                                                      : Scanned with :
+5. Prodlem formulabon
+
+    clearty stare tne pro bie mr
+
+2) setting objective Ss ove ral | ploun
+
+    hows up Should| AMYSOCh the Hroblem
+
+=) -_ banhlish a rveacanabhle mode!
+
+a)             lootion-- CO\leat ~*he Ne ce sang data  +o run         sho
+
+                        mutation such an OrriVo)        process,  -gorvico
+
+                        disctplfn eC, Prvfee vO. te                               2
+
+     Model -vansiatfon- COnwrt _+ye model            P@ntd  a Peagtaawning
+
+     language        .                   atk                                 ?
+
+JI Ne vi f¥caon = Vertfy uclnetiner Line rode! works papery or
+
+  NOt
+
+     Checke Validation -Cheete Yt" the SYSTC on Accurately yeProrent the
+
+                        rea) System                                         :
+
+8) Experimental design --Ngow many Tuned » how much         long , What ;
+
+                                Kind of mputs                                                                                                                                                         --
+
+9)) Productfan run (> Aralusts - Actudl runsiog of the Simulahdbn
+
+I                                    Model collect sy Anasu si.c Ano autpel\
+
+|
+
+lo) More runs -- vopeat the 6x prime at ié necessary                       :
+
+      |                 --   -- document 0Se 2SNhs S                        :
+
+    |                   and                                 yeoors Hye|
+
+\\ || Documentation
+
+        .ame
+
+     : Reporting             o/p to tie Stalce holder
+
+--
+
+  I
+
+                                                                  : Scanned with !
+                                              ean |        iJ
+                                                 3 Pag2 |
+
+   lym prem entahon ot the Qctuadl Mode!
+
+   Phases Sn er Stu
+
+Problem nentsOn         CONC      of Model?a
+
+   \b `involves Step 1, 2 by 3  of anak       study
+
+[Model Translation ts Data Colles sale ry                      :
+   LL Involves Step 4 6 5 ot mulation study.
+
+iVert PPogHon, Validation S Experimental) Design
+
+  fnyolver step 6,4 © 8 of Smnulation Study.
+
+Aralucis 6 Enrerp rotation
+
+lt Involven STOO 9,10 nab bs {2 of stmulation ee cae           =
+
+hon -Srruin fan. 1 Appropriate toot2
+
+`To address Ane dynamic praras                                                                                                                                                                                                                                                                                                                  --
+
+`To ONANYZ e -ne of Pec of' Alhernaton     or +he Soar a bohKoviou
+
+lo Say the vworiahie +hak are              wust Important Pa the
+
+         aie] cree 6165 abate Stimulation  Papute `as  Dns erving tne _
+
+outs                                                                                                                                                                                                                                --
+                                                                                                                                                                                                                                 --
+15_vority We onalytial) antiakie.
+
+   "To OxNLr ime nt NE  design ellis, situa a Gear TET         =
+                                                  &
+
+                                               GE
+
+|
+
+    L9- Lone nthe probiem Can be. Solve            COMM on SO nco.
+
+    \P the probleny Qn he _sO\ve ORO y APO
+
+    Eacter to Sey Loy wn crocs, TmplenentaHen                                                                                                           --
+
+    |Cot exceeds the Saving                                                                                                                             ----_
+
+=   5) |INo+ be dane TP the "resources and time are not Ova?lable.
+
+--  é ) Simu labor cannot he done re NO cata ifs aovaildabie.                                                                                           --
+
+                                                                                                                                                        --
+
+    oe of Sfmulaton                            ee                                                                                                       :
+
+    y \h `is User i ddr sent Aoaly sis of C Orn fl 0x Syston,                                                                                           --
+
+    At fs suitable For analyzing complex rea? life pvoblem< that
+
+    Cannot be S0\ye By US)N quantita tive methods -                                                                                                     :
+
+    4) LP the re madicing tools Wek ke used , SImuldHon can be +he
+
+          option to _Solw tne. problem .        6 Paying      new                 :
+
+    Gyillt Can he vsed as a bool Ao Fertin     rom.                 poSircfes
+
+        bs decisfon rule aaron operating the
+
+          Disa--d_-- van  mode!  requires art  that fs learn                                                                                                                                                                                                                                                                  a
+
+    _\) Building a0                                           Throug kh exrervence
+
+                                                                                                                                                    oO
+
+    25 lr GOme CaAsea, the result Of Simulalforn may be. COmpiex to
+
+    Into rpre re.
+
+    2) (4 mau be +ime Son. Sumiag | & expensive,
+
+                                                                    ` Scanned with
+                                         Maer |
+
+                                         Page |             ee,
+
+x    Applica hon Area f Simulator                                Da
+
+=    1) Manut ochuring = pres optimization, des6 ee eer Oe m
+
+aE   2) Healthcare -- Mattial_pamcedsic trotni 19,, pare P jouw wmnonateeIam
+
+a:   :        See design           Rona                          at
+
+              hon Tro ff Moanagoment ,Ve hicle Gerign vote:      "ia
+mie  3) {Tyo        ee,
+a
+8                   Optimization                                 2
+
+rp   1) PAONOE ~ Mareet valve Pred§ "ion ae eb acalusis, por foliq | .
+
+at   5) itary - Combock alae Mission | planeiag, Strate Oien devetoo-
+
+mak           men+
+
+                                                            : Scanned with !
+                                                                           Baie |
+
+                                                                           Page |       sy
+
+        `Paves System   are those     Bide wohich System                                a
+
+   Voriab lec oo"        continumnly  according de time.
+
+                                                                                                                                                                                                                                                                                                                                                                                                           ----
+
+                                                                     aewate.
+
+   Ke "ony"4 quantities Qire Loote r level,                                ai
+
+    temnerd tu re »Aovo vate can be moa                                                           ;
+
+   Ma themaltral mode? through dherential
+
+   ea uations-
+
+   ord Foany _difPorenttal equadion | dF(my = 2%
+
+                                                                      A+)
+
+   Advantages of Hk ol gqualon Por Simulation of COontmowy
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ----
+
+   Dunom ic Mod elting - Ditreatial_ Equation can' mode\ __hovw
+
+   quantities Change usxtin 7 eapecfto time Or Space.
+
+        hey CaN dency Phe . Kou anal temperature of the. roo m
+
+   Changer Ove r__-+time thow 00" WO wth `rare oC eor                              And
+
+   how Ploctrical cPecutt  bohave.
+
+A ESE -- continuous _Sysien Vrre quid flow or heat
+
+"  _con  he  "acke toy  di=o roma! equation:
+>
+
+9) || ictivo Pouser-- Once the d7(Poronttad equation of the
+
+   CONANUOY 4 Sustomn "1c Knoton a Can ke DSive efther Numer?.
+
+   cal   Or Anal Tieally +o ore dict the furhure hehovour On +2
+
+   Awen PATTON < condi Hon.
+
+                                                                                   : Scanned with }
+    Broad appl feation - nifforentia! Equation Cn be UPd In Varjou5 Pret
+
+                                                                            a
+
+                                                                            --
+
+        Ah) = ies v7 Oourtt)                                                ee
+
+        _ dt     NGNGSD
+
+        LOhOre,
+
+         Wh ts) the woreart Mow| ft               he%gnt ee
+
+         NU) Cros Sectaonal area_of reve rsfour
+
+        Ue, Loafer ine + rye.
+
+        Qour> Wworer ourlet rate
+
+        Apu re Purgutt Prohlem
+
+        Ik Sfs cO enarichoore vehicle Or robot follow a _pre"-defined pa:
+
+        by constantly adJiusting Ths Skering angle +g minimize tho          --7
+
+    lldxstance between the larger & tre vehicle-                            --
+
+                                                                            --_--
+
+    * Hot pisccut (Ctorger is owove of purcurer)
+
+    x Pure pursuit (target is Not Qwore of purcurer)        _pursurer
+                                     |
+        pw
+
+--                                                          Teun}           ;
+
+geeA Highter oThs croft sights Qn OANime bomber Lo                          :
+
+        and L£Viex Atyoctt __to wards sto = Fan order to _  = forges        g
+
+    --  Mitch vp_G dentroy Tt. We hove to determine the cource of
+
+        attacbcs how Sg Ane ighier tates to. OttocK "the.
+
+    voro40 get £1 fer a the -- Yene                ren preteen         Can
+
+    be golve anal yticalty.                       then problem         con
+
+     \f ne: Path Of the bomber       ts Curve                    |
+
+    be --Solwe_py usin. Simla tion:
+|                          Ore wdde dor + ho pure aie 3
+
+    Following datumpi ton                                                --
+
+               lre m *:                         In me 9D lane.
+
+       >
+
+    Both Pursurer And bamher are Flyfing
+
+    | The fighter peed_ is__con¢tant
+
+    The target path fs _tCnovon
+
+    We minimum _Attance requito hy the fighter to Shea
+
+    missile G4 O bomber fs (9 unite.
+
+E   S) IP the tor ge+ isnot capghs Within the Qtven time)
+
+a   the tarqe* ecCane                 ae             Ber     Orne
+
+:   6) || Inftta) CSordfrgre of idate r Ore Knquon.
+
+:   he -
+
+ez  "I MLS                                                               :
+
+                                          es Neer
+
+    PositTon of target &) Fighter at time (4+<0)
+
+    Wo ull chooe -he C00 r ding be system SUch        thaf intially
+
+    time (4-0) ,the torges Will be on ma axk         & ONVrcurer wil!
+
+    || be ON the Y= OX The_ Pigh ber  toocr at a Target     Qt Pr ctont
+
+     VW! bg align Velocity vector     _ustin a OS SE      ey FS
+
+    COn tin  nid  wp +o the direction fo v One _unpt tim -.
+
+    `upto 4447 At ~t41 time, the Pigh ter loots af a target
+ae     dal (Yu y--Yol4)) + Ory MpCt))                                             `e
+
+=      Ye G) = Bomber Y coordinate time (4)                                       =
+
+att    ech) Pak tery ord trate tPmeC4)-                                           :
+
+G8     | M+ > Bo) mbe: 71 endordinate at Afme 4+.                                 =
+
+zidl&  pty fighter mm coordinate af fime 4 °                                      Re
+
+ued    Sin O'= P = Yet) -- Yet)                                                   r
+
+               n  d
+
+ate    ca 9 Sta eCt)= ApCt) Rhee
+ah z d :
+
+ith    1nq__thic Vlue, the nex} position of fighter Qt time (441) 9s
+
+                  Saree                              ;  OE
+
+ux                c =          )      yerocwny o! 4                                                    :
+Re     Moe 41) = Al+e p S) in
+Ls Mocks)= 4eCLy + Ve coy                                                         :
+
+       Vip =Velocity of a tor                                          AU stom |
+
+       Kp any  Position of a Ign for                            iOumt= 10m
+
+               : PLcTHion of fighter  1 Snot down
+
+       Xe= X position of
+
+       Yo= 2 aa oy. hom be r
+
+       WP distance <2 100m
+
+                  tne omer Plane
+
+       Arcerf
+
+                                                                                  ! Scanned with -- :
+                      distance >!logom          CSCO NPA
+
+                               bOmMnhe r plane
+
+                else             |  ee
+
+                      calculate
+
+                Pusnorn | code
+
+                neopar radom
+
+      Me random. oadial (4, 41000)--
+
+     _`y= random. yondint ( 1.1000)
+
+      ie = Yandom. Yandinat (4,1 0009 )                   "+ Cye- mm D) ef?)
+
+      iwhile qaeke
+
+                 Atstorre =main. Sark((me- 7)
+
+     if distance <= 1oo                                   Shoot down at", Hme)
+
+             print ( `The Figh\er plane 1S
+
+             flag =4
+
+     Cet l déctonce7 O00 :
+
+a                     prin + (" The bomber Plane escape al ish
+    a
+               Pag: l
+     -- --
+     |
+
+     Olce -
+
+      |         Age HL + Ys "(my -r4 \ [distance
+
+      yp= Yea ve * (ye- ye) / distance
+
+     [Pv= Fandom. rand tat (1, 10009)
+
+      sje random. rond fat @P [OW)
+
+      Kime < time+ i
+                                                  (date |
+
+                                                  Page |       3)
+
+CONtHHUOVS Syston Simulation can be done. by Sin `rare g|
+
+    Analog               ntatins            =      Hybrid                                                                      ee
+
+  Uses physical          Dfaital Compute +        Fn ess both                                                                             ie
+
+              neat Such                                        Cant NU 6 ¢
+
+       > Adder                    mod             stad & degttal_put
+
+met, Umm er Siusils,     Computer sof+uore                         ie
+
+    OF Toteg'G tor                                                 z
+
+   Analog _cocnpters ,                            aNd                                                                                                                                                                                                  a
+
+mee PROP SSC aces, Continugs dato, n by e                  It vser _physteak
+
+Basra such CU) Cieetrteol ER a OrSr er CB OM ie
+
+                                                                   ----
+
+Abocus, Dray Speedamete «                                          --_--
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  --
+
+      Yeo tures
+
+dy lt 4s non-preqromrnhle
+
+2) lt Ts highly Oaturote._ but Not high Dyvci se -
+
+3) lil+ do Od real-time processing Or Simulation.
+
+Gy iMt USC continuous signal SUCH Gs voltage Qr_ current.
+
+[he Vaytouc camponents Lov an alo.q            eT to dmulate
+Continuors SYSTEM Ore as _4ol lows :
+                                               |  Ba bx WAT
+
+1)  ;  fr)                 | ivr)                 Vv) .
+                          " onee 1 SYcye
+
+                   =¢ v
+
+    Simulation of QAvin0mohile Suspension Syslean         udhee|
+
+    Na ea Icey COmMNOnNen+ of' OA "Vehicle tnat Connect,  shock
+
+     to the main | body OP the Vehicle.                    Sur face
+
+     Primany anfective of' this System isto _dlesorb the
+
+    furkag-- te moment of? tine _vehfdle_on the SOU gh
+
+      AskQ o Engusn sry uoher! System)
+
+    M 3 + D da + Kor =kPc+--) 7)
+
+    dt2        A}
+
+    MY 4+ Dx 410% =ePC 4)
+
+    Where ,    ,                                                |                  a
+
+    M=Macc of tne spring                                           :
+
+       D- aes g Cee cfent                                          ES
+
+    mek Spring. Constant         |
+
+    £C+)2 force at time t | Prdependent      Varia)e
+
+    m+ TISMIACE ment De nendent Varitabpi\e.
+
+    Sat        oe                         ae
+
+--  on MxX= ePCr) aor         :           =   ye"                  é
+
+    fH ®-          NN MYaXrm  fa O                                 .
+                              x a >A
+
+    7      =7                                             iS                       :
+
+           =~                                             47 y
+
+                                                                   Scanned with |
+                                                     (Sols |
+
+                                                     Page |       ae
+
+                                                                             i /
+
+3 Variables are scale bs added with 0 _SUmmer         XO pvoduce  ck.
+
+ voltage MX then the voltoge_frsie scale dovsn        by YM       42a
+
+Produce VO \t0.4¢e X then Pt ts poss "to fntegra tor  +o produce    X
+tnen the Voltage Py Dass +nvough Pavertor to          prodve -X     -+tWyen
+
+ot 73 paces through niegrajor 4D produce ~XK, then ede            Ss
+
+poss trough myerter tp produce | x vo \tage
+
+ COmp UlOr Mode\ of Uver
+
+ Thyoxine enters ty the blood
+
+ corvied +o the \Wwor
+
+ Ulver converte thr yoxiine Sato _iodtae _
+
+| lodine $s dniorbed by ile
+
+           Blood
+
+----> Vessel
+
+             (1)
+
+ Ar                                                                          .
+
+ka = = Kio -- Kai, - Kogan,                                              =
+
+ dt = Kir ~(Koy Xo + Ko Xo )                                          : Scanned with |
+
+                         = Ku x, <= (Ko, "Kk 92) Xo
+
+On, 2  Xie K99Xp
+   }
+                                              / vate |                                                                                             >)
+                                                                                                                                                   rz SS
+                                                  Pago |
+                                                                                                                                               e,     4
+
+                                                                                                                                                      r"
+
+                                                                                                                                                      = =
+
+                                                                                                                                                      a
+
+                                                                                                                                                         =
+
+                                                                                                                                                      ------
+
+                                                                                                                                                              C
+
+                                              a a  aun|                                                                                   :W e  ind}  nant
+                                                             / <r
+                                                                                                     j                                    )                          `
+                                                                                                                              P d
+                                                                                                                                   P A
+
+                                                                                                                                     S S
+
+                                                                                                                                          cn"
+
+FRq: Cimu lahon                                                                                              ad  --tiver                       aa es... fe:
+                                                                                                                                                               >
+                                                     >                                                                                             ée° 1|S3
+
+                               of" Computer rodet os
+
+3 "integrator ave use$dn _ computer Mode! of Jfver to Smutate
+
+the computer Model of Huan \ivor not Solves tne value fo. ~
+
+X1,Xo & Xe res pectfvely NecessarJy scaiing are also dove.
+The fret Pntegrator= ic SO\ving the equdiiio
+                                                                                                                 LT
+
+X= Ko,Xo- Ko: 4             :
+
+                                                                                                                 Ly
+
+The second tategra tor ts      Sol vies  tne CQUato nm __
+
+| X53 = KypX1 ~CKartKp3X)p
+
+Simtorty , the Ansrd ifn grater 1¢ Sailng the equahon
+
+                Xg c Ko3AX2
+                                                 i ae |       a3
+
+                                                    Pace |
+
+Hy brid Simulation                               :            z
+
+In case of" hy brid simulation, the SUSE Nn TS Norther pure   2
+
+continuous nor _purg dccrope Im nature -Por Sfmnularing such  .
+
+Sistem, _ Use Pojuive both the combmraton of analog 6         2
+
+dotted Com puter. Hybrid. COmpulor Ox hiprts the foature of                     ;
+
+| oth analog by digital computers The RmnulatfYon Cone bx,
+
+hy brid comouters ZW Rnqon Ad nybrid sim uiation. They aro ¥
+
+used fo Simulate Sytem which hove Specfal_t¢ yonto uss --
+
+companneie but MSS. Some digital eloments[r.e TMeagure
+
+tPicu Is of using hybrid Similafion rs tha 4+ reo Uires       1
+
+Wah . speed pAc & Abdc.                3            ae        eal
+
+Digital to Analog Cony rte+               | :
+
+ExOmple An artifictal Satol lite AOI us, the equation of motdn
+
+and _digttal__stgna) to be _simutated
+
+                                                                                --
+
+Ss'                                           T                                 :
+
+           mind
+
+Yeodimck. System are uch System ita isahteds     the O/p
+
+ISomprod and fod hack to tne i/p.
+
+ of" do odback   Sfrem. VWne  Sq sem       Nan tne Bisel which
+
+puypcse SS__-te   Neat +e     -- poom  and output of Saito CON
+
+                                                              ! Scanned with |
+                                         `ur |               o
+
+                                             Page |
+
+                                                     ------
+
+`Ibe measuyo OAL    room temperature. Ne pend' upon  wheather tne
+
+ temperature Ty     below GO Above the   aes|        Settles , the
+
+| furnance will be    turn. on _Or off.
+
+              ack_Sypreen =~ The nosttive feedlot Syston ig fa
+
+                                                   OF ginal TAP U4 -"The offers of the PArttPve
+
+                    Tocrame the din of! fre. Cystenn ratherthas
+
+Apin aS foo
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ----
+
+Voliage gi Vous                                                                                                                                                                                                                                                                                                                                                                                                        ee
+
+                                                      Noa- --------
+
+                    Positive MTMQ >A \Inyvwor ay whey antag) ang
+
+                                          Su tpb! Poin S06 °
+
+                         No an -- Invert?
+                                  Rerentral O
+
+\\n__Posttive feedhock,-the lp is_feedbace _Frto_non- insveor rs boBog:
+
+       eratfenal Omolttr (COPAM) |
+
+                                                                                                                                                                                                                                                                                                                                                                                                                           ! Scanned with |
+%& Dike ro ntfall Equation                                     =
+
+-- |Me eqquafier nat con siSt of higher Order derivative 2
+
+3 of dependent: wariableTys Known an Ai{forential eQuation.    a
+
+              MX4DK+KX = 1 fC4)
+
+           Max +pdy «x= EFCH)
+
+                    dt2 Ak
+
+= |® ; =
+
+                            |   .                                             ae
+
+* |Parte DifRerentia) Squation                                 LoS
+
+   I' moro tran one <adependent Variahle ts present iq tne dtflory
+
+~ 35) lt8a9  ughton. +H,       T+ ts _catted  rita diferente)  eat
+
+                                                               --_--_--
+
+|            Oru LOtus sO                                      oe
+
+                                                               ee
+                                                                                              (~ oats |
+
+                                                                                              Page |                                                        o
+
+                             .
+
+                             7
+
+                   }              Most         phyiteal  & chenrfeall process  esceurtag  7a  nature     VAvo) vo, rate
+                   |
+
+                  |
+
+                                  of change Uhh kh requires Ji{RronsPos equatton fOr rv) `a4
+
+                          14 can be ned +O Understand gone rol) of fect of GYO win rate [trends
+
+                                A              APfferendtal equation  re Pyosents Sera role.
+
+=                         }
+
+  --_--                       es
+
+                                                                                                                                                                   --------------_--  a
+
+FZ                |
+
+                          |
+
+               |
+
+               |
+
+               |
+
+               :                                                                                                                                                *
+               |
+                                                                                                                                       ------------
+               i
+                                                                                                         --<--
+               |                               ~
+                                                                                                                                                        --
+                  |                                                                                                                                                                                   --
+                                                                                                                                                                                      --
+               ti
+
+               i]
+
+               if
+
+----              ~                                                                       --
+
+               ii
+
+                   '
+
+               |
+
+on                | es
+
+              tT                                                               ------
+
+See ea
+
+             |
+
+oo             >?
+
+                       '
+
+               1}
+
+               |
+
+               He
+
+                     '
+
+                                       =<                                                                                                               --
+
+                                  "a       -_                                                                      --
+
+                                  aNd      ar                                                 ee
+
+                                           --                                                                                --_--_------
+                                                                                                                                     --
+                                                                                                                                                                                      --
+
+         aang
+                                                | /" dete |        e
+
+                                                Pace |
+
+Sreutag SAstem Py Qlsey Knguon on queutn mModoy 7% oo              ae
+
+matrermabtah aoncept used to analyze "the benavibur of)
+
+waiting fac Or queue:                 en                        3  a:
+
+K-- Queu ce                               i  |
+
+| wong Tne (Ek                 |                                   a
+
+                           Service |                               :
+
+   :                       ay                                                        5
+
+L     SUstern                                                      a
+
+   Figs asi Syston                                                                   é
+
+& ||Clement or Characteristics of Sueuing SyAteen               fe et
+ \) Cuctomer or calling Population
+
+_- |The entfHes (people /partsroo\s) that arrive af a Queue
+
+      ! Sr vice -
+
+|| ArFiva) Drocey¢                                                 `
+
+= Tes aloe In _hfch customer arrive at the atne They z
+
+Ratboinces YOrdom Attributes, Uunthow A;        Hon, Poisson's |
+
+3») Queue            \Tne  10 fh re the   aydtorer get ®r vice     ic Jeall
+
+        The patiiay
+
+       queue :
+
+                                                                   ! Scanned with !
+                                                  / date ieee
+
+                                                         Page |         ry,
+
+                                                                             --
+                                                                                 =
+
+2 A) Service Mechanism                                               :       a
+
+`gee Lt "nclude the servers ANd the sor vice provided AQ the customers. _
+
+: ne: Speci fren hous nan servers are avatiable (9 hou thes Opertao. _
+
+:  |!
+
+                                            :
+
+_ Ss [Service "me dtvtributton                                               =
+
+   --_-- the statiitea) distr tou tion that <dec"rthie nameousct of stro
+
+       I
+      ike 4bQ er+0 solve the customer The common diyt tbuffon _Sncluden
+
+   |exponential. detecmfaistis  S NO FPN divtrtou tion.
+
+we ee Disctpline
+
+        The lau) Folio wed. Dy He -§-Barvor rohile providin Service fo the
+
+         _Custoene = FIFO, LIFO, yandom, priority hased -
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        --
+
+                                                                             --
+
+   | sonnet                                                                                                                                                                                                                                                                                                                                                                                                                              --
+
+     he mdximum number Of Cuytorers  that the _Gustem can horde_
+   bothPn queue (y befing Se
+                                                                 SS          -- ---
+
+      i _xt4                                                     = s
+
+2 ¥) Aedive Process
+
+Ee - "This yofes to. hou the curtamer leave. the syste Piebelaee
+
++ wned               |                   :                       --          --
+
+   Undersiaadtas Thee Clements fy Crucf        r         Tani        and ses ras s
+
+   OPPS Pent queules systenn.
+                                                                                                  =ig
+                                                          | LER |
+
+                                                                Page |
+
+    : Apt of euants Syston
+
+       `Tele ennirabnaatton Syston a nehioric traffpe          CS
+
+       dato pocket belt                                           e
+
+AD) weotinane--Impodg "poten + Plow & Sap Wwatting Qtre =f
+
+3X jaoutacturne,                                               z
+
+4) Transpartatio t                                              3
+
+ 5) itustomer's Service                                         :
+
+9 | Banting gto
+
+    "Tuner of Queuing System                                   `
+
+       JI
+
+\)     23                                2)
+
+é   ;
+
+    | Sing le_choone | Single SP ry ver      Niu It7D\e channel sfagle Sern
+
+ae                [|                            = 1]
+
+                                             --_--_--_--          en
+                                               oe              --_--
+
+                                                          Ee]
+
+                                             Niy \te cHOnne! Baltiipte as
+
+                                             Servo r           pe
+
+                                                               ! Scanned with !
+             +1
+
+---- --e Need ofQueuitag__Systeen 95.° Aimiulatfor
+
+            | ) iDes for MaNCE Analysis
+
+__ 2) Resource A\\oca tio s
+
+3) Dectgoa Marty
+
+4) Coyt Esk         a
+
+ |=) | CQuytorme -  Sati Paction
+
+--
+
+-- At. i Kendall. Natation
+
+       tin Queutag theo", of stondo ra notaton known       ax Eondaly
+                                                           of! queuing
+--
+
+iNotoHon Ys used +o donarthe the charoctoriticc
+
+|
+jcurem_.
+
+| "The notation is gen erally            Va the form:
+
+|
+
+i]              Als fe ie INI
+
+|
+
+   |FE
+
+I
+i Whew, A= Arrival Process               Distrihutfon  while fey have valve:
+
+l                     Ms: Marcovtan      or Pofsson
+
+'                      D= Neterministt¢
+
+! :                 Gs Genrer)
+
+| |                                                                      ------------
+
+I
+
+!       .                                              ----------------
+
+                                                       SS
+
+|                   §= Service ttme Distt bution uohich nds have valve
+
+                    Ms: Moarcovian or Exponential)
+
+                    Dz Deterministic
+
+                    C2 18 of Se r VO ve
+
+             :      Ks ior CONGA
+
+        é           Ni=_ po  ion Size
+   D>Servite Discfp |fne Coptfonal )  (xeata |
+
+               F\FO (defguts)             Page |
+
+!               LIFO                                 23
+
+                                           :
+
+                                               au
+
+MM]4 || NiotaHoa:
+
+i.
+
+1
+
+     |
+    ;
+
+i' !
+
+_Als/c/s/ ©/ FEO
+
+   . b/M/ 4/1160 /20/950
+
+    A/s/c /p/ E/N
+
+   M/M/§/20/500/LIFo
+    /Meaaurement of Sup tean b moneace              =
+
+                                                                                                                                                                                                                       --------
+
+1?) Average Service Rate (M)
+
+- ||No-of CUxtomer sprwd by tne system per unit time|
+
+=e Ss Aus
+
+           M      < J Catan} 6)
+
+|
+
+                                                i
+
+tv) || Average Number of" Customer fn the system (L) -- -
+
+Pp            Le
+
+V) Merage  Nov Cubtomor  Tr the         queue (La)
+
+  [Bates        S90        fees                        peers
+             Lq$=°
+
+                 4=%
+
+                                                       : Scanned with |
+I                                                            ("Fate |        3
+
+   : VIN) Probability of' Syston being TOLE( Po )                Page |      | --
+
+                                                                       :
+
+                                Poet?
+
+   ix) || Probatotiity of asin _n customers fr tine syste
+
+             Pn =(41- OM
+
+   Q.) Il Whe ome rapa ty of O: hospital Yecerve On-an sean p= oY 428
+
+      42 natients Fa a day - On an_average a _patPent Con bo given x
+
+      49 minutes of Active -- attention and the section Can handle_
+
+      a  ed
+
+      4. NO Ton at o 3 Ame. What T) tne ave rage no of! batiea*--
+
+      TA +ne- Sechon. And tho re uho Ore WeY.Vearact dor Otrentcon
+
+                                 a                 |  ped |                  2
+      What % the average usalting time of patfont & +e|.)
+
+         rege time Uohich _coutd bo dewted to                pat feny :
+
+                                                                             --
+
+      (a)ys322 0°05 mahicats=pemmis                                          -
+
+   |     2uy¥ 60                                                          :  ;
+
+      | Ms 3 be = 0:02.32 mhent ner minute
+
+             i)                                                              :
+
+      "Traffic \ntensity (8) = A = 005 =06                                   é
+
+                  :          M 0:0833                                        :
+
+   1) | Nerage "numver of galfens SA the SSUATE                              ~
+
+          (1\2 £_ = 0.6 =1-5 patients,                                       z
+    | | | Page | =e)
+
+:          Lge @" = 06% = 0-9 patents
+
+                 42S                        1- 0°6
+
+--  .
+
+=   4upeagqe wottteg me oC pat en t
+
+                                         .                  (sr 2
+
+                         Ya
+
+    1      Wa =
+
+                 M(4-9) _0-0833(4--0-6)
+
+    Average tfme wh?th eould be devoted to a Pafren+
+
+    |            Uz AN.                     =0 onfou ten),                                               7
+
+                 _ (tH)                                            |                                     c
+
+                 a
+
+_Q.92 \for 3. cut tomers the "En ter orrtvod) Time es) tne Servite +ime <
+
+        1A oO Single counter of O bonk ar a@a Fo lous                 |
+
+                                                            a
+
+    ES arvyval) sme| ou} 12 [os [13 O-2 {16 [O2118|                      ------_ ----                    2
+
+    | ornvo temo? ~ 12:9 |O4 foo | ir [3:4 [0-6 | ou | oF |              -
+
+         | Deve top a Amulohon -table Showing GOotuad arrival +?me_,
+_____igervite Start time , Service (© time & walling time for' cach
+
+    : Padiidud) CUlToOm ers by find over e wartian time                                                  3
+
+eure!)                                              (1i)_the pin bole iity that the curiomen
+
+a       =                          ho+ro wait ino queue
+
+eal ih                __@) here oumber of ouyigmers Ia queue
+
+                                                                                       ! Scanned with |
+                                                             (a |        =
+
+                                                                 Pese |
+
+    + |iActual Arrival) +4we <cumulatfve of Pater arrival thm                z
+
+    + Sevvice stort t¥me = MAx?i mum of" tne Orrvyvo)_ tine % TH              3
+
+    |     Service Ond Hime. of provious. Custom. =                              aS
+
+    * Rovvke end time = Service Stort time + Service time                a
+
+    : {unQiting Hmo = Corvite Start Hro- Actual) _arr2vad tlow
+
+§   Icustor|\rneferr -- {Actual |Service |Service wiaitirtng             =:
+       eh Pe Aree vol Store| end °-
+:
+
+          _tirre tL time +ime =
+? ee SE The
+    | soeBese Blok eames Parent?                      a      0
+
+}                                                     2.u4oF 3 [24-12
+
+                             a           JU           -)     = O°&        x
+
+Ef                                                           1-2
+
+                                         3.6
+
+    )| Average woFting Hore = OAO-8 4A40403-439U44)
+
+       _
+
+    |
+
+    |custo mney--_ What ive         ibe
+
+    "4)                             a. 6° = O57:      =D).
+
+      ; jPecinblitn Op 3s waditing
+
+    iii) "vesage nO: on Cu stome %, TT GWeue          ut
+
+    Totes wording Hime- OFO' BT L TOA OSSE St             .
+
+                                     =|[° i mjouten_
+
+         |
+
+       |
+                                                                                    Date |
+
+                                                                                    _ Page |  x)
+
+         i                    CUSTO me --ArrSval tiene of Rt cU\tomo-r
+
+         \
+
+                           a HE TOM
+
+                           = 4.9
+
+            Average NUM pC + of CU\tomer Sn Queue
+
+                       Ve  = Total waiting time
+
+                             | Total Arrival time
+
+                       &   Seen RRINS                               SU,
+
+                                                                Ee
+
+                               9
+
+      |                                                                     |                    arrival of
+
+   6.3 Consider the GO Lo wiieg inbie. for                                 +fmeS    betoren CUSTOMe r
+
+            by there gov vite Bie In alt                                   tom.                      = sis
+
+               "ime poturen Arrivals Propabitit,                                                      f
+
+                                                                    0:23         3            e
+
+                    2                                               30°}
+                           a                                        "0:25
+            |       3
+
+      |             2 BRE                                           O15
+
+                    Sorvice "Time Distribution
+
+            | SO rice. lremes C Minutes)                            Prova! ity
+
+      4                       |                                        O10
+
+:                   2                                                   0:20
+
+                    3                                                 0:33
+sone                U
+                                                                     Paper
+See                 6
+i                                                                         0-10.
+
+                                                                        »-0¢
+
+            ------
+                                                            (Site |      ae
+
+                                                                Pace |  Dee
+
+=  _|bO 10 Manual simulation Aor 15 Customers fo collculate +h. =
+
+:  Awe rage woaltfag time PAs                                           a
+
+: = laverage time of cuxtnmer have doa Spend in the systenn
+
+      ( promabiSliiityty ofor __Servweys refng busy -             ,     Z
+
+                       :                              J
+
+   =) nt -          |                           |              |        | é
+
+      Average Arrival Time_                                             =
+
+   | = §X0-2394x 0:34 43x 0-954 YX O-15                                 ss
+
+      AS39239                                                           |
+
+   Average Sryvre time                 aaa S55                          =
+
+:  | §= 2 Service +ime % proobi ky
+
+   | = )XD404 9x0-904 3x04 UxO-924 5xO10 + 6x 0-05
+
+:     = 3:14 min -
+
+   }           S,0        S       WW)                                   | =
+t     Average we Mme ( q )
+
+4  | Wee Ax@*                                      }     |              s
+
+)     2(4 - AxS)                                                        =
+
+   | =O0-UZ y 949?                                                      :
+
+&  |        201- OUI 23-41594,))                            |           R
+
+:     3 = TSA) minutes                                                  :
+
+i  ! "he negasive Sign Fadicates +e sustern Tis Unstable or             y
+
+   f ovoy looded - >
+
+                                                                                                                                                          =
+   | |
+            |                                                                                                                                                     om)
+
+                                                                                                                                                      (Cats |
+
+            | . Page |
+
+_ 2) | Ave rage time Custom er Spent TA the Wyre m                                                                                                             |       :
+
+            |               Ws= Wats                |                                                                                                                  ae
+
+                |           r- S914 3:19         :
+
+                            aie 9d bal minutes.
+
+____3) D| ronowiitty "of server beng bay                                                                                                                       3       :
+
+        | P= Ave roge waiting {imo _x Piverage gervice_ time
+
+                  tsAxg
+
+                                                                                                                                                                       ----
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  --
+
+                LA valve qroate than 1 means the system fy ower ut? ii2ecl, the
+
+                Srver _%s toa busy ty \ondle all incomfag Cuyto mip,
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                --
+
+                                                                                                                                                                       --
+
+        Q- _The eR RES FAC ky of PV                 Was orae AO: of penonref =
+
+be              Leamputers on _S01- of eating day, no comopurer fet] Nex eee
+
+                1301. of wor Cina douc, A machifnatels don ZOE of uaorCias
+
+                days, Apo machfae         Tle. there As o repairing fa SPE.                                                                                       h?
+
+                has 4 service perconne!He can fixed the prohienn oF average
+
+                   ol. of waochine Pa one day, 201 wo! machfnfea 2 days,                                                                                               Z
+
+                ond 957. fr 2 dayc. The Service person Says he fg Qverloade
+
+=               And the comonuler AW wos Wait for _ Aime flor servite. He                                                                                              --------
+
+:           "yomindy *thakf neyt shoud gs TO ¥ seepad | sexe Person .
+
+                COrafder tne 20 dayic Slot ond er ify re the Servite Person
+
+.               C\ofen Ys __Corvpo+ by computing offic Peney nursbher'fo
+
+Computer wating far service, OxR rage wilting time for                                                                                                                 ;
+
+------  re  =)  |So  it
+
+            a            >
+         (niven:  days = O machine  fatle              a ee
+
+        50 7: of  days= 4 MuCchine  Parle                Page |
+
+         401- of  days 9 wmachfne   falls                             a
+
+        or. of                                                           =
+
+                                                                             5
+
+                                                                        =
+
+   |lfatlure arrival rare = 0:Sov0+ 0:30%4+ (-20%2
+
+                      =0- Fo mochire per doy             Se.
+
+   * Servite Hime     aeons                                           j
+
+        Go. Of aime = 1: machfae 1000 Fred fa 4 day |                 :
+
+        361. of time = 4 MAINE ropdived fa ee, Jy.                    he
+
+        1257. of Hmes 4 machine repafre=fd 2 ons                      :
+
+        [Te 1¥0-U04 2x0: 357 2k090¢
+
+   : 1     = ASS ous fer machine                                      =
+
+   * || Sprvike Rabe (HM) =) = 1 20-54 MachPre per day.               :
+
+                  ae  af ,                 Sa¥
+
+   % | syste Utflization or _f'ficfenc,                               :
+
+        \ ie SEED SU                 | ean                            ;
+
+        pees Ru: _, Tne sSysteen 1S Overloaded __                     i
+
+   x : | Average no-of) mach?ne _wsaiting or Service                  ae
+
+|  aie| |  Laz A 2. < O402? . = 0-08 -5-64.,                          =
+
+                  AY4-A) 05464- 0-40)                                 2
+
+                  dhe tite aeTadPh.ca fos trok cy tt een t1O s5 bySt
+:                   (=A)                                                                `
+
+-                   o' 540 5 4-:0° FO)
+
+:      -sSifganntiadfeatesA thaat. sys.sursheem _/'s busy                               3
+
+_   | Stnoe, "the Softens Se: average Number of machino
+
+_   ! voditing Service. oa rips aratea9 Ime fOr computers--
+
+    | Tad feate -- trot "the Sets       aad Or      Ovorlodded, SX Seennd
+
+      person: Smash be Pare              |                                        =
+
+    * IAlieth a C. `OuBitar thenn)-- ee                    esere                            2
+
+    1) iCvs Homer Sr vite =     |                 `Aes                           sym
+
+    Zs `Bank CON Contor (vsotarl ser vice     corer
+
+    help Ta ek Customer Pare reducia Wie Ateime S                                       ----
+
+    |Renprowing Sey vice off afency        3    ar                        )          a
+
+--  :                        .          ~                  ------  --            --  a
+
+    2) Tete eon muntalton                                              .
+
+    a Mocaging data Packers b& coll muting i pro vont. conjentin7a sc ae
+
+: _ 2moro ve quality of Service                                        a
+
+                                                                             LS
+
+_   _ Wealth care:                                                                      :
+
+         l/ eat tb alfntcs use Queuing Theory uke) rrOnage pati nt
+
+   --__ Oppnintment- produce usa ting "time fy Allecate _rerources ee :
+                                                             iO Sia |           :
+
+                                                                Page |
+
+i )
+
+     Manufachuets :                                          On Orn. OSS mab,
+
+      Opting te +he Flow of materials 4 --                   production fas
+
+     ligne to yeduce bottle neck and _Im prove                                               an
+
+      offictenty us
+
+                                                                                ae
+
+     5) Trans pov toh'o a)                                                      _--
+
+     |Manoaging Plow at hws station traffic lights, Orport Security,
+
+                                                                                ----
+
+     Markov chains          i                                i                  :
+
+     WA rroykov Chain -13 a mathemattcod model for On                   STOTe   &
+
+     IWNich move, step step thous h_various States Step
+
+     A See chain consist of Stdtec-(s transitron Pmbabiiry.
+
+     _| "yan                i Ts tne probes ty of' maoving Ayo on
+
+     one Stolp 49 Another. A weQuens            of ty fal    o¢ an      Oxperferon
+
+     llfs. Martov onoin if                      OX     60+:  an
+                                                7
+
+     ~"Y ) "We outtome      of LACK OxNeriment  Oot                          3  =
+
+              ot
+
+     Is one of tig' Ser of. -Ai scrote sto fe.               '
+
+     24HWhe outtomer Of Experiment              ,a |                    : .
+
+     _ deperds only On Dresent Store not           <                    | 3     -
+     |lony post Stare.
+                                                    |
+
+_    3) `The yon tion proba bility Yer ins cConttont trom one Mere hese:
+
+     _--|_lto MNOXI.                                                            _
+
+                                                                                --_--
+
+                                                                                _----
+
+                                                                                ! Scanned with !
+                |
+
+                      |                            3                                                                                                                                                       (Date
+
+                      |                                                                                                                                                                                    Page |.- -      yf
+
+                                             4
+                                             }+ --_
+
+_____|Steps to mare Nuture prediction Using Maricov Chain
+
+   \) Creahe Cur nont Staduc ditstributfon matrix Qo -
+
+   2) Cafe the probabil Pty dictyrbutfon matrix _P
+   3) aoleuldre QP" Which represent _prnvability vector after
+                   "repettion of the exper fment-                                                                                                                                                                              :
+
+                |                                                                                                                                                                                          .                   a
+
+   Q. Given t+nat chance of Oo Hondo Rite User +o Buy _ Honda-
+
+                      | bike Qt next Qurchase fs toy by that this ext purchase
+
+_                        may be fe Yamaha Is 30). -The chanroef YOrahq bf ro user
+
+                      | tm bfice Yamoho, bee at next purchace fs 807. & +hot
+
+                         This next purchdre mo be Honda fs 20/.. What ts the                                                                                                                                                   s
+
+                Ipmbob? lity te buy Yamora bike offer 3 purchase of
+
+      |                                                                                                                                                                                              |                 44
+   DISsire
+
+      Let,H denotes Honda
+
+                         Y denotes `Namaha
+
+=                  |
+
+                   ll
+
+                   | State Vvang fon Aiagra mn
+
+                         0                78°
+
+   a
+
+   --_----_ <<  |
+
+                a |
+
+   =
+
+                =
+
+                                                                                                                                                                                                 30
+
+   1] The probahilidy dist bution motrix Is
+
+                         ia!  Y                 :                                                                                                                                                       |         ee           5
+
+__22 "EIR                SSp= a Be 0:3                                    rntat
+
+meee |                         y lo-2 OR              ,
+
+                                                                                                                                                                                                                               : Scanned with |
+                                                    ("vate |       a
+                                                         Page |    Stay
+
+2)||Vhe current gtatus distribution motr?x,                                    =
+
+       Ao : {l 0 "]        |                                            =
+
+                                                                              =
+
+Dines         -                                                    ------ >
+
+   Q, = Oo       |            5                                          =
+       =[t0)] fe 0:3
+                 = (O25 org                                            :
+
+              (1 -- ae --               4                                             --
+
+:                      Fa | O28 6 -R0S                                  :
+
+a Se | osa5_f Ls on                                                       .
+
+                                                                          :
+
+          = [outs 0:ae                     Yamaha   bree af, 2     Purchase 1s
+
+   "\he required probability To by              aS              5     "OSS,
+
+   A\ ppl on of Moarcov       chain                                                 z
+
+1) aisen --                                                                           ce
+
+2) || Vor 1c Sys teen
+
+3) || Teiepn     rem
+
+4) |Weather aw
+          Sverthyeoa Hon- CO ree + 1 BG corer of//
+
+          lvaltdarion..real) Wavtd = Syren. ace mPixo BR aa, Date |
+                      4                                Com Ore
+          CO\brOKE : 1Inpok adrusy qardaf Jorey System ma sOtra1k+ SON megt to
+
+                  s a Parameter
+
+          (Mode! Rut                                :                           :
+
+          The steps of medel-butel 2are:
+
+_ 4.0) Opservwe tne oS Ona fnteractfan amang varfouc
+          |-COnapOnen collect nelir dain bbosed on tneir hada
+                                                                                z
+
+    by || But OhsPrVation seldom Yi elds surticiens understanding of
+
+      | System behaviour:
+
+    & | Quertfor Sadividual thal are Fawr {Or ujith the yA tem.
+
+--  dy) Opernitnes_feehntquen® ipa ds marin tainerce Sar                      a
+
+       supeetiee      nee oe nae be                 For liar    UIth  ihe We
+
+       |  Collect tne} ir SStence.
+
+    . ay!l-Construct ao _coneptual mode! based on OSsUmp ton QboQut the
+
+    components (5 Si ietosd of SH 5
+
+_   ip ldeasthy the input po rornete r Also-
+
+    3. Cayo|) nstructk an operand model heat           to use O Stmutatton
+
+             \cofhoove Or anagram mine lANQUO.Ge
+
+    b) | Ince 90 rake tne pei Nan of! tine conceptual) Sado se =                z=
+
+    concept ot' the `tasd that we have used.                                    i
+
+    !
+                                                                Gree |       4
+
+                                                                Page |
+
+   )                 (Rea! Systean)                                          <
+
+                             SS:              3     atdatter.)r,)            i =
+
+7            |       .            CON!                             `     |   --
+
+COlibration          | Astmaptfon of SUSTPnn com Norents        ros          Zs
+
+(SS validation       ~s                                 :                    4 Sra
+                     Srnucture assumption which defSne
+
+                F the Tateracton he tween Hina_gops tern                                       :
+
+                                                 ~
+
+= ies | etes oak iF Input DOrameterc (s data Assamptions | Et ae
+
+                                  Mode! Ver? ffoahton
+
+                                                                         --
+
+                -~*Pig: Mode! bufidtag wovitffration t validating of -
+
+             Wie eae Simulation 2Nlodel s == SSS                             :
+
+                                                    a a    > a
+
+= |! Vor? Fica Fon =e rth fca Hon 9s `concerned uiith building the
+
+      --_--  he Oro cess of compartag conceptual mode | WIth tre Qperaifc
+
+             mrode\ is Called. voy* Pita IO.                          |      é
+
+_ M4 ters whether! the a model fe cone city Fmplementod |
+
+   {Siorlation gottiuwore Or nok.                                            :
+
+    te:                                                                          :
+
+     )                                                                   7Ahe
+X _|Noidaston --Validatto acts concerned wih bhurlding
+
+      COr recke wnedel \t ic _per {0 rm by CalThratoa aC the mode:
+
+   LCoiprahen js +ve Process of : Comparing tre mode) with --
+
+    Le yea wortd -Syirern & odjucting We. Rarometers. s
+
+                                                                             ! Scanned with |
+lisiattomots `ha shack tnat__the model Wnrorent the
+
+Syston accurately                                         |
+
+Considemifan' Sidhe useBi. in -VeriPPaton Process
+
+"The opemtional model shorlbde checiced bu> someone ee
+
+Other than the| develoner _profererdlly    exper nN Simulator      d
+
+Sof hunayve | 7                            .                       ;
+
+Make a lov         vam thot consist        foil lecficalts pons thle actHoan
+
+Q Sure wr COR) POvPor n> when Gn event occurs.
+
+3) Ii Cloce ty PCXAMIne. *he Output `for variety: Se} of' Ta put:
+i Have J"the ope coitfonal eroded pra a
+                                                          ee when  the_
+
+| SVruloOon _ ends: an                                             :
+
+Mare one rattonal model ~ SOku Lacuiventing OL Possible .          iz
+
+§ )Mori, avtanared: operational model Tontoren THe. a drhal deer
+
+1) (peehugaex shou Id i used while sfmutation model| ar GRTA
+
+cal Sropnial Ante-faces" are recommendead:
+
+ en
+
+ System \ comporerevised,
+
+ee Model +0 Veal ty
+
+| F2g : Vaidaton bs                        Second Revise                i
+
+          ON bra Hon of SIT                       Mode |           ! Scanned with |
+
+                             / 16 oy       | Revise
+
+                                        e
+   netaro     Build Oo model sat "has high Fac. vaVidity. sinnearaet as
+              Voytdate - mod el -asumoptfon.          eee
+
+              orsga model ce eS With "Hye read
+
+              Sure. righaaa Ryhe: poten tial users -sincui \s_be
+
+              invo\ve en model tonchruc ton." 7       ¥
+
+              Se nstt?vyer aecOn_be_alic doce to check adel £
+
+              Ne\ife Hy. =
+
+            fox comple: queufn systems 20 tneuve! eos
+
+              Se: the. cies vO fe 1S alle nc rooted oewath +
+
+              engin of Queve pean ag tine Tnoveares.
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       --_--
+
+              Volido te mode! assu mption
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      --
+
+   -- |The re Qre 2 Types of. mode! Assumed i A |            |  re
+
+:  \) Ssovetud Assomp tion "The: compo rents of aes bo thWee
+
+   4 sya Opera ter  a:                                                                     =i
+
+                        $< eer  a  a                  a
+
+           aDoo Asumpin = Sstastte). analysts of LLp 25 ofp                                                                                                                                            -- _
+
+                                                                ee
+
+                                                                --_.
+                                             (<The |
+
+                                             Page |      Sy,
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      --__
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ----.
+
+   Aor example: CUStamer fa queue W041 ing for service fa a bank.
+
+=?| Structural AssUm tion - CUsto mer warting 19 one Dire VErCUS 2
+
+    Manu Vers Ne Servite ps CFS (Lire } eame Pive + Service) Ve re us
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           --
+
+Input data aAcsumpt oo ~ Inter arrival time fo the cUctomer ,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              B
+
+                                         oS
+
+Sor vice time for Gusto merc.
+
+Meri tne dato reality with Banic Manager -            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    cc
+
+"1Lerx* Cor rel OHon and Goodness of fo4 For data.
+
+Validate Tp (9 ofp transformation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ,
+Validote the model ability to predict the future behaviour-
+
+| Wre only ontective tect of) he model .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   i
+
+The structore of the model Should he Aceurate 2aough to
+
+make good pradiction for tne range of yp data sets. of
+
+i Intorert .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               `
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 --------
+
+A poste Approach use_hfrtortol data tor vaNTdas ion of model-
+

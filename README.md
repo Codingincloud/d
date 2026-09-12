@@ -172,10 +172,10 @@ freebuff_simulation/
 │   ├── original.sha256           # hashes of the frozen original
 │   └── pre_merge/                # chapter files as they were before merge_past.py
 ├── _source/                     # extracted working copies of the user's material
-│   ├── note1.ocr.txt             # noisy OCR of notes 1 (index: find the page)
-│   ├── note2.ocr.txt             # noisy OCR of notes 2
-│   ├── past_questions.ocr.txt    # OCR of the old question papers (exact wording)
-│   └── notes/                    # rendered note pages, on demand (render_notes.py)
+│   ├── note1.ocr.txt             # committed · noisy OCR index of notes 1
+│   ├── note2.ocr.txt             # committed · noisy OCR index of notes 2
+│   ├── past_questions.ocr.txt    # committed · OCR of the old papers (exact wording)
+│   └── notes/                    # ignored · rendered note pages (render_notes.py)
 └── _reference/                   # read-only merge source, not part of the site
     └── Simulation_Modeling_Question_Bank.html
 ```
@@ -235,6 +235,28 @@ python tools/render_notes.py --note 1 --pages 18-24  # pure pursuit, etc.
 
 The page-to-chapter map is in `plan.md` §2.3 (note 1 = Ch1/3/4/5, note 2 =
 Ch6/7/2/8).
+
+---
+
+## Sources and the tools that read them
+
+Three inputs are committed so the whole pipeline is reproducible from a fresh
+clone; two are machine-local because they are large, are rendered from files
+outside the repo, or both.
+
+| Source | In the repo? | Read by |
+| :--- | :--- | :--- |
+| `_source/past_questions.ocr.txt` | **yes** (255 KB total, all three) | `tools/extract_occurrences.py` — the only evidence behind every `occ[]` and `repeats` value |
+| `_source/note1.ocr.txt`, `note2.ocr.txt` | **yes** | the notes cross-check (grep the topic, learn the page); `tools/render_notes.py` renders from the source PDFs, not the OCR |
+| `_reference/Simulation_Modeling_Question_Bank.html` | **yes** | `tools/import_question_bank.py`, `tools/merge_past.py` |
+| `_source/notes/*.jpg` | no — ignored | human page reading only (`tools/render_notes.py` writes them) |
+| the source note/work PDFs | no — outside the repo | `tools/render_notes.py` |
+
+The three `*.ocr.txt` files are committed because the occurrence trail is
+rebuilt from them — without `past_questions.ocr.txt` a fresh clone cannot
+re-derive which papers asked each question. The ~12 MB of rendered pages and
+the PDFs behind them are inputs only and stay untracked. `.freebuff/run.md` has
+the full rebuild matrix and how to serve the site on a free port.
 
 ---
 

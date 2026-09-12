@@ -1,0 +1,1100 @@
+\l
+
+                  PURBANCHAL UNIVERSITY
+
+                               2019
+
+B.E. (Computer)/Seventh Semester/ Fi.nal
+
+Time: 03:00 hrs.               Full Marks: 80 / Pass Marks: 32
+
+BEG473CO: Simulation & Modeling (New Course)
+
+   Candidates are required to give their answers in their own words as far
+  as practicable.
+
+-ysAll questions carry equal marks. The marks allotted for each sub-question
+    speci.fied along its side. Assume suitable data ifnecessary.
+
+- Answer EIGHT questions.
+
+1(a) Explain the concept of System. Differentiate between Continuous
+       and discrete, Deterministic and Stochastic system with example. 5
+
+    (b) Explain the phases and steps in simulation study.           5
+
+2. A vegetable shopkeeper is trying to determine how much green
+
+    vegetable he has to purchase for selling. The probability
+
+    distribution of no. of customer is as follow.
+
+    No. of customer/Day 8            10 12                 14
+
+    Probability                0.35 0.30 0.25 0.10
+
+    Customer order 1,2,3 or 4 kg of vegetable as per the following
+
+    probability distribution.
+
+    , Kg ordered/Customer 1               2        3       4 _]
+
+    Probability   ---0-.4--0-.3--0-.2---0-.-1-=1--1
+
+    Vegetable 'sells for Rs. 50 per kg. All vegetable not sold for the
+
+    day are sold at half price. Based on 5 days of simulation how
+
+    much vegetable the shopkeeper should purchase each day.         10
+
+3(a) Discuss the basic philosophy of Monte:--Carlo simulation.         5
+
+(b) Explain the concept of continuous system simulation.               5
+
+4(a) Explain mid square random number generator. 5
+
+(b) Enumerate the qualities of good random number generator. Use I be with full '.
+
+      linear congruential method to generate random num rs
+
+    period with seed value 6 and 7. Take a=l2, c::;;;5 and m:::26-     5
+
+                                                                Contd. ...
+
+                                                                         CamScanner
+                   (2)
+
+5. What do you me~ by testing of random numbers, ,vhy it 1s
+
+needed? Use Chi-Square test to test the following random
+
+numbers with confidence level 95%.                                                                                           3+7
+
+36,91,Sl,02,54,06,58,06,58,02, 54, 01,48,97,43,
+
+                                                                                                                   . ,;'_ .
+
+22, 83,25,79,95,42,87,73, I7;b2; 42,95,38,79,29,
+
+65,09,55,97,39,83,31, 77, 17,62,03,49,90,37, 13,
+
+17,58, 11,51,92
+
+6. "Simulation output has to .be analyzed", Justify the statement.
+
+Explain the process of replication of runs and elimination of )
+internal bias in the analysis of simulation output.                                                                          10
+
+7. List out the various simulation tools. Explain GPSS in brief with
+
+suitable example.                                                                                                            10
+
+8. Explain the principle of discrete system simulation. Explain
+
+feedback system with its application.                                                                                        4+6
+
+9. Write short notes on any TWO                                                                                              5+5
+
+(a) Markov Chain
+
+(b) Application areas of simulation
+
+- (c) Kendall's notation
+
+                                                                                                                             CamScanner
+                  PURBANCHAL UNIVERSITY
+
+                                          2015
+B.E. (Computer)/Seventh Semester/Final
+
+Time: 03:00 hrs.                Full Marks: 80 /Pass Marks: 32
+
+BEG473CO, Simulation & Modeling (New Course)
+
+Candidates are required to give their answers in their own words as far
+as practicable.
+
+' All questions cany equal marks. The marks allotted for each sub-question
+      is specified along its side. Assume suitable data ifnecessary.
+
+'.t;fi Answer EIGHT questions.
+
+1. What do you mean by simulation and modeling? Explain the
+
+steps in the simulation study?                  3+7
+
+2(a) Explain the analogy method of system study with suitable
+
+example.                                                    5
+
+(b) Explain how continuous model can be solved numerically with
+
+an example.                                     5
+
+3(a) Explain the arrival and departure routine queuing model for a
+
+banldng system.                                 s
+
+(b) Calculate the following using Monte Carlo simulation. (Use your
+
+own random numbers):                            5
+
+                        5
+
+:;· I~ f(x2 - 1}tx
+
+                        3
+
+4(a) What are the properties of random numbers? Why the random
+
+numbers generated by a computer are called Pseudo-random
+
+numbers?                                        2+2
+
+b) Write the algorithm for linear congruential method. Using the
+
+multiplicative congruential method, find the period of the
+
+generators for a=13, rri.=26, and Xo=2 and 4.   3+3
+
+                                                Contd. ...
+
+                                                CamScanner
+11'-ln'lJI -      --
+
+                                      (2)
+
+S(a) Explain the Mid square method for generating random numbers
+
+with an example.                                               5
+
+(b) Consider the given sequence:
+
+     0.41 0.68 0.89 0.94 0.74 0.41 0.55 0.62 0.36 0.27
+     0.19 0.72 0.75 0.08 0.54 0.02 0.01 0.36 0.16 0.28
+    0.18 0.01 0.95 0.61 0.18 0.47 0.23 0.32 0.82 0,53 r
+    0.31 0.12 0. 73 -0.04 0.83 0.45 0.13 0.57 0.63 0.29
+
+Based on run test check whether given sequence is random ( ")
+
+not. (Given Za.12= I. 96]                                      5V
+
+6(a) Explain feedback system with suitable example.            5
+
+(b) Explain the mathematical modeling of replication of runs.  5
+
+7(a) Why simulation output is analyzed? Explain estimation method
+
+for analysis of simulation output.                             2+3
+
+(b) What is initial bias in simulation output? Mention the idea of
+
+elimination of initial bias.                                   3+2
+
+8(a) Draw different types of GPSS block-diagram symbols and explain ·
+       with the help of GPSS block- diagram of manufacturing shop. 5
+
+(b) .State some types of Simulation· languages. Illustrate the possible
+
+event interactions in Hybrid Simulation.                       5
+
+9. Write short notes on any TWO
+       (a) Differential equation
+       (b) Simulation Run statistics
+       (c) Markov Chain
+
+                                                               CamScanner
+,,
+
+                       PURBANCHAL UNIVERSITY
+
+                                  2014
+
+B.E. (Computer)/Seventh Semester/ Final
+
+Time: 03:00 hrs.               .      Full Marks: 80 /Pass Marks: 32
+
+BEG473CO: Simulation & Modeling
+
+Candidates are required to give their answers in their own words as far
+as practicable.
+
+All questions carry equal marks. The marks allotted for each sub-question
+
+is specified along its side. Assume suitable data if necessary.
+
+) Answer EIGHT questions.
+
+1.        Explain the ways to study a system. What are tpe criteria of
+
+          classifying Simulation models? Brief it with suitable example. 3+7
+
+2.        What do you mean by discrete event simulation? Explain the
+
+          principal approaches for advancing the simulation clock in
+
+          discrete event simulation.            4+6
+
+3(a) Explain the concept of Monte-Carlo simulation over stochastic
+
+          simulation.                           5
+
+          (b) Find the value of pi (n) by using Monte Carlo simulation using
+
+          the equation x"2+y"2= 16? Also Calculate error when
+
+          compared with its analytical. value.  5
+
+      4.  The computing facility of Purbanchal University has large no. of
+
+()        personal computers. On 50% of working days ·no computer
+
+          fails, on 30% of the days 1 machine fails & on 20% of days 2
+
+          machines fails. There is a repairing facility, which has one-
+
+          service personnel. He can fix the problem on the average 40%
+
+          of the machine in 1 day, 35% in 2 days & 25% in ·3 days. The
+
+          service person says he is overloaded and computer waits a long
+
+          time for service. He reminds that next should go for second
+
+          ·service person. Consider the 30 days slot and verify if the
+
+          service person claims is correct by computing his efficiency, the
+
+          number of computers waiting for service and average waiting
+
+          time for computers.                   IO (
+
+                                                Contd. ... ~-
+
+                                                CamScanner
+                             (2)
+
+    5.  Why are differential equations so important in simulation?
+
+        Explain continuous system simulation ,vith suitable example.5 +5
+
+    6(a} What are the qualities of good random number generators?
+              What are the methods used for testing of random numbers? 5
+
+   (b)   Test whether the 2nd, 7th, 12th and so on, numbers in the
+7.
+         sequence in the given table are auto correlated. (use a=0.05) 5
+
+        0.12 0.01 0.23 0.25 0.58 0.87 0.55 0.96 0.22 0.88
+        0.11 0.22 0.85 0.36 0.69 0.87 0.19 0.92 0.75 0.43
+        0.68 0.58 0.91 0 .60 0.35 0.33 0.15 0.49 0.27 0.99
+
+        Why the output of simulation has to be analyzed? Explain
+
+        Replication of Runs method to any simulation output.  4+6
+
+8(a) Why is simulation tool required? What is GPSS language & its
+
+        application?                                          3+3
+
+    (b) Explain in details of GPSS block diagram symbols.     4
+
+9.      Write short notes on any TWO:                         2x5=10
+
+        (a) Poker test
+
+        (b) Feedback system
+
+        (c) Elimination of internal bias
+
+                                                              CamScanner
+             ~.,_c "                    PURBANCHAL UNIVERSITY
+
+,\ ')t' ,J                                                 2 014
+
+ ~- ~_.
+
+                      B.E. (Computer)/ Seventh Semester/ Final
+
+                      Time: 03:00 hrs.                 Full Marks: 80 /Pass Marks: 32
+
+                      BEG473CO: Simulation & Modeling
+
+                      Candidates are required to give their answers in their own words as far
+                      as practicable.
+
+                      All questions carry equal marks. The marks allotted for each sub-question
+                      is specified along its side. Assume suitable data if necessary.
+
+                      Answer EIGHT questions.
+
+                      1.  Explain the ways to study a system. What are the criteria of
+
+                          classifying Simulation models? Brief it with suitable example. 3+7
+
+                      2.  What do you mean by discrete event simulation? Explain the
+
+                          principal approaches for advancing the simulation clock in
+
+                          discrete event simulation.              4+6
+
+                      3(a) Explain the concept of Monte-Carlo simulation over stochastic
+
+                          simulation.                                                  5
+
+                          (b) Find the value of pi (n) by using Monte Carlo simulation using
+
+                          the equation x"2+y"2= 16? Also Calculate error when
+
+                          compared with its analytical value.                          5
+
+                      4.  The computing facility of Purbanchal University has large no. of
+
+                          personal computers. On 50% of working days no computer
+
+                          fails, on 30% of the days 1 machine fails & on 20% of days 2
+
+                          machines fails: There is a repairing facility, which has one-
+
+                          service personnel. He can fix the problem on the average 40%
+
+                          of the machine in 1 day, 35% in 2 days & 25% in 3 days. The
+
+                          service person says he is overloaded and computer waits a long
+
+                          time for service. He reminds that next should go for second
+
+                          service person. Consider the 30 days slot and verify if the
+
+                          service person claims is correct by computing his efficiency, the
+
+                           number of cot;nputers waiting for service and average waiting
+                          .. time for computers. 10
+
+                                                                                                                         Contd. ...
+
+                                                                  CamScanner
+                             (2)                                             I. '
+
+5.      Why are differe11.tial equations so important in simulation? Q . 1
+
+        Explain continuous system simulation with suitable example.5+5
+
+6(a) What are the qualities of good random number generators?
+          What are the methods used for testing of random numbers? 5
+
+    (b) Test whether the 2nd, 7th, 12th and so on, numbers in the
+
+            sequence in the given table are auto correlated. (use a=0.05) 5
+
+           0.12 0.01 0.23 0.25 0.58 0.87 0.55 0.96 0.22 0.88
+           0.11 0.22 0.85 0.36 0.69 0.87 0.19 0.92 0.75 0.43
+           0.68 0.58 0.91 0.60 0.35 0.33 0.15 0.49 0.27 0.99
+
+7.      Why the output of simulation has to be analyzed? Explain
+
+        Replication of Runs method to any simulation output.  4+6
+
+. 8(a}  Why is simulation tool required? What is GPSS language & its
+
+        application?                                          3+3
+
+    (b) Explain in details of GPSS block diagram symbols.     4
+
+9.      Write short notes on any TWO:                         2x5=10
+
+        (a) Poker test
+
+        (b) Feedback system
+
+        (c) Elimination of internal bias
+
+                                                              CamScanner
+                  PURBANCHAL UNIVERSITY
+
+                         2014
+
+B.E. (Computer)/Seventh Semester/Final
+
+Time: 03:00 hrs.                 Full Marks: 80 /Pass Marks: 32
+
+BEG473CO: Simulation & Modeling
+
+       Candidates are required to give their answers in their own words as far
+       as practicable.
+
+      All questions carry equal marks. The marks allotted for each sub-question
+
+     is specified along its side. Assume suitable data if necessary.
+
+,(}) Answer EIGHT questions.
+
+1.  Explain the ways to study a system. What are the criteria of
+
+    classifying Simulation models? Brief it with suitable example. 3+7
+
+2.  What do you mean by discrete event simulation? Explain the
+
+    principal approaches for advancing the simulation clock in
+
+    discrete event simulation.            4+6
+
+3(a) Explain the concept of Monte-Carlo simulation over stochastic
+
+    simulation.                           5
+
+    (b) Find the value of pi (n) by using Monte Carlo simulation using
+
+    the equation xA2+yA2= 16? Also Calculate error when
+
+    compared with its analytical. value.              5
+
+4.  The computing facility of Purbanchal University has large no. of
+
+    personal computers. On 50% of working days no computer
+
+    fails, on 30% of the days 1 machine fails & on 20% of days 2
+
+    machines fails. There is a repairing facility, which has one-
+
+    service personnel. He can fix the problem on the average 40%
+
+    of the machine in 1 day, 35% in 2 days & 25% in 3 days. The
+
+    service person says he is overloaded and computer waits a long
+
+    time for service. He reminds that next should go for second
+
+    service person. Consider the 30 days slot and verify if the
+    service person claims is .correct by computing his efficiency, the
+
+    number of computers waiting for service and average waiting
+
+    . ~                                   10
+    time 1or computers.
+
+                                          Contd. ...
+
+                                          CamScanner
+                             (2)
+
+5.      Why are differential equations so important in simulation?
+
+        Explain continuous system simulation with suitable example.5+5
+
+6(a) What are the qualities of good random number generators?
+          What are the methods used for testing of random numbers? 5
+
+   (b)   Test whether the 2nd, 7t11, 12th and so on, numbers in the
+7.
+         sequence in the given table are auto correlated. (use a=0.05) 5
+
+        0.12 0.01 0.23 0.25 0.58 0.87 0.55 0.96 0.22 0.88
+        0.11 0.22 0.85 0.36 0.69 0.87 0.19 0.92 0.75 0.43
+        0.68 0.58 0.91 0.60 0.35 0.33 0.15 0.49 0.27 0.99
+
+        Why the output of simulation has to be analyzed? Explain
+
+        Replication of Runs method to any simulation output.  4+6
+
+8(a) · Why is simulation tool required? What is GPSS language & its
+
+        application?                                          3+ 3
+
+    (b) Explain in details of GPSS block diagram symbols.     4
+
+9.      Write short notes on any TWO:                         2x5=10
+
+        (a) Poker test
+
+        (b) Feedback system
+
+        (c) Elimination·of internal bias
+
+                                                              CamScanner
+                                                       I
+
+                  PURBANCHAL UNIVERSITY
+                                  2012 \\\
+
+B.E. (Computer)/Seventh Semester/Chance                   1
+                                              Full Marks: sq /Pass Marks: 32
+Time: 03:00 hrs.
+
+BEG473CO: Simulation & Modeling                              '
+
+                                                                \
+
+Candidates are_required to give their answers in their dwn words as far
+
+as practicable.                            ·                       \ .
+
+                                                                   '
+
+All questions carry equal marks. The ,marks allotted for ea~h sub-question
+
+is specified along its side. Assume suitable data if necessary.         '      .
+
+Answer EIGHT questions.                                                  \  ·
+
+1. Define real time simulation. Mention the advaJ 'tages ·and
+
+             disadvantages of simulation. What are the purposes !:.for which
+
+             simulation can be used?                                           ) 2+4+4
+
+                                                                                  \
+
+2. Explain pure pursuit problem. Solve the following integration
+
+                         I 5                                                         \ 4+6
+
+             using Monte Carlo Method. x 3dx
+
+         3.  For 8 customers, the inter-arrival time and service time in a
+
+()           single counter of a bank are as follows:                                \
+
+        4.   Inter-arrival time: 0.4 1.2 0.5 1.7 0.2 1.6 0.2 1.8
+
+             Service time        2.0 0.7 0.2 1.1 3.7 0.6 0.4 0.7                        \
+
+             Develop a simulation table showing actual arrival time, servic~
+
+             start time, service end time and waiting time for individual '
+
+             customers and find:                                                        10 \
+             {a) Average waiting time                                                          \
+
+             (b) The probability that the customer has to wait in the queue
+
+             (c) Average number of customer in the queu~
+
+             Define Pseudo-random numbers. Explain the qualities of an
+             efficient random number generator.
+
+             Given, Xo (seed value) = 27
+
+             a (constant multiplier) = 17
+
+             c (increment) = 43
+
+             m (modulus value) =100                                                  .
+                                                                uence using Lmear
+             Generate up to 5 random numbers in the seq                              2+3+5
+
+             Congruential Method (LCM) method.                                       Contd. ...
+
+                                                                                     CamScanner
+             I                     (2)
+
+5. What is the role of random numbers in simulation? Consider the
+
+following sets of random numbers and apply auto-correlation test
+
+ta check whether 3rd , 8th, 13th and so on numbers are
+
+independent or not.                                         2+8
+
+Take Zo.o2s = 1.96 where a=0.05
+
+0.21 0.10 0.23 0.82 0.89 0.35 0.46 0.28 0.01 0.43                       r
+
+0.99 0.51 0.33 0.12 0.01 0.41 0.60 0.27 0.21 0.35
+
+0.91 0.02 0.05 0.43 0.95 0.58 0.19 · 0.36 0.69 0.87
+
+6. E~lain replication of runs and elimination of initial bias in th~)
+
+simulation output analysis.                                 5+5
+                      .
+'
+
+7. ~xplain the need of differential·equation in simulation with an
+
+/ example. Solve the following equa~ions by analog method.
+
+i X1'= -K1~1 + K21X2
+
+-X2' = K12X1 - (K21 + K23) X2
+
+XJ' = K2sX2                                                 5+5
+
+8. Explain discrete system simulation. ,Design a simulation model of
+
+~y discrete system in GPSS symbols..                        · 5+5
+
+/ 9. Write short notes on ?.D-Y TWO:                        5+5
+
+(a) Poker tes~
+
+(b) Estimation method in simulation output ~alysis_
+
+I' (c) Feedback·system .: ·
+
+                      I,' · .1
+                      ,-,· ·' ·'!
+                I
+
+                                                            CamScanner
+-\
+
+                               PURBANCHAL UNIVERSITY
+
+                                                2011
+
+       B.E. (Computer)/Seventh Semester/Final
+
+       Time: 03:00 hrs.                                   Full Marks: 80 /Pass Marks: 32
+
+       BEG473CO: Simulation & Modeling
+
+       Candidates are required to gi,ue their answers in their own words as far .
+
+       as practicable.               -
+
+       All questions carry equal marks. The marks allotted for each sub-question
+
+       is specified along its side. Assume suitable data if necessary.
+
+    -_Jj··Answer EIGHT questions.
+    (
+                                  .
+
+       1. Define simulation. Explain the ways to study a system. Point out
+
+       · -;·.: the areas where the Simulation and Modeling can be used. 2+4+4
+
+       , 2(a) Consider the Standard Chartered Bank situated in Katmandu ,
+
+                 valley. Explain the arrival and departure routine queuing model
+
+                 for this banking system.                                               5
+
+       (b) Calculate the following using Monte carol simulation.                        5
+
+                             4
+
+                 · I= f(x A 4)/3dx
+
+                               1
+
+                 Also Calculate error when compared with its analytical value.
+
+           3(a)  What are the properties of rap.dom numbers? Why the random
+
+    .·riJ (b)    numbers generated by a computer are called Pseudo-random
+
+                 numbers?                                                    ·       2+2
+
+                 Using the multiplicative congruential method, find the·period of
+
+                 the generators for a=13, m=26, and xO=l, 2, 3 and 4.                           6
+
+       · 4(a)    Explain combined linear congruential method for generating
+          (b)
+                                                                                                                       5
+
+                 random numbers.
+
+                 A sequence of 1000 three digit numbers has been generated aod
+                                                                         . ~ t digits, 289
+                 an analysis indicates that 680 have three dif:i.eren                .
+                                          .         . ..                        ·n three like
+                 contain  exactly    one  pair  of  like  digi·ts,  and  31  contat  d t?
+                                                                                indepen en .
+
+                 digits. Based on the Poker test, are these numbers                       5
+
+                 Let o:=0.05.                                                        Contd....
+
+                                                                                     CamScanner
+                                                        (2)
+
+    S(a) Explain feedback system and hybrid system with suitable
+
+           example.                                                                                   4
+
+                                            .           .
+
+           (b) What do you mean by Discrete~event _s~mulatiop?_ E~lain the
+
+           components and organization of a Discrete event simulation
+
+           model with flow chart.                                                                     2+4
+
+    6. Explain why simulation output is analyzed. Brief, why ·
+
+           Replication ' ·of ·_ Runs is .performed during . the .analysis of
+
+           simulation output? .. .                          . ·- ·. . .                               5+!? )
+
+    7.     What  do  you  mean        by    distributed      lag  model?                 .  Explain   10 ""'
+                                                                                                ·. ~
+                                                                                   . ;,
+
+. 8. Why simulation .tool ~s ~equ~red? Discuss. SIMSCRIPr and GPSS
+
+           language in brief.                                              . . ·,                     4+6
+
+--                   .    .           .
+
+. 9. Write short notes on any TWO: ·_                                   .  - ..             ''        5+5
+                                                                              · 1 ··
+                                                                           .··, ,
+
+           (a) Continuous ·S~ulati~n --- -                                 ·,'
+
+           (b) Chi square test
+
+           {c) matkov-chain
+
+                                                               . ,·· .
+
+                                                             .. .
+
+                                               .. , ..  ;
+
+                                                        ,_
+
+. ·. "·..
+
+  ' .,
+
+  '
+
+                          '·'."·· ,.     .
+
+                                                                                                      CamScanner
+I ~·- - - - - - - - - - - - - - - - - - - - - 7
+
+                         PURBANCHAL UNIVERSITY
+
+                                           2011
+B.E. (Computer)/ Seventh Semester/ Chance
+
+Time: 03:00 hrs.                  Full Marks: 80 / Pass Marks: 32
+
+BEG473CO: Simulation & Modeling
+
+Candidates are required to give their answers in thei.r own words as far
+as practicable.
+
+   All questions ca.rry equal marks. The marks allotted for each sub-question
+
+ri) specified along its side. Assume suitable data if necessary.
+
+Answer EIGHT questions.
+
+1. Explain real time simulation with example? Explain the type of
+
+simulation models.                                                                                                                                                  3+7
+
+2. Explain the significance of Monte Carlo Method in simulation.
+
+Estimate the value of 1t(pi) using Monte Carlo Method.                                                                                                              5+5
+
+3. What is queuing system? Why do we use queuing system in
+
+simulation? Explain the Kendell's notation in queuing system
+
+with example.                                                                                                                                                       2+3+5
+
+4. What do you mean by pseudo Random number? How do these
+
+random number help in simulation? Explain the Mid square
+
+random number generator with example. What is the problem
+
+with this generator?                                                                                                                                                2+3+4+1
+
+Why do_we need to test the randomness of the number in
+
+simulation? What does Kolmogorov-Smirnov Test indicates?
+
+Perform the Kolmogorov-Smirnov test with the following data at
+
+level of significance of a=0.05.                                                                                                                                    3+2+5
+
+0.24, 0.89, 0.11, 0.61, 0.23, 0.86, 0.41, 0.64, 0.50, 0.65
+
+6. Explain the estimation method to analyze the simulation output.
+
+Why do we ~eed replication. of run in simulation? Explain the
+
+s1"gnif1i cance of chi square test.                                                                                                                                     5+2+3
+
+                                                                                                                                                  I                 Contd....
+                                                                                                                                                 I
+                                                                                                                                                               _I.
+
+                                                                                                                                                                    CamScanner
+            (2)
+
+            7. Differentiate between discrete system simulation and continuous -
+
+            system simulation. In a manufacturing company, soap comes to
+
+            testing room in every 10 second with offset value of 2 second. In
+
+            the testing room it takes 20 seconds to test whether the soap is·
+
+            of good quality or not. If it is of good quality then it is accepted,
+
+            otherwise it is rejected. It is found that 90% of the soap is of good
+
+            quality. Show the GPSS block diagram to represent the above
+
+            system. Explain storage and facility~        5+3+2
+
+                                                         '. 
+
+            8. What are the applications of feedback system? Explain th~)
+
+            analog computer model of lever.              5+5
+
+            9. Write short notes on any TWO:             5+5
+
+            (a) Elimination of internal bias ·
+
+            (b) .Deterministic Vs Stochastic Simulation
+
+            - (c) Hybrid Simulation_
+
+                                                                                                                                          ,ct ·~
+
+                                                                                                     1
+
+(ffl
+
+CamScanner
+'/                PURBANCHAL UNIVERSITY
+
+y' \ L·
+
+     ;,
+
+                                            2010
+B.E. (Computer)/ Seventh Semester/ Chance
+
+Time: 03:00 hrs.                         Full Marks: 80 /Pass Marks: 32
+
+BEG473CO: Simulation & Modeling
+
+     Candidates are required to give their answers in their own words as far
+     as practicable.
+
+     All questions carry equal marks. The marks allotted for each sub-question
+
+~ -is specified along its side. Assume suitable data if necessary.
+
+'-. Answer EIGHT questions.
+
+1. What is system modeling? What are the types of system :i;nodels?
+
+         Explain dynamic physical model with an example.         2+2+6
+
+2. Explain the limitations of Simulation Techniques. Find the value
+
+         ftrof cos xdx using Monte-Carlo Method.                 5+5
+
+         0
+
+3. How pseudo random numbers differs from random numbers.
+
+         Using the multiplicative congruential method, find the period of
+
+         ·the generator and also generate random numbers upto its period
+
+         for a= 17, m = 26= 64, Xo = 3.                          3+3+4
+
+4. Write down the steps for the Kolmogorov-Smimov test. Test
+
+         whether the 2nd, 9th, 16th, ...... numbers in the sequence are auto
+
+         correlated, where a = 0.05.                                         10
+
+         0.30 0.48 0.36 0.01 0.54 0.34 0.96 0.06 0.65 0.85
+
+         0.48 0.86 0.14 0.86 0.89 0.37 0.49 0.60 0.04 0.83
+
+         0.44 0.83 0.37 0.21 0.90 0.89 0.91 0.79 0.57 0.99                       .
+
+         0.94 0.27 0.40 0.81 0.96 0.31 0.09 0.06 0.23 0.77                       .·~cC
+
+5. Differentiate between deterministic and stochastic simulation.                .
+                                                                 3+7             I~
+         Explain distributed lag model.                                          t
+
+                                                                                 I.
+                                                                 a rrivals of 1~:
+6. Consider the following table for ·time between
+                                                                                                     1·
+
+                                                                                 1-
+
+         customers and their service times in a library sYstem.
+
+                                                                 Contd. ...
+
+                                                                 CamScanner
+                            (2)
+
+          Distribution of Time between Arrivals
+
+          Time between arrivals (minute)  Probability
+                           1                 0.23
+                                             0.37
+                         2                    0.25
+                                             0.15
+                           3
+                          4
+
+          Service Time Distribution
+
+          Service Time (Minutes)   Probability
+                      1               0.10 .
+                      2               0.20
+                      3               0.33
+                      4               0.22
+                      5               0.10
+                      6                0.05
+
+Do a manual simulation for 15 customers and calculate average
+
+waiting time, average time a customer has to spend in the
+
+system, and the probability of server being busy.      10
+
+7. Define state descriptor and discrete event. How do you simulate a
+
+.telephone system, explain with its states.            2+8
+
+8. Why the output of Simulation has to be analyzed? How would you
+
+       eliminate internal bias in the analysis of Simulation output? 1O
+
+9 .· Define normally distributed random number- with example.
+
+ExplaiQ .the need ·of differential equation in simulation with
+
+example.                                               S+~~'j
+
+10. Write short notes on any TWO:                      5+5
+
+(a) A pure pursuit problem
+
+(b) Feedback ·systems
+
+(c) CSSL
+
+                                                       CamScanner
+'
+
+:J-'I ·
+
+~ 1
+               _ _ _ _ _ P_U_RB_AN_C_HA_L_U_N__IVE_R_S_IT__ Y _ _ _ __
+
+                                  2010
+
+   B. E. (Computer)/ Seventh Semester/ Final
+
+   Time: 03:00 hrs.                  Full Marks: 80 /Pass Marks: 32
+
+   BEG473CO: Simulation & Modeling
+
+   Candidates are required to give their answers in their own words as far
+   as practicable.
+
+   All questions cany equal marks. The marks allotted for each sub-question
+
+   is specified along its side. Assume suitable data if necessary.
+
+   Answer EIGHT questions.
+
+   1. Discuss real-time simulation with an example. Mention purposes
+          of using simulation. What are the limitations of simulation?
+                                                                                             4+3+3
+
+   2. Illustrate discrete event simulation. Explain the principal
+
+        approaches for advancing the simulation clock in discrete event
+
+        simulation.                                               4+6
+
+   3(a) Consider -the Banking system, to explain the arrival and
+
+        departure routine queuing model for this banking system.     5
+
+   (b) Find the value of pi (n) by using Monte Carlo simulation using
+
+        the equation x2+y2=16. Also Calculate error when compared with
+
+        its analytical value.                                           5
+
+4. The computing facility of Purbanchal University has large
+       number of personal computer. On 50% of working days no
+
+        computer fails, on 30% of the days 1 machine fails and on 20% of
+
+        days 2 machine fails. There is a repairing facility, which has one-
+
+        service personnel. He can fix the problem on the average 40% of
+
+        the machine in 1 day, 35% in 2 days and 25% in 3 days. The
+
+        service person says he is overloaded and computer waits a long
+
+        ·                         .                  Id for second
+        time for setvice. He remmds that next shou go             .
+                               .                     ·t if the service
+        setvice person. Consider the 30 days slot and ven Y       b
+                                              .      . cy the num er
+        person claims is correct by computing his efficien .'. time for
+                                                     e waiting
+        of computers waiting for service and averag               10
+
+        - computers.                                         Contd. ...
+                                                                    CamScanner
+L
+                                                      (f
+
+                     (2)
+
+5. Discuss a pure pursuit problem with a suitable example.
+
+Represent the following equation in terms of analog computer
+
+block diagram: Ax"+Bx'+Cx+D=0                             6+4
+
+6(a) When generating pseudo-random numbers, certain problems or
+
+errors can occur. What are they?                          3
+
+(b) Use multiplicative congruential method to generate a sequence of
+
+four three-digit random numbers. Take :xo= 117, a=43 and
+
+m=l000.                                                   ~ ,~
+
+7. Why the output of simulation has to - be analyzed? Explain
+
+Replication of Runs method to any simulation output.      4+6
+
+8. Explain Discret~ Simulation Language in brief. Explain the
+
+_.~Y~!~m concepts of Simscript. How a program is organized in a
+
+Sirnscript?                       ·                   3+3+4
+
+9. Write short notes on any TWO:                          5+5
+
+(a) Marcov Chain
+
+(b) GPSS -
+
+(c) Feedback system
+
+                                                      CamScanner
+

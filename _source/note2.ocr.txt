@@ -1,0 +1,2670 @@
+| Chapter = G                                          ( date |   -
+
+ Random Numbers                       --------------              TM~
+                                                                  _~
+
+                                                                 ---
+
+                                                                 a
+
+A AUMer choosen Aron cfeci fied dichibutton random|sy
+
+searched thot the Selection of forge ser of ANNs                 --
+
+W\UMb er- reproduces  the Un der ty. distri butfon  Ore          calle,
+
+YaNdgm Numbers:                              .         |                                       --
+
+                                                                 a
+
+Pro pertion af yaadom numbers  .        |                        aie.
+
+Q) £qudl_probatbtitty: The. chance of -- On ran dom OY ry
+
+"om Set of dich$butfon Ove equa)                                 =,
+
+                                                                 --
+
+@_|l Tadependent > The rondom numbers ore Sadlependont from
+
+each other fn a cot of dictibutin.                               __--
+
+@ Orit a              random NnuMbtr generated on pu ld                                                                                                                              a
+
+                                                                 be Uri '
+
+that morc a Sequence of yandom mp. Shoulbde equ)
+
+probable everywhere IP ue. divide al! wt of rondom numbes:
+
+Pn Sven) number of" clascex, `Toterval then number pf|
+
+SAM es ital ©Ach CASS Shou \d__he same. \f N rumper of
+
+andom Numbers are divided "ato C cla inter yo) then |
+
+toe Number of! Sample 10_@ach Sntervay ws N/k.
+
+                                                                 --
+
+| Maxinuen densi . The wares NUMber of Yardom NUM Oe a
+
+| Should be aceerated Nn 0 <a range.3)                           a
+
+Maximum cycle:4 state, that repetation                                                                                                                                                                                             _
+
+he gllouxd Ofte y 0. ons Tater vol.     ef' number shsy
+
+                                                                     ry
+                                     8)                             =
+act We USe YaNdom numbers Iq Simulation
+
+Model uncertat, i amg systoon, KMnPit random hohawvfoduure
+
+ty Inherent Uncertatatty -Ra         aumber A\\oux _Simuldtfan to --
+
+yefleck the Varraby ee
+
+Cho chastic _ Procee¢. IN simulation processes Pre queuing Aaventon
+
+Peanafal market, thug randomness 1S essential to Dee aratelys
+
+repre@nt the dynamis involved.                                      i
+
+                                                                    --
+
+sratichica'. Samnpling= Finding the mean, Varfane.: dittthutfon of
+
+-gomple of Yandom numbers can be used te Rad averall 2
+
+_dtstrPutfon of! Complex _ Systeen,              |                  .
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   --
+
+4)|| Monte Garto Methods : This. fechnique Yel On Yandom Stopltos
+
+     40 Anprs priate _golufion cor the problem `hat may _he_ APP Ful
+
+4problem.                                |  sia
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 --
+
+    RobuUsmese Testing : Roadom inputs Can be. used to tent:
+
+  O\Qoritinm ¢ 6 models under _dtffereat _scecario Oat -
+
+|| Frog tney are robust & relfable qonss a range. of condition
+
+                                                               --   --
+                                                       ------       Re
+
+                                                                   ----
+
+--_-- Random Number Table
+
+     `A _Yondom number table s_o grid oP number arronge
+
+      Pa vandom Order. I+ fs used Tn gtatistic Oy yeceafrorch
+
+af erera ting. random - sample, Or conductiog experiment wT tho,
+
+       Boleke                                                      ----~,
+
+       Yeotures of yondom number _foh\e
+
+@ || Kondom distrpution : The number are ditty? huted un tfores
+
+       pers each a . equal) --_ of a
+
+a | Spects red range Th Fandom numberin random                  rien
+
+itnhle are Ta spec? Pied Yonge                      :           :  a
+
+i twoere used regearr hers. ls statistPoalls  used     rand am  NUMbers_
+
+Groen the random numher table. .                                             55
+
+                                                                                     --
+
+       Peeudo fandom number
+
+They are the random NuMmnmerc that are gecerated 4 uct
+
+IQome CMON rye nod i produce O cequence of Numbers _               a
+
+19 (0,1 Ahot _COn Simulate _tdeal monerti ea of Yaadom
+
+AuMbers. Psoudg yandom number aOre_nok comple bly yondoon
+
+ag the Set of vaondom numbers con be vepvicated by
+
+       ugd of' known _ynethod-                                     7
+
+=) || Problems Aggootated with Pgouda vondom Number                i
+
+@) | We generated YOrndom "Numberr = Mot be uniformly              i
+
+       distrtouted              |                                                    :
+
+® ||The qonerated rondom numbers eafaht tos digcrete vale.
+
+                                                                   ! Scanned with |
+"The mean of vaniance od generated  random     numer        might
+
+be 400 high Or 400 low.
+
+There eight he: Or relation behypen the random nuenkers _heing
+
+Consideration while _genemting pseudo randora nurnhers | ___
+
+"\he method UCod to fenerate pseudo Yandom numbers must
+
+tact because COmplex Systom requires more number Of random.
+
+NUMbe IT. for Simulatfon.                                          :
+
+The methods Ghould he Portable on varfous Platforms
+
+PmGranaeniy, language so OA  __to 4fne rare _Sene rehult Whenewr _
+
+rt Ts executed .  kt                        .                      z
+
+The. yondom number generator MuSt have yonetafien numbe
+
+Vee igh:                     .                                     7
+
+The `yandom number Sholud be replicable, it meance game Ser|
+
+of yondom number should he gene rafed Cutty Same Started
+
+pO ats -                                                           z
+
+The generated , random numbers Should' be Uniform (s Tad epandent
+
+                                                      ----         --
+
+                                                                   --_--_----
+ pee                4> Pure: "Rardom riinhor                                                       i;
+
+ ei ut                                                                         ----,,*
+
+i1gg Ty[                                                                  co.
+
+(ees           1) Generated Lam. -physfaal process                   nerated hb      a Bue,
+
+   pheres 4       |||Bdeeca tfotre.mal_noiie_mdinactte gorithm ov Ssftud| te ,
+
+    Re         2, llonpred itary te ds  NON -- re produa@b           Prod ic tow on         bi zy
+                                                                          et ive. AQ oe thee
+  ob                |                                  :
+
+ sp            /    |                                 :     :        OP B90 Bnei:             .
+
+ ot j-         _2) h| iUne Porer _d?Ssttrr?iputtaoer           |                                  a
+
+ae                                                                :  AoproxlDy mate | tp unifies de
+
+               ! :                                             --| utton                    iy
+
+, ce           a | S! Ow Py to Gone rate|                            Foster to Fen erate |  agg
+
+--                                                       ;                                  aie
+
+| --         ft ghee deg ree of) yandomness.                                                ele
+                                                                     May fail Some ctaticttl
+
+               | a
+         «|-; Pseudo Rardom Number                                                            a
+
+ae Gone rQahon TMM heads                                                                      a
+
+         8) be? {O%9-) 'F5): hod ws
+               "CO r Songruen +10. M ethod                                                    a
+
+               | Where, | Xlo) 1S Initial vandom Lateger (seed )
+
+                         is multiplier (a0)
+cen | b is `Snorement (to>0)
+             | o
+            /       dl | g Modulus.
+
+                                                                                              _
+
+7        |     ae Xie (X41 +5) `nod -                                method )                   -
+: ]
+                                         ( AddictSye cong enthal                                a.
+
+      |                                                                                      esse
+
+                                                                                            ! Scanned with |
+                                          ( Date |
+
+                                          Page |                           ,
+
+aah': Th b=-0 , ae he: (OX4-1) mod TM
+
+                (MulHplicative conqnuectial rnethed)
+
+Tre and0y _ nurber generated for cach random Integer is
+
+RC) = XCF) /M        for t= 0,1,2,3,-- >
+
+, ht generate & random NUMMhp r. ae \Ireor congruerstia)
+
+     method. hoving. K (0= 3)9, O212b,= 2! m=lOo
+
+Ay Using | Paco + conansensial Method dor S Yandom numbers
+
+                CUO ie +o } mod mM
+                   =(12 Xo +21) Mod Ido
+
+                = (10x 30421 ) mpd 190
+
+                     = Ri,
+
+Xs = (19x. 94-424) Mod 100                                              "
+         = 9%
+                                    4 cm
+  R,=Xo/m = 93/100 = 0-92
+                                         <
+= Bs           ) mo
+                                                               ae
+          :
+
+           = 6S
+
+        Re = (10 xz +h) mod TM ) |
+
+|
+
+| = (12v6S+9 1\mod too
+
+|
+
+| = -
+
+!
+
+|
+
++}
+
+    '
+
+|
+                               b=O                        f Date |
+
+                                                                                                                a
+
+                                                             Page |
+
+                                                                       _------_--_--___
+                                                                                                        --~
+
+                 Use mau ltipiiaatio ---- method Lorth Q=972,b=4t,mwm" ="
+
+                 by Xo= | pes
+
+                 We _Cnous, for vault pitcabiv conquer paothod ,                  .
+
+   }                   sc Oi...) mod m+                )                          i
+
+   The, - b= O                      cs                    onal                    ~_
+
+|                              Xfz @Xf-1 ~~) mod m
+
+   I                   Xt FaXes, mod 12°                                          =
+
+{                      Xt = 22Xt-1 mod 256                                          -
+
+|                                                   |                             -_
+
+dor Xo=l izt,Xi2 28 Xi-1 mod 256                                                    :
+
+|                      ;       = 93N%0 mod 956                                    --
+
+|                              = 924 mod 256                                         _
+
+                                    = 23                                            _
+
+                 122 4 Xe- 23Xo.mod 956
+
+                             = 93xX, mod 256
+                              =22x 93 mod 256
+
+                           £\4
+
+                      Ro= Xo/m = Vila 56= 0:06
+
+                 123.  Xa 93% 5 mod 256
+
+   _ -----.....             = 92x'F mod 956               SO, Ra: 'S>/o5¢ = 0:52
+
+                             ". \85                    Rus 3% 656 =' 60-19
+
+   iz 4Xa9s 3 X3 mod 956
+
+                 =93Xx\25 mod 2956
+
+                 - 33
+
+                                                                                  ! Scanned with |
+                                                                                                               a |
+
+                                                                                                                   Page |
+
+| ke 5 X56 = 92% mod 256                                                                                  256
+
+               = 93x99 mod 2561 )                                                                                                                                                                                ----
+
+            =2u4                                                                                               Raz Min 4e= 0°05
+
+    For Xo > 2 5                                                                                             Kae 66/0662 0-95
+
+     vet At =93Xo mod 256                                                                                 --------
+
+                      243K mod ! 2&¢                                                                          Re= 2388/9 20:92
+
+                        = 4¢                                                                                                                                                                                                                                                                                                                                        ----
+                                                                                                                                                                                                                                                                                                                              _ SO
+    122 , X09 223%1 mod 956
+                   293x46 mod 256
+
+                                                                                                      --
+
+   A= 3, Xa=22X%, mod 95¢
+
+                722 x 3U_mod 26%
+
+                    = (UY
+
+   (=, Xaz 93X3 mod 256
+
+            = 99x14 mod 29656
+
+                       66
+
+  i=5, Xo=236xG mod 256
+
+                                                                                                                                                                                                                                                                                                                                                                          ! Scanned with }
+                   | ,      Ans: X22 pertod we           |                             a
+
+                 '                   Yor Y period a"                   :  ( s | _-
+
+                        fr                                                ' Page | aa
+
+a ce          Q. |Using THe mu Lip) fcative ak 0p method.- Fi ee
+
+bite alee                                                                                                                                                                                                       r¢
+                 lof the neroter       -0=13,.0= 2 and Xo-9 OY. |
+BT as            i Ama                                   =                          oe :
+
+ane              nN mult          conqnential (4-6 |                      a sas     ;
+               fa, Mel a altacdoenc ieee `ana se + ED
+see           |           =19(Xt-1) ened 2°                                         nd
+
+"thee         |         _ =19 (Xt-1) mod 6y                 e.                      --
+
+a             Ifor ka=2, Tor i Lg Xie Wot pecd dh                                 tn
+
+=                                          = 2x2 Mod 6y                            Ria
+
+a             for t29,X9= 12X96 mode6Y 12                                         --~
+
+-              for |12 3)X%g= 13X12 mod 64=4o ©                                     Tas
+
+etna          ov t= 4, Xue 12x40 mod 6U=3uY                                             ae
+
+4             for (= S, Xs=13x3u stl 64 = 53             Pe, |                             ap
+
+              For i>6, Xe= IBx 58 ME a                           a Oe                     R
+
+                " =F, X3- 13X50 mod 6Y= Ip                                                or
+
+                rtsin Xe=13xlo mod 6y=9                                      | .
+
+                        pean 2. & Xg 22 \epeatod                          =
+
+              STince_ Seed 1S -- at Step 8 Period in g                                                7
+
+              fortes a fs f=) Xs)Oy aed Y| U                    |                |        ;
+
+r          |                      "IZ XY mod 64 |                                      q
+
+-          7                      "52
+
+           [for 1=2,Xo- 12X52 mod 6u= 3¢                                                1
+           ee                                         )
+_____IAby i= 3, Xa= 13X36 mod 6Y= 29                                                   es
+
+                                                                                       a
+
+_          for \= q X42 13x90 mod 6U=4--
+
+                                                                                    : Scanned with }
+.
+             --
+
+                                                                                                                                       )
+Nace seed tc repeated af Sten Y period pee
+
+. lOSe near 9 gruential method tO qencra fe random Aumber uth
+
+CU porfod with seed `valve 6 6 J. Taveazt2,¢:5& mz 26
+gore -                                                                                                                                                                                                                                                                                                                           y
+
+Hor y -¢ (5 Xo oc7.      }                                                                                                                                                                                                                                                                                                       b b e_ SUmie
+
+for YoGrsts t= 2 Xi-1 49) mod on                                                                                                                                                                                                                                                                                                  R= 95/96-= 0:96
+
+               Xi (19x Xe 7S) mod 96                                                                                                                                                                                                                                                                                             R, <19/26 = 0-33.
+
+                  = (2x bt S)mod = ee                                                                                                                                                                                                                                                                                            R= 25/76= 0-96
+
+                =95 3                                                                                                                                                                                                                                                                                                                                                                7
+
+ For f-9N(19OY 95¢5) mod 26                                                                                                                                                                                                                                                                                                         WR, ="/og= 0-42
+
+         Yo= MS mod / 26
+
+                   =o
+
+        X3 = (12x 195) mod 26.
+
+                ae
+
+                                                                                                                                                                                                                                                                                                                         ------
+
+             Pane re poate go stop _
+
+ for Xo= F, Xs= (loxttS) mod 96
+                  ae
+
+        X o's (yoxi1+S)  mod 26.                                                                                                                                                                                                                                                                                                 Ro = 4/96 =0-26
+
+            =F
+
+_       Since Yo= 4 Jo Xo=7 ,repaated
+
+        So Stop.
+
+                                                                                                                                                                                                                                                                                                                                                                                        ! Scanned with }
+                                                               ------_--
+                                                                 --
+
+| Combined Linear Canaquential Method                          =
+
+| 1+ Ig a fechatque. that combines oul tiple [Peear_cangne ntia! .
+
+Qencrator Aca) to produce more. conmplex sequence of pieudo tandon
+
+NUMNbe vs.                                                     i
+
+\s LQG Kink) - (, Xat+bi) mod mr                         seat  :
+
+The Combined paerator produces --~ random numer aS             =
+
+                 Zn= (Xo +4n) mod 1 _     .        |     :     ;
+
+--__------
+
+where,           3
+
+            m is MAXIMUM of! mM , ( didi
+
+93,bs mi. = mulHpfier I, Increment 1, modulus1           a
+
+Org Snr, MM, = mull ter D,increment 2 modulus 2       7        -
+
+-|L%r=S, 216, b=Z, Yor
+
+Woe ICnow                           Aa ° mnt OF '
+
+Then Katt = (AiXn+b:) mod _TM, Moti (O24 tba) mod me
+
+For n= 0) Zo-((+t\) mod \6 =92            Kes 2 =: ONES
+
+For x= (Q\Xo+tb)) Mmodm, |                      6
+
+            ~l5x\1+4)mod \6
+
+            2.6
+
+            Miz (O% Yo +he ) mod +
+
+                ~(KI49) aod (6
+
+            2S          |
+RS Hs        <a
+
+                       of \6
+
+` = (A,X +h,) mod rN
+
+      - (SX64+, 4) mod | 6. = 15
+
+          2      7
+
+     (3x 542.) mod 16
+
+     orn
+
+| (Sx (S71 t) mod I|6             (3x142) mod | S
+
+            7|92                  1 )
+
+                                      UO)
+
+Zo=
+Mid Square Method                                            number __b
+                                                             the reaul .
+Tt Ig O technique for aoerating pseudo randon
+SQUArin OQ Number bs facing middie digut of
+
+oe,          =                    i                      cs  ana sO O odded
+
+re 12 QU                     X (1 234)°          --e dip cr th            d
+
+    u Aco                        = 01520456           ,                   .
+
+ote ANS                        aE!                                        |
+
+     Xp =(529F4)*                     Xo = (3 915)"
+
+        = 274321529                       = 10336225
+
+          = 239\S                           = 2262
+
+     X us Q362)" |                    Yc = (30302                         :
+
+          =\1 3n2o0umM             .  = OF1 809 00           ites         :
+
+           = 2939                     = (R09                 de
+
+Algorithm :            |
+
+N)||Choa "an initial) Seed :select a seed YXo(a_ positive Rateger) |
+
+2)| Square tine seed = Compute Xo            `:                           :
+
+9) Extract mfddle dig: iFrtom the square result eyvtrack a Tired
+
+NUM por of' digit Proen middle to Sov on          r\ex+ rondOm Integer Naas
+
+4)|| Modulo operation     |           |                                eee
+
+| \P NECESSONY , OPP 0 Mo dulo Operation         TO. Ceep yandom Number
+
+| ugtthtn the Neadiar range                                               i
+
+| Repeat the process by ug Nou seed Xa-4s.                   te           é
+                                                             / date |  =
+
+                                                             Page |
+
+;              | Rrame ter fox Testing Randomness                      =
+
+   : Q_| Unif&rmaltty teat                                             =
+
+   a   Q) Shi > Square. text Calero qoror Smirner (Ke) TOA+            ae
+
+© || Sadependent ton                                                   7
+
+   if  ~ ||Run tert, auto-_correlathon fest                            7"
+
+4      @) |! Dict Poution                                              `
+
+;      = Histoqvam analy ss                                            7
+
+is     (4)     A test                                                  i
+
+               - Monohit_ test                                         _
+
+       © Run fy Pottorn ters                                           ;
+
+               --Ron tert.                                             =
+
+               ~Poter text                                             :
+
+       © ||Gon toms                                                    :
+
+            !                                                          =
+
+7           |
+
+       ee                                                              =
+                                                             --    i,
+          |K-S teat                                          age|
+
+        aa                                                                a
+                                                                       --
+        y |The seavace of Nos
+\ )                            0-63, 0-49, 0-94 ,0-S94-4,1, 089 has
+
+        been Qene rated use Ko- tet uth A= 0-05 bs Dx=O056S5 dole ata
+
+         if the hupotrestc that the numbers are vaifor rly ditt fouted
+
+        On iter val) Co, | COn 'e retected Dr. hor                     :
+
+        Stepe of K-S test (Klumorfeal))                                                                                                                   --
+
+        Set the hu Pothest¢                                                 2
+
+            Ho: Random no: Are uniform dfctrfputed                           :
+
+          Hi: Random no. are not Uniform __disty?puted.                         2
+
+                                                                   |
+
+        1) Avra age the yvondom _no- in ascending  Orde.
+
+            0594-0289: O54 O- 63          2 A
+
+     hte a  1/N                Wy- RCT)   git)-                          ;
+
+     |      0-2U | 0 -\64     -- 0-043             O-9u                   :
+
+        39 0-4g | q286     1. = G15                .Q:- 239              .
+
+        i 33:10:54 | 0:5        0-074              i               aces
+
+        zx | 0-63 | 0:7             0-04           one,      4.           r
+
+        E lon | 0 83              O125    _6:043                        7
+
+           6 .|                   OW       0-054                      ;
+
+            Dez max (T-/&Fn))  DcrmaxtRix ae)
+
+                - 0192            = 0-32
+                                                       (wale |          _
+
+                                                                        ay
+                                                       = Page |
+
+Iv) "Test hypothesis                                                    _--,
+
+  | 03220-5665 (." Dé da)                                               at
+
+            $0, we CGnnot ve feo mu |! hy :po thet: -
+
+            Thos, Yandom_no. are uniform.                                    =
+
+                                                                        IN,
+
+j. |lSer the hypotherts |                                                    7
+
+      | Ho Random No: ave Uniform dist? buted                                 =
+
+      nae Random no: Gre not uniform distr'b uted:                       7
+
+      |              7                                                    "
+
+2._|Artange the YOndom no: In ascending Ovcler -                             :
+
+   |                                                |                    3
+
+2. | Calcutare T/n ,i/N- RC?) © (R¢))-G=) fey each              vondom
+
+   puraber ital 0 talbulated orm .                                      F
+
+   | Then, catcutate / find D+ @& DB = -
+
+   |     |  D= max (P-/RCNF))
+            Noe max (Ri): :-- i=!)                                      ;
+                                 see
+   |
+
+            Pend D= moyl b' Db)
+
+4
+
+        Be  Dd < Da   then  116 CHon 1c Not done 1 OVO Uinstboven:,
+
+   Lif!     D7? Da   thor   yorec + nu! | hypotheste, Ore nok unthorm.
+9:54 093 O47 O42 0°69                               Da~ 0-565
+
+seorf Wypathesic                      sti                              `
+
+Ha: Random no. are uniform dittributed                                      =
+
+Hi: Random No. Are Not uniform dittri buted.                     |  ; =
+
+--  --      --                                                            _
+
+Arrange the Yandom no. in ascending Ordor.                       =       Z
+
+On11 0754... 0-69. + O43 O98                                               -
+
+ i ar          ee                     1/N- RCT)        RCT) - a
+
+ peeste kL    0-2                        0:03              O-1
+
+2220754       0°G_                     =O-1%               0-34
+
+3 0-68        0:6                      - 0-08             0-22
+
+G0-485).    Og                          0-04            013
+ere           as                        0-29     | - 0°02
+
+Db =max (1/N - R¢7)) |                     D_= max (r3- EE)
+
+D =max(D Dd")
+
+yrejh' 24                             |          |
+
+SV) ii iiTeVesst hugypotiaesi:s |  7
+
+    0:34 <0:565 (".D< De!)
+
+SO0,we cAmoet YO;ECL nul| hy pothesis:
+
+Thus, vandom NumMboer Are Uniform.
+
+                                                                    ! Scanned with |
+   )                                                          tian |
+
+   |                                                          Page |
+
+                                                                         a
+
+                                                                                                                                                                                                                                                                                                                                                --
+
+   A Jotal of 124 customers ore Tnterviewed Gbovt HhePr
+
+   leaned ence in caralougne Sho pPing by ve tar Store Sasppi-
+
+   The_statistics are_tabulared below.Perform a K-¢ test +o --
+
+   HE but Whether the             nNumrer Drovided are Staatalty                   _
+
+idanit Saat         Yen}.          |                      .
+
+                    O falOugx Shoppt .                 Retai\ Store
+
+]Cateq dn           a Frequency            7           Shop pteg rea uencs
+
+Inon contident :             OMe                              4
+
+KMiahtiy contideat           30:                    |         74
+
+| : ve cont ident             \3                              28             C
+
+| contident                   20                       dis \g                rc
+
+: Total                       |2u             |               12u            |
+
+Ss PEER                      Probability sy.                             --
+      diego, LSE| ge | rm, IR
+
+   Non confident F201: O'\G! | 0-161                         0-032 | 0-032 | 52%
+
+   slightly confident 1.30        0.941 O42 | |27o-2193 | 0:2uq? |O1S73
+
+llsomew hot ssn Padpce'l Daf: HOG eos 128 /o.296 |ON74?2 |O-022
+
+   contident        29 | HUEl cs 1 662 IW lows |o6lF7? | 0-04
+
+| your conf dent    os            O33 | $00 [44 fo3tG0] 2}                   oO
+Lo
+                                                                   |         Max=
+
+|                                                         iz                 D= 0-152:
+
+|For Jus sample ca8 sett                |              |              .            _
+
+   Daz CCA) ore                                  |                                 7
+
+|     |       Mx 2                                                                 -
+
+      for X=005 =) Cld)71.36                                                       _
+                                                                                   ;
+      c 1-36[1Qyutigy < O'1720
+
+              r 124 e ¥ 124
+
+                                                                             : Scanned with |
+                                 <q                                                                                                                                                                                                                                                                                                                                                        ,
+
+                                                        a
+
+                                                           Page |
+
+           DP
+
+--_------
+
+1 0O'152 ¢     O'1F20
+
+ Noll hy potherts IS Not rerected .
+
+Hence, the generated Ao. Ore independent:
+
+Chi-Squae "Test                               |                                                                                                                                                                                                                                                                                                                                               :
+
+Independence of random No.                                                                                                                                                                                                                                                                                                                                                              |     hoes
+
+evel of confidence                                                                                                                                                                                                                                                                                                                                                                            =
+
+level of SigniFoance =|- level of confidence                                                                                                                                                                                                                                                                                                                                                  =
+
+G5). love of   | conticlence                                                                                                                                                                                                                                                                                                                                                                  :
+
+   =| =10:95
+
+     =O:05
+
+Test uonether The generated Yandom no. Are: inde Nendent Ov.
+
+Not gy 95). con Pydence Tater val.
+
+96.91, 54,09 54, 06,52, 06,58,02, 54, 01,49,99,U9, 92,23, 25)
+
+49,95,42, 84, 43,19,09, U2, 95, 38, 49,99,65,09, 56 97,39, 83, 31
+
+44,19) 62,03, 49, 99,34 ,13,17,58,'', 51,92 -
+
+So\"s- |                      :                                                                                                                                                                                                                                                                                                                                                               a!
+
+1} Set the Hupothesit:                                             a4                                                                                                                                                                                                                                                                                                                         :
+
+Nutt Hunothnen is ( Ho }: Random AUMH?y_ Are Iadependent
+
+IA\\ ternative Hypothesis ( Hr) * Random number aro not independent -
+
+                                                                                                                                                                                                                                                                                                                                                                                    SS
+
+                        me
+   |                                               Peae |  ai
+
+      intoryad | op PEC) [or-et | Coren? |] fe Ee          "
+
+      0-10 8     5   <a        bean        2.              _
+
+      lo-20  5 os    `on | O               O               7
+
+4     _20- 30 2  >   2         9           Ig              x
+
+: 30-Y4o 4       5   od        i           0-2
+
+      4-59 3     5 aySeed Aoki             O'R".           7
+
+-_*_ 1 50-60 g   bs  3         2           1-8             ;
+
+= _ 60-46 2      5 "3 4-239                1-2.            -
+
+   Fo-80 | 4 5 5                  4        O-2-            -
+
+~~. -80-90 | 3   5 ots         na          Og              -
+
+= | 40-100   G   5   1         1           Q-2             :
+
+| pef¥ee of freedom: AcJ= fo-1=9 X<0-05 |                  7
+
+E     Dn-1 0-05             |
+
+3     zeOS                                                 -
+
+      = 16.99 PRS: to bie)
+
+     4-4 <16.92
+
+   The nul! hy potreats Ip no} mye cked .
+   Hence, Tandem no: are Sadependent -
+
+                                                           ! Scanned with |
+   Runteart (Run UP and~ Run down)
+
+      ,
+
+      Inde pendence of random no.
+
+                                       N=i 40
+
+                              4
+
+   OU O68. 0-89 94. 4 OY a Hels                                                         2
+   ist         4       4                         -   +
+   O62. 626 90:27 ' O19 0:72 0-45 0:08
+   eek         +       =      +                  --
+
+;  O:54u 9-02 _O:Ol       0°36 0:16 O22                 0:18
+
+:  oeOA"O\ SRiRtS 0:OS :ons`61 :5 0" etaey Oru}                             :  |     |  :
+
+                                                     6:23 :9:32
+
+"  O°82.) 3 5S 2-<O'S! O12             6°93. -0°0 Q°¥"2                           |
+   +           =       =      +
+   BUSA Og) SO SF O63. 2 O29
+
+   Based on run xt chece whother the Sequence is Yoandom no- Or
+
+   rot: Ciniven Zio =|.96 )
+
+   We accen Hunothest if 7 tig SLE Zatin
+
+   Soi?--
+
+   | 90t Of the hypothesis
+
+   Noll Hunotrest > Ho') * Random number are Inderendend é                              :
+
+   A iternahve Hypoth ests (Hi) : Random Number Ave not independent-
+
+   [Totalno.- of runs                                                          ae
+
+   |_asoy                                                                                                   i
+
+      Ha=QN-1  = 2x4o-l       = 26-33                                                                                                              ! Scanned with |
+
+   "TT :       Betsey,
+
+   | To*= 16n-29 =16x40-29       = 6-49
+
+           Go             30
+
+                  a ae! A ed
+      |                                                       Pege |  =
+
+S: || Calculate +ensd statistics
+
+   iH |  rae == Ha              `                             id
+             v,
+                                                                                                a
+   !         - 2U- 96-33
+|            2.6)                                                     _
+
+|            = - 0:29                                                                i
+                                                                                     i
+|
+
+|                         ?
+
+   _ iL 1- £ -09 99$16 :96 (True)
+
+              !
+
+       ILNUL hypothesis re accepted .
+
+Hence. Random humber Gre Independent -
+
+   Consider the qiven BEGUENCE :
+
+         +          =              OER I , MERE EEE
+
+   O12. Sol,023, 0.98), O:¥5 , 23, 0-64, 6:28 » 0°33, | 0-93          _
+
+             sO°OS           |     |                                  2
+
+|            rte Z v.05 21°98                                         -
+
+--)||Soles-
+
+   Nott! Huypotness (HHoe): Random number are fadepend en.
+
+   H, = Random Number Are Yo ladependens .
+
+   Sequence of RUR) _
+
+          OOS
+    ee E
+
+   |Total no- of TOnS
+
+         Qz6
+Uy)                                                                                                                                                                                                                                                                                        ~
+
+              2         3
+
+                 90              Qo
+
+                        Wa=it21                                                                                                                                                                                                                                                            z
+
+S-_ilcatcutote test Statfytics                                                                                                                                                                                                                                                      |      :
+
+        }                                                                                                                                                                                                                                                                                  -
+
+        | Ze--QA-Hac 6 - 6-33
+
+     |
+
+                 Ca        1-2)
+
+                  = Loy, L- Ze ey ee
+
+                 $1.96 S26:29.551-96" CTs}
+
+        Null  Wupotheny                                                                                                                                                                                                                                                      --_--                                                                                                                                                                                                     --_----
+
+                           accepted .So, YaOndom numer                                                                                                                                                                                                                              gre tA dependent. _
+
+        Rutocorre! aon +e.+                                             Ls
+
+- || Consider sequence of 3 No- aa qiven                                          he louo . Test "twhethor the --
+
+ard BW 14" & © on Number 1A the                                                   Sequence avre_ Gute _Corre/a
+ted with o= 0:05 and Zone =\-96
+
+                                                                     a                                                                                                                                                                                                                     --
+
+    O'\2          O-O1  0-79     O22                                    AS                                                                                                                                                                                                             a,  :
+
+  O°)            0-6Y   6-28      0&3                                    Oh4                                                                                                                                                                                                               -
+
+10-99             OS    0:33      O35                                     0 9                                                                                                                                                                                                              E
+Or               6-60   0:2F      0°45)                                   0:38
+0:68             0° U9  0-0¢       0:43                                   O:9S                                                                                                                                                                                                             3!
+
+ O:S9            O13    6°36        G°69                                    6-Q4
+                 Ss         ars    : (S)                   Date |
+        | AN                                                       Peo
+        | | aS AYte                                        Pase |
+                                                                    ey
+        Il aX               mS AO
+ira                         Oe                                     =
+HTM 4 1) em <N
+                                                                    ~
+ur) J Urea E                S      R fem  Risecanm | 0-26
+                                                                     a.
+        |        M44        t-o
+                                                                       7
+
+a1) | os ={13M44                                                   a
+
+                 \2CM 41)                                                       ~
+        |           ~
+iv)||Ze = @.                                                       sae
+
+        |        A                                                                ,
+        |        o
+                                                                              7
+Vv) 1p Zo < Lerftical              Acce pt Ho
+                                                                                  a
+
+exe }| BO9 bOetNea                                                 _
+
+     Ly Se Up hypotness                                                             '
+
+tie} Noll Hypothe si) | Ord Bm sia And $0 On Gro __`Non- corrpfated-_
+
+(H,)| Altoraghw Hy pothnesy : 37. ge ry i Qad {0 on Are Correlated. _
+
+2,                                                                 _
+
+           1= 3                                                    7
+
+     |Im=- 5                                                       i
+
+        n) = 30                                                    _
+
+           f+ (M41)m &N
+
+or, |, 34+ CMF 5 =) 39                                                              :
+
+OY, Mii = 29                                                       _
+
+                         9
+
+           Met                                                     -
+
+            A                                                      _
+
+           f                                                       --
+
+                    he,
+
+                            O-99¢ 0-224 0°2940-33X0:24+4 0:97 x 005+ 0-OS x 0:36)||
+                            9: 29
+                                                                                    0
+                                                        Cela &
+
+                                                           Pago |
+
+         Ss WN CT ae                                                       a
+
+   LEvEriOstys                                                                   =
+
+|        =                                                               i
+S)Weert$e 5.2 = O95"
+                                                                   --
+   SON cee TT.
+                                                                             om
+            wie) 62
+                                                                              i
+      Zovitical = 1-96                    |             (Tue)
+
+   ~ Zerit< Zo < Zertttea)             Go. 1-62 © 1-96
+
+                            Accept Ho
+
+   ree Reet WR O® © On. are non-- cuvntecd:
+
+©. || Auto -CorvrelaHon test  to check    the Qed aq io. aad $09 on_
+
+         Co.¢ 01:9 96         089 0:3)    9-64 0-99 Of? 0-92 0-99
+
+      O12 `6101. 0:230-22
+
+   O'S 0:23 O25: °O:91. .O'1 0°60 > Of2F7 OFS O88 .6°6s Os -.-
+
+       OVS 043 OGS OS8 O19 O26 O69 O'°8F
+
+   --||1S%O_
+
+   ') |[Sset vp hypothests
+
+   Ho: 9rd 4 19 (> Soon are __non- correlated.
+
+   Hi:9%d 3th wt © co on are correlated.
+
+2) 1-9                      TrCMtt) a SN
+
+   ms 5                     or, 2+(M45 1= ) 30
+
+   N)= 30                   Or, mM: 30-2 -}                        2
+
+                                 MM: 4-6
+
+                              Mvs64
+                                                           ( vate |      k
+
+       |                                                   Pace |
+
+                                                                     SS
+
+a i@= 4 [e, Ro "+ Ra Ky 2 -+ Rip Ria 1 Rik, A. Ra» Ro      =0<9S5 ©      oy
+
+   ae 4 [o-01 0-644 0-64              XO'TS tD-I1Sx 0-604 0'60x 0'U4 0-49xX Ofc
+
+   |            <5                                                                                           = O-2-¢
+
+   | =- 018341                                                                                                                                                                                                                               Btoe.
+
+   |      "                                                                                              oa
+
+   im           1BxB/t/7F  J19x4 47      = 0-128
+
+G))       GF =                                                                                                                                     =,
+
+    a                      IOCU4+41)
+
+|               VAC:
+
+    Zerriiceal = 1-96
+
+| 7 Sertteal CZ Zertzfea) pe. -1:7!9 OS6 C!C I6 (Two)
+
+                                   accept Ho
+
+9nd ts "tor & © On. Are _ non correlated .
+
+ Poker'a ton                          rand Om Aumber:.
+
+ret ie ane ence of
+
+       All difterert:193,528.65 |                                        -
+
+       Al sGere_: 111, 999, 555, 888                                     -
+
+One _potr: V9, ay 335                 --                             -
+
+for 2 SG
+"roast of' Al) dvait diffPe e nent nent    |
+10x C2 A thon 15) x34 de than 1 & 24) x Cy
+
+          Le)
+
+= INO y J K 8 xs           > 1X 0.9 «0.8:               |                -
+
+| 10 10 lo                 =p 22
+
+|
+                                                        Page |             4
+
+         '  Same  Silay   PU aT d seme"  an    :             ¢    an-1 9)             :
+
+iA                                           tint):  PL 3S seme:           70,"
+
+                  DO
+
+                  =a LSE   eee                       |                                          :
+
+                  lo Or 1D                                                    aa
+
+                  > 00)
+
+One Daiv §            10 ey Ya ae fot) y P(3 diferent than ys)
+
+                       Id
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ----
+
+                                                                              _--
+
+                          x  :
+                  aes Sn! Seas Paret :
+
+                          Jo E89 2) J)
+
+                  = 19-24
+
+                                                                              ! Scanned with |
+                                                                   ii |                 _
+
+                                                                          Pago |                7
+
+2%      i          -         ;                                                          =
+4       at Sequence of 1006 (B) digits Number -has boon genora tres
+
+-          On_Ondysic_Tndieate tna' 680 hove 2 different digit
+
+5       |285__contafas_ exactly ono pote of ligte digtt 6 95
+
+a       lcontatas__3 Qf ke dfati Based on ane Poker's text, are thir
+
+em                    °                      --.
+           Murmher lad enendend ?(Take A*O 05)                     --__--__----                 --_
+
+a       =. SOl"t-_step 1; vori'te all possT ant of ow...                                --
+
+Stop 2:1 4 ps tnerts Setup                                                          `a          7
+
+jae     Ho: Rordom number Ore Sadopendent                                      `ia      see
+Bie        Mi: Rondon number are nos fadependent:                                       <te
+
+2StepP 3: ||| Tex.t staOtFiSchtICS ey                              Expectea                  /
+
+                                                                                    "tor-es)
+
+=       compaation oloserved froqueny        Expected Probability  Freavecca({i) 7 aa
+
+Tahree different digit _-_ 680                   0-42              pizxmoo ~ SPE
+
+                                                                   = 420                22-922
+
+2nd dtffpibar digit                            723                  .               Sid Hills
+
+wed  3                                       QO!                     7              =..992 _
+
+_ Re! Nike arartt         . $i                                     gO xy!ICOO       1
+
+e:      t                $= (OOo                                      = \O           = O44 a
+
+>.                                                                 Weise = ECOr- ©7)*
+
+-*                                     :                                               OF
+                                                                            47-6592 7
+$       G. lerithead VOIVCA ayence 2
+                                                                                            .
+be                       eo
+           df=n-y=3-1 29                  ,                                          :
+
+:          der of2 =0-025, af=2                                                                 :
+
+a }      CONAIUGIION                                                                            --
+
+                                  A*cale e n° tAbIC                                           :
+
+               Ho ts pefected                                                           : Scanned with |
+
+        ~The = random no. are dependent .
+\ |  | 4- digit Poker tend
+
+i) Prob. Al dit ferent Sigit ._ 123% 5678
+; 210, PCs" tf thon I) x Pls? AFL tom 24)x Plu dFf tion grt)
+                                               x "Ye,
+     : 10                                   |
+
+2    ae gh ¥. Sy L                                                 =
+
+     16>. 107" 9 lo
+
+z    = 0.504
+
+     Pah. 7 Seme: lf)» 222
+
+          = [¥ y P(2** same_oo It)X pCa Sunt 0 2) x PUG som
+
+     _-- a" OOO]
+
+     it? Pk Ex 2at BGOne pai¥ : ih2S 2295.
+
+     y P(r"               os t)y P3"* dh then 2) YX PCa deff than
+
+     aes
+
+         =0'U32
+
+     [Pros of 3 Uke digrt eq. 1442
+
+      Pz 10 x P(? same ax {8*) x PCB Same as 1°") x PCY APL than
+
+             10
+
+                       |                 "
+
+     210 ¥> Pat           eS ts
+=   fe                    ee                                                         ----___-__--  =e  =  --~
+--  = i a 2 oa
+
+    il |  rr                                                                                              ;
+
+     iis 1-0:036- 0:4 - 93 -002 ; -_0'Sou                                                     pioe -
+
+     | s0-097
+
+=e   Ze                                                                                            ao     "
+
+                                                                             ay
+
+    Q. A Sequence of 4 digits
+
+hs  || COmbinabion.s                                                             Observed Prequenc
+
+e    Four ttt digits                                                                  ele
+
+                                                                                     390
+
+es  Jane pair                                                                    Sl                       _
+
+7      three like Afaits                                                         SS
+                                                                                        O
+     | Pour Yoko digits
+                                                                                        loco
+     |
+     | |              X=0-0S
+    4 J iq f oker +oxt                 ,                   Page |
+
+"AN digit Afllpreat: 1234S
+
+Pe to x PC2°* AMY. Bom Ist) x PC a4 dil from           24) x pradiff Bias
+
+||  lo             Xx PC SIH AUD. Down Gtr} ¥ Co           et)                 >
+
+a
+| `te x Fx 8 xt x6. x |                                ,        nanan ~
+                   |\O lo
+                                                                            ;
+
+    =0-302u                                                     aeeatlts       .
+
+9) IAN same digit HNN                             aan                  wai
+
+    pxz rtOyvt xi x1 x                                     a ee ~
+    Te eae |= dae     io 16
+
+    = 0-O00601                                    ss                      eeaataes
+
+3) aE ae           3                                            satis          Seameaiss
+
+    = Biva ~ a? a "s<p i x2                                                    -
+
+      "1O2..1e
+
+    ar CO SOS 5                                        -                       7
+
+Uy ||4 same me                                                                   :
+
+    r = x i. x -- a, 3 2. gTMCu                        Ls                   _--_ane
+        o             lo
+                                                                                       ;
+    -_9-604S                                                                         i,
+
+--5) || 3 Same di9gi =) SCZ
+
+           P= 10 ae Ree bs ar'. , eee
+
+                 ke) lo lo Te) lo
+
+         = 0-042
+                                               a                   ao |»
+
+                             "i - CS                                   Page |
+
+                          =----}.
+
+ory\          ©
+              7.
+
+EE C ile "Cp x1ox |] xx] <
+     -
+                     ite  \o     lo               lo  lo
+
+a OI:
+
+1) Ful house      |           |               :
+                          pair   (41129) 222323)
+Anree Sam e by one
+
+= 0-009»,                                                 |                       .
+
+@- 1A sequence of 49000 S digit _no- has been analysed
+
+_ ¢Ompina ton                                     Observed              Acu
+
+ 9N%e patr                                            . "so20.
+
+   9 par                                                     1056
+
+  2 same                                                     TOO
+
+ult house                                                    SS                :
+
+Four ae                                                      Go
+
+Ol same                                                      MI
+
+         |                                                   LD, O00 -
+
+US @*=0:056               9"= 19.599
+         Chapter - t                                 , f Dviate |   | -- -
+                                                            Page |
+      IAnatysts       ofSmutatfon _0/P                                    .
+                                                            -
+
+      |  \
+
+_ + `Sfonulatfon ouput
+
+       = Tris rofore ritchae -- YEsul_ t qeneented by _Sienuiakic.
+
+;     uvodel:"The                       areInte tho a
+
+         4yeny - reper  Tayping the analyst and
+
+`     | MONON maker to understand the "Potent fo) at.
+
+5     - fatorm decision.                3
+
+   # Loh. we need +o anal he Simulation output?
+
+   | Volidatfon Gs: Ve ri ht on: ot Simulaton mode
+
+   1 Bhdeestandi system _pehoviour
+
+   2), Suabuating design al ter natives,
+
+2 4aII Prodichin       ro behavioure                                -
+
+__S)! Making taform deniston |                                      7
+
+ty ctimation Method                            _     = ml restew PA
+
+   - When nalyzing Sim ulaHo n a/p ee NCountey Stochacti Qync els
+
+      When yale, of voriables Pluctuate oWr the Hime.To aise 53
+
+    Ineartiangful condusion we need +o ettimafe yao volbe of tnt
+
+Z     Moria ies bs net axcociated uncertainty     ,                 z
+
+    | pete ods ave =-                   ,                           -
+
+   |
+                      Variance estima
+
+                             orets ¥.CXie®                           E
+
+                      suppose 1a Simulate the _wditiag _-- for a queve saaalal
+
+_ No Efex) at each imo yo q@t_ws0itfag "Hime as                         --_--
+
+                      = 244. +8494 9:144- 97 8:4A S-O+ S-9+74-6+8.2
+
+                                                          \O
+
+mt é Variance) St 3 =| > (#8:2-8-25)" 4 FS 8-25+ )(9"-4 -- 8.95)? +(9.1- 8.26)"
+
+                      Ce oa                                             ----
+
+----                                                                    --_--
+
+--                    = 03358 MIS
+
+----
+
+      ° °
+        C e O 9 r --
+    Indorval Estimation                                    _
+
+    Roin4 Est fmanation just provide _b         WEA  arameter CXOrn pr
+
+    Imean by orance It doexn'+ =e the uncertainty or _vorias
+
+    ii1h tne otSmate -Inter val estimatton Such ak confident Nforuf
+
+    addresses Ine Damttgtton by provid fjn the_vange of porameterc -
+
+        |          that rondom     vanable are statonory_(s tad eperden.
+
+    --             an Totfnite     NOOu latHton itty a. finth mean "4 a
+
+     `Ik ts onume
+
+     idvawn Grom
+
+           nfte variance TS "such that rondom VOriable roots oll this--
+
+: Condition are __calied Independeantt,y O identically distitputed Clip)
+
+    `YOndom Variables-                                                --
+
+    let *f bo the @n "IID random variable drawn fom the
+
+    Sop} e of! Population _uatth mean H_ond Wriance " or...
+
+    t= (4,9, 3,6. = 29). |              :                             _
+
++.  Actording +o contval Mime Theorem ,                               _
+
+.   f= g                   Ah                                         -
+
+                   |       Jr                   :
+
+a   Dividing both ty p_& down by 4A                                   7
+
+3   ye: Se Ge JINX!                             is ee]
+
+    ' "rt                          5                 r) =               -
+
+    ( i a X-
+
+         ams
+
+a                  7        7      TTM                                  -
+
+e : ra | | \ --
+.   41:2)                          Sie. s
+j   Sa (1 A                        | tor
+
+:                  "Mt, -   O   a          Mey
+
+    ll Ein Premattifte neneth. Pa cre ft eee er ee
+                                                                                   / dete |
+
+                                                                                   Page |          oy
+
+                                                                                                       }
+
+   Simutation of Ron stg tisticc
+
+   hen                      conduct _a_simulahm af the dus fern at given
+
+   condition at_vorfouc run,woe get different cere Testead
+
+   Sonat 4+00\| to ger heHer_yocul}
+
+                RUNS        Janur.- Outer                                          |            | =
+
+;  -                        Bits 2                  ee                                                 :
+
+=                   2       fee ee             {2                                            |
+
+                ae bie      are                     YA
+
+      3 _should calculate mean1 ad ba Var Tance_ aC each o/p i
+
+   be} tor re cult -
+
+                       a               |       TT TI
+   Susteren                                         Corndtttian
+                                    t
+                                       J Modet|                |                         ,      -
+
+   Rather than po rformin VOrious rung at Soe Condit'on, we
+
+      condi ti oat           Condition?              !            rondtm .TM
+
+   Me               Cr      2                  _-_ - «©& ~~ &     am | |       Tm
+
+        --_--»                                                           ---7
+
+7     vAta          He.     oy                 42s                Ben,             eT
+
+      Mig              Y12  N29                42)                Hono              Yon
+
+                Ly                        Li)                                  Ly                      z
+
+a
+
+7               YG                        x9                                   X2                      fe
+
+-                      So, X= Xi + Me + hy t Xe +. Xm
+                                                                                                          F iis |     `
+
+                                                                                                          Page |
+
+                                                                                                                         ==
+
+                                                                     Elimination of `Wittal bras       .                 Zine
+
+Peer                                                               lIintval' Rfac Ye fore to the distortion fn the recult that OCCOS fr
+                                                                  4
+                                                        =             _begiasiag of' the Simulation run due to the system Stars
+
+                                                                     1 _An Arbitany or non equilitytum State: Thi bas con COUSE
+
+                                                                     Wye me Output of the aycteen -noh accurately repre sent 43,
+
+                                                                     ong term behaviour-                                 --_
+
+                                                                     | sp Qias =
+
+                                                                     ; output | i  -- :                                  ~
+
+                                                                                   "a rme(c) |      |     ;        )
+
+                                                                   JO to eloenagto PrArtsal bias
+
+                                                                    Diccord the trancfent periad
+
+                                                                   Use better PAttialroabion --_
+
+                                                                   Extend thde mutaHon run Meagtin
+
+                                                                   xe independent yon|io Hon
+
+                                                                   War rr UN Nortad
+      Chap ter =)                                      Page |           J
+
+                                                                           I }
+
+      Monto Tarlo Method
+
+      Comoutatfond) Technfque  that  yeltes on random Sompliag --
+
+      <elve a _frobiern that   mOy   bdeeterministye or Drobo bilictr
+
+      TA Aaqature -|b 1S particularly ucaput Loy pin bier rium
+
+      "oteqrattion optimiza fie whore _eyact _solutton Ore --tenpos th     or
+
+      cult fo calcu tafe analytically.                                     _
+
+      Key Postyres of. Monte Corio Melind                                  `
+
+   ) Random _Samp t`y
+
+   2) b wiect®     1 ah
+
+aanaStability -- applied to high `d&renstong! problem  Whore tad? fong!
+
+      method s
+
+   ) Oproxima,tion = onpmpr fave SOlufion convorte to  the     tre value
+
+2  /                                                                                                                                                                                                                         --
+
+      On Aum ber of somple fa Cre ases -                                            :
+
+                   a__freblern UsIn Mo nte CANO Method,
+
+      gaa ae Monte Carin Me od \                                           =.
+
+      Define the Propiem
+
+      Generate random Sam Ne                                            emf
+
+      Evaluate the dun cHon
+
+      Aaareg ote the resuit                                                z
+
+      & Access accuracy -- USe_stalictical tonitco meanwre the orcerta frites
+
+                             (3-dcuracy of the set I+                      :
+
+                                                                           --
+
+                                                                           --
+   A= v]e 16: X= Rand (a): YeeRa4n(d4)    Owe
+
+                                                             Pago |  "|
+
+               --                                                         =
+
+   x Signtticance of Monte carlo Method                              :
+
+$ave high diimensfonal_ pmbiems-_                                          7
+
+___2)\Handle_compley system _unttin Tndependency.
+
+      Provides_appuximation for `rtractable pbm le:
+
+        offer. lex bt ity Gcrass_ VOusrdor mafao s -
+
+         Medets wal word uncertainty
+
+        Support _risic minimizat(©ion decision mola.
+
+                                                                         ------_
+
+   "Normally Dishibuted Random _Variahie                                 "1
+
+      iW a Tupe of Continuoos Tandgom WVaviahle thor _probobtlifs;
+
+   |  distribution follows normal Or gaussfan distr? bution chant
+
+;  `oy Bell Shane Cur ve.                 coe                            .
+
+: Probabfft0y Nondtyq dmnatfon( PDF) = --| . cca                                          :
+
+   idl
+
+   lEsKimate the value of equalion he ie
+
+   `Arco of square = By\" se"
+
+   Area of circle = nr'?
+
+   | When, ;
+
+   | 0-of | adom \i rf     e circl      = Arya of circle
+
+      _No: of total) random no.            Areo of' SQU Ore
+
+=  T
+
+      , K=4na                                                                          ;
+      N
+
+                                                                     ! Scanned with }
+          Ap = 3-\uU                    | ete             | bc hice           J
+
+         SMEG oa ATO /-
+
+        Meh? = I
+
+        ------------  --                              --
+
+ess SN                XK     7          aety® -16         _ Remarke
+
+     Ae bk                   e          "\6               in =
+
+                      0'$36 3:48        =F \Ge            60D              a
+
+                      9.242 2-04 <1 Sena                          PEE
+
+     Y                9.998: 3:66. - 2289                 __ wt
+
+     lk. 9.964 3°364                    Y.10                 Out
+
+     |G-° 1. OF2             0:56       4-54              To
+
+     Pe sict 72959           3:9uU      U.595.            Out
+
+                      1-UdS  O:+92 3 --13-UY              "In
+
+     5                |-UFD  O:U46_ -\3-60                Tn                     :
+
+it   q iO R96 so SGU                    -15-OU            Ia
+
+     NG aOR. = peey                     "19.50            Ia
+
+     In, 2-You               1 he Cd         Fad | 0      in
+
+     12. 0°496               0°38       wee               Tn                     :
+
+     iu. 9:66                0. 8S6     --4-US            Te                     :
+
+     1Gz_' 9-856             0:3        ~ 4-45                Ta       =:        :
+
+        R= 19                       oy                                           #
+
+     IN aI                              Te: | Qu 3.9)                            ;
+
+Cie  Be avd                                  = O66                               7
+
+                      iS
+
+                      wh J
+                        n2Ay"- 36 £6
+
+--                                                  Page |      P.
+
+        parry = 26                                     Remarlé  =--=
+
+    }                                                   19         Be
+                                                        Ta
+<   5:N          _          y       pie = 36                        --
+                                                        out
+coef              O       O             _ 336                     _
+       2       U.242    N65            -{9.\95            In
+                                                                  ~
+: Re           5-60)    eles             4-398            Ts      7
+                                                           In
+    ly.        \ 668      O-G64      __=39.999           out      al
+
+    s          4-guu      3:-0uU7     --- §.4Ut          Tn         _
+                                                          In
+i"     6       3-005.     4-944          =9 5900:                    7
+               §:0 98                                     Out
+.   J                     4.924           +-999                       :
+               |-GG6uU                                    Ta
+x   lg                    U-339        AU -399.                     _
+                           0-444        -19.514         Th
+:              4-032                                                a
+                          6:3563         `10-566        In          _
+           [0  2-314
+                        _1-46§           - 90-2325         Out       J
+a   UI         3-606                                       Tn
+                          2.274        -12-931                       -
+       9       4-934
+                          5:P5S        71-623                      -
+patere |k!     0:20!
+                           5 - O46        4-342                    -
+    (4         3:U18       0:915         - 24.68 S
+                                                                     =
+_   IS         0 689                                                 7
+
+     n= )\                          E=|3.14-9.931               :
+                                                                ;
+    N=15                            a 0:2067,
+
+     A= Uy
+
+                I?
+
+        "= 2.933
+
+                                                                zs
+                                                                                            / Date |
+
+                                                                                            Page |       ay
+
+Calculation! Estimatfon of fa toqral ----- Monte corlo Method,
+
+:b Fim) dy                  sf me
+
+   G                                 0
+
+ ae, =F Co)                           Area of rec tangle =( h- a) * (F(b)-- Fla))                            es
+
+where, m=0,F (a)                                      .
+
+        Neb Cb)
+
+a<nCib                                                                                                       `
+
+F(a) Sy CFCb)               |                                                         3                      2
+
+if y- Fo) CO (n§de) othe wico outside )                                                  |            |                    :
+
+\ntegral  value c Arvo of             reckanale aK.
+
+                                                            N)
+
+                            * (hea) x (FC- FC)Oy) Ae                                                        "
+
+                                                                                  No                         bs
+
+Estimate the                value of     3     using            :                                            n
+                                      { wv do                   Monte carin Method .
+                         |                                                                               ewe
+                                          0
+                                                                                                              =
+Soi.--
+
+Me FC) = 92
+
+where, 7-2 0, for 0
+
+          m=3 ADC e I                          |
+
+Bousdan,,
+
+    OCnNC3
+
+   O< FlnyC 9
+
+                                                                                                         : Scanned with |
+                                                             -{ Dale |
+
+                                                                   Pago |
+
+   Area_of' rectangle: (b-4)% (FC- )Ca)                                    :
+
+               = (2-0) * (9-0)
+
+               -- 9f
+
+SN)  x                Y :                         | Y-9? Co  Remark        = :
+
+     aC A<2    OC Yd»                             ;          '
+
+     O                0                           Kalai ©         a        ;`-
+
+:    1.49      5:6S                               9.44}      oU+
+
+:    O'S       3N6                                2.415      out           -
+
+q:.  |. 6S     | a ISO                            U.YUSé     oruor n       :ee
+
+:    O-2U2     4.919                              2510
+
+f6:  2-.66119  6-693                              -O:: (32   f;n           : =
+
++.   1-862     eames C's Gh                       - 1-8$3    ) ;
+
+     2-432     22 R°S3                            9-622      Ou            ime
+
+ioe F 0-664    Bo Be                              OURS       O\
+
+N= 10
+
+Integral value: 27 x 84 3
+
+                                              lO
+
+                     = 10:8
+                                                             Oats | ot
+
+                                                             ece | oP
+
+                                                                                                                                                                                 I I
+
+Stochastic simulaten (Time Onucar)\              simulates,  a aysters  worth _
+
+     '
+
+lly ica computational) method thal
+
+ VOridhie hat can charge roadom
+
+x tor                                                                                                                                                                    ------
+
+       and Contras. Monte Corto Strrutal-fon bs Stochastic.
+
+   Sienu lAbon.                        aot >
+
+t) Roh Monto Crlo ofmnu lator b&b Stochastic Stmulahon            are
+
+   techniques wed to model and Onaluze syctem that                Ph n ofire _
+
+   rOondomness:
+
+   Monte carlo       Simutabor      )            Stochastt, ) simu ta 1On
+
+ly Hixec random compling "to              Simuldling Snrem that fnveritty
+
+   aN Proxtmate Numerical _yecu I+        `Evolve over temne with | "
+
+   na __use for detorminictic | | romdow Vor tab lity , mode tng
+
+   problem with propavilicti: fnput. I dunantic processes.Ooe;                                                                                                                   :
+                     oc ,o
+
+2) Typical foc vse mn cAleulatng focus On representing al -
+
+   lbrobabs Lites, expectation ox         Beciping, SY ste mn Where randon
+
+   integral Over complex dictribution._Dye cers unfold over t+me-
+
+3) || andor VOorjables Sampled tron Random processes govee fed by
+
+   eno uan probahitty distribution. probability rule or stochasHe _
+
+                 *,  |                 equation.
+
+                                       |
+
+ay ||Rodeal sinh pmbabilit. b puerta Rased on stochastic Process a
+
+                                              0                                                                                                                                  =
+                                       |ua (`Lerenttal equation.
+\ integration .
+
++                                      |         -     --                                                                                                                        =
+
+5) || Option pricing In Finance, a\timahon Population dynamics, veulng                                                                                                           a
+                                      f Ome |
+
+                                      Paso |   y)
+
+|
+
+   --_lland dectcfon maising  ef demic modelling
+
+                                                                   _
+
++e Nustrthoe tcaese of yondom process ,condder a Gime _ts_uhoz
+
+        lan ¥nko@ed coin fc repeated lt for eoch Flip you have|
+
+       to pay 6-1 aad when the difference the head (8 foil tx.
+
+   = becomes thive you ges es-8 AL the required difference cbts*-
+
+   aks Doss than § flips "you Con Loin SOme mene. b& if 3+ F r
+
+   more than § F lipo = oo lose lustrabe the cimulatfon to deci«d|
+   whether to Pldy thie Game or not!
+                                                                --
+
+   Se| e onan                                                   --e,
+
+                                                                a
+
+                                               ! Scanned with |
+   Chapter        Terula bon Lanquage            | (onto                                           -|
+
+                                                                                               -_
+
+                                                          Page |
+
+     Simulation Tools   ohs application    that Provide                                                                                                                                                                                                                ----
+                                                                                                                                                                                                                                                                         --,
+   i                                                                                                                                                                                                                                                                                _
+
+    This _are Software                                                                                                                  ~~
+
+                                                         NEC SSC eS fueckion.
+
+   i eAVITOAeat to create and run Simulation They offen. Come
+
+   Luorth GUI to mate fh easier to design tert 5 Visualize                                             _
+
+   Smutakion. 4' MATLAR Arena, Brafodic.e tr.                                                      |   _
+
+   |Stmutation Lanquage--                                                                                                                                     a
+
+                                                                                                   bdeign--
+
+   The are Progamming language           tal design +p define pSimnu lat@.
+
+   System Cs _prncesSes. There ° actual coding           Scripting done.
+
+   Exam ole : SIMULA 5 Grss (Generel Propose Sfeulation Syct,eSeimnnsc)ri
+
+               \                                         | anguage }:                                  _
+
+   IMJODELTCA CSS L (Continue. System Sim, | 42
+
+   a simulation Kyo are CECESSON ? ,                                                                                            a
+
+   They provide dtlPrent envirmmndo, TuncHonalit,iteo Stenulate                                             |
+
+                                                                                                      a
+
+   ie, trvide fntpractive and eac"yfp use GUT.                                                         ~
+
+   No coding      Scripting 18 required |                =                                             ae
+
+   Reo dy $5 Yun software.
+
+   Sim ser fet 3                                            r__discre te
+    igh bse programeriing language secially deci
+
+   OCyent <imulation.l4 wot. develop In 1960s for. use ny raadeling
+
+   by Simulot  como x sysrem such as_ mrarest Oct Oring procescer                                      4
+
+   logistics (ny ror fic Plow Simceriph A\ low ¢ Ugr to defsne                                         =
+
+nities event      and yosources  and simulate   hove Thess Tat eFC OE
+
+He.                                          |                                                                                                                                                                                                                                                                                                                                                         ee
+
+|
+|
+Declaration section                       a       |                                                   -
+
+    lahion logic                             bed              =                                       -
+
+Ron COntrvo! |                               E
+
+Renor tin     ad Output
+
+Ter mination                        : `                       oe
+
+--            --------------------                                                                    ----
+
+DectaraHon section
+
+Deine tho varfour elements of' Simulabion model                Such as                                ara,
+
+datatype Eee                           ,             |                                            oO         =
+
+Nou dedore ontites, yosnurces, Naramoten, that wilto       o  be Uce Fn                                   =
+
+                                                                      $3                              Siu!
+
+lon fn this soctoo. °                                   3
+
+= : Qveving syst cn
+
+INTEGER nn customers,
+
+                             a
+
+           Service time ,
+
+           total) service *ime
+
+REAL Arrival Rate
+
+Thic coctfon sets initial value for variable © recource-s
+
+    arrfval Rare= 0°5
+
+                                                                                                      ! Scanned with |
+                                                                 Date |        -_>-- J
+
+                                                                Page |                                            -- :
+
+                                                             a
+
+   ee
+
+2 || Pyent_schedoliag_                                                         om
+
+   Sfonseript veces An Gent driven aPProach whore evento are
+
+   gChrdvle to occur ot specif. ti.mTheic evente typically Car respond
+
+aie chonqes in the. System.                                                    --~
+
+Fes eq: Eventt 4Ta) quieting _systeen arrival of cuttomers ,usditing
+
+na Queue, Se rvice tothe custome re;                                           --_
+
+|                                                                              =
+                                                                                             ¥
+
+dy | Sfmutatfon Logic                        |  Or fonction
+
+       f                 tho procedure
+
+ 10)Procecsoa- This are
+
+lentition Mow ssf tne SYSte en.                                                =
+
+   Event handler- 4 is used to Specity the logic that Shou te '
+
+executed udrinen event OC Curd                                           abet  =
+
+\ Contre) statoment - Standard control statement |Pre ifele (oop _
+
+borenersa Stahtomenk are used th Sa             Amat How of Simulation
+
+ bs *ale dectsion .
+
+5) Run _contro|                                                                a
+
+- lyre _prog tan wr] | -- ruin Until specified condition Te
+
+made.
+
+6)Reporting ond output                                                         a
+--_| Mer he simutatfon run, tre pmgiam can Pde report and|
+
+output dato ach oa Statictice porForma nce Matrix bs recult-
+
+-                                                                              "|
+
+A)Tey mingakon                                                                 |
+
+- he Simulation conclude Oho n prodetined torednalfon cOnd ttlOon vf
+
+MOde_soch Os completion of spect. NuUMber a, Ovents Or reaching
+
+--o_foriculor +ime.                                                            ;
+\ |                                                                                                                                            Date |
+
+                                                                                                                                   Pace |
+
+     [| Declaration of entities and variable
+
+         lore ger Qvevcesiz e- } |        ee
+     lEvens handler FOr processing |
+
+             Oo. CLStomer
+
+        LL
+
+     = QV EAT Process --cv sto mer ( \F?
+
+             riot & Pyro essa CoSOme Py Awe
+
+                 woot (3) 5         processed |) .
+
+                   enn `a Customer
+
+     Si)
+
+     Ht Gvea+. handler Lor O cvositomer Orr vvod
+
+             event customer arrival (\%
+
+                print C customer arrived") ;
+
+     eines.  senedv| e( process ae eS tomer, oe
+
+     | wan   Cmulation lodic
+
+     Hart_ simulatfon ( ) 98              5.
+
+                sched ul(e cuclomer arrival, 1);
+
+     for (time - sto p = { » time ~ step ¢ ='0 i tfmnestept +)?
+
+      _1_ runevent (time step)
+
+     print "Simulation complete `) f
+
+     4
+
+      Start -- efmulaton( } ?
+
+                                                                                                                                                       ! Scanned with |
+                                                               ! Date |
+
+                                                                         Page     my
+
+I }                     @LSS_( discrote_event_maqnnt )      |                          a --
+
+        = atss fc the discrete time general) pur pose -progrosnen f Ch a
+
+                     :Jorquage uslere Q_simulahon:      clock Advances in discrete Sfe pn,
+
+        =A system is model as transaction Onterc the Salem Ore. m
+
+                  |
+
+        - IThic Dorticullarty Lo || sutted_ Loe problem Such _@s facto.           ~
+
+        --- OR is eas flexi le than Simulation language guch QO                   _
+
+               | StimulaG sfmncorfpt bur %F easier 4p use and most popula,
+
+        -
+
+               In -PSSw,e have to constrict a networle of bicce:         )                                          --
+
+               luhnere EACH plock diagram has OWN fun ction.                   dfoara-
+
+                                                                                                                          --
+
+=    /         |
+
+Pca ee                                                                            -
+     er
+
+siesciaae IGesg han provided | 4k different _blectc Sicegra.en having H: 's|
+
+-                 Own aan           Punctfon.            |                        -
+
+     AE GPSS blocks
+
+        1) Generate block -Thic bloc vill                produce _aow    of transac Hon
+
+                     wrth fnter arrival time  determine   by attributes  value Syntar :
+
+                                           |                               GENECATE A
+
+                                                         where A is mean       |  _
+
+--_
+
+--         H| T                     PP: S cn                                      -
+
+9 » -C-----_-_--_--_ | Queve Gloue  (n\ee pe
+' Com putea Soptiongl
+
+           |
+
+            |
+
+           '
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 race a
+
+F 5. Gyeve RBilock                                                                                     wis Whoct     usil!l  `instruct CfSS                                                                                                                                                                                                                                                                                                                                                                                                      to striv+t antrerFnc
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                J      _
+            '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   we (i
+
+                        |                                                                                                           J                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+
+tt 6QUEDE                                                                                           -A.                         =                                                                                                                                                                                                                                                                                                                                                                                                             1           «fs--               =
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 2           ae,
+                 |                                                                                         tte
+
+          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Qué ve            @4- CUSUE
+
+2) | Demrt Bloce: Thic -blocic Instruc te GPs Lyra} 6 tr OncOlCTion <7
+
+                 |  i
+
+    leaving le.                                                                                     queve        namo In     T's otninute                                                                                                                                                                                                                                                                                                                                                                                                        voSue-
+                                                                                                                 of que
+    T                                                                                                 i                         Qumro !: |                                                                                                                                                                                                                                                                                                                                                                                                             i
+
+    HL SUntOX °                                                                                                                 J |                                                                                                                                                                                                                                                                                                                                                                                                               ee i
+
+       | __peeaet A                                                                                                                       Be
+
+       i                                                                                            x
+       | Where A= nae
+
+       |
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  --_--_----
+
+       |
+
+Gy | CETZE Block _ Thic bint Allows the tronsactreon 4b - Dre a
+
+       Padiity it uf ic free.                                                                                                :                                                                                                                                                                                                                                                                                                                                                                                                                         :                      :
+
+                    Seze A                                                                                                      _4                                                                                                                                                                                                                                                                                                                                                                                                            |           |
+
+                     whereA snare of fochlity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                     |
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                seize     Eq: SEIZE ras
+                                                                                      --                                               |
+
+                                                                     --_--_--$_--<_<_--_--_--_----     --------  --                       `am
+                                                                                                                                              D >
+                    S)IRELEASE
+                                                                                                                                                              >
+
+                                                                                                                                               >
+
+                                                                                                                                                                                                                  }
+__                                                                                                  Block~ Thic      piece wll intwuc GPSS te dive ug th
+
+    | Quoner shih of the                                                                                             facility name 1 It's athobure value.
+
+       | Suntas :
+
+       ~--_
+
+       -
+
+       _<-
+
+       --
+
+    ,
+
+    -  ee ee oe
+        L:              |                 m9 = - _vepresent the sorve icins g 2of of StronS, :
+
+      Li                in Wane: G                         A,8 |                      --
+
+      "7             I whereA,> Meare                      ADVANCE 2                  en.
+
+     --              I      Bao M odifie r                         ,     |
+
+     ait       2) TERMINATE Block = This proc _destrogs ay *" ~ ERrin
+
+"ey               I # and remove tf from Computer se                                     v
+                                                           |                    | a
+                  IER +ax                           Sumbo|:                           "Pn
+
+               |            A                            Oe                           os
+
+            |ushoreA = decrements Sim u!Gtibn          \ JA J
+
+             [             Counter bys this Amount| eq: Terminage a,                  ae,
+
+            |                                                                         ty
+
+                                                                                         Piitee.
+          2) [tronsPer Block - This _blocle wit take transaction entering P4 &
+
+          a Pears thom fo two diferent              dertfnafio n according "tn  _Aiven
+
+          [prosabel P1ies-             ,                                         J
+
+           [syntax :                                Symbol:                              -
+
+          |Teamscee A.C                                      ,
+
+          hkatione,                                    !              é2)       |        :
+
+          | Az Probabsitt value (Q to 4)                                                 }
+
+          le= Ppro portion of (1-A) +ransacttonc
+
+             Sarnloud to_Hnic labelled location
+
+     | Cs. pro pertion A transachon                                   =               |
+
+          trancforedl 1® Hy? label tod Iecabfon     |           7                  |     ad
+
+                                                                                      ! Scanned with |
+----                                                        ----  ----                 "     7
+
+          >.                                      a               --------s      ----  oo
+
+                                         [10,2 \ @eneenrte
+
+                                                   ADVANCE                   -_
+
+                 !                                 TERMINATE |
+
+                 =                    Block Diagram
+
++ Program . ia                                               2                   transocti.  dermincte |
+
+     GENERATE 40,2                                   torminate/euta
+
+_ |ADvANce 13,2_
+
+     TERM INATE 4°) lover nt?
+
+                                  --
+
+--------            ------$--------
+
+                 |  --_-_e_l_--_
+
+--_--_--_------     LC                                                                                                                                                                                                                                                                                               --
+
+                                         --_--_--                                            *
+
+--V--------         --------          =
+
+----                SL ------
+
+--_--
+
+                                                                                                          : Scanned with |
+                                                                  -2>>     nF
+
+   &y MENEGATE '©,2     ¥ i                                                      :
+
+       Qveue sit        { 19.2 ) Generate                                     `
+
+         SEIZE Hatreut        |                                _               7
+
+         REPACT Sit     I        PT                                               -
+
+   RELEASE Woircul      i |      7                                            ;
+
+   _ ~  An--      A              ~                             ----                     i
+;  | rERAMAINATE
+                                                                               -
+_                          i
+
+:                                                  |
+
+=                          =
+
+-                          13,2                                   ADVANCE
+
+_                                                     porrcur
+
+2                       :                                         RELEASE
+
+                        ----
+
+                        |        -
+
+                        \        fs:
+
+                                                      TERN NATE
+                                                                                                                                                       orn rr-      - _
+
+                                                                                                                            p: Ya |
+
+                                                                                                                            :                   ros eo --_      ee       |;  ey Or mF  ee
+                                                                                                                               --_-- --~--=---
+                                                                                                                                                Van |
+
+                                                                                                                                                            o=
+
+                                 SS      ee See a                          ee  ee  i Oe  --                   _----_--- =
+                ce                                              --- -- --  -
+                                                                                                                         4
+                                                        ~                                    enaro-
+                                                                                                           pode
+                Vie SNPSS_to_ simulofe super
+
+     aha                                            :                                                      Fatah Siete                                        ee EE PE
+
+AIEEE              RITE 5 gic) 5h                                                                                 at                                         pee aaa
+
+OU              EVEchectroOnue }ve                                                                                Ltt ER                                    TREE ees'
+
+NSEC IZE ChecvoutOveve                                                                       aes                 Sos Mee ie etd ee
+
+__|IDEPHOT CnechoutOueve _                                                                                                                                                                 a
+
+Ce 2 a. RR                                                                                   Sea ead SY asian ee oe e Re e Ls
+
+                R¢ LEASE Choctnyus Oycve
+
+                r                        \
+
+                                                                                             Nnenerate ro  S, {
+
+                                                                                   QvEVE Gvecross be
+
+ae | eno                                                                           ADVANCE 3,1                                                                                             Lee
+
+                                                                                                     .                                                                                     _
+
+                                                                                   RELEASE Checkout queve                   choeKout Queve
+
+--_--=------ |                       --                                                                          " 9=                                               --_                    _
+        |
+
+        }
+
+        |
+
+        |
+
+     |                                                                   y )
+
+                                    ------>  of Manufacturing Shop Where there's Only O08 ----__
+                                             fnvolved A machine tool Sana chanutackuring Shor
+     |                                                                   \
+      |
+
+     "STmulaHon
+
+     | faspector
+
+     in `ning Out Parts orale of' One = -- ~-. whores- AA*S* Fire,
+
+     `ore Lyfrished the farts goes tn an IN SPO Cror who taloes =
+
+     lmfoutes te examine one                 reject ISI. of the pores:   ~
+
+7    !                                                                   i
+
+:       Queve_!                                                                    Fi
+
+     |                                                                   es
+
+     `Seize 1                                                                    _
+
+7    Depart |                                                                       *s
+
+3    `(ie
+     Adyance S,2
+
+     Rep Termiagfe |
+
+                                             `Ace TERMITES Re; Tornnale
+
+F I
+                                               F          hand SK
+                                           qe igat                 a |
+
+Oy Ina manufacturing Campan 4 - SOAP Comer to texting. OOM Tay >
+
+2 AQSecon d ut ofot- value asecond Ain tne Tent fag :
+
+{t_ toke, 99Ssecond lo twat whether a goop is of
+
+cqhoiovcek! quality Or noi- IP ets good                   r        Thon tty
+                                                                   that 907-_of'
+accepted Othorwise Tt is vefeate[d4
+
+On 15 of good cy -Qhod GPSS Simulatfon.
+
+(nonerate 10,2                                 atta tha
+
+i~ize 4                        |        |         Qvueve
+
+Depar + 4                                  VA
+
+Advance 20,0                      ect tRecyy
+
+                           es     \
+
+QSe 4. 203eAn4
+
+Tronsker QA Acc Rei
+
+hee Ter minare .
+
+Rey "ler minate a &
+
+                                  a  0
+
+         yaa a
+
+                                                                        : Scanned with |
+                     ra                :
+
+|           A. arcs                                   Date |
+
+                                                      wat         ,
+
+8, _.Srmulation of Telephone. System using. (HPSS                     Cs
+
+GENERATE3,1 -callo arrive every 2 siren 3 4 Hime unit                 cc
+
+OvevE cal! QUEUE; calls ore placed in the queve if ali live ore Pury
+
+SEIZE Phowline } A \ine fs seized when available                      a
+
+enh Call Queve; ca"! leaves the queue                                 4
+
+AnvAN5c,9E, Cal) durofinn 5* 2                     |                  =
+                                                                  ons
+RELEASE Phoreline ; Reloae the Ifne in
+
+   TERMINATE 4. _; CG\!_Jodvex the System             |               "
+
+sf CSSL (Com fau OVS Syste on Simutatty~_ (arqvage )                  ma
+
+   CSL are  falize prog rorencfag 1a                  i       ue      =
+
+model fag is Simulating Contiquous dunamis system TRE
+
+System often _dexcrthed by di{Perential equation or dé{ferecnc
+
+equations CSS(__provides toole fo Yepresent solve and                 7
+
+   analyze thor eftectivels .
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                _~--
+-
+
