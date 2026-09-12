@@ -104,6 +104,10 @@ python tools/validate_site.py            -> All structural checks passed.
 python tools/validate_site.py --strict   -> Syllabus coverage: complete
 python tools/merge_past.py --apply       -> site questions 92 | imported new 0
                                             (run twice: ch*.js byte-identical)
+node tools/test_engine.js                -> All 41 engine contracts hold. OK
+python tools/check_ch2_coin_game.py      -> OK
+python tools/check_ch3_pure_pursuit.py   -> OK
+python tools/check_ch4_queuing.py        -> OK
 ```
 
 ---
@@ -195,7 +199,10 @@ leftover — it holds a fifth GPSS program and the CSSL definition.
 ```
 index.html            the shell: markup, styles, and the list of scripts
 app.js                the application — tabs, quiz, past questions, search,
-                      mock exam, progress. One IIFE; no inline script in the page
+                      mock exam, progress. One IIFE; renders only
+engine.js             PURE logic, no DOM and no state: the paper allocator, the
+                      marker, quiz scoring, the search index and the term match.
+                      Exposes window.SM; loaded before app.js
 ch1.js … ch8.js       DATA only: window.CHAPTERS[n] = {learn, quiz, past}
 data/analysis.js      generated: window.ANALYSIS for the Analysis tab
 tools/
@@ -206,6 +213,8 @@ tools/
   gen_same_question_merges.js, extract_variant_answers.js
   check_ch2_coin_game.py, check_ch3_pure_pursuit.py, check_ch4_queuing.py
   dump_chapters.js    node → JSON bridge; the only reader of ch*.js
+  test_engine.js      headless contract test for engine.js (vm-loaded, like
+                      dump_chapters.js) — `node tools/test_engine.js`, 41 checks
 ```
 
 **Ownership rules, so the next pass builds with this rather than against it:**
@@ -218,6 +227,9 @@ tools/
 | A re-derived figure, and whether it agrees | `tools/sitelib.py` | `Reporter.check/note/finish`. The three `check_*.py` are consumers. |
 | Chapter content | `merge_past.py --apply` | The only writer. Dry by default; idempotent. |
 | What the page loads, and whether it parses | `validate_site.py` | It resolves every `<script src>` in `index.html` to a file, checks it exists, and runs `node --check` on it. Code can move; the check follows. |
+| What a paper is, and what it scores | `engine.js` | `buildPaper` and `paperScore`. The breakdown denominator is the marks **this paper set** for that chapter; `EXAM_TOTAL` is `EXAM_WEIGHTS.reduce(...)`, never a second literal. Pinned by `tools/test_engine.js`. |
+| Quiz scoring | `engine.js` | `quizScore(quiz, answers)` — `app.js` keeps only the live badges and hands it the answer map. |
+| Search matching | `engine.js` | `buildIndex(chapters, titles)` + `search(index, term)`; `app.js` owns the panel, the keyboard and the rendering. |
 | Browser state | `app.js` | `progress` (localStorage `sm-progress`) is the only user state; `EXAM` the paper; `CH`/`cur` the chapter on screen. |
 
 ---
@@ -827,6 +839,7 @@ python tools/validate_site.py --strict   # coverage markers become errors
 python tools/dump_chapters.js            # node: prints chapter data as JSON
 python tools/merge_past.py               # dry run + qa_coverage report
 python tools/merge_past.py --apply       # rewrites ch*.js (backs up _audit/pre_merge/)
+node tools/test_engine.js                # the app's pure contracts, no browser needed
 python tools/check_ch4_queuing.py        # re-derives every Ch4 queuing figure
 python tools/check_ch2_coin_game.py      # re-derives the coin-toss game (Ch2)
 node tools/extract_variant_answers.js     # regenerates data/variant_answers.json
@@ -883,6 +896,32 @@ python -m http.server 8099      # then http://127.0.0.1:8099/
 ---
 
 ## 8. Changelog
+
+### 2026-09-12 (engine.js) — the pure behaviours get an owner, and a headless contract
+* **`engine.js` (174 lines) holds the app's pure logic**: `marksOf`, the paper
+  allocator (`chapterOptions` + `buildPaper`, now taking the chapters, the weights
+  and an injectable shuffle), the marker (`paperScore`), `quizScore`,
+  `buildIndex` and `search`. No DOM, no `localStorage`, no state of its own.
+  `app.js` 767 → 689 lines and renders only. The exam, quiz and search therefore
+  no longer need a browser to be checked.
+* **`tools/test_engine.js` pins 41 contracts, vm-loaded like `dump_chapters.js`.**
+  The ones that matter are the marking ones: a chapter the paper set 5 marks for
+  must read `x/5` and not `x/syllabus-6`; the eight breakdown denominators must
+  sum to the total the header prints; only the four chapters whose pool cannot
+  hit their weight (2, 4, 5, 7) may deviate; a fully marked paper reads 100%
+  everywhere; `quizScore` counts right / wrong / unanswered separately; search
+  matches `chi-square` and `gpss`, is case-insensitive, matches nothing under two
+  characters and ranks a title hit above a snippet hit.
+* **The test was proved able to fail.** Reverting `paperScore` to the old
+  behaviour (bars divided by the syllabus weight) turns it red with four failures
+  — including the literal message `5/6 (syllabus 6)` — and exit 1; reverting
+  `quizScore` so unanswered questions count as wrong turns it red with two. Both
+  restored; all 41 pass again.
+* **The validator followed the new file without being told.** `check_page_scripts()`
+  reads the tag list from `index.html` and resolves each `src`, so `engine.js` is
+  `node --check`ed: injecting a stray apostrophe reports
+  `index.html -> engine.js: does not parse` and exits 1.
+
 
 ### 2026-09-12 (architecture) — the app is a file, and the tools have one owner
 * **`index.html` 1122 → 354 lines: the application moved to `app.js` (767 lines).**

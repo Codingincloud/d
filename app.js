@@ -1,6 +1,6 @@
 (function(){
 'use strict';
-const CH=window.CHAPTERS||{},KEY='sm-progress';
+const CH=window.CHAPTERS||{},SM=window.SM,KEY='sm-progress';
 let cur=1,qs={},progress=JSON.parse(localStorage.getItem(KEY)||'{}');
 if(!progress.xp)progress={xp:0,done:{},quizzes:0,totalQ:0,correctQ:0,streak:0,lastDay:''};
 const meta=[
@@ -59,7 +59,6 @@ function confetti(){
 }
 /* ---------------- Helpers ---------------- */
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
-function stripTags(s){return String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim()}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
 /* ---------------- Design layer helpers ---------------- */
@@ -158,29 +157,9 @@ function updateTabBadges(){
 /* ---------------- Global search ---------------- */
 let IDX=[],SEARCH_HITS=[];
 function buildIndex(){
-  IDX=[];
-  for(let n=1;n<=8;n++){
-    const c=CH[n];if(!c)continue;const m=meta[n-1];
-    String(c.learn||'').split(/(?=<h[23]>)/).forEach(p=>{
-      const h=p.match(/<h[23]>([^<]*)<\/h[23]>/);
-      const body=stripTags(p);if(body.length<40)return;
-      IDX.push({ch:n,type:'note',title:h?h[1]:m.t,snip:body.slice(0,170),key:(h?h[1]:m.t)});
-    });
-    (c.quiz||[]).forEach(q=>IDX.push({ch:n,type:'quiz',title:q.q,snip:stripTags(q.explanation).slice(0,150),key:q.q.slice(0,45)}));
-    (c.past||[]).forEach(q=>IDX.push({ch:n,type:'past',title:q.q,snip:(q.year||'')+' · '+(q.marks||'')+' marks'+(q.answer?' · model answer':' · practice question')+((q.occ||[]).length>1?' · also asked in '+(q.occ||[]).map(o=>o.year).join(', '):''),key:q.q.slice(0,45)}));
-  }
+  IDX=SM.buildIndex(CH,meta.map(m=>m.t));
 }
-function search(term){
-  const t=term.trim().toLowerCase();if(t.length<2)return[];
-  const words=t.split(/\s+/),scored=[];
-  IDX.forEach(e=>{
-    const title=e.title.toLowerCase(),hay=(title+' '+e.snip.toLowerCase());
-    let s=0;words.forEach(w=>{if(hay.includes(w))s+=title.includes(w)?3:1});
-    if(s>0)scored.push([s,e]);
-  });
-  scored.sort((a,b)=>b[0]-a[0]);
-  return scored.slice(0,14).map(x=>x[1]);
-}
+function search(term){return SM.search(IDX,term)}
 function wireSearch(){
   const inp=document.getElementById('searchIn'),res=document.getElementById('searchRes');
   let sel=-1;
@@ -325,67 +304,11 @@ function topicRow(t){
 }
 
 /* ---------------- Mock exam ---------------- */
-const EXAM_WEIGHTS=[8,6,6,6,6,12,6,10];
-/* The paper's mark total is the sum of the weights - never a separate literal,
-   so the header, the score and the breakdown denominators cannot drift apart. */
-const EXAM_TOTAL=EXAM_WEIGHTS.reduce((a,b)=>a+b,0);
+/* The allocator, the marker and the search live in engine.js (window.SM); this
+   section only renders what they decide. */
 let EXAM=null,EXAM_TIMER=null;
-function marksOf(s){const m=String(s||'').match(/\d+/g);if(!m)return 2;const v=m.reduce((a,b2)=>a+ +b2,0);return v>0?v:2}
-/* Every subset of a chapter's answered questions that stays under cap,
-   so the allocator can choose between several mark totals for each chapter. */
-function chapterOptions(pool,cap){
-  const dp=new Map();dp.set(0,[]);
-  for(const it of pool){
-    for(const [s,cb] of [...dp]){
-      const ns=s+it.marks;
-      if(ns<=cap&&!dp.has(ns))dp.set(ns,cb.concat([it]));
-    }
-  }
-  return [...dp.entries()];
-}
-/* Assemble a paper that totals exactly EXAM_TOTAL marks.
-
-   Each chapter prefers its own syllabus weight, but a chapter whose pool cannot
-   hit that weight exactly (Ch 2, 4, 5 and 7 have no combination adding to 6)
-   may take a slightly larger or smaller set instead. A global dynamic program
-   then picks one option per chapter so that the paper still comes to EXAM_TOTAL
-   with the smallest possible deviation from the published weights. */
-function buildPaper(){
-  const perCh={};
-  for(let n=1;n<=8;n++){
-    const c=CH[n];
-    if(!c){perCh[n]=[[0,[]]];continue;}
-    const pool=shuffle((c.past||[]).filter(q=>q.answer).map(q=>({ch:n,q,marks:marksOf(q.marks),repeats:q.repeats||1})));
-    perCh[n]=chapterOptions(pool,EXAM_WEIGHTS[n-1]+5);
-  }
-  // State = total marks so far -> the lowest-deviation set of chapter picks
-  // reaching that total. Comparing deviation (not just first-found) is what
-  // lets the allocator keep every chapter close to its own weight.
-  let states=new Map([[0,{dev:0,picks:[]}]]);
-  for(let n=1;n<=8;n++){
-    const weight=EXAM_WEIGHTS[n-1],next=new Map();
-    for(const [tot,st] of states){
-      for(const [sum,combo] of perCh[n]){
-        const nt=tot+sum;
-        if(nt>EXAM_TOTAL)continue;
-        const dev=st.dev+Math.abs(sum-weight);
-        const cur=next.get(nt);
-        if(!cur||dev<cur.dev)next.set(nt,{dev,picks:st.picks.concat([{ch:n,sum,combo}])});
-      }
-    }
-    if(next.size)states=next;
-  }
-  let best=null,bestScore=Infinity,bestTotal=0;
-  for(const [tot,st] of states){
-    const score=Math.abs(EXAM_TOTAL-tot)*10+st.dev;
-    if(score<bestScore){bestScore=score;best=st.picks;bestTotal=tot}
-  }
-  const items=[];
-  (best||[]).forEach(p=>p.combo.forEach(x=>items.push(x)));
-  return items;
-}
 function startExam(){
-  const items=buildPaper();
+  const items=SM.buildPaper(CH,{shuffle});
   EXAM={items,revealed:{},marked:{},submitted:false,
         total:items.reduce((a,i)=>a+i.marks,0),
         left:180*60};
@@ -404,8 +327,8 @@ function fmtClock(s){s=Math.max(0,s);const h=Math.floor(s/3600),m=Math.floor(s%3
 function renderExam(){
   const el=document.getElementById('panel-exam');
   if(!EXAM){
-    el.innerHTML='<div class="an-sec"><h3>🕐 Mock Exam — full '+EXAM_TOTAL+'-mark paper</h3>'+
-      '<p style="font-size:13.5px;color:var(--t2);line-height:1.75">A complete paper is assembled from the past questions that have model answers, and it always totals <strong>'+EXAM_TOTAL+' marks</strong> taken in 3 hours. Each chapter contributes as close to its syllabus weight — <strong>8 + 6 + 6 + 6 + 6 + 12 + 6 + 10</strong> — as its pool of answered questions allows; where no set of answers in a chapter adds up to exactly its weight, the chapter contributes the nearest total instead and the breakdown after the paper names it.</p>'+
+    el.innerHTML='<div class="an-sec"><h3>🕐 Mock Exam — full '+SM.EXAM_TOTAL+'-mark paper</h3>'+
+      '<p style="font-size:13.5px;color:var(--t2);line-height:1.75">A complete paper is assembled from the past questions that have model answers, and it always totals <strong>'+SM.EXAM_TOTAL+' marks</strong> taken in 3 hours. Each chapter contributes as close to its syllabus weight — <strong>8 + 6 + 6 + 6 + 6 + 12 + 6 + 10</strong> — as its pool of answered questions allows; where no set of answers in a chapter adds up to exactly its weight, the chapter contributes the nearest total instead and the breakdown after the paper names it.</p>'+
       '<ul style="font-size:13.5px;color:var(--t2);line-height:1.8;margin:10px 0 10px 20px"><li>Attempt each question on paper first, then reveal the model answer.</li>'+
       '<li>Mark yourself <strong>Got it</strong> or <strong>Missed it</strong> — the score is built from your own honest marking.</li>'+
       '<li>Repeated questions (🔥) are the ones that actually come back, so they carry the most exam value.</li>'+
@@ -413,8 +336,7 @@ function renderExam(){
       '<div class="an-btns"><button class="an-btn" onclick="APP.startExam()">▶ Start the 3-hour paper</button></div></div>';
     return;
   }
-  const score=EXAM.items.reduce((a,i,idx)=>a+(EXAM.marked[idx]?i.marks:0),0);
-  const markedCount=Object.keys(EXAM.marked).length;
+  const {score,markedCount,byChapter}=SM.paperScore(EXAM.items,EXAM.marked);
   let h='<div class="exam-head">'+
     '<div><div style="font-size:17px;font-weight:700">🕐 Mock Exam — '+EXAM.items.length+' questions · '+EXAM.total+' marks</div>'+
     '<div style="font-size:12px;color:var(--t3);margin-top:4px">'+(EXAM.submitted?'Paper submitted':'Attempt each question, then reveal and self-mark')+'</div></div>'+
@@ -425,13 +347,10 @@ function renderExam(){
     h+='<div class="exam-result"><div class="big">'+score+'/'+EXAM.total+'</div><div class="sub">'+pct+'% self-assessed · '+verdict+'</div></div>';
     h+='<div class="an-sec"><h3>Breakdown by chapter</h3>'+
         '<p style="font-size:12px;color:var(--t3);margin-bottom:10px">Every bar is out of the marks this paper actually set for that chapter, so a chapter you answered perfectly reads 100%. The denominators add up to the '+EXAM.total+' marks above; a chapter that could not reach its syllabus weight carries that weight beside it.</p>';
-    for(let n=1;n<=8;n++){
-      const got=EXAM.items.reduce((a,i,idx)=>a+(i.ch===n&&EXAM.marked[idx]?i.marks:0),0);
-      const avail=EXAM.items.reduce((a,i)=>a+(i.ch===n?i.marks:0),0);
-      if(!avail)continue;
-      const weight=EXAM_WEIGHTS[n-1];
-      h+=bar('Ch '+n+' · '+meta[n-1].t.slice(0,14),Math.round(got/avail*100),got+'/'+avail+' marks'+(avail===weight?'':' (syllabus '+weight+')'));
-    }
+    byChapter.forEach(({ch,got,avail})=>{
+      const weight=SM.EXAM_WEIGHTS[ch-1];
+      h+=bar('Ch '+ch+' · '+meta[ch-1].t.slice(0,14),Math.round(got/avail*100),got+'/'+avail+' marks'+(avail===weight?'':' (syllabus '+weight+')'));
+    });
     h+='</div><div class="an-btns"><button class="an-btn" onclick="APP.startExam()">🔄 New paper</button>'+
        '<button class="an-btn" onclick="APP.clearExam()">← Back</button></div>';
   }
@@ -526,7 +445,7 @@ function switchTab(t){
 /* Quiz */
 function renderQuiz(cn,questions){
   if(!questions.length){document.getElementById('panel-quiz').innerHTML='<p style="color:var(--t3)">No quiz available.</p>';return;}
-  qs={total:questions.length,answered:0,correct:0};
+  qs={total:questions.length,answered:0,correct:0,answers:{}};
   const L='ABCDEF';
   let h=`<div class="quiz-header"><h3>🧠 Chapter ${cn} Quiz</h3><div class="quiz-progress"><div class="progress-bar"><div class="progress-fill" id="qProg" style="width:0%"></div></div><span class="progress-text" id="qProgT">0/${questions.length}</span></div><div class="quiz-score"><span class="score-badge score-correct" id="sC">✓ 0</span><span class="score-badge score-wrong" id="sW">✗ 0</span></div></div>`;
   questions.forEach((q,i)=>{h+=`<div class="quiz-card" id="qc-${i}"><div class="q-number">Question ${i+1} of ${questions.length}</div><div class="q-text">${q.q}</div><div class="q-options">${q.options.map((o,j)=>`<div class="q-option" role="button" tabindex="0" aria-label="Option ${L[j]}: ${o}" onclick="APP.ans(${i},${j})"><span class="opt-letter">${L[j]}</span><span>${o}</span></div>`).join('')}</div><div class="q-explanation" id="qe-${i}"><strong>💡 Explanation:</strong> ${q.explanation||''}</div></div>`;});
@@ -545,7 +464,10 @@ function ans(qi,oi){
   if(!ok)opts[q.answer].classList.add('correct');
   card.classList.add(ok?'answered-correct':'answered-wrong');
   document.getElementById('qe-'+qi).classList.add('show');
-  qs.answered++;if(ok){qs.correct++;progress.xp+=2;progress.correctQ++;}
+  qs.answers=qs.answers||{};qs.answers[qi]=oi;
+  const tally=SM.quizScore(ch.quiz,qs.answers);
+  qs.answered=tally.answered;qs.correct=tally.correct;qs.total=tally.total;
+  if(ok){progress.xp+=2;progress.correctQ++;}
   progress.totalQ++;save();updateStats();
   document.getElementById('qProg').style.width=(qs.answered/qs.total*100)+'%';
   document.getElementById('qProgT').textContent=qs.answered+'/'+qs.total;
@@ -555,7 +477,7 @@ function ans(qi,oi){
   // Check quiz completion
   if(qs.answered===qs.total){
     progress.quizzes++;save();updateStats();
-    const pct=Math.round(qs.correct/qs.total*100);
+    const pct=SM.quizScore(ch.quiz,qs.answers).pct;
     progress.chapterQuiz=progress.chapterQuiz||{};
     progress.chapterQuiz[cur]={correct:qs.correct,total:qs.total,pct:pct};save();
     const res=document.getElementById('quizResult');

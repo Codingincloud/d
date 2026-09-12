@@ -138,6 +138,7 @@ so out loud rather than implying the missing papers were found.
 freebuff_simulation/
 ├── index.html                    # the app shell: markup + the list of scripts
 ├── app.js                        # the app: tabs, quiz, past questions, search, exam, progress
+├── engine.js                     # pure logic, no DOM: paper allocator + marking, quiz scoring, search
 ├── ch1.js … ch8.js               # one file per chapter: notes + quiz + past questions
 ├── plan.md                       # living build plan / tracker (read this first)
 ├── assets/
@@ -156,7 +157,9 @@ freebuff_simulation/
 │   ├── same_question_merges.json # 34 curated "these are one question" groups (+12 refusals)
 │   └── tier_a_answers.json       # the 26 hand-written model answers
 ├── tools/
+│   ├── sitelib.py               # shared owner: chapter loading, normalisation, similarity, Reporter
 │   ├── dump_chapters.js          # loads the chapter files, prints their data as JSON
+│   ├── test_engine.js            # headless contract test for engine.js (node tools/test_engine.js)
 │   ├── validate_site.py          # structure, quiz/past data, HTML balance, coverage
 │   ├── import_question_bank.py   # bank HTML -> data/question_bank.json + analysis.js
 │   ├── merge_past.py             # dedupe + import the bank into ch*.js
