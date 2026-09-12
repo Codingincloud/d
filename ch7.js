@@ -2,10 +2,17 @@ window.CHAPTERS = window.CHAPTERS || {};
 window.CHAPTERS[7] = {
 learn: `
 <h2>7.1 Estimation Methods</h2>
-<p>Simulation outputs are <strong>random variables</strong> because inputs contain randomness. Therefore, statistical analysis is essential to draw valid conclusions.</p>
+<p>Simulation outputs are <strong>random variables</strong> because inputs contain randomness. The <strong>output</strong> is the set of results the model produces; analysing it is what turns those results into something the analyst and the decision maker can act on. Therefore, statistical analysis is essential to draw valid conclusions.</p>
 <div class="concept-box important">
-<h4>Why Analyze Simulation Output?</h4>
-<p>Without proper statistical analysis, simulation results may be misleading. We need to determine the accuracy and reliability of results.</p>
+<h4>Why we analyze simulation output</h4>
+<ol>
+<li><strong>Validation &amp; verification</strong> of the simulation model</li>
+<li><strong>Understanding system behaviour</strong> — what the system really does under the modelled conditions</li>
+<li><strong>Evaluating design alternatives</strong> — comparing candidate configurations on the same measure</li>
+<li><strong>Predicting the behaviour</strong> of the real system</li>
+<li><strong>Making an informed decision</strong> — a result is only usable once its uncertainty is known</li>
+</ol>
+<p>So analysis is <em>estimation</em>: when the variables of interest fluctuate over simulated time (stochastic dynamics), a single number means nothing until the uncertainty attached to it is stated too.</p>
 </div>
 
 <h3>Types of Simulations</h3>

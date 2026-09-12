@@ -79,7 +79,7 @@ Captured **2026-09-12**, after the design-foundation pass.
 | | Ch1 | Ch2 | Ch3 | Ch4 | Ch5 | Ch6 | Ch7 | Ch8 | Total |
 | :--- | --: | --: | --: | --: | --: | --: | --: | --: | --: |
 | Weight | 8 | 6 | 6 | 6 | 6 | 12 | 6 | 10 | **60** |
-| Notes | 16.4 KB | 26.7 KB | 9.1 KB | 11.7 KB | 14.0 KB | 37.2 KB | 8.3 KB | 21.7 KB | 145.1 KB |
+| Notes | 16.4 KB | 26.7 KB | 10.7 KB | 11.7 KB | 14.0 KB | 37.2 KB | 9.0 KB | 21.7 KB | 147.4 KB |
 | Quiz | 10 | 10 | 10 | 10 | 15 | 14 | 10 | 10 | **89** |
 | Past Q (as first imported) | 21 | 15 | 21 | 13 | 5 | 37 | 17 | 22 | **151** |
 | Past Q before P2 consolidation | 19 | 15 | 21 | 13 | 5 | 36 | 17 | 20 | **146** |
@@ -151,21 +151,24 @@ Built from the OCR index. **Read the page before trusting the label.**
 | :--- | :--- |
 | n1 p1–p6 | Simulation, modelling, simulation modelling; modelling vs simulation |
 | n1 p7–p12 | The system: entities / attributes / activities / events; closed vs open; model; types of model (analytical, physical, mathematical) |
-| n1 p13–p17 | Steps + phases of a simulation study; areas of application |
-| n1 p18–p22 | **Pure pursuit problem** (x(t), y(t) coordinates, bomber/fighter example) |
-| n1 p23–p26 | Continuous system simulation; automobile suspension worked model |
-| n1 p27–p29 | Hybrid simulation; differential equations; analog methods |
-| n1 p30–p38 | Queuing: arrival/service mechanism, queue disciplines FIFO/LIFO, μ, P₀, worked numbers |
+| n1 p13–p18 | Steps + phases of a simulation study; areas of application (p18 is the last application-area page) |
+| n1 p19 | **Ch3** opens: continuous systems — variables that change continuously with time; why differential equations are used |
+| n1 p20–p23 | **Ch3** water-reservoir ODE example (p20, `dh/dt = (Qin−Qout)/A`); **pure pursuit problem** — assumptions p21, formulation p22, pseudocode p23 |
+| n1 p24–p27 | **Ch3** analog / digital / hybrid compared side by side; analog components; automobile suspension; liver (thyroxine) compartment model |
+| n1 p28–p29 | **Ch3** hybrid simulation (DAC/ADC, artificial satellite); feedback systems — positive / negative, OPAM terminals |
+| n1 p30–p31 | **Ch3** ODE vs PDE; why differential equations matter in simulation |
+| n1 p32–p38 | **Ch4** queuing opens at p32 (queueing-system figure, elements/calling population); arrival-service mechanism, disciplines FIFO/LIFO, μ, P₀, worked numbers |
 | n1 p39–p45 | Manual simulation tables (15 customers, library/bank); machine-failure queuing case |
-| n1 p46–p47 | Markov chain: current-status distribution matrix |
+| n1 p46–p47 | p46 is an application-area list (manufacturing, transportation) bound far from its Ch1 pages; p47 is the Markov chain: current-status distribution matrix |
 | n1 p48–p53 | Verification & validation (real system vs model, validation considerations) |
 | n2 p1–p9 | **Ch6** random numbers: definition, properties, random number tables, mid-square, LCM |
 | n2 p9–p13 | Combined linear congruential method |
-| n2 p13–p31 | Testing randomness: hypothesis framework, chi-square table (interval/O/E), independence, auto-correlation, K–S, poker test |
-| n2 p32–p36 | **Ch7** analysis of output: estimation, run statistics, elimination of initial bias |
+| n2 p13–p32 | Testing randomness: hypothesis framework, chi-square table (interval/O/E), independence, auto-correlation, K–S, poker test (p32 is still the poker test) |
+| n2 p33–p37 | **Ch7** analysis of output: p33 opens “Analysis of Simulation O/P”; variance and interval estimation, IID + CLT (p35); run statistics / replications (p36); initial bias (p37) |
 | n2 p37–p43 | **Ch2** Monte Carlo: significance, integral estimation, area of a rectangle |
 | n2 p44–p45 | **Ch2** Monte Carlo vs stochastic simulation (the comparison table); the **coin-toss game** problem (p45) |
 | n2 p46–p57 | **Ch8** simulation languages: tools, SIMSCRIPT's seven-section program structure + code, GPSS characteristics, the eight block types with their operands, four worked GPSS models (barber shop, supermarket, manufacturing shop, soap testing) |
+| n2 p58 | **Ch8** a fifth GPSS program (telephone system: GENERATE / QUEUE / SEIZE / DEPART / ADVANCE / RELEASE / TERMINATE) and the notes' definition of **CSSL** |
 
 So: **note 1 = Ch1, 3, 4, 5** and **note 2 = Ch6, 7, 2, 8** (note 2 is not in
 chapter order — check the map, not the sequence).
@@ -175,6 +178,47 @@ which was wrong by two pages. p44–p45 are the Monte Carlo-versus-stochastic
 comparison and the coin-toss game, so they belong to Ch2; Ch8 opens at p46 with
 "Chapter: Simulation Language". This is exactly the failure mode §2.3 warns
 about — the label was trusted instead of the page.
+
+**Corrected 2026-09-12 (P4, Ch3/Ch7 pass):** four more boundaries were off. Ch3
+does **not** start at p23 — p19 opens “Continuous system are those in which
+system variables change continuously according to time”, and p20–p23 carry the
+reservoir ODE example and the whole pure-pursuit write-up; p24–p31 finish the
+chapter (analog/digital/hybrid, suspension, liver, feedback, ODE/PDE). So **Ch3 =
+n1 p19–p31** and n1 p18 is still Ch1's application-area list, which means Ch4
+opens at **n1 p32** (“Queuing System … elements/calling population”), not p30. On
+note 2, **Ch7 = p33–p37**: p32 is still the poker test (Ch6) and p37 is the
+initial-bias page that the old `p32–p36` range cut off. And **n2 p58** is Ch8, not
+leftover — it holds a fifth GPSS program and the CSSL definition.
+
+### 2.4 Where the code lives (2026-09-12, architecture pass)
+
+```
+index.html            the shell: markup, styles, and the list of scripts
+app.js                the application — tabs, quiz, past questions, search,
+                      mock exam, progress. One IIFE; no inline script in the page
+ch1.js … ch8.js       DATA only: window.CHAPTERS[n] = {learn, quiz, past}
+data/analysis.js      generated: window.ANALYSIS for the Analysis tab
+tools/
+  sitelib.py          the shared owner (see below)
+  merge_past.py       the only writer of ch*.js past[]
+  validate_site.py    the gate
+  extract_occurrences.py, find_duplicates.py, import_question_bank.py,
+  gen_same_question_merges.js, extract_variant_answers.js
+  check_ch2_coin_game.py, check_ch3_pure_pursuit.py, check_ch4_queuing.py
+  dump_chapters.js    node → JSON bridge; the only reader of ch*.js
+```
+
+**Ownership rules, so the next pass builds with this rather than against it:**
+
+| Concern | Owner | Note |
+| :--- | :--- | :--- |
+| “Are these the same question?” | `tools/sitelib.py` | `normalise_question`, `strict_similarity`, `similarity`, `norm_key`, `numeric_tokens`. Tools **import** these; none may re-implement them. |
+| “Does this text contain this marker?” | `tools/sitelib.py` | `normalise_text` — punctuation only, **words kept**. Deliberately a second function: folding it into the question normaliser drops stopwords and silently breaks the syllabus-coverage check. |
+| Reading the chapter files | `tools/sitelib.py` | `load_chapters()` — the one `node dump_chapters.js` call. |
+| A re-derived figure, and whether it agrees | `tools/sitelib.py` | `Reporter.check/note/finish`. The three `check_*.py` are consumers. |
+| Chapter content | `merge_past.py --apply` | The only writer. Dry by default; idempotent. |
+| What the page loads, and whether it parses | `validate_site.py` | It resolves every `<script src>` in `index.html` to a file, checks it exists, and runs `node --check` on it. Code can move; the check follows. |
+| Browser state | `app.js` | `progress` (localStorage `sm-progress`) is the only user state; `EXAM` the paper; `CH`/`cur` the chapter on screen. |
 
 ---
 
@@ -674,10 +718,20 @@ what the site lacks that the syllabus wants. Record findings here before
 editing. The notes are the user's own class notes, so their emphasis is a good
 guide to what the exam asks.
 
-**Progress: ~52 of 111 pages read.** n1 p39–45 and n2 p1–24, p37–45 were read
-during P3 (Ch4, Ch6, Ch2 numericals); this pass added **n2 p44–57**. Still to
-read: n1 p1–38 and p46–53 (Ch1, Ch3, Ch5), n2 p25–36 (Ch6 tests, Ch7) and n2
-p58.
+**Progress: ~70 of 111 pages read.** n1 p39–45 and n2 p1–24, p37–45 were read
+during P3 (Ch4, Ch6, Ch2 numericals); the first P4 pass added **n2 p44–57**; this
+pass covered **n1 p18–32** (Ch3 and the Ch4 boundary) and **n2 p30–38, p58**
+(Ch6's last test, all of Ch7, the Ch2 boundary and n2 p58).
+
+**Read this before trusting any of the above:** this pass could **not** open the
+page images — `read_files` returns `[BLOCKED]` for every `note*.jpg` in this
+session — so it worked from the pdf24 **text layer** (`_source/note1.ocr.txt`,
+`_source/note2.ocr.txt`, split on form feed, so the page number is exact). That is
+enough to settle **boundaries** and to quote a **heading or a stated definition**,
+and not enough to trust **handwritten numbers**: the OCR renders “10 units” as
+`(9 unite` and the telephone model's operands as `GENERATE3,1`. Everything below
+is limited to what the text layer states plainly. **The visual page read is still
+owed**, and the two items it is owed are recorded in §7.
 
 #### Findings, Ch8 (n2 p46–p57) — the thinnest chapter by weight
 
@@ -697,9 +751,22 @@ p58.
 | 7 | The Monte Carlo / stochastic comparison is **already covered** by §2.3 | None needed |
 | 8 | The **coin-toss game problem was missing entirely** | Worked in full in §2.3, with `tools/check_ch2_coin_game.py` |
 
+#### Findings, Ch3 + Ch7 + n2 p58 (n1 p18–p32, n2 p30–p38, p58)
+
+| | Finding | Action |
+| :-- | :--- | :--- |
+| 9 | **The Ch3 pure-pursuit half-fix.** The first P3 pass corrected the swapped step in the **Learn** section and left it in the places a student actually reads the answer in: the quiz question/answer (n1 p21–p23) and the "Describe the pure pursuit problem" past-answer card still said `x_f(t+1) = … + V_p × sin θ`, and that card's own closing line still said "shot down at ≤ 100 m" beside its own assumption of **10 units**, plus an invented "escapes beyond 1000 m" rule that appears on no page | **All four places** now say cos θ → x, sin θ → y and a 10-unit firing range with escape on the time limit; `tools/check_ch3_pure_pursuit.py` re-derives the step and **fails on any of the four stale strings** (negative-tested against `git show HEAD:ch3.js`: 5 lines caught) |
+| 10 | Ch3 had **no three-way analog / digital / hybrid comparison**; the notes lay one out at n1 p24 under "continuous system simulation can be done by simulating …", and only a two-column analog-vs-hybrid table existed, in a past answer | Added the **Analog vs Digital vs Hybrid** table to §3.3 (7 rows: built from, data, programmability, accuracy, real-time, interface, examples) |
+| 11 | Ch7 replaced the notes' answer to "why analyse simulation output" with a two-sentence box; n2 p33 gives **five reasons** (validation & verification, understanding behaviour, evaluating design alternatives, predicting behaviour, informed decision) | Restored as the five-item list, with the notes' framing that analysis *is* estimation under stochastic dynamics |
+| 12 | Ch7's interval-estimation page (n2 p35) states the **IID** assumption and the **central limit theorem** route to `Z = (X̄−μ)/(σ/√n)`; the site's §7.1 jumped straight to the t-interval | Noted only — §7.3 already introduces IID where the replication formula uses it, so the gap is ordering, not a missing fact |
+| 13 | **n2 p58** carries a **fifth GPSS program** (telephone system) and the notes' CSSL definition. The CSSL wording is already covered by §8.2/§8.4 | The **CSSL half needs nothing**. The telephone GPSS program is **not transcribed**: the text layer renders its operands ambiguously (`GENERATE3,1`, `ADVANCE 5,9E`), and guessing operand values is the exact failure mode this pass exists to catch. Recorded in §7 as a page-read job |
+
 **Method note for the remaining pages.** Open the page image; do not trust either
 the map or a grep of the noisy OCR. Finding 1 and §3.2e were both invisible to
-text search and obvious on the page within seconds.
+text search and obvious on the page within seconds. When the images cannot be
+opened (see the note above §2.3), the text layer still settles **which page a
+topic lives on** and **what a stated definition says** — which is how findings 9,
+10, 11 and 13 were reached — but it cannot be trusted for handwritten numerals.
 
 ### P5 — Figures and diagrams [~] started 2026-09-12
 
@@ -786,17 +853,22 @@ python -m http.server 8099      # then http://127.0.0.1:8099/
 
 ## 7. Open questions for the user
 
-0. **What is left, stated plainly** (2026-09-12, after the Ch4 pass): the Ch8
-   GPSS worked model, the Ch3 suspension diagram, the remaining P5 figures, and
-   P4. **P4 is no longer blocked on tooling** — the earlier note that "this
-   session cannot open images" does not apply to the current tools: `read_files`
-   on `_source/notes/note1_p18.jpg` returns the page and it is perfectly
-   legible, which is how the invented library data in §3.2e was caught. Any page
-   can be rendered on demand (`python tools/render_notes.py --note 1 --pages
-   39-45`) and read directly, so the page-by-page diff against the site can
-   start whenever it is wanted. P6 (Analysis + Mock Exam) is still parked on the
-   original instruction to finish Learn and Past Questions first; both are in
-   good shape now, so say the word.
+0. **What is left, stated plainly** (2026-09-12, after the Ch3/Ch7 pass): the Ch8
+   GPSS worked model, the Ch3 suspension diagram, and the remaining P5 figures.
+   **P4's remaining pages need a page read, not more grepping.** Whether
+   `read_files` can open a `note*.jpg` **flips between sessions** — it worked for
+   n1 p39–45 and the libraries pass and it returns `[BLOCKED]` now, for every
+   page. The text layer is enough for boundaries and stated definitions (that is
+   what this pass used) and is not enough for handwritten numerals: `10 units`
+   OCRs as `(9 unite`. Two concrete items are therefore owed, in this order:
+   **(a)** the **telephone-system GPSS program** on n2 p58 — its operands
+   (`GENERATE 3,1`? `ADVANCE 5,2`?) have to be read off the page before they can
+   be taught; **(b)** a **visual sweep of n1 p19–p31** (Ch3), where this pass
+   could only confirm structure and definitions, and the automobile-suspension
+   and liver equations in particular deserve an eye. The remaining unread pages
+   are n1 p1–17 and p33–38, p46–53 (Ch1, Ch4, Ch5) and n2 p59. P6 (Analysis +
+   Mock Exam) is still parked on the original instruction to finish Learn and
+   Past Questions first; both are in good shape now, so say the word.
 
 1. **Theme default.** Dark is now the default (it was light). Nothing else
    changed — say the word if you'd rather keep light as the default.
@@ -811,6 +883,83 @@ python -m http.server 8099      # then http://127.0.0.1:8099/
 ---
 
 ## 8. Changelog
+
+### 2026-09-12 (architecture) — the app is a file, and the tools have one owner
+* **`index.html` 1122 → 354 lines: the application moved to `app.js` (767 lines).**
+  It was one inline `<script>` holding navigation, quiz, past-question rendering,
+  search, progress and the whole mock exam — the reason a single stray apostrophe
+  once blanked every tab, and the reason every pass had to edit the biggest file
+  in the project. The move is byte-for-byte: the extracted body hashes identical
+  to the lines that left `index.html`, and the page loads it the way it already
+  loads `ch*.js`, at the same point in the document.
+* **`tools/sitelib.py` is the one owner of the duplicated tool logic** (147
+  lines): `ROOT`, `load_chapters()`, `normalise_question`, `normalise_text`,
+  `strict_similarity`, `similarity`, `norm_key`, `numeric_tokens`, `Reporter`,
+  `use_utf8_stdout()`. `merge_past.py` −63 lines, the two older checkers −10 each;
+  `validate_site.py` +25 because its script check got stronger, not because it
+  kept a copy.
+* **The syntax check now follows the code instead of the markup.**
+  `check_page_scripts()` resolves every `<script src>` in `index.html`, errors if
+  the file is missing, and runs `node --check` on it; any inline script left
+  behind is still parsed. The validator caught the move by itself — it reported
+  `expected 8 chapter meta entries, found 0` the moment the meta array left the
+  page — and `page_code()` (the page plus the scripts it loads) is the fix, so
+  the meta, weight and hours checks read the code wherever it is.
+* **Negative-tested, because a check that cannot fail is not a check:** one
+  injected stray apostrophe in `app.js` → `index.html -> app.js: does not parse`,
+  exit 1; a dangling `src` → error; a page with no scripts → error. All three
+  restored and re-run green afterwards.
+* **Behaviour preserved, and proved where it could have slipped.**
+  `merge_past.py --apply` twice: **8/8 chapter files byte-identical**,
+  `imported new 0`. A/B on the two tools that were only imported: HEAD's
+  `extract_occurrences.py` and the refactored one produce a **byte-identical**
+  `data/occurrences.json` (md5 `a82ead50…`), so the refactor changed no
+  behaviour — the committed `occurrences.json` is simply stale against the
+  current chapter files, and it was left at its committed bytes rather than
+  silently regenerated in a structure pass.
+* Re-exercised in the live preview with a clean console: all 8 chapters render,
+  5 tabs switch, Ch 6's 14-question quiz scores `✓ 14 ✗ 0`, the mock exam
+  self-marks to **60/60** over 13 questions, and search for "chi-square" returns
+  hits.
+
+### 2026-09-12 (P4: Ch3 + Ch7) — the pure-pursuit fix completed in all four places, two gaps filled, four map boundaries corrected
+* **The pure-pursuit half-fix is finished.** The first P3 pass corrected the
+  swapped step in the Learn section and left it in the two places a student
+  actually revises from: the quiz, and the "Describe the pure pursuit problem"
+  past-answer card. That card also closed with "shot down at ≤ 100 m" while its
+  own assumptions said **10 units**, and with an "escapes beyond 1000 m" rule that
+  is on no page. All four places now agree: **cos θ → x, sin θ → y**, firing range
+  **10 units**, escape on the time limit. `tools/check_ch3_pure_pursuit.py`
+  re-derives the step (d = 102.96, cos = 0.8742, sin = −0.4856, and (17.48, 40.29)
+  at V_p = 20) and **fails on any of the four stale strings** — run against the
+  previous commit's `ch3.js` it catches 5 lines, and it also proves the pairing is
+  not cosmetic: a correctly paired step closes the gap by exactly V_p, the swapped
+  one **opens** it by 17.45.
+* **Ch3 §3.3 gained the notes' Analog vs Digital vs Hybrid comparison** (n1 p24):
+  seven rows, and the first place in the chapter with a **digital** column at all
+  (the only comparison before it was a two-column analog-vs-hybrid table inside a
+  past answer).
+* **Ch7's "why analyse simulation output" box is now the notes' five reasons**
+  (n2 p33) — validation & verification, understanding behaviour, evaluating design
+  alternatives, predicting behaviour, informed decision — with the notes' framing
+  that analysis *is* estimation under stochastic dynamics. It was a two-sentence
+  box before.
+* **Four page-map boundaries corrected** (§2.3): **Ch3 = n1 p19–p31** (not
+  p23–26 + p27–29), **Ch4 opens at n1 p32** (not p30), **Ch7 = n2 p33–p37** (not
+  p32–p36), and **n2 p58 = Ch8**. n1 p18 is still Ch1's application-area list, and
+  n1 p46 is an application-area list bound far from its Ch1 pages.
+* **Session constraint, recorded so the next session does not waste a pass on it:**
+  `read_files` returns `[BLOCKED]` for every `note*.jpg` here. This pass worked
+  from the form-feed-split text layer — exact for page numbers and headings, and
+  **unusable for handwritten numerals** (`10 units` OCRs as `(9 unite`). The two
+  items that owe a page read are in §7.0.
+* Verification: `dump_chapters.js` parses; `validate_site.py` **and** `--strict`
+  pass; `merge_past.py` reports `imported new 0`, and two `--apply` runs leave
+  **8/8 chapter files byte-identical**; all three checker scripts pass; the changed
+  content was read back **from the live page** — the Ch3 table's headers render as
+  FEATURE / ANALOG / DIGITAL / HYBRID with 7 data rows, the quiz and the past
+  answer both carry the 10-unit rule and cos → x, and Ch7's five reasons render as
+  list items 1–5 — with a clean console.
 
 ### 2026-09-12 (adversarial fix) — 15 orphaned model answers restored, and the mock exam marks out of the total it claims
 

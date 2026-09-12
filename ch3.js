@@ -82,6 +82,19 @@ y_f(t+1) = 50 + V_p × (−0.4856) = 50 − 0.4856 V_p</span><span class="worked
 <li>Uses continuous signals (voltage or current)</li>
 </ul>
 
+<h3>Analog vs Digital vs Hybrid</h3>
+<p>A continuous system can be simulated three ways. The exam asks for this comparison by name, so keep the three columns straight:</p>
+<table class="comparison-table">
+<tr><th>Feature</th><th>Analog</th><th>Digital</th><th>Hybrid</th></tr>
+<tr><td><strong>Built from</strong></td><td>Physical components — adder, integrator, op-amp, potentiometer</td><td>A digital computer + simulation software</td><td>An analog computer with a digital computer attached</td></tr>
+<tr><td><strong>Data handled</strong></td><td>Continuous signals (voltage or current)</td><td>Discrete numbers</td><td>Both — continuous signals <em>and</em> discrete numbers</td></tr>
+<tr><td><strong>Programmable</strong></td><td>No — the wiring is the program</td><td>Yes — the model is software</td><td>Partly — the digital half is programmed</td></tr>
+<tr><td><strong>Accuracy / precision</strong></td><td>Highly accurate, not highly precise</td><td>Highly precise; accuracy limited by round-off</td><td>Analog accuracy on the continuous part, digital precision on the rest</td></tr>
+<tr><td><strong>Real-time</strong></td><td>Yes — it runs at real speed</td><td>Not inherently</td><td>Yes, if the digital half keeps up</td></tr>
+<tr><td><strong>Interface</strong></td><td>—</td><td>—</td><td>Needs high-speed <strong>DAC</strong> and <strong>ADC</strong></td></tr>
+<tr><td><strong>Examples</strong></td><td>Abacus, analog speedometer, mechanical integrator</td><td>GPSS, SIMSCRIPT, CSSL packages</td><td>Artificial-satellite simulation (continuous motion + digital control)</td></tr>
+</table>
+
 <h2>3.4 Analog Methods — Components</h2>
 <p>The various components used in analog computers to simulate continuous systems:</p>
 <table class="comparison-table">
@@ -148,7 +161,7 @@ y_f(t+1) = 50 + V_p × (−0.4856) = 50 − 0.4856 V_p</span><span class="worked
 
 quiz: [
   {q:"In pure pursuit, the target is:", options:["Aware of pursuer","Not aware of pursuer","Stationary","Moving randomly"], answer:1, explanation:"In pure pursuit, the target is NOT aware of the pursuer (unlike 'hot pursuit' where the target knows)."},
-  {q:"If the fighter-bomber distance is ≤ 100m, what happens?", options:["Fighter escapes","Bomber escapes","Bomber is shot down","Both retreat"], answer:2, explanation:"If distance ≤ 100m (or 10 units), the fighter can fire a missile and the bomber is shot down."},
+  {q:"If the fighter-bomber distance falls to ≤ 10 units, what happens?", options:["Fighter escapes","Bomber escapes","Bomber is shot down","Both retreat"], answer:2, explanation:"10 units is the stated firing range — the fighter can launch its missile and the bomber is shot down. If it cannot close to 10 units within the time allowed, the bomber escapes."},
   {q:"Which component in analog computer reverses signal sign?", options:["Summer","Integrator","Scale factor","Inverter"], answer:3, explanation:"An inverter reverses the sign of the signal, multiplying by -1."},
   {q:"The automobile suspension equation is:", options:["MẌ + DẊ + Kx = Kf(t)","MẊ + Kx = f(t)","Ẍ = Kf(t)","MẌ = DẊ"], answer:0, explanation:"The suspension system is modeled by MẌ + DẊ + Kx = Kf(t) where M=mass, D=damping, K=spring constant."},
   {q:"How many integrators are used in the Computer Model of Liver?", options:["1","2","3","4"], answer:2, explanation:"3 integrators are used — each solving one of the three differential equations for blood (X₁), liver (X₂), and bile (X₃)."},
@@ -216,10 +229,10 @@ past: [
 <ul>
 <li>Distance: d = √((x_b - x_f)² + (y_b - y_f)²)</li>
 <li>sin θ = (y_b - y_f)/d, cos θ = (x_b - x_f)/d</li>
-<li>x_f(t+1) = x_f(t) + V_p × sin θ</li>
-<li>y_f(t+1) = y_f(t) + V_p × cos θ</li>
+<li>x_f(t+1) = x_f(t) + V_p × cos θ &nbsp;← cos θ is the x-component</li>
+<li>y_f(t+1) = y_f(t) + V_p × sin θ &nbsp;← sin θ is the y-component</li>
 </ul>
-<p>If d ≤ 100m → bomber shot down. If d > 1000m → bomber escapes. If target path is straight → analytical solution. If curved → simulation needed.</p>`},
+<p>If d ≤ 10 units → bomber shot down. If the fighter cannot close to 10 units within the time allowed → bomber escapes. If target path is straight → analytical solution. If curved → simulation needed.</p>`},
   {year:"2025 M", marks:"8", repeats:1, q:"Compare analog vs. hybrid simulation methods, highlighting their use in solving differential equations.", occ:[{year:"2025 M", marks:"8", q:"Compare analog vs. hybrid simulation methods"}],
    answer:`<h4>Answer</h4>
 <table>
