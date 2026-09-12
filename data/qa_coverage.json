@@ -1,0 +1,862 @@
+{
+ "threshold": 0.75,
+ "chapters": {
+  "1": {
+   "site_questions": 12,
+   "bank_questions": 21,
+   "matched": 12,
+   "matched_pairs": [
+    {
+     "bank": "Define system simulation and give one example",
+     "site": "Define system simulation and give one example.",
+     "score": 1.0
+    },
+    {
+     "bank": "Define simulation. Explain the ways to study a system. Point out the areas where the Simulation and Modeling can be used",
+     "site": "Define simulation. Explain the ways to study a system. Point out the areas where Simulation and Modeling can be used.",
+     "score": 1.0
+    },
+    {
+     "bank": "What is system modeling? What are the types of system models? Explain dynamic physical model with an example",
+     "site": "What is system modeling? What are the types of system models? Explain dynamic physical model with an example.",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain the concept of System. Differentiate between Continuous and discrete, Deterministic and Stochastic system with example",
+     "site": "Explain the concept of System. Differentiate between Continuous and Discrete, Deterministic and Stochastic system with example.",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain the ways to study a system. What are the criteria of classifying Simulation models? Brief it with suitable example",
+     "site": "Explain the ways to study a system. What are the criteria of classifying Simulation models? Brief it with suitable example.",
+     "score": 1.0
+    },
+    {
+     "bank": "Differentiate between deterministic and stochastic simulation",
+     "site": "Differentiate between deterministic and stochastic simulation",
+     "score": 1.0
+    },
+    {
+     "bank": "Differentiate between discrete system simulation and continuous system simulation",
+     "site": "Differentiate between discrete system simulation and continuous system simulation",
+     "score": 1.0
+    },
+    {
+     "bank": "Define real time simulation. Mention the advantages and disadvantages of simulation. What are the purposes for which simulation can be used?",
+     "site": "Define real time simulation. Mention the advantages and disadvantages of simulation.",
+     "score": 0.85
+    },
+    {
+     "bank": "Explain real time simulation with example. Explain the type of simulation models",
+     "site": "Explain real time simulation with example. Explain the type of simulation models",
+     "score": 1.0
+    },
+    {
+     "bank": "Discuss real-time simulation with an example. Mention purposes of using simulation. What are the limitations of simulation?",
+     "site": "Discuss real-time simulation with an example. Mention purposes and limitations of simulation.",
+     "score": 1.0
+    },
+    {
+     "bank": "What do you mean by simulation and modeling? Explain the steps in the simulation study",
+     "site": "What do you mean by simulation and modeling? Explain the steps in the simulation study.",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain the steps in a simulation study with a flowchart",
+     "site": "Explain the steps in a simulation study with a flowchart.",
+     "score": 1.0
+    }
+   ],
+   "new": [],
+   "merged_total": 12,
+   "duplicates_skipped": [
+    {
+     "id": "1-02",
+     "year": "2015 F",
+     "q": "What do you mean by simulation and modeling?"
+    },
+    {
+     "id": "1-12",
+     "year": "2012 C",
+     "q": "Mention the advantages and disadvantages of simulation. What are the purposes for which simulation can be used?"
+    },
+    {
+     "id": "1-13",
+     "year": "2010 F",
+     "q": "Mention purposes of using simulation. What are the limitations of simulation?"
+    },
+    {
+     "id": "1-14",
+     "year": "2010 C",
+     "q": "Explain the limitations of Simulation Techniques"
+    },
+    {
+     "id": "1-15",
+     "year": "2014 F",
+     "q": "What are the criteria of classifying Simulation models? Brief it with suitable example"
+    },
+    {
+     "id": "1-16",
+     "year": "2011 C",
+     "q": "Explain the type of simulation models"
+    },
+    {
+     "id": "1-17",
+     "year": "2019 F",
+     "q": "Explain the phases and steps in simulation study"
+    },
+    {
+     "id": "1-20",
+     "year": "2011 F",
+     "q": "Point out the areas where the Simulation and Modeling can be used"
+    },
+    {
+     "id": "1-21",
+     "year": "2019 F",
+     "q": "Short Note: Application areas of simulation"
+    }
+   ],
+   "paraphrase_folds": [],
+   "tier_a_still_missing_answer": []
+  },
+  "2": {
+   "site_questions": 8,
+   "bank_questions": 13,
+   "matched": 6,
+   "matched_pairs": [
+    {
+     "bank": "Discuss the basic philosophy of Monte-Carlo simulation",
+     "site": "Discuss the basic philosophy of Monte-Carlo simulation.",
+     "score": 1.0
+    },
+    {
+     "bank": "Calculate ∫₁⁴ (x+4)³ dx using Monte Carlo simulation. Also calculate error",
+     "site": "Calculate ∫₁⁴ (x+4)³dx using Monte Carlo simulation. Calculate error.",
+     "score": 0.957
+    },
+    {
+     "bank": "Solve ∫₁ᵉ dx using Monte Carlo Method",
+     "site": "Solve ∫₁ᵉ dx using Monte Carlo Method",
+     "score": 1.0
+    },
+    {
+     "bank": "Find the value of ∫₀^(π/2) cos x dx using Monte-Carlo Method",
+     "site": "Find the value of ∫₀^(π/2) cos x dx using Monte-Carlo Method",
+     "score": 1.0
+    },
+    {
+     "bank": "Define normally distributed random number with example",
+     "site": "Define normally distributed random number with example.",
+     "score": 1.0
+    },
+    {
+     "bank": "Compare stochastic simulation vs. Monte Carlo method",
+     "site": "Compare stochastic simulation vs. Monte Carlo method.",
+     "score": 1.0
+    }
+   ],
+   "new": [],
+   "merged_total": 8,
+   "duplicates_skipped": [
+    {
+     "id": "2-02",
+     "year": "2025 M",
+     "q": "What is the purpose of the Monte Carlo method?"
+    },
+    {
+     "id": "2-03",
+     "year": "2011 C",
+     "q": "Explain the significance of Monte Carlo Method in simulation"
+    },
+    {
+     "id": "2-04",
+     "year": "2014 F, 2010 F",
+     "q": "Find the value of pi (π) by using Monte Carlo simulation using the equation x²+y²=16. Also calculate error when compared with its analytical value"
+    },
+    {
+     "id": "2-05",
+     "year": "2011 C",
+     "q": "Estimate the value of π using Monte Carlo Method"
+    },
+    {
+     "id": "2-07",
+     "year": "2015 F",
+     "q": "Calculate ∫₀^(π/2) cos x dx using Monte Carlo simulation"
+    },
+    {
+     "id": "2-11",
+     "year": "2014 F",
+     "q": "Explain the concept of Monte-Carlo simulation over stochastic simulation"
+    },
+    {
+     "id": "2-13",
+     "year": "2019 F",
+     "q": "Vegetable shopkeeper simulation: Determine how much green vegetable to purchase. Probability distribution for customers (8,10,12,14) and kg ordered (1,2,3,4) given. Vegetable sells Rs.50/kg, unsold at half price. Simulate for 5 days"
+    }
+   ],
+   "paraphrase_folds": [],
+   "tier_a_still_missing_answer": []
+  },
+  "3": {
+   "site_questions": 10,
+   "bank_questions": 23,
+   "matched": 10,
+   "matched_pairs": [
+    {
+     "bank": "Describe the pure pursuit problem in continuous systems",
+     "site": "Describe the pure pursuit problem in continuous systems.",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain continuous system simulation with suitable example",
+     "site": "Explain continuous system simulation with suitable example.",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain how continuous model can be solved numerically with an example",
+     "site": "Explain how continuous model can be solved numerically with an example",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain the analogy method of system study with suitable example",
+     "site": "Explain the analogy method of system study with suitable example",
+     "score": 1.0
+    },
+    {
+     "bank": "Represent the equation Ax″+Bx′+Cx+D=0 in terms of analog computer block diagram",
+     "site": "Represent Ax'' + Bx' + Cx + D = 0 in analog computer block diagram.",
+     "score": 0.874
+    },
+    {
+     "bank": "Solve equations by analog method: X₁′= −K₁₂X₁ + K₂₁X₂; X₂′= K₁₂X₁ − (K₂₁+K₂₃)X₂; X₃′= K₂₃X₂",
+     "site": "Solve equations by analog method: X₁′= −K₁₂X₁ + K₂₁X₂; X₂′= K₁₂X₁ − (K₂₁+K₂₃)X₂; X₃′= K₂₃X₂",
+     "score": 1.0
+    },
+    {
+     "bank": "Compare analog vs. hybrid simulation methods, highlighting their use in solving differential equations",
+     "site": "Compare analog vs. hybrid simulation methods, highlighting their use in solving differential equations.",
+     "score": 1.0
+    },
+    {
+     "bank": "Illustrate the possible event interactions in Hybrid Simulation",
+     "site": "Illustrate the possible event interactions in Hybrid Simulation",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain feedback system with its application",
+     "site": "Explain feedback system with its application.",
+     "score": 1.0
+    },
+    {
+     "bank": "Why are differential equations so important in simulation?",
+     "site": "Why are differential equations so important in simulation? Explain with example.",
+     "score": 0.92
+    }
+   ],
+   "new": [],
+   "merged_total": 10,
+   "duplicates_skipped": [
+    {
+     "id": "3-01",
+     "year": "2012 C",
+     "q": "Explain pure pursuit problem"
+    },
+    {
+     "id": "3-02",
+     "year": "2010 F",
+     "q": "Discuss a pure pursuit problem with a suitable example"
+    },
+    {
+     "id": "3-04",
+     "year": "2010 C",
+     "q": "Short Note: A pure pursuit problem"
+    },
+    {
+     "id": "3-05",
+     "year": "2019 F",
+     "q": "Explain the concept of continuous system simulation"
+    },
+    {
+     "id": "3-08",
+     "year": "2011 F",
+     "q": "Short Note: Continuous Simulation"
+    },
+    {
+     "id": "3-14",
+     "year": "2011 F",
+     "q": "Explain feedback system and hybrid system with suitable example"
+    },
+    {
+     "id": "3-15",
+     "year": "2025 M",
+     "q": "Compare analog vs. hybrid simulation methods"
+    },
+    {
+     "id": "3-17",
+     "year": "2015 F",
+     "q": "Explain feedback system with suitable example"
+    },
+    {
+     "id": "3-18",
+     "year": "2011 F",
+     "q": "Explain feedback system and hybrid system with suitable example"
+    },
+    {
+     "id": "3-19",
+     "year": "2011 C",
+     "q": "What are the applications of feedback system? Explain computer model to represent it. Show GPSS block diagram"
+    },
+    {
+     "id": "3-20",
+     "year": "2014 F, 2012 C,, 2010 F, 2010 C",
+     "q": "Short Note: Feedback system"
+    },
+    {
+     "id": "3-22",
+     "year": "2012 C, 2010 C",
+     "q": "Explain the need of differential equation in simulation with an example"
+    },
+    {
+     "id": "3-23",
+     "year": "2015 F",
+     "q": "Short Note: Differential equation"
+    }
+   ],
+   "paraphrase_folds": [],
+   "tier_a_still_missing_answer": []
+  },
+  "4": {
+   "site_questions": 9,
+   "bank_questions": 11,
+   "matched": 6,
+   "matched_pairs": [
+    {
+     "bank": "What is queuing system? Why do we use queuing system in simulation?",
+     "site": "What is queuing system? Why do we use queuing system in simulation?",
+     "score": 1.0
+    },
+    {
+     "bank": "What are the elements of a queuing system?",
+     "site": "What are the elements of a queuing system?",
+     "score": 1.0
+    },
+    {
+     "bank": "Short Note: Kendall's notation",
+     "site": "Kendall's Notation (Short Note)",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain the arrival and departure routine queuing model for a banking system",
+     "site": "Explain the arrival and departure routine queuing model for a banking system",
+     "score": 1.0
+    },
+    {
+     "bank": "Simulate a bank queuing system using Kendall's notation. Discuss performance metrics like average wait time",
+     "site": "Simulate a bank queuing system using Kendall's notation. Discuss performance metrics like average wait time. [4+4]",
+     "score": 0.978
+    },
+    {
+     "bank": "Short Note: Markov Chain",
+     "site": "Markov Chain (Short Note)",
+     "score": 1.0
+    }
+   ],
+   "new": [],
+   "merged_total": 9,
+   "duplicates_skipped": [
+    {
+     "id": "4-02",
+     "year": "2025 M",
+     "q": "List two queuing system characteristics"
+    },
+    {
+     "id": "4-04",
+     "year": "2011 C",
+     "q": "Explain the Kendall's notation in queuing system with example"
+    },
+    {
+     "id": "4-08",
+     "year": "2012 C",
+     "q": "Bank simulation for 8 customers (inter-arrival time and service time given) — find average waiting time, probability of wait, average queue length"
+    },
+    {
+     "id": "4-09",
+     "year": "2014 F, 2010 F",
+     "q": "Computing facility of Purbanchal University — On 50% days no failure, 30% days 1 failure, 20% days 2 failures. Repair: 40% in 1 day, 35% in 2, 25% in 3. Simulate 30 days. Compute efficiency, waiting computers, avg waiting time"
+    },
+    {
+     "id": "4-10",
+     "year": "2010 C",
+     "q": "Library queuing simulation for 15 customers — calculate average waiting time, average time in system, probability of server being busy"
+    }
+   ],
+   "paraphrase_folds": [],
+   "tier_a_still_missing_answer": []
+  },
+  "5": {
+   "site_questions": 5,
+   "bank_questions": 1,
+   "matched": 1,
+   "matched_pairs": [
+    {
+     "bank": "Differentiate between verification and validation of simulation models",
+     "site": "Differentiate between verification and validation of simulation models.",
+     "score": 1.0
+    }
+   ],
+   "new": [],
+   "merged_total": 5,
+   "duplicates_skipped": [],
+   "paraphrase_folds": [],
+   "tier_a_still_missing_answer": []
+  },
+  "6": {
+   "site_questions": 27,
+   "bank_questions": 36,
+   "matched": 27,
+   "matched_pairs": [
+    {
+     "bank": "What are the properties of random numbers? Why are random numbers generated by a computer called Pseudo-random numbers?",
+     "site": "What are the properties of random numbers? Why are random numbers generated by a computer called Pseudo-random numbers?",
+     "score": 1.0
+    },
+    {
+     "bank": "Define Pseudo-random numbers. Explain the qualities of an efficient random number generator",
+     "site": "Define Pseudo-random numbers. Explain the qualities of an efficient random number generator",
+     "score": 1.0
+    },
+    {
+     "bank": "What do you mean by pseudo random number? How do these random numbers help in simulation?",
+     "site": "What do you mean by pseudo random number? How do these random numbers help in simulation?",
+     "score": 1.0
+    },
+    {
+     "bank": "How pseudo random numbers differ from random numbers",
+     "site": "How pseudo random numbers differ from random numbers",
+     "score": 1.0
+    },
+    {
+     "bank": "When generating pseudo-random numbers, certain problems or errors can occur. What are they?",
+     "site": "When generating pseudo-random numbers, certain problems or errors can occur. What are they?",
+     "score": 1.0
+    },
+    {
+     "bank": "What is the role of random numbers in simulation?",
+     "site": "What is the role of random numbers in simulation?",
+     "score": 1.0
+    },
+    {
+     "bank": "Use LCM to generate random numbers with full period. Seed=6,7; a=12, c=5, m=26",
+     "site": "Use LCM to generate random numbers. Seed X₀=6,7; a=12, c=5, m=26.",
+     "score": 0.873
+    },
+    {
+     "bank": "Write the algorithm for LCM. Using multiplicative congruential method, find the period for a=13, m=26, X₀=2 and 4",
+     "site": "Write the algorithm for LCM. Using multiplicative congruential method, find the period for a=13, m=26, X₀=2 and 4",
+     "score": 1.0
+    },
+    {
+     "bank": "Using multiplicative congruential method, find the period for a=13, m=26, x₀=1, 2, 3 and 4",
+     "site": "Using multiplicative congruential method, find period for a=13, m=64, X₀=1,2,3,4.",
+     "score": 0.984
+    },
+    {
+     "bank": "Generate up to 5 random numbers using LCM: X₀=seed, a=17, c=43, m=100",
+     "site": "Generate up to 5 random numbers using LCM: X₀=seed, a=17, c=43, m=100",
+     "score": 1.0
+    },
+    {
+     "bank": "Using multiplicative congruential method, find the period and generate for a=17, m=64, X₀=3",
+     "site": "Using multiplicative congruential method, find the period and generate for a=17, m=64, X₀=3",
+     "score": 1.0
+    },
+    {
+     "bank": "Use multiplicative congruential method to generate four three-digit random numbers. x₀=117, a=43, m=1000",
+     "site": "Use multiplicative congruential method to generate four three-digit random numbers. x₀=117, a=43, m=1000",
+     "score": 1.0
+    },
+    {
+     "bank": "Generate 5 pseudo-random numbers using LCM: X₀=27, a=17, c=43, m=100",
+     "site": "Generate 5 pseudo-random numbers using the Linear Congruential Method with X₀=27, a=17, c=43, m=100.",
+     "score": 0.827
+    },
+    {
+     "bank": "Explain combined linear congruential method for generating random numbers",
+     "site": "Explain combined linear congruential method for generating random numbers",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain the Mid square random number generator with example. What is the problem with this generator?",
+     "site": "Explain the Mid square random number generator with example. What is the problem with this generator?",
+     "score": 1.0
+    },
+    {
+     "bank": "What are the qualities of good random number generators? What are the methods used for testing?",
+     "site": "What are the qualities of good random number generators? What are the methods used for testing?",
+     "score": 1.0
+    },
+    {
+     "bank": "Why do we need to test the randomness of the number in simulation?",
+     "site": "Why do we need to test the randomness of the number in simulation?",
+     "score": 1.0
+    },
+    {
+     "bank": "Use Chi-Square test to test 50 random numbers with confidence level 95%., (36, 91, 51, 02, 54, 06, 58, 06, 58, 02, 54, 01, 48, 97, 43, 22, 83, 25, 79, 95, 42, 87, 73, 17, 02, 42, 95, 38, 79, 29, 65, 09, 55, 97, 39, 83, 31, 77, 17, 62, 03, 49, 90, 37, 13, 17, 58, 11, 51, 92)",
+     "site": "Use Chi-Square test to test 50 random numbers at 95% confidence. Numbers: 36,91,51,02,54,06,58,06,58,02,54,01,48,97,43,22,83,25,79,95,42,87,73,17,02,42,95,38,79,29,65,09,55,97,39,83,31,77,17,62,03,49,90,37,13,17,58,11,51,92",
+     "score": 0.956
+    },
+    {
+     "bank": "Explain the significance of chi square test",
+     "site": "Explain the significance of chi square test",
+     "score": 1.0
+    },
+    {
+     "bank": "Test whether the 2nd, 7th, 12th and so on numbers in the sequence are auto correlated. (α=0.05). [30 numbers given]",
+     "site": "Test whether the 2nd, 7th, 12th and so on numbers in the sequence are auto correlated. (α=0.05). [30 numbers given]",
+     "score": 1.0
+    },
+    {
+     "bank": "Apply auto-correlation test: check whether 3rd, 8th, 13th and so on numbers are independent. (Z₀.₀₂₅=1.96, α=0.05). [30 numbers given]",
+     "site": "Apply auto-correlation test: check whether 3rd, 8th, 13th and so on numbers are independent. (Z₀.₀₂₅=1.96, α=0.05). [30 numbers given]",
+     "score": 1.0
+    },
+    {
+     "bank": "Test auto-correlation of 2nd, 9th, 16th, … numbers. (α=0.05). [40 numbers given]",
+     "site": "Test auto-correlation of 2nd, 9th, 16th, … numbers. (α=0.05). [40 numbers given]",
+     "score": 1.0
+    },
+    {
+     "bank": "A sequence of 1000 three-digit numbers: 680 have three different digits, 289 contain exactly one pair of like digits, 31 contain three like digits. Are these numbers independent? (α=0.05)",
+     "site": "A sequence of 1000 three-digit numbers: 680 have three different digits, 289 contain exactly one pair of like digits, 31 contain three like digits. Are these numbers independent? (α=0.05)",
+     "score": 1.0
+    },
+    {
+     "bank": "Short Note: Poker test",
+     "site": "Short Note: Poker test",
+     "score": 1.0
+    },
+    {
+     "bank": "Based on run test check whether given sequence of 40 numbers is random or not. [Z_(α/2) = 1.96]",
+     "site": "Based on the run test, check whether a given sequence of 40 numbers is random or not. [Z_(α/2) = 1.96]",
+     "score": 1.0
+    },
+    {
+     "bank": "What does Kolmogorov-Smirnov Test indicate? Perform the KS test with data: 0.24, 0.89, 0.11, 0.61, 0.23, 0.86, 0.41, 0.64, 0.50, 0.65 (α=0.05)",
+     "site": "What does the Kolmogorov–Smirnov test indicate? Perform the K–S test with data 0.24, 0.89, 0.11, 0.61, 0.23, 0.86, 0.41, 0.64, 0.50, 0.65 (α = 0.05).",
+     "score": 0.996
+    },
+    {
+     "bank": "Write down the steps for the Kolmogorov-Smirnov test",
+     "site": "Write down the steps for the Kolmogorov–Smirnov test.",
+     "score": 1.0
+    }
+   ],
+   "new": [],
+   "merged_total": 27,
+   "duplicates_skipped": [
+    {
+     "id": "6-02",
+     "year": "2025 M",
+     "q": "What does pseudo-random number mean?"
+    },
+    {
+     "id": "6-16",
+     "year": "2019 F",
+     "q": "Explain mid square random number generator"
+    },
+    {
+     "id": "6-17",
+     "year": "2015 F",
+     "q": "Explain the Mid square method for generating random numbers with an example"
+    },
+    {
+     "id": "6-19",
+     "year": "2025 M",
+     "q": "Explain the mid-square method for random number generation"
+    },
+    {
+     "id": "6-20",
+     "year": "2019 F",
+     "q": "Enumerate the qualities of good random number generator"
+    },
+    {
+     "id": "6-22",
+     "year": "2012 C",
+     "q": "Explain the qualities of an efficient random number generator"
+    },
+    {
+     "id": "6-23",
+     "year": "2019 F",
+     "q": "What do you mean by testing of random numbers, why is it needed?"
+    },
+    {
+     "id": "6-24",
+     "year": "2014 F",
+     "q": "What are the methods used for testing of random numbers?"
+    },
+    {
+     "id": "6-28",
+     "year": "2011 F",
+     "q": "Short Note: Chi square test"
+    }
+   ],
+   "paraphrase_folds": [],
+   "tier_a_still_missing_answer": []
+  },
+  "7": {
+   "site_questions": 6,
+   "bank_questions": 20,
+   "matched": 6,
+   "matched_pairs": [
+    {
+     "bank": "Short Note: Estimation method in simulation output analysis",
+     "site": "Explain estimation method for analysis of simulation output",
+     "score": 1.0
+    },
+    {
+     "bank": "Short Note: Simulation Run statistics",
+     "site": "Simulation Run Statistics (Short Note)",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain the mathematical modeling of replication of runs",
+     "site": "Explain the mathematical modeling of replication of runs.",
+     "score": 1.0
+    },
+    {
+     "bank": "What is initial bias in simulation output? Mention the idea of elimination of initial bias",
+     "site": "What is initial bias in simulation output? Mention the idea of elimination of initial bias.",
+     "score": 1.0
+    },
+    {
+     "bank": "\"Simulation output has to be analyzed\" — Justify the statement",
+     "site": "'Simulation output has to be analyzed.' Justify the statement. Explain replication of runs and elimination of initial bias.",
+     "score": 0.85
+    },
+    {
+     "bank": "Why the output of simulation has to be analyzed?",
+     "site": "Why the output of simulation has to be analyzed?",
+     "score": 1.0
+    }
+   ],
+   "new": [],
+   "merged_total": 6,
+   "duplicates_skipped": [
+    {
+     "id": "7-01",
+     "year": "2015 F",
+     "q": "Explain estimation method for analysis of simulation output"
+    },
+    {
+     "id": "7-02",
+     "year": "2011 C",
+     "q": "Explain the estimation method to analyze the simulation output"
+    },
+    {
+     "id": "7-05",
+     "year": "2019 F",
+     "q": "Explain the process of replication of runs in analysis of simulation output"
+    },
+    {
+     "id": "7-07",
+     "year": "2014 F, 2010 F",
+     "q": "Why the output of simulation has to be analyzed? Explain Replication of Runs method to any simulation output"
+    },
+    {
+     "id": "7-08",
+     "year": "2012 C",
+     "q": "Explain replication of runs in the simulation output analysis"
+    },
+    {
+     "id": "7-09",
+     "year": "2011 F",
+     "q": "Explain why simulation output is analyzed. Why Replication of Runs is performed during analysis?"
+    },
+    {
+     "id": "7-10",
+     "year": "2011 C",
+     "q": "Why do we need replication of run in simulation?"
+    },
+    {
+     "id": "7-11",
+     "year": "2025 M",
+     "q": "Why is replication of runs necessary in output analysis?"
+    },
+    {
+     "id": "7-12",
+     "year": "2019 F",
+     "q": "Explain elimination of internal bias in the analysis of simulation output"
+    },
+    {
+     "id": "7-14",
+     "year": "2012 C",
+     "q": "Explain elimination of initial bias in the simulation output analysis"
+    },
+    {
+     "id": "7-15",
+     "year": "2010 C",
+     "q": "How would you eliminate internal bias in the analysis of Simulation output?"
+    },
+    {
+     "id": "7-16",
+     "year": "2014 F",
+     "q": "Short Note: Elimination of internal bias"
+    },
+    {
+     "id": "7-18",
+     "year": "2015 F",
+     "q": "Why simulation output is analyzed?"
+    },
+    {
+     "id": "7-20",
+     "year": "2011 F",
+     "q": "Explain why simulation output is analyzed"
+    }
+   ],
+   "paraphrase_folds": [],
+   "tier_a_still_missing_answer": []
+  },
+  "8": {
+   "site_questions": 15,
+   "bank_questions": 23,
+   "matched": 15,
+   "matched_pairs": [
+    {
+     "bank": "List out the various simulation tools",
+     "site": "List out the various simulation tools. Explain GPSS in brief with suitable example.",
+     "score": 0.85
+    },
+    {
+     "bank": "State some types of Simulation languages",
+     "site": "State some types of Simulation languages",
+     "score": 1.0
+    },
+    {
+     "bank": "Why simulation tool is required?",
+     "site": "Why is simulation tool required?",
+     "score": 1.0
+    },
+    {
+     "bank": "Draw different types of GPSS block-diagram symbols and explain with the help of GPSS block-diagram of manufacturing shop",
+     "site": "Draw different types of GPSS block-diagram symbols and explain with GPSS block-diagram of manufacturing shop.",
+     "score": 0.971
+    },
+    {
+     "bank": "Design a simulation model of any discrete system in GPSS symbols",
+     "site": "Design a simulation model of any discrete system in GPSS symbols",
+     "score": 1.0
+    },
+    {
+     "bank": "What are the key features of GPSS as a simulation language?",
+     "site": "What are the key features of GPSS as a simulation language?",
+     "score": 1.0
+    },
+    {
+     "bank": "Show the GPSS block diagram to represent soap quality testing system",
+     "site": "Show the GPSS block diagram to represent soap quality testing system",
+     "score": 1.0
+    },
+    {
+     "bank": "Model a discrete-event system of hospital patient flow using GPSS. Outline key control statements",
+     "site": "Model a discrete-event system of hospital patient flow using GPSS. Outline key control statements.",
+     "score": 1.0
+    },
+    {
+     "bank": "Short Note: CSSL",
+     "site": "CSSL (Short Note)",
+     "score": 1.0
+    },
+    {
+     "bank": "What do you mean by discrete event simulation? Explain the principal approaches for advancing the simulation clock in discrete event simulation",
+     "site": "What do you mean by discrete event simulation? Explain principal approaches for advancing simulation clock.",
+     "score": 1.0
+    },
+    {
+     "bank": "What do you mean by Discrete-event simulation? Explain the components and organization of a Discrete event simulation model with flow chart",
+     "site": "What do you mean by Discrete-event simulation? Explain the components and organization of a Discrete event simulation model with flow chart",
+     "score": 1.0
+    },
+    {
+     "bank": "Define state descriptor and discrete event. How do you simulate a telephone system, explain with its states",
+     "site": "Define state descriptor and discrete event. How do you simulate a telephone system, explain with its states",
+     "score": 1.0
+    },
+    {
+     "bank": "Discuss SIMSCRIPT and GPSS language in brief",
+     "site": "Discuss SIMSCRIPT and GPSS language in brief",
+     "score": 1.0
+    },
+    {
+     "bank": "Explain Discrete Simulation Language in brief. Explain the System concepts of Simscript. How is a program organized in Simscript?",
+     "site": "Explain Discrete Simulation Language. Explain SIMSCRIPT system concepts and program organization.",
+     "score": 0.785
+    },
+    {
+     "bank": "What do you mean by distributed lag model? Explain",
+     "site": "What do you mean by distributed lag model? Explain.",
+     "score": 1.0
+    }
+   ],
+   "new": [],
+   "merged_total": 15,
+   "duplicates_skipped": [
+    {
+     "id": "8-02",
+     "year": "2014 F, 2010 F",
+     "q": "Why is simulation tool required?"
+    },
+    {
+     "id": "8-05",
+     "year": "2019 F",
+     "q": "Explain GPSS in brief with suitable example"
+    },
+    {
+     "id": "8-06",
+     "year": "2014 F",
+     "q": "What is GPSS language & its application?"
+    },
+    {
+     "id": "8-07",
+     "year": "2014 F",
+     "q": "Explain in details of GPSS block diagram symbols"
+    },
+    {
+     "id": "8-11",
+     "year": "2010 F",
+     "q": "Short Note: GPSS"
+    },
+    {
+     "id": "8-15",
+     "year": "2019 F",
+     "q": "Explain the principle of discrete system simulation"
+    },
+    {
+     "id": "8-18",
+     "year": "2012 C",
+     "q": "Explain discrete system simulation"
+    },
+    {
+     "id": "8-23",
+     "year": "2010 C",
+     "q": "Explain distributed lag model"
+    }
+   ],
+   "paraphrase_folds": [],
+   "tier_a_still_missing_answer": []
+  }
+ },
+ "totals": {
+  "site": 92,
+  "bank": 148,
+  "matched": 83,
+  "new": 0,
+  "pending": 0,
+  "answered_new": 0,
+  "with_occ": 51,
+  "occ_total": 108,
+  "occ_bumped": 0,
+  "variants": 0,
+  "duplicates": 65,
+  "aliased": 1
+ }
+}

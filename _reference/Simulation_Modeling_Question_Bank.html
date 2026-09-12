@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation & Modeling — Complete Chapter-wise Past Question Bank</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        :root {
+            --primary: #1e40af;
+            --primary-light: #3b82f6;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --success: #10b981;
+            --bg: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --surface: #f8fafc;
+            --highlight: #fef3c7;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            font-size: 11pt;
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        @media print {
+            body { padding: 0; font-size: 10pt; }
+            .page-break { page-break-before: always; }
+            .no-break { page-break-inside: avoid; }
+            table { page-break-inside: auto; }
+            tr { page-break-inside: avoid; }
+            .cover-page { page-break-after: always; height: 100vh; }
+            @page { margin: 1.5cm 1.8cm; size: A4; }
+        }
+
+        /* ===== COVER PAGE ===== */
+        .cover-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 95vh;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 50%, #3b82f6 100%);
+            color: white;
+            border-radius: 0;
+        }
+        .cover-page .university {
+            font-size: 14pt;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 10px;
+        }
+        .cover-page .title {
+            font-size: 28pt;
+            font-weight: 900;
+            margin: 20px 0 10px;
+            line-height: 1.2;
+        }
+        .cover-page .subtitle {
+            font-size: 14pt;
+            font-weight: 500;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+        .cover-page .code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12pt;
+            background: rgba(255,255,255,0.15);
+            padding: 6px 20px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .cover-page .divider {
+            width: 120px;
+            height: 3px;
+            background: var(--accent);
+            margin: 25px auto;
+            border-radius: 2px;
+        }
+        .cover-page .meta {
+            font-size: 11pt;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+        .cover-page .meta span {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .cover-page .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #1e293b;
+            font-weight: 700;
+            font-size: 10pt;
+            padding: 6px 18px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        /* ===== TOC ===== */
+        .toc {
+            padding: 30px 40px;
+        }
+        .toc h2 {
+            font-size: 18pt;
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        .toc-list {
+            list-style: none;
+        }
+        .toc-list li {
+            padding: 6px 0;
+            border-bottom: 1px dotted var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-size: 11pt;
+        }
+        .toc-list li.chapter {
+            font-weight: 700;
+            color: var(--primary);
+            padding-top: 14px;
+            border-bottom: none;
+            font-size: 12pt;
+        }
+        .toc-list li .marks-badge {
+            background: #dbeafe;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 9pt;
+            padding: 1px 8px;
+            border-radius: 10px;
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .content { padding: 10px 40px 40px; }
+
+        .chapter-header {
+            background: linear-gradient(135deg, #1e3a5f, #1e40af);
+            color: white;
+            padding: 18px 25px;
+            border-radius: 8px;
+            margin: 30px 0 20px;
+        }
+        .chapter-header h2 {
+            font-size: 16pt;
+            font-weight: 800;
+        }
+        .chapter-header .weightage {
+            font-size: 10pt;
+            opacity: 0.85;
+            margin-top: 4px;
+        }
+
+        .sub-header {
+            background: #eef2ff;
+            border-left: 4px solid var(--primary);
+            padding: 10px 16px;
+            margin: 22px 0 12px;
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--primary);
+            border-radius: 0 6px 6px 0;
+        }
+
+        /* ===== TABLES ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 18px;
+            font-size: 10pt;
+        }
+        thead th {
+            background: #1e40af;
+            color: white;
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 9.5pt;
+        }
+        thead th:first-child { border-radius: 6px 0 0 0; }
+        thead th:last-child { border-radius: 0 6px 0 0; }
+
+        tbody td {
+            padding: 7px 10px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+        tbody tr:nth-child(even) { background: #f8fafc; }
+        tbody tr:hover { background: #eef2ff; }
+
+        .q-num {
+            font-weight: 700;
+            color: var(--primary);
+            text-align: center;
+            width: 30px;
+        }
+        .q-text { line-height: 1.5; }
+        .q-source {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9pt;
+            white-space: nowrap;
+        }
+        .q-marks {
+            font-weight: 600;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .q-repeats {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .fire { color: #ef4444; }
+        .repeat-high {
+            background: #fef2f2;
+            color: #dc2626;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 9pt;
+        }
+        .repeat-med {
+            background: #fef3c7;
+            color: #d97706;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 9pt;
+        }
+        .repeat-low {
+            color: var(--text-muted);
+            font-size: 9pt;
+        }
+
+        /* ===== SUMMARY BOXES ===== */
+        .summary-box {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 16px 0;
+        }
+        .summary-box h4 {
+            color: var(--primary);
+            font-size: 11pt;
+            margin-bottom: 8px;
+        }
+        .summary-box table {
+            margin: 0;
+        }
+        .summary-box thead th {
+            background: #0369a1;
+            font-size: 9pt;
+            padding: 6px 10px;
+        }
+        .summary-box tbody td {
+            padding: 5px 10px;
+            font-size: 9.5pt;
+        }
+
+        /* ===== ALERT BOXES ===== */
+        .alert {
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 14px 0;
+            font-size: 10pt;
+            line-height: 1.5;
+        }
+        .alert-tip {
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            color: #065f46;
+        }
+        .alert-important {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            color: #92400e;
+        }
+        .alert-danger {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            color: #991b1b;
+        }
+        .alert strong { display: block; margin-bottom: 3px; }
+
+        /* ===== FREQUENCY TABLE ===== */
+        .freq-table thead th {
+            background: #991b1b;
+        }
+        .freq-table .rank {
+            font-weight: 800;
+            text-align: center;
+            font-size: 12pt;
+        }
+        .freq-table .topic-name {
+            font-weight: 600;
+        }
+
+        /* ===== YEAR DIST ===== */
+        .year-block {
+            margin: 20px 0;
+        }
+        .year-block h3 {
+            background: #334155;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 6px 6px 0 0;
+            font-size: 11pt;
+        }
+        .year-block table thead th {
+            background: #475569;
+            font-size: 9pt;
+        }
+
+        .note-box {
+            background: #eff6ff;
+            border: 1px dashed #93c5fd;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 9.5pt;
+            color: #1e40af;
+            margin: 10px 0;
+        }
+
+        .strategy-section {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border: 2px solid #f59e0b;
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        .strategy-section h3 {
+            color: #92400e;
+            font-size: 14pt;
+            margin-bottom: 12px;
+        }
+        .strategy-section ul {
+            margin-left: 18px;
+        }
+        .strategy-section li {
+            margin: 5px 0;
+            font-size: 10.5pt;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== COVER PAGE ==================== -->
+<div class="cover-page">
+    <div class="university">Purbanchal University</div>
+    <div class="title">Simulation &amp; Modeling</div>
+    <div class="subtitle">Complete Chapter-wise Past Question Bank</div>
+    <div class="code">BCE7026 / BEG473CO</div>
+    <div class="divider"></div>
+    <div class="subtitle">B.E. Computer &bull; Seventh Semester</div>
+    <div class="meta">
+        <span>Papers Covered: 2010–2019 + Model 2025</span>
+    </div>
+    <div class="meta">
+        <span>Total Papers Analyzed: 10</span>
+    </div>
+    <div class="badge">📚 Organized by Syllabus Chapters &amp; Sub-chapters</div>
+    <div style="margin-top:40px; font-size:10pt; opacity:0.7;">
+        Each question includes: Source Year &amp; Exam Type &bull; Marks &bull; Repetition Count
+    </div>
+</div>
+
+<!-- ==================== TABLE OF CONTENTS ==================== -->
+<div class="toc page-break">
+    <h2>📋 Table of Contents</h2>
+    <ul class="toc-list">
+        <li class="chapter">Chapter 1: Concept of Simulation <span class="marks-badge">Weightage: 8 Marks</span></li>
+        <li>&nbsp;&nbsp;&nbsp;1.1 Introduction / System Simulation</li>
+        <li>&nbsp;&nbsp;&nbsp;1.2 The System</li>
+        <li>&nbsp;&nbsp;&nbsp;1.3 Continuous and Discrete Systems</li>
+        <li>&nbsp;&nbsp;&nbsp;1.5 Real Time Simulation</li>
+        <li>&nbsp;&nbsp;&nbsp;1.6–1.11 Advantages / Limitations / When to Use</li>
+        <li>&nbsp;&nbsp;&nbsp;1.7 Types of Simulation Model</li>
+        <li>&nbsp;&nbsp;&nbsp;1.8–1.9 Steps &amp; Phases in Simulation Study</li>
+        <li>&nbsp;&nbsp;&nbsp;1.12 Areas of Application</li>
+
+        <li class="chapter">Chapter 2: Monte Carlo Method <span class="marks-badge">Weightage: 6 Marks</span></li>
+        <li>&nbsp;&nbsp;&nbsp;2.1 Monte Carlo Method (Concept)</li>
+        <li>&nbsp;&nbsp;&nbsp;2.1 Monte Carlo — Integration Problems</li>
+        <li>&nbsp;&nbsp;&nbsp;2.2 Normally Distributed Random Numbers</li>
+        <li>&nbsp;&nbsp;&nbsp;2.3 Monte Carlo vs Stochastic Simulation</li>
+
+        <li class="chapter">Chapter 3: Simulation of Continuous Systems <span class="marks-badge">Weightage: 6 Marks</span></li>
+        <li>&nbsp;&nbsp;&nbsp;3.1 Pure Pursuit Problem</li>
+        <li>&nbsp;&nbsp;&nbsp;3.2 Continuous System Models</li>
+        <li>&nbsp;&nbsp;&nbsp;3.3–3.4 Analog Computer / Analog Methods</li>
+        <li>&nbsp;&nbsp;&nbsp;3.5 Hybrid Simulation</li>
+        <li>&nbsp;&nbsp;&nbsp;3.6 Feedback Systems</li>
+        <li>&nbsp;&nbsp;&nbsp;3.7 Differential Equations</li>
+
+        <li class="chapter">Chapter 4: Queuing System <span class="marks-badge">Weightage: 6 Marks</span></li>
+        <li>&nbsp;&nbsp;&nbsp;4.1–4.2 Elements &amp; Characteristics</li>
+        <li>&nbsp;&nbsp;&nbsp;4.4 Kendall's Notation</li>
+        <li>&nbsp;&nbsp;&nbsp;4.5–4.6 Queuing Simulation Problems</li>
+        <li>&nbsp;&nbsp;&nbsp;4.7 Markov Chain</li>
+
+        <li class="chapter">Chapter 5: Verification &amp; Validation <span class="marks-badge">Weightage: 6 Marks</span></li>
+        <li>&nbsp;&nbsp;&nbsp;5.1–5.4 Verification &amp; Validation Concepts</li>
+
+        <li class="chapter">Chapter 6: Random Number <span class="marks-badge">Weightage: 12 Marks ★</span></li>
+        <li>&nbsp;&nbsp;&nbsp;6.1–6.3 Random / Pseudo-Random Numbers</li>
+        <li>&nbsp;&nbsp;&nbsp;6.4 Linear Congruential Method (LCM)</li>
+        <li>&nbsp;&nbsp;&nbsp;6.5 Mid-Square Method</li>
+        <li>&nbsp;&nbsp;&nbsp;6.6 Qualities of Good RNG</li>
+        <li>&nbsp;&nbsp;&nbsp;6.7–6.8 Testing for Randomness</li>
+        <li>&nbsp;&nbsp;&nbsp;6.9 Chi-Square Test</li>
+        <li>&nbsp;&nbsp;&nbsp;6.10 Auto-Correlation Test</li>
+        <li>&nbsp;&nbsp;&nbsp;6.11 Poker Test</li>
+        <li>&nbsp;&nbsp;&nbsp;Run Test &amp; K-S Test</li>
+
+        <li class="chapter">Chapter 7: Analysis of Simulation Output <span class="marks-badge">Weightage: 6 Marks</span></li>
+        <li>&nbsp;&nbsp;&nbsp;7.1 Estimation Methods</li>
+        <li>&nbsp;&nbsp;&nbsp;7.2 Simulation Run Statistics</li>
+        <li>&nbsp;&nbsp;&nbsp;7.3 Replication of Runs</li>
+        <li>&nbsp;&nbsp;&nbsp;7.4 Elimination of Initial Bias</li>
+
+        <li class="chapter">Chapter 8: Simulation Language <span class="marks-badge">Weightage: 10 Marks</span></li>
+        <li>&nbsp;&nbsp;&nbsp;8.1 Simulation Tools (General)</li>
+        <li>&nbsp;&nbsp;&nbsp;8.2 GPSS</li>
+        <li>&nbsp;&nbsp;&nbsp;8.3 Discrete Event Simulation</li>
+        <li>&nbsp;&nbsp;&nbsp;SIMSCRIPT / CSSLs / Distributed Lag</li>
+
+        <li class="chapter" style="color:#991b1b;">Overall Frequency Analysis &amp; Exam Strategy</li>
+        <li>&nbsp;&nbsp;&nbsp;Top 15 Most Repeated Topics</li>
+        <li>&nbsp;&nbsp;&nbsp;Year-wise Question Distribution</li>
+        <li>&nbsp;&nbsp;&nbsp;Exam Strategy Notes</li>
+    </ul>
+</div>
+
+<!-- ==================== CHAPTER 1 ==================== -->
+<div class="content page-break">
+
+    <div class="chapter-header">
+        <h2>CHAPTER 1: Concept of Simulation</h2>
+        <div class="weightage">Syllabus Weightage: 8 Marks</div>
+    </div>
+
+    <!-- 1.1 -->
+    <div class="sub-header">1.1 Introduction / 1.4 System Simulation</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">Define system simulation and give one example.</td>
+                <td class="q-source">2025 M</td>
+                <td class="q-marks">2</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text">What do you mean by simulation and modeling?</td>
+                <td class="q-source">2015 F</td>
+                <td class="q-marks">3</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">3</td>
+                <td class="q-text">Define simulation. Explain the ways to study a system. Point out the areas where the Simulation and Modeling can be used.</td>
+                <td class="q-source">2011 F</td>
+                <td class="q-marks">2+4+4</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">4</td>
+                <td class="q-text">What is system modeling? What are the types of system models? Explain dynamic physical model with an example.</td>
+                <td class="q-source">2010 C</td>
+                <td class="q-marks">2+2+6</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 1.2 -->
+    <div class="sub-header">1.2 The System</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">🔥 Explain the concept of System. Differentiate between Continuous and discrete, Deterministic and Stochastic system with example.</td>
+                <td class="q-source">2019 F</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text">🔥 Explain the ways to study a system. What are the criteria of classifying Simulation models? Brief it with suitable example.</td>
+                <td class="q-source">2014 F</td>
+                <td class="q-marks">3+7</td>
+                <td class="q-repeats"><span class="repeat-high">3 🔁</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">3</td>
+                <td class="q-text">Differentiate between deterministic and stochastic simulation.</td>
+                <td class="q-source">2010 C</td>
+                <td class="q-marks">3</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 1.3 -->
+    <div class="sub-header">1.3 Continuous and Discrete Systems</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">Differentiate between discrete system simulation and continuous system simulation.</td>
+                <td class="q-source">2011 C</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="note-box">💡 Questions on continuous vs. discrete systems often appear combined with "The System" (1.2) or "Types of Simulation Models" (1.7). See also Chapter 3 and Chapter 8.</div>
+
+    <!-- 1.5 -->
+    <div class="sub-header">1.5 Real Time Simulation</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">🔥 Define real time simulation. Mention the advantages and disadvantages of simulation. What are the purposes for which simulation can be used?</td>
+                <td class="q-source">2012 C</td>
+                <td class="q-marks">2+4+4</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text">🔥 Explain real time simulation with example. Explain the type of simulation models.</td>
+                <td class="q-source">2011 C</td>
+                <td class="q-marks">3+7</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">3</td>
+                <td class="q-text">🔥 Discuss real-time simulation with an example. Mention purposes of using simulation. What are the limitations of simulation?</td>
+                <td class="q-source">2010 F</td>
+                <td class="q-marks">4+3+3</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="alert alert-important"><strong>⚡ Total times Real Time Simulation asked: 3 — Frequently tested!</strong></div>
+
+    <!-- 1.6-1.11 -->
+    <div class="sub-header">1.6 When to Use / 1.10 Advantages / 1.11 Limitations</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">Mention the advantages and disadvantages of simulation. What are the purposes for which simulation can be used?</td>
+                <td class="q-source">2012 C</td>
+                <td class="q-marks">4+4</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text">Mention purposes of using simulation. What are the limitations of simulation?</td>
+                <td class="q-source">2010 F</td>
+                <td class="q-marks">3+3</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">3</td>
+                <td class="q-text">Explain the limitations of Simulation Techniques.</td>
+                <td class="q-source">2010 C</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 1.7 -->
+    <div class="sub-header">1.7 Types of Simulation Model</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">🔥 What are the criteria of classifying Simulation models? Brief it with suitable example.</td>
+                <td class="q-source">2014 F</td>
+                <td class="q-marks">7</td>
+                <td class="q-repeats"><span class="repeat-high">3 🔁</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text">Explain the type of simulation models.</td>
+                <td class="q-source">2011 C</td>
+                <td class="q-marks">7</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 1.8-1.9 -->
+    <div class="sub-header">1.8–1.9 Steps &amp; Phases in Simulation Study</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">🔥 Explain the phases and steps in simulation study.</td>
+                <td class="q-source">2019 F</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text">🔥 What do you mean by simulation and modeling? Explain the steps in the simulation study.</td>
+                <td class="q-source">2015 F</td>
+                <td class="q-marks">3+7</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">3</td>
+                <td class="q-text">🔥 Explain the steps in a simulation study with a flowchart.</td>
+                <td class="q-source">2025 M</td>
+                <td class="q-marks">4</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="alert alert-important"><strong>⚡ Total times Steps/Phases asked: 3 — Frequently tested!</strong></div>
+
+    <!-- 1.12 -->
+    <div class="sub-header">1.12 Areas of Applications</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">Point out the areas where the Simulation and Modeling can be used.</td>
+                <td class="q-source">2011 F</td>
+                <td class="q-marks">4</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text"><strong>Short Note:</strong> Application areas of simulation.</td>
+                <td class="q-source">2019 F</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Chapter 1 Summary -->
+    <div class="summary-box no-break">
+        <h4>📊 Chapter 1 — Summary Statistics</h4>
+        <table>
+            <thead><tr><th>Sub-topic</th><th style="width:100px">Times Asked</th></tr></thead>
+            <tbody>
+                <tr><td>System / Ways to study a system</td><td style="text-align:center">4</td></tr>
+                <tr><td>Continuous vs Discrete / Deterministic vs Stochastic</td><td style="text-align:center">3</td></tr>
+                <tr><td>Real time simulation</td><td style="text-align:center">3</td></tr>
+                <tr><td>Steps / Phases in simulation study</td><td style="text-align:center">3</td></tr>
+                <tr><td>Types of simulation model</td><td style="text-align:center">4</td></tr>
+                <tr><td>Advantages / Limitations / When to use</td><td style="text-align:center">3</td></tr>
+                <tr><td>Areas of application</td><td style="text-align:center">2</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- ==================== CHAPTER 2 ==================== -->
+<div class="content page-break">
+
+    <div class="chapter-header">
+        <h2>CHAPTER 2: Monte Carlo Method</h2>
+        <div class="weightage">Syllabus Weightage: 6 Marks</div>
+    </div>
+
+    <!-- 2.1 Concept -->
+    <div class="sub-header">2.1 Monte Carlo Method — Basic Concept &amp; Philosophy</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">🔥 Discuss the basic philosophy of Monte-Carlo simulation.</td>
+                <td class="q-source">2019 F</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text">🔥 What is the purpose of the Monte Carlo method?</td>
+                <td class="q-source">2025 M</td>
+                <td class="q-marks">2</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">3</td>
+                <td class="q-text">🔥 Explain the significance of Monte Carlo Method in simulation.</td>
+                <td class="q-source">2011 C</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 2.1 Integration -->
+    <div class="sub-header">2.1 Monte Carlo — Numerical Integration / Value of π Problems</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">🔥🔥 Find the value of pi (π) by using Monte Carlo simulation using the equation x²+y²=16. Also calculate error when compared with its analytical value.</td>
+                <td class="q-source">2014 F<br>2010 F</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-high">4 🔁</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text">🔥 Estimate the value of π using Monte Carlo Method.</td>
+                <td class="q-source">2011 C</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">3</td>
+                <td class="q-text">Calculate ∫₁⁴ (x+4)³ dx using Monte Carlo simulation. Also calculate error.</td>
+                <td class="q-source">2011 F</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">4</td>
+                <td class="q-text">Calculate ∫₀^(π/2) cos x dx using Monte Carlo simulation.</td>
+                <td class="q-source">2015 F</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">5</td>
+                <td class="q-text">Solve ∫₁ᵉ dx using Monte Carlo Method.</td>
+                <td class="q-source">2012 C</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">6</td>
+                <td class="q-text">Find the value of ∫₀^(π/2) cos x dx using Monte-Carlo Method.</td>
+                <td class="q-source">2010 C</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="alert alert-danger"><strong>🔥🔥🔥 Total times Monte Carlo integration/π asked: ~9 — MOST REPEATED TOPIC IN THE ENTIRE SYLLABUS</strong></div>
+
+    <!-- 2.2 -->
+    <div class="sub-header">2.2 Normally Distributed Random Numbers</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">Define normally distributed random number with example.</td>
+                <td class="q-source">2010 C</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 2.3 -->
+    <div class="sub-header">2.3 Monte Carlo Method vs Stochastic Simulation</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">🔥 Explain the concept of Monte-Carlo simulation over stochastic simulation.</td>
+                <td class="q-source">2014 F</td>
+                <td class="q-marks">5</td>
+                <td class="q-repeats"><span class="repeat-high">3 🔁</span></td>
+            </tr>
+            <tr>
+                <td class="q-num">2</td>
+                <td class="q-text">🔥 Compare stochastic simulation vs. Monte Carlo method.</td>
+                <td class="q-source">2025 M</td>
+                <td class="q-marks">4</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Monte Carlo Simulation Problems -->
+    <div class="sub-header">Monte Carlo — Simulation Problems</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="q-num">1</td>
+                <td class="q-text">🔥 Vegetable shopkeeper simulation: Determine how much green vegetable to purchase. Probability distribution for customers (8,10,12,14) and kg ordered (1,2,3,4) given. Vegetable sells Rs.50/kg, unsold at half price. Simulate for 5 days.</td>
+                <td class="q-source">2019 F</td>
+                <td class="q-marks">10</td>
+                <td class="q-repeats"><span class="repeat-low">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Chapter 2 Summary -->
+    <div class="summary-box no-break">
+        <h4>📊 Chapter 2 — Summary Statistics</h4>
+        <table>
+            <thead><tr><th>Sub-topic</th><th style="width:100px">Times Asked</th></tr></thead>
+            <tbody>
+                <tr><td>Monte Carlo concept / philosophy / significance</td><td style="text-align:center">3</td></tr>
+                <tr><td style="font-weight:700;color:#dc2626">Monte Carlo integration / value of π</td><td style="text-align:center;font-weight:700;color:#dc2626">~9</td></tr>
+                <tr><td>Monte Carlo vs Stochastic simulation</td><td style="text-align:center">4</td></tr>
+                <tr><td>Normally distributed random numbers</td><td style="text-align:center">1</td></tr>
+                <tr><td>Monte Carlo simulation problems</td><td style="text-align:center">1</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- ==================== CHAPTER 3 ==================== -->
+<div class="content page-break">
+
+    <div class="chapter-header">
+        <h2>CHAPTER 3: Simulation of Continuous Systems</h2>
+        <div class="weightage">Syllabus Weightage: 6 Marks</div>
+    </div>
+
+    <!-- 3.1 -->
+    <div class="sub-header">3.1 A Pure Pursuit Problem</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Explain pure pursuit problem.</td><td class="q-source">2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 Discuss a pure pursuit problem with a suitable example.</td><td class="q-source">2010 F</td><td class="q-marks">6</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥 Describe the pure pursuit problem in continuous systems.</td><td class="q-source">2025 M</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text"><strong>Short Note:</strong> A pure pursuit problem.</td><td class="q-source">2010 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-important"><strong>⚡ Total times asked: 4</strong></div>
+
+    <!-- 3.2 -->
+    <div class="sub-header">3.2 Continuous System Models / Continuous System Simulation</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Explain the concept of continuous system simulation.</td><td class="q-source">2019 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 Explain continuous system simulation with suitable example.</td><td class="q-source">2014 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-high">3 🔁</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">Explain how continuous model can be solved numerically with an example.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text"><strong>Short Note:</strong> Continuous Simulation.</td><td class="q-source">2011 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 3.3-3.4 -->
+    <div class="sub-header">3.3–3.4 Analog Computer / Analog Methods</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">Explain the analogy method of system study with suitable example.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">Represent the equation Ax″+Bx′+Cx+D=0 in terms of analog computer block diagram.</td><td class="q-source">2010 F</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">Solve equations by analog method: X₁′= −K₁₂X₁ + K₂₁X₂; X₂′= K₁₂X₁ − (K₂₁+K₂₃)X₂; X₃′= K₂₃X₂.</td><td class="q-source">2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">Compare analog vs. hybrid simulation methods, highlighting their use in solving differential equations.</td><td class="q-source">2025 M</td><td class="q-marks">8</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 3.5 -->
+    <div class="sub-header">3.5 Hybrid Simulation</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">Illustrate the possible event interactions in Hybrid Simulation.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">Explain feedback system and hybrid system with suitable example.</td><td class="q-source">2011 F</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">Compare analog vs. hybrid simulation methods.</td><td class="q-source">2025 M</td><td class="q-marks">8</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 3.6 -->
+    <div class="sub-header">3.6 Feedback Systems</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Explain feedback system with its application.</td><td class="q-source">2019 F</td><td class="q-marks">6</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 Explain feedback system with suitable example.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥 Explain feedback system and hybrid system with suitable example.</td><td class="q-source">2011 F</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥 What are the applications of feedback system? Explain computer model to represent it. Show GPSS block diagram.</td><td class="q-source">2011 C</td><td class="q-marks">5+3+2</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">5</td><td class="q-text"><strong>Short Note:</strong> Feedback system.</td><td class="q-source">2014 F, 2012 C,<br>2010 F, 2010 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-high">4 🔁</span></td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-danger"><strong>🔥🔥 Total times Feedback System asked: ~8 — VERY HIGH FREQUENCY</strong></div>
+
+    <!-- 3.7 -->
+    <div class="sub-header">3.7 Differential &amp; Partial Differential Equations</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Why are differential equations so important in simulation?</td><td class="q-source">2014 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-high">3 🔁</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 Explain the need of differential equation in simulation with an example.</td><td class="q-source">2012 C<br>2010 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-med">2 🔁</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text"><strong>Short Note:</strong> Differential equation.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="summary-box no-break">
+        <h4>📊 Chapter 3 — Summary Statistics</h4>
+        <table>
+            <thead><tr><th>Sub-topic</th><th style="width:100px">Times Asked</th></tr></thead>
+            <tbody>
+                <tr><td>Pure pursuit problem</td><td style="text-align:center">4</td></tr>
+                <tr><td>Continuous system simulation</td><td style="text-align:center">6</td></tr>
+                <tr><td>Analog computer / Analog methods</td><td style="text-align:center">4</td></tr>
+                <tr><td>Hybrid simulation</td><td style="text-align:center">3</td></tr>
+                <tr><td style="font-weight:700;color:#dc2626">Feedback systems</td><td style="text-align:center;font-weight:700;color:#dc2626">~8</td></tr>
+                <tr><td>Differential equations in simulation</td><td style="text-align:center">6</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- ==================== CHAPTER 4 ==================== -->
+<div class="content page-break">
+
+    <div class="chapter-header">
+        <h2>CHAPTER 4: Queuing System</h2>
+        <div class="weightage">Syllabus Weightage: 6 Marks</div>
+    </div>
+
+    <!-- 4.1-4.2 -->
+    <div class="sub-header">4.1–4.2 Elements &amp; Characteristics of Queuing System</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 What is queuing system? Why do we use queuing system in simulation?</td><td class="q-source">2011 C</td><td class="q-marks">2+3</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 List two queuing system characteristics.</td><td class="q-source">2025 M</td><td class="q-marks">2</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥 What are the elements of a queuing system?</td><td class="q-source">2025 M</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 4.4 -->
+    <div class="sub-header">4.4 Queuing Notation (Kendall's Notation)</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Explain the Kendall's notation in queuing system with example.</td><td class="q-source">2011 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text"><strong>Short Note:</strong> Kendall's notation.</td><td class="q-source">2019 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 4.5-4.6 Simulation Problems -->
+    <div class="sub-header">4.5–4.6 Queuing Simulation Problems (Banking / Library / Computer Facility)</div>
+    <table>
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥🔥 Explain the arrival and departure routine queuing model for a banking system.</td><td class="q-source">2015 F<br>2011 F<br>2010 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-high">3 🔁</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 Simulate a bank queuing system using Kendall's notation. Discuss performance metrics like average wait time.</td><td class="q-source">2025 M</td><td class="q-marks">4+4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥 Bank simulation for 8 customers (inter-arrival time and service time given) — find average waiting time, probability of wait, average queue length.</td><td class="q-source">2012 C</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥🔥 Computing facility of Purbanchal University — On 50% days no failure, 30% days 1 failure, 20% days 2 failures. Repair: 40% in 1 day, 35% in 2, 25% in 3. Simulate 30 days. Compute efficiency, waiting computers, avg waiting time.</td><td class="q-source">2014 F<br>2010 F</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-high">4 🔁</span></td></tr>
+            <tr><td class="q-num">5</td><td class="q-text">Library queuing simulation for 15 customers — calculate average waiting time, average time in system, probability of server being busy.</td><td class="q-source">2010 C</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-danger"><strong>🔥🔥🔥 Total times queuing simulation problems asked: ~10 — EXTREMELY IMPORTANT. Practice the Purbanchal computer facility problem!</strong></div>
+
+    <!-- 4.7 -->
+    <div class="sub-header">4.7 Markov Chain</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text"><strong>Short Note:</strong> Markov Chain.</td><td class="q-source">2019 F, 2015 F,<br>2011 F, 2010 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-high">4 🔁</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="summary-box no-break">
+        <h4>📊 Chapter 4 — Summary Statistics</h4>
+        <table>
+            <thead><tr><th>Sub-topic</th><th style="width:100px">Times Asked</th></tr></thead>
+            <tbody>
+                <tr><td>Elements / Characteristics of Queuing System</td><td style="text-align:center">3</td></tr>
+                <tr><td>Kendall's Notation</td><td style="text-align:center">2</td></tr>
+                <tr><td style="font-weight:700;color:#dc2626">Queuing Simulation Problems (Bank/Library/Computer)</td><td style="text-align:center;font-weight:700;color:#dc2626">~10</td></tr>
+                <tr><td>Markov Chain</td><td style="text-align:center">4</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- ==================== CHAPTER 5 ==================== -->
+<div class="content page-break">
+
+    <div class="chapter-header">
+        <h2>CHAPTER 5: Verification &amp; Validation of Simulation Models</h2>
+        <div class="weightage">Syllabus Weightage: 6 Marks</div>
+    </div>
+
+    <div class="sub-header">5.1–5.4 Verification &amp; Validation</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">Differentiate between verification and validation of simulation models.</td><td class="q-source">2025 M</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="alert alert-danger">
+        <strong>⚠️ HIGH-RISK CHAPTER FOR SURPRISE QUESTIONS</strong>
+        This chapter has 6 marks weightage in the new syllabus but almost NO past questions from old papers. The 2025 Model Question introduces it explicitly. Prepare all 4 sub-topics (Model building, Verification &amp; Validation, Verification of Simulation Models, Calibration &amp; Validation) thoroughly.
+    </div>
+
+    <div class="summary-box no-break">
+        <h4>📊 Chapter 5 — Summary Statistics</h4>
+        <table>
+            <thead><tr><th>Sub-topic</th><th style="width:100px">Times Asked</th></tr></thead>
+            <tbody>
+                <tr><td>Verification &amp; Validation</td><td style="text-align:center">1 (Model 2025 only)</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- ==================== CHAPTER 6 ==================== -->
+<div class="content page-break">
+
+    <div class="chapter-header" style="background: linear-gradient(135deg, #991b1b, #dc2626);">
+        <h2>CHAPTER 6: Random Number ⭐ MOST IMPORTANT</h2>
+        <div class="weightage">Syllabus Weightage: 12 Marks — HIGHEST WEIGHTAGE</div>
+    </div>
+
+    <!-- 6.1-6.3 -->
+    <div class="sub-header">6.1–6.3 Random Numbers / Pseudo-Random Numbers (Properties &amp; Concepts)</div>
+    <table>
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 What are the properties of random numbers? Why are random numbers generated by a computer called Pseudo-random numbers?</td><td class="q-source">2015 F<br>2011 F</td><td class="q-marks">2+2</td><td class="q-repeats"><span class="repeat-med">2 🔁</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 What does pseudo-random number mean?</td><td class="q-source">2025 M</td><td class="q-marks">2</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥 Define Pseudo-random numbers. Explain the qualities of an efficient random number generator.</td><td class="q-source">2012 C</td><td class="q-marks">5+5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥 What do you mean by pseudo random number? How do these random numbers help in simulation?</td><td class="q-source">2011 C</td><td class="q-marks">2+3</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">5</td><td class="q-text">How pseudo random numbers differ from random numbers.</td><td class="q-source">2010 C</td><td class="q-marks">3</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">6</td><td class="q-text">When generating pseudo-random numbers, certain problems or errors can occur. What are they?</td><td class="q-source">2010 F</td><td class="q-marks">3</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">7</td><td class="q-text">What is the role of random numbers in simulation?</td><td class="q-source">2012 C</td><td class="q-marks">2</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 6.4 LCM -->
+    <div class="sub-header">6.4 Generation — Linear Congruential Method (LCM)</div>
+    <table>
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥🔥 Use LCM to generate random numbers with full period. Seed=6,7; a=12, c=5, m=26.</td><td class="q-source">2019 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥🔥 Write the algorithm for LCM. Using multiplicative congruential method, find the period for a=13, m=26, X₀=2 and 4.</td><td class="q-source">2015 F</td><td class="q-marks">3+3</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥🔥 Using multiplicative congruential method, find the period for a=13, m=26, x₀=1, 2, 3 and 4.</td><td class="q-source">2011 F</td><td class="q-marks">6</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥🔥 Generate up to 5 random numbers using LCM: X₀=seed, a=17, c=43, m=100.</td><td class="q-source">2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">5</td><td class="q-text">🔥🔥 Using multiplicative congruential method, find the period and generate for a=17, m=64, X₀=3.</td><td class="q-source">2010 C</td><td class="q-marks">3+4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">6</td><td class="q-text">🔥🔥 Use multiplicative congruential method to generate four three-digit random numbers. x₀=117, a=43, m=1000.</td><td class="q-source">2010 F</td><td class="q-marks">7</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">7</td><td class="q-text">🔥🔥 Generate 5 pseudo-random numbers using LCM: X₀=27, a=17, c=43, m=100.</td><td class="q-source">2025 M</td><td class="q-marks">8</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">8</td><td class="q-text">Explain combined linear congruential method for generating random numbers.</td><td class="q-source">2011 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-danger"><strong>🔥🔥🔥 Total times LCM asked: 8 — APPEARS IN ALMOST EVERY EXAM. Must-practice numerical!</strong></div>
+
+    <!-- 6.5 -->
+    <div class="sub-header">6.5 Mid-Square Random Number Generator</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Explain mid square random number generator.</td><td class="q-source">2019 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 Explain the Mid square method for generating random numbers with an example.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥 Explain the Mid square random number generator with example. What is the problem with this generator?</td><td class="q-source">2011 C</td><td class="q-marks">4+1</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥 Explain the mid-square method for random number generation.</td><td class="q-source">2025 M</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 6.6 -->
+    <div class="sub-header">6.6 Qualities of Good Random Number Generator</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Enumerate the qualities of good random number generator.</td><td class="q-source">2019 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 What are the qualities of good random number generators? What are the methods used for testing?</td><td class="q-source">2014 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-high">3 🔁</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">Explain the qualities of an efficient random number generator.</td><td class="q-source">2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 6.7-6.8 -->
+    <div class="sub-header">6.7–6.8 Testing for Randomness — General</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 What do you mean by testing of random numbers, why is it needed?</td><td class="q-source">2019 F</td><td class="q-marks">3</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">What are the methods used for testing of random numbers?</td><td class="q-source">2014 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-high">3 🔁</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">Why do we need to test the randomness of the number in simulation?</td><td class="q-source">2011 C</td><td class="q-marks">3</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 6.9 -->
+    <div class="sub-header">6.9 Chi-Square Test</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Use Chi-Square test to test 50 random numbers with confidence level 95%.<br>(36, 91, 51, 02, 54, 06, 58, 06, 58, 02, 54, 01, 48, 97, 43, 22, 83, 25, 79, 95, 42, 87, 73, 17, 02, 42, 95, 38, 79, 29, 65, 09, 55, 97, 39, 83, 31, 77, 17, 62, 03, 49, 90, 37, 13, 17, 58, 11, 51, 92)</td><td class="q-source">2019 F</td><td class="q-marks">7</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">Explain the significance of chi square test.</td><td class="q-source">2011 C</td><td class="q-marks">3</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text"><strong>Short Note:</strong> Chi square test.</td><td class="q-source">2011 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 6.10 -->
+    <div class="sub-header">6.10 Testing for Auto-Correlation</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥🔥 Test whether the 2nd, 7th, 12th and so on numbers in the sequence are auto correlated. (α=0.05). [30 numbers given]</td><td class="q-source">2014 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-high">3 🔁</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥🔥 Apply auto-correlation test: check whether 3rd, 8th, 13th and so on numbers are independent. (Z₀.₀₂₅=1.96, α=0.05). [30 numbers given]</td><td class="q-source">2012 C</td><td class="q-marks">8</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥🔥 Test auto-correlation of 2nd, 9th, 16th, … numbers. (α=0.05). [40 numbers given]</td><td class="q-source">2010 C</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-danger"><strong>🔥🔥 Total times Auto-Correlation asked: 5 — Must-practice numerical problem!</strong></div>
+
+    <!-- 6.11 -->
+    <div class="sub-header">6.11 Poker Test</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 A sequence of 1000 three-digit numbers: 680 have three different digits, 289 contain exactly one pair of like digits, 31 contain three like digits. Are these numbers independent? (α=0.05)</td><td class="q-source">2011 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text"><strong>Short Note:</strong> Poker test.</td><td class="q-source">2014 F<br>2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-med">2 🔁</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- Run Test -->
+    <div class="sub-header">Run Test</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">Based on run test check whether given sequence of 40 numbers is random or not. [Z_(α/2) = 1.96]</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- K-S Test -->
+    <div class="sub-header">Kolmogorov-Smirnov Test</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 What does Kolmogorov-Smirnov Test indicate? Perform the KS test with data: 0.24, 0.89, 0.11, 0.61, 0.23, 0.86, 0.41, 0.64, 0.50, 0.65 (α=0.05).</td><td class="q-source">2011 C</td><td class="q-marks">2+5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">Write down the steps for the Kolmogorov-Smirnov test.</td><td class="q-source">2010 C</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="summary-box no-break">
+        <h4>📊 Chapter 6 — Summary Statistics</h4>
+        <table>
+            <thead><tr><th>Sub-topic</th><th style="width:100px">Times Asked</th></tr></thead>
+            <tbody>
+                <tr><td>Properties / Pseudo-random numbers concept</td><td style="text-align:center">8</td></tr>
+                <tr><td style="font-weight:700;color:#dc2626">Linear Congruential Method (LCM) — Generation</td><td style="text-align:center;font-weight:700;color:#dc2626">8</td></tr>
+                <tr><td>Mid-Square Method</td><td style="text-align:center">4</td></tr>
+                <tr><td>Qualities of good RNG</td><td style="text-align:center">5</td></tr>
+                <tr><td>Testing concepts (general)</td><td style="text-align:center">5</td></tr>
+                <tr><td>Chi-Square Test</td><td style="text-align:center">3</td></tr>
+                <tr><td style="font-weight:700;color:#dc2626">Auto-Correlation Test</td><td style="text-align:center;font-weight:700;color:#dc2626">5</td></tr>
+                <tr><td>Poker Test</td><td style="text-align:center">3</td></tr>
+                <tr><td>Run Test</td><td style="text-align:center">1</td></tr>
+                <tr><td>Kolmogorov-Smirnov Test</td><td style="text-align:center">2</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- ==================== CHAPTER 7 ==================== -->
+<div class="content page-break">
+
+    <div class="chapter-header">
+        <h2>CHAPTER 7: Analysis of Simulation Output</h2>
+        <div class="weightage">Syllabus Weightage: 6 Marks</div>
+    </div>
+
+    <!-- 7.1 -->
+    <div class="sub-header">7.1 Estimation Methods</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Explain estimation method for analysis of simulation output.</td><td class="q-source">2015 F</td><td class="q-marks">3</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 Explain the estimation method to analyze the simulation output.</td><td class="q-source">2011 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text"><strong>Short Note:</strong> Estimation method in simulation output analysis.</td><td class="q-source">2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 7.2 -->
+    <div class="sub-header">7.2 Simulation Run Statistics</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text"><strong>Short Note:</strong> Simulation Run statistics.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 7.3 -->
+    <div class="sub-header">7.3 Replication of Runs</div>
+    <table>
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥🔥 Explain the process of replication of runs in analysis of simulation output.</td><td class="q-source">2019 F</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥🔥 Explain the mathematical modeling of replication of runs.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥🔥 Why the output of simulation has to be analyzed? Explain Replication of Runs method to any simulation output.</td><td class="q-source">2014 F<br>2010 F</td><td class="q-marks">4+6</td><td class="q-repeats"><span class="repeat-high">4 🔁</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥🔥 Explain replication of runs in the simulation output analysis.</td><td class="q-source">2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">5</td><td class="q-text">🔥🔥 Explain why simulation output is analyzed. Why Replication of Runs is performed during analysis?</td><td class="q-source">2011 F</td><td class="q-marks">5+5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">6</td><td class="q-text">🔥🔥 Why do we need replication of run in simulation?</td><td class="q-source">2011 C</td><td class="q-marks">2</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">7</td><td class="q-text">🔥🔥 Why is replication of runs necessary in output analysis?</td><td class="q-source">2025 M</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-danger"><strong>🔥🔥🔥 Total times Replication of Runs asked: ~10 — APPEARS IN ALMOST EVERY EXAM</strong></div>
+
+    <!-- 7.4 -->
+    <div class="sub-header">7.4 Elimination of Initial Bias</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Explain elimination of internal bias in the analysis of simulation output.</td><td class="q-source">2019 F</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 What is initial bias in simulation output? Mention the idea of elimination of initial bias.</td><td class="q-source">2015 F</td><td class="q-marks">3+2</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥 Explain elimination of initial bias in the simulation output analysis.</td><td class="q-source">2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥 How would you eliminate internal bias in the analysis of Simulation output?</td><td class="q-source">2010 C</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">5</td><td class="q-text"><strong>Short Note:</strong> Elimination of internal bias.</td><td class="q-source">2014 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- Why Analyze -->
+    <div class="sub-header">"Why Simulation Output is Analyzed" (General — spans 7.1–7.4)</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 "Simulation output has to be analyzed" — Justify the statement.</td><td class="q-source">2019 F</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 Why simulation output is analyzed?</td><td class="q-source">2015 F</td><td class="q-marks">2</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥 Why the output of simulation has to be analyzed?</td><td class="q-source">2014 F<br>2010 F<br>2010 C</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-high">5 🔁</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥 Explain why simulation output is analyzed.</td><td class="q-source">2011 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="summary-box no-break">
+        <h4>📊 Chapter 7 — Summary Statistics</h4>
+        <table>
+            <thead><tr><th>Sub-topic</th><th style="width:100px">Times Asked</th></tr></thead>
+            <tbody>
+                <tr><td>Estimation Methods</td><td style="text-align:center">3</td></tr>
+                <tr><td>Simulation Run Statistics</td><td style="text-align:center">1</td></tr>
+                <tr><td style="font-weight:700;color:#dc2626">Replication of Runs</td><td style="text-align:center;font-weight:700;color:#dc2626">~10</td></tr>
+                <tr><td>Elimination of Initial Bias</td><td style="text-align:center">5</td></tr>
+                <tr><td>"Why analyze simulation output" (general)</td><td style="text-align:center">8</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- ==================== CHAPTER 8 ==================== -->
+<div class="content page-break">
+
+    <div class="chapter-header">
+        <h2>CHAPTER 8: Simulation Language</h2>
+        <div class="weightage">Syllabus Weightage: 10 Marks — Second Highest</div>
+    </div>
+
+    <!-- 8.1 -->
+    <div class="sub-header">8.1 Basic Concept of Simulation Tool</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 List out the various simulation tools.</td><td class="q-source">2019 F</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 Why is simulation tool required?</td><td class="q-source">2014 F<br>2010 F</td><td class="q-marks">3</td><td class="q-repeats"><span class="repeat-high">4 🔁</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">State some types of Simulation languages.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">Why simulation tool is required?</td><td class="q-source">2011 F</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 8.2 GPSS -->
+    <div class="sub-header">8.2 GPSS (General Purpose Simulation System)</div>
+    <table>
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥🔥 Explain GPSS in brief with suitable example.</td><td class="q-source">2019 F</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥🔥 What is GPSS language &amp; its application?</td><td class="q-source">2014 F</td><td class="q-marks">3</td><td class="q-repeats"><span class="repeat-high">3 🔁</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥🔥 Explain in details of GPSS block diagram symbols.</td><td class="q-source">2014 F</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-high">3 🔁</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥🔥 Draw different types of GPSS block-diagram symbols and explain with the help of GPSS block-diagram of manufacturing shop.</td><td class="q-source">2015 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">5</td><td class="q-text">🔥🔥 Design a simulation model of any discrete system in GPSS symbols.</td><td class="q-source">2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">6</td><td class="q-text">🔥🔥 What are the key features of GPSS as a simulation language?</td><td class="q-source">2025 M</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">7</td><td class="q-text"><strong>Short Note:</strong> GPSS.</td><td class="q-source">2010 F</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">8</td><td class="q-text">Show the GPSS block diagram to represent soap quality testing system.</td><td class="q-source">2011 C</td><td class="q-marks">2</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">9</td><td class="q-text">Model a discrete-event system of hospital patient flow using GPSS. Outline key control statements.</td><td class="q-source">2025 M</td><td class="q-marks">8</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-danger"><strong>🔥🔥🔥 Total times GPSS asked: ~12 — EXTREMELY IMPORTANT. Learn block diagram symbols thoroughly!</strong></div>
+
+    <!-- 8.2 CSSLs -->
+    <div class="sub-header">8.2 CSSLs (Continuous System Simulation Languages)</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text"><strong>Short Note:</strong> CSSL.</td><td class="q-source">2010 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- 8.3 Discrete -->
+    <div class="sub-header">8.3 Discrete Systems Modeling and Simulation</div>
+    <table>
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">🔥 Explain the principle of discrete system simulation.</td><td class="q-source">2019 F</td><td class="q-marks">4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">🔥 What do you mean by discrete event simulation? Explain the principal approaches for advancing the simulation clock in discrete event simulation.</td><td class="q-source">2014 F<br>2010 F</td><td class="q-marks">4+6</td><td class="q-repeats"><span class="repeat-high">4 🔁</span></td></tr>
+            <tr><td class="q-num">3</td><td class="q-text">🔥 What do you mean by Discrete-event simulation? Explain the components and organization of a Discrete event simulation model with flow chart.</td><td class="q-source">2011 F</td><td class="q-marks">2+4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">4</td><td class="q-text">🔥 Explain discrete system simulation.</td><td class="q-source">2012 C</td><td class="q-marks">5</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">5</td><td class="q-text">Define state descriptor and discrete event. How do you simulate a telephone system, explain with its states.</td><td class="q-source">2010 C</td><td class="q-marks">2+8</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- SIMSCRIPT -->
+    <div class="sub-header">SIMSCRIPT</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">Discuss SIMSCRIPT and GPSS language in brief.</td><td class="q-source">2011 F</td><td class="q-marks">6</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">Explain Discrete Simulation Language in brief. Explain the System concepts of Simscript. How is a program organized in Simscript?</td><td class="q-source">2010 F</td><td class="q-marks">3+3+4</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- Distributed Lag -->
+    <div class="sub-header">Distributed Lag Model</div>
+    <table class="no-break">
+        <thead>
+            <tr><th style="width:30px">#</th><th>Question</th><th style="width:90px">Source</th><th style="width:60px">Marks</th><th style="width:60px">Repeats</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="q-num">1</td><td class="q-text">What do you mean by distributed lag model? Explain.</td><td class="q-source">2011 F</td><td class="q-marks">10</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+            <tr><td class="q-num">2</td><td class="q-text">Explain distributed lag model.</td><td class="q-source">2010 C</td><td class="q-marks">7</td><td class="q-repeats"><span class="repeat-low">1</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="summary-box no-break">
+        <h4>📊 Chapter 8 — Summary Statistics</h4>
+        <table>
+            <thead><tr><th>Sub-topic</th><th style="width:100px">Times Asked</th></tr></thead>
+            <tbody>
+                <tr><td>Simulation tools / languages (general)</td><td style="text-align:center">7</td></tr>
+                <tr><td style="font-weight:700;color:#dc2626">GPSS (concept, block diagrams, examples)</td><td style="text-align:center;font-weight:700;color:#dc2626">~12</td></tr>
+                <tr><td>CSSL</td><td style="text-align:center">1</td></tr>
+                <tr><td>Discrete Event Simulation (concept, clock advancing)</td><td style="text-align:center">8</td></tr>
+                <tr><td>SIMSCRIPT</td><td style="text-align:center">2</td></tr>
+                <tr><td>Distributed Lag Model</td><td style="text-align:center">2</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- ==================== OVERALL ANALYSIS ==================== -->
+<div class="content page-break">
+
+    <div class="chapter-header" style="background: linear-gradient(135deg, #991b1b, #b91c1c);">
+        <h2>📊 OVERALL FREQUENCY ANALYSIS — TOP 15 MOST REPEATED TOPICS</h2>
+        <div class="weightage">Across all 10 exam papers (2010–2019 + Model 2025)</div>
+    </div>
+
+    <table class="freq-table" style="margin-top:20px;">
+        <thead>
+            <tr>
+                <th style="width:50px">Rank</th>
+                <th>Topic</th>
+                <th style="width:80px">Chapter</th>
+                <th style="width:100px">Times Asked</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background:#fef2f2;"><td class="rank">1</td><td class="topic-name">🔥🔥🔥 GPSS (concept + block diagrams)</td><td style="text-align:center">Ch 8</td><td style="text-align:center;font-weight:800;color:#dc2626">~12</td></tr>
+            <tr style="background:#fef2f2;"><td class="rank">2</td><td class="topic-name">🔥🔥🔥 Replication of Runs</td><td style="text-align:center">Ch 7</td><td style="text-align:center;font-weight:800;color:#dc2626">~10</td></tr>
+            <tr style="background:#fef2f2;"><td class="rank">3</td><td class="topic-name">🔥🔥🔥 Queuing Simulation Problems (Bank/Library/Computer)</td><td style="text-align:center">Ch 4</td><td style="text-align:center;font-weight:800;color:#dc2626">~10</td></tr>
+            <tr style="background:#fef2f2;"><td class="rank">4</td><td class="topic-name">🔥🔥🔥 Monte Carlo Integration / Value of π</td><td style="text-align:center">Ch 2</td><td style="text-align:center;font-weight:800;color:#dc2626">~9</td></tr>
+            <tr style="background:#fef3c7;"><td class="rank">5</td><td class="topic-name">🔥🔥 "Why analyze simulation output"</td><td style="text-align:center">Ch 7</td><td style="text-align:center;font-weight:700;color:#d97706">~8</td></tr>
+            <tr style="background:#fef3c7;"><td class="rank">6</td><td class="topic-name">🔥🔥 Feedback Systems</td><td style="text-align:center">Ch 3</td><td style="text-align:center;font-weight:700;color:#d97706">~8</td></tr>
+            <tr style="background:#fef3c7;"><td class="rank">7</td><td class="topic-name">🔥🔥 Linear Congruential Method (LCM)</td><td style="text-align:center">Ch 6</td><td style="text-align:center;font-weight:700;color:#d97706">8</td></tr>
+            <tr style="background:#fef3c7;"><td class="rank">8</td><td class="topic-name">🔥🔥 Discrete Event Simulation</td><td style="text-align:center">Ch 8</td><td style="text-align:center;font-weight:700;color:#d97706">8</td></tr>
+            <tr style="background:#fef3c7;"><td class="rank">9</td><td class="topic-name">🔥🔥 Properties / Pseudo-random numbers</td><td style="text-align:center">Ch 6</td><td style="text-align:center;font-weight:700;color:#d97706">8</td></tr>
+            <tr><td class="rank">10</td><td class="topic-name">🔥🔥 Simulation tools / languages</td><td style="text-align:center">Ch 8</td><td style="text-align:center;font-weight:600">7</td></tr>
+            <tr><td class="rank">11</td><td class="topic-name">🔥🔥 Continuous system simulation</td><td style="text-align:center">Ch 3</td><td style="text-align:center;font-weight:600">6</td></tr>
+            <tr><td class="rank">12</td><td class="topic-name">🔥🔥 Differential equations in simulation</td><td style="text-align:center">Ch 3</td><td style="text-align:center;font-weight:600">6</td></tr>
+            <tr><td class="rank">13</td><td class="topic-name">🔥 Auto-Correlation Test</td><td style="text-align:center">Ch 6</td><td style="text-align:center;font-weight:600">5</td></tr>
+            <tr><td class="rank">14</td><td class="topic-name">🔥 Qualities of good RNG</td><td style="text-align:center">Ch 6</td><td style="text-align:center;font-weight:600">5</td></tr>
+            <tr><td class="rank">15</td><td class="topic-name">🔥 Elimination of Initial Bias</td><td style="text-align:center">Ch 7</td><td style="text-align:center;font-weight:600">5</td></tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- EXAM STRATEGY -->
+    <div class="strategy-section no-break">
+        <h3>⚠️ EXAM STRATEGY NOTES</h3>
+
+        <h4 style="color:#991b1b; margin:12px 0 6px;">🚨 High-Risk Alert</h4>
+        <ul>
+            <li><strong>Chapter 5 (Verification &amp; Validation)</strong> has 6 marks weightage but almost zero past questions. The 2025 Model Question introduces it. <strong>HIGH RISK for surprise questions.</strong></li>
+        </ul>
+
+        <h4 style="color:#92400e; margin:16px 0 6px;">📝 Must-Prepare Numerical Problems (appear every year)</h4>
+        <ol>
+            <li>Linear Congruential Method — random number generation</li>
+            <li>Monte Carlo integration / Value of π</li>
+            <li>Queuing simulation (bank / computer facility / library)</li>
+            <li>Auto-Correlation test</li>
+            <li>Chi-Square test</li>
+        </ol>
+
+        <h4 style="color:#92400e; margin:16px 0 6px;">📖 Must-Prepare Theory Topics (appear every year)</h4>
+        <ol>
+            <li>Replication of Runs + Why analyze simulation output</li>
+            <li>GPSS block diagrams and examples</li>
+            <li>Discrete Event Simulation + Clock advancing approaches</li>
+            <li>Feedback Systems</li>
+            <li>Steps / Phases in Simulation Study</li>
+            <li>Properties of Pseudo-random numbers + Qualities of good RNG</li>
+        </ol>
+
+        <h4 style="color:#92400e; margin:16px 0 6px;">🏷️ Popular Short Note Topics</h4>
+        <ul>
+            <li>Markov Chain (4 times)</li>
+            <li>Feedback System (4 times)</li>
+            <li>Poker Test (2 times)</li>
+            <li>Elimination of Internal Bias (1 time)</li>
+            <li>Kendall's Notation (1 time)</li>
+            <li>Chi-Square Test (1 time)</li>
+            <li>CSSL (1 time)</li>
+            <li>GPSS (1 time)</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<div class="content" style="margin-top:40px; text-align:center; color: var(--text-muted); font-size:9pt; border-top: 2px solid var(--border); padding-top:15px;">
+    <p><strong>Simulation &amp; Modeling (BCE7026 / BEG473CO) — Complete Past Question Bank</strong></p>
+    <p>Papers analyzed: 2010 F, 2010 C, 2011 F, 2011 C, 2012 C, 2014 F (×3), 2015 F, 2019 F, Model 2025</p>
+    <p style="margin-top:8px;">F = Final Exam &bull; C = Chance Exam &bull; M = Model Question</p>
+</div>
+
+</body>
+</html>

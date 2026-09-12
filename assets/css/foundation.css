@@ -1,0 +1,1378 @@
+/* ==========================================================================
+   foundation.css - the design layer, applied on top of the site's own CSS.
+   Load order: assets/fonts/fonts.css -> tokens.css -> foundation.css
+              -> (index.html <style> stays after, so keep overrides here
+                  strong enough or repeated with equal specificity below)
+
+   Loaded AFTER the page <style> block, so equal-specificity rules here win.
+   Everything is written against the class names the chapters already use:
+     .concept-box [.tip|.warn|.important]  .formula-box  .example-box
+     .comparison-table  .nav-item  .tab-btn  .pq-*  .q-option
+   ========================================================================== */
+
+/* ==== 01 base typography ================================================= */
+body {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  line-height: 1.6;
+  font-feature-settings: "cv05" 1, "ss03" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: -0.011em;
+}
+
+a {
+  color: var(--pri-l);
+}
+
+::selection {
+  background: rgba(94, 106, 210, 0.4);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-sm);
+}
+
+/* ==== 02 reading column ================================================== */
+/* The window is the layout: the columns fill it and only the prose has a cap,
+   so a laptop no longer looks like an oversized phone. */
+.content-area {
+  padding: 32px var(--content-pad) 96px;
+}
+
+.tab-panel {
+  max-width: var(--wide-w);
+}
+
+.learn-content {
+  max-width: min(var(--reader-w), 100%);
+  margin-inline: auto;
+}
+
+/* ==== 03 prose rhythm ==================================================== */
+.learn-content h2 {
+  font-size: 22px;
+  margin: 40px 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--brd);
+  scroll-margin-top: calc(var(--header-h) + 12px);
+}
+
+.learn-content h2:first-child {
+  margin-top: 0;
+}
+
+.learn-content h3 {
+  font-size: 16.5px;
+  margin: 28px 0 10px;
+  scroll-margin-top: calc(var(--header-h) + 12px);
+}
+
+.learn-content h4 {
+  font-size: 11.5px;
+  letter-spacing: 0.7px;
+  margin: 20px 0 8px;
+}
+
+.learn-content p {
+  font-size: 15.5px;
+  line-height: var(--lh-body);
+  color: var(--t2);
+  margin-bottom: 14px;
+}
+
+.learn-content ul,
+.learn-content ol {
+  margin: 10px 0 18px 26px;
+  font-size: 15.5px;
+  line-height: 1.72;
+  color: var(--t2);
+}
+
+.learn-content li {
+  margin-bottom: 9px;   /* was 5px - dark themes need more air */
+}
+
+.learn-content li::marker {
+  color: var(--t3);
+}
+
+.learn-content strong {
+  color: var(--t1);
+  font-weight: 600;
+}
+
+.learn-content em {
+  color: var(--pri-l);
+}
+
+.learn-content hr {
+  border: 0;
+  border-top: 1px solid var(--brd);
+  margin: 32px 0;
+}
+
+/* Topbar: the chapter title is the one thing that must never collapse, so the
+   search box stops growing to eat the whole row. */
+.topbar-l {
+  gap: 10px;
+}
+
+.ch-ti {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.search-wrap {
+  flex: 0 1 300px;
+  max-width: 320px;
+}
+
+/* ==== 04 pills =========================================================== */
+/* Marks, hours, years and counts are data: give them a border and a fill so
+   they read as values instead of decoration. */
+.ch-badge,
+.pq-year,
+.pq-repeat,
+.nav-marks,
+.pq-marks,
+.exam-q .qm,
+.pq-count {
+  font-variant-numeric: tabular-nums;
+}
+
+.ch-badge {
+  color: var(--pri-l);
+  background: var(--pri-bg);
+  border: 1px solid var(--pri-bd);
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.pq-year {
+  color: var(--pri-l);
+  background: var(--pri-bg);
+  border: 1px solid var(--pri-bd);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 11px;
+}
+
+.pq-marks {
+  font-size: 10.5px;
+  color: var(--t3);
+  letter-spacing: 0.02em;
+}
+
+.pq-repeat {
+  color: var(--acc);
+  background: var(--acc-bg);
+  border: 1px solid var(--acc-bd);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 10.5px;
+}
+
+.nav-marks {
+  background: var(--bg-input);
+  border: 1px solid var(--brd);
+  color: var(--t3);
+  border-radius: 999px;
+  padding: 1px 7px;
+  font-size: 9.5px;
+}
+
+.streak-badge {
+  border-radius: 999px;
+}
+
+.pq-pill {
+  border-radius: 999px;
+  min-height: 30px;
+}
+
+/* "Asked N×" - how often the papers really asked this question */
+.pq-repeat[data-freq="high"] {
+  color: var(--sec);
+  background: var(--sec-bg);
+  border-color: var(--sec-bd);
+}
+
+.pq-repeat[data-freq="mid"] {
+  color: var(--acc);
+  background: var(--acc-bg);
+  border-color: var(--acc-bd);
+}
+
+/* an honest footnote when the bank's count beats the traced evidence */
+.pq-note {
+  margin: 2px 0 0;
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--t3);
+}
+
+.learn-tools .meta {
+  align-self: center;
+  font-size: 11.5px;
+  color: var(--t3);
+  font-variant-numeric: tabular-nums;
+}
+
+.tab-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  border: 1px solid var(--brd);
+  background: var(--bg-input);
+  color: var(--t3);
+  font-size: 10px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.tab-badge.accent {
+  border-color: var(--pri-bd);
+  background: var(--pri-bg);
+  color: var(--pri-l);
+}
+
+.tab-badge.done {
+  border-color: var(--sec-bd);
+  background: var(--sec-bg);
+  color: var(--sec);
+}
+
+/* ==== 05 tables ========================================================== */
+/* table-scroll is injected by index.html so wide comparison tables scroll
+   instead of breaking the reading column. */
+.table-scroll {
+  overflow-x: auto;
+  margin: 18px 0;
+  border-radius: var(--radius-sm);
+}
+
+.table-scroll table {
+  margin: 0;
+}
+
+/* A long table scrolls in its own box with the header pinned, so the column
+   titles stay readable; short tables simply scroll sideways. enhanceContent()
+   adds .tall once a table has enough rows to need it. */
+.table-scroll.tall {
+  max-height: min(72vh, 620px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.table-scroll.tall th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+table {
+  font-size: 14px;
+}
+
+th {
+  background: var(--th-bg);
+  color: var(--th-c);
+  padding: 11px 14px;
+  font-size: 11.5px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--brd);
+}
+
+td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--brd-l);
+  color: var(--t2);
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) td {
+  background: var(--stripe);
+}
+
+tbody tr:hover td {
+  background: var(--bg-side-h);
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* numeric columns: right aligned, tabular monospace, so digits line up */
+td.num,
+th.num {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--t1);
+}
+
+td.row-head,
+th.row-head {
+  color: var(--t1);
+  font-weight: 600;
+}
+
+/* ==== 06 callouts ======================================================== */
+/* One shape, five semantic colours. The eye learns "coloured rail = this is
+   what gets marked":
+     indigo  .concept-box            definition / key concept
+     indigo  .formula-box            key formula (mono)
+     green   .concept-box.tip        exam tip
+     violet  .concept-box.asked      talked about / commonly asked
+     amber   .concept-box.warn       caution
+     red     .concept-box.important  common mistake / must not confuse
+     green   .example-box            worked example
+*/
+.concept-box {
+  --k: var(--pri);
+  --k-bg: var(--pri-bg);
+  --k-bd: var(--pri-bd);
+  background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--k) 6%, transparent),
+      transparent 62%
+    ),
+    var(--bg-card);
+  border: 1px solid var(--k-bd);
+  border-left: 3px solid var(--k);
+  border-radius: var(--radius-sm);
+  padding: 15px 18px;
+  margin: 18px 0;
+}
+
+.concept-box h4 {
+  color: var(--k);
+  margin: 0 0 8px;
+  font-size: 11.5px;
+  letter-spacing: 0.7px;
+}
+
+.concept-box p {
+  color: var(--t2);
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.concept-box p + p {
+  margin-top: 9px;
+}
+
+.concept-box ul,
+.concept-box ol {
+  margin: 8px 0 0 22px;
+  color: var(--t2);
+  font-size: 15px;
+}
+
+.concept-box li {
+  margin-bottom: 6px;
+}
+
+.concept-box li::marker {
+  color: var(--k);
+}
+
+.concept-box strong {
+  color: var(--t1);
+}
+
+/* the variants must repeat the surface treatment: the shell stylesheet also
+   targets .concept-box.tip / .warn / .important and would otherwise win. */
+.concept-box.tip,
+.concept-box.asked,
+.concept-box.warn,
+.concept-box.important {
+  background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--k) 6%, transparent),
+      transparent 62%
+    ),
+    var(--bg-card);
+  border-color: var(--k-bd);
+  border-left-color: var(--k);
+}
+
+.concept-box.tip {
+  --k: var(--sec);
+  --k-bg: var(--sec-bg);
+  --k-bd: var(--sec-bd);
+}
+
+.concept-box.asked {
+  --k: var(--vio);
+  --k-bg: var(--vio-bg);
+  --k-bd: var(--vio-bd);
+}
+
+.concept-box.warn {
+  --k: var(--acc);
+  --k-bg: var(--acc-bg);
+  --k-bd: var(--acc-bd);
+}
+
+.concept-box.important {
+  --k: var(--dan);
+  --k-bg: var(--dan-bg);
+  --k-bd: var(--dan-bd);
+}
+
+/* key formula: the pattern the eye already trusts, made legible */
+.formula-box {
+  background: var(--bg-code);
+  border: 1px solid var(--pri-bd);
+  border-left: 3px solid var(--pri);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin: 18px 0;
+  font-family: var(--font-mono);
+  font-size: 14.5px;
+  line-height: 2;
+  font-variant-numeric: tabular-nums;
+  color: var(--pri-l);
+  text-align: center;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+/* multi-line derivations read left-to-right, not centred */
+.formula-box.lines {
+  text-align: left;
+  line-height: 1.9;
+}
+
+.formula-box .fb-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--t3);
+  margin-bottom: 6px;
+}
+
+.example-box {
+  background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--sec) 5%, transparent),
+      transparent 62%
+    ),
+    var(--bg-card);
+  border: 1px solid var(--sec-bd);
+  border-left: 3px solid var(--sec);
+  border-radius: var(--radius-sm);
+  padding: 15px 18px;
+  margin: 18px 0;
+}
+
+.example-box h4 {
+  color: var(--sec);
+  margin: 0 0 8px;
+  font-size: 11.5px;
+  letter-spacing: 0.7px;
+}
+
+.example-box p {
+  color: var(--t2);
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 5px 0;
+}
+
+.example-box table {
+  font-size: 13.5px;
+}
+
+.code-block {
+  background: var(--bg-code);
+  border: 1px solid var(--brd);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin: 18px 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--pri-l);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* worked numerical: givens -> numbered steps -> boxed result.
+   This replaces cramped inline arithmetic for LCM, chi-square, K-S, run
+   tests, queuing tables and Monte Carlo integrations. */
+.worked {
+  border: 1px solid var(--brd);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.worked-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 18px;
+  background: var(--bg-input);
+  border-bottom: 1px solid var(--brd);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--t1);
+}
+
+.worked-head .meta {
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--t3);
+  font-variant-numeric: tabular-nums;
+}
+
+.worked-givens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 10px 20px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--brd);
+}
+
+.worked-givens span {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--t3);
+}
+
+.worked-givens b {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--t1);
+}
+
+.worked-steps {
+  counter-reset: w;
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  padding: 16px 18px;
+  margin: 0;
+}
+
+.worked-steps li {
+  position: relative;
+  padding-left: 34px;
+  list-style: none;
+  margin: 0;
+}
+
+.worked-steps li::before {
+  counter-increment: w;
+  content: counter(w);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--brd);
+  background: var(--bg-input);
+  color: var(--t3);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.worked-calc {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  line-height: 1.9;
+  font-variant-numeric: tabular-nums;
+  color: var(--t1);
+  white-space: pre-wrap;
+}
+
+.worked-note {
+  display: block;
+  margin-top: 3px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--t3);
+}
+
+.worked-result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 18px;
+  border-top: 1px solid var(--pri-bd);
+  background: var(--pri-bg);
+}
+
+.worked-result span {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--pri-l);
+}
+
+.worked-result b {
+  font-family: var(--font-mono);
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--t1);
+}
+
+/* ==== 07 sidebar ========================================================= */
+.sidebar {
+  background: var(--bg-side);
+  transition: width 0.22s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* The slim progress line: one bar, three numbers, instead of three boxes. */
+.xp-inline {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  color: var(--t3);
+}
+
+.xp-inline span {
+  white-space: nowrap;
+}
+
+.xp-inline b {
+  color: var(--t2);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- collapsed sidebar (desktop) ---------------------------------------- */
+/* A click on the ☰ button compresses the sidebar to a rail of chapter
+   numbers. The choice is remembered, so it stays however you left it - and
+   one more click brings the full column back. */
+@media (min-width: 1025px) {
+  .app.rail .sidebar {
+    width: var(--sidebar-rail);
+  }
+
+  .app.rail .s-head {
+    padding: 16px 8px;
+  }
+
+  .app.rail .logo {
+    justify-content: center;
+    gap: 0;
+  }
+
+  .app.rail .logo-t,
+  .app.rail .xp-section,
+  .app.rail .s-foot,
+  .app.rail .nav-label,
+  .app.rail .nav-meta {
+    display: none;
+  }
+
+  .app.rail .ch-nav {
+    padding: 8px 6px;
+  }
+
+  .app.rail .nav-item {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .app.rail .nav-item.active::before {
+    top: 15%;
+    height: 70%;
+  }
+}
+
+/* The toggle is a real control at every width, not only on phones. */
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.menu-btn[aria-expanded="true"] {
+  color: var(--t1);
+  border-color: var(--pri-bd);
+  background: var(--pri-bg);
+}
+
+.xp-stat {
+  background: var(--bg-input);
+  border-radius: var(--radius-sm);
+}
+
+.xp-stat .lbl {
+  color: var(--t3);
+}
+
+.nav-item {
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-item.active {
+  background: var(--bg-side-a);
+  border-color: transparent;
+  box-shadow: inset 0 0 0 1px var(--pri-bd);
+}
+
+.nav-item.done .nav-num {
+  background: var(--sec);
+  color: #06130d;
+}
+
+.nav-label {
+  color: var(--t3);
+}
+
+.nav-item.active .nav-label,
+.nav-item.done .nav-label {
+  color: var(--t1);
+}
+
+.nav-prog {
+  background: var(--brd);
+}
+
+/* ==== 08 tabs ============================================================ */
+.tab-btn {
+  font-family: var(--font-sans);
+  color: var(--t3);
+  gap: 7px;
+}
+
+.tab-btn:hover {
+  color: var(--t2);
+}
+
+.tab-btn.active {
+  color: var(--t1);
+}
+
+.tab-btn.active::after {
+  background: var(--pri);
+  left: 12px;
+  right: 12px;
+}
+
+/* ==== 09 quiz + answer surfaces ========================================== */
+.q-text {
+  color: var(--t1);
+}
+
+.q-option {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+}
+
+.q-option:hover:not(.disabled) {
+  background: var(--bg-side-h);
+}
+
+.q-explanation {
+  border-radius: var(--radius-sm);
+  color: var(--t2);
+}
+
+.pq-card {
+  border-radius: var(--radius);
+}
+
+.pq-text {
+  color: var(--t1);
+  flex: 1 1 auto;
+  min-width: 0;          /* a long formula must not push the chevron off the card */
+  overflow-wrap: anywhere;
+}
+
+.pq-question {
+  min-width: 0;
+}
+
+.pq-variant p,
+.pq-answer-inner p,
+.pq-answer-inner li,
+.worked-calc,
+.worked-note {
+  overflow-wrap: anywhere;
+}
+
+.pq-answer-inner {
+  color: var(--t2);
+}
+
+.pq-pending {
+  background: var(--bg-input);
+  color: var(--t3);
+}
+
+.pq-card.practice {
+  border-left: 3px solid var(--acc-bd);
+}
+
+.an-card .v {
+  color: var(--pri-l);
+}
+
+.sr-item:hover,
+.sr-item.sel {
+  background: var(--bg-side-h);
+}
+
+.search-in {
+  border-radius: var(--radius-sm);
+}
+
+.search-in:focus {
+  border-color: var(--pri);
+  box-shadow: none;
+}
+
+/* ==== 09b chapter state + floating nav ================================== */
+/* `hidden` must win over the display values used by the chips above. */
+[hidden] {
+  display: none !important;
+}
+
+/* not-started | in-progress (opened but not finished) | done */
+.nav-item.progress .nav-num {
+  background: var(--pri-bg);
+  border: 1px solid var(--pri-bd);
+  color: var(--pri-l);
+}
+
+.nav-quiz {
+  font-size: 9.5px;
+  font-weight: 700;
+  color: var(--t3);
+  font-variant-numeric: tabular-nums;
+}
+
+.fab-wrap {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tap);
+  height: var(--tap);
+  border: 1px solid var(--brd);
+  border-radius: 50%;
+  background: var(--bg-card);
+  color: var(--t3);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--sh-md);
+  transition: var(--tr);
+}
+
+.fab:hover {
+  color: var(--t1);
+  border-color: var(--pri-bd);
+  background: var(--bg-side-h);
+}
+
+/* ==== 09c narrow windows ================================================ */
+/* Below ~900px title + controls share the first row and the search drops to its
+   own full-width row - instead of the topbar stacking into three short rows. */
+@media (max-width: 900px) {
+  .topbar {
+    height: auto;
+    min-height: var(--header-h);
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 14px;
+    align-items: center;
+  }
+
+  .topbar-l {
+    order: 1;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    min-width: 0;
+  }
+
+  .topbar-r {
+    order: 1;
+    flex: 0 0 auto;
+  }
+
+  .search-wrap {
+    order: 2;
+    flex: 1 1 100%;
+    max-width: none;
+    min-width: 120px;
+  }
+
+  .ch-ti {
+    flex: 1 1 auto;
+  }
+}
+
+/* ==== 09d past questions ================================================
+   One card per question. The card carries the primary wording; the other
+   papers' wordings sit behind one button ("asked in 4 papers - show each
+   wording") instead of stacking near-identical cards down the page. */
+.pq-status {
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.pq-status.ok {
+  color: var(--sec);
+  background: var(--sec-bg);
+  border: 1px solid var(--sec-bd);
+}
+
+.pq-status.todo {
+  color: var(--acc);
+  background: var(--acc-bg);
+  border: 1px solid var(--acc-bd);
+}
+
+.pq-papers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 7px;
+}
+
+.pq-paper {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  color: var(--t3);
+  background: var(--bg-input);
+  border: 1px solid var(--brd);
+  border-radius: 5px;
+  padding: 1px 6px;
+}
+
+.pq-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.pq-more {
+  border-top: 1px solid var(--brd);
+  padding: 14px 20px 18px;
+}
+
+.pq-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--vio);
+  background: var(--vio-bg);
+  border: 1px solid var(--vio-bd);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: var(--tr);
+}
+
+.pq-more-btn:hover {
+  border-color: var(--vio);
+}
+
+.pq-more-btn .caret {
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+
+.pq-more-btn[aria-expanded="true"] .caret {
+  transform: rotate(180deg);
+}
+
+.pq-variants {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.pq-variant {
+  padding-left: 13px;
+  border-left: 2px solid var(--vio-bd);
+}
+
+.pq-variant-meta {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--vio);
+  font-variant-numeric: tabular-nums;
+}
+
+.pq-variant-meta em {
+  margin-left: 7px;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--t3);
+}
+
+.pq-variant p {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--t2);
+}
+
+.pq-variant.is-primary {
+  border-left-color: var(--pri);
+}
+
+.pq-variant.is-primary .pq-variant-meta {
+  color: var(--pri-l);
+}
+
+.pq-var-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--t2);
+  background: var(--bg-input);
+  border: 1px solid var(--brd);
+  border-radius: 999px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: var(--tr);
+}
+
+.pq-var-btn:hover {
+  color: var(--t1);
+  border-color: var(--pri-bd);
+}
+
+.pq-var-btn .caret {
+  font-size: 9px;
+}
+
+.pq-var-answer {
+  margin-top: 10px;
+  border: 1px solid var(--brd);
+  border-radius: var(--radius-sm);
+  background: var(--bg-side);
+}
+
+.pq-var-answer .pq-answer-inner {
+  font-size: 13.5px;
+}
+
+.pq-section-label {
+  margin: 0 0 10px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--t3);
+}
+
+/* ==== 09e chapter sections (sub-section collapse) =======================
+   A chapter is no longer one endless scroll: every h2 section gets a chevron,
+   and the whole chapter has one expand/collapse control. */
+.sec-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.sec-head h2 {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.sec-toggle {
+  flex-shrink: 0;
+  margin-top: 6px;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--brd);
+  background: var(--bg-input);
+  color: var(--t3);
+  font-size: 10px;
+  cursor: pointer;
+  transition: var(--tr);
+}
+
+.sec-toggle:hover {
+  color: var(--t1);
+  border-color: var(--pri-bd);
+}
+
+.sec-toggle .caret {
+  transition: transform 0.2s ease;
+}
+
+.learn-content section.collapsed .sec-toggle .caret {
+  transform: rotate(-90deg);
+}
+
+.learn-content section.collapsed > *:not(.sec-head) {
+  display: none;
+}
+
+.learn-content section.collapsed {
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--brd);
+  margin-bottom: 20px;
+}
+
+.learn-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px;
+}
+
+/* ==== 09f print ==========================================================
+   Print / Save as PDF of the page: chrome out, content in. Collapsed sections
+   are expanded by the print script in index.html. */
+@media print {
+  .sidebar,
+  .topbar,
+  .tabs,
+  .fab-wrap,
+  .overlay,
+  .pq-tools,
+  .learn-tools,
+  .sec-toggle,
+  .pq-more-btn,
+  .toast,
+  .confetti-container {
+    display: none !important;
+  }
+
+  .app,
+  body,
+  .main,
+  .content-area {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+    color: #111 !important;
+    padding: 0 !important;
+  }
+
+  .tab-panel {
+    display: none !important;
+  }
+
+  .tab-panel.active {
+    display: block !important;
+  }
+
+  .learn-content,
+  .tab-panel {
+    max-width: none !important;
+  }
+
+  .pq-answer,
+  .pq-variants {
+    max-height: none !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  a {
+    color: #111 !important;
+    text-decoration: underline;
+  }
+}
+
+/* ==== 10 motion ========================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ==== 11 small screens =================================================== */
+@media (max-width: 1024px) {
+  .content-area {
+    padding: 22px 20px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    padding: 16px 14px 72px;
+  }
+
+  .learn-content p,
+  .learn-content ul,
+  .learn-content ol {
+    font-size: 15px;
+  }
+
+  .pq-question {
+    padding: 14px 14px;
+    gap: 10px;
+  }
+
+  .pq-answer-inner,
+  .pq-more {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+/* ==== 12 figures =========================================================
+   Inline SVG: scales with the column, takes the theme colours, and prints.
+   The flowchart in Ch1 is the first one (P5 in plan.md). */
+.figure-wrap {
+  margin: 22px 0;
+}
+
+.figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 560px;
+  margin-inline: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--brd);
+  border-radius: var(--radius);
+  padding: 14px 10px;
+}
+
+.figure-wrap figcaption {
+  max-width: 560px;
+  margin: 10px auto 0;
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--t3);
+}
+
+.flow-box {
+  fill: var(--bg-input);
+  stroke: var(--brd);
+  stroke-width: 1.2;
+}
+
+.flow-box.phase1 {
+  stroke: var(--pri-bd);
+}
+
+.flow-box.phase2 {
+  stroke: var(--sec-bd);
+}
+
+.flow-box.phase3 {
+  stroke: var(--acc-bd);
+}
+
+.flow-box.phase4 {
+  stroke: var(--vio-bd);
+}
+
+.flow-text {
+  fill: var(--t1);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  text-anchor: middle;
+}
+
+.flow-arrow {
+  fill: none;
+  stroke: var(--brd);
+  stroke-width: 1.6;
+}
+
+.flow-loop {
+  fill: none;
+  stroke: var(--pri-bd);
+  stroke-width: 1.6;
+  stroke-dasharray: 5 4;
+}
+
+.flow-arrow-head {
+  fill: var(--pri);
+}
+
+.flow-label {
+  fill: var(--t3);
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}

@@ -1,0 +1,158 @@
+/* ==========================================================================
+   tokens.css - the single source of truth for colour, type and rhythm.
+   Load order: assets/fonts/fonts.css -> tokens.css -> foundation.css
+
+   The variable NAMES are the ones the site already used (--pri, --t2, --brd,
+   ...), so every one of the 8 chapter files, the quiz, the past-question list,
+   the analysis tab and the mock exam inherit the new palette with no content
+   edits. Only the values changed.
+
+   Palette basis: Linear's dark theme.
+     bg #08090A / #0D0E10   surface #1C1D1F - #1F2023   border #2A2B2E
+     text #EDEDEF  secondary #8A8F98  accent #5E6AD2
+     success #4CB782  warning #E5A03D  danger #E5484D
+   ========================================================================== */
+
+:root {
+  /* ---- layout ---------------------------------------------------------- */
+  --sidebar-w: 288px;      /* the expanded sidebar */
+  --sidebar-rail: 72px;    /* the collapsed sidebar: chapter numbers only */
+  --header-h: 60px;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --tr: all 0.22s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* ---- reading measure ------------------------------------------------- */
+  /* On a laptop the old 760 px column left most of the window empty, which
+     read like a phone layout. The column now uses the window: it grows with
+     the screen and only stops at a width prose can still be read at. */
+  --reader-w: 1180px;  /* the reading column cap */
+  --wide-w: 1400px;    /* quiz / past / analysis / exam: fill the window, stop
+                          short of absurdly long lines on an ultra-wide screen */
+  --content-pad: 40px; /* horizontal breathing room inside the content area */
+  --tap: 40px;
+
+  /* ---- type ------------------------------------------------------------ */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
+    Consolas, "Liberation Mono", monospace;
+
+  --lh-body: 1.75;     /* dark themes need more air than light ones */
+  --lh-tight: 1.3;
+
+  /* ---- focus ----------------------------------------------------------- */
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--pri);
+}
+
+/* ==========================================================================
+   DARK - the primary theme
+   ========================================================================== */
+[data-theme="dark"] {
+  /* surfaces */
+  --bg: #08090a;            /* app background - near black, faint blue cast */
+  --bg-card: #1c1d1f;       /* cards, quiz rows, past-question rows */
+  --bg-side: #0d0e10;       /* sidebar / topbar */
+  --bg-side-h: #1f2023;     /* hover fill */
+  --bg-side-a: rgba(94, 106, 210, 0.13);  /* active nav fill */
+  --bg-input: #1f2023;      /* inputs, chips, bars */
+  --bg-code: #0d0e10;       /* formula / code blocks */
+
+  /* accent - indigo */
+  --pri: #5e6ad2;
+  --pri-l: #8b94e4;
+  --pri-bg: rgba(94, 106, 210, 0.14);
+  --pri-bd: rgba(94, 106, 210, 0.42);
+
+  /* success - muted green */
+  --sec: #4cb782;
+  --sec-l: #6ecb9b;
+  --sec-bg: rgba(76, 183, 130, 0.13);
+  --sec-bd: rgba(76, 183, 130, 0.38);
+
+  /* warning - muted amber */
+  --acc: #e5a03d;
+  --acc-bg: rgba(229, 160, 61, 0.13);
+  --acc-bd: rgba(229, 160, 61, 0.38);
+
+  /* danger */
+  --dan: #e5484d;
+  --dan-bg: rgba(229, 72, 77, 0.13);
+  --dan-bd: rgba(229, 72, 77, 0.38);
+
+  /* violet - the "talked about / commonly asked" callout kind */
+  --vio: #9a7fe0;
+  --vio-bg: rgba(154, 127, 224, 0.13);
+  --vio-bd: rgba(154, 127, 224, 0.38);
+
+  /* text */
+  --t1: #ededef;   /* headings, strong, question text */
+  --t2: #c3c6cd;   /* body prose */
+  --t3: #8a8f98;   /* metadata: years, marks, time estimates */
+
+  /* lines */
+  --brd: #2a2b2e;
+  --brd-l: #1f2023;
+
+  /* elevation - on dark, shadows are almost invisible; keep them tight */
+  --sh: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --sh-md: 0 10px 28px rgba(0, 0, 0, 0.5);
+
+  /* tables */
+  --th-bg: #1f2023;
+  --th-c: #b9bcc4;
+  --stripe: rgba(255, 255, 255, 0.018);
+
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   LIGHT - kept in step with the same roles, so the toggle still works
+   ========================================================================== */
+[data-theme="light"] {
+  --bg: #fbfbfc;
+  --bg-card: #ffffff;
+  --bg-side: #f7f7f9;
+  --bg-side-h: #eeeef1;
+  --bg-side-a: #edeffb;
+  --bg-input: #f3f3f5;
+  --bg-code: #f7f7f9;
+
+  --pri: #5e6ad2;
+  --pri-l: #4f5abe;
+  --pri-bg: #eff0fc;
+  --pri-bd: #d6d9f6;
+
+  --sec: #2f9e6b;
+  --sec-l: #27865a;
+  --sec-bg: #eefaf3;
+  --sec-bd: #c3eada;
+
+  --acc: #a86c1c;
+  --acc-bg: #fdf6ec;
+  --acc-bd: #f0dcbd;
+
+  --dan: #d3373c;
+  --dan-bg: #fdf1f1;
+  --dan-bd: #f5cfd0;
+
+  --vio: #7458cd;
+  --vio-bg: #f6f3fd;
+  --vio-bd: #e1d9f8;
+
+  --t1: #16171a;
+  --t2: #3f4249;
+  --t3: #7b8087;
+
+  --brd: #e6e7ea;
+  --brd-l: #f0f0f2;
+
+  --sh: 0 1px 2px rgba(16, 17, 20, 0.06);
+  --sh-md: 0 8px 24px rgba(16, 17, 20, 0.1);
+
+  --th-bg: #f4f4f6;
+  --th-c: #3f4249;
+  --stripe: #fafafb;
+
+  color-scheme: light;
+}

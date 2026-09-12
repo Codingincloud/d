@@ -1,0 +1,34 @@
+# ============================================================================
+# Source material — kept on disk, deliberately not versioned
+# ============================================================================
+# _source/ holds the 57 scanned note pages (~9.5 MB of JPEGs) and their OCR
+# text. They are inputs to tools/render_notes.py and
+# tools/extract_occurrences.py, not part of the site, and they are roughly
+# six times everything the site needs put together. The site itself is
+# self-contained: nothing under index.html, ch*.js or assets/ reads them.
+_source/
+
+# ============================================================================
+# Scratch — regenerated on every run
+# ============================================================================
+# .freebuff/ is the coding agent's session state (project id, tmp scripts,
+# .freebuff/tmp/chapters.json dumps); every __pycache__ is bytecode Python
+# rewrites on each invocation.
+.freebuff/
+__pycache__/
+
+# build_pdf.py dumps the html it hands to xhtml2pdf here so a failed run can be
+# inspected. The PDF itself (Simulation_Notes.pdf) is the deliverable and is
+# committed.
+temp_pdf.html
+
+# ============================================================================
+# Audit snapshots
+# ============================================================================
+# _audit/original.sha256 hashes the frozen original and is the only integrity
+# record the project has, so it stays. The sibling folders are tool-created
+# pre-change copies of ch*.js — large duplicates of files git already tracks,
+# and merge_past.py rewrites _audit/pre_merge/ on every --apply, so tracking
+# them would dirty the tree on every merge for no diff value.
+_audit/*
+!_audit/original.sha256

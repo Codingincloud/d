@@ -1,0 +1,22 @@
+# ============================================================================
+# Keep every committed byte identical to the working tree
+# ============================================================================
+# This machine has core.autocrlf=true (the Git for Windows default), which
+# normalises CRLF to LF in the index and hands CRLF back on checkout. That is
+# wrong for this project for three concrete reasons:
+#
+#   * _audit/original.sha256 hashes the frozen original's EXACT bytes. Under
+#     normalisation a fresh clone would fail `sha256sum -c` on every line, and
+#     the manifest is the only integrity record the project has.
+#   * ch*.js are CRLF on disk and were edited with CRLF-aware single-line
+#     anchors, so the on-disk line endings are part of what was tested.
+#   * Simulation_Notes.pdf contains bytes that look like text; a normalising
+#     checkout would rewrite them and corrupt the PDF.
+#
+# `-text` disables conversion everywhere, so what is committed is what was
+# verified, on this checkout and on any other.
+* -text
+
+# Explicit, though `-text` above already covers them.
+*.pdf binary
+*.jpg binary

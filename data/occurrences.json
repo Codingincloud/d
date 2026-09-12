@@ -1,0 +1,1898 @@
+{
+ "threshold": 0.75,
+ "papers": [
+  {
+   "id": "2019 F",
+   "year": "2019",
+   "term": "Final",
+   "units": 14,
+   "dup_blocks": []
+  },
+  {
+   "id": "2015 F",
+   "year": "2015",
+   "term": "Final",
+   "units": 16,
+   "dup_blocks": []
+  },
+  {
+   "id": "2014 F",
+   "year": "2014",
+   "term": "Final",
+   "units": 13,
+   "dup_blocks": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "2012 C",
+   "year": "2012",
+   "term": "Chance",
+   "units": 12,
+   "dup_blocks": []
+  },
+  {
+   "id": "2011 F",
+   "year": "2011",
+   "term": "Final",
+   "units": 9,
+   "dup_blocks": []
+  },
+  {
+   "id": "2011 C",
+   "year": "2011",
+   "term": "Chance",
+   "units": 11,
+   "dup_blocks": []
+  },
+  {
+   "id": "2010 C",
+   "year": "2010",
+   "term": "Chance",
+   "units": 11,
+   "dup_blocks": []
+  },
+  {
+   "id": "2010 F",
+   "year": "2010",
+   "term": "Final",
+   "units": 11,
+   "dup_blocks": []
+  }
+ ],
+ "blocks_without_readable_year": [],
+ "duplicate_scans_collapsed": [
+  {
+   "id": "unidentified block 3",
+   "block": 3,
+   "of_block": 2,
+   "of_id": "2014 F"
+  },
+  {
+   "id": "2014 F",
+   "block": 4,
+   "of_block": 2,
+   "of_id": "2014 F"
+  }
+ ],
+ "chapters": {
+  "1": [
+   {
+    "site_index": 0,
+    "q": "Explain the phases and steps in simulation study.",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 4,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Explain the phases and steps in simulation study"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 1,
+    "q": "Explain the concept of System. Differentiate between Continuous and Discrete, Deterministic and Stochastic system with example.",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 3,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Explain the concept of System. Differentiate between Continuous and discrete, Deterministic and Stochastic system with example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 2,
+    "q": "Explain the ways to study a system. What are the criteria of classifying Simulation models? Brief it with suitable example.",
+    "year": "2014 F",
+    "marks": "10",
+    "repeats_claim": 3,
+    "occ": [
+     {
+      "paper": "2014 F",
+      "year": "2014",
+      "marks": "3+7",
+      "score": 0.976,
+      "q": "Explain the ways to study a system. What are tpe criteria of classifying Simulation models? Brief it with suitable example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 3,
+    "q": "What do you mean by simulation and modeling? Explain the steps in the simulation study.",
+    "year": "2015 F",
+    "marks": "10",
+    "repeats_claim": 2,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "3+7",
+      "score": 1.0,
+      "q": "What do you mean by simulation and modeling? Explain the steps in the simulation study?"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 4,
+    "q": "Define real time simulation. Mention the advantages and disadvantages of simulation.",
+    "year": "2012 C",
+    "marks": "10",
+    "repeats_claim": 2,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 5,
+    "q": "Define simulation. Explain the ways to study a system. Point out the areas where Simulation and Modeling can be used.",
+    "year": "2011 F",
+    "marks": "10",
+    "repeats_claim": 2,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 6,
+    "q": "Discuss real-time simulation with an example. Mention purposes and limitations of simulation.",
+    "year": "2010 F",
+    "marks": "10",
+    "repeats_claim": 2,
+    "occ": [
+     {
+      "paper": "2011 C",
+      "year": "2011",
+      "marks": "3+7",
+      "score": 0.757,
+      "q": "Explain real time simulation with example? Explain the type of simulation models"
+     },
+     {
+      "paper": "2010 F",
+      "year": "2010",
+      "marks": "4+3+3",
+      "score": 1.0,
+      "q": "Discuss real-time simulation with an example. Mention purposes of using simulation. What are the limitations of simulation?"
+     }
+    ],
+    "occ_found": 2
+   },
+   {
+    "site_index": 7,
+    "q": "Define system simulation and give one example.",
+    "year": "2025 M",
+    "marks": "2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 8,
+    "q": "Explain the steps in a simulation study with a flowchart.",
+    "year": "2025 M",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 9,
+    "q": "Short Note: Application areas of simulation",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "",
+      "score": 1.0,
+      "q": "Application areas of simulation"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 10,
+    "q": "What do you mean by simulation and modeling?",
+    "year": "2015 F",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "3+7",
+      "score": 0.85,
+      "q": "What do you mean by simulation and modeling? Explain the steps in the simulation study?"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 11,
+    "q": "What are the criteria of classifying Simulation models? Brief it with suitable example",
+    "year": "2014 F",
+    "marks": "7",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2014 F",
+      "year": "2014",
+      "marks": "3+7",
+      "score": 0.853,
+      "q": "Explain the ways to study a system. What are tpe criteria of classifying Simulation models? Brief it with suitable example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 12,
+    "q": "Mention the advantages and disadvantages of simulation. What are the purposes for which simulation can be used?",
+    "year": "2012 C",
+    "marks": "4+4",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2012 C",
+      "year": "2012",
+      "marks": "",
+      "score": 0.815,
+      "q": "Define real time simulation. Mention the advaJ 'tages ·and disadvantages of simulation. What are the purposes !:.for which simulation can be used? ) 2+4+4 \\"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 13,
+    "q": "Differentiate between discrete system simulation and continuous system simulation",
+    "year": "2011 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 14,
+    "q": "Explain real time simulation with example. Explain the type of simulation models",
+    "year": "2011 C",
+    "marks": "3+7",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2011 C",
+      "year": "2011",
+      "marks": "3+7",
+      "score": 1.0,
+      "q": "Explain real time simulation with example? Explain the type of simulation models"
+     },
+     {
+      "paper": "2010 F",
+      "year": "2010",
+      "marks": "4+3+3",
+      "score": 0.754,
+      "q": "Discuss real-time simulation with an example. Mention purposes of using simulation. What are the limitations of simulation?"
+     }
+    ],
+    "occ_found": 2
+   },
+   {
+    "site_index": 15,
+    "q": "Explain the type of simulation models",
+    "year": "2011 C",
+    "marks": "7",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 16,
+    "q": "Point out the areas where the Simulation and Modeling can be used",
+    "year": "2011 F",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 17,
+    "q": "What is system modeling? What are the types of system models? Explain dynamic physical model with an example.",
+    "year": "2010 C",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2010 C",
+      "year": "2010",
+      "marks": "2+2+6",
+      "score": 0.97,
+      "q": "What is system modeling? What are the types of system :i;nodels? Explain dynamic physical model with an example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 18,
+    "q": "Differentiate between deterministic and stochastic simulation",
+    "year": "2010 C",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2010 C",
+      "year": "2010",
+      "marks": "",
+      "score": 0.85,
+      "q": "Differentiate between deterministic and stochastic simulation. . 3+7 I~ Explain distributed lag model. t I. a rrivals of 1~"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 19,
+    "q": "Mention purposes of using simulation. What are the limitations of simulation?",
+    "year": "2010 F",
+    "marks": "3+3",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2010 F",
+      "year": "2010",
+      "marks": "4+3+3",
+      "score": 0.85,
+      "q": "Discuss real-time simulation with an example. Mention purposes of using simulation. What are the limitations of simulation?"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 20,
+    "q": "Explain the limitations of Simulation Techniques",
+    "year": "2010 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   }
+  ],
+  "2": [
+   {
+    "site_index": 0,
+    "q": "Find the value of π by using Monte Carlo simulation using x² + y² = 16. Calculate error.",
+    "year": "2014 F",
+    "marks": "5",
+    "repeats_claim": 4,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 1,
+    "q": "Compare stochastic simulation vs. Monte Carlo method.",
+    "year": "2025 M",
+    "marks": "4",
+    "repeats_claim": 2,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 2,
+    "q": "What is the purpose of the Monte Carlo method?",
+    "year": "2025 M",
+    "marks": "2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 3,
+    "q": "Discuss the basic philosophy of Monte-Carlo simulation.",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Discuss the basic philosophy of Monte:--Carlo simulation"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 4,
+    "q": "A vegetable shopkeeper is trying to determine how much green vegetable he has to purchase. No. of customers: 8(0.35), 10(0.30), 12(0.25), 14(0.10). Kg ordered: 1(0.2), 2(0.4), 3(0.3), 4(0.1). Simulate for 5 days.",
+    "year": "2019 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 5,
+    "q": "Vegetable shopkeeper simulation: Determine how much green vegetable to purchase. Probability distribution for customers (8,10,12,14) and kg ordered (1,2,3,4) given. Vegetable sells Rs.50/kg, unsold at half price. Simulate for 5 days",
+    "year": "2019 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 6,
+    "q": "Calculate ∫₀^(π/2) cos x dx using Monte Carlo simulation",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 7,
+    "q": "Find the value of pi (π) by using Monte Carlo simulation using the equation x²+y²=16. Also calculate error when compared with its analytical value",
+    "year": "2014 F, 2010 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2014 F",
+      "year": "2014",
+      "marks": "5",
+      "score": 0.913,
+      "q": "by using Monte Carlo simulation using the equation x\"2+y\"2= 16? Also Calculate error when compared with its analytical. value"
+     },
+     {
+      "paper": "2011 F",
+      "year": "2011",
+      "marks": "",
+      "score": 0.786,
+      "q": "Calculate the following using Monte carol simulation. 5 4 · I= f(x A 4)/3dx 1 Also Calculate error when compared with its analytical value"
+     },
+     {
+      "paper": "2010 F",
+      "year": "2010",
+      "marks": "5",
+      "score": 0.922,
+      "q": "by using Monte Carlo simulation using the equation x2+y2=16. Also Calculate error when compared with its analytical value"
+     }
+    ],
+    "occ_found": 3
+   },
+   {
+    "site_index": 8,
+    "q": "Explain the concept of Monte-Carlo simulation over stochastic simulation",
+    "year": "2014 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2014 F",
+      "year": "2014",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Explain the concept of Monte-Carlo simulation over stochastic simulation"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 9,
+    "q": "Solve ∫₁ᵉ dx using Monte Carlo Method",
+    "year": "2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 10,
+    "q": "Calculate ∫₁⁴ (x+4)³dx using Monte Carlo simulation. Calculate error.",
+    "year": "2011 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 11,
+    "q": "Explain the significance of Monte Carlo Method in simulation",
+    "year": "2011 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2011 C",
+      "year": "2011",
+      "marks": "5+5",
+      "score": 0.85,
+      "q": "Explain the significance of Monte Carlo Method in simulation. Estimate the value of 1t(pi) using Monte Carlo Method"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 12,
+    "q": "Estimate the value of π using Monte Carlo Method",
+    "year": "2011 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 13,
+    "q": "Define normally distributed random number with example.",
+    "year": "2010 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 14,
+    "q": "Find the value of ∫₀^(π/2) cos x dx using Monte-Carlo Method",
+    "year": "2010 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   }
+  ],
+  "3": [
+   {
+    "site_index": 0,
+    "q": "Explain continuous system simulation with suitable example.",
+    "year": "2014 F",
+    "marks": "5",
+    "repeats_claim": 3,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 1,
+    "q": "Why are differential equations so important in simulation? Explain with example.",
+    "year": "2014 F",
+    "marks": "5",
+    "repeats_claim": 3,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 2,
+    "q": "Describe the pure pursuit problem in continuous systems.",
+    "year": "2025 M",
+    "marks": "4",
+    "repeats_claim": 2,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 3,
+    "q": "Explain feedback system with its application.",
+    "year": "2019 F",
+    "marks": "6",
+    "repeats_claim": 2,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 4,
+    "q": "Compare analog vs. hybrid simulation methods, highlighting their use in solving differential equations.",
+    "year": "2025 M",
+    "marks": "8",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 5,
+    "q": "Compare analog vs. hybrid simulation methods",
+    "year": "2025 M",
+    "marks": "8",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 6,
+    "q": "Explain the concept of continuous system simulation",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Explain the concept of continuous system simulation"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 7,
+    "q": "Explain how continuous model can be solved numerically with an example",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Explain how continuous model can be solved numerically with an example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 8,
+    "q": "Explain the analogy method of system study with suitable example",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Explain the analogy method of system study with suitable example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 9,
+    "q": "Illustrate the possible event interactions in Hybrid Simulation",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "5",
+      "score": 0.85,
+      "q": "State some types of Simulation· languages. Illustrate the possible event interactions in Hybrid Simulation"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 10,
+    "q": "Explain feedback system with suitable example",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Explain feedback system with suitable example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 11,
+    "q": "Short Note: Differential equation",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 12,
+    "q": "Short Note: Feedback system",
+    "year": "2014 F, 2012 C,, 2010 F, 2010 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 13,
+    "q": "Explain pure pursuit problem",
+    "year": "2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 14,
+    "q": "Solve equations by analog method: X₁′= −K₁₂X₁ + K₂₁X₂; X₂′= K₁₂X₁ − (K₂₁+K₂₃)X₂; X₃′= K₂₃X₂",
+    "year": "2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 15,
+    "q": "Explain the need of differential equation in simulation with an example",
+    "year": "2012 C, 2010 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 16,
+    "q": "Short Note: Continuous Simulation",
+    "year": "2011 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 17,
+    "q": "Explain feedback system and hybrid system with suitable example",
+    "year": "2011 F",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "5",
+      "score": 0.821,
+      "q": "Explain feedback system with suitable example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 18,
+    "q": "What are the applications of feedback system? Explain computer model to represent it. Show GPSS block diagram",
+    "year": "2011 C",
+    "marks": "5+3+2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 19,
+    "q": "Represent Ax'' + Bx' + Cx + D = 0 in analog computer block diagram.",
+    "year": "2010 F",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 20,
+    "q": "Discuss a pure pursuit problem with a suitable example",
+    "year": "2010 F",
+    "marks": "6",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   }
+  ],
+  "4": [
+   {
+    "site_index": 0,
+    "q": "Markov Chain (Short Note)",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 4,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 1,
+    "q": "Computing facility of PU has large no. of personal computers. 50% of days: 0 failures, 30%: 1 failure, 20%: 2 failures. Repair: 40% in 1 day, 35% in 2 days, 25% in 3 days. Verify service person's claim of being overloaded.",
+    "year": "2014 F",
+    "marks": "10",
+    "repeats_claim": 4,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 2,
+    "q": "What are the elements of a queuing system?",
+    "year": "2025 M",
+    "marks": "4",
+    "repeats_claim": 2,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 3,
+    "q": "Kendall's Notation (Short Note)",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 2,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 4,
+    "q": "For 8 customers, the inter-arrival time and service time in a single counter of a bank are given. Develop a simulation table. Inter-arrival: 0.4, 1.2, 0.5, 1.7, 0.2, 1.6, 0.2, 1.8. Service: 2.0, 0.7, 0.2, 1.1, 3.7, 0.6, 0.4, 0.7",
+    "year": "2012 C",
+    "marks": "10",
+    "repeats_claim": 2,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 5,
+    "q": "List two queuing system characteristics.",
+    "year": "2025 M",
+    "marks": "2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 6,
+    "q": "Simulate a bank queuing system using Kendall's notation. Discuss performance metrics like average wait time. [4+4]",
+    "year": "2025 M",
+    "marks": "8",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 7,
+    "q": "Explain the arrival and departure routine queuing model for a banking system",
+    "year": "2015 F, 2011 F, 2010 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "",
+      "score": 0.945,
+      "q": "Explain the arrival and departure routine queuing model for a banldng system. s"
+     },
+     {
+      "paper": "2010 F",
+      "year": "2010",
+      "marks": "5",
+      "score": 0.788,
+      "q": "Consider -the Banking system, to explain the arrival and departure routine queuing model for this banking system"
+     }
+    ],
+    "occ_found": 2
+   },
+   {
+    "site_index": 8,
+    "q": "Computing facility of Purbanchal University — On 50% days no failure, 30% days 1 failure, 20% days 2 failures. Repair: 40% in 1 day, 35% in 2, 25% in 3. Simulate 30 days. Compute efficiency, waiting computers, avg waiting time",
+    "year": "2014 F, 2010 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 9,
+    "q": "Bank simulation for 8 customers (inter-arrival time and service time given) — find average waiting time, probability of wait, average queue length",
+    "year": "2012 C",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 10,
+    "q": "What is queuing system? Why do we use queuing system in simulation?",
+    "year": "2011 C",
+    "marks": "2+3",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2011 C",
+      "year": "2011",
+      "marks": "2+3+5",
+      "score": 0.85,
+      "q": "What is queuing system? Why do we use queuing system in simulation? Explain the Kendell's notation in queuing system with example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 11,
+    "q": "Explain the Kendall's notation in queuing system with example",
+    "year": "2011 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 12,
+    "q": "Library queuing simulation for 15 customers — calculate average waiting time, average time in system, probability of server being busy",
+    "year": "2010 C",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   }
+  ],
+  "5": [
+   {
+    "site_index": 0,
+    "q": "Differentiate between verification and validation of simulation models.",
+    "year": "2025 M",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 1,
+    "q": "Explain model building, verification, and validation with diagram.",
+    "year": "General",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 2,
+    "q": "Explain the various verification techniques used for a simulation model.",
+    "year": "General",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 3,
+    "q": "Explain the approaches used for validating a simulation model. What is the Turing test?",
+    "year": "General",
+    "marks": "7",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 4,
+    "q": "Why is validation of a simulation model difficult? Discuss the sources that can make a model invalid.",
+    "year": "General",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   }
+  ],
+  "6": [
+   {
+    "site_index": 0,
+    "q": "Explain the mid-square method for random number generation.",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 2,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "5",
+      "score": 0.868,
+      "q": "Explain mid square random number generator"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 1,
+    "q": "What does pseudo-random number mean?",
+    "year": "2025 M",
+    "marks": "2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 2,
+    "q": "Generate 5 pseudo-random numbers using the Linear Congruential Method with X₀=27, a=17, c=43, m=100.",
+    "year": "2025 M",
+    "marks": "8",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 3,
+    "q": "Use LCM to generate random numbers. Seed X₀=6,7; a=12, c=5, m=26.",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 4,
+    "q": "Enumerate qualities of good random number generator.",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 5,
+    "q": "Use Chi-Square test to test 50 random numbers at 95% confidence. Numbers: 36,91,51,02,54,06,58,06,58,02,54,01,48,97,43,22,83,25,79,95,42,87,73,17,02,42,95,38,79,29,65,09,55,97,39,83,31,77,17,62,03,49,90,37,13,17,58,11,51,92",
+    "year": "2019 F",
+    "marks": "7",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 6,
+    "q": "Explain mid square random number generator",
+    "year": "2019 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Explain mid square random number generator"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 7,
+    "q": "What do you mean by testing of random numbers, why is it needed?",
+    "year": "2019 F",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 8,
+    "q": "Based on the run test, check whether a given sequence of 40 numbers is random or not. [Z_(α/2) = 1.96]",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 9,
+    "q": "What are the properties of random numbers? Why are random numbers generated by a computer called Pseudo-random numbers?",
+    "year": "2015 F, 2011 F",
+    "marks": "2+2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 10,
+    "q": "Write the algorithm for LCM. Using multiplicative congruential method, find the period for a=13, m=26, X₀=2 and 4",
+    "year": "2015 F",
+    "marks": "3+3",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 11,
+    "q": "Explain the Mid square method for generating random numbers with an example",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 12,
+    "q": "What are the qualities of good random number generators? What are the methods used for testing?",
+    "year": "2014 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 13,
+    "q": "What are the methods used for testing of random numbers?",
+    "year": "2014 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 14,
+    "q": "Test whether the 2nd, 7th, 12th and so on numbers in the sequence are auto correlated. (α=0.05). [30 numbers given]",
+    "year": "2014 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 15,
+    "q": "Short Note: Poker test",
+    "year": "2014 F, 2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 16,
+    "q": "Define Pseudo-random numbers. Explain the qualities of an efficient random number generator",
+    "year": "2012 C",
+    "marks": "5+5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 17,
+    "q": "What is the role of random numbers in simulation?",
+    "year": "2012 C",
+    "marks": "2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 18,
+    "q": "Generate up to 5 random numbers using LCM: X₀=seed, a=17, c=43, m=100",
+    "year": "2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 19,
+    "q": "Explain the qualities of an efficient random number generator",
+    "year": "2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 20,
+    "q": "Apply auto-correlation test: check whether 3rd, 8th, 13th and so on numbers are independent. (Z₀.₀₂₅=1.96, α=0.05). [30 numbers given]",
+    "year": "2012 C",
+    "marks": "8",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 21,
+    "q": "Poker test: 1000 three-digit numbers, 680 all different, 289 one pair, 31 three alike. α=0.05.",
+    "year": "2011 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 22,
+    "q": "Using multiplicative congruential method, find period for a=13, m=64, X₀=1,2,3,4.",
+    "year": "2011 F",
+    "marks": "6",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 23,
+    "q": "What does the Kolmogorov–Smirnov test indicate? Perform the K–S test with data 0.24, 0.89, 0.11, 0.61, 0.23, 0.86, 0.41, 0.64, 0.50, 0.65 (α = 0.05).",
+    "year": "2011 C",
+    "marks": "2+5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 24,
+    "q": "What do you mean by pseudo random number? How do these random numbers help in simulation?",
+    "year": "2011 C",
+    "marks": "2+3",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 25,
+    "q": "Explain combined linear congruential method for generating random numbers",
+    "year": "2011 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 26,
+    "q": "Explain the Mid square random number generator with example. What is the problem with this generator?",
+    "year": "2011 C",
+    "marks": "4+1",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "5",
+      "score": 0.85,
+      "q": "Explain mid square random number generator"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 27,
+    "q": "Why do we need to test the randomness of the number in simulation?",
+    "year": "2011 C",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 28,
+    "q": "Explain the significance of chi square test",
+    "year": "2011 C",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 29,
+    "q": "Short Note: Chi square test",
+    "year": "2011 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 30,
+    "q": "A sequence of 1000 three-digit numbers: 680 have three different digits, 289 contain exactly one pair of like digits, 31 contain three like digits. Are these numbers independent? (α=0.05)",
+    "year": "2011 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 31,
+    "q": "Write down the steps for the Kolmogorov–Smirnov test.",
+    "year": "2010 C",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 32,
+    "q": "How pseudo random numbers differ from random numbers",
+    "year": "2010 C",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 33,
+    "q": "When generating pseudo-random numbers, certain problems or errors can occur. What are they?",
+    "year": "2010 F",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2010 F",
+      "year": "2010",
+      "marks": "3",
+      "score": 1.0,
+      "q": "When generating pseudo-random numbers, certain problems or errors can occur. What are they?"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 34,
+    "q": "Using multiplicative congruential method, find the period and generate for a=17, m=64, X₀=3",
+    "year": "2010 C",
+    "marks": "3+4",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 35,
+    "q": "Use multiplicative congruential method to generate four three-digit random numbers. x₀=117, a=43, m=1000",
+    "year": "2010 F",
+    "marks": "7",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2010 F",
+      "year": "2010",
+      "marks": "",
+      "score": 0.914,
+      "q": "Use multiplicative congruential method to generate a sequence of four three-digit random numbers. Take :xo= 117, a=43 and m=l000. ~ ,~"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 36,
+    "q": "Test auto-correlation of 2nd, 9th, 16th, … numbers. (α=0.05). [40 numbers given]",
+    "year": "2010 C",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   }
+  ],
+  "7": [
+   {
+    "site_index": 0,
+    "q": "Why the output of simulation has to be analyzed? Explain Replication of Runs method.",
+    "year": "2014 F",
+    "marks": "10",
+    "repeats_claim": 4,
+    "occ": [
+     {
+      "paper": "2010 F",
+      "year": "2010",
+      "marks": "4+6",
+      "score": 0.889,
+      "q": "Why the output of simulation has to - be analyzed? Explain Replication of Runs method to any simulation output"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 1,
+    "q": "Explain the mathematical modeling of replication of runs.",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 2,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "5",
+      "score": 1.0,
+      "q": "Explain the mathematical modeling of replication of runs"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 2,
+    "q": "What is initial bias in simulation output? Mention the idea of elimination of initial bias.",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 2,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "3+2",
+      "score": 1.0,
+      "q": "What is initial bias in simulation output? Mention the idea of elimination of initial bias"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 3,
+    "q": "Why is replication of runs necessary in output analysis?",
+    "year": "2025 M",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 4,
+    "q": "'Simulation output has to be analyzed.' Justify the statement. Explain replication of runs and elimination of initial bias.",
+    "year": "2019 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "10",
+      "score": 0.82,
+      "q": "\"Simulation output has to .be analyzed\", Justify the statement. Explain the process of replication of runs and elimination of ) internal bias in the analysis of simulation output"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 5,
+    "q": "Explain the process of replication of runs in analysis of simulation output",
+    "year": "2019 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 6,
+    "q": "Explain elimination of internal bias in the analysis of simulation output",
+    "year": "2019 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 7,
+    "q": "Simulation Run Statistics (Short Note)",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 8,
+    "q": "Explain estimation method for analysis of simulation output",
+    "year": "2015 F",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "2+3",
+      "score": 0.85,
+      "q": "Why simulation output is analyzed? Explain estimation method for analysis of simulation output"
+     },
+     {
+      "paper": "2012 C",
+      "year": "2012",
+      "marks": "",
+      "score": 0.795,
+      "q": "Estimation method in simulation output ~alysis_ I'"
+     }
+    ],
+    "occ_found": 2
+   },
+   {
+    "site_index": 9,
+    "q": "Why simulation output is analyzed?",
+    "year": "2015 F",
+    "marks": "2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 10,
+    "q": "Short Note: Elimination of internal bias",
+    "year": "2014 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2011 C",
+      "year": "2011",
+      "marks": "",
+      "score": 1.0,
+      "q": "Elimination of internal bias ·"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 11,
+    "q": "Why the output of simulation has to be analyzed?",
+    "year": "2014 F, 2010 F, 2010 C",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 12,
+    "q": "Explain replication of runs in the simulation output analysis",
+    "year": "2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2012 C",
+      "year": "2012",
+      "marks": "",
+      "score": 0.759,
+      "q": "Estimation method in simulation output ~alysis_ I'"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 13,
+    "q": "Explain elimination of initial bias in the simulation output analysis",
+    "year": "2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2012 C",
+      "year": "2012",
+      "marks": "",
+      "score": 0.767,
+      "q": "E~lain replication of runs and elimination of initial bias in th~) simulation output analysis. 5+5 . '"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 14,
+    "q": "Explain why simulation output is analyzed. Why Replication of Runs is performed during analysis?",
+    "year": "2011 F",
+    "marks": "5+5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2011 F",
+      "year": "2011",
+      "marks": "",
+      "score": 0.841,
+      "q": "Explain why simulation output is analyzed. Brief, why · Replication ' ·of ·_ Runs is .performed during . the .analysis of simulation output? .. . . ·- ·. . . 5+!? )"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 15,
+    "q": "Why do we need replication of run in simulation?",
+    "year": "2011 C",
+    "marks": "2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 16,
+    "q": "How would you eliminate internal bias in the analysis of Simulation output?",
+    "year": "2010 C",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2010 C",
+      "year": "2010",
+      "marks": "",
+      "score": 0.85,
+      "q": "Why the output of Simulation has to be analyzed? How would you eliminate internal bias in the analysis of Simulation output? 1O"
+     }
+    ],
+    "occ_found": 1
+   }
+  ],
+  "8": [
+   {
+    "site_index": 0,
+    "q": "What do you mean by discrete event simulation? Explain principal approaches for advancing simulation clock.",
+    "year": "2014 F",
+    "marks": "10",
+    "repeats_claim": 4,
+    "occ": [
+     {
+      "paper": "2014 F",
+      "year": "2014",
+      "marks": "4+6",
+      "score": 1.0,
+      "q": "What do you mean by discrete event simulation? Explain the principal approaches for advancing the simulation clock in discrete event simulation"
+     },
+     {
+      "paper": "2010 F",
+      "year": "2010",
+      "marks": "4+6",
+      "score": 0.779,
+      "q": "Illustrate discrete event simulation. Explain the principal approaches for advancing the simulation clock in discrete event simulation"
+     }
+    ],
+    "occ_found": 2
+   },
+   {
+    "site_index": 1,
+    "q": "What are the key features of GPSS as a simulation language?",
+    "year": "2025 M",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 2,
+    "q": "Model a discrete-event system of hospital patient flow using GPSS. Outline key control statements.",
+    "year": "2025 M",
+    "marks": "8",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 3,
+    "q": "List out the various simulation tools. Explain GPSS in brief with suitable example.",
+    "year": "2019 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "10",
+      "score": 1.0,
+      "q": "List out the various simulation tools. Explain GPSS in brief with suitable example"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 4,
+    "q": "Explain GPSS in brief with suitable example",
+    "year": "2019 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 5,
+    "q": "Explain the principle of discrete system simulation",
+    "year": "2019 F",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2019 F",
+      "year": "2019",
+      "marks": "4+6",
+      "score": 0.85,
+      "q": "Explain the principle of discrete system simulation. Explain feedback system with its application"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 6,
+    "q": "Draw different types of GPSS block-diagram symbols and explain with GPSS block-diagram of manufacturing shop.",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2015 F",
+      "year": "2015",
+      "marks": "5",
+      "score": 0.971,
+      "q": "Draw different types of GPSS block-diagram symbols and explain · with the help of GPSS block- diagram of manufacturing shop"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 7,
+    "q": "State some types of Simulation languages",
+    "year": "2015 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 8,
+    "q": "Why is simulation tool required?",
+    "year": "2014 F, 2010 F",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 9,
+    "q": "What is GPSS language & its application?",
+    "year": "2014 F",
+    "marks": "3",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2014 F",
+      "year": "2014",
+      "marks": "3+3",
+      "score": 0.85,
+      "q": "Why is simulation tool required? What is GPSS language & its application?"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 10,
+    "q": "Explain in details of GPSS block diagram symbols",
+    "year": "2014 F",
+    "marks": "4",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2014 F",
+      "year": "2014",
+      "marks": "4",
+      "score": 1.0,
+      "q": "Explain in details of GPSS block diagram symbols"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 11,
+    "q": "Design a simulation model of any discrete system in GPSS symbols",
+    "year": "2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 12,
+    "q": "Explain discrete system simulation",
+    "year": "2012 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 13,
+    "q": "What do you mean by distributed lag model? Explain.",
+    "year": "2011 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 14,
+    "q": "Show the GPSS block diagram to represent soap quality testing system",
+    "year": "2011 C",
+    "marks": "2",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 15,
+    "q": "What do you mean by Discrete-event simulation? Explain the components and organization of a Discrete event simulation model with flow chart",
+    "year": "2011 F",
+    "marks": "2+4",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2011 F",
+      "year": "2011",
+      "marks": "2+4",
+      "score": 0.958,
+      "q": "What do you mean by Discrete~event _s~mulatiop?_ E~lain the components and organization of a Discrete event simulation model with flow chart"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 16,
+    "q": "Discuss SIMSCRIPT and GPSS language in brief",
+    "year": "2011 F",
+    "marks": "6",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 17,
+    "q": "CSSL (Short Note)",
+    "year": "2010 C",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 18,
+    "q": "Explain Discrete Simulation Language. Explain SIMSCRIPT system concepts and program organization.",
+    "year": "2010 F",
+    "marks": "10",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 19,
+    "q": "Short Note: GPSS",
+    "year": "2010 F",
+    "marks": "5",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   },
+   {
+    "site_index": 20,
+    "q": "Define state descriptor and discrete event. How do you simulate a telephone system, explain with its states",
+    "year": "2010 C",
+    "marks": "2+8",
+    "repeats_claim": 1,
+    "occ": [
+     {
+      "paper": "2010 C",
+      "year": "2010",
+      "marks": "2+8",
+      "score": 1.0,
+      "q": "Define state descriptor and discrete event. How do you simulate a .telephone system, explain with its states"
+     }
+    ],
+    "occ_found": 1
+   },
+   {
+    "site_index": 21,
+    "q": "Explain distributed lag model",
+    "year": "2010 C",
+    "marks": "7",
+    "repeats_claim": 1,
+    "occ": [],
+    "occ_found": 0
+   }
+  ]
+ },
+ "stats": {
+  "questions": 151,
+  "with_occ": 48,
+  "occ_total": 55,
+  "matched_claim": 35,
+  "found_gt_claim": 4,
+  "found_lt_claim": 22,
+  "no_occ_but_repeats": 13
+ }
+}

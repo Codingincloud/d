@@ -1,0 +1,126 @@
+{
+  "_note": "Per-paper model answers for the wordings that were folded into another card. Each entry names the surviving card in `parent` (matched by question TEXT, never by position - the fold re-sorts the arrays). tools/merge_past.py re-attaches these on every run, so a later --apply cannot drop them the way the answer pass did.",
+  "_source": "tools/extract_variant_answers.js < _audit/pre_answer_pass/*.js",
+  "variants": [
+    {
+      "chapter": 1,
+      "parent": "Explain the steps in a simulation study with a flowchart.",
+      "year": "2019 F",
+      "marks": "5",
+      "q": "Explain the phases and steps in simulation study.",
+      "answer": "<h4>Answer</h4>\n<p><strong>12 Steps in Simulation Study:</strong></p>\n<ol>\n<li><strong>Problem Formulation:</strong> Clearly state the problem to be solved</li>\n<li><strong>Setting Objectives & Plan:</strong> Define how to approach the problem</li>\n<li><strong>Model Conceptualization:</strong> Establish a reasonable abstract model</li>\n<li><strong>Data Collection:</strong> Collect necessary data (arrival rates, service times, etc.)</li>\n<li><strong>Model Translation:</strong> Convert model into programming language (GPSS, SIMSCRIPT)</li>\n<li><strong>Verification:</strong> Verify the model works properly (correct I/P → correct O/P)</li>\n<li><strong>Validation:</strong> Check if model accurately represents the real system</li>\n<li><strong>Experimental Design:</strong> Decide number of runs, duration, input types</li>\n<li><strong>Production Run & Analysis:</strong> Run simulation and analyze output</li>\n<li><strong>More Runs:</strong> Repeat if necessary for accuracy</li>\n<li><strong>Documentation & Reporting:</strong> Document results for stakeholders</li>\n<li><strong>Implementation:</strong> Implement the actual model decisions</li>\n</ol>\n<p><strong>4 Phases:</strong></p>\n<table><tr><th>Phase</th><th>Name</th><th>Steps</th></tr>\n<tr><td>Phase 1</td><td>Problem Definition & Conceptual Modeling</td><td>Steps 1, 2, 3</td></tr>\n<tr><td>Phase 2</td><td>Model Translation & Data Collection</td><td>Steps 4, 5</td></tr>\n<tr><td>Phase 3</td><td>Verification, Validation & Experimental Design</td><td>Steps 6, 7, 8</td></tr>\n<tr><td>Phase 4</td><td>Analysis & Interpretation</td><td>Steps 9, 10, 11, 12</td></tr></table>"
+    },
+    {
+      "chapter": 2,
+      "parent": "Discuss the basic philosophy of Monte-Carlo simulation.",
+      "year": "2025 M",
+      "marks": "2",
+      "q": "What is the purpose of the Monte Carlo method?",
+      "answer": "<h4>Answer</h4>\n<p>The purpose of the Monte Carlo method is to use <strong>random sampling</strong> to obtain numerical solutions to problems that may be too complex for analytical solutions. It converts deterministic problems into probabilistic ones by using random numbers.</p>\n<p><strong>Key purposes:</strong></p>\n<ul>\n<li>Estimate definite integrals numerically</li>\n<li>Compute mathematical constants (like π)</li>\n<li>Solve complex optimization problems</li>\n<li>Perform risk analysis and uncertainty quantification</li>\n</ul>"
+    },
+    {
+      "chapter": 4,
+      "parent": "What are the elements of a queuing system?",
+      "year": "2025 M",
+      "marks": "2",
+      "q": "List two queuing system characteristics.",
+      "answer": "<h4>Answer</h4>\n<p>Two important characteristics of a queuing system:</p>\n<ol>\n<li><strong>Arrival Process:</strong> The pattern in which customers arrive at the system. It can follow Poisson distribution, deterministic pattern, or general distribution. It defines the arrival rate (λ).</li>\n<li><strong>Service Mechanism:</strong> Describes the number of servers, how they operate, and the service time distribution (exponential, deterministic, or normal). It defines the service rate (μ).</li>\n</ol>"
+    },
+    {
+      "chapter": 6,
+      "parent": "What are the qualities of good random number generators? What are the methods used for testing?",
+      "year": "2014 F",
+      "marks": "5",
+      "q": "What are the methods used for testing of random numbers?",
+      "answer": "<h4>Answer</h4>\n<p>Random numbers are tested for the two required properties — uniformity and independence — by the following methods.</p>\n<table>\n<tr><th>Test</th><th>Property tested</th><th>Statistic and decision rule</th></tr>\n<tr><td><strong>Frequency test</strong></td><td>Uniformity</td><td>Counts of values in k equal intervals; expected N/k. A gross check, usually replaced by chi-square.</td></tr>\n<tr><td><strong>Chi-square test</strong></td><td>Uniformity</td><td>χ² = Σ(Oᵢ − Eᵢ)²/Eᵢ compared with χ²(α, k−1). If χ² &lt; table value, accept the numbers as random.</td></tr>\n<tr><td><strong>Kolmogorov–Smirnov test</strong></td><td>Uniformity (whole distribution)</td><td>D = max |F_n(x) − F(x)| compared with D_α/√N. Needs no grouping, so it is stronger than chi-square.</td></tr>\n<tr><td><strong>Auto-correlation test</strong></td><td>Independence between values a lag l apart</td><td>ρ̂ = (1/M) Σ Rᵢ Rᵢ₊ₗ − 0.25, then Z₀ = ρ̂ / σ_ρ̂ compared with Z_{α/2} = 1.96.</td></tr>\n<tr><td><strong>Run test (runs up and down)</strong></td><td>Independence from the order of the values</td><td>Count the runs a, then Z₀ = (a − μ_a)/σ_a with μ_a = (2N−1)/3, σ²_a = (16N−29)/90, compared with 1.96.</td></tr>\n<tr><td><strong>Gap test</strong></td><td>Independence, from the lengths of gaps</td><td>Chi-square on the observed gap lengths against the theoretical geometric distribution.</td></tr>\n<tr><td><strong>Poker test</strong></td><td>Independence of digit patterns</td><td>Classify numbers by their digit patterns (all different, one pair, three of a kind) and apply chi-square.</td></tr>\n</table>\n<p>The tests are complementary: chi-square and K–S examine the distribution of values and ignore their order, while the auto-correlation, run and gap tests examine the order and ignore the distribution. A generator must pass both groups.</p>"
+    },
+    {
+      "chapter": 6,
+      "parent": "Explain the Mid square random number generator with example. What is the problem with this generator?",
+      "year": "2019 F",
+      "marks": "5",
+      "q": "Explain the mid-square method for random number generation.",
+      "answer": "<h4>Answer</h4>\n<p>The <strong>mid-square method</strong> was proposed by Von Neumann in 1946.</p>\n<p><strong>Algorithm:</strong></p>\n<ol>\n<li>Start with an n-digit seed (e.g., 4 digits)</li>\n<li>Square the seed to get a 2n-digit number (pad with leading zeros if needed)</li>\n<li>Extract the middle n digits as the next random number</li>\n<li>Repeat using the new number as seed</li>\n</ol>\n<p><strong>Example with seed = 7182 (4 digits):</strong></p>\n<table>\n<tr><th>Step</th><th>Seed</th><th>Squared (8 digits)</th><th>Middle 4 digits</th></tr>\n<tr><td>1</td><td>7182</td><td>51581124</td><td><strong>5811</strong></td></tr>\n<tr><td>2</td><td>5811</td><td>33767721</td><td><strong>7677</strong></td></tr>\n<tr><td>3</td><td>7677</td><td>58936329</td><td><strong>9363</strong></td></tr>\n</table>\n<p><strong>Disadvantages:</strong> Can degenerate to 0, short period, sensitive to seed choice. Not recommended for serious simulation work.</p>"
+    },
+    {
+      "chapter": 6,
+      "parent": "Explain the Mid square random number generator with example. What is the problem with this generator?",
+      "year": "2019 F",
+      "marks": "5",
+      "q": "Explain mid square random number generator",
+      "answer": "<h4>Answer</h4>\n<p>The <strong>mid-square method</strong> is the earliest random number generator; it was proposed by <strong>John von Neumann</strong> in 1946.</p>\n<h4>Algorithm</h4>\n<ol>\n<li>Take an n-digit number as the seed X₀.</li>\n<li>Square it (pad with leading zeros if necessary to obtain exactly 2n digits).</li>\n<li>Take the middle n digits of the square as the next number X₁.</li>\n<li>Use X₁ as the new seed and repeat from step 2.</li>\n<li>A random number in (0, 1) is obtained as Rₙ = Xₙ / 10<sup>n</sup>.</li>\n</ol>\n<h4>Example (4-digit seed 7182)</h4>\n<table>\n<tr><th>Step</th><th>Seed</th><th>Square</th><th>Middle 4 digits</th></tr>\n<tr><td>1</td><td>7182</td><td>51581124</td><td><strong>5811</strong></td></tr>\n<tr><td>2</td><td>5811</td><td>33767721</td><td><strong>7677</strong></td></tr>\n<tr><td>3</td><td>7677</td><td>58936329</td><td><strong>9363</strong></td></tr>\n</table>\n<p>Random numbers: 0.5811, 0.7677, 0.9363.</p>\n<h4>Problems</h4>\n<ul>\n<li><strong>The sequence can degenerate to zero:</strong> once the middle digits are 0000, every later value is 0.</li>\n<li><strong>The period is short and dependent on the seed:</strong> some seeds cycle almost immediately.</li>\n<li>It is not guaranteed to be uniform, and it is slower than arithmetic generators.</li>\n</ul>\n<p>Because of these defects the mid-square method is of historical interest only; the linear congruential generator replaced it.</p>"
+    },
+    {
+      "chapter": 6,
+      "parent": "Explain the Mid square random number generator with example. What is the problem with this generator?",
+      "year": "2015 F",
+      "marks": "5",
+      "q": "Explain the Mid square method for generating random numbers with an example",
+      "answer": "<h4>Answer</h4>\n<p>The <strong>mid-square method</strong> (von Neumann, 1946) generates a new random number by squaring the previous one and extracting the middle digits.</p>\n<p><strong>Method:</strong> start with an n-digit seed, square it to get a 2n-digit number, take the middle n digits as the next value, and use that as the new seed. Normalize by dividing by 10<sup>n</sup> to obtain a number in (0, 1).</p>\n<p><strong>Example — seed 7182 (4 digits):</strong></p>\n<table>\n<tr><th>Step</th><th>Seed</th><th>Squared</th><th>Middle 4 digits</th><th>R = X/10⁴</th></tr>\n<tr><td>1</td><td>7182</td><td>51581124</td><td>5811</td><td>0.5811</td></tr>\n<tr><td>2</td><td>5811</td><td>33767721</td><td>7677</td><td>0.7677</td></tr>\n<tr><td>3</td><td>7677</td><td>58936329</td><td>9363</td><td>0.9363</td></tr>\n<tr><td>4</td><td>9363</td><td>87665769</td><td><strong>6657</strong></td><td>0.6657</td></tr>\n</table>\n<p><strong>Fourth number: 6657</strong> (0.6657).</p>\n<p><strong>Remarks:</strong> the method needs no multiplication constants and no modulus, which made it attractive on early computers, but the period is short and depends entirely on the seed, the output is not reliably uniform, and the sequence can degenerate to zero (0000). It is therefore not used in serious simulation work.</p>"
+    },
+    {
+      "chapter": 6,
+      "parent": "Define Pseudo-random numbers. Explain the qualities of an efficient random number generator",
+      "year": "2019 F",
+      "marks": "5",
+      "q": "Enumerate qualities of good random number generator.",
+      "answer": "<h4>Answer</h4>\n<ol>\n<li><strong>Uniformity:</strong> Generated numbers should be uniformly distributed over the range</li>\n<li><strong>Independence:</strong> No correlation between successive numbers in the sequence</li>\n<li><strong>Long Period:</strong> The sequence should not repeat for a very long time</li>\n<li><strong>Reproducibility:</strong> Same seed should produce same sequence (essential for debugging and verification)</li>\n<li><strong>Fast Computation:</strong> Generation should be computationally efficient and fast</li>\n<li><strong>Non-repeating:</strong> Should not repeat within the needed length of simulation</li>\n</ol>"
+    },
+    {
+      "chapter": 6,
+      "parent": "What do you mean by pseudo random number? How do these random numbers help in simulation?",
+      "year": "2025 M",
+      "marks": "2",
+      "q": "What does pseudo-random number mean?",
+      "answer": "<h4>Answer</h4>\n<p>A <strong>pseudo-random number</strong> is a number generated by a deterministic mathematical algorithm that appears to be random but is actually predictable if the algorithm and seed are known. The prefix \"pseudo\" means \"false\" or \"apparent.\"</p>\n<ul>\n<li>Generated by formulas like LCM: Xₙ₊₁ = (a×Xₙ + c) mod m</li>\n<li>Reproducible — same seed produces same sequence</li>\n<li>Pass statistical tests for randomness</li>\n<li>Not truly random since they are deterministic</li>\n</ul>"
+    },
+    {
+      "chapter": 6,
+      "parent": "Why do we need to test the randomness of the number in simulation?",
+      "year": "2019 F",
+      "marks": "3",
+      "q": "What do you mean by testing of random numbers, why is it needed?",
+      "answer": "<h4>Answer</h4>\n<p><strong>Testing of random numbers</strong> means applying statistical tests to the stream produced by a generator in order to establish that the numbers really are uniformly distributed and independent — that is, that they behave like genuine random numbers.</p>\n<p><strong>Why it is needed:</strong></p>\n<ol>\n<li>Generator output is <strong>deterministic</strong>, so any defect in the algorithm or in the choice of its parameters produces a stream with a pattern. Such a pattern is invisible to the eye but ruins the simulation.</li>\n<li>Every simulation formula <strong>assumes</strong> uniform and independent input, e.g. xᵢ = a + (b − a)Rᵢ for sampling. If the assumption fails, every sampled value is biased and so is the final answer.</li>\n<li>The parameters a, c and m may produce a <strong>period far shorter</strong> than the length of the run (example: period 4 for X₀=27, a=17, c=43, m=100), so the same history is repeated.</li>\n<li>Some methods <strong>degenerate</strong> — the mid-square method can fall to zero, and the multiplicative generator with a = 13, m = 26 collapses immediately.</li>\n<li>It is a matter of <strong>professional responsibility</strong>: the validity of every conclusion drawn from the study rests on the quality of the random numbers, so they must be tested before the model is believed.</li>\n</ol>\n<p>The tests used are the frequency, chi-square, Kolmogorov–Smirnov, auto-correlation, gap, poker and run tests.</p>"
+    },
+    {
+      "chapter": 6,
+      "parent": "Explain the significance of chi square test",
+      "year": "2011 F",
+      "marks": "5",
+      "q": "Short Note: Chi square test",
+      "answer": "<h4>Answer</h4>\n<p><strong>Chi-square test</strong> — a goodness-of-fit test used to decide whether the observed frequencies of a set of values differ significantly from the frequencies expected under a stated distribution. In random number testing the stated distribution is the uniform distribution on (0, 1).</p>\n<h4>Formula</h4>\n<div class='formula-box'>χ² = Σ (Oᵢ − Eᵢ)² / Eᵢ &nbsp;&nbsp;&nbsp; with degrees of freedom = k − 1</div>\n<p>where Oᵢ = observed frequency in interval i, Eᵢ = N/k = expected frequency, N = number of random numbers, k = number of equal intervals.</p>\n<h4>Steps</h4>\n<ol>\n<li>State H₀: the numbers are uniformly distributed. H₁: they are not.</li>\n<li>Divide the range into k equal intervals (a common choice is [00–19], [20–39], [40–59], [60–79], [80–99], so k = 5).</li>\n<li>Count the observed frequency Oᵢ in each interval and compute Eᵢ = N/k.</li>\n<li>Compute χ² = Σ (Oᵢ − Eᵢ)²/Eᵢ.</li>\n<li>Obtain the critical value χ²(α, k − 1) from the table for the chosen α.</li>\n<li>If the calculated χ² is <strong>less than</strong> the table value, fail to reject H₀ — the numbers are accepted as uniformly distributed. If it is greater, reject H₀ — the numbers are not random.</li>\n</ol>\n<h4>Example</h4>\n<p>For 50 numbers in 5 intervals with observed frequencies 11, 9, 13, 7, 10 (Eᵢ = 10):</p>\n<p>χ² = 0.1 + 0.1 + 0.9 + 0.9 + 0 = <strong>2.00</strong>, and χ²(0.05, 4) = 9.488. Since 2.00 &lt; 9.488, the numbers pass the test.</p>"
+    },
+    {
+      "chapter": 6,
+      "parent": "A sequence of 1000 three-digit numbers: 680 have three different digits, 289 contain exactly one pair of like digits, 31 contain three like digits. Are these numbers independent? (α=0.05)",
+      "year": "2011 F",
+      "marks": "5",
+      "q": "Poker test: 1000 three-digit numbers, 680 all different, 289 one pair, 31 three alike. α=0.05.",
+      "answer": "<h4>Answer</h4>\n<p><strong>H₀:</strong> Numbers are random. <strong>H₁:</strong> Numbers are not random.</p>\n<p><strong>Probabilities for 3-digit numbers:</strong></p>\n<ul>\n<li>P(all different) = 10×9×8/10³ = 720/1000 = 0.720</li>\n<li>P(one pair) = 1 - 0.720 - 0.010 = 0.270</li>\n<li>P(three of a kind) = 10/10³ = 0.010</li>\n</ul>\n<table>\n<tr><th>Category</th><th>Oᵢ</th><th>Eᵢ = P×1000</th><th>(Oᵢ-Eᵢ)²/Eᵢ</th></tr>\n<tr><td>All different</td><td>680</td><td>720</td><td>(680-720)²/720 = 1600/720 = 2.222</td></tr>\n<tr><td>One pair</td><td>289</td><td>270</td><td>(289-270)²/270 = 361/270 = 1.337</td></tr>\n<tr><td>Three of a kind</td><td>31</td><td>10</td><td>(31-10)²/10 = 441/10 = 44.100</td></tr>\n</table>\n<p><strong>χ² = 2.222 + 1.337 + 44.100 = 47.659</strong></p>\n<p>χ²(0.05, 2) = 5.991</p>\n<p>Since 47.659 > 5.991 → <strong>Reject H₀ → Numbers are NOT random</strong></p>\n<p>The large contribution from \"three of a kind\" (31 observed vs 10 expected) causes the rejection.</p>"
+    },
+    {
+      "chapter": 7,
+      "parent": "What is initial bias in simulation output? Mention the idea of elimination of initial bias.",
+      "year": "2010 C",
+      "marks": "10",
+      "q": "How would you eliminate internal bias in the analysis of Simulation output?",
+      "answer": "<h4>Answer</h4>\n<p><strong>Problem:</strong> Simulation starts from an unrealistic empty state. Initial observations are biased (not representing steady state).</p>\n<h4>Method 1: Long Run Approach</h4>\n<p>Run simulation for a very long time. The proportion of biased data becomes negligible. Simple but wasteful — most of the long run may be unnecessary.</p>\n<h4>Method 2: Truncation/Deletion (Recommended)</h4>\n<p>Delete the first d observations. To find d, use <strong>Welch's Method:</strong></p>\n<ol>\n<li>Make n replications, each of length m</li>\n<li>Calculate ensemble average Ȳ(t) = (1/n)Σᵢ Yᵢ(t) at each time t</li>\n<li>Apply moving average of window w: Ȳ_w(t) = (1/(2w+1)) × Σ_{s=-w}^{w} Ȳ(t+s)</li>\n<li>Plot Ȳ_w(t) and choose d where the plot converges/stabilizes</li>\n<li>Delete observations before time d from each replication</li>\n</ol>\n<h4>Method 3: Start in Busy State</h4>\n<p>Initialize system state to represent typical operation (e.g., start with average number of customers already in queue). Reduces warm-up time but requires knowledge of typical state.</p>\n<h4>Method 4: Moving Average Approach</h4>\n<p>Calculate running averages and identify the point where they stabilize. All data before this point is discarded.</p>"
+    },
+    {
+      "chapter": 7,
+      "parent": "Explain the mathematical modeling of replication of runs.",
+      "year": "2025 M",
+      "marks": "4",
+      "q": "Why is replication of runs necessary in output analysis?",
+      "answer": "<h4>Answer</h4>\n<p>Replication of runs is necessary because:</p>\n<ol>\n<li><strong>Outputs are random variables:</strong> Since simulation uses random inputs, a single run gives only one sample — which may be misleading</li>\n<li><strong>Statistical independence:</strong> Each replication (with different seed) provides an independent observation needed for valid statistical inference</li>\n<li><strong>Confidence intervals:</strong> Multiple replications allow calculation of confidence intervals: Ȳ ± t_{α/2,n-1} × S/√n</li>\n<li><strong>Variability estimation:</strong> Multiple runs reveal how much results vary, giving insight into the reliability of conclusions</li>\n<li><strong>Reducing sampling error:</strong> More replications → more accurate estimates (error decreases as 1/√n)</li>\n</ol>"
+    },
+    {
+      "chapter": 7,
+      "parent": "'Simulation output has to be analyzed.' Justify the statement. Explain replication of runs and elimination of initial bias.",
+      "year": "2014 F",
+      "marks": "10",
+      "q": "Why the output of simulation has to be analyzed? Explain Replication of Runs method.",
+      "answer": "<h4>Answer</h4>\n<h4>Why Analysis is Needed</h4>\n<ol>\n<li>Simulation outputs are <strong>random variables</strong> — not deterministic</li>\n<li>A single run gives only one sample point from a probability distribution</li>\n<li>Statistical analysis determines <strong>accuracy and reliability</strong> of results</li>\n<li>Helps calculate <strong>confidence intervals</strong> for decision making</li>\n<li>Without analysis, results may be <strong>misleading</strong> due to random variation</li>\n</ol>\n<h4>Replication of Runs Method</h4>\n<p><strong>Method:</strong> Run the simulation n times, each with a <strong>different random number seed</strong>.</p>\n<p><strong>Process:</strong></p>\n<ol>\n<li>Run simulation n times → get Y₁, Y₂, ..., Yₙ (independent outputs)</li>\n<li>Calculate point estimate: Ȳ = (1/n)ΣYᵢ</li>\n<li>Calculate variance: S² = Σ(Yᵢ-Ȳ)²/(n-1)</li>\n<li>Calculate confidence interval: Ȳ ± t_{α/2,n-1} × S/√n</li>\n</ol>\n<p><strong>Example:</strong> 5 replications of a bank simulation give average wait times: 12.5, 14.2, 11.8, 13.6, 12.9 min</p>\n<p>Ȳ = 13.0, S = 0.935</p>\n<p>95% CI = 13.0 ± 2.776 × 0.935/√5 = 13.0 ± 1.16 = (11.84, 14.16) minutes</p>\n<p>We are 95% confident the true average wait time is between 11.84 and 14.16 minutes.</p>"
+    }
+  ]
+}

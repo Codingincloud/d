@@ -1,0 +1,13 @@
+{
+  "_note": "Curated 'this question-bank row IS this site card' pairs. The similarity rules cannot decide every case, so the judgement is written down here - exactly as the same-question folds are recorded in same_question_merges.json. tools/merge_past.py consults this before importing a bank row as a new question, and refuses to run if an alias points at a wording the chapter no longer carries.",
+  "_why_this_exists": "A rule, not a threshold: the bank row is the bank author's compression of the exam question. When a card is rewritten to the paper's own wording, token similarity to that compression collapses. Lowering the dedupe threshold to catch it would also start folding genuinely different questions (the three LCM parameter sets), so the pair is recorded explicitly instead.",
+  "aliases": [
+    {
+      "chapter": 4,
+      "bank": "Library queuing simulation for 15 customers — calculate average waiting time, average time in system, probability of server being busy",
+      "site": "Consider the following table for time between arrivals of customers and their service times in a library system. Time between arrivals (min): 1→0.23, 2→0.37, 3→0.25, 4→0.15. Service time (min): 1→0.10, 2→0.20, 3→0.33, 4→0.22, 5→0.10, 6→0.05. Do a manual simulation for 15 customers and calculate average waiting time, average time a customer has to spend in the system and the probability of server being busy.",
+      "topic": "2010 C · library queuing, 15 customers",
+      "why": "The 2010 C card carried invented inter-arrival/service lists and was rebuilt from the question the paper actually prints — two probability distributions (plan.md §3.2e). Similarity to this bank row fell to 0.30, far below the 0.80 dedupe bar, so without this alias `merge_past.py --apply` would re-import the bank row as a second card for the same question."
+    }
+  ]
+}

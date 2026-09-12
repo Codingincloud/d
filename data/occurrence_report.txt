@@ -1,0 +1,389 @@
+
+==============================================================================
+Chapter 1  —  21 questions
+==============================================================================
+
+[ch1#0] x4 claimed  <-- found FEWER   Explain the phases and steps in simulation study.
+      2019 F    1.00     5  Explain the phases and steps in simulation study
+
+[ch1#1] x3 claimed  <-- found FEWER   Explain the concept of System. Differentiate between Continuous and Discrete, Deterministic and 
+      2019 F    1.00     5  Explain the concept of System. Differentiate between Continuous and discrete, Determinis
+
+[ch1#2] x3 claimed  <-- found FEWER   Explain the ways to study a system. What are the criteria of classifying Simulation models? Brie
+      2014 F    0.98   3+7  Explain the ways to study a system. What are tpe criteria of classifying Simulation mode
+
+[ch1#3] x2 claimed  <-- found FEWER   What do you mean by simulation and modeling? Explain the steps in the simulation study.
+      2015 F    1.00   3+7  What do you mean by simulation and modeling? Explain the steps in the simulation study?
+
+[ch1#4] x2 claimed  <-- found FEWER   Define real time simulation. Mention the advantages and disadvantages of simulation.
+
+[ch1#5] x2 claimed  <-- found FEWER   Define simulation. Explain the ways to study a system. Point out the areas where Simulation and 
+
+[ch1#6] x2 claimed   Discuss real-time simulation with an example. Mention purposes and limitations of simulation.
+      2011 C    0.76   3+7  Explain real time simulation with example? Explain the type of simulation models
+      2010 F    1.00  4+3+3  Discuss real-time simulation with an example. Mention purposes of using simulation. What
+
+[ch1#7] x1 claimed  <-- found FEWER   Define system simulation and give one example.
+
+[ch1#8] x1 claimed  <-- found FEWER   Explain the steps in a simulation study with a flowchart.
+
+[ch1#9] x1 claimed   Short Note: Application areas of simulation
+      2019 F    1.00        Application areas of simulation
+
+[ch1#10] x1 claimed   What do you mean by simulation and modeling?
+      2015 F    0.85   3+7  What do you mean by simulation and modeling? Explain the steps in the simulation study?
+
+[ch1#11] x1 claimed   What are the criteria of classifying Simulation models? Brief it with suitable example
+      2014 F    0.85   3+7  Explain the ways to study a system. What are tpe criteria of classifying Simulation mode
+
+[ch1#12] x1 claimed   Mention the advantages and disadvantages of simulation. What are the purposes for which simulati
+      2012 C    0.81        Define real time simulation. Mention the advaJ 'tages ·and disadvantages of simulation. 
+
+[ch1#13] x1 claimed  <-- found FEWER   Differentiate between discrete system simulation and continuous system simulation
+
+[ch1#14] x1 claimed  <-- found MORE   Explain real time simulation with example. Explain the type of simulation models
+      2011 C    1.00   3+7  Explain real time simulation with example? Explain the type of simulation models
+      2010 F    0.75  4+3+3  Discuss real-time simulation with an example. Mention purposes of using simulation. What
+
+[ch1#15] x1 claimed  <-- found FEWER   Explain the type of simulation models
+
+[ch1#16] x1 claimed  <-- found FEWER   Point out the areas where the Simulation and Modeling can be used
+
+[ch1#17] x1 claimed   What is system modeling? What are the types of system models? Explain dynamic physical model wit
+      2010 C    0.97  2+2+6  What is system modeling? What are the types of system :i;nodels? Explain dynamic physica
+
+[ch1#18] x1 claimed   Differentiate between deterministic and stochastic simulation
+      2010 C    0.85        Differentiate between deterministic and stochastic simulation. . 3+7 I~ Explain distribu
+
+[ch1#19] x1 claimed   Mention purposes of using simulation. What are the limitations of simulation?
+      2010 F    0.85  4+3+3  Discuss real-time simulation with an example. Mention purposes of using simulation. What
+
+[ch1#20] x1 claimed  <-- found FEWER   Explain the limitations of Simulation Techniques
+
+==============================================================================
+Chapter 2  —  15 questions
+==============================================================================
+
+[ch2#0] x4 claimed  <-- found FEWER   Find the value of π by using Monte Carlo simulation using x² + y² = 16. Calculate error.
+
+[ch2#1] x2 claimed  <-- found FEWER   Compare stochastic simulation vs. Monte Carlo method.
+
+[ch2#2] x1 claimed  <-- found FEWER   What is the purpose of the Monte Carlo method?
+
+[ch2#3] x1 claimed   Discuss the basic philosophy of Monte-Carlo simulation.
+      2019 F    1.00     5  Discuss the basic philosophy of Monte:--Carlo simulation
+
+[ch2#4] x1 claimed  <-- found FEWER   A vegetable shopkeeper is trying to determine how much green vegetable he has to purchase. No. o
+
+[ch2#5] x1 claimed  <-- found FEWER   Vegetable shopkeeper simulation: Determine how much green vegetable to purchase. Probability dis
+
+[ch2#6] x1 claimed  <-- found FEWER   Calculate ∫₀^(π/2) cos x dx using Monte Carlo simulation
+
+[ch2#7] x1 claimed  <-- found MORE   Find the value of pi (π) by using Monte Carlo simulation using the equation x²+y²=16. Also calcu
+      2014 F    0.91     5  by using Monte Carlo simulation using the equation x"2+y"2= 16? Also Calculate error whe
+      2011 F    0.79        Calculate the following using Monte carol simulation. 5 4 · I= f(x A 4)/3dx 1 Also Calcu
+      2010 F    0.92     5  by using Monte Carlo simulation using the equation x2+y2=16. Also Calculate error when c
+
+[ch2#8] x1 claimed   Explain the concept of Monte-Carlo simulation over stochastic simulation
+      2014 F    1.00     5  Explain the concept of Monte-Carlo simulation over stochastic simulation
+
+[ch2#9] x1 claimed  <-- found FEWER   Solve ∫₁ᵉ dx using Monte Carlo Method
+
+[ch2#10] x1 claimed  <-- found FEWER   Calculate ∫₁⁴ (x+4)³dx using Monte Carlo simulation. Calculate error.
+
+[ch2#11] x1 claimed   Explain the significance of Monte Carlo Method in simulation
+      2011 C    0.85   5+5  Explain the significance of Monte Carlo Method in simulation. Estimate the value of 1t(p
+
+[ch2#12] x1 claimed  <-- found FEWER   Estimate the value of π using Monte Carlo Method
+
+[ch2#13] x1 claimed  <-- found FEWER   Define normally distributed random number with example.
+
+[ch2#14] x1 claimed  <-- found FEWER   Find the value of ∫₀^(π/2) cos x dx using Monte-Carlo Method
+
+==============================================================================
+Chapter 3  —  21 questions
+==============================================================================
+
+[ch3#0] x3 claimed  <-- found FEWER   Explain continuous system simulation with suitable example.
+
+[ch3#1] x3 claimed  <-- found FEWER   Why are differential equations so important in simulation? Explain with example.
+
+[ch3#2] x2 claimed  <-- found FEWER   Describe the pure pursuit problem in continuous systems.
+
+[ch3#3] x2 claimed  <-- found FEWER   Explain feedback system with its application.
+
+[ch3#4] x1 claimed  <-- found FEWER   Compare analog vs. hybrid simulation methods, highlighting their use in solving differential equ
+
+[ch3#5] x1 claimed  <-- found FEWER   Compare analog vs. hybrid simulation methods
+
+[ch3#6] x1 claimed   Explain the concept of continuous system simulation
+      2019 F    1.00     5  Explain the concept of continuous system simulation
+
+[ch3#7] x1 claimed   Explain how continuous model can be solved numerically with an example
+      2015 F    1.00     5  Explain how continuous model can be solved numerically with an example
+
+[ch3#8] x1 claimed   Explain the analogy method of system study with suitable example
+      2015 F    1.00     5  Explain the analogy method of system study with suitable example
+
+[ch3#9] x1 claimed   Illustrate the possible event interactions in Hybrid Simulation
+      2015 F    0.85     5  State some types of Simulation· languages. Illustrate the possible event interactions in
+
+[ch3#10] x1 claimed   Explain feedback system with suitable example
+      2015 F    1.00     5  Explain feedback system with suitable example
+
+[ch3#11] x1 claimed  <-- found FEWER   Short Note: Differential equation
+
+[ch3#12] x1 claimed  <-- found FEWER   Short Note: Feedback system
+
+[ch3#13] x1 claimed  <-- found FEWER   Explain pure pursuit problem
+
+[ch3#14] x1 claimed  <-- found FEWER   Solve equations by analog method: X₁′= −K₁₂X₁ + K₂₁X₂; X₂′= K₁₂X₁ − (K₂₁+K₂₃)X₂; X₃′= K₂₃X₂
+
+[ch3#15] x1 claimed  <-- found FEWER   Explain the need of differential equation in simulation with an example
+
+[ch3#16] x1 claimed  <-- found FEWER   Short Note: Continuous Simulation
+
+[ch3#17] x1 claimed   Explain feedback system and hybrid system with suitable example
+      2015 F    0.82     5  Explain feedback system with suitable example
+
+[ch3#18] x1 claimed  <-- found FEWER   What are the applications of feedback system? Explain computer model to represent it. Show GPSS 
+
+[ch3#19] x1 claimed  <-- found FEWER   Represent Ax'' + Bx' + Cx + D = 0 in analog computer block diagram.
+
+[ch3#20] x1 claimed  <-- found FEWER   Discuss a pure pursuit problem with a suitable example
+
+==============================================================================
+Chapter 4  —  13 questions
+==============================================================================
+
+[ch4#0] x4 claimed  <-- found FEWER   Markov Chain (Short Note)
+
+[ch4#1] x4 claimed  <-- found FEWER   Computing facility of PU has large no. of personal computers. 50% of days: 0 failures, 30%: 1 fa
+
+[ch4#2] x2 claimed  <-- found FEWER   What are the elements of a queuing system?
+
+[ch4#3] x2 claimed  <-- found FEWER   Kendall's Notation (Short Note)
+
+[ch4#4] x2 claimed  <-- found FEWER   For 8 customers, the inter-arrival time and service time in a single counter of a bank are given
+
+[ch4#5] x1 claimed  <-- found FEWER   List two queuing system characteristics.
+
+[ch4#6] x1 claimed  <-- found FEWER   Simulate a bank queuing system using Kendall's notation. Discuss performance metrics like averag
+
+[ch4#7] x1 claimed  <-- found MORE   Explain the arrival and departure routine queuing model for a banking system
+      2015 F    0.94        Explain the arrival and departure routine queuing model for a banldng system. s
+      2010 F    0.79     5  Consider -the Banking system, to explain the arrival and departure routine queuing model
+
+[ch4#8] x1 claimed  <-- found FEWER   Computing facility of Purbanchal University — On 50% days no failure, 30% days 1 failure, 20% da
+
+[ch4#9] x1 claimed  <-- found FEWER   Bank simulation for 8 customers (inter-arrival time and service time given) — find average waiti
+
+[ch4#10] x1 claimed   What is queuing system? Why do we use queuing system in simulation?
+      2011 C    0.85  2+3+5  What is queuing system? Why do we use queuing system in simulation? Explain the Kendell'
+
+[ch4#11] x1 claimed  <-- found FEWER   Explain the Kendall's notation in queuing system with example
+
+[ch4#12] x1 claimed  <-- found FEWER   Library queuing simulation for 15 customers — calculate average waiting time, average time in sy
+
+==============================================================================
+Chapter 5  —  5 questions
+==============================================================================
+
+[ch5#0] x1 claimed  <-- found FEWER   Differentiate between verification and validation of simulation models.
+
+[ch5#1] x1 claimed  <-- found FEWER   Explain model building, verification, and validation with diagram.
+
+[ch5#2] x1 claimed  <-- found FEWER   Explain the various verification techniques used for a simulation model.
+
+[ch5#3] x1 claimed  <-- found FEWER   Explain the approaches used for validating a simulation model. What is the Turing test?
+
+[ch5#4] x1 claimed  <-- found FEWER   Why is validation of a simulation model difficult? Discuss the sources that can make a model inv
+
+==============================================================================
+Chapter 6  —  37 questions
+==============================================================================
+
+[ch6#0] x2 claimed  <-- found FEWER   Explain the mid-square method for random number generation.
+      2019 F    0.87     5  Explain mid square random number generator
+
+[ch6#1] x1 claimed  <-- found FEWER   What does pseudo-random number mean?
+
+[ch6#2] x1 claimed  <-- found FEWER   Generate 5 pseudo-random numbers using the Linear Congruential Method with X₀=27, a=17, c=43, m=
+
+[ch6#3] x1 claimed  <-- found FEWER   Use LCM to generate random numbers. Seed X₀=6,7; a=12, c=5, m=26.
+
+[ch6#4] x1 claimed  <-- found FEWER   Enumerate qualities of good random number generator.
+
+[ch6#5] x1 claimed  <-- found FEWER   Use Chi-Square test to test 50 random numbers at 95% confidence. Numbers: 36,91,51,02,54,06,58,0
+
+[ch6#6] x1 claimed   Explain mid square random number generator
+      2019 F    1.00     5  Explain mid square random number generator
+
+[ch6#7] x1 claimed  <-- found FEWER   What do you mean by testing of random numbers, why is it needed?
+
+[ch6#8] x1 claimed  <-- found FEWER   Based on the run test, check whether a given sequence of 40 numbers is random or not. [Z_(α/2) =
+
+[ch6#9] x1 claimed  <-- found FEWER   What are the properties of random numbers? Why are random numbers generated by a computer called
+
+[ch6#10] x1 claimed  <-- found FEWER   Write the algorithm for LCM. Using multiplicative congruential method, find the period for a=13,
+
+[ch6#11] x1 claimed  <-- found FEWER   Explain the Mid square method for generating random numbers with an example
+
+[ch6#12] x1 claimed  <-- found FEWER   What are the qualities of good random number generators? What are the methods used for testing?
+
+[ch6#13] x1 claimed  <-- found FEWER   What are the methods used for testing of random numbers?
+
+[ch6#14] x1 claimed  <-- found FEWER   Test whether the 2nd, 7th, 12th and so on numbers in the sequence are auto correlated. (α=0.05).
+
+[ch6#15] x1 claimed  <-- found FEWER   Short Note: Poker test
+
+[ch6#16] x1 claimed  <-- found FEWER   Define Pseudo-random numbers. Explain the qualities of an efficient random number generator
+
+[ch6#17] x1 claimed  <-- found FEWER   What is the role of random numbers in simulation?
+
+[ch6#18] x1 claimed  <-- found FEWER   Generate up to 5 random numbers using LCM: X₀=seed, a=17, c=43, m=100
+
+[ch6#19] x1 claimed  <-- found FEWER   Explain the qualities of an efficient random number generator
+
+[ch6#20] x1 claimed  <-- found FEWER   Apply auto-correlation test: check whether 3rd, 8th, 13th and so on numbers are independent. (Z₀
+
+[ch6#21] x1 claimed  <-- found FEWER   Poker test: 1000 three-digit numbers, 680 all different, 289 one pair, 31 three alike. α=0.05.
+
+[ch6#22] x1 claimed  <-- found FEWER   Using multiplicative congruential method, find period for a=13, m=64, X₀=1,2,3,4.
+
+[ch6#23] x1 claimed  <-- found FEWER   What does the Kolmogorov–Smirnov test indicate? Perform the K–S test with data 0.24, 0.89, 0.11,
+
+[ch6#24] x1 claimed  <-- found FEWER   What do you mean by pseudo random number? How do these random numbers help in simulation?
+
+[ch6#25] x1 claimed  <-- found FEWER   Explain combined linear congruential method for generating random numbers
+
+[ch6#26] x1 claimed   Explain the Mid square random number generator with example. What is the problem with this gener
+      2019 F    0.85     5  Explain mid square random number generator
+
+[ch6#27] x1 claimed  <-- found FEWER   Why do we need to test the randomness of the number in simulation?
+
+[ch6#28] x1 claimed  <-- found FEWER   Explain the significance of chi square test
+
+[ch6#29] x1 claimed  <-- found FEWER   Short Note: Chi square test
+
+[ch6#30] x1 claimed  <-- found FEWER   A sequence of 1000 three-digit numbers: 680 have three different digits, 289 contain exactly one
+
+[ch6#31] x1 claimed  <-- found FEWER   Write down the steps for the Kolmogorov–Smirnov test.
+
+[ch6#32] x1 claimed  <-- found FEWER   How pseudo random numbers differ from random numbers
+
+[ch6#33] x1 claimed   When generating pseudo-random numbers, certain problems or errors can occur. What are they?
+      2010 F    1.00     3  When generating pseudo-random numbers, certain problems or errors can occur. What are th
+
+[ch6#34] x1 claimed  <-- found FEWER   Using multiplicative congruential method, find the period and generate for a=17, m=64, X₀=3
+
+[ch6#35] x1 claimed   Use multiplicative congruential method to generate four three-digit random numbers. x₀=117, a=43
+      2010 F    0.91        Use multiplicative congruential method to generate a sequence of four three-digit random
+
+[ch6#36] x1 claimed  <-- found FEWER   Test auto-correlation of 2nd, 9th, 16th, … numbers. (α=0.05). [40 numbers given]
+
+==============================================================================
+Chapter 7  —  17 questions
+==============================================================================
+
+[ch7#0] x4 claimed  <-- found FEWER   Why the output of simulation has to be analyzed? Explain Replication of Runs method.
+      2010 F    0.89   4+6  Why the output of simulation has to - be analyzed? Explain Replication of Runs method to
+
+[ch7#1] x2 claimed  <-- found FEWER   Explain the mathematical modeling of replication of runs.
+      2015 F    1.00     5  Explain the mathematical modeling of replication of runs
+
+[ch7#2] x2 claimed  <-- found FEWER   What is initial bias in simulation output? Mention the idea of elimination of initial bias.
+      2015 F    1.00   3+2  What is initial bias in simulation output? Mention the idea of elimination of initial bi
+
+[ch7#3] x1 claimed  <-- found FEWER   Why is replication of runs necessary in output analysis?
+
+[ch7#4] x1 claimed   'Simulation output has to be analyzed.' Justify the statement. Explain replication of runs and e
+      2019 F    0.82    10  "Simulation output has to .be analyzed", Justify the statement. Explain the process of r
+
+[ch7#5] x1 claimed  <-- found FEWER   Explain the process of replication of runs in analysis of simulation output
+
+[ch7#6] x1 claimed  <-- found FEWER   Explain elimination of internal bias in the analysis of simulation output
+
+[ch7#7] x1 claimed  <-- found FEWER   Simulation Run Statistics (Short Note)
+
+[ch7#8] x1 claimed  <-- found MORE   Explain estimation method for analysis of simulation output
+      2015 F    0.85   2+3  Why simulation output is analyzed? Explain estimation method for analysis of simulation 
+      2012 C    0.80        Estimation method in simulation output ~alysis_ I'
+
+[ch7#9] x1 claimed  <-- found FEWER   Why simulation output is analyzed?
+
+[ch7#10] x1 claimed   Short Note: Elimination of internal bias
+      2011 C    1.00        Elimination of internal bias ·
+
+[ch7#11] x1 claimed  <-- found FEWER   Why the output of simulation has to be analyzed?
+
+[ch7#12] x1 claimed   Explain replication of runs in the simulation output analysis
+      2012 C    0.76        Estimation method in simulation output ~alysis_ I'
+
+[ch7#13] x1 claimed   Explain elimination of initial bias in the simulation output analysis
+      2012 C    0.77        E~lain replication of runs and elimination of initial bias in th~) simulation output ana
+
+[ch7#14] x1 claimed   Explain why simulation output is analyzed. Why Replication of Runs is performed during analysis?
+      2011 F    0.84        Explain why simulation output is analyzed. Brief, why · Replication ' ·of ·_ Runs is .pe
+
+[ch7#15] x1 claimed  <-- found FEWER   Why do we need replication of run in simulation?
+
+[ch7#16] x1 claimed   How would you eliminate internal bias in the analysis of Simulation output?
+      2010 C    0.85        Why the output of Simulation has to be analyzed? How would you eliminate internal bias i
+
+==============================================================================
+Chapter 8  —  22 questions
+==============================================================================
+
+[ch8#0] x4 claimed  <-- found FEWER   What do you mean by discrete event simulation? Explain principal approaches for advancing simula
+      2014 F    1.00   4+6  What do you mean by discrete event simulation? Explain the principal approaches for adva
+      2010 F    0.78   4+6  Illustrate discrete event simulation. Explain the principal approaches for advancing the
+
+[ch8#1] x1 claimed  <-- found FEWER   What are the key features of GPSS as a simulation language?
+
+[ch8#2] x1 claimed  <-- found FEWER   Model a discrete-event system of hospital patient flow using GPSS. Outline key control statement
+
+[ch8#3] x1 claimed   List out the various simulation tools. Explain GPSS in brief with suitable example.
+      2019 F    1.00    10  List out the various simulation tools. Explain GPSS in brief with suitable example
+
+[ch8#4] x1 claimed  <-- found FEWER   Explain GPSS in brief with suitable example
+
+[ch8#5] x1 claimed   Explain the principle of discrete system simulation
+      2019 F    0.85   4+6  Explain the principle of discrete system simulation. Explain feedback system with its ap
+
+[ch8#6] x1 claimed   Draw different types of GPSS block-diagram symbols and explain with GPSS block-diagram of manufa
+      2015 F    0.97     5  Draw different types of GPSS block-diagram symbols and explain · with the help of GPSS b
+
+[ch8#7] x1 claimed  <-- found FEWER   State some types of Simulation languages
+
+[ch8#8] x1 claimed  <-- found FEWER   Why is simulation tool required?
+
+[ch8#9] x1 claimed   What is GPSS language & its application?
+      2014 F    0.85   3+3  Why is simulation tool required? What is GPSS language & its application?
+
+[ch8#10] x1 claimed   Explain in details of GPSS block diagram symbols
+      2014 F    1.00     4  Explain in details of GPSS block diagram symbols
+
+[ch8#11] x1 claimed  <-- found FEWER   Design a simulation model of any discrete system in GPSS symbols
+
+[ch8#12] x1 claimed  <-- found FEWER   Explain discrete system simulation
+
+[ch8#13] x1 claimed  <-- found FEWER   What do you mean by distributed lag model? Explain.
+
+[ch8#14] x1 claimed  <-- found FEWER   Show the GPSS block diagram to represent soap quality testing system
+
+[ch8#15] x1 claimed   What do you mean by Discrete-event simulation? Explain the components and organization of a Disc
+      2011 F    0.96   2+4  What do you mean by Discrete~event _s~mulatiop?_ E~lain the components and organization 
+
+[ch8#16] x1 claimed  <-- found FEWER   Discuss SIMSCRIPT and GPSS language in brief
+
+[ch8#17] x1 claimed  <-- found FEWER   CSSL (Short Note)
+
+[ch8#18] x1 claimed  <-- found FEWER   Explain Discrete Simulation Language. Explain SIMSCRIPT system concepts and program organization
+
+[ch8#19] x1 claimed  <-- found FEWER   Short Note: GPSS
+
+[ch8#20] x1 claimed   Define state descriptor and discrete event. How do you simulate a telephone system, explain with
+      2010 C    1.00   2+8  Define state descriptor and discrete event. How do you simulate a .telephone system, exp
+
+[ch8#21] x1 claimed  <-- found FEWER   Explain distributed lag model
