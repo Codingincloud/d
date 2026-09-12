@@ -25,6 +25,8 @@ from __future__ import annotations
 
 import random
 
+from sitelib import Reporter
+
 TARGET = 3          # |heads - tails| that ends a game
 PAYOFF = 8.0        # rupees received when the target is reached
 COST_PER_FLIP = 1.0  # rupees paid for every flip
@@ -40,14 +42,8 @@ DIGITS = [
     6, 1, 0, 9, 3, 5, 7, 2, 4, 8, 6, 0, 1, 9, 5, 3, 7, 2, 4, 8,
 ]
 
-problems: list[str] = []
-
-
-def check(label: str, got: float, want: float, tol: float) -> None:
-    ok = abs(got - want) <= tol
-    if not ok:
-        problems.append(f"{label}: got {got}, expected {want} +-{tol}")
-    print(f"  [{'ok' if ok else 'XX'}] {label:<52} {got}")
+report = Reporter(width=52)
+check = report.check
 
 
 def play(digits: list[int], start: int) -> tuple[int, int, str]:
@@ -102,14 +98,7 @@ def main() -> int:
           "sample is tiny and\n   the expectation has to come from the theory "
           "(or from many replications).")
 
-    print()
-    if problems:
-        print(f"{len(problems)} MISMATCH(ES):")
-        for p in problems:
-            print("  -", p)
-        return 1
-    print("Coin-game figures agree with the theory. OK")
-    return 0
+    return report.finish("Coin-game figures agree with the theory. OK")
 
 
 if __name__ == "__main__":

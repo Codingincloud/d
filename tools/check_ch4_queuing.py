@@ -27,15 +27,11 @@ random-number interval mapping the manual simulation needs.
 
 from __future__ import annotations
 
+from sitelib import Reporter
+
 PASS = "OK"
-problems: list[str] = []
-
-
-def check(label: str, got, want, tol: float = 5e-4) -> None:
-    ok = abs(got - want) <= tol
-    if not ok:
-        problems.append(f"{label}: got {got!r}, expected {want!r}")
-    print(f"  [{'ok' if ok else 'XX'}] {label:<58} {got}")
+report = Reporter(width=58)
+check = report.check
 
 
 def intervals(pdf: dict[int, float]) -> dict[int, str]:
@@ -190,14 +186,7 @@ def main() -> int:
     bank_8()
     library_15()
     computer_facility()
-    print()
-    if problems:
-        print(f"{len(problems)} MISMATCH(ES):")
-        for p in problems:
-            print("  -", p)
-        return 1
-    print(f"All Ch4 queuing figures agree with the sources. {PASS}")
-    return 0
+    return report.finish(f"All Ch4 queuing figures agree with the sources. {PASS}")
 
 
 if __name__ == "__main__":

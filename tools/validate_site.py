@@ -13,20 +13,18 @@ Exit code 0 = no errors.
 """
 from __future__ import annotations
 
-import json
 import re
 import subprocess
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-# The dev notes contain Devanagari-free but non-ASCII punctuation (—, →, σ, χ²)
-# and Windows consoles default to cp1252, so force UTF-8 on stdout.
-for stream in (sys.stdout, sys.stderr):
-    if hasattr(stream, "reconfigure"):
-        stream.reconfigure(encoding="utf-8", errors="replace")
+from sitelib import (ROOT, load_chapters,  # noqa: E402
+                     normalise_text as normalise, use_utf8_stdout)
+
+use_utf8_stdout()
 
 # ---------------------------------------------------------------- syllabus map
 # Sub-topics taken from the BCE7026 syllabus / past-question-bank table of
@@ -64,20 +62,6 @@ def err(msg: str) -> None:
 
 def warn(msg: str) -> None:
     warnings.append(msg)
-
-
-def load_chapters() -> dict:
-    dumper = ROOT / "tools" / "dump_chapters.js"
-    proc = subprocess.run(["node", str(dumper)], capture_output=True, cwd=str(ROOT))
-    if proc.returncode != 0:
-        print(proc.stderr.decode("utf-8", "replace"))
-        sys.exit("node failed to load the chapter files")
-    payload = json.loads(proc.stdout.decode("utf-8", "replace"))
-    return {int(k): v for k, v in payload.items()}
-
-
-def normalise(text: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).strip()
 
 
 class Balance(HTMLParser):
@@ -171,12 +155,34 @@ def check_past(cid: int, past) -> tuple[int, int]:
     return len(past), pending
 
 
+def page_code() -> str:
+    """index.html plus the page's own scripts — the code we write, wherever it is.
+
+    The chapter meta array, the tab list and the app logic used to sit in an
+    inline <script>; they live in app.js now. Checks that read them therefore
+    read the page *and* what it loads, so moving code does not silently move it
+    out of the checks' view. ch*.js and data/ are excluded: ch*.js is parsed by
+    node in load_chapters(), data/analysis.js is generated.
+    """
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    parts = [html]
+    for src in re.findall(r"<script[^>]*\bsrc=[\"']([^\"']+)[\"']", html):
+        if re.match(r"^(ch\d+\.js|data/)", src):
+            continue
+        path = ROOT / src
+        if path.is_file():
+            parts.append(path.read_text(encoding="utf-8"))
+    return "\n".join(parts)
+
+
 def check_index() -> None:
     html = (ROOT / "index.html").read_text(encoding="utf-8")
+    code = page_code()
     meta = re.findall(
-        r"\{n:(\d+),t:'([^']*)',m:(\d+),h:(\d+),e:'([^']*)'\}", html)
+        r"\{n:(\d+),t:'([^']*)',m:(\d+),h:(\d+),e:'([^']*)'\}", code)
     if len(meta) != 8:
-        err(f"index.html: expected 8 chapter meta entries, found {len(meta)}")
+        err(f"index.html + its scripts: expected 8 chapter meta entries, "
+            f"found {len(meta)}")
         return
     chapters = [int(n) for n, *_ in meta]
     if chapters != list(range(1, 9)):
@@ -193,36 +199,55 @@ def check_index() -> None:
         if f'<script src="ch{n}.js"></script>' not in html:
             err(f"index.html: does not load ch{n}.js")
 
-    check_index_script(html)
+    check_page_scripts(html)
 
 
-def check_index_script(html: str) -> None:
-    """Parse the page's own inline JS.
+def node_check(path: Path, where: str) -> None:
+    """`node --check` on one file, reported as a site error.
 
-    ch*.js go through `node` in load_chapters(), but index.html is where the
-    exam, quiz, search and progress code lives - and nothing parsed it. A single
-    stray apostrophe inside one of its strings (an easy slip when the copy
+    A single stray apostrophe inside a string (an easy slip when the copy
     mentions "a chapter's answers") ships a page that renders the shell and then
     dies with no tabs, no exam and no visible error. `node --check` catches that
-    class in milliseconds, so it belongs here with the other structural checks.
+    class in milliseconds, and it does not care where the file lives - which is
+    the point: the app code moved from an inline block to app.js and this check
+    followed it without being told.
     """
+    proc = subprocess.run(["node", "--check", str(path)], capture_output=True)
+    if proc.returncode != 0:
+        first = proc.stderr.decode("utf-8", "replace").strip().splitlines()
+        err(f"{where}: does not parse: {first[0] if first else 'syntax error'}")
+
+
+def check_page_scripts(html: str) -> None:
+    """Syntax-check every script the page actually loads, wherever it lives.
+
+    index.html owns the tag list; the code may live in it or in a file it
+    points at. Resolve each `<script src>` against the project root and check
+    that it exists, then parse it - a dangling src is as fatal as a broken one.
+    """
+    srcs = re.findall(r"<script[^>]*\bsrc=[\"']([^\"']+)[\"'][^>]*>", html)
+    if not srcs:
+        err("index.html: loads no script files")
+    for src in srcs:
+        path = ROOT / src
+        if not path.is_file():
+            err(f"index.html: loads {src}, which does not exist")
+            continue
+        node_check(path, f"index.html -> {src}")
+
+    # Any inline script left behind is still parsed; ~none is expected now.
     import tempfile
 
-    scripts = re.findall(r"<script(?![^>]*\bsrc=)[^>]*>(.*?)</script>", html, re.S)
-    if not scripts:
-        err("index.html: no inline script found")
-        return
-    for i, body in enumerate(scripts):
+    for i, body in enumerate(re.findall(r"<script(?![^>]*\bsrc=)[^>]*>(.*?)</script>",
+                                        html, re.S)):
+        if not body.strip():
+            continue
         with tempfile.NamedTemporaryFile("w", suffix=".js", delete=False,
                                          encoding="utf-8") as tmp:
             tmp.write(body)
             path = tmp.name
         try:
-            proc = subprocess.run(["node", "--check", path], capture_output=True)
-            if proc.returncode != 0:
-                first = proc.stderr.decode("utf-8", "replace").strip().splitlines()
-                err(f"index.html: inline script {i} does not parse: "
-                    f"{first[0] if first else 'syntax error'}")
+            node_check(Path(path), f"index.html: inline script {i}")
         finally:
             Path(path).unlink(missing_ok=True)
 

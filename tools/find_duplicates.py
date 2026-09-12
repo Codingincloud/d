@@ -42,7 +42,9 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 import re  # noqa: E402
 
-from merge_past import similarity, normalise, norm_key, load_site_chapters  # noqa: E402
+from sitelib import (load_chapters as load_site_chapters, norm_key,  # noqa: E402
+                     normalise_question as normalise, numeric_tokens,
+                     similarity, use_utf8_stdout)
 
 
 def classify(a: str, b: str, score: float, threshold: float) -> str:
@@ -68,18 +70,15 @@ def classify(a: str, b: str, score: float, threshold: float) -> str:
 def differing_numbers(a: str, b: str) -> str:
     """Numbers that appear in one question but not the other - a strong hint that
     two 'similar' numericals are in fact different problems."""
-    nums = lambda s: set(re.findall(r"\d+(?:\.\d+)?", s))
-    only_a = sorted(nums(a) - nums(b))
-    only_b = sorted(nums(b) - nums(a))
+    only_a = sorted(numeric_tokens(a) - numeric_tokens(b))
+    only_b = sorted(numeric_tokens(b) - numeric_tokens(a))
     if not only_a and not only_b:
         return ""
     return f"{','.join(only_a[:6])} | {','.join(only_b[:6])}"
 
 OUT = ROOT / "data" / "duplicate_clusters.json"
 
-for stream in (sys.stdout, sys.stderr):
-    if hasattr(stream, "reconfigure"):
-        stream.reconfigure(encoding="utf-8", errors="replace")
+use_utf8_stdout()
 
 
 class Union:

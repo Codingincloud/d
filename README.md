@@ -136,7 +136,8 @@ so out loud rather than implying the missing papers were found.
 
 ```
 freebuff_simulation/
-├── index.html                    # the app shell + behaviour: tabs, search, exam
+├── index.html                    # the app shell: markup + the list of scripts
+├── app.js                        # the app: tabs, quiz, past questions, search, exam, progress
 ├── ch1.js … ch8.js               # one file per chapter: notes + quiz + past questions
 ├── plan.md                       # living build plan / tracker (read this first)
 ├── assets/

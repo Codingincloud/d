@@ -41,15 +41,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-from merge_past import similarity, load_site_chapters, normalise  # noqa: E402
+from sitelib import (load_chapters as load_site_chapters,  # noqa: E402
+                     normalise_question as normalise, similarity,
+                     use_utf8_stdout)
 
 OCR = ROOT / "_source" / "past_questions.ocr.txt"
 OUT = ROOT / "data" / "occurrences.json"
 REPORT = ROOT / "data" / "occurrence_report.txt"
 
-for stream in (sys.stdout, sys.stderr):
-    if hasattr(stream, "reconfigure"):
-        stream.reconfigure(encoding="utf-8", errors="replace")
+use_utf8_stdout()
 
 # Every paper prints "Time: 03:00 hrs." exactly once, whereas the university
 # banner is occasionally mangled by the OCR (e.g. "P_U_RB_AN_C_HA_L_U_N..."),

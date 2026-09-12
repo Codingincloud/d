@@ -20,15 +20,15 @@ Answer tiers, per the project plan:
 from __future__ import annotations
 
 import argparse
-import difflib
 import json
 import re
 import shutil
-import subprocess
 import sys
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from sitelib import (ROOT, load_chapters as load_site_chapters, norm_key,
+                     normalise_question as normalise, numeric_tokens,
+                     similarity, strict_similarity, use_utf8_stdout)
+
 BANK = ROOT / "data" / "question_bank.json"
 ANSWERS = ROOT / "data" / "tier_a_answers.json"
 COVERAGE = ROOT / "data" / "qa_coverage.json"
@@ -38,61 +38,7 @@ ALIASES = ROOT / "data" / "bank_row_aliases.json"
 VARIANTS = ROOT / "data" / "variant_answers.json"
 BACKUP = ROOT / "_audit" / "pre_merge"
 
-for stream in (sys.stdout, sys.stderr):
-    if hasattr(stream, "reconfigure"):
-        stream.reconfigure(encoding="utf-8", errors="replace")
-
-STOPWORDS = {"a", "an", "the", "of", "and", "with", "for", "to", "in", "on",
-             "is", "are", "what", "which", "explain", "define", "write",
-             "down", "by", "using", "use", "how", "why", "briefly", "short",
-             "note", "give", "list", "mention", "discuss", "describe"}
-
-
-def normalise(text: str) -> str:
-    words = re.findall(r"[a-z0-9]+", (text or "").lower())
-    keep = [w for w in words if w not in STOPWORDS]
-    return " ".join(keep or words)
-
-
-def strict_similarity(a: str, b: str) -> float:
-    """Sequence ratio + token overlap, with no containment shortcut.
-
-    Used for bank-against-bank dedupe, where a short question like "Short Note:
-    GPSS" must NOT be treated as the same question as every GPSS question.
-    """
-    na, nb = normalise(a), normalise(b)
-    if not na or not nb:
-        return 0.0
-    ratio = difflib.SequenceMatcher(None, na, nb).ratio()
-    ta, tb = set(na.split()), set(nb.split())
-    jaccard = len(ta & tb) / len(ta | tb) if (ta | tb) else 0.0
-    return max(ratio, jaccard)
-
-
-def similarity(a: str, b: str) -> float:
-    """Bank-against-site matching: adds a bounded containment rule.
-
-    "Markov Chain (Short Note)" is the same question as "Markov Chain (Short
-    Note)", but "Chi-Square Test" is not the same as "Use the Chi-Square test to
-    test 50 random numbers". Containment therefore only counts when the shorter
-    text still has at least three significant words and is more than half the
-    length of the longer one.
-    """
-    score = strict_similarity(a, b)
-    na, nb = normalise(a), normalise(b)
-    shorter, longer = sorted((na, nb), key=len)
-    if shorter and shorter in longer and len(shorter.split()) >= 3 \
-            and len(shorter) / max(len(longer), 1) >= 0.5:
-        score = max(score, 0.85)
-    return score
-
-
-def load_site_chapters() -> dict:
-    dumper = ROOT / "tools" / "dump_chapters.js"
-    proc = subprocess.run(["node", str(dumper)], capture_output=True, cwd=str(ROOT))
-    if proc.returncode != 0:
-        sys.exit(proc.stderr.decode("utf-8", "replace"))
-    return {int(k): v for k, v in json.loads(proc.stdout.decode("utf-8")).items()}
+use_utf8_stdout()
 
 
 def tier_of(num: int, repeats: int) -> str:
@@ -126,15 +72,6 @@ def js_string(text: str) -> str:
     out = (text or "").replace("\\", "\\\\").replace('"', '\\"')
     out = out.replace("\n", " ").replace("\r", "")
     return re.sub(r"\s+", " ", out).strip()
-
-
-def norm_key(q: str) -> str:
-    """Compare two question texts ignoring case and punctuation."""
-    return re.sub(r"[^a-z0-9]+", " ", (q or "").lower()).strip()
-
-
-def numeric_tokens(text: str) -> set[str]:
-    return set(re.findall(r"\d+(?:\.\d+)?", text or ""))
 
 
 def already_present(bank_q: str, wordings: list[str], threshold: float = 0.8) -> str | None:
