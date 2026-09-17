@@ -26,6 +26,16 @@ _source/*
 # as a directory, and git will not descend into an ignored directory to find a
 # file that a later rule un-ignores.
 !_source/dcc/
+#
+# _source/syllabus/sim_syllabus.txt is the third committed source of record, and
+# it was the one that got left out. It is pages 12-14 of the university's
+# course-structure PDF, which lives outside the repository; tools/extract_
+# syllabus.py snapshots them here so that `--check` answers the same thing on a
+# machine that has that PDF and one that does not - its own docstring says a
+# check that depends on the machine is not a check. Without the exception below
+# the snapshot stayed on disk and the gate went red in CI the moment the site was
+# pushed, because a fresh clone has no `_source/syllabus/` at all.
+!_source/syllabus/
 
 # ============================================================================
 # The second course's uploaded material — input only, ~101 MB
