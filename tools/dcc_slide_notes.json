@@ -1,0 +1,17 @@
+{
+ "_comment": [
+  "One written line per picture on the DCC Reference tab: what the picture shows",
+  "and what is worth looking at in it. Read off the picture itself, in the notes'",
+  "voice - no deck talk, no 'this slide shows', no file names, one sentence. The",
+  "line becomes the picture's on-page note and its alt text, replacing the",
+  "'Illustration for 4.3.4 ...' that the slimming pass left behind in the alt.",
+  "tools/ref_slide_notes.py applies it, --check polices it, --restore inverts it.",
+  "A picture with no entry here is reported as pending rather than given filler."
+ ],
+ "notes": {
+  "ch2/lecturemain-ch-2-communication-in-ds-s06-009.webp": "The client blocks on a call that looks local and is not: the request travels to the server and the reply comes back, and everything the caller does not see is the two trips.",
+  "ch2/lecturemain-ch-2-communication-in-ds-s07-010.webp": "Count the ten steps between the client functions and the server functions - the call goes down both stubs and both kernels before any work happens, and the reply retraces the same ten in reverse.",
+  "ch2/messagepassing-refnote2-p09.webp": "Message queuing rather than message waiting: the sender writes into a queue it owns and returns, and the network carries the message across later - the channel attributes below list what that transfer has to decide.",
+  "ch2/lecturemain-ch-2-communication-in-ds-s22-015.webp": "What the three fault-tolerance measures buy: no retry and no duplicate filtering is only 'Maybe'; retrying without filtering re-executes for at-least-once; adding duplicate filtering gives at-most-once."
+ }
+}

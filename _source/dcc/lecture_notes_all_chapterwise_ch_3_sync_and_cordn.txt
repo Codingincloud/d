@@ -1,0 +1,1046 @@
+source: Lecture Notes - all Chapterwise\Chapter 3 - Synchronization and Coordination\Ch_3_Sync_and_Cordn.pptx
+method: pptx
+sha256: 9afd6848a07a508e72a9778ca277639279844096fcc7c37d07e64124a1a01e0b
+pages:  94
+ocr:    94 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+----- slide 1 -----
+Chapter 3
+Synchronization and Coordination
+DISTRIBUTED AND CLOUD COMPUTING
+KHWOPA ENGINEERING COLLEGE
+
+----- slide 2 -----
+Time in DS
+Most important practical issue and also problematic in DS, is the problems related to time.
+Example : we require computers around the world to timestamp electronic commerce transactions consistently. 
+Not only this, we need to theoretically understand how the distributed executions unfold in a system working in distributed environment.
+As each computer may have its own physical clock, the clocks typically deviate, and we cannot synchronize them perfectly.
+And also the absence of global physical time makes it difficult to find out the state of our distributed programs as they execute. 
+We often need to know what state process A is in when process B is in a certain state, but we cannot rely on physical clocks to know what is true at the same time.
+
+----- slide 3 -----
+Clock
+How a computer timer works?
+A counter register and a holding register.
+The counter is decremented by a quartz crystals oscillator. When it reaches zero, an interrupt is generated and the counter is reloaded from the holding register.
+e.g., interrupt 60 times per second.
+Each interrupt is called clock tick.
+
+----- slide 4 -----
+Why Time in Distributed Systems? 
+Precise performance measurements 
+Guarantee “up-to-date” or recentness of data 
+Temporal ordering of events produced by concurrent processes 
+Synchronization between senders and receivers of messages 
+Coordination of joint activities 
+Serialization of concurrent accesses to shared objects 
+…
+
+----- slide 5 -----
+Drift Rate 
+Is the rate at which the clock ticks. 
+Different clocks may have different drift rates and hence needs to be synchronized. 
+One can determine how often they should be synchronized
+Not all clocks tick precisely at the current rate.
+[in the slide picture] UTC- t
+
+----- slide 6 -----
+Physical Clocks
+Each computer has its own physical clocks; these clocks are electronic devices that count oscillations occurring in a crystal at a definite frequency, and typically divide this count and store the result in a counter register
+Clocks whose values must not deviate from the real time by more than a certain amount.
+Also, when the additional constraint is present, physical clocks must be the same.
+
+----- slide 7 -----
+Problems with different clocks
+There are several problems that occur as a consequence of clock rate differences. 
+Besides the incorrectness of the time itself, there are problems associated with clock skew that take on more complexity in a distributed system in which several computers will need to realize the same global time. 
+Example: in Unix systems the make command is used to compile new or modified code without the need to recompile unchanged code. The make command uses the clock of the machine it runs on, to determine which source files need to be recompiled. If the sources reside on a separate file server and the two machines have unsynchronized clocks, the make program might not produce the correct results 
+Hence there is a need of Clock Synchronization
+
+----- slide 8 -----
+Fig: When each machine has its own clock, an event that occurred after another event may nevertheless be assigned an earlier time
+[in the slide picture] Computer on
+which compiler
+runs
+which editor
+2144
+2142
+2145
+output.o created
+2143
+2146
+2147
+lime according
+to local clock
+
+----- slide 9 -----
+Event Ordering
+Since there is no common memory or clock, it is sometimes impossible to say which of two events occurred first. 
+The happened-before relation is a partial ordering of events in distributed systems such that 
+	1.If A and B are events in the same process, and A was executed before B, then A => B. 
+	2.If A is the event of sending a message by one process and B is the event of receiving that by 	another 	process, then A => B. 
+	3.If A => B and B => C, then A => C. 
+If two events A and B are not related by the => relation, then they are executed concurrently (no causal relationship) 
+To obtain a global ordering of all the events, each event can be time stamped satisfying the requirement: for every pair of events A and B, if A => B then the time stamp of A is less than the time stamp of B. (Note that the converse need not be true.)
+
+----- slide 10 -----
+Causal Ordering of Messages
+If M1 is sent before M2, then every recipient of both messages must get M1 before M2 
+underlying network will not necessarily give this guarantee. 
+Consider a replicated database system. Updates to the entries should be received in order! 
+Basic idea -- buffer a later message
+
+----- slide 11 -----
+Clock Synchronization Algorithms
+Physical Clock Synchronization
+Cristian's algorithm – Centralized System
+Network Time Protocol – Distributed System
+
+Logical Clock Synchronization
+Lamport timestamps – Distributed System
+Vector clocks – Distributed System
+
+----- slide 12 -----
+Cristian's algorithm
+Network Time Protocol (NTP)
+Physical Clock Synchronization
+
+----- slide 13 -----
+Cristian's algorithm
+Cristian's algorithm relies on the existence of a time server as a  physical clock synchronization algorithm.
+The time server maintains its clock by using a radio clock or other  accurate time source, then all other computers in the system stay  synchronized with it.
+A time client will maintain its clock by making a procedure call to  the time server.
+Variations of this algorithm make more precise time calculations by  factoring in network radio propagation time.
+
+----- slide 14 -----
+Cristian's algorithm
+The time server needs to change its time gradually
+The time server, while responding to a client, needs to  consider msg delays, 
+(T1 - T0 – I) which is called Round Trip Time (RTT)
+27
+Getting the current time from a time server
+[in the slide picture] (Tl - TO - 1) which is called
+Both To and Tl are measured with the same clock
+Req u est
+CUTC
+l, Interrupt handling time
+
+----- slide 15 -----
+Cristian's algorithm
+Cristian's Algorithm works between a process P, and a  time server S — connected to a source of UTC (Coordinated Universal Time). 
+
+The  algorithm goes like this.
+P requests the time from S
+After receiving the request from P, S  prepares a  response and appends the time T from its own  clock.
+P then sets its time to be T + RTT/2
+
+----- slide 16 -----
+Cristian's algorithm - Accuracy
+P needs to record the Round Trip Time (RTT) of the request it made  to S , so that it can set its clock to T + RTT/2.This method assumes  that the RTT is split equally between both request and response,  which may not always be the case but is a reasonable assumption on a  LAN connection.
+Further accuracy can be gained by making multiple requests to S  and  using the response with the shortest RTT.We can estimate the  accuracy of the system as follows.
+Let min be the minimum time to transmit a message one-way.The  earliest point at which S could have placed the time T, was min after P  sent its request.Therefore, the time at S, when the message is received  by P, is in the range (T + min) to (T + RTT - min).The width of this  range is (RTT - 2*min).This gives an accuracy of (RTT/2 - min).
+[in the slide picture] message is received by P, is in the range (T + min) to (T + RTF- min).The width ofthis range
+(RTT/2 - mill)
+
+----- slide 17 -----
+Cristian’s algorithm: example
+Send request at 5:08:15.100 (T0)
+Receive response at 5:08:15.900 (T1)
+Response contains 5:09:25.300 (Tserver)
+Round-trip time is T1 − T0
+5:08:15.900 - 5:08:15.100 = 800 ms
+Best guess: timestamp was generated 400 ms ago
+Set the local time to Tserver + round-trip-time/2
+5:09:25.300 + 400 = 5:09.25.700
+Accuracy: ± round-trip-time/2      server
+client
+T0
+T1
+T
+server
+
+----- slide 18 -----
+Network Time Protocol (NTP)
+Physical Clock Synchronization
+
+----- slide 19 -----
+Network Time Protocol (NTP)
+NTP is the most commonly used Internet time protocol and the one  provides best accuracy (RFC 1305, http://tf.nist.gov/service/its.htm ).
+
+Computers often include NTP software in OS. The client software  periodically gets updates from one or more servers (average them).
+
+Time servers listen to NTP requests on port 123, and reply a UDP/IP  data packet in NTP format, which is a 64-bit timestamp in UTC  seconds since Jan 1, 1900 with a resolution of 200 pico-s.
+
+Many NTP client software for PC only gets time from a single server  (no averaging). The client is called SNTP (Simple Network Time  Protocol, RFC 2030), a simple version of NTP.
+[in the slide picture] seconds since Jan l, 1900 with a resolution of 200 pico-s.
+
+----- slide 20 -----
+NTP synchronization subnet
+1st stratum: machines connected directly to accurate time source
+
+2nd stratum: machines synchronized from 1st stratum machines
+
+…
+[in the slide picture] stratum I
+stratum 2
+stratum 3
+
+----- slide 21 -----
+NTP goals
+Enable clients across Internet to be accurately synchronized  to UTC despite message delays
+Use statistical techniques to filter data and improve quality of
+results
+Provide reliable service
+Survive lengthy losses of connectivity
+Redundant paths
+Redundant servers
+Enable clients to synchronize frequently
+Adjustment of clocks by using offset (for symmetric mode)
+Provide protection against interference
+Authenticate source of data
+
+----- slide 22 -----
+NTP Synchronization Modes
+Multicast (for quick LANs, low accuracy)
+	server periodically multicasts its time to its clients in the  subnet
+
+Remote Procedure Call (medium accuracy)
+server responds to client requests with its actual timestamp
+like Cristian’s algorithm
+
+Symmetric mode (high accuracy)
+used to synchronize between the time servers (peer-peer)
+
+All messages delivered unreliably with UDP
+
+----- slide 23 -----
+NTP (Network Time Protocol)
+A requests time of B at its own T1
+B receives request at its T2, records
+B responds at its T3, sending values of T2 and T3
+A receives response at its T4.
+T2	T3
+Client A
+Server B
+T1
+T4
+23
+
+----- slide 24 -----
+NTP (Network Time Protocol)
+Question: what is θ= TB – TA?
+Assume transit time is approximately the same both ways
+Assume that B is the time server that A wants to synchronize to
+A
+B
+T1
+T2	T3
+T4
+24
+
+----- slide 25 -----
+NTP (Network Time Protocol)
+A knows (T4 – T1) from its own clock
+B reports T3 and T2 in response to NTP request
+A computes total transit time of
+
+T4  T1  T3  T2 
+A
+B
+T1
+T2	T3
+T4
+25
+
+----- slide 26 -----
+NTP (Network Time Protocol)
+2
+One-way transit time is approximately ½ total, i.e.,
+T4   T1  T3   T2 
+ T4   T1  T3   T2   T4   T1  T2   T3 
+2	2
+3
+T
+B’s clock at T4 reads approximately
+A
+B
+T1
+T2	T3
+T4
+26
+
+----- slide 27 -----
+NTP (Network Time Protocol)
+B’s clock at T4 reads approximately
+T4   T1  T2   T3 
+2
+Thus, difference between B and A clocks at T4 is
+T4   T1  T2   T3   T	 T2   T1  T3   T4 
+A
+B
+T1
+T2	T3
+T4
+4
+2
+2
+
+----- slide 28 -----
+Lamport’s	timestamps (Algorithm)
+Vector clocks (Algorithm)
+Logical Clock Synchronization
+
+----- slide 29 -----
+Clocks Synchronization and Reliability
+Always remember: the goal of clock synchronization is to minimize the  difference between the accepted actual time and the time on a given client  machine.
+When this is achieved, it can be said that in a given set of computers that  synchronize that their clocks are more closely in sync.
+Even in this case of more accurate and more often corrected for clocks,  developers of distributed systems should still be wary of relying on local  clock time.
+[in the slide picture] synchronize that their clocks are more closely in »c.
+
+----- slide 30 -----
+Because there are corrections going on, the time recorded for an  event might have actually happened at a different time on another  computer because of differing drift rates of those computer timers.
+Because we have correction of time does not mean that all machines  agree on time, it just means they are much closer to each other on  average.
+For some distributed systems, this may be sufficient, for others it may  not be.
+Clocks Synchronization and Reliability
+[in the slide picture] agee on time, it just means they are much closer to each other on
+
+----- slide 31 -----
+Logical Clocks
+Invented by Lamport (1978), it’s a simple mechanism by which the happened-before ordering can be captured numerically.
+A logical clock is a monotonically increasing software counter, whose value need bear no particular relationship to any physical clock.
+Each Process pi keeps its own logical clock, Li , which it uses to apply so-called Lamport timestamps to events.
+provides consistent event ordering 
+Example - it is adequate that all machines agree that it is 10:00 even if it is really 10:02. 
+	Meaning: it is the internal consistency of the clocks that matters, not whether they are particularly 	close to the real time
+
+----- slide 32 -----
+Lamport’s Logical Clocks
+Fig: The positioning of Lamport’ s logical clocks in distributed systems
+[in the slide picture] Application layer
+Application sends message
+Adjust local clock
+and timestamp message
+Middleware sends message
+Message is delivered to application
+Message is received
+Middleware layet
+Network layer
+
+----- slide 33 -----
+Lamport’s Algorithm
+Lamport invented a simple mechanism by which the happened-before ordering can be  captured numerically. 
+A  Lamport logical clock is a incrementing software counter  maintained in each process.
+Algorithm follows:
+A process increments its counter before each event in that process;
+When a process sends a message, it includes its counter value with the message;
+On receiving a message, the receiver process sets its counter to be greater than the maximum of  its own value and the received value before it considers the message received.
+Conceptually, this logical clock can be thought of as a clock that only has meaning in  relation to messages moving between processes. When a process receives a message, it  resynchronizes its logical clock with that sender.
+[in the slide picture] 3. On receiving a message, the receiver process sets its counter to be yeater than the
+
+----- slide 34 -----
+Example: Lamport’s Algorithm
+Three processes, each with its own clock. The clocks run at  different rates.
+Lamport’s Algorithm corrects the clock.
+(impossible)
+
+
+Note:	ts(A) < ts(B) does not imply A happened before B.
+
+----- slide 35 -----
+Lamport’s Considerations
+For every two events a and b occurring in the same process, and C(x)  being the timestamp for a certain event x, it is necessary that C(a)  never equals C(b).
+Therefore it is necessary that:
+The logical clock be set so that there is minimum of one clock  "tick" (increment of the counter) between events and ;
+In a multiprocess or multithreaded environment, it might be  necessary to attach the process ID (PID) or any other unique ID to  the timestamp so that it is possible to differentiate between events  and which may occur simultaneously in different processes.
+[in the slide picture] it is possible to differentiate between events and which nuy occur
+
+----- slide 36 -----
+Lamport's logical clock in distributed  systems
+In a distributed system, it is not possible in practice to synchronize time across  entities (typically thought of as processes) within the system; hence, the entities can  use the concept of a logical clock based on the events through which they  communicate.
+If two entities do not exchange any messages, then they probably do not need to  share a common clock; events occurring on those entities are termed as  concurrent events.
+Among the processes on the same local machine we can order the events based on  the local clock of the system.
+When two entities communicate by message passing, then the send event is said to  'happen before' the receive event, and the logical order can be established among  the events.
+A distributed system is said to have partial order if we can have a partial order  relationship among the events in the system. If 'totality', i.e., causal relationship  among all events in the system can be established, then the system is said to have  total order.
+[in the slide picture] thought of as processes) within the system; hence, the entities can use the concept of a clock
+If two entities do not exchange my messages, then they probably do not need to share a
+the receive event, and the order can be established among the events.
+
+----- slide 37 -----
+Update Ordering
+Problem: how to ensure that all sites recognize a fixed order on  updates, even if updates are delivered out of order?
+Solution: Assign timestamps to updates at their accepting site, and  order them by source timestamp at the receiver.
+Assign nodes unique IDs: break ties with the origin node ID.
+Problem: What (if different) ordering exists between updates  accepted by different sites?
+Comparing physical timestamps is arbitrary: physical clocks drift.
+Even a protocol to maintain loosely synchronized physical clocks cannot  assign a meaningful ordering to events that occurred at - almost exactly the  same time‖.
+[in the slide picture] ordering to events that occurred at -alnxKexactly the sarne timell.
+
+----- slide 38 -----
+Problem with Lamport Logical Clock
+Let timestamp(a) be the Lamport logical clock timestamp
+
+
+a => b => timestamp(a) < timestamp(b)
+(if	a happens before b, then Lamport_timestamp(a) <Lamport_timestamp(b))
+
+
+timestamp(a) < timestamp(b)	=>	a => b
+
+( If	Lamport_timestamp(a) < Lamport_timestamp(b), it does NOT truly  imply that a happened before b
+[in the slide picture] C] 1 ahappens before b,
+ruvrmpv a a
+appene e ore
+
+----- slide 39 -----
+Example
+p	1
+p	2
+p	3
+p	4
+1
+2
+2
+3
+3
+5
+4
+5
+7
+8
+9
+10
+6	7
+
+logically concurrent  events
+0
+0
+0
+0
+1
+2
+4
+3
+6
+8
+7
+n
+Clock Value
+timestamp
+Physical Time
+Message
+Note: Lamport Timestamps: 3 < 7, but event with timestamp 3 is concurrent to event with timestamp 7,  i.e., events are not in ‘happen-before’ relation.(we can not say 3 => 7)
+Cannot determine whether two events are causally related from timestamps
+
+----- slide 40 -----
+Limitations of Lamport’s Logical Clocks
+Lamport’s logical clocks lead to a situation where all events in a distributed system
+are totally ordered. That is, if A B, then we can say C(A) < C(B).
+Unfortunately, with Lamport’s clocks, nothing can be said about the actual time of A  and B. If the logical clock says A  B, that does not mean in reality that A  actually  happened before B in terms of real time.
+The problem with Lamport clocks is that they do not capture causality violations.
+If we know that A  C and B  C we cannot say which action initiated C.
+This kind of information can be important when trying to replay events in a  distributed system (such as when trying to recover after a crash).
+The theory goes that if one node goes down, if we know the causal relationships  between messages, then we can replay those messages and respect the causal  relationship to get that node back up to the state it needs to be in.
+[in the slide picture] and B. Ifthe clock says A -5 B, that does not mean in reality that A actually
+The theory goes that if one node goes down, if we Imow the causal relationships
+
+----- slide 41 -----
+5.1.3 Vector Clocks
+Vector clocks is an algorithm for generating a partial ordering of events in a distributed system and detecting causality violations.
+Just as in Lamport timestamps, inter-process messages contain the state of the sending process's logical clock.
+A vector clock of a system of N processes is an array/vector of N logical clocks, one clock per process; a local "smallest possible values" copy of the global clock-array is kept in each process
+
+----- slide 42 -----
+Vector  clocks, why do we need it??
+Logical clocks induce an order consistent with causality, but :
+the converse of the clock condition does not hold: it may be that LC(e1) < LC(e2) even if e1 and e2 are concurrent.
+If A could know anything before B knows, then it must be LCA > LCB.
+But if LCA > LCB then this doesn’t make it so; i.e., ―”false positives”.
+Concurrent updates may be ordered unnecessarily.
+We need a clock mechanism that is necessary and sufficient in capturing causality.
+[in the slide picture] LC(e2) even if el and e2 are concurrent.
+
+----- slide 43 -----
+[in the slide picture] Vector Clocks
+more detailed representation of what a site might know-
+1 - In a system with N nodes, each site keeps a vector timestamp
+TS[NI as well as a logical clock LC
+TSIil at site i is the most recent value of site js logical clock that site
+i Zheard about"-
+TSIil = LCB each site i keeps its own LC in TS[iJ.
+2- When site i generates a new event, it increments its logical clock.
+3- A site r observing an event (e.g., receiving a message) from site s
+sets its TSr to the paimrise maximum of TSC and TS
+For each site i, TSr[iJ = max (TSÆi], TSs[iJ)
+
+----- slide 44 -----
+Vector Clocks: Algorithm(Simple Version)
+Initially all clocks are zero. 
+Each time a process experiences an internal event, it increments its own logical clock in the vector by one. 
+Each time a process prepares to send a message, it increments its own logical clock in the vector by one and then sends its entire vector along with the message. 
+Each time a process receives a message, it increments its own logical clock in the vector by one and updates each element in its vector by taking the maximum of the value in its own vector clock and the value in the vector in the received message (for every element).
+
+----- slide 45 -----
+Vector Clock: Example
+[in the slide picture] Time
+BIO
+
+----- slide 46 -----
+[in the slide picture] Vector Clocks: Example
+(2,
+updates to the same data item,
+and neither timestamp dominates
+the other?
+
+----- slide 47 -----
+Causal Ordering of Message using Vector Clock
+Causal ordering of messages
+maintaining the same causal order of message receive events as message  sent
+that is: if Send (M1) → Send(M2) and Receive(M1) and Receive (M2) are
+on the same process than Receive(M1) → Receive(M2)
+causal ordering is useful, for example for replicated databases
+two algorithms using VC
+Birman-Schiper-Stephenson (BSS) causal ordering of broadcasts
+Schiper-Eggli-Sandoz (SES) causal ordering of regular messages
+basic idea – use VC to delay out of order message delivery
+
+----- slide 48 -----
+Causal Ordering of Message using Vector  Clock
+[in the slide picture] (0,1 (0,1
+
+----- slide 49 -----
+Mutual exclusion in DS
+There are three major communication scenarios:
+One-way Communication usually do not need mutual  exclusion.
+Client/server communication is for multiple clients  making service request to a shared server. If co-ordination  is required among the clients, it is handled by the server  and there is no explicit interaction among client process –  and hence no need of mutual exclusion
+Inter process communication: processes need to  exchange information to reach some conclusion about  the system or some agreement among the cooperating  processes.
+49
+
+----- slide 50 -----
+Background of Mutual Exclusion
+Inter Process Communication (IPC)
+Need to Access a Shared Resource (Memory)
+Critical Section (Region)
+A critical section is a section code or region in which a process(or thread)  competes in a potentially destructive way with another process(thread)  for access to a shared data item or file
+Race Condition
+a problem caused because of accessing the Critical Section by two or  more processes at the same time.
+Mutual Exclusion
+a solution to the Race Condition
+50
+[in the slide picture] o A critical section is a section or region in which a
+pmæss(orthread) competes in a potentially
+desfructive way with
+
+----- slide 51 -----
+Definition of Mutual Exclusion
+If two processes are allowed to concurrently be in competing  critical sections, then incorrect results may be computed –  called a Race Condition
+
+The process of ensuring that this destructive interaction does  no occur is called mutual exclusion (mutex).
+
+In other words, mutual exclusion is the process of making  only one process to enter into the critical section at the same  time.
+51
+[in the slide picture] no occur is called mutual (mutex).
+
+----- slide 52 -----
+52
+[in the slide picture] Mutual Exclusion
+• Very well-understood in shared memory
+systems
+Requirements:
+— at most one process in critical section (safety)
+— if more than one requesting process, someone enters
+(liveness)
+— a requesting process enters within a finite time (no
+starvation)
+— requests are granted in order (fairness)
+
+----- slide 53 -----
+Mutual Exclusion Algorithms
+There are two basic approaches to distributed mutual exclusion:
+Non-token-based (permission based):
+each process freely and equally competes for the right to use the shared  resource; requests are arbitrated by a central control site or by distributed  agreement.
+
+Token-based:
+a logical token representing the access right to the shared resource is passed  in a regulated fashion among the processes; whoever holds the token is  allowed to enter the critical section.
+53
+
+----- slide 54 -----
+Mutual Exclusion Algorithms
+Non-token based (permission based) Algorithms:
+Permission from a central Coordinator
+Central Coordinator Based Algorithm
+Permission from all (distributed) processes
+Lamport Algorithm
+Ricart Agarwala Algorithm
+
+Token Based Algorithm
+Token Ring Algorithm
+Suzuki Kasami Algorithm
+Raymond Algorithm
+Singhal Algorithm etc.
+54
+[in the slide picture] 2 löken
+11.
+
+----- slide 55 -----
+[in the slide picture] The Rican-Agrawala Algorithm
+Improvement over Lamport's
+Main Idea:
+- node j need not send a REPLY to node i if j has a request
+with timestamp lower than the request of i (since i cannot
+enter before j anyway in this case)
+Does not require FIFO
+2(n — 1) messages per critical section invocation
+Synchronization delay = max. message transmission time
+Requests granted in order of increasing timestamps
+
+----- slide 56 -----
+[in the slide picture] The Ricart-Agrawala Algorithm
+To request critical section:
+- send timestamped REQUEST message (tsi, i)
+On receiving request (tsi, i) at j:
+— send REPLY to i if j is neither requesting nor executing
+— if j is requesting and i's request timestamp is smaller than
+j's request timestamp. Otherwise, defer the request.
+i enters critical section on receiving REPLY from all nodes
+— send REPLY to all deferred requests
+
+----- slide 57 -----
+Example:
+[in the slide picture] request
+(15,2)
+(11,1)
+Pl gets the
+resource
+P2 gets the
+
+----- slide 58 -----
+Mutual Exclusion Algorithms
+Non-token based (permission based) Algorithms:
+Permission from a central Coordinator
+Central Coordinator Based Algorithm
+Permission from all (distributed) processes
+Lamport Algorithm
+Ricart Agarwala Algorithm
+
+Token Based Algorithm
+Token Ring Algorithm
+Suzuki Kasami Algorithm
+Raymond Algorithm
+Singhal Algorithm etc.
+[in the slide picture] 11.
+2 löken
+
+----- slide 59 -----
+[in the slide picture] Token based Algorithms
+Single token circulates, enter CS when token is present
+Mutual exclusion obvious
+Algorithms differ in how to find and get the token
+Uses sequence numbers rather than timestamps to
+differentiate between old and current requests
+
+----- slide 60 -----
+Token Based Algorithms
+A token is circulated in a logical ring.
+A process enters its CS if it has the token.
+Issues:
+If the token is lost, it needs to be regenerated.
+Detection of the lost token is difficult since there is no bound on  how long a process should wait for the token.
+If a process can fail, it needs to be detected and then by-passed.
+When nobody wants to enter, processes keep on exchanging
+messages to circulate the token
+
+----- slide 61 -----
+[in the slide picture] Token Ring Algorithm
+A very simple way to solve mutual exclusion
+arrange the n processes Pl, P2, ... Pn in a logical ring.
+The logical ring topology is created by giving each
+process the address of one other process which is its
+neighbour in the clockwise direction.
+The logical ring topology is unrelated to the physical
+interconnections between the computers.
+
+----- slide 62 -----
+Token Ring Algorithm
+
+----- slide 63 -----
+Token Ring Algorithm
+[in the slide picture] The token is initially given to one process.
+The token is passed from one process to its
+neighbour round the ring.
+When a process requires to enter the CS, it waits
+until it receives the token from its left neighbour and
+then it retains it; after it got the token it enters the
+CS; after it left the CS it passes the token to its
+neighbour in clockwise direction.
+When a process receives the token but does not
+require to enter the critical section, it immediately
+passes the token over along the ring.
+
+----- slide 64 -----
+Token Ring Algorithm
+[in the slide picture] It can take from 1 to n-1 messages to obtain a token.
+Messages are sent around the ring even when no
+process requires the token additional load on the
+network.
+The algorithm works well in heavily loaded situations,
+when there is a high probability that the process
+which gets the token wants to enter the CS. It works
+poorly in lightly loaded cases.
+If a process fails, no progress can be made until a
+reconfiguration is applied to extract the process from
+If the process holding the token fails, a unique
+process has to be picked, which will regenerate the
+token and pass it along the ring; an election algorithm
+(see later) has to be run for this purpose.
+
+----- slide 65 -----
+Election
+In distributed computing, leader election is the process of  designating a single process as the organizer of some task  distributed among several computers (nodes).
+Before the task is begun, all network nodes are unaware  which node will serve as the "leader," or coordinator, of the  task.
+After a leader election algorithm has been run, however, each  node throughout the network recognizes a particular, unique  node as the task leader.
+
+----- slide 66 -----
+Election Algorithm
+
+Many distributed algorithms require one  process to act as a coordinator or, in  general, perform some special role, and  that coordinator is selected using an  Election Algorithm
+
+----- slide 67 -----
+Need of Election Algorithm: Few Examples
+Clock Synchronization
+Berkeley Algorithm:To select a leader or master to take the responsibility of
+averaging the time.
+
+Mutual Exclusion
+Central coordinator algorithm: at initialization or whenever the coordinator  crashes, a new coordinator has to be elected
+Token ring algorithm: when the process holding the token fails, a new
+process has to be elected which generates the new token
+
+Any Distributed Computing
+A distributed algorithm is an algorithm, run on a distributed system,  that does not assume the previous existence of a central coordinator.
+Need to select a master to take the responsibility of distributing the sub-  problems among the slaves and collecting the partial results from them
+[in the slide picture] o Adistributed algorithm is an algorithm, run on a distributed system,
+o Need to select a master to take the responsibility of distributing the sub-
+
+----- slide 68 -----
+Election Algorithm: Basic Concepts (1)
+[in the slide picture] • Determine where a new copy of the coordinator should be
+restarted.
+• Assume that a unique priority number is associated with each
+active process in the system, and assume that the priority
+number of process PI is i.
+• Assume a one-to-one correspondence between processes and
+sites.
+• The coordinator is always the process with the largest priority
+number. When a coordinator fails, the algorithm must elect that
+active process with the largest priority number.
+
+----- slide 69 -----
+Election Algorithm: Basic Concepts (2)
+[in the slide picture] We consider that it doesn't matter which process is
+elected; what is important is that one and only one
+process is chosen (we call this process the
+coordinator) and all processes agree on this decision.
+We assume that each process has a unique number
+(identifier); in general, election algorithms attempt to
+locate the process with the highest number, among
+those which currently are up.
+Election is typically started after a failure occurs. The
+detection of a failure (e.g. the crash of the current
+coordinator) is normally based on time-out a
+process that gets no response for a period of time
+suspects a failure and initiates an election process.
+
+----- slide 70 -----
+Phases of Any Election Algorithm
+☞ An election process is typically performed in two phases:
+Select a leader with the highest priority.
+
+Inform all processes about the winner
+
+----- slide 71 -----
+Election Algorithms
+Here we will discuss the following two basic  Election algorithms
+
+Bully Algorithm
+
+Chang and Roberts algorithm (Ring  Algorithm)
+
+----- slide 72 -----
+Bully Algorithm
+This algorithm is applicable to elect a leader in a distributed  system connected with each other (say in a mesh topology).
+
+The bully algorithm is a method in distributed computing for  dynamically selecting a coordinator by process ID number.
+
+Assumptions
+The system is synchronous and uses timeout for identifying  process failure
+[in the slide picture] process milure
+
+----- slide 73 -----
+Bully Algorithm
+Message types
+Election Message : Sent to announce the election
+Answer Message : Respond to the election message
+Coordinator message: sent to announce the identity elected  process
+
+Compare with Ring algorithm:
+Assumes that system is synchronous
+Uses timeout to detect process failure/crash
+Each process knows which process has the higher identifier
+number and communicates with that
+[in the slide picture] o Mösage types
+
+----- slide 74 -----
+Bully Algorithm: Basic Steps
+When a process P determines that the current coordinator is down  because of message timeouts or failure of the coordinator to initiate a  handshake, it performs the following sequence of actions:
+P broadcasts an election message (inquiry) to all other processes with  higher process IDs.
+If P hears from no process with a higher process ID than it, it wins the  election and broadcasts victory.
+If P hears from a process with a higher ID, P waits a certain amount of  time for that process to broadcast itself as the leader. If it does not receive  this message in time, it re-broadcasts the election message.
+If P gets an election message (inquiry) from another process with a lower  ID it sends an "I am alive" message back and starts new elections.
+Note that if P receives a victory message from a process with a lower ID  number, it immediately initiates a new election. This is how the  algorithm gets its name - a process with a higher ID number will bully a  lower ID process out of the coordinator position as soon as it comes  online.
+[in the slide picture] If P hears from a process with a higher D, P waits a certain amount
+lower D it sends an "I am alive" message back and starts new
+gets its name - a process with a higher number will bully a lower
+
+----- slide 75 -----
+Example: Bully Election (1)
+OK
+OK
+P1
+P2
+P3
+P4
+P0
+P5
+1. P2 initiates election
+2. P2 receives “replies
+P1
+P2
+P3
+P4
+P0
+P5
+3. P3 & P4 initiate election
+P1
+P2
+P3
+P4
+P0
+P5
+4. P3 receives reply
+OK
+Election
+Election
+Election
+Election
+Election
+Election
+5. P4 receives no reply
+5. P4 announces itself
+coordinator
+
+----- slide 76 -----
+Bully Algorithm: Detailed Algorithm
+[in the slide picture] • Applicable to systems where every process can send a message
+to every other process in the system.
+• If process Pl sends a request that is not answered by the
+coordinator within a time interval T, assume that the coordinator
+has failed; Pl tries to elect itself as the new coordinator.
+• Pl sends an election message to every process with a higher
+priority number, Pl then waits for any of these processes to
+answer within T.
+
+----- slide 77 -----
+[in the slide picture] Bully Algorithm (Cont.)
+• If no response within T, assume that all processes with numbers
+greater than i have failed; Pl elects itself the new coordinator.
+• If answer is received, PI begins time interval T', waiting to receive
+a message that a process with a higher priority number has been
+elected.
+• If no message is sent within T', assume the process with a higher
+number has failed; Pl should restart the algorithm
+
+----- slide 78 -----
+[in the slide picture] Bully Algorithm (Cont.)
+• If Pl is not the coordinator, then, at any time during execution, Pl
+may receive one of the following two messages from process P].
+— P] is the new coordinator (j > 1). Pl, in turn, records this
+information.
+— e started an election (j > i). Pl, sends a response to PJ and
+begins its own election algorithm, provided that Pi has not
+already initiated such an election.
+• After a failed process recovers, it immediately begins execution
+of the same algorithm.
+• If there are no active processes with higher numbers, the
+recovered process forces all processes with lower number to let it
+become the coordinator process, even if there is a currently
+active coordinator with a lower number.
+
+----- slide 79 -----
+Bully Algorithm: Example (2)
+Process 4 holds an election
+Process 5 and 6 respond, telling 4 to stop
+Now 5 and 6 each hold an election
+[in the slide picture] Previous coordinator
+has crashed
+SOO
+
+----- slide 80 -----
+Bully Algorithm: Example (2)
+Process 6 tells 5 to stop
+Process 6 wins and tells everyone
+[in the slide picture] Coordinator
+
+----- slide 81 -----
+Election Algorithms
+Here we will discuss the following two basic  Election algorithms
+
+Bully Algorithm
+
+Chang and Roberts algorithm (Ring  Algorithm)
+
+----- slide 82 -----
+Chang and Roberts algorithm
+Chang and Roberts is a ring-based election algorithm used to find
+a process with the largest identification.
+
+It is a useful method of election in decentralized distributed  computing where the systems are connected in a logical or  physical ring.
+
+The algorithm works for any number of processes N, and does not  require any process to know how many processes are in the ring.
+
+Is often referred as a ring algorithm.
+
+----- slide 83 -----
+Pi
+[in the slide picture] Ring Algorithm
+• Applicable to systems organized as a ring (logically or
+physically).
+• Assumes that the links are unidirectional, and that processes
+send their messages to their right neighbors.
+• Each process maintains an active list, consisting of all the
+priority numbers of all active processes in the system when the
+algorithm ends.
+• If process Pl detects a coordinator failure, licreates a new
+active list that is initially empty. It then sends a message
+elect(i) to its right neighbor, and adds the number i to its active
+
+----- slide 84 -----
+[in the slide picture] Ring Algorithm (conte)
+If Pi receives a message elect(j) from the process on the left, it
+must respond in one of three ways:
++ If this is the first elect message it has seen or sent, Pi creates a new
+active list with the numbers i and j
+It then sends the message elect(i), followed by the
++ If i *j, then the active list for Pi now contains the numbers of all the
+active processes in the system
+Pi can now determine the largest number in the active list
+to identify the new coordinator process
+If i = j, then p i receives the message elect(i)
+The active list for Pi contains all the active processes in
+
+----- slide 85 -----
+Algorithm
+Initially each process in the ring is marked as non-participant.
+A process that notices a lack of leader starts an election. It creates an election  message containing its UID. It then sends this message clockwise to its neighbor.
+Every time a process sends or forwards an election message, the process also  marks itself as a participant.
+When a process receives an election message it compares the UID in the message  with its own UID.
+
+If the UID in the election message is larger, the process unconditionally forwards
+the election message  in a clockwise direction.
+If the UID in the election message is smaller, and the process is not yet a  participant, the process replaces the UID in the message with its own UID, sends  the updated election message in a clockwise direction.
+If the UID in the election message is smaller, and the process is already
+a participant (i.e., the process has already sent out an election message with a UID
+at least as large as its own UID), the process discards the election message.
+If the UID in the incoming election message is the same as the UID of the process,  that process starts acting as the leader.
+[in the slide picture] rmrks itself as a IVticipmt.
+
+----- slide 86 -----
+Algorithm (contd..)
+When a process starts acting as the leader, it begins the  second stage of the algorithm.
+The leader process marks itself as non-participant and sends  an elected message to its neighbor announcing its election and  UID.
+When a process receives an elected message, it marks itself
+as non-participant, records the elected UID, and forwards the
+elected message unchanged.
+When the elected message reaches the newly elected leader, the
+leader discards that message, and the election is over.
+[in the slide picture] an elected to its neighbor announcing its election and
+
+----- slide 87 -----
+Processes are organized in a logical ring.
+Any process that discovers the coordinator (leader) has failed initiates an “election” message. This is the initiator of the election.
+ The message is circulated around the ring, bypassing failed nodes.
+ Each node adds (appends)  its id:attr to the message as it passes it to the next node.
+ Once the message gets to the initiator, it elects the node with the best election attribute value. 
+It then sends a “coordinator” message with the id of the newly-elected coordinator. Again, each node adds (appends) its id to the end of the message.
+ Once “coordinator” message gets back to initiator,
+ election is over if  “coordinator”  is in id-list.
+ else the algorithm is repeated (handles election failure).
+Modification to Ring Election
+
+----- slide 88 -----
+Example 1 : Ring Election Algorithm
+Election: 2
+Election: 2, 3,4,0,1
+Election: 2,3,4
+Election: 2,3
+Coord(4): 2
+Coord(4): 2,3
+Coord(4) 2, 3,0,1
+Election: 2
+Election: 2,3
+Election:   2,3,0
+Election: 2, 3,0,1
+Coord(3): 2
+Coord(3): 2,3
+Coord(3):   2,3,0
+Coord(3): 2, 3,0,1
+1. P2 initiates election
+2. P2 receives “election”, 	P4 dies
+3. P2 selects 4 and announces the result
+4. P2 receives “Coord”, but P4 is not included
+5. P2 re-initiates election
+6. P3 is finally elected
+[in the slide picture] -dectio .
+
+----- slide 89 -----
+We start with 6 processes, connected in a  logical ring. Process 6 is the leader, as it  has the highest number.
+Process 6 fails
+Example 2 : Ring Election Algorithm
+[in the slide picture] Mé start with 6 processes, connected in a
+
+----- slide 90 -----
+Process 3 notices that Process 6 does not  respond So it starts an election, sending a  message containing its id  to the next  node in the ring.
+Process 5 passes the message on, adding its  own id to the message.
+[in the slide picture] Token Ring Ekction Alg)rithm: Step 2
+
+----- slide 91 -----
+Process 0 passes the message on,  adding its own id to the message.
+Process 1 passes the message on, adding  its own id to the message.
+[in the slide picture] 3tsp
+Token Ring Ekction Algorithm: Step 4
+Procös 0 passes the message on,
+
+----- slide 92 -----
+Process 4 passes the message  on, adding its own id to the  message.
+When Process 3 receives the message back, it knows  the message has gone around the ring, as its own id is  in the list.Picking the highest id in the list, it starts the  coordinator message "5 is the leader" around the ring.
+[in the slide picture] 3tSPJt4
+Tokai Ring Election Alg)rithm: Step 6
+Procös 4 passes the message
+
+----- slide 93 -----
+Process 5 passes on the coordinator  message.
+Process 0 passes on the
+coordinator message.
+[in the slide picture] 5 Is teader
+Tok«l Ring Ekction Algorithm: Steps
+S Is leader
+
+----- slide 94 -----
+Process 1 passes on the  coordinator message.
+Process 3 receives the coordinator  message, and stops it.
+[in the slide picture] S Is leader
+Tok«l Ring Election Algorithm: Step 10
+Process I passes on the
+mösage, and stops it.

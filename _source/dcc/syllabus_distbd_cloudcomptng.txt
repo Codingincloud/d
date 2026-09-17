@@ -1,0 +1,173 @@
+source: syllabus_Distbd_CloudComptng.pdf
+method: pdf
+sha256: 4e6e63f35274194530f1dfac614dc934b2bf2ed3a17e48bed8c54568b3e6b348
+pages:  5
+ocr:    5 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+===== page 1 =====  [ocr]
+Distributed & Cloud Computing
+Year:
+Teaching Schedule Hours/Week
+BCE7024
+Examination Schedule
+Final
+Semester: VII
+Total
+Internal Assessment Marks
+Theory
+Duration Marks
+Practical
+Duration Marks
+Credit
+Hours
+3
+Note:
+3
+1
+2
+Total
+6
+Theory
+Marks
+40
+Practical
+Marks
+25
+125
+L: Lecture
+3 Hrs.
+T: Tutorial
+60
+P: Practical
+Course Objectives:
+To understand the principles and architecture of distributed systems and cloud
+computing.
+To analyze the challenges in designing and implementing distributed systems.
+To introduce cloud models, services, and deployment strategies.
+To gain practical knowledge of cloud infrastructure and virtualization.
+To familiarize students with emerging trends like edge computing, containers, and
+serverless computing.
+Unit 1: Introduction to Distributed Systems (4 Hours)
+1.1 Definition and characteristics
+I .2 Goals of distributed systems
+1.3 Examples: Google File System, Hadoop, BitTorrent, etc.
+I .4 Models: Client-server, Peer-to-peer, Multitier
+Unit 2: Communication in Distributed Systems (7 Hours)
+2.1 Remote Procedure Calls (RPC)
+2.2 Remote Method Invocation (RMI)
+2.3 Message Passing and Serialization
+2.4 Sockets and Web services (REST & SOAP)
+Unit 3: Synchronization and Coordination (5 Hours)
+3.1 Clock Synchronization: Cristian's Algorithm, NTP
+
+
+===== page 2 =====  [ocr]
+3.2 Logical Clocks: Lamport's and Vector Clocks
+3.3 Mutual Exclusion Algorithms (Ricart-Agrawala, Token Ring)
+3.4 Election Algorithms (Bully, Ring)
+Unit 4: Distributed File Systems and Middleware (5 Hours)
+4.1 DFS concepts: Transparency, Naming, Replication, Consistency
+4.2 NFS, HDFS
+4.3 Middleware: CORBA, Java RMI, Messaging MQTT, AMQP
+nit 5: Introduction to Cloud Com utin (4 Hours)
+5.1 History and evolution of cloud
+5.2 Characteristics and benefits
+5.3 Cloud service models: IaaS, PaaS, SaaS
+5.4 Cloud deployment models: Public, Private, Hybrid, Community
+Unit 6: Virtualization and Cloud Architecture (6 Hours)
+6.1 Basics of virtualization: Hypervisors (Type I & II)
+6.2 Virtual Machines vs Containers
+6.3 Cloud reference architecture
+6.4 Resource management and provisioning
+nit 7: Cloud Platforms and Technologies (4 Hours)
+.1 Overview of AWS, Microsoft Azure, and Google Cloud
+17
+.2 Storage services (S3, Blob, etc.)
+7.3 Compute services (EC2, Lambda, GCE)
+Unit 8: Security and Challenges in Cloud (6 Hours)
+8.1 Data security, privacy, and compliance
+8.2 Identity and access management (IAM)
+8.3 Service Level Agreements (SLA)
+8.4 Cloud vulnerabilities and risk mitigation
+nit 9: Emerging Trends in Distributed and Cloud Computing (4 Hours)
+Edge and Fog Computing
+Serverless Architecture
+Kubernetes and Docker
+9.4 Cloud-native and Microservices
+
+
+===== page 3 =====  [ocr]
+Recommended Textbooks:
+l. "Distributed Systems: Concepts and Design" by George Coulouris, Jean Dollimore,
+Tim Kindberg, Gordon Blair (5th Edition)
+o Excellentfor understanding distributed system theory and design.
+2. "Cloud Computing: Theory and Practice" by Dan C. Marinescu (2nd Edition)
+o Covers cloud architecture, services, virtualization, and security.
+References:
+"Distributed and Cloud Computing: From Parallel Processing to the Internet of Things"
+by Kai Hwang, Jack Dongarra, Geoffrey Fox
+"Cloud Computing: Concepts, Technology & Architecture" by Thomas Erl
+"Designing Data-Intensive Applications" by Martin Kleppmann (for practical insights on
+distributed databases and systems)
+Official AWS/Azure documentation and tutorials for hands-on labs
+Tentative Marks Distribution:
+Chapter
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Total Marks
+Marks
+6
+10
+6
+6
+6
+8
+6
+8
+4
+60
+
+
+===== page 4 =====  [ocr]
+Program: BE Computer
+Semester: VII
+Purbanchal University
+Model Question 2025
+Subject: BCE 7024 Distributed & Cloud Computing
+Time: 3 hrs
+Full Marks: 60
+Pass Marks: 24
+Group A: Very Short Questions 2*4=8
+l. Define a distributed system.
+2. What is the difference between IaaS and PaaS?
+3. List any two clock synchronization algorithms used in distributed systems.
+4. What is virtualization in cloud computing?
+Group B: Short Questions (Answer any 7 questions)
+5. Explain the goals of distributed systems.
+6. Differentiate between client-server and peer-to-peer architectures with examples.
+7. Describe Remote Procedure Call (RPC) with its working mechanism.
+8. Explain Lamport s logical clock with a suitable example.
+9. Describe the concept of consistency in Distributed File Systems (DFS).
+IO. What are the key features and benefits of cloud computing?
+I I. Explain the difference between a hypervisor Type I and Type II.
+12. Briefly describe two challenges in ensuring security in cloud environments.
+Group C: Long Questions (Answer any three questions)
+13. Compare and contrast the public, private, hybrid, and community cloud deployment models
+with suitable use cases.
+
+
+===== page 5 =====  [ocr]
+14, Describe in detail the working and applications of the Bully election algorithm.
+15, Discuss cloud-native architecture. How do microservices, containers, and orchestration tools
+like Kubernetes support it? [4+4]
+16. Explain the architecture of HDFS. Discuss how it ensures fault tolerance and scalability.
+[4+4]

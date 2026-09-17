@@ -1,0 +1,496 @@
+source: Lecture Notes - all Chapterwise\Chapter 4 - Distributed File systems and Middleware\Chapter4_lecture_notes_all.pptx
+method: pptx
+sha256: 4af8726036046802cd9d2b89840eb01c1dd9b6a00372f028440a2eec64ae030e
+pages:  41
+ocr:    41 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+----- slide 1 -----
+Distributed and Cloud ComputingChapter 4 – Distributed File Systems and Middleware
+
+----- slide 2 -----
+Introduction to DISTRIBUTED FILE SYSTEMS
+A Distributed File System ( DFS ) is simply a classical model of a file system distributed across multiple machines. The purpose is to promote sharing of dispersed files.
+The resources on a particular machine are local to itself.   Resources on other machines are remote.
+A file system provides a service for clients. The server interface is the normal set of file operations: create, read, etc. on files.
+A distributed file system enables programs to store and access remote files exactly as they do on local ones, allowing users to access files from any computer on the network.
+Recent advances in higher bandwidth connectivity of switched local networks and disk organization have lead high performance and highly scalable file systems.
+
+----- slide 3 -----
+Contd..
+Clients, servers, and storage are dispersed across machines.
+Configuration and implementation may vary -
+Servers may run on dedicated machines, OR
+Servers and clients can be on the same machines.
+The OS itself can be distributed (with the file system a part of that distribution).
+A distribution layer can be interposed between a conventional OS and the file system.
+Clients should view a DFS the same way they would a centralized FS; the distribution is hidden at a lower level.
+Performance is concerned with throughput and response time.
+
+----- slide 4 -----
+The above figure provides an overview of types of storage systems, that work in  a distributed  environment.
+[in the slide picture] Sharing
+Main memolY
+File system
+Web
+Distlibuted shared memolY
+Remote objects (RMVORB)
+Persistent object store
+Peer-to-peer storage system
+tence
+cache/rep/icas
+Consistency
+Inaintenance
+Exalnple
+RAM
+Sun NFS
+Ivy (Ch. 18)
+CORBA
+Object Service
+OceanStore(Ch. 10)
+Figure 1. Storage systems and their properties
+
+----- slide 5 -----
+DFS concepts/requirements/design goals
+Transparency
+Concurrency
+Replication
+Heterogeneity
+Fault tolerance
+Consistency
+Security
+Efficiency
+
+----- slide 6 -----
+File Service Architecture
+An architecture that offers a clear separation of the main concern, in providing access to files, is  obtained by structuring the file service as three components:
+A flat file service
+A directory service
+A client module.
+
+----- slide 7 -----
+The Client module implements exported interfaces by flat file and directory services on server side.
+[in the slide picture] Clientcomputer
+Application Application
+program program
+Server computer
+Flat file service
+
+----- slide 8 -----
+Flat file service:
+Concerned with the implementation of operations on the contents of file. Unique File Identifiers (UFIDs) are used to refer to files in all requests for flat file service operations. UFIDs are long sequences of bits chosen so that each file has a unique among all of the files in a distributed system.
+Directory service:
+Provides mapping between text names for the files and their UFIDs. Clients may obtain the UFID of a file by quoting its text name to directory service. Directory service supports functions needed to generate directories, to add new files to directories.
+
+----- slide 9 -----
+Client Module
+It runs on each computer and provides integrated service (flat file and directory) as a single API to application programs. For example, in UNIX hosts, a client module emulates the full set of Unix file operations.
+It holds information about the network locations of flat-file and directory server processes; and achieve better performance through implementation of a cache of recently used file blocks at the client.
+
+----- slide 10 -----
+SUN NFS (Network File System)
+Developed by Sun Microsystems (in 1985)
+First commercially successful network file system
+Developed by Sun Microsystems for their diskless workstations
+Designed for robustness and adequate performance
+Sun published all protocol specifications 
+Overview
+Runs on SUN OS - NFS is both an implementation and a specification of how to access remote files. It's both definition and a specific instance.
+The goal is to share a file system in a transparent way.
+Uses client-server model ( for NFS, a node can be both simultaneously, can act between any two nodes ( no dedicated server. )
+
+----- slide 11 -----
+--Few things to know initially
+Stateful vs Stateless Service:
+Stateful:  A server keeps track of information about client requests. 
+It maintains what files are opened by a client; connection identifiers; server caches.
+Memory must be reclaimed when client closes file or when client dies.
+Performance is better for stateful. 
+Don't need to parse the filename each time, or "open/close" file on every request.
+Fault Tolerance: A stateful server loses everything when it crashes. 
+
+Stateless: Each client’s  request provides complete information needed by the server (i.e., filename, file offset ). 
+The server can maintain information on behalf of the client, but it's not required. 
+Fault Tolerance : Stateless remembers nothing so it can start easily after a crash.
+
+----- slide 12 -----
+Naming is the mapping between logical and physical objects.
+Example: A user filename maps to  <cylinder, sector>.
+In a conventional file system, it is understood as where the file actually resides; the system and disk are known. 
+In a transparent DFS, the location of a file, somewhere in the network, is hidden. 
+File replication means multiple copies of a file; mapping returns a SET of locations for the replicas.
+
+NAMING SCHEMES:
+There are three main approaches to naming files:
+1.  Files are named with a combination of host and local name. 
+This guarantees a unique name. NEITHER location transparent NOR location independent. 
+Same naming works on local and remote files. The DFS is a loose collection of independent file systems.
+2.  Remote directories are mounted to local directories. 
+local system seems to have a coherent directory structure in this scheme. 
+The remote directories must be explicitly mounted. The files are location independent. 
+SUN NFS is a good example of this technique
+3.  A single global name structure spans all the files in the system. 
+The DFS is built the same way as a local file system. Location independent.
+
+----- slide 13 -----
+IMPLEMENTATION TECHNIQUES:
+A  non-transparent   mapping technique:
+		name ----> < system, disk, cylinder, sector >
+A  transparent   mapping technique:
+		name ----> file_identifier ----> < system, disk, cylinder, sector >
+So when changing the physical location of a file, only the file identifier need be modified. This identifier must be "unique”.
+
+
+MOUNT 
+
+Mount – availability of files for users made possible by OS and storage services
+Mounting - Mounting a file system attaches that file system to a directory (mount point) and makes it available to the system. 
+The root ( / ) file system is always mounted. Any other file system can be connected or disconnected from the root ( / ) file system.
+
+----- slide 14 -----
+SUN NFS contd…
+NFS is stateless
+All client requests must be self-contained
+Machine and Operating System Independence
+Could be implemented on low-end machines of the mid-80’s
+Fast Crash Recovery
+Major reason behind stateless design
+Transparent Access
+Remote files should be accessed in exactly the same way as local files
+UNIX Semantics  maintained on client.
+
+Basic Design – 3 important part
+The protocol
+The server side
+The client side
+
+----- slide 15 -----
+SUN NFS Architecture
+[in the slide picture] UNIX
+Client computer
+Application
+program
+system calls—-
+file system
+Operations
+on local files
+Virtual
+remote files
+NFS protoco
+Server computer
+
+----- slide 16 -----
+The protocol
+Uses the Sun RPC mechanism and Sun eXternal Data Representation (XDR) standard
+Defined as a set of remote procedures
+Protocol is stateless
+Each procedure call contains all the information necessary to complete the call
+
+----- slide 17 -----
+Server side
+File handle consists of
+Filesystem id identifying disk partition
+I-node number identifying file within partition
+Generation number changed every time i-node is reused to store a new file
+Server will store
+Filesystem id in file system superblock
+I-node generation number in i-node
+
+----- slide 18 -----
+Client side
+Provides transparent interface to NFS
+Mapping between remote file names and remote file addresses is done in a server boot time through remote mount
+Extension of UNIX mounts
+Specified in a mount table
+Makes a remote subtree appear part of a local subtree
+New virtual file system interface supports
+VFS calls, which operate on whole file system
+VNODE calls, which operate on individual files
+Treats all files in the same fashion
+[in the slide picture] Client tree
+usr
+rmount
+bin
+Server subtree
+
+----- slide 19 -----
+Access Control and Authentication in NFS
+The NFS server is stateless server, so the user's identity and access rights must be checked by the server on each request.
+In the local file system they are checked only on the  file’s access permission attribute.
+ Every client request is accompanied by the userID and groupID, inserted by RPC system
+Kerberos has been integrated with NFS to provide a stronger and more comprehensive security solution
+
+----- slide 20 -----
+Issues in SUN NFS
+NFS root file systems cannot be shared
+Too many problems
+Clients can mount any remote subtree any way they want:
+Could have different names for same subtree by mounting it in different places
+NFS uses a set of basic mounted file systems on each machine and let users do the rest
+NFS passes user id, group id and groups on each call
+Requires same mapping from user id and group id to user on all machines
+NFS has no file locking
+In general, NFS tries to preserve UNIX open file semantics but does not always succeed
+If an opened file is removed by a process on another client, file is immediately deleted
+
+----- slide 21 -----
+Comparison of Different Distributed File Systems
+Issue | NFS | Coda | Plan 9 | xFS | SFS
+Design goals | Access transparency | High availability | Uniformity | Serverless system | Scalable security
+Access model | Remote | Up/Download | Remote | Log-based | Remote
+Communication | RPC | RPC | Special | Active msgs | RPC
+Client process | Thin/Fat | Fat | Thin | Fat | Medium
+Server groups | No | Yes | No | Yes | No
+Mount granularity | Directory | File system | File system | File system | Directory
+Name space | Per client | Global | Per process | Global | Global
+File ID scope | File server | Global | Server | Global | File system
+Sharing sem. | Session | Transactional | UNIX | UNIX | N/S
+Cache consist. | write-back | write-back | write-through | write-back | write-back
+Replication | Minimal | ROWA | None | Striping | None
+Fault tolerance | Reliable comm. | Replication and caching | Reliable comm. | Striping | Reliable comm.
+Recovery | Client-based | Reintegration | N/S | Checkpoint & write logs | N/S
+Secure channels | Existing mechanisms | Needham-Schroeder | Needham-Schroeder | No pathnames | Self-cert.
+Access control | Many operations | Directory operations | UNIX based | UNIX based | NFS BASED
+
+----- slide 22 -----
+Heterogeneity in Distributed Systems
+☞ Distributed applications are typically heterogeneous:
+different hardware: mainframes, workstations, PCs, servers, etc.
+different software: UNIX, MS Windows, IBM OS/2, Real-time OSs, etc.
+unconventional devices: teller machines, telephone switches, robots,  manufacturing systems, etc.
+diverse networks and protocols: Ethernet,FDDI, ATM, TCP/IP, Novell  Netware, etc.
+☞ Why?
+Different hardware/software solutions are considered to be optimal for  different parts of the system.
+Different users which have to interact are deciding for different  hardware/software solutions/vendors.
+Legacy systems.
+
+----- slide 23 -----
+Middleware
+A key component of a heterogeneous distributed client-server environment is  middleware.
+Middleware is a set of services that enable applications and end users to  interact with each other across a heterogeneous distributed system.  Middleware software resides above the network and below the application  software.
+
+----- slide 24 -----
+Middleware…
+Middleware should make the network transparent to the applications  and end users ⇒ users and applications should be able to perform the  same operations across the network that they can perform locally.
+Middleware should hide the details of computing hardware, OS,  software components across networks.
+Different kind of software qualifies, to certain extent, as middleware:
+File-transfer packages (FTP) and email;
+Web browsers;
+CORBA
+
+----- slide 25 -----
+CORBA Approach
+Object Management Group (OMG): a non-profit industry consortium  formed in 1989 with the goal to develop, adopt, and promote standards  for the development of distributed heterogeneous applications.
+One of the main achievements of OMG is the specification of a
+Common Object Request Broker Architecture (CORBA).
+The CORBA specification details the interfaces and characteristics of  the Object Request Broker; it practically specifies the middleware  functions which allow application objects to communicate with one  another no matter where they are located, who has designed them and  in which language they are implemented.
+OMG only provides a specification; there are several products which, to  a certain extent, implement the OMG specification.
+
+----- slide 26 -----
+CORBA…
+Key concepts:
+CORBA specifies the middleware services used by the application objects.
+An object can be a client, a server or both.
+Object interaction is through requests: the information associated with a  request is
+an operation to be performed
+a target object
+zero or more parameters.
+CORBA supports static as well as dynamic binding; dynamic binding between  objects uses runtime identification of objects and parameters.
+The interface represents the contract between client and server; an IDL has  been defined for CORBA; proxies and skeletons (client and server stubs) are  generated as result of IDL compilation.
+CORBA objects do not know the underlying implementation details; an  object adapter maps the generic model to a specific implementation.
+
+----- slide 27 -----
+CORBA…
+Components of a CORBA environment:
+[in the slide picture] Client
+Application 1
+Dynamic
+Invocation
+Interface
+Repository
+proxy
+(Static)
+Server Object
+Skeleton
+Adapter
+Imp emen on
+Object Request Broker (ORB)
+
+----- slide 28 -----
+Main components of CORBA Architecture
+[in the slide picture] client
+program forA core
+or dynamic invocation
+implementatio
+interface
+repository
+Re uest
+Reply
+server
+Servant
+or dynamic skeleton
+
+----- slide 29 -----
+Interface and Implementation Repository
+Interface Repository
+The interface repository provides a (standard) representation of available object interfaces  for all objects in the distributed environment. It corresponds to the server objects’ IDL  specification.
+The clients can access the interface repository to learn about the server objects, determine  the types of operations which can be invoked and the corresponding parameters. This is  used for dynamic invocation of objects.
+Implementation Repository
+Implementation details for the objects implementing each interface are stored in the  implementation repository:
+the main information is a mapping from the server object’s name to the file name which implements  the respective service;
+there is information concerning the object methods and information needed for method selection.
+Information stored in the implementation repository can be specific to the operating system running on  the respective server object’s computer.
+The representation in the implementation repository can be specific for certain CORBA  implementation.
+The implementation repository is used by the object adapter in order to solve an incoming call and  activate the right object method (via a server skeleton).
+
+----- slide 30 -----
+Implementation repository
+•
+Implementation repository
+it activates registered servers on demand and locates running servers
+it uses the object adapter name to register and activate servers.
+it stores a mapping from the names of object adapters to the  pathnames of files containing object implementations.
+when a server program is installed it can be registered with the  implementation repository.
+	when an object implementation is activated in a server, the hostname and  port number of the server are added to the mapping.
+Implementation repository entry:
+object adapter  name | pathname of object  implementation | hostname and port number  of server
+not all CORBA objects (e.g. call backs) need be activated on demand
+access control information can be stored in an implementation repository
+
+----- slide 31 -----
+Interface repository
+•
+it provides information about registered IDL interfaces
+for an interface of a given type it can supply the names of the methods and for  each method, the names and types of the arguments and exceptions.
+a facility for reflection in CORBA.
+if a client has a remote reference to a CORBA object, it can ask the interface  repository about its methods and their parameter types
+the client can use the dynamic invocation interface to construct an invocation  with suitable arguments and send it to the server.
+the IDL compiler gives a type identifier to each IDL type
+a type identifier is included in remote object references
+this type identifier is called the repository ID
+because the interface repository stoes interfaces against their IDs
+applications that use static invocation with client proxies and  IDL skeletons do not require an interface repository.
+Not all ORBs provide an interface repository.
+
+----- slide 32 -----
+CORBA remote object references
+•
+'interoperable object references' (IORs) – CORBA 2.0
+suitable whether or not the object is activatable.
+Transient IORs are for objects that last as long as the host process
+they contain the address of the server hosting the CORBA object
+The server ORB core receives the request message containing the object adapter  name and object name of the target. It uses the object adapter name to locate the  object adapter, which uses the object name to locate the servant.
+Persistent IORs last between activations
+they contain the address of the implementation repository
+the implementation repository receives the request and uses the object  adapter name to activate the object, then gives the server address to the client
+the client sends subsequent invocations to the server
+IOR format
+IDL interface type name | Protocol and address details |  |  | Object key | 
+interface repository  identifier | IIOP | host domain  name | port number | adapter name | object name
+[in the slide picture] 110P host domain port number
+
+----- slide 33 -----
+The Object Request Broker (ORB)
+ORB and its interfaces:
+[in the slide picture] Client
+proxy
+Server Object
+Dynamic
+Invocation
+S erxteorn
+Adapter
+ORB implementation dependent interface
+Interface identical for all ORB implementations
+Proxies and skeletons for each server interface
+
+----- slide 34 -----
+The Object Request Broker (ORB)…
+The ORB, through its interfaces, provides mechanisms by which objects  transparently interact with each other.
+Issuing of a request from a client can be dynamic or static; it is  performed through the proxies (client stubs) or the dynamic invocation  interface.
+Invocation of a specific server method is performed by the server  skeleton which gets the request forwarded from the object adapter.
+The ORB interface can be accessed also directly by clients and object  implementations for certain services: e.g. directory services, services  connected to naming, manipulation of object references.
+[in the slide picture] skeleton which gets the request fomarded from the object adapter.
+
+----- slide 35 -----
+Inter-ORB Architecture
+Implementations of ORBs differ from vendor to vendor ⇒ how do we  solve interaction between objects which are running on different CORBA  implementations?
+General Inter-ORB Protocol (GIOP): GIOP is defined in CORBA 2.0; it  specifies a set of message formats and common data representations for  interactions between ORBs and is intended to operate over any connection  oriented transport protocol.
+Internet Inter-ORB Protocol (IIOP): IIOP is a particularization of GIOP; it  specifies how GIOP messages have to be exchanged over a TCP/IP network.
+[in the slide picture] Client&Server
+GIOP/IIOP
+
+----- slide 36 -----
+Static and Dynamic Invocation
+CORBA allows both static and dynamic invocation of objects. The choice  is made depending on how much information, concerning the server  object, is available at compile time.
+Static Invocation
+Static invocation is based on compile time knowledge of the server’s  interface specification. This specification is formulated in IDL and is  compiled into a proxy (client stub), corresponding to the programming  language in which the client is encoded.
+For the client, an object invocation is like a local invocation to a proxy  method. The invocation is then automatically forwarded to the object  implementation through the ORB, the object adapter and the skeleton.
+Static invocation is efficient at run time, because of the relatively low  overhead
+[in the slide picture] method. The invocation is then automatically fomarded to the object
+
+----- slide 37 -----
+Static and Dynamic Invocation…
+Dynamic Invocation
+Dynamic invocation allows a client to invoke requests on an object without  having compile-time knowledge of the object’s interface.
+The object and its interface (methods, parameters, types) are detected at run  time. CORBA provides, through the dynamic invocation interface, the  mechanisms in order to inspect the interface repository, to dynamically  construct invocations and provide argument values corresponding to the  server’s interface specification.
+Once the request has been constructed and arguments placed, its invocation  has the same effect as a static invocation.
+The execution overhead of a dynamic invocation is huge.
+From the server’s point of view, static and dynamic invocation are identical;  the server does not know how it has been invoked. The server invocation is  always issued through its skeleton, generated at compile time from the IDL  specification.
+
+----- slide 38 -----
+The Basic Object Adapter
+The object adapter (OA) is the primary interface between the server  object implementation and the ORB.
+Services provided by the OA:
+Object registration: OA provides operations by which certain entities,  specified in a given programming language, are registered as CORBA  objects.
+Object reference generation: OA generates object references to  CORBA objects.
+Object upcalls: OA dispatches incoming requests to the corresponding  registered objects.
+Server process and object activation: if needed, OA starts up server  processes and activates objects as result of incoming invocations.
+[in the slide picture] CORBA0bjects.
+Secuec..umess...and...üiect...actiua.tim: if needed, OA starts up server
+
+----- slide 39 -----
+Object adapter
+•
+an object adapter bridges the gap between
+CORBA objects with IDL interfaces and the programming language interfaces of the corresponding servant (classes).
+it does the work of the remote reference and despatcher modules.
+An object adapter has the following tasks:
+it creates remote object references for CORBA objects;
+it dispatches each RMI via a skeleton to the appropriate servant;
+it activates objects.
+An object adapter gives each CORBA object a unique object  name.
+the same name is used each time an object is activated.
+it is specified by the application program or generated by the object adapter.
+Each active CORBA object is registered with its object adapter,
+which keeps a remote object table to maps names of CORBA objects to servants.
+Each object adapter has its own name - specified by the  application program or generated automatically.
+
+----- slide 40 -----
+CORBA Services
+These services, and others, have been specified by the CORBA documents; current  products implement only some of them.
+Naming and Trading Services:
+The basic way an object reference is generated, is at creation of the object when the  reference is returned.
+Object references can be stored together with associated information (e.g. names and  properties).
+The naming service allows clients to find objects based on names.
+The trading service allows clients to find objects based on their properties and allows CORBA objects to be located by attribute
+
+Security Service: protects components from unauthorized users; it provides authentication,  access control lists, confidentiality, etc.
+authentication of principals and access control of CORBA objects with policies
+auditing by servers, facilities for non-repudiation
+
+Time Service: provides interfaces for synchronizing time; provides operations for defining and  managing time-triggered events.
+
+----- slide 41 -----
+CORBA services
+•
+Event Service and Notification Service:
+in ES suppliers and consumers communicate via an event channel
+NS extends this to allow filtering and typed events
+Transaction service and concurrency control service
+TS provides flat or nested transactions
+provides two phase commit coordination among  recoverable components using transactions.
+CCS provides locking of CORBA objects
+provides a lock manager that can obtain and free locks for  transactions or threads.
+Persistent object service:
+for storing the state of CORBA objects in a passive form and retrieving it

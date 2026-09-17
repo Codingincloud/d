@@ -24,6 +24,44 @@ learn: `
 <p>And: <strong>Operational Model</strong> → (Calibration & Validation) → <strong>Real System</strong></p>
 </div>
 
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 700 420" role="img" aria-label="Triangle of three levels. The real system at the top. Comparing it with the conceptual model is conceptual validation. The conceptual model at the bottom left is turned into the operational model by model verification. Calibration and validation compares the operational model back with the real system.">
+
+<defs><marker id="fg5a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+
+<rect class="fig-node vio" x="250" y="30" width="200" height="56" rx="10"/>
+<text class="fig-t" x="350" y="56">Real system</text>
+<text class="fig-t sm" x="350" y="74">the thing being studied</text>
+
+<rect class="fig-node pri" x="40" y="290" width="220" height="56" rx="10"/>
+<text class="fig-t" x="150" y="316">Conceptual model</text>
+<text class="fig-t sm" x="150" y="334">assumptions and structure</text>
+
+<rect class="fig-node sec" x="440" y="290" width="220" height="56" rx="10"/>
+<text class="fig-t" x="550" y="316">Operational model</text>
+<text class="fig-t sm" x="550" y="334">the program that runs</text>
+
+<path class="fig-edge pri" d="M300,86 L190,286" marker-end="url(#fg5a)"/>
+<text class="fig-t sm" x="138" y="186">Conceptual</text>
+<text class="fig-t sm" x="138" y="202">validation</text>
+
+<path class="fig-edge" d="M260,318 H434" marker-end="url(#fg5a)"/>
+<text class="fig-t sm" x="350" y="306">Model verification</text>
+
+<path class="fig-edge sec" d="M600,290 L440,88" marker-end="url(#fg5a)"/>
+<text class="fig-t sm" x="620" y="186">Calibration &amp;</text>
+<text class="fig-t sm" x="620" y="202">validation</text>
+
+<text class="fig-t sm start" x="40" y="378">Verification  “is the model built correctly?”  compares conceptual ↔ operational.</text>
+<text class="fig-t sm start" x="40" y="396">Validation  “is it the correct model?”  compares operational ↔ real system.</text>
+
+</svg>
+
+<figcaption>Fig 5.1 — The three levels and the three comparisons. Each arrow is one named activity, and the names are what the question asks for: <strong>conceptual validation</strong> (real system ↔ conceptual model), <strong>model verification</strong> (conceptual ↔ operational), and <strong>calibration &amp; validation</strong> (operational ↔ real system). Getting the three pairs the wrong way round is the usual way to lose the marks. <button class="page-chip" type="button" data-page="n1p50">n1 p50</button></figcaption>
+
+</figure>
+
 <h2>5.2 Verification & Validation</h2>
 <div class="concept-box important">
 <h4>Key Distinction (Very Important for Exams!)</h4>
@@ -163,6 +201,10 @@ learn: `
 <tr><td><strong>2</strong></td><td>Extensive validation of the assumptions and of the input-output transformation has been carried out.</td></tr>
 <tr><td><strong>3</strong></td><td>The model gives acceptable results for a wide variety of test conditions and is accepted for the intended purpose. This is the target of a good simulation study.</td></tr>
 </table>
+<div class="concept-box warn">
+<h4>Provenance of this table and of Theil's coefficient</h4>
+<p>Neither the model-confidence ladder above nor <strong>Theil's inequality coefficient</strong> (named in the subjective/objective table earlier on this page, and in the model-building answer on the Past Questions tab) appears in the class notes (n1 p48–p53), the old question papers or the question bank. Both are standard validation literature added as extra context, so do not quote them as if the notes stated them. What <em>is</em> on record — and therefore examinable — is the Naylor &amp; Finger three-step process above and the verification / validation / calibration distinction in §5.2–§5.4.</p>
+</div>
 
 <h3>Why Validation is Difficult — Sources of Invalidity</h3>
 <ul>
@@ -228,8 +270,32 @@ past: [
 <li><strong>Construct conceptual model</strong> with assumptions (component, structure, data)</li>
 <li><strong>Construct operational model</strong> in simulation software</li>
 </ol>
-<p><strong>Diagram:</strong></p>
-<p>Real System ←→ Conceptual Model ←→ Operational Model</p>
+<p><strong>Diagram:</strong> the three levels and the three comparisons the marks are awarded for:</p>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 700 420" role="img" aria-label="Triangle of three levels. The real system at the top. Comparing it with the conceptual model is conceptual validation. The conceptual model at the bottom left is turned into the operational model by model verification. Calibration and validation compares the operational model back with the real system.">
+<defs><marker id="fg5b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+<rect class="fig-node vio" x="250" y="30" width="200" height="56" rx="10"/>
+<text class="fig-t" x="350" y="56">Real system</text>
+<text class="fig-t sm" x="350" y="74">the thing being studied</text>
+<rect class="fig-node pri" x="40" y="290" width="220" height="56" rx="10"/>
+<text class="fig-t" x="150" y="316">Conceptual model</text>
+<text class="fig-t sm" x="150" y="334">assumptions and structure</text>
+<rect class="fig-node sec" x="440" y="290" width="220" height="56" rx="10"/>
+<text class="fig-t" x="550" y="316">Operational model</text>
+<text class="fig-t sm" x="550" y="334">the program that runs</text>
+<path class="fig-edge pri" d="M300,86 L190,286" marker-end="url(#fg5b)"/>
+<text class="fig-t sm" x="138" y="186">Conceptual</text>
+<text class="fig-t sm" x="138" y="202">validation</text>
+<path class="fig-edge" d="M260,318 H434" marker-end="url(#fg5b)"/>
+<text class="fig-t sm" x="350" y="306">Model verification</text>
+<path class="fig-edge sec" d="M600,290 L440,88" marker-end="url(#fg5b)"/>
+<text class="fig-t sm" x="620" y="186">Calibration &amp;</text>
+<text class="fig-t sm" x="620" y="202">validation</text>
+<text class="fig-t sm start" x="40" y="378">Verification  “is the model built correctly?”  compares conceptual ↔ operational.</text>
+<text class="fig-t sm start" x="40" y="396">Validation  “is it the correct model?”  compares operational ↔ real system.</text>
+</svg>
+<figcaption>Fig 5.1 — The three levels and the three comparisons. Each arrow is one named activity, and the names are what the question asks for: <strong>conceptual validation</strong> (real system ↔ conceptual model), <strong>model verification</strong> (conceptual ↔ operational), and <strong>calibration &amp; validation</strong> (operational ↔ real system). Getting the three pairs the wrong way round is the usual way to lose the marks. <button class="page-chip" type="button" data-page="n1p50">n1 p50</button></figcaption>
+</figure>
 <ul>
 <li><strong>Conceptual Validation:</strong> Real System ↔ Conceptual Model</li>
 <li><strong>Model Verification:</strong> Conceptual Model ↔ Operational Model</li>

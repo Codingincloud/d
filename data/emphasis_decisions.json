@@ -1,0 +1,8043 @@
+{
+ "_comment": [
+  "Every <strong> run in the nine DCC units, and the rule that decided",
+  "it - written by tools/emphasis_audit.py --apply and re-derived by",
+  "--check. A bold run that no entry here explains is the defect the",
+  "check fails on. `fate` is what the pass DID; the rule names why."
+ ],
+ "budget": {
+  "max_words_per_run": 4,
+  "max_runs_per_section": 3,
+  "max_runs_per_cell": 1
+ },
+ "runs": [
+  {
+   "chapter": "ch1.js",
+   "section": "1.1 Definition and characteristics",
+   "words": 2,
+   "text": "distributed system",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1 Definition and characteristics",
+   "words": 2,
+   "text": "Autonomous elements",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1 Definition and characteristics",
+   "words": 2,
+   "text": "Message passing",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1 Definition and characteristics",
+   "words": 3,
+   "text": "One coherent system",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.1 The three characteristics the definition implies",
+   "words": 1,
+   "text": "Concurrency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.1 The three characteristics the definition implies",
+   "words": 3,
+   "text": "No global clock",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.1 The three characteristics the definition implies",
+   "words": 2,
+   "text": "Independent failures",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.2 Further characteristics",
+   "words": 1,
+   "text": "Heterogeneity",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.2 Further characteristics",
+   "words": 1,
+   "text": "Openness",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.2 Further characteristics",
+   "words": 1,
+   "text": "Security",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.2 Further characteristics",
+   "words": 1,
+   "text": "Scalability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.2 Further characteristics",
+   "words": 1,
+   "text": "Transparency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.2 Further characteristics",
+   "words": 2,
+   "text": "Fault tolerance",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 1,
+   "text": "Economics",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 1,
+   "text": "Security",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 1,
+   "text": "Scalable",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 3,
+   "text": "Loss of data",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 1,
+   "text": "Sharing",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 1,
+   "text": "Complexity",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 1,
+   "text": "Flexibility",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 3,
+   "text": "Distribution of control",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 1,
+   "text": "Communication",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.1.3 Advantages and disadvantages",
+   "words": 1,
+   "text": "Availability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 2,
+   "text": "Cost-effective implementation",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Collaboration",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 2,
+   "text": "Security cost",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 4,
+   "text": "IDL (Interface Definition Language)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 4,
+   "text": "What the IDL states",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Interoperability",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Portability",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Access",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Location",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Migration",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Relocation",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Replication",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Concurrency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Failure",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Persistence",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 4,
+   "text": "Cost of physical resources",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 2,
+   "text": "Performance loss",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 2,
+   "text": "Software resources",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2 Goals of distributed systems",
+   "words": 1,
+   "text": "Bottlenecks",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 1,
+   "text": "Middleware",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 2,
+   "text": "Internet protocols",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 2,
+   "text": "Mobile code",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 1,
+   "text": "Availability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 1,
+   "text": "Reliability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 2,
+   "text": "Fault tolerance",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 1,
+   "text": "Dependability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 1,
+   "text": "Encryption",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 1,
+   "text": "Authentication",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 1,
+   "text": "Authorisation",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 3,
+   "text": "Denial of service",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 3,
+   "text": "Mobile code security",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 2,
+   "text": "Trust boundary",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 2,
+   "text": "Size scalability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 2,
+   "text": "Geographical scalability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.1 Main problems and challenges",
+   "words": 2,
+   "text": "Administrative scalability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.2 Resource sharing, and what a service is",
+   "words": 3,
+   "text": "Users share resources",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.2 Resource sharing, and what a service is",
+   "words": 4,
+   "text": "A service manages them",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.2.2 Resource sharing, and what a service is",
+   "words": 4,
+   "text": "Remote invocation needs communication",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.3.1 The Web as a distributed system",
+   "words": 2,
+   "text": "Dangling links",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.3.1 The Web as a distributed system",
+   "words": 2,
+   "text": "Slow response",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.3.1 The Web as a distributed system",
+   "words": 3,
+   "text": "No proper interface",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "request/reply",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "Request",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "Processing",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "Reply",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "RPC",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "RMI",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "Roles",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "Strength",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "Weakness",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.1 Client-server",
+   "words": 1,
+   "text": "Examples",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.2 Peer-to-peer",
+   "words": 2,
+   "text": "same role",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.2 Peer-to-peer",
+   "words": 1,
+   "text": "Placement",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.2 Peer-to-peer",
+   "words": 1,
+   "text": "Discovery",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.2 Peer-to-peer",
+   "words": 1,
+   "text": "Exchange",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.2 Peer-to-peer",
+   "words": 1,
+   "text": "Replication",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.2 Peer-to-peer",
+   "words": 1,
+   "text": "Authority",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.2 Peer-to-peer",
+   "words": 1,
+   "text": "Availability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.2 Peer-to-peer",
+   "words": 1,
+   "text": "Cost",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.2 Peer-to-peer",
+   "words": 1,
+   "text": "Example",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.3 Multitier",
+   "words": 1,
+   "text": "Presentation",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.3 Multitier",
+   "words": 2,
+   "text": "Application (logic)",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.3 Multitier",
+   "words": 1,
+   "text": "Data",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.4 Fundamental models",
+   "words": 2,
+   "text": "Interaction model",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.4 Fundamental models",
+   "words": 2,
+   "text": "Failure model",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.4 Fundamental models",
+   "words": 2,
+   "text": "Security model",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.4 Fundamental models",
+   "words": 3,
+   "text": "Assumption about time",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.4 Fundamental models",
+   "words": 2,
+   "text": "Process execution",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.4 Fundamental models",
+   "words": 2,
+   "text": "Message delivery",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.4 Fundamental models",
+   "words": 1,
+   "text": "Clocks",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.4 Fundamental models",
+   "words": 1,
+   "text": "Consequence",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Cluster",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Homogeneity",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Grid",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Heterogeneity",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Cloud",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Fabric",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Connectivity",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Resource",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Collective",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch1.js",
+   "section": "1.4.5 Types: cluster, grid and cloud",
+   "words": 1,
+   "text": "Application",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.0 Distributed objects - the starting point",
+   "words": 1,
+   "text": "RMI",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 1,
+   "text": "Reference",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 9,
+   "text": "A pointer or reference into the same address space.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 9,
+   "text": "A reference must be meaningful in another address space.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 2,
+   "text": "Request latency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 3,
+   "text": "A few instructions.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 5,
+   "text": "Every call crosses a network.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 2,
+   "text": "Object activation",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 5,
+   "text": "The object is in memory.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 8,
+   "text": "The remote object may not be instantiated yet.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 1,
+   "text": "Parallelism",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 7,
+   "text": "Two calls on one object are serialised.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 8,
+   "text": "Calls can arrive from several clients at once.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 1,
+   "text": "Failure",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 9,
+   "text": "Either the whole process works or it does not.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 4,
+   "text": "Partial failure can happen.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 1,
+   "text": "Security",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 5,
+   "text": "Enforced by the operating system.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 4,
+   "text": "Data crosses a network.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 4,
+   "text": "Remote Procedure Call (RPC)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "Where a local object and a distributed object differ",
+   "words": 4,
+   "text": "Remote Method Invocation (RMI)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1 Remote Procedure Calls (RPC)",
+   "words": 2,
+   "text": "service interface",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1 Remote Procedure Calls (RPC)",
+   "words": 2,
+   "text": "request-reply protocol",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1 Remote Procedure Calls (RPC)",
+   "words": 2,
+   "text": "access transparency",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.1 How RPC works in ten steps",
+   "words": 1,
+   "text": "marshalling",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.1 How RPC works in ten steps",
+   "words": 1,
+   "text": "Marshalling",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.1 How RPC works in ten steps",
+   "words": 1,
+   "text": "unmarshalling",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.2 Advantages and disadvantages",
+   "words": 4,
+   "text": "slower due to overheads",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.2 Advantages and disadvantages",
+   "words": 2,
+   "text": "access transparency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.2 Advantages and disadvantages",
+   "words": 4,
+   "text": "Non-flexible for hardware architectures",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.2 Advantages and disadvantages",
+   "words": 2,
+   "text": "Code reusability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.2 Advantages and disadvantages",
+   "words": 3,
+   "text": "remote object reference",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.3 RPC issues - the five things that go wrong",
+   "words": 3,
+   "text": "Lost request message",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.3 RPC issues - the five things that go wrong",
+   "words": 3,
+   "text": "Lost reply message",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.3 RPC issues - the five things that go wrong",
+   "words": 2,
+   "text": "Server crash",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.3 RPC issues - the five things that go wrong",
+   "words": 2,
+   "text": "Client crash",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.3 RPC issues - the five things that go wrong",
+   "words": 2,
+   "text": "call semantics",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.4 Call semantics",
+   "words": 2,
+   "text": "Exactly once",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.4 Call semantics",
+   "words": 3,
+   "text": "At most once",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.4 Call semantics",
+   "words": 3,
+   "text": "At least once",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.4 Call semantics",
+   "words": 2,
+   "text": "Last once",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.4 Call semantics",
+   "words": 2,
+   "text": "Last-of-many call",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.4 Call semantics",
+   "words": 3,
+   "text": "neglects orphan calls",
+   "fate": "drop",
+   "rule": "a table cell's prose, not a label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.4 Call semantics",
+   "words": 1,
+   "text": "idempotent",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.5 Providing a reliable request-reply protocol",
+   "words": 3,
+   "text": "Retry request message",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.5 Providing a reliable request-reply protocol",
+   "words": 2,
+   "text": "Duplicate filtering",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.5 Providing a reliable request-reply protocol",
+   "words": 3,
+   "text": "Retransmission of results",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.1.5 Providing a reliable request-reply protocol",
+   "words": 4,
+   "text": "history of result messages",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.1 What a remote invocation requires",
+   "words": 3,
+   "text": "remote object reference",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.1 What a remote invocation requires",
+   "words": 2,
+   "text": "remote interface",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.1 What a remote invocation requires",
+   "words": 2,
+   "text": "remote object",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.1 What a remote invocation requires",
+   "words": 3,
+   "text": "remote object reference",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.2 The RMI software - five roles to name",
+   "words": 2,
+   "text": "Server threads",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.2 The RMI software - five roles to name",
+   "words": 1,
+   "text": "server",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.2 The RMI software - five roles to name",
+   "words": 1,
+   "text": "client",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.3 The remote interface - how it is declared",
+   "words": 1,
+   "text": "IDL",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.3 The remote interface - how it is declared",
+   "words": 3,
+   "text": "Invocation semantics used",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.3 The remote interface - how it is declared",
+   "words": 1,
+   "text": "IDL",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.3 The remote interface - how it is declared",
+   "words": 1,
+   "text": "maybe",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.4 Design issues in RMI",
+   "words": 3,
+   "text": "programming with interfaces",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.4 Design issues in RMI",
+   "words": 2,
+   "text": "call semantics",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.4 Design issues in RMI",
+   "words": 3,
+   "text": "level of transparency",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.4 Design issues in RMI",
+   "words": 4,
+   "text": "Level of location transparency",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.4 Design issues in RMI",
+   "words": 2,
+   "text": "Exactly once",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.4 Design issues in RMI",
+   "words": 1,
+   "text": "Maybe",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.4 Design issues in RMI",
+   "words": 1,
+   "text": "At-least-once",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.4 Design issues in RMI",
+   "words": 1,
+   "text": "At-most-once",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.5 Location transparency, and why it causes failure and latency",
+   "words": 2,
+   "text": "Access transparency",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.5 Location transparency, and why it causes failure and latency",
+   "words": 2,
+   "text": "Location transparency",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.6 Java RMI case study",
+   "words": 2,
+   "text": "single-language system",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.6 Java RMI case study",
+   "words": 2,
+   "text": "concurrent environment",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.6 Java RMI case study",
+   "words": 2,
+   "text": "remote interface",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.6 Java RMI case study",
+   "words": 2,
+   "text": "remote object",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.6 Java RMI case study",
+   "words": 1,
+   "text": "client",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.2.6 Java RMI case study",
+   "words": 1,
+   "text": "server",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3 Message Passing and Serialization",
+   "words": 2,
+   "text": "message-passing model",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3 Message Passing and Serialization",
+   "words": 1,
+   "text": "serialization",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.1 Shared memory versus distributed memory",
+   "words": 1,
+   "text": "Model",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.1 Shared memory versus distributed memory",
+   "words": 1,
+   "text": "Advantages",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.1 Shared memory versus distributed memory",
+   "words": 1,
+   "text": "Limitations",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.1 Shared memory versus distributed memory",
+   "words": 2,
+   "text": "locality explicit",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.2 The message-passing model",
+   "words": 3,
+   "text": "no shared data",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.2 The message-passing model",
+   "words": 1,
+   "text": "mail",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.2 The message-passing model",
+   "words": 4,
+   "text": "packets over the network",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.3 Collective calls and SPMD",
+   "words": 1,
+   "text": "SPMD",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.3 Collective calls and SPMD",
+   "words": 2,
+   "text": "collective calls",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.3 Collective calls and SPMD",
+   "words": 3,
+   "text": "not in lockstep",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.4 MPI - the real message-passing system",
+   "words": 1,
+   "text": "MPI_Finalize()",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.4 MPI - the real message-passing system",
+   "words": 4,
+   "text": "the number of processes",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.5 What implementing message passing actually costs",
+   "words": 3,
+   "text": "Data copying cost",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.5 What implementing message passing actually costs",
+   "words": 1,
+   "text": "Packetization",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.5 What implementing message passing actually costs",
+   "words": 2,
+   "text": "Tag matching",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.5 What implementing message passing actually costs",
+   "words": 2,
+   "text": "Progress engine",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.5 What implementing message passing actually costs",
+   "words": 4,
+   "text": "data transfer plus synchronisation",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.6 Messaging protocols: short, eager and rendezvous",
+   "words": 2,
+   "text": "envelope (header)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.6 Messaging protocols: short, eager and rendezvous",
+   "words": 1,
+   "text": "Short",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.6 Messaging protocols: short, eager and rendezvous",
+   "words": 1,
+   "text": "Eager",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.6 Messaging protocols: short, eager and rendezvous",
+   "words": 1,
+   "text": "Rendezvous",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.6 Messaging protocols: short, eager and rendezvous",
+   "words": 4,
+   "text": "header is sent first",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.7 Persistence and synchronicity - from the reference notes",
+   "words": 2,
+   "text": "token bucket",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.7 Persistence and synchronicity - from the reference notes",
+   "words": 4,
+   "text": "broker with conversion rules",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.7 Persistence and synchronicity - from the reference notes",
+   "words": 4,
+   "text": "interleaving of two streams",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.7 Persistence and synchronicity - from the reference notes",
+   "words": 1,
+   "text": "Persistence",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.7 Persistence and synchronicity - from the reference notes",
+   "words": 1,
+   "text": "Synchronicity",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.8 Serialization",
+   "words": 1,
+   "text": "marshalling",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.8 Serialization",
+   "words": 1,
+   "text": "Marshalling",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.8 Serialization",
+   "words": 1,
+   "text": "Unmarshalling",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.8 Serialization",
+   "words": 1,
+   "text": "Serialization",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.3.8 Serialization",
+   "words": 2,
+   "text": "Representation mismatch",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.1 Sockets",
+   "words": 2,
+   "text": "endpoint object",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.1 Sockets",
+   "words": 3,
+   "text": "client thread's socket",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.1 Sockets",
+   "words": 2,
+   "text": "server's socket",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.1 Sockets",
+   "words": 2,
+   "text": "server accepts",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.1 Sockets",
+   "words": 2,
+   "text": "either direction",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.1 Sockets",
+   "words": 3,
+   "text": "like file I/O",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.2 Why web services exist",
+   "words": 2,
+   "text": "web service",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.2 Why web services exist",
+   "words": 3,
+   "text": "standard web protocols",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.2 Why web services exist",
+   "words": 1,
+   "text": "HTTP",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.3 The two generations and their stacks",
+   "words": 1,
+   "text": "SOAP",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.3 The two generations and their stacks",
+   "words": 1,
+   "text": "REST",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.3 The two generations and their stacks",
+   "words": 4,
+   "text": "the preferred model today",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 2,
+   "text": "Full name",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 4,
+   "text": "Simple Object Access Protocol",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 3,
+   "text": "Representational State Transfer",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 1,
+   "text": "Messaging",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 4,
+   "text": "SOAP envelopes the message.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 8,
+   "text": "Uses the HTTP headers to hold meta information.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 2,
+   "text": "Data format",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 2,
+   "text": "XML based.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 10,
+   "text": "Can be used with XML, JSON or whatever is necessary.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 2,
+   "text": "API description",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 1,
+   "text": "WSDL",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 1,
+   "text": "WADL",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 2,
+   "text": "HTTP methods",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 5,
+   "text": "Used mainly as a transport.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 5,
+   "text": "Uses the standard HTTP methods.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 1,
+   "text": "Speed",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 3,
+   "text": "Slower than REST.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 3,
+   "text": "Faster than SOAP.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 3,
+   "text": "Maturity and fit",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 6,
+   "text": "Very mature, a lot of functionality.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 3,
+   "text": "Lightweight and flexible.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 2,
+   "text": "Example tooling",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 6,
+   "text": "Visual Studio: ASP.NET ASMX Web Service.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.4 SOAP versus REST - the comparison to reproduce",
+   "words": 5,
+   "text": "Visual Studio: ASP.NET Web API.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.5 A 3-tier architecture with a web service",
+   "words": 1,
+   "text": "presentation",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.5 A 3-tier architecture with a web service",
+   "words": 1,
+   "text": "logic",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch2.js",
+   "section": "2.4.5 A 3-tier architecture with a web service",
+   "words": 1,
+   "text": "foundations",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "Unit 3 - Synchronization and Coordination",
+   "words": 3,
+   "text": "3.1 Clock synchronization",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "Unit 3 - Synchronization and Coordination",
+   "words": 3,
+   "text": "3.2 Logical clocks",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "Unit 3 - Synchronization and Coordination",
+   "words": 3,
+   "text": "3.3 Mutual exclusion",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0 Time in distributed systems",
+   "words": 4,
+   "text": "The clocks typically deviate",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0.1 How a computer timer actually works",
+   "words": 3,
+   "text": "quartz crystal oscillator",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0.1 How a computer timer actually works",
+   "words": 2,
+   "text": "physical clock",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0.1 How a computer timer actually works",
+   "words": 2,
+   "text": "Drift rate",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0.1 How a computer timer actually works",
+   "words": 1,
+   "text": "synchronized",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0.1 How a computer timer actually works",
+   "words": 3,
+   "text": "precise performance measurements",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0.2 What unsynchronized clocks break - the make example",
+   "words": 1,
+   "text": "make",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0.3 Event ordering and the happened-before relation",
+   "words": 2,
+   "text": "happened-before relation",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0.3 Event ordering and the happened-before relation",
+   "words": 4,
+   "text": "partial ordering of events",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.0.3 Event ordering and the happened-before relation",
+   "words": 2,
+   "text": "executed concurrently",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1 Clock Synchronization: Cristian's Algorithm, NTP",
+   "words": 3,
+   "text": "Physical clock synchronization",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1 Clock Synchronization: Cristian's Algorithm, NTP",
+   "words": 2,
+   "text": "Cristian's algorithm",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1 Clock Synchronization: Cristian's Algorithm, NTP",
+   "words": 1,
+   "text": "NTP",
+   "fate": "drop",
+   "rule": "a table cell's prose, not a label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1 Clock Synchronization: Cristian's Algorithm, NTP",
+   "words": 3,
+   "text": "Logical clock synchronization",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1 Clock Synchronization: Cristian's Algorithm, NTP",
+   "words": 2,
+   "text": "Lamport timestamps",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1 Clock Synchronization: Cristian's Algorithm, NTP",
+   "words": 2,
+   "text": "Vector clocks",
+   "fate": "drop",
+   "rule": "a table cell's prose, not a label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.1 Cristian's algorithm",
+   "words": 1,
+   "text": "UTC",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.2 How accurate is Cristian's algorithm, exactly?",
+   "words": 1,
+   "text": "min",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.2 How accurate is Cristian's algorithm, exactly?",
+   "words": 4,
+   "text": "must consider message delays",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.2 How accurate is Cristian's algorithm, exactly?",
+   "words": 3,
+   "text": "interrupt handling time",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.3 Network Time Protocol (NTP)",
+   "words": 1,
+   "text": "SNTP",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.3 Network Time Protocol (NTP)",
+   "words": 2,
+   "text": "synchronization subnet",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.3 Network Time Protocol (NTP)",
+   "words": 2,
+   "text": "1st stratum",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.4 NTP goals and synchronization modes",
+   "words": 1,
+   "text": "Multicast",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.4 NTP goals and synchronization modes",
+   "words": 3,
+   "text": "Remote Procedure Call",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.4 NTP goals and synchronization modes",
+   "words": 2,
+   "text": "Symmetric mode",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.4 NTP goals and synchronization modes",
+   "words": 4,
+   "text": "between the time servers",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.5 The NTP offset derivation",
+   "words": 1,
+   "text": "T1",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.5 The NTP offset derivation",
+   "words": 1,
+   "text": "T2",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.5 The NTP offset derivation",
+   "words": 1,
+   "text": "T3",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.1.5 The NTP offset derivation",
+   "words": 1,
+   "text": "T4",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.1 Logical clocks - the idea",
+   "words": 2,
+   "text": "Lamport (1978)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.1 Logical clocks - the idea",
+   "words": 4,
+   "text": "monotonically increasing software counter",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.1 Logical clocks - the idea",
+   "words": 2,
+   "text": "Lamport timestamps",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.1 Logical clocks - the idea",
+   "words": 3,
+   "text": "consistent event ordering",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.1 Logical clocks - the idea",
+   "words": 2,
+   "text": "internally consistent",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.2 Lamport's algorithm",
+   "words": 1,
+   "text": "maximum",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.2 Lamport's algorithm",
+   "words": 2,
+   "text": "total order",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.3 Lamport's considerations, and the limitation",
+   "words": 4,
+   "text": "C(a) never equals C(b)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.3 Lamport's considerations, and the limitation",
+   "words": 2,
+   "text": "partial order",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.3 Lamport's considerations, and the limitation",
+   "words": 1,
+   "text": "totality",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.4 Vector clocks",
+   "words": 2,
+   "text": "heard about",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.4 Vector clocks",
+   "words": 2,
+   "text": "internal event",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.4 Vector clocks",
+   "words": 3,
+   "text": "receives a message",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.4 Vector clocks",
+   "words": 2,
+   "text": "false positives",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.5 Causal ordering of messages using vector clocks",
+   "words": 4,
+   "text": "Causal ordering of messages",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.5 Causal ordering of messages using vector clocks",
+   "words": 2,
+   "text": "Birman-Schiper-Stephenson (BSS)",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.5 Causal ordering of messages using vector clocks",
+   "words": 2,
+   "text": "Schiper-Eggli-Sandoz (SES)",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.5 Causal ordering of messages using vector clocks",
+   "words": 1,
+   "text": "BSS",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.2.5 Causal ordering of messages using vector clocks",
+   "words": 1,
+   "text": "SES",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.1 Background",
+   "words": 2,
+   "text": "One-way communication",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.1 Background",
+   "words": 2,
+   "text": "Client/server communication",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.1 Background",
+   "words": 4,
+   "text": "handled by the server",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.1 Background",
+   "words": 2,
+   "text": "Inter-process communication",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.1 Background",
+   "words": 3,
+   "text": "Critical section (region)",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.1 Background",
+   "words": 2,
+   "text": "Race condition",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.1 Background",
+   "words": 2,
+   "text": "Mutual exclusion",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.2 The four requirements",
+   "words": 1,
+   "text": "Safety",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.2 The four requirements",
+   "words": 1,
+   "text": "Liveness",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.2 The four requirements",
+   "words": 2,
+   "text": "No starvation",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.2 The four requirements",
+   "words": 1,
+   "text": "Fairness",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.2 The four requirements",
+   "words": 1,
+   "text": "Safety",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.3 The two approaches and the algorithm families",
+   "words": 1,
+   "text": "Non-token-based",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.3 The two approaches and the algorithm families",
+   "words": 2,
+   "text": "central coordinator",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.3 The two approaches and the algorithm families",
+   "words": 1,
+   "text": "Token-based",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.3 The two approaches and the algorithm families",
+   "words": 2,
+   "text": "logical token",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.3 The two approaches and the algorithm families",
+   "words": 4,
+   "text": "message cost per entry",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.4 Ricart-Agrawala - the syllabus's named non-token algorithm",
+   "words": 4,
+   "text": "an improvement over Lamport's",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.4 Ricart-Agrawala - the syllabus's named non-token algorithm",
+   "words": 4,
+   "text": "Does not require FIFO",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.3.5 Token-based algorithms and the Token Ring",
+   "words": 3,
+   "text": "Token Ring algorithm",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4 Election Algorithms (Bully, Ring)",
+   "words": 2,
+   "text": "Clock synchronization",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4 Election Algorithms (Bully, Ring)",
+   "words": 2,
+   "text": "Mutual exclusion",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4 Election Algorithms (Bully, Ring)",
+   "words": 2,
+   "text": "Mutual exclusion",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4 Election Algorithms (Bully, Ring)",
+   "words": 3,
+   "text": "Any distributed computing",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.1 Basic concepts",
+   "words": 1,
+   "text": "active",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.2 The Bully algorithm",
+   "words": 1,
+   "text": "synchronous",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.2 The Bully algorithm",
+   "words": 3,
+   "text": "Three message types",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.2 The Bully algorithm",
+   "words": 2,
+   "text": "Election message",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.2 The Bully algorithm",
+   "words": 2,
+   "text": "Answer message",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.2 The Bully algorithm",
+   "words": 2,
+   "text": "Coordinator message",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.2 The Bully algorithm",
+   "words": 2,
+   "text": "Basic steps.",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.3 The Ring algorithm (Chang and Roberts)",
+   "words": 3,
+   "text": "The second formulation",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.3 The Ring algorithm (Chang and Roberts)",
+   "words": 3,
+   "text": "its own UID",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.3 The Ring algorithm (Chang and Roberts)",
+   "words": 4,
+   "text": "clockwise to its neighbour",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.4 Bully versus Ring - the comparison",
+   "words": 2,
+   "text": "Topology assumed",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.4 Bully versus Ring - the comparison",
+   "words": 4,
+   "text": "Who can be elected",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.4 Bully versus Ring - the comparison",
+   "words": 2,
+   "text": "largest identification",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.4 Bully versus Ring - the comparison",
+   "words": 1,
+   "text": "Messages",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.4 Bully versus Ring - the comparison",
+   "words": 2,
+   "text": "Knowledge required",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.4 Bully versus Ring - the comparison",
+   "words": 4,
+   "text": "How failure is handled",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.4 Bully versus Ring - the comparison",
+   "words": 1,
+   "text": "bypassed",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch3.js",
+   "section": "3.4.4 Bully versus Ring - the comparison",
+   "words": 2,
+   "text": "Characteristic behaviour",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.2 The design goals",
+   "words": 1,
+   "text": "Transparency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.2 The design goals",
+   "words": 1,
+   "text": "Concurrency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.2 The design goals",
+   "words": 1,
+   "text": "Replication",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.2 The design goals",
+   "words": 1,
+   "text": "Heterogeneity",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.2 The design goals",
+   "words": 2,
+   "text": "Fault tolerance",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.2 The design goals",
+   "words": 1,
+   "text": "Consistency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.2 The design goals",
+   "words": 1,
+   "text": "Security",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.2 The design goals",
+   "words": 1,
+   "text": "Efficiency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.3 Transparency",
+   "words": 2,
+   "text": "access transparency",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.3 Transparency",
+   "words": 1,
+   "text": "location",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.3 Transparency",
+   "words": 1,
+   "text": "migration",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.4 Naming - three schemes, and the mapping underneath",
+   "words": 2,
+   "text": "location independent",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.4 Naming - three schemes, and the mapping underneath",
+   "words": 2,
+   "text": "non-transparent mapping",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.4 Naming - three schemes, and the mapping underneath",
+   "words": 2,
+   "text": "transparent mapping",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.4 Naming - three schemes, and the mapping underneath",
+   "words": 3,
+   "text": "must be unique",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.5 The file service architecture",
+   "words": 2,
+   "text": "three components",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.5 The file service architecture",
+   "words": 3,
+   "text": "Flat file service",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.5 The file service architecture",
+   "words": 2,
+   "text": "Directory service",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.5 The file service architecture",
+   "words": 2,
+   "text": "Client module",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.6 Consistency in a DFS",
+   "words": 4,
+   "text": "more than one copy",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.6 Consistency in a DFS",
+   "words": 1,
+   "text": "write-back",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.6 Consistency in a DFS",
+   "words": 4,
+   "text": "Concurrent access is normal.",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.6 Consistency in a DFS",
+   "words": 1,
+   "text": "Guarantee",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.6 Consistency in a DFS",
+   "words": 3,
+   "text": "What it requires",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.6 Consistency in a DFS",
+   "words": 1,
+   "text": "Cost",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.6 Consistency in a DFS",
+   "words": 1,
+   "text": "NFS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.6 Consistency in a DFS",
+   "words": 3,
+   "text": "no file locking",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.7 Replication",
+   "words": 2,
+   "text": "typically three",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.7 Replication",
+   "words": 1,
+   "text": "Performance",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.7 Replication",
+   "words": 1,
+   "text": "minimal",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.1.7 Replication",
+   "words": 1,
+   "text": "client-based",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.1 SUN NFS - what it is",
+   "words": 2,
+   "text": "diskless workstations",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.2 Stateful versus stateless services",
+   "words": 1,
+   "text": "stateless",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.2 Stateful versus stateless services",
+   "words": 1,
+   "text": "Definition",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.2 Stateful versus stateless services",
+   "words": 1,
+   "text": "Bookkeeping",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.2 Stateful versus stateless services",
+   "words": 1,
+   "text": "Performance",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.2 Stateful versus stateless services",
+   "words": 1,
+   "text": "Better",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.2 Stateful versus stateless services",
+   "words": 2,
+   "text": "Fault tolerance",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.3 NFS's design, and its three parts",
+   "words": 3,
+   "text": "NFS is stateless",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.3 NFS's design, and its three parts",
+   "words": 3,
+   "text": "Fast crash recovery",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.3 NFS's design, and its three parts",
+   "words": 2,
+   "text": "transparent access",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.3 NFS's design, and its three parts",
+   "words": 2,
+   "text": "The protocol",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.3 NFS's design, and its three parts",
+   "words": 3,
+   "text": "Sun RPC mechanism",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.3 NFS's design, and its three parts",
+   "words": 2,
+   "text": "Server side",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.3 NFS's design, and its three parts",
+   "words": 2,
+   "text": "file handle",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.3 NFS's design, and its three parts",
+   "words": 2,
+   "text": "Client side",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.3 NFS's design, and its three parts",
+   "words": 2,
+   "text": "transparent interface",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.4 HDFS - design and why it is shaped that way",
+   "words": 3,
+   "text": "Very large files",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.4 HDFS - design and why it is shaped that way",
+   "words": 3,
+   "text": "Streaming data access",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.4 HDFS - design and why it is shaped that way",
+   "words": 2,
+   "text": "Commodity hardware",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.4 HDFS - design and why it is shaped that way",
+   "words": 3,
+   "text": "low-latency data access",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.4 HDFS - design and why it is shaped that way",
+   "words": 4,
+   "text": "Lots of small files",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.5 Blocks",
+   "words": 1,
+   "text": "block",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.5 Blocks",
+   "words": 4,
+   "text": "64 MB by default",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.5 Blocks",
+   "words": 3,
+   "text": "eliminates metadata concerns",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.6 Namenodes and datanodes - the architecture",
+   "words": 1,
+   "text": "Role",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.6 Namenodes and datanodes - the architecture",
+   "words": 2,
+   "text": "filesystem namespace",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.6 Namenodes and datanodes - the architecture",
+   "words": 4,
+   "text": "workhorses of the filesystem",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.6 Namenodes and datanodes - the architecture",
+   "words": 1,
+   "text": "Persistence",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.6 Namenodes and datanodes - the architecture",
+   "words": 3,
+   "text": "What it knows",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.7 Why the NameNode is a single point of failure, and the three rem",
+   "words": 1,
+   "text": "scalability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.8 HDFS high availability, failover and fencing",
+   "words": 3,
+   "text": "HDFS high availability",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.8 HDFS high availability, failover and fencing",
+   "words": 3,
+   "text": "transparent to users",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.8 HDFS high availability, failover and fencing",
+   "words": 2,
+   "text": "failover controller",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.9 GFS, and how HDFS relates to it",
+   "words": 4,
+   "text": "Hardware failures are common",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.9 GFS, and how HDFS relates to it",
+   "words": 4,
+   "text": "all file system metadata",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.9 GFS, and how HDFS relates to it",
+   "words": 2,
+   "text": "Heartbeat messages",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.2.9 GFS, and how HDFS relates to it",
+   "words": 2,
+   "text": "three types",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.1 Heterogeneity, and why middleware exists",
+   "words": 2,
+   "text": "Different hardware",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.1 Heterogeneity, and why middleware exists",
+   "words": 2,
+   "text": "Different software",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.1 Heterogeneity, and why middleware exists",
+   "words": 2,
+   "text": "Unconventional devices",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.1 Heterogeneity, and why middleware exists",
+   "words": 2,
+   "text": "legacy systems",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 4,
+   "text": "Object Management Group (OMG)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 2,
+   "text": "Key concepts.",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 2,
+   "text": "Interface repository",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 2,
+   "text": "Implementation repository",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 3,
+   "text": "Remote object references.",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 4,
+   "text": "GIOP (General Inter-ORB Protocol)",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 4,
+   "text": "IIOP (Internet Inter-ORB Protocol)",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 1,
+   "text": "Mechanism",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 3,
+   "text": "The server's view",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 1,
+   "text": "Identical.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 1,
+   "text": "Security",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 1,
+   "text": "Time",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 2,
+   "text": "synchronizing time",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.2 CORBA",
+   "words": 2,
+   "text": "Persistent Object",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.3 Java RMI as middleware",
+   "words": 1,
+   "text": "binder",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.3 Java RMI as middleware",
+   "words": 2,
+   "text": "single-language system",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 2,
+   "text": "over TCP",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 4,
+   "text": "The MQTT message format",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 3,
+   "text": "1-byte control header",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 1,
+   "text": "Model",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 1,
+   "text": "Publish-subscribe",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 1,
+   "text": "Encoding",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 2,
+   "text": "Binary application-layer",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 2,
+   "text": "Designed for",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 2,
+   "text": "M2M messaging",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 1,
+   "text": "Transport",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 2,
+   "text": "Over TCP",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 4,
+   "text": "Both are listed with",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch4.js",
+   "section": "4.3.4 Messaging middleware: MQTT and AMQP",
+   "words": 1,
+   "text": "CoAP",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.1 What cloud computing is - the two definitions",
+   "words": 2,
+   "text": "cloud providers",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.2 The basic reasoning and the two early models",
+   "words": 1,
+   "text": "2005-2006",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.2 The basic reasoning and the two early models",
+   "words": 1,
+   "text": "Target",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.2 The basic reasoning and the two early models",
+   "words": 2,
+   "text": "Scientific computing",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.2 The basic reasoning and the two early models",
+   "words": 2,
+   "text": "Enterprise computing.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.2 The basic reasoning and the two early models",
+   "words": 1,
+   "text": "Definition",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.2 The basic reasoning and the two early models",
+   "words": 3,
+   "text": "renting by usage",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.3 The five technologies, and the timeline",
+   "words": 1,
+   "text": "Virtualization",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.3 The five technologies, and the timeline",
+   "words": 2,
+   "text": "Web 2.0",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.3 The five technologies, and the timeline",
+   "words": 2,
+   "text": "Service orientation",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.4 The three axes of cloud computing",
+   "words": 3,
+   "text": "Delivery (service) models",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.4 The three axes of cloud computing",
+   "words": 2,
+   "text": "Deployment models",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.1.4 The three axes of cloud computing",
+   "words": 2,
+   "text": "Defining attributes",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.1 The defining characteristics",
+   "words": 1,
+   "text": "Metering",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.1 The defining characteristics",
+   "words": 4,
+   "text": "Cost-effectiveness from resource multiplexing",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.2 Two more characteristics",
+   "words": 2,
+   "text": "Data storage",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.2 Two more characteristics",
+   "words": 1,
+   "text": "Management",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.3 The benefits",
+   "words": 3,
+   "text": "Efficiency through sharing",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.3 The benefits",
+   "words": 1,
+   "text": "Cost",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.3 The benefits",
+   "words": 1,
+   "text": "Capability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.3 The benefits",
+   "words": 2,
+   "text": "Technology timing",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.3 The benefits",
+   "words": 1,
+   "text": "Economics",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.3 The benefits",
+   "words": 2,
+   "text": "Infrastructure management",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.3 The benefits",
+   "words": 1,
+   "text": "advantages",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.3 The benefits",
+   "words": 3,
+   "text": "loss of control",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.4 Challenges",
+   "words": 3,
+   "text": "Availability of service",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.4 Challenges",
+   "words": 2,
+   "text": "Vendor lock-in",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.4 Challenges",
+   "words": 3,
+   "text": "Data transfer bottleneck",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.4 Challenges",
+   "words": 4,
+   "text": "Many applications are data-intensive",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.4 Challenges",
+   "words": 2,
+   "text": "Performance unpredictability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.2.4 Challenges",
+   "words": 2,
+   "text": "Resource management",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3 Cloud service models: IaaS, PaaS, SaaS",
+   "words": 1,
+   "text": "Infrastructure",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3 Cloud service models: IaaS, PaaS, SaaS",
+   "words": 1,
+   "text": "platform",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3 Cloud service models: IaaS, PaaS, SaaS",
+   "words": 4,
+   "text": "What the customer controls",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3 Cloud service models: IaaS, PaaS, SaaS",
+   "words": 2,
+   "text": "Services offered",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3 Cloud service models: IaaS, PaaS, SaaS",
+   "words": 1,
+   "text": "Examples",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3 Cloud service models: IaaS, PaaS, SaaS",
+   "words": 2,
+   "text": "Amazon EC2",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3 Cloud service models: IaaS, PaaS, SaaS",
+   "words": 2,
+   "text": "Real-time applications",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3.1 Cloud activities - what a provider actually operates",
+   "words": 2,
+   "text": "QoS management",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3.1 Cloud activities - what a provider actually operates",
+   "words": 2,
+   "text": "SLA management",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3.1 Cloud activities - what a provider actually operates",
+   "words": 2,
+   "text": "Security management",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3.1 Cloud activities - what a provider actually operates",
+   "words": 2,
+   "text": "Customer services",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.3.1 Cloud activities - what a provider actually operates",
+   "words": 2,
+   "text": "Integration services",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.1 What a deployment model is",
+   "words": 1,
+   "text": "configuration",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.2 The four models",
+   "words": 2,
+   "text": "Public cloud",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.2 The four models",
+   "words": 2,
+   "text": "Private cloud",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.2 The four models",
+   "words": 2,
+   "text": "Community cloud",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.2 The four models",
+   "words": 2,
+   "text": "Hybrid cloud",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "Easy",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "Low",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "High",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "High",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 2,
+   "text": "Data control",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 3,
+   "text": "Little to none",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "High",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "Reliability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "Low",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "High",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "High",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "High",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "High",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 2,
+   "text": "Fixed capacity",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "High",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "Cost-effectiveness",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 2,
+   "text": "The cheapest",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 4,
+   "text": "Demand for in-house hardware",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 1,
+   "text": "No",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.3 The comparison table",
+   "words": 3,
+   "text": "control against convenience",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 3,
+   "text": "suitable use cases",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 1,
+   "text": "Public",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 3,
+   "text": "Hassle-free infrastructure management",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 2,
+   "text": "Compromised reliability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 1,
+   "text": "Private",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 4,
+   "text": "result from its autonomy",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 1,
+   "text": "Cost",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 1,
+   "text": "Community",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 2,
+   "text": "Cost reduction",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch5.js",
+   "section": "5.4.4 Advantages, disadvantages and use cases for each",
+   "words": 1,
+   "text": "Hybrid",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.1 The definition, and why it is the foundation of cloud computing",
+   "words": 1,
+   "text": "Elasticity",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.1 The definition, and why it is the foundation of cloud computing",
+   "words": 1,
+   "text": "Pay-per-usage",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.1 The definition, and why it is the foundation of cloud computing",
+   "words": 4,
+   "text": "A single administrative domain",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 1,
+   "text": "Application",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 7,
+   "text": "App runs from a server, accessed remotely.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 1,
+   "text": "Network",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 8,
+   "text": "Multiple virtual networks co-exist on one physical network.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 1,
+   "text": "Desktop",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 6,
+   "text": "Separates desktop environments from client devices.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 1,
+   "text": "Storage",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 8,
+   "text": "Aggregates physical storage into a single virtual pool.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 1,
+   "text": "Server",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 9,
+   "text": "Divides a physical server into multiple isolated virtual servers.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 1,
+   "text": "Data",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.2 The six kinds of virtualization",
+   "words": 11,
+   "text": "Collects and manages data from various sources in a single place.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.3 The hypervisor",
+   "words": 1,
+   "text": "bidirectional",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.3 The hypervisor",
+   "words": 1,
+   "text": "isolation",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.3 The hypervisor",
+   "words": 1,
+   "text": "hypercall",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 3,
+   "text": "Where it runs",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 6,
+   "text": "Directly on the underlying host system.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 8,
+   "text": "Runs as an application in a host system.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 2,
+   "text": "Other names",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 2,
+   "text": "Native hypervisor",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 2,
+   "text": "Hosted hypervisor.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 2,
+   "text": "Hardware access",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 5,
+   "text": "Direct access to hardware resources.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 6,
+   "text": "Reaches hardware through the host OS.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 2,
+   "text": "Typical use",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 4,
+   "text": "Servers and data centres.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 4,
+   "text": "Desktop and development use.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 1,
+   "text": "Examples",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 4,
+   "text": "Xen, KVM, VMware ESXi.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.4 Type I versus Type II",
+   "words": 4,
+   "text": "VMware Workstation, Oracle VirtualBox.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.5 The roles of a hypervisor",
+   "words": 1,
+   "text": "CPU",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.5 The roles of a hypervisor",
+   "words": 3,
+   "text": "scheduling virtual machines.",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.5 The roles of a hypervisor",
+   "words": 1,
+   "text": "Memory",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.5 The roles of a hypervisor",
+   "words": 2,
+   "text": "managing memory.",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.5 The roles of a hypervisor",
+   "words": 1,
+   "text": "I/O",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.5 The roles of a hypervisor",
+   "words": 3,
+   "text": "emulating I/O devices.",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.5 The roles of a hypervisor",
+   "words": 1,
+   "text": "Networking",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.6 CPU virtualization",
+   "words": 2,
+   "text": "Privileged instructions",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.6 CPU virtualization",
+   "words": 5,
+   "text": "Execute in a privileged mode.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.6 CPU virtualization",
+   "words": 2,
+   "text": "Control-sensitive instructions",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.6 CPU virtualization",
+   "words": 5,
+   "text": "Attempt to change the configuration.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.6 CPU virtualization",
+   "words": 2,
+   "text": "Behavior-sensitive instructions",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.6 CPU virtualization",
+   "words": 7,
+   "text": "Have different behaviours depending on the configuration.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.6 CPU virtualization",
+   "words": 4,
+   "text": "trapped in the VMM",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.7 Memory virtualization",
+   "words": 4,
+   "text": "memory management unit (MMU)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.7 Memory virtualization",
+   "words": 4,
+   "text": "translation lookaside buffer (TLB)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.7 Memory virtualization",
+   "words": 3,
+   "text": "nested page tables",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.8 I/O virtualization",
+   "words": 3,
+   "text": "Full device emulation",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.8 I/O virtualization",
+   "words": 2,
+   "text": "Direct I/O",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.8 I/O virtualization",
+   "words": 1,
+   "text": "Hardware-assisted",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.10 Benefits of virtualization",
+   "words": 3,
+   "text": "Sharing of resources",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.10 Benefits of virtualization",
+   "words": 2,
+   "text": "cost reduction",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.10 Benefits of virtualization",
+   "words": 1,
+   "text": "Isolation",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.10 Benefits of virtualization",
+   "words": 1,
+   "text": "Encapsulation",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.10 Benefits of virtualization",
+   "words": 2,
+   "text": "Hardware independence",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.10 Benefits of virtualization",
+   "words": 1,
+   "text": "Portability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.10 Benefits of virtualization",
+   "words": 2,
+   "text": "Live migration",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.11 Hypervisor vulnerabilities, and NoHype",
+   "words": 1,
+   "text": "NoHype",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.1.11 Hypervisor vulnerabilities, and NoHype",
+   "words": 4,
+   "text": "a complete systems solution",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.1 What a virtual machine is",
+   "words": 3,
+   "text": "the host machine",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.1 What a virtual machine is",
+   "words": 2,
+   "text": "host machine",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.1 What a virtual machine is",
+   "words": 1,
+   "text": "guest",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 2,
+   "text": "Abstraction level",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 1,
+   "text": "Hardware.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 2,
+   "text": "Operating-system level.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 4,
+   "text": "What each instance includes",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 5,
+   "text": "A full guest operating system.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 8,
+   "text": "Only the code, its dependencies and its configuration.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 2,
+   "text": "Resource efficiency",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 5,
+   "text": "Larger size and less portable.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 2,
+   "text": "More resource-efficient.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 3,
+   "text": "Isolation and security",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 3,
+   "text": "Full isolation security.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 2,
+   "text": "Less secure.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 1,
+   "text": "Flexibility",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 4,
+   "text": "Different guest operating systems.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 2,
+   "text": "Same kernel.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 2,
+   "text": "Stated advantages",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 4,
+   "text": "Separation and resource control.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.2.3 The comparison, and the costs on each side",
+   "words": 3,
+   "text": "Compartmentalisation and portability.",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.1 The provider's four layers",
+   "words": 2,
+   "text": "Service layer",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.1 The provider's four layers",
+   "words": 3,
+   "text": "Physical resource layer",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.1 The provider's four layers",
+   "words": 3,
+   "text": "Cloud service management",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.1 The provider's four layers",
+   "words": 3,
+   "text": "Three cross-cutting concerns",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.1 The provider's four layers",
+   "words": 1,
+   "text": "audit",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.2 The actors - the NIST reference model's terminology",
+   "words": 1,
+   "text": "Consumer",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.2 The actors - the NIST reference model's terminology",
+   "words": 1,
+   "text": "Provider",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.2 The actors - the NIST reference model's terminology",
+   "words": 1,
+   "text": "Auditor",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.2 The actors - the NIST reference model's terminology",
+   "words": 1,
+   "text": "Broker",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.2 The actors - the NIST reference model's terminology",
+   "words": 1,
+   "text": "Developer",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.2 The actors - the NIST reference model's terminology",
+   "words": 1,
+   "text": "Carrier",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.2 The actors - the NIST reference model's terminology",
+   "words": 3,
+   "text": "service layer (SaaS/PaaS/IaaS)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.3.2 The actors - the NIST reference model's terminology",
+   "words": 3,
+   "text": "cloud service management",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.1 The provisioning problem, and the SLA tension",
+   "words": 3,
+   "text": "Heterogeneity of services",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.1 The provisioning problem, and the SLA tension",
+   "words": 2,
+   "text": "Power management",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.2 Efficient VM provisioning",
+   "words": 2,
+   "text": "Amazon's EC2",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.2 Efficient VM provisioning",
+   "words": 3,
+   "text": "IBM's Blue Cloud",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.3 The three provisioning methods",
+   "words": 1,
+   "text": "Demand-driven",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.3 The three provisioning methods",
+   "words": 3,
+   "text": "Easy to implement",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.3 The three provisioning methods",
+   "words": 1,
+   "text": "Event-driven",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.3 The three provisioning methods",
+   "words": 1,
+   "text": "Popularity-driven",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.4 The software stack and runtime support",
+   "words": 2,
+   "text": "software stack",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.4 The software stack and runtime support",
+   "words": 3,
+   "text": "runtime support services",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.5 Cloud service tasks and trends",
+   "words": 4,
+   "text": "distributed collaboration (Google Docs)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.5 Cloud service tasks and trends",
+   "words": 1,
+   "text": "PaaS",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.5 Cloud service tasks and trends",
+   "words": 1,
+   "text": "IaaS",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.5 Cloud service tasks and trends",
+   "words": 2,
+   "text": "Collocation services",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.5 Cloud service tasks and trends",
+   "words": 3,
+   "text": "Network cloud services",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch6.js",
+   "section": "6.4.5 Cloud service tasks and trends",
+   "words": 1,
+   "text": "Collocation",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.1 What a cloud platform is",
+   "words": 2,
+   "text": "cloud provider",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.1 What a cloud platform is",
+   "words": 4,
+   "text": "the same three-layer catalogue",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 1,
+   "text": "Position",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 7,
+   "text": "The first mover and the largest catalogue.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 7,
+   "text": "Windows Azure is the other PaaS example.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 7,
+   "text": "Google App Engine is the PaaS example,",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 3,
+   "text": "How it began",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 2,
+   "text": "Storage service",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 2,
+   "text": "Amazon S3",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 3,
+   "text": "Azure Blob Storage",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 2,
+   "text": "Cloud Storage",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 2,
+   "text": "Compute service",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 1,
+   "text": "EC2",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 2,
+   "text": "Virtual Machines",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 3,
+   "text": "Compute Engine (GCE)",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 4,
+   "text": "The pattern to notice",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.2 The three platforms",
+   "words": 1,
+   "text": "converged",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.3 What an IaaS provider actually supplies",
+   "words": 1,
+   "text": "Compute",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.3 What an IaaS provider actually supplies",
+   "words": 1,
+   "text": "Storage",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.3 What an IaaS provider actually supplies",
+   "words": 1,
+   "text": "Network",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.3 What an IaaS provider actually supplies",
+   "words": 2,
+   "text": "Load balancers",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.3 What an IaaS provider actually supplies",
+   "words": 3,
+   "text": "top IaaS providers",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.3 What an IaaS provider actually supplies",
+   "words": 2,
+   "text": "IBM's Ensemble",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.3 What an IaaS provider actually supplies",
+   "words": 2,
+   "text": "WebSphere CloudBurst",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.4 The advantages and disadvantages of the IaaS layer",
+   "words": 2,
+   "text": "Shared infrastructure",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.4 The advantages and disadvantages of the IaaS layer",
+   "words": 2,
+   "text": "Pay-as-per-use model",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.4 The advantages and disadvantages of the IaaS layer",
+   "words": 2,
+   "text": "On-demand scalability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.4 The advantages and disadvantages of the IaaS layer",
+   "words": 1,
+   "text": "Security",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.4 The advantages and disadvantages of the IaaS layer",
+   "words": 2,
+   "text": "Interoperability issues",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.4 The advantages and disadvantages of the IaaS layer",
+   "words": 1,
+   "text": "portability/interoperability",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.5 The pizza analogy, which makes the three models concrete",
+   "words": 1,
+   "text": "On-premises",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.5 The pizza analogy, which makes the three models concrete",
+   "words": 4,
+   "text": "Dined in at home",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.5 The pizza analogy, which makes the three models concrete",
+   "words": 1,
+   "text": "IaaS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.5 The pizza analogy, which makes the three models concrete",
+   "words": 2,
+   "text": "Customer manages",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.5 The pizza analogy, which makes the three models concrete",
+   "words": 1,
+   "text": "PaaS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.5 The pizza analogy, which makes the three models concrete",
+   "words": 2,
+   "text": "Pizza delivered",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.5 The pizza analogy, which makes the three models concrete",
+   "words": 1,
+   "text": "SaaS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.5 The pizza analogy, which makes the three models concrete",
+   "words": 2,
+   "text": "Dined out",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 1,
+   "text": "HaaS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 1,
+   "text": "CaaS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 1,
+   "text": "DaaS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 1,
+   "text": "SECaaS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 3,
+   "text": "Outsourced security management",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 1,
+   "text": "DBaaS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 1,
+   "text": "TaaS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 2,
+   "text": "Also named",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 3,
+   "text": "Benefits of XaaS",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 1,
+   "text": "scalability",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.1.6 The wider family: XaaS",
+   "words": 4,
+   "text": "Focus on core competencies",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 3,
+   "text": "What it stores",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 1,
+   "text": "Objects",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 1,
+   "text": "Volumes",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 1,
+   "text": "Files",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 4,
+   "text": "How it is used",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 1,
+   "text": "AWS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 2,
+   "text": "Amazon S3",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 2,
+   "text": "Amazon EBS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 1,
+   "text": "Azure",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 2,
+   "text": "Blob Storage",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 2,
+   "text": "Google Cloud",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.1 The three shapes of cloud storage",
+   "words": 3,
+   "text": "Use it for",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.2 How object storage is actually shaped",
+   "words": 1,
+   "text": "within",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.2 How object storage is actually shaped",
+   "words": 4,
+   "text": "99.999999999% (eleven nines) durability",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.2 How object storage is actually shaped",
+   "words": 1,
+   "text": "DRaaS",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.3 Databases as a service",
+   "words": 1,
+   "text": "SimpleDB",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.3 Databases as a service",
+   "words": 2,
+   "text": "You get",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.3 Databases as a service",
+   "words": 2,
+   "text": "You do",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.3 Databases as a service",
+   "words": 1,
+   "text": "Scaling",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.3 Databases as a service",
+   "words": 2,
+   "text": "Course examples",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.3 Databases as a service",
+   "words": 1,
+   "text": "SimpleDB",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.3 Databases as a service",
+   "words": 1,
+   "text": "relational",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.2.3 Databases as a service",
+   "words": 1,
+   "text": "DaaS",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 1,
+   "text": "EC2",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 1,
+   "text": "Lambda",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 2,
+   "text": "Customer manages",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 4,
+   "text": "Only the function's code",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 2,
+   "text": "Started by",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 2,
+   "text": "An event",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 1,
+   "text": "Billing",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 1,
+   "text": "Scaling",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 2,
+   "text": "Best for",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.1 The three shapes of compute",
+   "words": 2,
+   "text": "Worst for",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.2 EC2 - the virtual machine service",
+   "words": 1,
+   "text": "Instance",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.2 EC2 - the virtual machine service",
+   "words": 2,
+   "text": "instance type",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.2 EC2 - the virtual machine service",
+   "words": 2,
+   "text": "AMI (image)",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.2 EC2 - the virtual machine service",
+   "words": 2,
+   "text": "Security group",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.2 EC2 - the virtual machine service",
+   "words": 2,
+   "text": "Purchasing models",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.2 EC2 - the virtual machine service",
+   "words": 2,
+   "text": "preemptible VMs",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.2 EC2 - the virtual machine service",
+   "words": 1,
+   "text": "Auto-scaling",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.3 Lambda - the serverless service",
+   "words": 1,
+   "text": "Serverless",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.4 GCE, and why the three platforms look alike",
+   "words": 4,
+   "text": "Google Compute Engine (GCE)",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.5 Managing a platform",
+   "words": 1,
+   "text": "region",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch7.js",
+   "section": "7.3.5 Managing a platform",
+   "words": 2,
+   "text": "availability zone",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "Unit 8 - Security and Challenges in Cloud",
+   "words": 4,
+   "text": "8.3 Service Level Agreements",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 1,
+   "text": "Data-in-transit",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 2,
+   "text": "Two options:",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 10,
+   "text": "Either the transport protects itself (TLS) or the payload does.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 1,
+   "text": "Data-at-rest",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 3,
+   "text": "Generally not encrypted,",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 15,
+   "text": "The tension is that encryption defeats the provider's ability to index or search the data.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 5,
+   "text": "Processing of data, including multitenancy",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 10,
+   "text": "For any application to process data, it is not encrypted.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 3,
+   "text": "The hardest case:",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 8,
+   "text": "Data lineage (knowing when and where data was)",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 11,
+   "text": "Knowing when and where the data was located within the cloud",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.1 The three states of data, and how each is protected",
+   "words": 4,
+   "text": "Each operation is recorded",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.2 Data provenance - the question security cannot answer",
+   "words": 2,
+   "text": "Data provenance",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.3 Data remanence and the provider's own data",
+   "words": 2,
+   "text": "Data remanence",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 1,
+   "text": "Storage",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 8,
+   "text": "The aggregation of data raises new privacy issues.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 1,
+   "text": "Retention",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 10,
+   "text": "How long is personal information transferred to the cloud retained?",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 1,
+   "text": "Destruction",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 13,
+   "text": "How does the provider destroy PII at the end of the retention period?",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 5,
+   "text": "Auditing, monitoring and risk management",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 6,
+   "text": "How can organisations monitor their CSP",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 2,
+   "text": "Privacy breaches",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 8,
+   "text": "How do you know a breach has occurred?",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.4 Data privacy",
+   "words": 1,
+   "text": "destruction",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 3,
+   "text": "data life cycle",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 6,
+   "text": "The data is created or collected",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 7,
+   "text": "Collection becomes cheap enough to be indiscriminate,",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 8,
+   "text": "It is converted, combined, aggregated, indexed or anonymised",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 8,
+   "text": "Each transformation makes more copies in more places,",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 2,
+   "text": "It moves",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 4,
+   "text": "The classic compliance problem:",
+   "fate": "drop",
+   "rule": "not a term's shape",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 9,
+   "text": "People and applications read, query and act on it.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 10,
+   "text": "Access arrives over the network rather than from a desk,",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 11,
+   "text": "It rests in a database, an object store or a volume.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 7,
+   "text": "At-rest encryption, and two problems already named:",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 9,
+   "text": "It is retained, rarely read, for obligation or history",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 11,
+   "text": "Retention law and the right to erasure pull in opposite directions,",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 10,
+   "text": "It is disposed of at the end of its life.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.1.5 Compliance and the data life cycle",
+   "words": 12,
+   "text": "Deletion is a request to a provider, not an act you perform.",
+   "fate": "drop",
+   "rule": "a clause, not a term",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.1 What IAM is",
+   "words": 2,
+   "text": "core functions",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.1 What IAM is",
+   "words": 1,
+   "text": "Authentication",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.1 What IAM is",
+   "words": 2,
+   "text": "Verifies identity",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.1 What IAM is",
+   "words": 1,
+   "text": "Authorization",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.1 What IAM is",
+   "words": 2,
+   "text": "User management",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.1 What IAM is",
+   "words": 2,
+   "text": "Policy enforcement",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.1 What IAM is",
+   "words": 3,
+   "text": "Applies security policies",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.2 Why IAM matters more in the cloud than on premises",
+   "words": 4,
+   "text": "Increased demand for authentication",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.2 Why IAM matters more in the cloud than on premises",
+   "words": 4,
+   "text": "Need for higher-assurance authentication",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.2.2 Why IAM matters more in the cloud than on premises",
+   "words": 4,
+   "text": "limits of password authentication",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.1 What an SLA is",
+   "words": 1,
+   "text": "metric",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.1 What an SLA is",
+   "words": 2,
+   "text": "service objective",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.1 What an SLA is",
+   "words": 1,
+   "text": "floor",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.2 The five SLA criteria",
+   "words": 1,
+   "text": "Availability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.2 The five SLA criteria",
+   "words": 1,
+   "text": "Performance",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.2 The five SLA criteria",
+   "words": 2,
+   "text": "Disaster recovery",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.2 The five SLA criteria",
+   "words": 4,
+   "text": "Mean time to recover.",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.2 The five SLA criteria",
+   "words": 2,
+   "text": "Problem resolution",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.2 The five SLA criteria",
+   "words": 3,
+   "text": "what is delivered",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.2 The five SLA criteria",
+   "words": 4,
+   "text": "what protects the data",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.2 The five SLA criteria",
+   "words": 1,
+   "text": "Performance",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.3 The five phases of the SLA life cycle",
+   "words": 2,
+   "text": "the contract",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.4 The five phases of SLA management in the cloud",
+   "words": 3,
+   "text": "the hosted application",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.3.4 The five phases of SLA management in the cloud",
+   "words": 3,
+   "text": "SLA life cycle",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.1 The eight common vulnerabilities",
+   "words": 2,
+   "text": "Data breaches",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.1 The eight common vulnerabilities",
+   "words": 2,
+   "text": "Insecure APIs",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.1 The eight common vulnerabilities",
+   "words": 1,
+   "text": "Misconfigurations",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.1 The eight common vulnerabilities",
+   "words": 2,
+   "text": "Human errors",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.1 The eight common vulnerabilities",
+   "words": 2,
+   "text": "Account hijacking",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.1 The eight common vulnerabilities",
+   "words": 3,
+   "text": "DoS / DDoS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.1 The eight common vulnerabilities",
+   "words": 2,
+   "text": "Insider threats",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.1 The eight common vulnerabilities",
+   "words": 3,
+   "text": "Shared technology risks",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.1 The eight common vulnerabilities",
+   "words": 4,
+   "text": "Compliance / legal risks",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.2 The eight mitigation control areas",
+   "words": 2,
+   "text": "Data security",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.2 The eight mitigation control areas",
+   "words": 4,
+   "text": "Identity & access management",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.2 The eight mitigation control areas",
+   "words": 2,
+   "text": "Secure APIs",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.2 The eight mitigation control areas",
+   "words": 2,
+   "text": "Configuration management",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.2 The eight mitigation control areas",
+   "words": 4,
+   "text": "Threat detection & monitoring",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.2 The eight mitigation control areas",
+   "words": 3,
+   "text": "Resilience to DoS/DDoS",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.2 The eight mitigation control areas",
+   "words": 4,
+   "text": "Vendor & shared responsibility",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.2 The eight mitigation control areas",
+   "words": 3,
+   "text": "Training & awareness",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.3 The shared responsibility model, and the summary principle",
+   "words": 3,
+   "text": "shared responsibility model",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.3 The shared responsibility model, and the summary principle",
+   "words": 3,
+   "text": "understand shared responsibilities",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.4 How the four sub-topics fit together",
+   "words": 2,
+   "text": "The risks",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.4 How the four sub-topics fit together",
+   "words": 4,
+   "text": "The data's own obligations",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.4 How the four sub-topics fit together",
+   "words": 2,
+   "text": "The controls",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.4 How the four sub-topics fit together",
+   "words": 2,
+   "text": "The assurance",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.4 How the four sub-topics fit together",
+   "words": 4,
+   "text": "The division of duty",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.4 How the four sub-topics fit together",
+   "words": 2,
+   "text": "shared responsibility",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.4 How the four sub-topics fit together",
+   "words": 2,
+   "text": "shared technology",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.4 How the four sub-topics fit together",
+   "words": 2,
+   "text": "shared responsibility",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.5 The two challenges worked through",
+   "words": 2,
+   "text": "account hijacking",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch8.js",
+   "section": "8.4.5 The two challenges worked through",
+   "words": 1,
+   "text": "misconfiguration",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.1 Why computation moved out of the data centre again",
+   "words": 1,
+   "text": "latency",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.1 Why computation moved out of the data centre again",
+   "words": 1,
+   "text": "bandwidth",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.1 Why computation moved out of the data centre again",
+   "words": 1,
+   "text": "offline",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.2 The three tiers",
+   "words": 4,
+   "text": "Where the compute is",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.2 The three tiers",
+   "words": 4,
+   "text": "Latency to the data",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.2 The three tiers",
+   "words": 3,
+   "text": "Bandwidth sent upward",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.2 The three tiers",
+   "words": 2,
+   "text": "Suited to",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.2 The three tiers",
+   "words": 2,
+   "text": "Typical example",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.3 What the trends actually buy",
+   "words": 1,
+   "text": "Latency",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.3 What the trends actually buy",
+   "words": 1,
+   "text": "Availability",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.3 What the trends actually buy",
+   "words": 3,
+   "text": "weaker physical security",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.3 What the trends actually buy",
+   "words": 4,
+   "text": "Updates across a fleet",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.1.3 What the trends actually buy",
+   "words": 3,
+   "text": "their own clocks",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.2.1 What serverless means",
+   "words": 1,
+   "text": "Event-driven",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.2.1 What serverless means",
+   "words": 3,
+   "text": "No server management",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.2.1 What serverless means",
+   "words": 3,
+   "text": "Pay per use",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.2.1 What serverless means",
+   "words": 2,
+   "text": "Stateless functions",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.2.2 Where serverless is the right answer",
+   "words": 3,
+   "text": "Glue between services",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.2.2 Where serverless is the right answer",
+   "words": 2,
+   "text": "long-running processes",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.2.2 Where serverless is the right answer",
+   "words": 2,
+   "text": "stateful services",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.2.2 Where serverless is the right answer",
+   "words": 3,
+   "text": "steady high load",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 1,
+   "text": "container",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 2,
+   "text": "Docker Engine",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 1,
+   "text": "Docker",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 1,
+   "text": "Image",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 1,
+   "text": "Container",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 1,
+   "text": "Dockerfile",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 1,
+   "text": "portability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 1,
+   "text": "Registry",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 2,
+   "text": "great ecosystem",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.1 Docker and the container it runs",
+   "words": 2,
+   "text": "Container engine",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.2 Why an orchestrator is needed",
+   "words": 1,
+   "text": "Placement",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.2 Why an orchestrator is needed",
+   "words": 1,
+   "text": "Scaling",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.2 Why an orchestrator is needed",
+   "words": 1,
+   "text": "Pod",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.2 Why an orchestrator is needed",
+   "words": 1,
+   "text": "Node",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.2 Why an orchestrator is needed",
+   "words": 2,
+   "text": "Control plane",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.2 Why an orchestrator is needed",
+   "words": 3,
+   "text": "Deployment (declared state)",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.2 Why an orchestrator is needed",
+   "words": 1,
+   "text": "Service",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.2 Why an orchestrator is needed",
+   "words": 1,
+   "text": "Self-healing",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.3.2 Why an orchestrator is needed",
+   "words": 2,
+   "text": "Managed Kubernetes",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.1 What cloud-native means",
+   "words": 1,
+   "text": "Microservices",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.1 What cloud-native means",
+   "words": 1,
+   "text": "Containers",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.1 What cloud-native means",
+   "words": 1,
+   "text": "Orchestration",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.1 What cloud-native means",
+   "words": 2,
+   "text": "Declarative configuration",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.1 What cloud-native means",
+   "words": 2,
+   "text": "Immutable infrastructure",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.1 What cloud-native means",
+   "words": 2,
+   "text": "Continuous delivery",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.1 What cloud-native means",
+   "words": 1,
+   "text": "Observability",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.1 What cloud-native means",
+   "words": 2,
+   "text": "Horizontal scaling",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 1,
+   "text": "Structure",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 1,
+   "text": "Scaling",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 1,
+   "text": "Deployment",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 1,
+   "text": "Technology",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 1,
+   "text": "Failure",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 1,
+   "text": "Data",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 1,
+   "text": "Operations",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 2,
+   "text": "Best for",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 2,
+   "text": "request latency",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 1,
+   "text": "marshalling",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.2 Microservices, and the monolith they replace",
+   "words": 2,
+   "text": "call semantics",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.3 How containers and orchestration support the architecture",
+   "words": 4,
+   "text": "argument in four steps",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.3 How containers and orchestration support the architecture",
+   "words": 4,
+   "text": "share the host kernel",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.4 The trend list, in the syllabus's own terms",
+   "words": 2,
+   "text": "Serverless architecture",
+   "fate": "keep",
+   "rule": "kept: a table label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.5 How the trends connect to each other",
+   "words": 2,
+   "text": "one arc",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.5 How the trends connect to each other",
+   "words": 1,
+   "text": "Serverless",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.6 Cloud-native architecture, in its two halves",
+   "words": 1,
+   "text": "Microservices",
+   "fate": "keep",
+   "rule": "kept: the term being defined",
+   "budgeted": true
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.6 Cloud-native architecture, in its two halves",
+   "words": 1,
+   "text": "Containers",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  },
+  {
+   "chapter": "ch9.js",
+   "section": "9.4.6 Cloud-native architecture, in its two halves",
+   "words": 1,
+   "text": "Orchestration",
+   "fate": "keep",
+   "rule": "kept: a list label",
+   "budgeted": false
+  }
+ ]
+}

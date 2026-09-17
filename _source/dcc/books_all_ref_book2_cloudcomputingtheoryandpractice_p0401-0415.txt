@@ -1,0 +1,896 @@
+source: Books - all\ref_book2_CloudComputingTheoryAndPractice.pdf
+method: pdf
+sha256: 1a6bddd5494d831faa61f0c26dc12e545f5428cfc34af0db824352311d47686a
+pages:  415
+ocr:    0 page(s)
+rotation: 0
+dpi:    -
+----------------------------------------------------------------------
+===== page 401 =====
+382 Glossary
+IDE,SCSI).Thephysicaldatacontainermustbeformattedwithastandardlogicalorganization,such
+asFAT32,UFS,etc.
+Platform-as-a-Service (PaaS) The capability to deploy onto the cloud infrastructure consumer-
+created or acquired applications created using programming languages and tools supported by the
+provider. The consumer does not manage or control the underlying cloud infrastructure, including
+network, servers, operating systems, or storage, but has control over the deployed applications and,
+possibly,applicationhostingenvironmentconfigurations.
+Private cloud The infrastructure is operated solely for an organization; it may be managed by the
+organizationorathirdpartyandmayexistonorofftheorganization’spremises.
+Publiccloud Theinfrastructureismadeavailabletothegeneralpublicoralargeindustrygroupand
+isownedbyanorganizationsellingcloudservices.
+Serviceconsumer Personororganizationthatmaintainsabusinessrelationshipwith,andusesservice
+from,serviceproviders.
+Service-levelagreement(SLA) Adocumentexplainingexpectedqualityofserviceandlegalguar-
+antees.
+Serviceprovider Entityresponsibleformakingaserviceavailabletoserviceconsumers.
+SLA management Includes the SLA contract definition (basic schema with the quality-of-service
+parameters),SLAmonitoring,andSLAenforcement,accordingtothedefinedpolicies.
+Software-as-a-Service(SaaS) Thecapabilitytouseaprovider’sapplicationsrunningonacloudinfra-
+structure.Theapplicationsareaccessiblefromvariousclientdevicesthroughathin-clientinterfacesuch
+asaWebbrowser(e.g.,Web-basedemail).Theconsumerdoesnotmanageorcontroltheunderlying
+cloudinfrastructure,includingnetwork,servers,operatingsystems,storage,orevenindividualapplica-
+tioncapabilities,withthepossibleexceptionoflimiteduser-specificapplicationconfigurationsettings.
+Layers and functions
+Applicationlayer Deployedsoftwareapplicationstargetedtowardend-usersoftwareclientsorother
+programs,andmadeavailableviathecloud.
+Hardware layer Includes computers (CPU, memory), network (router, firewall, switch, network
+link and interface) and storage components (hard disk), and other physical computing infrastructure
+elements.
+Facility layer Heating, ventilation, air conditioning (HVAC), power, communications, and other
+aspectsofthephysicalplantcomprisethelowestlayer,thefacilitylayer.
+Metering Providingameasurementcapabilityatsomelevelofabstractionappropriatetothetypeof
+service(e.g.,storage,processing,bandwidth,andactiveuseraccounts).
+
+
+===== page 402 =====
+Glossary 383
+Monitoringandreporting Discoveringandmonitoringthevirtualresources,monitoringcloudoper-
+ationsandevents,andgeneratingperformancereports.
+Physicalresourcelayer Includesallphysicalresourcesusedtoprovidecloudservices.
+Platformarchitecturelayer Entailscompilers,libraries,utilities,andothersoftwaretoolsanddevel-
+opmentenvironmentsneededtoimplementapplications.
+Provisioning/configuration Preparingacloudtoallowittoprovide(new)servicestoitsusers.
+Resourceabstractionandcontrollayer Softwareelementsusedtorealizetheinfrastructureupon
+whichacloudservicecanbeestablished(e.g.,hypervisor,virtualmachines,virtualdatastorage).
+Resourcechange Adjustingconfiguration/resourceassignmentforrepairsandupgradesandjoining
+newnodesintothecloud.
+Servicelayer Definesthebasicservicesprovidedbycloudproviders.
+Virtualizedinfrastructurelayer Softwareelements,suchashypervisors,virtualmachines,virtual
+datastorage,andsupportingmiddlewarecomponents,usedtorealizetheinfrastructureuponwhicha
+computingplatformcanbeestablished.Althoughvirtualmachinetechnologyiscommonlyusedatthis
+layer,othermeansofprovidingthenecessarysoftwareabstractionsarenotprecluded.
+Virtualization
+Fullvirtualization Eachvirtualmachinerunsonanexactcopyoftheactualhardware.
+Guestoperatingsystem AnoperatingsystemthatrunsonaVMMratherthandirectlyonthehardware.
+Hypervisor or virtual machine monitor (VMM) Software that securely partitions a computer’s
+resources into one or more virtual machines. Each virtual machine appears to be running on bare
+hardware,givingtheappearanceofmultipleinstancesofthesamecomputer,butallaresupportedona
+singlemachine.
+Paravirtualization Eachvirtualmachinerunsonaslightlymodifiedcopyoftheactualhardware.The
+reasonsforparavirtualizationare(i)someaspectsofthehardwarecannotbevirtualized;(ii)toimprove
+performance;(iii)topresentasimplerinterface.
+Processorapplicationvirtualmachine VMrunsunderthecontrolofanormalOSandprovidesa
+platform-independenthostforasingleapplication(e.g.,JavaVirtualMachine(JVM)).
+Systemvirtualmachine/hardwarevirtualmachine Providesacompletesystem.EachVMcanrun
+itsownOS,whichinturncanrunmultipleapplications.Thereareseveralapproaches:
+• Traditional VM. A thin software layer that runs directly on the host machine hardware; its main
+advantageisperformance.Examples:VMWareESX,ESXiServers,Xen,OS370,Denali.
+• Hosted.RunontopofanexistingOS;itsmainadvantageisthatitiseasiertobuildandeasierto
+install.Example:User-modeLinux.
+• Hybrid.SharesthehardwarewithanexistingOS.Example:VMWareWorkstation.
+
+
+===== page 403 =====
+384 Glossary
+Virtualization Anabstractionorsimulationofhardwareresources(e.g.,virtualmemory).
+Virtual machine (VM) An isolated environment that appears to be a whole computer but actually
+onlyhasaccesstoaportionofthecomputer’sresources.
+
+
+===== page 404 =====
+Index
+A Application binary interface (ABI), 132, 134–135
+Application development
+Absolute deadline, 195
+adaptive data streaming, 352
+Abstraction and physical reality, 303
+distributed trust algorithm, 339, 341
+cyberphysical systems, 304
+Cognitive Radio Networks (CRNs), 340
+embedded systems, 304
+historical information, 347–348
+possible elements, 303
+simulation, 342
+sociotechnical systems, 304
+trust, 341, 344
+Abuse of the cloud, 275
+EC2 instances, 318
+Access control lists (ACLs), 147
+Linux connections, 327
+Access transparency, 27
+placement group and use MPI, 334
+Account or service hijacking, 276
+security rules, 324
+Adaptive audio streaming, 352
+firewalls connections, 319
+Adaptive data streaming, cloud service, 352
+Hadoop installation, 336
+Address space compression, 142
+optimal FPGA synthesis, 356
+Advisory lock, 260
+simple notification service on Ubuntu 10.04, 332
+Akamai, 226
+S3 in java, 328
+All-or-nothing action, 46
+SQS services in C#, 331
+post-commit phase, 45
+See also Amazon Web Services (AWS)
+pre-commit phase, 45
+Application/logic tier, 6
+Amazon Elastic Block Storage (EBS), 318–319
+Application programming interface (API), 132
+Amazon Machine Image (AMI), 68
+Application-specific integrated circuit (ASIC),
+Amazon’s EC2, 324
+24–25, 356
+Amazon Web Services (AWS), 67–68, 71, 317–318
+Application program interface (API), 134–135
+Amazon Machine Image (AMI), 70–71
+Ascending clock auction (ASCA), 178
+from Amazon Management Console, 319
+Asymmetric choice petri nets, 55–56
+AutoScaling, 71
+Asymmetric confusion, 53
+Charges, 75
+Atomic actions, 44
+CloudFormation, 72
+all-or-nothing property, 45
+CloudWatch, 70–71
+basic operations, 44
+Elastic Beanstalk, 71–72
+before-or-after property, 45–46
+Elastic Block Store (EBS), 70
+cell storage, 45–46
+EC2 instance, 318
+compare-and-swap architecture, 44–45
+Evaluation, 75–77
+hardware support, 44–45, 47
+RunInstance API, 318–319
+Simple DB, 70 journal storage, 46
+Simple Queue Service (SQS), 70 monitors, 47
+Virtual Private Cloud (VPC), 71 multistep operations, 44
+See also Simple Storage System (S3) parallel and distributed applications, 44
+Amazon Web Services Licensing Agreement systematic approaches, 47
+(AWSLA), 72–73 Auctioning algorithms, 181
+charges, 75 Autonomic computing, 278
+evaluation, 75–77 Autonomic performance managers coordination,
+regions and availability zones, 73 172–173
+Amdahl’s law, 22 approach, 173
+Andrew File System (AFS), 243, 251 experiments, 174
+AND split pattern, 108 Automatic VM scaling, 202
+Anticipated exceptions, 105 Autoscaling, 71, 163
+Apache Hadoop, 118, 258, 336 Avast antivirus software, 323–324
+AppEngine, 78 Avast network shield, 323–324
+385
+
+
+===== page 405 =====
+386 Index
+Avast Web shield, 323–324 heterogeneity, systems, 58
+AWS security, 325 HTTP tunneling, 61–62
+Azure and online services, 79 modularity concept, 57
+process architecture, 58
+proxy server, 61
+B remote procedure call (RPC), 58
+response time, 61
+Bandwidth, 131
+security concerns, 58
+Barrier synchronization, 44
+system ensembles, 57–58
+Basic Monitoring, 70–71
+in WorldWideWeb, 60
+Before-or-after atomicity, 45–46
+Clock condition, 37
+Berkeley Open Infrastructure for Network
+Clock proxy auction, 178
+Computing (BOINC), 129
+Closed-box platforms, 284
+Biased Random Walks, 234
+Cloud applications, 21
+BigTable, 266–267
+architectural styles, 79
+Binary cause-effect relationship, 34
+workflows, 104, 106
+Binary code generation rules, 158
+See also Application development
+Binary translation, 140
+Cloud-based optimal FPGA synthesis, 356
+Biology research, 125
+Cloud-based simulation, 339
+Bipartite graph, 51
+CRN, 340
+Bit-level parallelism, 25
+distributed algorithm for trust
+BitTorrent, 8
+management, 341
+Black Widow topology, 221
+distributed trust algorithm simulation, 342
+Border Gateway Routing (BGP) protocols, 207
+trust, 341
+Borrowed Virtual Time (BVT) algorithm, 146, 190
+Cloud-based Web services, utility-based
+context switches, 190
+model, 174–175
+real time, 191, 193
+goals, 175
+Bundling, 289
+nine constraints, 178
+Byte-range tokens, 254
+optimization problem, 176–177
+utility function, 176
+Cloud computing, 1–2, 21, 77
+C
+at Amazon, 67, 73–74
+Cache Array Routing Protocol (CARP), 227 architectural styles, 102
+Cache isolation, 141–142 for biology research, 125
+Cache Only Memory Access (COMA), 26 challenges, 100
+Capacity allocation, 164 node failures, 100
+Carver, 124 reliability, 100
+Case-based reasoning (CBR), 128 client-server paradigm, 58
+Causal delivery, 36 complex structure, 14
+Cell storage, 45, 243–244 coordination, 112
+Centers for Disease Control (CDC), 4 delivery models and services, 1
+Chord, 8 digital contents, 128
+Chromebook, 78 economical aspects, 2–3, 9
+Chubby replica architecture, 263 ethical issues, 14
+Chunks, 256 existing cloud applications, 101
+Class-based queuing (CBQ) method, 217 batch processing systems, 101–102
+Client-server paradigm, 57 processing pipelines, 101
+applications, 58 grid movement, impact on, 4
+back-end systems, 57–58 high-performance computing, 121
+communication on WWW, 60 major challenges, 16
+data processing applications, 101 obstacles, using, 10
+email service, 59 parallel computing, 24–25
+front-end systems, 57–58 science and engineering applications, 120
+
+
+===== page 406 =====
+Index 387
+social computing, 128 scheduling policies, 195
+software licensing, 95 system model, 195
+success factors, reasons, 10 task characterization and deadlines, 195
+types, 9 timing diagram, 197
+user experience, 93 Cloud security
+utility-based computing costs, 131 contract, user and CSP, 278
+vulnerabilities, 15 legislation, information practices, 280
+Cloud computing, delivery models and services, 1 operating system (OS), 283
+architectures, 12 risks, 292
+enterprise services, 13 privacy impact assesment (PIA) tool, 281
+entities, 11–12 privacy, 279
+model structures, 12–13 risks, 274
+support activities, 14 shared images, risks of, 289
+Cloud computing environment, attacks, 276 trust, 281
+Cloud computing paradigms, 318 trusted virtual machine monitor (TVMM), 298
+Cloud controller, 82 user concerns, 277
+Cloud Formation, 71–72 VM models, 284
+Cloud Front, 71 VM-based threats, 286
+Cloud infrastructure VMM-based threats, 286
+delivery models virtualization, 286
+Infrastructure-as-a-Service (IaaS), 13, 67 Xoar, design goals, 295
+Platform-as-a-Service (PaaS), 13, 67 Cloud Security Alliance (CSA) report in 2010, 275
+Software-as-a-Service (SaaS), 13, 67 Cloud service provider (CSP), 277
+IBMSmartCloud, 67 responsibility sharing, 92
+open-source cloud computing platforms, 67 Cloud services availability, 275
+Cloud interoperability Clouds for science and engineering, 120
+cloud service providers (CSPs), 87 eScience, 121
+defined, 86 metadata, 121
+exchange, 87 Cloud storage diversity, 84
+from network to clouds, 86–87 RACS system, 86
+ontological development, 87 RAID-5 system, 84–85
+Public Key Infrastructure (PKI), 88 risks, 84
+security concerns, 87–88 scalable solutions, 86
+storage standards, 87 vendor lock-up, 84
+trust indexes, 88 CloudStore, 258
+Cloud resource management, 163 Cloud vulnerabilities, 15
+dynamic application scaling, 201 Cloud Watch, 70
+fair queing, 184 Cluster controller, 82
+resource bundling, 178 Coffman conditions, 23
+ASCA algorithm, 180 circular wait, 23
+combinatorial auctions, 178 hold and wait, 23
+pricing and allocation algorithms, 179 mutual exclusion, 23
+start-time fair queuing (SFQ) algorithm, 185 no preemption, 23
+Cloud Resource Virtualization Cognitive radio networks (CRNs), 317, 340
+approaches primary nodes/devices, 340
+full virtualization, 132 secondary nodes/devices, 341
+paravirtualization, 132 Commit point, 45
+Cloud scheduling, 194 Common Object Request Broker Architecture
+algorithms, 182 (CORBA), 103–104
+equal partitioning rule (EPR), 198–199 Communication protocols and process
+MapReduce applications, 199 coordination, 21, 32
+optimal partitioning rule (OPR), 195 implementation, 33
+parameters used, 196 precision of global time base, 33–34
+
+
+===== page 407 =====
+388 Index
+presence of errors, 32 application controllers, 171
+RTT estimation, 33 cloud controllers, 171
+timestamps, 33–34 Control theory, 165
+Community Atmosphere Mode (CAM), 121 applications, 166
+Community Climate System Model (CCSM), 122 instability, 170
+Community cloud, 9 principles, 166
+Complex instruction set computing (CISC), 25 resource allocation, 169
+Complex systems, 301 single server system, 167
+challenges and solutions, 314 thresholds, 171
+communication systems, 312 Confusion, 53
+complexity of simulation, 302 Congestion control, 33
+emergence and self-organization, 306 Consensus protocols, 48
+hierarchy, 310 Algorithms, 49–50
+homogeneous and heterogeneous systems, 303 in distributed system, 48
+interaction, 302 entities, role in, 49
+layering, 310 family of Paxos, 48
+modularity, 310 no fault-tolerancy, 48
+Compliant Cloud Computing (C3), 92 request types, 49
+Composability bounds and scalability, 308 services, 48
+computer clouds, 309 Content-centric routing, 5
+Google BigTable, implementation, 310 Context switching, 42–43
+Internet, 309 Copy-on-write mechanism, 297
+limits of, 309 Coral, 227
+scaling, 310 Course-grained locks, 260
+threshold voltage, 309 CPU virtualization, 153
+Composite task, 105 Create/Read/Update/Delete (CRUD)
+Computing and communication systems, operations, 104
+complexity, 312 Credence, 8
+characteristics, 312 P2P applications, 8
+specific factors, 312–313 Credentials, 282
+Computing grid, 4 Critical slowing, 305
+application, challenges, 4 Cross-site scripting, 274
+client-server paradigm, 58 Current privilege level (CPL), 152
+Concurrency, 41 Cygwin, 336
+advantages, 42
+challenges, 42
+D
+communication channels, 44
+in embedded system, 42 Dashboard, 83
+software applications, 42–44 Data base management system (DBMS), 245
+SPMD paradigm, 41–42 Datagram, 205
+system design strategy, 42 Data centers
+thread activities, 42–43 energy consumption, 9
+Concurrency transparency, 27 Data intensity, 90–91
+Concurrent events, 34 Data loss or leakage, 276
+Concurrent processes, 24 Data mining, 101
+Content Data parallelism/loop parallelism, 24–25
+centric routing, 5 Data processing applications, 101
+defined, 5 batch processing systems, 101–102
+Content delivery network (CDN), 79–80 types, 101
+design and policy decisions, 227 Data replication, 265
+network resource management, 226 Data storage, 100
+Control granularity, 171 Data streaming, 352
+Controllers Data tier, 6
+
+
+===== page 408 =====
+Index 389
+Deep Web sources, 78 Elastic computing, 1
+Defense Information Systems Agency (DISA), 4 Elastic Load Balancer, 71
+Degree of a Power-Law Network Estimation, 236 Elastic Map Reduce (EMR), 71
+Degree of the vertex, 229 Embedded systems, 42
+Denial-of-service (DOS) attacks, 320 Emergence and self-organization, 306
+Detailed Monitoring, 70–71 Enabled Transition, 54
+Distributed Data Interface (DDI), 122 Enactment engine, 106–107
+Distributed denial-of-service attack (DDoS), 93, 274 Energy optimization, 164
+Distributed file systems, 246 Energy-proportional systems, 88
+Andrew file system (AFS), 251 Enforced modularity, 57
+Network file system (NFS), 246 Epidemic algorithms, 236
+Sprite network file system (SFS), 251 infective, 237
+Distributed systems, 27 recovered, 237
+characteristics, 27 susceptible-infective (SI), 237
+defined, 27 ETag, 70
+history, 27 Eucalyptus, 67, 80–81
+middleware, 27 European Organization for Nuclear Research
+Divisible Load Theory (DLT), 115 (CERN), 3
+Document processing, 101 Exception Handler (EH), 42
+Domain Name Service (DNS), 87, 207, 324 Explicit AND split, 108
+Dom0, 147, 292 Extended free choice, 55–56
+Download hadoop, 337 Extended nets, 55
+Dynamic binary translation, 135 Extensibility, 103
+Dynamic Host Configuration Protocol (DHCP), 81 Extensible Markup Language (XML), 104
+Dynamic provisioning, 280
+Dynamic random access memory (DRAM),
+F
+88–89, 242
+Dynamic Voltage and Frequency Scaling Fabric controller, 79–80
+(DVFS), 164 Facebook JavaScript (FBJS), 129
+Dynamic voltage scaling (DVS), 172 Facebook markup language (FBML), 129
+Dynamic workflows, 110 Failure transparency, 27
+DynamoDB, 71 Fair queuing, 184
+bandwidth, 184
+bit-by-bit round-robin (BR) strategy, 184
+E
+buffer space, 184
+Earliest deadline first (EDF), 183 fair queuing (FQ) algorithm, 184
+EC2 c1.medium Platform packet transmission, 185
+average conversion time, 355 timing, 184
+conversion Time in Seconds, 354 Fast Fourier Transform (FFT)
+EC2 Linux instance, launch, 327 algorithm, 122
+Eclipse, 336 Fat tree, 221
+EC2 Placement Group creation and use MPI, 334 Feasible state, 169
+EC2 Request Instance Wizard, 326 Federal Emergency Management Agency
+EC2 t1.micro Server Platform (FEMA), 201
+average conversion time, 355 Federal Information Processing Standard
+conversion Time in Seconds, 353–354 (FIPS), 275
+Elastic Block Store (EBS), 70 Federal Information Security Management Act
+ElastiCache, 71 (FISMA), 275
+Elastic Beanstalk, 71 FPGA structure, 357
+Elastic Compute Cloud (EC2), 68 FibreChannel over IP (FCIP), 225
+SOAP messages, 68 Field programmable gate arrays (FPGAs), 24–25
+VM import, 68 FIFO delivery, 36
+Xen virtualization strategy, 68 Fine control, 171
+
+
+===== page 409 =====
+390 Index
+Fine-grained locks, 260 Hadoop Map Reduce, 118
+Firepass, 291 Hard deadlines, 195
+Firewall Rule Setting, 322 Hardware costs, 133
+Firewalls, 319 Hardware description language (HDL), 24–25
+Firing rule, 55 Hardware trojan horses (HTH), 314
+Firing sequence, 55 Hardware virtual machine (HVM), 334
+Floating point systems (FPS), 26 Health and Human Services (HHS), 4
+Flow control, 33 Hierarchical token buckets (HTB), 218–219
+Folded Clos topology, 221 High-level language (HLL) code, 135
+Fork routing task, 105 High-performance computing challenge
+Fortran 90 code, 122 (HPCC), 123
+FORWARD rule, 321 High-performance computing on cloud, 121
+Free Choice, 55–56 Holy grail, 22. See also Parallel and Distributed
+Full virtualization and paravirtualization, 140 Systems parallel computing
+Horizontal scaling, 201
+Hourglass network architecture, 208
+G
+HTB packet schedule, 219
+General Atomic andMolecular Electronic Structure Hybrid cloud, 9
+System (GAMESS), 122 Hypercube, 26
+General Parallel File System (GPFS), 252–253 Hypertext Caching Protocol (HTCP), 227
+Giant connected component (GCC), 230 HyperText Markup Language (HTML), 3
+Global predicate evaluation (GPE), 32 See also Network-centric computing and
+Globule, 227 network-centric content
+Gmail, 77 HyperText Transfer Protocol (HTTP), 3, 60
+Google
+cloud computing, 77–78
+I
+crawlers, 78
+data base management services (DBMSs), 79 IaaS model
+deep Web sources, 78 challenges, cloud computing, 17
+structured data, 78 IBM Sequoia-BlueGene/Q system, 26. See also
+Google Analytics, 268 Supercomputers
+Google base, 78 iCloud (Apple), 2
+Google calendar, 77–78 Identity and Access Management (IAM), 324
+Google co-op, 78 Image processing, 101
+Google docs, 77 Implicit AND split, 108
+Google drive, 78 Incidence matrix, 55
+Google File System (GFS), 243, 255, 257 Incommensurate scaling, 307
+Google Query Language (GQL), 78 Inconsistent and consistent cuts, 38–39
+GrepTheWeb application, 118–119 Indexing, 101
+the cleanup phase, 120 InfiniBand, 89–90, 220
+the monitoring phase, 120 Input/output memory management unit
+the processing phase, 118 (IOMMU), 294
+the shutdown phase, 120 INPUT rule, 321
+the startup phase, 118 InputStream, 329
+user interactions with system, 120 Instance Action pull-down menu, 321
+Guest system calls, 143 Instruction-level parallelism, 25
+Gustafson’s law, 23 Instruction set architecture (ISA), 132, 134–135
+Integral control, 171
+Intercloud exchange, 87
+H
+Interconnection networks for computer clouds, 219
+Hadoop file system (HDFS), 258–259 The Internet, 207
+Hadoop installation on Eclipse on windows Internet Cache Protocol (ICP), 227
+system, 336 Internet exchange point (IXP), 211
+
+
+===== page 410 =====
+Index 391
+Internet migration to IPv6, 210 Load balancing, 164
+Internet Protocol television (IPTV), 207 Load imbalance, 126
+Internet transformation, 211 Location transparency, 27
+Interpreter, 303 Lock granularity, 254
+Interrupt virtualization, 143 Locks and Chubby, 260–261
+Iptables command, 321 Logical clocks (LC), 34
+IPv4 and IPv6, differences, 210 concept, 34
+mandatory support for network security, 210 processes, 35
+multicasting, 210 rules, 34
+stateless address autoconfiguration Loopback files, 289
+(SLAAC), 210
+Itanium, 152
+M
+Machine learning techniques, 166
+J
+MAESTRO, 123
+Jaguar, 26. See also Supercomputers Mandatory locks, 260
+Java SecurityManager, 284 Mandatory security, 283
+Java Virtual Machine (JVM), 284 Man-in-the middle attacks, 290
+Join routing task, 105 MapReduce applications subject to deadlines
+Journal storage, 45–46, 243 scheduling, 199
+open-source implementation, 199
+parameters used, 200
+K Map Reduce programming model, 115, 117
+Marked Graph, 55–56
+Key-based routing (KBR), 8–9
+Market-oriented/economic mechanisms, 166
+Key Management Interoperability Protocol
+Mashup Container, 129
+(KMIP), 88
+Master/slave replication, 265
+Mean time to failure (MTTF), 312
+Media Access Control (MAC), 311
+L
+Megastore, 243, 268–269
+Lagrange multiplier, 167 Memcached system, 264
+Large Hadron Collider (LHC), 4 Memory management unit (MMU), 141
+Large-scale data centers Memory virtualization, 136, 153
+data migration, 90 Message delivery rules, 35
+energy cost, 90 causal delivery violation, 37–38
+energy proportional system, 88–89 channel-process interface, 36
+energy reduction, 90 clock conditions, 37
+idle system, power consumption, 88 consistent message delivery, 37
+operating efficiency, 88 First in, first out (FIFO) delivery, 36
+Latency, 131 Time stamp (T S(m)), 37
+Lawrencium, 124 Message Passing Interface (MPI), 24, 44
+Layering and hierarchy, 311 Metaphysical addressing, 153
+application layer, 311 Microsoft Windows
+communication protocols, 311 Azure services, 79
+data link layer, 311 cloud computing, 79
+functional components, 311 online services, 79
+network layer, 311 Middleware, 4, 27
+physical layer, 311 Migration transparency, 27
+transport layer, 311 MIMD architecture
+Layering and virtualization, 133 defined, 26
+LHC Computing Grid (LCG), 4 in parallel computing, 26
+Live media, 226 MIMD Lattice Computation (MILC), 123
+Liveness, 55 Modeling concurrency with Petri nets, 51
+
+
+===== page 411 =====
+392 Index
+Modified Transition Enabling Rule for Extended Network virtualization, optimization of, 149
+Nets, 55 Neutrality, 103
+Modularity, 57, 310 New Technology File System (NTFS), 80
+Monitors, 47–48 NFS client/server interaction, 249
+Multicore processors, 24 Nimbus, 67, 80–81, 83
+Multilevel Memory Manager (MLMM), 42 NIST project, 286
+Multiple instructions, Multiple Data (MIMD), 25 NMap tool, 290
+Multi-version concurrency control (MVCC), 268 Node controller, 82
+Nonces, 288
+Non scalable/single-load balancers, 202
+Nonfaulting access to privileged state, 142–143
+N
+Non-Uniform Memory Access (NUMA), 26
+National Aeronautics and Space Administration
+(NASA), 4
+National Center for Biotechnology Information O
+(NCBI), 125
+Object Request Broker (ORB), 103
+National Energy Research Scientific Computing
+Open-box platforms, 284
+Center
+OpenNebula, 67, 80–83
+(NERSC), 121
+Open-source software platforms, 80
+National Institute of Standards (NIST), 275
+infrastructure, 80
+Navy’s Next Generation Enterprise Network
+private clouds, 80
+(NGEN), 4
+OpenStack, 67, 83
+Network address translation (NAT) mechanism,
+OpenVZ system, 155
+75, 320
+Operating system-level virtualization, 138–139
+Network architecture, 205
+Operating systems, 284
+Network-centric computing and network-centric
+Operating system security, 283
+content, 3
+Oracle Cloud, 67
+advantages, 5
+Ordinary Net, 54
+characteristics, 5
+Overcite, 8
+defined, 4
+Overlay networks, 228
+development factors, 6
+distribution developments, 3
+Network Element Control Protocol (NECP), 227
+P
+Network File System (NFS), 243, 245
+Network interface card (NIC), 149 Packet filtering, 319
+Network address translation (NAT) mechanism, 320 Packet-switched networks, 205
+Network News Transfer Protocol (NNTP), 7 Parallel and Distributed Systems
+Network resource management, 217 checkpoint-restart procedures, 21
+content delivery network (CDN), 226 cloud applications, 21
+epidemic algorithms, 236 communication protocols, 21
+interconnection, 219 binary cause-effect relationship, 34
+Internet, 207 clock rate, 33
+migration to IPv6, 210 error control mechanism, 33
+TCP (transport control protocol), 208–209 event sequences, 34
+transformation, 211 major concerns, 32
+web access, 214 process coordination, 32
+overlay network, 207 timing concept, 33–34
+packet-switched networks, 205 global state, 28
+scale-free networks, 230 of channels, 29
+biased randomwalks, 234, 236 communication channel, 29
+power-law degree distribution, 232 of distributed computation, 29
+small-world networks, 229 initial state, 30
+storage area network (SAN), 222 lattice of, 29–30
+
+
+===== page 412 =====
+Index 393
+number of paths, 30–31 Power-law distribution, 231
+problems, 32 Power manager, 173
+process group, 29 Presentation tier, 6
+protocol, 29 Primitive task, 105
+space-time, 28 Priority inversion, 23
+in two-dimensional case, 31 Privacy and privacy impact assessment, 279
+parallel computer architecture, 25 Privacy concerns, 280
+graphic processing units (GPUs), 26 Privacy impact assesment (PIA), 281
+MIMD architecture, 26 Private cloud, 9
+Sun Microsystems, 26 Eucalyptus in, 81
+vector processing, 26 Open-source software, 80
+parallel computing, 21 space support, 82
+advantages, 21–22 system components, 81
+algorithms requirements, 24 virtual machine construction, 82
+barrier synchronization, 23 Privilege leaking, 152
+Coffman conditions, 23 Processor Abstraction Layer (PAL), 152–153
+companies aimed to support, 25 Processor emulation, 139
+concurrency problems, 23–24 Processor virtualization, 139
+deadlocks, 23 Proportional thresholding, 171
+fine-grain and coarse-grain, 24 Proposal preparation, 49
+livelock condition, 23 Proposal promise, 49
+scaled speed-up, 41 Protocol stacks, 206
+shared memory, 24 Public cloud, 9
+speed-up measures, 22 Public Key Infrastructure (PKI), 88
+subtasks, 23
+Parallel file systems (PFSs), 245
+Q
+Paravirtual machine (PVM) image, 334
+Paravirtualization, 141 Qemu, 147
+Partial differential equations (PDEs), 24 Quad-core processors, 6
+Passphrase, 291 Quantifying complexity, 304
+Paxos consensus algorithm flow, 48, 50 complexity measurement, 305
+Peer-to-peer systems, 7 excess entropy, 305
+overlay network, 8–9 Kolmogorov complexity, 306
+properties, 7 macroscopic and microscopic properties, 304
+Performance isolation, 139 phase transition, 308
+Performance penalty, 133 relative predictive efficiency, 305
+Performance transparency, 27 scale-free organization, 308
+Periodic auctions, 181 statistical complexity, 305
+Petri nets von Neumann entropy, 305
+bipartite graphs, 51 Quantum Chromo Dynamics (QCD), 123
+concurrent activities, 52 Quorum, 49
+confusion, 53
+defined, 54
+R
+in distributed system, 51–52
+exclusion model, 54 RAID-5 system, 84–85
+marked graph, 53 Rate-based earliest deadline (RBED), 183
+model priorities, 53 Rate monotonic algorithms (RMA), 183
+system with two processes, 53 RDF Schema (RDFS), 3
+tokens in, 51 Reduced Instruction Set Computing (RISC), 25
+Phishing, 274 Redundant Array of Cloud Storage (RACS), 86
+Platform-as-a-Service (PaaS) Register-transfer level (RTL), 356
+Google, using, 78 Relational database management system
+Point-of-presence (POP), 211 (RDBMS), 6
+
+
+===== page 413 =====
+394 Index
+Relative deadline, 195 Security risks posed by shared images, 289
+Remote File System (RFS), 246 Linux AMI, 290
+Remote procedure call (RPC), 27, 58, 248 privacy risks, 291
+Replanning, 105 software vulnerability, 290
+Replication transparency, 27 types, 290
+Representational State Transfer (REST), 104 unsolicited connections, 291
+Prerequisites, 336 Security rules in EC2, 324
+Resource allocation/dispatching (RAD), 183 Self-Organization and Complexity Attributes, 307
+Resource bundling, 178 Semaphores, 47–48
+the ASCA combinatorial auction algorithm, 180 Service- and compliance-level agreements, 91
+combinatorial auctions, 178 Service-level agreement (SLA)
+pricing and allocation algorithms, 179 autonomic performance managers, 172
+Resource Description Framework (RDF), 3 area of service, 91
+Resource management and dynamic application common metrics, 92
+scaling, 201 compliance concept, 92
+Resource management, policies and management phases, 92
+mechanisms, 164 objectives, 91
+classification, 164 recording, 91
+implementation, 165 Several Network File Systems, comparison, 246
+interactive vs noninteractive workloads, 166 Shared technology, 275
+Response time, 61 SIMD. See Single Instruction, Multiple Data
+Retransmission timeout (RTO), 209 (SIMD)
+Ring aliasing, 142 Simple Mail Transfer Protocol (SMTP), 7
+Ring compression, 143 Simple Notification Service installation on Ubuntu
+Ring deprivileging, 142 10.04, 332
+Round-trip-time (RTT), 33, 209 Simple Object Access Protocol (SOAP), 104
+Routers, 220 Simple Queue Service (SQS), 70
+Routing task, 105 Simple Storage System (S3)
+Runs and cuts; causal history, 38, 40 Amazon S3 SLA, 70
+defined, 38–39 cloud storage diversity, 86
+monitors, 38 Elastic Block Store (EBS), 70
+process evaluation, 38 ETag field, 70
+snapshot protocol, 40–41 functions, 68
+object maintenance, 68–69
+parallel applications, 69
+supporting activities, 69
+S
+Simple Workflow Service (SWF), 71
+SaaS model Simultaneous clock auction, 178
+challenges, cloud computing, 16 Single Instruction, Multiple Data (SIMD), 25
+Same program multiple data (SPMD), 24–25, graphic processing units (GPUs), 26
+122, 334 vector processing, 25–26
+Scale-free networks, 229–230 Single Instruction Single Data (SISD), 25
+Scaling transparency, 27 S/KEY password system, 288
+Scheduler (S), 42 Skype, 7–8
+Scheduling algorithms for computing clouds, 182 Small-World Networks, 229
+best-effort policies, 183 SmartLM, 96
+max-min fairness criterion, 182 Snapshot protocol of Chandy and Lamport, 40–41
+multimedia applications, 183 Social intelligence, 128
+non preemptive, 182 Social networks, 128
+preemptive, 182 Societal scaling, 310
+time-slice, 183 Soft deadlines, 195
+Security isolation, 100 Soft modularity, 57
+Security risks posed by management OS, 292 challenges, 57
+
+
+===== page 414 =====
+Index 395
+module implementation, 57 T
+“Soft-state” approach, 265
+Task parallelism, 25
+Software engineering
+TCP congestion control policies, 209
+tier models, impact on, 6
+Terra. See Trusted virtual machine monitor
+Software fault isolation (SFI),158
+(TVMM)
+Software licensing, 95
+Third-party control, 275
+Sprite Network File System
+Three-tier model, 6
+(SFS), 251
+Three-way handshake, 61
+SQL Azure, 79
+Thresholds, 171
+SQL injection, 274
+Tier 1 network, 211
+SQS services management in C#, 331
+Tier 2 network, 211
+SSH Installation, 336
+Tier 3 network, 211
+Start-time fair queuing, 185
+Timestamps, 33–34
+scheduler, 186
+Titan (Cray XK7 system), 26. See also
+scheduling decisions, 187
+Supercomputers
+SFQ tree, 186
+Toolstack, 147
+Stateless server, 102
+Trace distance, 236
+State Machine, 55–56
+Traditional threats, 274
+S3 use in java, 328
+Transaction processing and NoSQL databases, 264
+Stochastic high-level Petri nets
+Transaction processing systems, 21
+(SHLPNs), 57
+Translation look-aside buffer (TLB), 145
+Stochastic Petri nets (SPNs), 56
+Transport Control Protocol (TCP), 60, 207
+Storage area network (SAN), 222, 224–245
+Trivial File Transfer Protocol (TFTP), 207
+Storage controller, 82
+Trojan, 291
+Storage models, 46, 243
+Trust, 281
+Storage service (Walrus), 82
+calculus-based trust, 282
+Storage system, 241
+deterrence-based trust, 282
+Bigtable, 266–267
+dynamic trust, 282
+databases, 243
+interdependence, 281
+Apache Hadoop, 258
+persistent trust, 282
+evolution, 242
+policies and reputation, 282
+general parallel file system, 252
+relational trust, 282
+Google File System (GFS), 255
+risk, 281
+history, 269
+Trusted applications, 283
+locks and chubby, 260
+Trusted computer base (TCB), 17, 292
+Megastore, 268–269
+Trusted-path mechanism, 284
+model, 243
+Trusted virtual machine monitor (TVMM), 298
+online transaction processing
+Trust management service, 344
+(OLTP), 264
+advantages, 350
+Strong clock condition, 37
+An Algorithm for Trust Evaluation, 347
+Strong coordination models, 110
+average trust function, 351
+Sudo command, 321
+benefits, 350
+Supercomputers, 26
+CR layout, 346
+Symmetric confusion, 53
+History-Based Algorithm simulation, 348
+Synchronization pattern, 108
+mobile devices, 344
+System analysis phase, 34
+model assumptions, 345
+System heterogeneity, 58
+Tunneling, 225
+Systems of systems (SoS), 314
+attributes, 314
+collaborative systems, 314
+U
+direct system, 314
+virtual systems, 314 Ubuntu, 332
+System specification phase, 34 Uniform Memory Access (UMA), 26
+
+
+===== page 415 =====
+396 Index
+Universal Declaration of Human Rights, VM-based threats, 286
+Article 12, 279 VM import, 352
+Universal Serial Bus (USB), 149 VMM-based threats, 286
+Unix File System, 248, 250 VMware EX Server, 141
+Unpack hadoop, 338 VMX nonroot, 143
+User and cloud service provider, 92 VMX root, 143
+User and CSP, contrast, 278 Voice-over-Internet Protocol (VoIP), 7–8, 207
+User convenience, 133
+User Datagram Protocol (UDP), 207
+W
+User experience, 93
+Utility-based approaches, 166 Warehouse-scale computer (WSC), 219
+Weak coordination models, 110
+Web access and TCP congestion control
+V
+window, 214
+vBlades, 152 Web browser, 60
+Vertical scaling, 201 Web Cache Coordination Protocol (WCCP), 227
+Vice, 251 Web Ontology Language (OWL), 3
+Video transcoding, 101 Web page, 60
+Virtual firewall-router (VFR), 147 Web Services Description Language (WSDL), 104
+Virtualization, 42, 132 WebSphere Extended Deployment (WXD), 174
+aggregation, 132 Web statistics, 214
+emulation, 132 Windows Azure, 79
+hardware support, 142 compute, 79–80
+layering, 133 fabric controller, 79–80
+limitations, 156 storage, 79–80
+multiplexing and emulation, 132 Workflow definition language (WFDL), 105
+performance and security isolation, 139 Workflow pattern, 107–108
+side effects, 133 Workflow verification, 106
+security of, 286 Write transaction, 269
+implications, 286 WS-Agreement Negotiation protocol, 96
+undesirable effects, 287
+Virtual machine (VM), 136 X
+cloud computing, 17
+monitors, 136 Xen, 144–145
+performance comparison, 154 Xen 2.0, 149
+Virtual machine-based rootkit (VMBR), 157 XenStore, 147, 295
+Virtual machines comparisons, 154 Xoar, 295
+Virtual machine security, 284–285
+Virtual machines monitors (VMMs), 80, 136
+Z
+Virtual Memory Manager (VMM), 42
+Virtual network interfaces (VIFs), 147 ZooKeeper, 112, 114
+Virtual Private Cloud (VPC), 71 application programming interface (API), 115
+Virtual private network (VPN), 71 service guarantees, 114

@@ -30,11 +30,13 @@ learn: `
 
 <h3>Interval Estimation (Confidence Intervals)</h3>
 <p>A range of values likely to contain the true parameter:</p>
-<div class="formula-box">X̄ ± t_{α/2, n-1} × S/√n</div>
+<div class="formula-box">X̄ ± t<sub>α/2, n−1</sub> × S/√n</div>
 <p>where S = sample standard deviation, n = number of observations, t = t-distribution critical value</p>
 
 <div class="worked">
 <div class="worked-head"><span>Confidence interval for the mean waiting time</span><span class="meta">5 replications · 95% · t = 2.776</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p36">n2 p36</button></p>
 <div class="worked-givens">
 <div><span>Observations</span><b>4.2, 3.8, 5.1, 4.5, 3.9 min</b></div>
 <div><span>n</span><b>5</b></div>
@@ -84,6 +86,54 @@ learn: `
 
 <p><strong>Replication</strong> means running the simulation <strong>multiple times</strong> with <strong>different random number seeds</strong>. Each run is called a <em>replication</em> and is statistically independent.</p>
 
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 700 362" role="img" aria-label="Ten confidence intervals for an increasing number of replications, all centred on the same point estimate. The interval is widest at one replication and narrows as the number of replications rises, following a one over root n curve, so most of the gain is made in the first few replications.">
+
+<text class="fig-t sm start" x="20" y="26">Each replication tightens the interval — but only as 1/√n</text>
+
+<path class="fig-axis" d="M70,270 H660"/>
+<path class="fig-axis" d="M70,270 V50"/>
+<path class="fig-grid" d="M70,150 H660"/>
+<text class="fig-t sm start" x="78" y="144">Ȳ — the point estimate, the same in every case</text>
+
+<path class="fig-edge pri thin" d="M70,60 V240 M64,60 H76 M64,240 H76"/>
+<path class="fig-edge pri thin" d="M135.5,86.4 V213.6 M129.5,86.4 H141.5 M129.5,213.6 H141.5"/>
+<path class="fig-edge pri thin" d="M201,98 V202 M195,98 H207 M195,202 H207"/>
+<path class="fig-edge pri thin" d="M266.5,105 V195 M260.5,105 H272.5 M260.5,195 H272.5"/>
+<path class="fig-edge pri thin" d="M332,109.8 V190.2 M326,109.8 H338 M326,190.2 H338"/>
+<path class="fig-edge pri thin" d="M397.5,113.3 V186.7 M391.5,113.3 H403.5 M391.5,186.7 H403.5"/>
+<path class="fig-edge pri thin" d="M463,115.9 V184.1 M457,115.9 H469 M457,184.1 H469"/>
+<path class="fig-edge pri thin" d="M528.5,118.2 V181.8 M522.5,118.2 H534.5 M522.5,181.8 H534.5"/>
+<path class="fig-edge pri thin" d="M594,120 V180 M588,120 H600 M588,180 H600"/>
+<path class="fig-edge pri thin" d="M659.5,121.5 V178.5 M653.5,121.5 H665.5 M653.5,178.5 H665.5"/>
+
+<path class="fig-curve" d="M70,60 L135.5,86.4 L201,98 L266.5,105 L332,109.8 L397.5,113.3 L463,115.9 L528.5,118.2 L594,120 L659.5,121.5"/>
+<path class="fig-curve" d="M70,240 L135.5,213.6 L201,202 L266.5,195 L332,190.2 L397.5,186.7 L463,184.1 L528.5,181.8 L594,180 L659.5,178.5"/>
+<text class="fig-t pri start" x="420" y="96">± t · s/√n</text>
+
+<path class="fig-edge thin" d="M70,270 V262 M135.5,270 V262 M201,270 V262 M266.5,270 V262 M332,270 V262 M397.5,270 V262 M463,270 V262 M528.5,270 V262 M594,270 V262 M659.5,270 V262"/>
+<text class="fig-t sm" x="70" y="286">1</text>
+<text class="fig-t sm" x="135.5" y="286">2</text>
+<text class="fig-t sm" x="201" y="286">3</text>
+<text class="fig-t sm" x="266.5" y="286">4</text>
+<text class="fig-t sm" x="332" y="286">5</text>
+<text class="fig-t sm" x="397.5" y="286">6</text>
+<text class="fig-t sm" x="463" y="286">7</text>
+<text class="fig-t sm" x="528.5" y="286">8</text>
+<text class="fig-t sm" x="594" y="286">9</text>
+<text class="fig-t sm" x="659.5" y="286">10</text>
+<text class="fig-t sm" x="365" y="306">number of replications n</text>
+
+<text class="fig-t sm start" x="20" y="332">Most of the gain is spent early: doubling n removes only about 30% of the width. To halve it you need n ≈ (t · s / ε)²,</text>
+<text class="fig-t sm start" x="20" y="346">so a target half-width ε costs four times the runs of a target 2ε.</text>
+
+</svg>
+
+<figcaption>Fig 7.1 — Why replication is necessary, drawn as intervals rather than as a list. The point estimate never moves (the dashed line); only the width changes, and it changes as 1/√n. Read off the picture why a single run is not evidence: with n = 1 the interval is wider than any of the differences people usually want to detect.</figcaption>
+
+</figure>
+
 <h3>Why Replication is Necessary</h3>
 <ol>
 <li><strong>Get independent observations:</strong> Each replication provides an independent data point</li>
@@ -99,11 +149,13 @@ learn: `
 <div class="formula-box">
 Point Estimate: Ȳ = (1/n) × ΣYᵢ<br><br>
 Variance Estimate: S² = (1/(n-1)) × Σ(Yᵢ - Ȳ)²<br><br>
-Confidence Interval: Ȳ ± t_{α/2, n-1} × S/√n
+Confidence Interval: Ȳ ± t<sub>α/2, n−1</sub> × S/√n
 </div>
 
 <div class="worked">
 <div class="worked-head"><span>Replication of runs — point estimate and confidence interval</span><span class="meta">n = 5 · 95% · t = 2.776</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p36">n2 p36</button></p>
 <div class="worked-givens">
 <div><span>Average wait Yᵢ</span><b>12.5, 14.2, 11.8, 13.6, 12.9 min</b></div>
 <div><span>Replications</span><b>n = 5</b></div>
@@ -149,7 +201,7 @@ quiz: [
   {q:"Why must simulation output be analyzed statistically?", options:["Because computers make errors","Because outputs are random variables","Because managers demand it","Because it's standard procedure"], answer:1, explanation:"Simulation outputs are random variables (due to random inputs), so statistical analysis is needed to draw valid, reliable conclusions."},
   {q:"Replication of runs means:", options:["Running the simulation once with many customers","Running the simulation multiple times with different random seeds","Copying the simulation code","Running two different models"], answer:1, explanation:"Replication means running the simulation multiple times with different random number seeds. Each run is independent."},
   {q:"The point estimate formula is:", options:["Ȳ = max(Yᵢ)","Ȳ = (1/n) × ΣYᵢ","Ȳ = Σ(Yᵢ)²","Ȳ = Y₁ × Y₂"], answer:1, explanation:"The point estimate (sample mean) is Ȳ = (1/n) × ΣYᵢ, averaging the outputs of n independent replications."},
-  {q:"The confidence interval formula is:", options:["Ȳ ± S","Ȳ ± t × S/√n","Ȳ × t/n","S ± Ȳ/n"], answer:1, explanation:"CI = Ȳ ± t_{α/2, n-1} × S/√n, where S is sample standard deviation and n is number of replications."},
+  {q:"The confidence interval formula is:", options:["Ȳ ± S","Ȳ ± t × S/√n","Ȳ × t/n","S ± Ȳ/n"], answer:1, explanation:"CI = Ȳ ± t<sub>α/2, n−1</sub> × S/√n, where S is sample standard deviation and n is number of replications."},
   {q:"Initial bias in simulation occurs because:", options:["Random numbers are bad","System starts in an unrealistic empty state","The model is wrong","Computer clock is inaccurate"], answer:1, explanation:"Initial bias occurs because the simulation typically starts from an empty/idle state, which doesn't represent normal steady-state operation."},
   {q:"Which method deletes initial observations to remove bias?", options:["Replication","Truncation/Deletion","Batch means","Long run"], answer:1, explanation:"Truncation (deletion) removes initial biased observations. Welch's method helps determine how many observations to delete."},
   {q:"Welch's method is used to:", options:["Generate random numbers","Determine the warm-up deletion point","Calculate service rates","Build simulation models"], answer:1, explanation:"Welch's method uses moving averages across replications to determine when steady state begins (the deletion point d)."},
@@ -169,7 +221,7 @@ past: [
 <ol>
 <li>Make n replications, each of length m</li>
 <li>Calculate ensemble average Ȳ(t) = (1/n)Σᵢ Yᵢ(t) at each time t</li>
-<li>Apply moving average of window w: Ȳ_w(t) = (1/(2w+1)) × Σ_{s=-w}^{w} Ȳ(t+s)</li>
+<li>Apply moving average of window w: Ȳ_w(t) = (1/(2w+1)) × Σ<sub>s=−w</sub><sup>w</sup> Ȳ(t+s)</li>
 <li>Plot Ȳ_w(t) and choose d where the plot converges/stabilizes</li>
 <li>Delete observations before time d from each replication</li>
 </ol>
@@ -201,7 +253,7 @@ past: [
 <ol>
 <li><strong>Outputs are random variables:</strong> Since simulation uses random inputs, a single run gives only one sample — which may be misleading</li>
 <li><strong>Statistical independence:</strong> Each replication (with different seed) provides an independent observation needed for valid statistical inference</li>
-<li><strong>Confidence intervals:</strong> Multiple replications allow calculation of confidence intervals: Ȳ ± t_{α/2,n-1} × S/√n</li>
+<li><strong>Confidence intervals:</strong> Multiple replications allow calculation of confidence intervals: Ȳ ± t<sub>α/2, n−1</sub> × S/√n</li>
 <li><strong>Variability estimation:</strong> Multiple runs reveal how much results vary, giving insight into the reliability of conclusions</li>
 <li><strong>Reducing sampling error:</strong> More replications → more accurate estimates (error decreases as 1/√n)</li>
 </ol>`}],
@@ -213,7 +265,7 @@ past: [
 <p><strong>Variance Estimate:</strong></p>
 <div class="formula-box">S² = (1/(n-1)) × Σᵢ₌₁ⁿ (Yᵢ - Ȳ)²</div>
 <p><strong>Confidence Interval:</strong></p>
-<div class="formula-box">Ȳ ± t_{α/2, n-1} × S/√n</div>
+<div class="formula-box">Ȳ ± t<sub>α/2, n−1</sub> × S/√n</div>
 <p>As n increases, S/√n decreases, giving narrower (more precise) confidence intervals. The choice of n depends on the desired precision and available computing resources.</p>`},
   {year:"2019 F", marks:"10", repeats:5, q:"'Simulation output has to be analyzed.' Justify the statement. Explain replication of runs and elimination of initial bias.", occ:[{year:"2019 F", marks:"10", q:"\"Simulation output has to .be analyzed\", Justify the statement. Explain the process of replication of runs and elimination of ) internal bias in the analysis of simulation output"}, {year:"2010 F", marks:"4+6", q:"Why the output of simulation has to - be analyzed? Explain Replication of Runs method to any simulation output"}, {year:"2014 F", marks:"10", q:"Why the output of simulation has to be analyzed? Explain Replication of Runs method."}, {year:"2011 F", marks:"", q:"Explain why simulation output is analyzed. Brief, why · Replication ' ·of ·_ Runs is .performed during . the .analysis of simulation output? .. . . ·- ·. . . 5+!? )"}, {year:"2011 F", marks:"5+5", q:"Explain why simulation output is analyzed. Why Replication of Runs is performed during analysis?"}],
    variants:[{year:"2014 F", marks:"10", q:"Why the output of simulation has to be analyzed? Explain Replication of Runs method.", answer:`<h4>Answer</h4>
@@ -232,7 +284,7 @@ past: [
 <li>Run simulation n times → get Y₁, Y₂, ..., Yₙ (independent outputs)</li>
 <li>Calculate point estimate: Ȳ = (1/n)ΣYᵢ</li>
 <li>Calculate variance: S² = Σ(Yᵢ-Ȳ)²/(n-1)</li>
-<li>Calculate confidence interval: Ȳ ± t_{α/2,n-1} × S/√n</li>
+<li>Calculate confidence interval: Ȳ ± t<sub>α/2, n−1</sub> × S/√n</li>
 </ol>
 <p><strong>Example:</strong> 5 replications of a bank simulation give average wait times: 12.5, 14.2, 11.8, 13.6, 12.9 min</p>
 <p>Ȳ = 13.0, S = 0.935</p>
@@ -253,7 +305,7 @@ past: [
 <ul>
 <li>Point estimate: Ȳ = (1/n) × ΣYᵢ</li>
 <li>Variance: S² = (1/(n-1)) × Σ(Yᵢ - Ȳ)²</li>
-<li>95% CI: Ȳ ± t_{0.025, n-1} × S/√n</li>
+<li>95% CI: Ȳ ± t<sub>0.025, n−1</sub> × S/√n</li>
 </ul>
 <p>Purpose: Get independent observations, estimate variability, calculate confidence intervals.</p>
 

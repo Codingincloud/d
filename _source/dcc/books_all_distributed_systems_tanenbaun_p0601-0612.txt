@@ -1,0 +1,622 @@
+source: Books - all\Distributed_Systems_Tanenbaun.pdf
+method: pdf
+sha256: 1c703cb3618454072bb5e7f55e0701d9293e435830d01aa82297f7b8c4a0d40a
+pages:  612
+ocr:    0 page(s)
+rotation: 0
+dpi:    -
+----------------------------------------------------------------------
+===== page 601 =====
+BIBLIOGRAPHY 587
+MillsD.L. ComputerNetworkTimeSynchronization: TheNetworkTimeProtocolonEarth
+andinSpace. CRCPress,BocaRaton,FL,2ndedition,2011.Citedon 307
+MilojicicD.,DouglisF.,PaindaveineY.,WheelerR.,andZhouS. ProcessMigration.
+ACMComputingSurveys,32(3):241–299,Sept.2000.Citedon 152
+MinS.L.andBaerJ.-L. DesignandAnalysisofaScalableCacheCoherenceScheme
+Based on Clocks and Timestamps. IEEE Transactions on Parallel and Distributed
+Systems,3(1):25–44,Jan.1992.Citedon 406
+MockapetrisP. DomainNames-ConceptsandFacilities. RFC1034,Nov.1987.Cited
+on 265,271
+MohanC.,StrongR.,andFinkelsteinS. MethodforDistributedTransactionCommit
+and Recovery using Byzantine Agreement within Clusters of Processors. In 2nd
+SymposiumonPrinciplesofDistributedComputing,pages89–103,NewYork,NY,1983.
+ACMPress.Citedon 431
+Mottola L. and Picco G. P. Programming Wireless Sensor Networks: Fundamental
+ConceptsandStateoftheArt. ACMComputingSurveys,43(3):19:1–19:51,Apr.2011.
+Citedon 48
+MühlG.,FiegeL.,andPietzuchP. DistributedEvent-BasedSystems. Springer-Verlag,
+Berlin,2006.Citedon 67
+MuntzD.andHoneymanP. Multi-levelCachinginDistributedFileSystems. InWinter
+TechnicalConference,pages305–313,SanFrancisco,CA,Jan.1992.USENIX.Citedon
+390
+MurtyJ. ProgrammingAmazonWebServices. O’Reilly&Associates,Sebastopol,CA.,
+2008.Citedon 31,65
+NaurP.andRandellB. ReportontheNATOSoftwareEngineeringConference1968.
+Technical report, Scientific Affairs Division NATO, Brussels, Belgium, Oct. 1968.
+Citedon 7
+Nayate A., Dahlin M., and Iyengar A. Transparent Information Dissemination. In
+Middleware2004,volume3231ofLectureNotesinComputerScience,pages212–231,
+Berlin,Oct.2004.ACM/IFIP/USENIX,Springer-Verlag.Citedon 91
+NeedhamR.andSchroederM.UsingEncryptionforAuthenticationinLargeNetworks
+ofComputers. CommunicationsoftheACM,21(12):993–999,Dec.1978.Citedon 521
+NelsonB. RemoteProcedureCall. Ph.D.,Carnegie-MellonUniversity,1981.Citedon 471
+Neuman B. Proxy-Based Authorization and Accounting for Distributed Systems.
+In 13th International Conference on Distributed Computing Systems, pages 283–291,
+Pittsburgh,May1993.IEEE.Citedon 554
+Neuman B. Scale in Distributed Systems. In Casavant T. and Singhal M., editors,
+ReadingsinDistributedComputingSystems,pages463–489.IEEEComputerSociety
+Press,LosAlamitos,CA.,1994.Citedon 15,20
+NeumanC.,YuT.,HartmanS.,andRaeburnK. TheKerberosNetworkAuthentication
+Service. RFC4120,July2005.Citedon 530
+NewmanM. Networks,AnIntroduction. OxfordUniversityPress,Oxford,UK,2010.
+Citedon 46
+NgE.andZhangH. PredictingInternetNetworkDistancewithCoordinates-Based
+Approaches. In21stINFOCOMConference,LosAlamitos,CA.,June2002.IEEE,IEEE
+ComputerSocietyPress.Citedon 342
+NobleB.,FleisB.,andKimM. ACaseforFluidReplication. InNetStore’99,Seattle,
+WA,Oct.1999.Citedon 390
+downloadedbyKARNAVIJIT@GMAIL.COM DS3.03
+
+
+===== page 602 =====
+588 BIBLIOGRAPHY
+NyersL.andJelasityM. AComparativeStudyofSpanningTreeandGossipProtocols
+forAggregation. Concurrency&Computation: PracticeandExperience,2015.Citedon
+479
+NygrenE.,SitaramanR.K.,andSunJ. TheAkamaiNetwork: APlatformforHigh-
+PerformanceInternetApplications. OperatingSystemsReview,44(3):2–19,July2010.
+Citedon 417
+OaksS. JavaSecurity. O’Reilly&Associates,Sebastopol,CA.,2ndedition,2001.Cited
+on 539
+OASIS. AMQP,Protocolspecification,Version1.0,Oct.2011.Citedon 218
+ObraczkaK. MulticastTransportProtocols: ASurveyandTaxonomy. IEEECommuni-
+cationsMagazine,36(1):94–102,Jan.1998.Citedon 221
+Oikonomou K. and Stavrakakis I. Performance Analysis of Probabilistic Flooding
+UsingRandomGraphs. InWorldofWireless,MobileandMultimediaNetworks,2007.
+WoWMoM 2007. IEEE International Symposium on a, pages 1–6, June 2007. doi:
+10.1109/WOWMOM.2007.4351694.Citedon 227
+OMG. TheCommonObjectRequestBroker: ArchitectureandSpecification,revision
+2.4.2. OMGDocumentformal/00-02-33,ObjectManagementGroup,Framingham,
+MA,Feb.2001.Citedon 135
+OMG. UML2.0SuperstructureSpecification. OMGDocumentptc/04-10-02,Object
+ManagementGroup,Framingham,MA,Oct.2004.Citedon 56
+OppenheimerD.,AlbrechtJ.,PattersonD.,andVahdatA. DesignandImplementation
+Tradeoffs for Wide-Area Resource Discovery. In 14th International Symposium on
+HighPerformanceDistributedComputing,LosAlamitos,CA.,July2005.IEEE,IEEE
+ComputerSocietyPress.Citedon 293
+OramA.,editor. Peer-to-Peer: HarnessingthePowerofDisruptiveTechnologies. O’Reilly&
+Associates,Sebastopol,CA.,2001.Citedon 24
+ÖzsuT.andValduriezP. PrinciplesofDistributedDatabaseSystems. Springer-Verlag,
+Berlin,3rdedition,2011.Citedon 81,387,493
+Pai V., Aron M., Banga G., Svendsen M., Druschel P., Zwaenepoel W., and Nahum
+E. Locality-Aware Request Distribution in Cluster-Based Network Servers. In
+8thInternationalConferenceonArchitecturalSupportforProgrammingLanguagesand
+OperatingSystems,pages205–216,NewYork,NY,Oct.1998.ACM,ACMPress.Cited
+on 143
+PanzieriF.andShrivastavaS. Rajdoot: ARemoteProcedureCallMechanismwith
+OrphanDetectionandKilling. IEEETransactionsonSoftwareEngineering,14(1):30–37,
+Jan.1988.Citedon 472
+Pappas V., Massey D., Terzis A., and Zhang L. A Comparative Study of the DNS
+DesignwithDHT-BasedAlternatives. In25thINFOCOMConference,LosAlamitos,
+CA.,May2006.IEEE,IEEEComputerSocietyPress.Citedon 277
+ParlavantzasN.andCoulsonG. DesigningandConstructingModifiableMiddleware
+usingComponentFrameworks. IETSoftware,1(4):113–126,Aug.2007.Citedon 72,
+75
+PautassoC.,ZimmermannO.,andLeymannF. RestfulWebServicesvs."Big"Web
+Services: MakingtheRightArchitecturalDecision. In17thInternationalWorldWide
+WebConference,pages805–814,NewYork,NY,Aug.2008.ACMPress.Citedon 64,
+65
+PeaseM.,ShostakR.,andLamportL. ReachingAgreementinthePresenceofFaults.
+DS3.01 downloadedbyKARNAVIJIT@GMAIL.COM
+
+
+===== page 603 =====
+BIBLIOGRAPHY 589
+JournaloftheACM,27(2):228–234,Apr.1980.Citedon 431
+PengT.,LeckieC.,andRamamohanaraoK. SurveyofNetwork-basedDefenseMecha-
+nismsCounteringtheDoSandDDoSProblems. ACMComputingSurveys,39(1):3,
+2007.Citedon 544
+PerkinsC. IPMobilitySupportinIPv4,Revised. RFC5944,Nov.2010.Citedon 44
+PerkinsC.,JohnsonD.,andArkkoJ. MobilitySupportinIPv6. RFC6275,July2011.
+Citedon 44
+PetersonL.,BavierA.,FiuczynskiM.E.,andMuirS. ExperiencesBuildingPlanetLab.
+In 7th Symposium on Operating System Design and Implementation, pages 351–366,
+Berkeley,CA,Nov.2006.USENIX,USENIX.Citedon 149
+PfleegerC. SecurityinComputing. PrenticeHall,UpperSaddleRiver,N.J.,3rdedition,
+2003.Citedon 506
+PikeR.,PresottoD.,DorwardS.,FlandrenaB.,ThompsonK.,TrickeyH.,andWinter-
+bottomP. Plan9fromBellLabs. ComputingSystems,8(3):221–254,Summer1995.
+Citedon 258
+PinzariG. NXXProtocolCompression. TechnicalReportD-309/3-NXP-DOC,NoMa-
+chine,Rome,Italy,Sept.2003.Citedon 126
+PitouraE.andSamarasG. LocatingObjectsinMobileComputing. IEEETransactions
+onKnowledgeandDataEngineering,13(4):571–592,July2001.Citedon 251
+PlainfosseD.andShapiroM. ASurveyofDistributedGarbageCollectionTechniques.
+InProceedingsInternationalWorkshoponMemoryManagement,volume986ofLecture
+NotesinComputerScience,pages211–249.Springer-Verlag,Berlin,Sept.1995.Cited
+on 244
+PlummerD. AnEthernetAddressResolutionProtocol. RFC826,Nov.1982.Citedon
+242
+PodlingS.andBoszormenyiL. ASurveyofWebCacheReplacementStrategies. ACM
+ComputingSurveys,35(4):374–398,Dec.2003.Citedon 414
+PopekG.J.andGoldbergR.P.FormalRequirementsforVirtualizableThirdGeneration
+Architectures. CommunicationsoftheACM,17(7):412–421,July1974.Citedon 120
+PopescuA.,ConstantinescuD.,ErmanD.,andIlieD. ASurveyofReliableMulticast
+Communication. In3rdConferenceonNextGenerationInternetNetworks,pages111–
+118,May2007.Citedon 475
+PopescuA.M.,TudoracheG.I.,PengB.,andKempA.H. SurveyingPositionBased
+RoutingProtocolsforWirelessSensorandAd-hocNetworks. InternationalJournalon
+CommunicationNetworksandInformationSecurity,4(1):41–67,Apr.2012.Citedon 341
+Popescu B., Sacha J., Steen M.van , Crispo B., Tanenbaum A., and Kuz I. Securely
+Replicated Web Documents. In 19thInternationalParallel&DistributedProcessing
+Symposium,LosAlamitos,CA.,Apr.2005.IEEE,IEEEComputerSocietyPress.Cited
+on 544
+Poslad S. Ubiquitous Computing: Smart Devices, Environments and Interactions. John
+Wiley,NewYork,2009.Citedon 41,43
+PostelJ. SimpleMailTransferProtocol. RFC821,Aug.1982.Citedon 212
+PostelJ.andReynoldsJ. FileTransferProtocol. RFC995,Oct.1985.Citedon 169
+PouwelseJ.A., GarbackiP., EpemaD.H.J., andSipsH.J. TheBittorrentP2PFile-
+Sharing System: Measurements and Analysis. In 4th International Workshop on
+Peer-to-PeerSystems,volume3640ofLectureNotesinComputerScience,pages205–216,
+Berlin,Feb.2005.Springer-Verlag.Citedon 91
+downloadedbyKARNAVIJIT@GMAIL.COM DS3.03
+
+
+===== page 604 =====
+590 BIBLIOGRAPHY
+PradhanD. Fault-TolerantComputerSystemDesign. PrenticeHall,EnglewoodCliffs,
+N.J.,1996.Citedon 427
+PriscoR.D.,LampsonB.,andLynchN. RevisitingthePaxosAlgorithm. InMavroni-
+colasM.andTsigasP.,editors,11thInternationalWorkshoponDistributedAlgorithms,
+volume1320ofLectureNotesinComputerScience.Springer-Verlag,Berlin,Sept.1997.
+Citedon 440
+Qin F., Tucek J., Sundaresan J., and Zhou Y. Rx: Treating Bugs as Allergies - A
+SafeMethodtoSurviveSoftwareFailures. In20thSymposiumonOperatingSystem
+Principles,pages235–248,NewYork,NY,Oct.2005.ACM,ACMPress.Citedon 501
+QiuL.,PadmanabhanV.,andVoelkerG. OnthePlacementofWebServerReplicas. In
+20thINFOCOMConference,pages1587–1596,LosAlamitos,CA.,Apr.2001.IEEE,
+IEEEComputerSocietyPress.Citedon 385,386
+Rabinovich M. and Spastscheck O. Web Caching and Replication. Addison-Wesley,
+Reading,MA.,2002.Citedon 91,411
+Rabinovich M., Rabinovich I., Rajaraman R., and Aggarwal A. A Dynamic Object
+ReplicationandMigrationProtocolforanInternetHostingService. In19thInterna-
+tionalConferenceonDistributedComputingSystems,pages101–113,Austin,TX,June
+1999.IEEE.Citedon 388
+RadiaS. Names,Contexts,andClosureMechanismsinDistributedComputingEnvironments.
+Ph.D.,UniversityofWaterloo,Ontario,1989.Citedon 260
+RadoslavovP.,GovindanR.,andEstrinD. Topology-InformedInternetReplicaPlace-
+ment. In6thWebCachingWorkshop,Amsterdam,June2001.North-Holland.Cited
+on 385
+RaiV.,SivasubramanianS.,BhulaiS.,GarbackiP.,andSteenM.van. AMultiPhased
+ApproachforModelingandAnalysisoftheBittorrentProtocol. In27thInternational
+ConferenceonDistributedComputingSystems, Los Alamitos, CA., June 2007. IEEE,
+IEEEComputerSocietyPress.Citedon 93
+RamanathanP.,ShinK.,andButlerR. Fault-TolerantClockSynchronizationinDis-
+tributedSystems. Computer,23(10):33–42,Oct.1990.Citedon 303
+RaynalM.andSinghalM. LogicalTime: CapturingCausalityinDistributedSystems.
+Computer,29(2):49–56,Feb.1996.Citedon 313
+Reiter M. How to Securely Replicate Services. ACM Transactions on Programming
+LanguagesandSystems,16(3):986–1009,May1994.Citedon 529
+ReiterM.,BirmanK.,andRenesseR.van. ASecurityArchitectureforFault-Tolerant
+Systems. ACMTransactionsonComputerSystems,12(4):340–371,Nov.1994.Citedon
+550
+ReynoldsJ.andPostelJ. AssignedNumbers. RFC1700,Oct.1994.Citedon 129
+RicartG.andAgrawalaA. AnOptimalAlgorithmforMutualExclusioninComputer
+Networks. CommunicationsoftheACM,24(1):9–17,Jan.1981.Citedon 324
+Richardson T., Stafford-Fraser Q., Wood K. R., and Hopper A. Virtual Network
+Computing. IEEEInternetComputing,2(1):33–38,Jan.1998.Citedon 126
+RissonJ.andMoorsT. SurveyofResearchtowardsRobustPeer-to-PeerNetworks:
+SearchMethods. ComputerNetworks,50(17):3485–3521,2006.Citedon 85
+RizzoL. EffectiveErasureCodesforReliableComputerCommunicationProtocols.
+ACMComputerCommunicationsReview,27(2):24–36,Apr.1997.Citedon 494
+Robbins K. and Robbins S. UNIXSystems Programming. Prentice Hall, Englewood
+Cliffs,N.J.,2003.Citedon 104,111
+DS3.01 downloadedbyKARNAVIJIT@GMAIL.COM
+
+
+===== page 605 =====
+BIBLIOGRAPHY 591
+Robin J. S. and Irvine C. E. Analysis of the Intel Pentium’s Ability to Support a
+SecureVirtualMachineMonitor. In9thUSENIXSecuritySymposium,pages129–144,
+Berkeley,CA,2000.USENIX.Citedon 121
+RodriguesL.,FonsecaH.,andVerissimoP. TotallyOrderedMulticastinLarge-Scale
+Systems. In 16thInternationalConferenceonDistributedComputingSystems, pages
+503–510,HongKong,May1996.IEEE.Citedon 404
+Rodriguez P., Spanner C., and Biersack E. Analysis of Web Caching Architecture:
+HierarchicalandDistributedCaching. IEEE/ACMTransactionsonNetworking,21(4):
+404–418,Aug.2001.Citedon 413
+RosenblumM.andGarfinkelT. VirtualMachineMonitors: CurrentTechnologyand
+FutureTrends. Computer,38(5):39–47,May2005.Citedon 120
+RoussosG.,MarshA.J.,andMaglaveraS. EnablingPervasiveComputingwithSmart
+Phones. IEEEPervasiveComputing,4(2):20–26,Apr.2005.Citedon 40
+RowstronA.andDruschelP.Pastry: Scalable,DistributedObjectLocationandRouting
+forLarge-ScalePeer-to-PeerSystems. InMiddleware2001,volume2218ofLecture
+NotesinComputerScience,pages329–350,Berlin,Nov.2001.Springer-Verlag.Cited
+on 222,251
+SaganH. Space-FillingCurves. Springer-Verlag,Berlin,1994.Citedon 290
+Saltzer J. and Kaashoek M. Principles of Computer System Design, An Introduction.
+MorganKaufman,SanMateo,CA.,2009.Citedon 76
+Saltzer J. and Schroeder M. The Protection of Information in Computer Systems.
+ProceedingsoftheIEEE,63(9):1278–1308,Sept.1975.Citedon 535
+Saltzer J., Reed D., and Clark D. End-to-End Arguments in System Design. ACM
+TransactionsonComputerSystems,2(4):277–288,Nov.1984.Citedon 322
+SandhuR.S.,CoyneE.J.,FeinsteinH.L.,andYoumanC.E. Role-BasedAccessControl
+Models. Computer,29(2):38–47,Feb.1996.Citedon 536
+SantoroN. DesignandAnalysisofDistributedAlgorithms. JohnWiley,NewYork,2007.
+Citedon 299
+SaroiuS.,GummadiP.K.,andGribbleS.D. MeasuringandAnalyzingtheCharacter-
+isticsofNapsterandGnutellaHosts. ACMMultimediaSystems,9(2):170–184,Aug.
+2003.Citedon 91
+Saxena P. and Rai J. A Survey of Permission-based Distributed Mutual Exclusion
+Algorithms. ComputerStandardsandInterfaces,25(2):159–181,May2003.Citedon 323
+SchildtH. Java: TheCompleteReference. OraclePress,NewYork,NY,9thedition,2010.
+Citedon 137
+SchlosserM.,SintekM.,DeckerS.,andNejdlW. HyperCuP–Hypercubes,Ontologies,
+and Efficient Search on Peer-to-Peer Networks. In 1st International Workshop on
+AgentsandPeer-to-PeerComputing,volume2530ofLectureNotesinComputerScience,
+pages112–124,Berlin,July2002.Springer-Verlag.Citedon 227
+Schmidt A. Implicit Human Computer Interaction Through Context. Personal and
+UbiquitousComputing,4(2-3):191–199,June2000.Citedon 42
+SchmidtC.andParasharM. Squid: EnablingSearchinDHT-basedsystems. Journalof
+ParallelandDistributedComputing,68:962–975,2008.Citedon 291
+SchmidtD.,StalM.,RohnertH.,andBuschmannF. Pattern-OrientedSoftwareArchi-
+tecture–PatternsforConcurrentandNetworkedObjects. JohnWiley,NewYork,2000.
+Citedon 73
+SchneiderF. ImplementingFault-TolerantServicesUsingtheStateMachineApproach:
+downloadedbyKARNAVIJIT@GMAIL.COM DS3.03
+
+
+===== page 606 =====
+592 BIBLIOGRAPHY
+ATutorial. ACMComputingSurveys,22(4):299–320,Dec.1990.Citedon 315,391
+SchneierB. SecretsandLies. JohnWiley,NewYork,2000.Citedon 516
+SchneierB. AppliedCryptography. JohnWiley,NewYork,2ndedition,1996.Citedon
+516,530
+SchulzrinneH.,CasnerS.,FrederickR.,andJacobsonV. RTP:ATransportProtocolfor
+Real-TimeApplications. RFC3550,July2003.Citedon 169
+Sebesta R. Programming the World Wide Web. Addison-Wesley, Reading, MA., 8th
+edition,2006.Citedon 100
+SerenoM.andGaetaR. GeneralizedProbabilisticFloodinginUnstructuredPeer-to-
+PeerNetworks.IEEETransactionsonParallelandDistributedSystems,22(12):2055–2062,
+2011. ISSN1045-9219.Citedon 227
+SettyV.,VoulgarisS.,VitenbergR.,andSteenM.van. PolderCast: Fast,Robust,and
+ScalableArchitectureforP2PPub/Sub. InMiddleware2012,volume7662ofLecture
+NotesinComputerScience,pages271–291,Berlin,Dec.2012.ACM/IFIP/USENIX,
+Springer-Verlag.Citedon 348
+ShapiroM.,DickmanP.,andPlainfosseD. SSPChains: Robust,DistributedReferences
+SupportingAcyclicGarbageCollection.TechnicalReport1799,INRIA,Rocquencourt,
+France,Nov.1992.Citedon 243
+ShawM.andClementsP. AFieldGuidetoBoxology: PreliminaryClassificationof
+ArchitecturalStylesforSoftwareSystems. In21stInternationalComputerSoftwareand
+ApplicationsConference,pages6–13,Aug.1997.Citedon 56
+ShenX.,YuH.,BufordJ.,andAkonM.,editors. HandbookofPeer-to-PeerNetworking.
+Springer-Verlag,Berlin,2010.Citedon 575,580
+SheplerS.,CallaghanB.,RobinsonD.,ThurlowR.,BeameC.,EislerM.,andNoveckD.
+NetworkFileSystem(NFS)Version4Protocol. RFC3530,Apr.2003.Citedon 94,
+262
+ShethA.P.andLarsonJ.A. FederatedDatabaseSystemsforManagingDistributed,
+Heterogeneous,andAutonomousDatabases.ACMComputingSurveys,22(3):183–236,
+Sept.1990.Citedon 388
+Shin M., Park M., Oh D., Kim B., and Lee J. Survey on the Clock Synchronization
+Schemes for Propagation Delay Measurement. International Journal of Advanced
+ScienceandTechnology,35:139–140,Oct.2011.Citedon 303
+ShochJ.InternetworkNaming,Addressing,andRouting.In17thInternationalComputer
+Conference, pages 72–79, Los Alamitos, CA., 1978. IEEE, IEEE Computer Society
+Press.Citedon 240
+ShoomanM.L. ReliabilityofComputerSystemsandNetworks: FaultTolerance,Analysis,
+andDesign. JohnWiley,NewYork,2002.Citedon 426
+ShriramA.andKaurJ. EmpiricalEvaluationofTechniquesforMeasuringAvailable
+Bandwidth. In26thINFOCOMConference,pages2162–2170,LosAlamitos,CA.,2007.
+IEEE,IEEEComputerSocietyPress.Citedon 415
+SilberschatzA.,GalvinP.,andGagneG. OperatingSystemConcepts. JohnWiley,New
+York,9thedition,2012.Citedon 258
+Silva S. S., Silva R. M., Pinto R. C., and Salles R. M. Botnets: A survey. Computer
+Networks,57(2):378–403,2013.Citedon 543
+Singhal M. and Shivaratri N. Advanced Concepts in Operating Systems: Distributed,
+Database,andMultiprocessorOperatingSystems. McGraw-Hill,NewYork,1994.Cited
+on 494
+DS3.01 downloadedbyKARNAVIJIT@GMAIL.COM
+
+
+===== page 607 =====
+BIBLIOGRAPHY 593
+SivasubramanianS.,PierreG.,andSteenM.van. ReplicatingWebApplicationsOn-
+Demand. In1stInternationalConferenceonServicesComputing,pages227–236,Los
+Alamitos,CA.,Sept.2004a.IEEE,IEEEComputerSocietyPress.Citedon 420
+SivasubramanianS.,SzymaniakM.,PierreG.,andSteenM.van. ReplicationforWeb
+HostingSystems. ACMComputingSurveys,36(3):1–44,Sept.2004b.Citedon 146,414
+SivasubramanianS.,PierreG.,SteenM.van,andAlonsoG. AnalysisofCachingand
+ReplicationStrategiesforWebApplications. IEEEInternetComputing,11(1):60–66,
+Jan.2007.Citedon 419
+SivrikayaF.andYenerB. TimeSynchronizationinSensorNetworks: ASurvey. IEEE
+Network,18(4):45–50,July2004.Citedon 308
+Skeen D. Nonblocking Commit Protocols. In SIGMOD International Conference on
+ManagementOfData,pages133–142.ACM,1981.Citedon 491
+SkeenD.andStonebrakerM. AFormalModelofCrashRecoveryinaDistributed
+System. IEEETransactionsonSoftwareEngineering,SE-9(3):219–228,Mar.1983.Cited
+on 491
+SmettersD.andJacobsonV. SecuringNetworkContent. Technicalreport,PARC,2009.
+Citedon 544
+SmithJ.andNairR. TheArchitectureofVirtualMachines. Computer,38(5):32–38,May
+2005a.Citedon 118,119
+Smith J. and Nair R. Virtual Machines: Versatile Platforms for Systems and Processes.
+MorganKaufman,SanMateo,CA.,2005b.Citedon 120,121
+Soltesz S., Pötzl H., Fiuczynski M. E., Bavier A., and Peterson L. Container-Based
+Operating System Virtualization: A Scalable, High-Performance Alternative to
+Hypervisors. In 2nd EuroSys (European Conference on Computer Systems), pages
+275–287,NewYork,NY,Mar.2007.ACM,ACMPress.Citedon 151
+Song C., Qu Z., Blumm N., and Barabasi A.-L. Limits of Predictability in Human
+Mobility. Science,327(2):1018–1021,Feb.2010.Citedon 47
+SpechtS.M.andLeeR.B. DistributedDenialofService: TaxonomiesofAttacks,Tools,
+andCountermeasures. InInt’lWorkshoponSecurityinParallelandDistributedSystems,
+pages543–550,Sept.2004.Citedon 543
+SpectorA. PerformingRemoteOperationsEfficientlyonaLocalComputerNetwork.
+CommunicationsoftheACM,25(4):246–260,Apr.1982.Citedon 468
+SpyropoulosT.,RaisR.N.B.,TurlettiT.,ObraczkaK.,andVasilakosA. Routingfor
+Disruption Tolerant Networks: Taxonomy and Design. Wireless Networks, 16(8):
+2349–2370,2010.Citedon 45
+Srinivasan S. Kilim: A Server Framework with Lightweight Actors, Isolation Types and
+Zero-CopyMessaging. Ph.d.,UniversityofCambridge,ComputerLaboratory,Feb.
+2010.Citedon 111
+SrisureshP.andHoldregeM. IPNetworkAddressTranslator(NAT)Terminologyand
+Considerations. RFC2663,Aug.1999.Citedon 143
+StankovicJ.A. ResearchDirectionsfortheInternetofThings. IEEEInternetofThings
+Journal,1(1):3–9,Feb.2014.Citedon 41
+SteinL. WebSecurity,AStep-by-StepReferenceGuide. Addison-Wesley,Reading,MA.,
+1998.Citedon 549
+Steinder M. and Sethi A. A Survey of Fault Localization Techniques in Computer
+Networks. ScienceofComputerProgramming,53:165–194,May2004.Citedon 501
+SteinerJ.,NeumanC.,andSchillerJ. Kerberos: AnAuthenticationServiceforOpen
+downloadedbyKARNAVIJIT@GMAIL.COM DS3.03
+
+
+===== page 608 =====
+594 BIBLIOGRAPHY
+Network Systems. In Winter Technical Conference, pages 191–202. USENIX, 1988.
+Citedon 530
+SteinmetzR.andNahrstedtK. MultimediaSystems. Springer-Verlag,Berlin,2004.Cited
+on 142
+StevensW. TCP/IPIllustrated,Volume1: TheProtocols. Addison-Wesley,Reading,MA.,
+1994.Citedon 59
+StevensW. UNIXNetworkProgramming–NetworkingAPIs: SocketsandXTI. Prentice
+Hall,EnglewoodCliffs,N.J.,2ndedition,1998.Citedon 112,195
+StevensW. UNIXNetworkProgramming–InterprocessCommunication. PrenticeHall,
+EnglewoodCliffs,N.J.,2ndedition,1999.Citedon 104,111,188
+Stevens W. and Rago S. AdvancedProgrammingintheUNIXEnvironment. Addison-
+Wesley,Reading,MA.,2ndedition,2005.Citedon 106
+StewartR. StreamControlTransmissionProtocol. RFC4960,Sept.2007.Citedon 169
+Stoica I., Morris R., Liben-Nowell D., Karger D. R., Kaashoek M. F., Dabek F., and
+Balakrishnan H. Chord: A Scalable Peer-to-peer Lookup Protocol for Internet
+Applications. IEEE/ACMTransactionsonNetworking,11(1):17–32,Feb.2003.Citedon
+83,247,249
+StratanC.,SachaJ.,NapperJ.,CostaP.,andPierreG.TheXtreemOSResourceSelection
+Service. ACMTransactionsofAutonomousandAdaptiveSystems,7(4),Dec.2012.Cited
+on 294
+StraussJ.,KatabiD.,andKaashoekF. AMeasurementStudyofAvailableBandwidth
+EstimationTools. In3rdInternetMeasurementConference,pages39–44,NewYork,
+NY,2003.ACMPress.Citedon 415
+SugermanJ.,VenkitachalamG.,andLimB.-H. VirtualizingI/ODevicesonVMware
+WorkstationsHostedVirtualMachineMonitor. InUSENIXAnnualTechnicalConfer-
+ence,pages1–14,Berkeley,CA,June2001.USENIX,USENIX.Citedon 121
+SundararamanB.,BuyU.,andKshemkalyaniA.D. ClockSynchronizationforWireless
+SensorNetworks: ASurvey. Ad-HocNetworks,3(3):281–323,May2005.Citedon 308
+SzymaniakM.,PierreG.,andSteenM.van. ScalableCooperativeLatencyEstimation.
+In10thInternationalConferenceonParallelandDistributedSystems,pages367–376,Los
+Alamitos,CA.,July2004.IEEE,IEEEComputerSocietyPress.Citedon 343
+SzymaniakM.,PierreG.,andSteenM.van. Latency-drivenreplicaplacement. IPSJ
+DigitalCourier,2:561–572,2006.Citedon 386
+Szymaniak M., Pierre G., Simons-Nikolova M., and Steen M.van . Enabling Ser-
+viceAdaptabilitywithVersatileAnycast. Concurrency&Computation: Practiceand
+Experience,19(13):1837–1863,Sept.2007.Citedon 147
+SzymaniakM.,PresottoD.,PierreG.,andSteenM.van. PracticalLarge-ScaleLatency
+Estimation. ComputerNetworks,52(7):1343–1364,May2008.Citedon 343
+Taiani F., Fabre J.-C., and Killijian M.-O. A Multi-Level Meta-Object Protocol for
+Fault-ToleranceinComplexArchitectures. InInternationalConferenceonDependable
+SystemsandNetworks,pages270–279,LosAlamitos,CA.,June2005.IEEEComputer
+SocietyPress.Citedon 396
+Tan S.-W., Waters G., and Crawford J. A Survey and Performance Evaluation of
+ScalableTree-basedApplicationLayerMulticastProtocols. TechnicalReport9-03,
+UniversityofKent,UK,July2003.Citedon 224
+TanenbaumA. ModernOperatingSystems. PrenticeHall,UpperSaddleRiver,N.J.,3rd
+edition,2001.Citedon 258
+DS3.01 downloadedbyKARNAVIJIT@GMAIL.COM
+
+
+===== page 609 =====
+BIBLIOGRAPHY 595
+TanenbaumA.andWetherallD. ComputerNetworks. PrenticeHall,UpperSaddleRiver,
+N.J.,5thedition,2010.Citedon 165,466
+TanenbaumA.andWoodhullA. OperatingSystems,DesignandImplementation. Prentice
+Hall,EnglewoodCliffs,N.J.,3rdedition,2006.Citedon 97
+Tanenbaum A., Mullender S., and Renesse R.van . Using Sparse Capabilities in a
+DistributedOperatingSystem.In6thInternationalConferenceonDistributedComputing
+Systems,pages558–563,Cambridge,MA,May1986.IEEE.Citedon 551
+TanischP. AtomicCommitinConcurrentComputing. IEEEConcurrency,8(4):34–41,
+Oct.2000.Citedon 486
+TarkomaS. OverlayNetworks,TowardInformationNetworking. CRCPress,BocaRaton,
+FL,2010.Citedon 3,81
+TarkomaS.andKangasharjuJ. MobileMiddleware: SupportingApplicationsandServices.
+JohnWiley,NewYork,2009.Citedon 44
+TartaljaI.andMilutinovicV. ClassifyingSoftware-BasedCacheCoherenceSolutions.
+IEEESoftware,14(3):90–101,May1997.Citedon 406
+Taylor M. WebSphere MQ Primer: An Introduction to Messaging and WebSphere MQ.
+Redbooks.IBM,Dec.2012.Citedon 212
+TelG. IntroductiontoDistributedAlgorithms. CambridgeUniversityPress,Cambridge,
+UK,2ndedition,2000.Citedon 299,331
+TerryD. ReplicatedDataManagementforMobileComputing. SynthesisLecturesonData
+Management.MorganandClaypool,SanRafael,CA,2008.Citedon 379
+Terry D., Demers A., Petersen K., Spreitzer M., Theimer M., and Welsh B. Session
+GuaranteesforWeaklyConsistentReplicatedData. In3rdInternationalConferenceon
+ParallelandDistributedInformationSystems,pages140–149,LosAlamitos,CA.,Sept.
+1994.IEEE,IEEEComputerSocietyPress.Citedon 379,382,384
+TerryD.,PetersenK.,SpreitzerM.,andTheimerM. TheCaseforNon-transparent
+Replication: ExamplesfromBayou. IEEEDataEngineering,21(4):12–20,Dec.1998.
+Citedon 379
+ThomasR. AMajorityConsensusApproachtoConcurrencyControlforMultipleCopy
+Databases. ACMTransactionsonDatabaseSystems,4(2):180–209,June1979.Citedon
+404
+TIBCO. TIBCORendezvousConcepts,Release8.3.0. TIBCOSoftwareInc.,PaloAlto,CA,
+July2010.Citedon 345
+TowsleyD.,KuroseJ.,andPingaliS. AComparisonofSender-InitiatedandReceiver-
+InitiatedReliableMulticastProtocols.IEEEJournalonSelectedAreasinCommunication,
+15(3):398–407,Apr.1997.Citedon 476
+TrivediK. ProbabilityandStatisticswithReliability,QueuingandComputerScienceApplica-
+tions. JohnWiley,NewYork,2ndedition,2002.Citedon 17
+TsafrirD. TheContext-SwitchOverheadInflictedbyHardwareInterrupts(andthe
+EnigmaofDo-nothingLoops). In2007WorkshoponExperimentalComputerScience,
+NewYork,NY,2007.ACMPress.Citedon 107,108
+TsuiA.W.,LinW.-C.,ChenW.-J.,HuangP.,andChuH.-H. AccuracyPerformance
+AnalysisbetweenWarDrivingandWarWalkinginMetropolitanWi-FiLocalization.
+IEEETransationsonMobileComputing,9(11):1551–1562,2010.Citedon 340
+TurekJ.andShashaS. TheManyFacesofConsensusinDistributedSystems. Computer,
+25(6):8–17,June1992.Citedon 461,462
+Umar A. Object-Oriented Client/Server Internet Environments. Prentice Hall, Upper
+downloadedbyKARNAVIJIT@GMAIL.COM DS3.03
+
+
+===== page 610 =====
+596 BIBLIOGRAPHY
+SaddleRiver,N.J.,1997.Citedon 78
+UPnPForum. UPnPDeviceArchitectureVersion1.1,Oct.2008.Citedon 43
+UzunovA.V.,FernandezE.B.,andFalknerK. EngineeringSecurityintoDistributed
+Systems: ASurveyofMethodologies. JournalofUniversalComputerScience,18(20):
+2920–3006,2012.Citedon 513
+RenesseR.vanandAltinbukenD. PaxosMadeModeratelyComplex. ACMComputing
+Surveys,47(3):42:1–42:36,Feb.2015.Citedon 440
+RenesseR.van,BirmanK.,CooperR.,GladeB.,andStephensonP. TheHorusSystem.
+InBirmanK.andRenesseR.van,editors,ReliableandDistributedComputingwiththe
+IsisToolkit,pages133–147.IEEEComputerSocietyPress,LosAlamitos,CA.,1994.
+Citedon 6
+SteenM.vanandBallintijnG. AchievingScalabilityinHierarchicalLocationServices.
+In26thInternationalComputerSoftwareandApplicationsConference, pages899–905,
+LosAlamitos,CA.,Aug.2002.IEEE,IEEEComputerSocietyPress.Citedon 256
+SteenM.van,HauckF.,HomburgP.,andTanenbaumA.LocatingObjectsinWide-Area
+Systems. IEEECommunicationsMagazine,36(1):104–109,Jan.1998.Citedon 251
+VaqueroL.M.,Rodero-MerinoL.,CaceresJ.,andLindnerM. ABreakintheClouds:
+Towards a Cloud Definition. ACMComputerCommunicationsReview, 39(1):50–55,
+Dec.2008.Citedon 30
+VasudevanS.,KuroseJ.F.,andTowsleyD.F. DesignandAnalysisofaLeaderElection
+AlgorithmforMobileAdHocNetworks. In12thInternationalConferenceonNetwork
+Protocols,pages350–360,LosAlamitos,CA.,Oct.2004.IEEE,IEEEComputerSociety
+Press.Citedon 334,336
+Vega-RedondoF. ComplexSocialNetworks. CambridgeUniversityPress,Cambridge,
+UK,2007.Citedon 45
+VeigaL.andFerreiraP. AsynchronousCompleteDistributedGarbageCollection. In
+19thInternationalParallel&DistributedProcessingSymposium,LosAlamitos,CA.,Apr.
+2005.IEEE,IEEEComputerSocietyPress.Citedon 244
+VelazquezM. ASurveyofDistributedMutualExclusionAlgorithms. TechnicalReport
+CS-93-116,UniversityofColoradoatBoulder,Sept.1993.Citedon 323
+VidelaA.andWilliamsJ. RabitMQinAction. Manning,ShelterIsland,NY,2012.Cited
+on 218
+VixieP. WhatDNSIsNot. CommunicationsoftheACM,52(12):43–47,Dec.2009.Cited
+on 278
+VixieP. Rate-LimitingState. CommunicationsoftheACM,57(4):40–43,Apr.2014.Cited
+on 278
+VogelsW. TrackingServiceAvailabilityinLongRunningBusinessActivities. In1st
+InternationalConferenceonServiceOrientedComputing,volume2910ofLectureNotes
+inComputerScience,pages395–408,Berlin,Dec.2003.Springer-Verlag.Citedon 465
+VogelsW. Eventuallyconsistent. CommunicationsoftheACM,52(1):40–44,Jan.2009.
+Citedon 375
+VoorsluysW.,BrobergJ.,VenugopalS.,andBuyyaR. CostofVirtualMachineLive
+MigrationinClouds: APerformanceEvaluation. In1stInternationalConferenceon
+CloudComputing,volume5931ofLectureNotesinComputerScience,pages254–265,
+Berlin,Dec.2009.Springer-Verlag.Citedon 160
+VoulgarisS.,GavidiaD.,andSteen.M.van. CYCLON:InexpensiveMembershipMan-
+agementforUnstructuredP2POverlays. JournalofNetworkandSystemsManagement,
+DS3.01 downloadedbyKARNAVIJIT@GMAIL.COM
+
+
+===== page 611 =====
+BIBLIOGRAPHY 597
+13(2):197–217,June2005.Citedon 353
+VoulgarisS.,RivièreE.,KermarrecA.-M.,andSteenM.van.Sub-2-Sub:Self-Organizing
+Content-BasedPublishandSubscribeforDynamicandLargeScaleCollaborative
+Networks. In5thInternationalWorkshoponPeer-to-PeerSystems,Feb.2006.Citedon
+348
+VoulgarisS.,DobsonM.,andSteenM.van. DecentralizedNetwork-levelSynchroniza-
+tioninMobileAdHocNetworks. ACMTransactionsonSensorNetworks,12(1),2016.
+Citedon 51
+VoydockV.andKentS. SecurityMechanismsinHigh-LevelNetworkProtocols. ACM
+ComputingSurveys,15(2):135–171,June1983.Citedon 516
+VuQ.,LupuM.,andOoiB. Peer-to-PeerComputing,PrinciplesandApplications. Springer-
+Verlag,Berlin,2010.Citedon 81
+Wahbe R., Lucco S., Anderson T., and Graham S. Efficient Software-based Fault
+Isolation. In14thSymposiumonOperatingSystemPrinciples,pages203–216,Asheville,
+NorthCarolina,Dec.1993.ACM.Citedon 539
+WaldoJ.,WyantG.,WollrathA.,andKendallS. ANoteonDistributedComputing.
+In2ndWorkshoponMobileObjectSystems,volume1222ofLectureNotesinComputer
+Science,pages1–10,Berlin,July1997.Springer-Verlag.Citedon 11
+WalfishM.,BalakrishnanH.,,andShenkerS. UntanglingtheWebfromDNS. In1st
+SymposiumonNetworkedSystemsDesignandImplementation,pages225–238,Berkeley,
+CA,Mar.2004.USENIX,USENIX.Citedon 276
+WallachD.,BalfanzD.,DeanD.,andFeltenE. ExtensibleSecurityArchitecturesfor
+Java. In 16th Symposium on Operating System Principles, pages 116–128, St. Malo,
+France,Oct.1997.ACM.Citedon 541,542
+WamsJ. UnifiedMessagingandMicro-Objects. PhDthesis,VUUniversityAmsterdam,
+2011.Citedon 11,12
+WelshM.andMainlandG. ProgrammingSensorNetworksUsingAbstractRegions.
+In1stSymposiumonNetworkedSystemsDesignandImplementation,Berkeley,CA,Mar.
+2004.USENIX,USENIX.Citedon 48
+WendellP.andFreedmanM.J. GoingViral: FlashCrowdsinanOpenCDN. In11th
+InternetMeasurementConference,pages549–558,NewYork,NY,2011.ACMPress.
+Citedon 412
+WesselsD. Squid: TheDefinitiveGuide. O’Reilly&Associates,Sebastopol,CA.,2004.
+Citedon 413
+WieringaR.andJongeW.de.ObjectIdentifiers,Keys,andSurrogates–ObjectIdentifiers
+Revisited. TheoryandPracticeofObjectSystems,1(2):101–114,1995.Citedon 239
+Wiesmann M., Pedone F., Schiper A., Kemme B., and Alonso G. Understanding
+ReplicationinDatabasesandDistributedSystems. In20thInternationalConferenceon
+DistributedComputingSystems,pages264–274,Taipei,Taiwan,Apr.2000.IEEE.Cited
+on 360
+WollrathA.,RiggsR.,andWaldoJ. ADistributedObjectModelfortheJavaSystem.
+ComputingSystems,9(4):265–290,Fall1996.Citedon 182
+Wolman A., Voelker G., Sharma N., Cardwell N., Karlin A., and Levy H. On the
+ScaleandPerformanceofCooperativeWebProxyCaching. In17thSymposiumon
+OperatingSystemPrinciples,pages16–31,KiawahIsland,SC,Dec.1999.ACM.Cited
+on 412
+WoolA.TrendsinFirewallConfigurationErrors: MeasuringtheHolesinSwissCheese.
+downloadedbyKARNAVIJIT@GMAIL.COM DS3.03
+
+
+===== page 612 =====
+598 BIBLIOGRAPHY
+IEEEInternetComputing,14(4):58–65,2010.Citedon 537
+WrightG.andStevensW. TCP/IPIllustrated,Volume2: TheImplementation. Addison-
+Wesley,Reading,MA.,1995.Citedon 59
+XylomenosG.,VerveridisC.,SirisV.,FotiouN.,TsilopoulosC.,VasilakosX.,Katsaros
+K.,andPolyzosG. ASurveyofInformation-centricNetworkingResearch. IEEE
+CommunicationsSurveys&Tutorials,16(2):1024–1049,2014.Citedon 346
+YangB.andGarcia-MolinaH. DesigningaSuper-PeerNetwork. In19thInternational
+ConferenceonDataEngineering, pages 49–60, Los Alamitos, CA., Mar. 2003. IEEE,
+IEEEComputerSocietyPress.Citedon 87
+YangM.,ZhangZ.,LiX.,andDaiY.AnEmpiricalStudyofFree-RidingBehaviorinthe
+MazeP2PFile-SharingSystem. In4thInternationalWorkshoponPeer-to-PeerSystems,
+LectureNotesinComputerScience,Berlin,Feb.2005.Springer-Verlag.Citedon 91
+YellinD. CompetitiveAlgorithmsfortheDynamicSelectionofComponentImplemen-
+tations. IBMSystemsJournal,42(1):85–97,Jan.2003.Citedon 75
+YiS.,LiC.,andLiQ. ASurveyofFogComputing: Concepts,ApplicationsandIssues.
+InWorkshoponMobileBigData,pages37–42,NewYork,NY,2015.ACMPress.Cited
+on 91
+Yu H. and Vahdat A. Efficient Numerical Error Bounding for Replicated Network
+Services. In Abbadi A. E., Brodie M. L., Chakravarthy S., Dayal U., Kamel N.,
+SchlageterG.,andWhangK.-Y.,editors,26thInternationalConferenceonVeryLarge
+DataBases,pages123–133,SanMateo,CA.,Sept.2000.MorganKaufman.Citedon
+398
+YuH.andVahdatA. DesignandEvaluationofaConit-BasedContinuousConsistency
+ModelforReplicatedServices. ACMTransactionsonComputerSystems,20(3):239–282,
+2002.Citedon 361,362,415
+Zargar S. T., Joshi J., and Tipper D. A Survey of Defense Mechanisms Against
+Distributed Denial of Service (DDoS) Flooding Attacks. IEEE Communications
+Surveys&Tutorials,15(4):2046–2069,2013.Citedon 544
+ZhangQ.,ChengL.,andBoutabaR. CloudComputing: StateoftheArtandResearch
+Challenges. JournalofInternetServicesandApplications,1(1):7–18,May2010.Citedon
+30
+ZhaoF.andGuibasL. WirelessSensorNetworks. MorganKaufman,SanMateo,CA.,
+2004.Citedon 47
+Zhuang S. Q., Geels D., Stoica I., and Katz R. H. On Failure Detection Algorithms
+inOverlayNetworks. In24thINFOCOMConference,LosAlamitos,CA.,Mar.2005.
+IEEE,IEEEComputerSocietyPress.Citedon 465
+ZoggJ.-M. GPSBasics. TechnicalReportGPS-X-02007,UBlox,Mar.2002.Citedon 339
+ZwickyE.,CooperS.,ChapmanD.,andRussellD. BuildingInternetFirewalls. O’Reilly
+&Associates,Sebastopol,CA.,2ndedition,2000.Citedon 537
+DS3.01 downloadedbyKARNAVIJIT@GMAIL.COM

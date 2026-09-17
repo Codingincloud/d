@@ -1,0 +1,105 @@
+{
+ "_comment": [
+  "Edits found by reading the notes rather than by the audit. Every pattern in",
+  "tools/voice_audit.py is deliberately narrow, so that a subject sentence using one",
+  "of the words does not get flagged - and the price of narrow patterns is that the",
+  "same voice gets past them when it is phrased differently. These are the ones that",
+  "did: 'the course's reference deck records', 'Unit 5's deck names', 'the Web",
+  "Services deck states'. The reader sees no difference between those and the ones",
+  "the audit caught, so they are fixed in the same catalogue.",
+  "",
+  "Five are written out in full rather than as prose: the phrase to drop and the",
+  "bolded claim beside it are separated by markup, which a prose entry cannot span.",
+  "Their `find` is the exact HTML, and the `to` keeps the bold where it was.",
+  "",
+  "Figure captions that say which slides a hand-drawn diagram was built from are",
+  "left alone: that is a caption's job, it is where the provenance belongs, and the",
+  "notes' own checks read it."
+ ],
+ "edits": [
+  {
+   "ch": "ch7.js",
+   "tell": "deck",
+   "why": "the market is the content; whose deck records it is not",
+   "find": "The course's reference deck records the model as a market: the third layer of the cloud service stack is <strong>IaaS, provided by Amazon, Windows Azure and Rackspace among others</strong>, and the middle layer is <strong>PaaS, provided by Google, Salesforce.com and Facebook among others</strong>.",
+   "to": "The model is a market: the third layer of the cloud service stack is <strong>IaaS, from Amazon, Windows Azure and Rackspace among others</strong>, and the middle layer is <strong>PaaS, from Google, Salesforce.com and Facebook among others</strong>."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "deck",
+   "why": "the providers are the content, from both sides of the same split; whose list each side came from is not",
+   "find": "Unit 5's deck names the same set from the service-model side &mdash; <strong>Amazon EC2 for IaaS, Google App Engine and Windows Azure for PaaS, Gmail and Salesforce for SaaS</strong> &mdash; and its public-cloud examples add <strong>IBM Cloud, Salesforce Heroku, Microsoft Azure and Google App Engine</strong>.",
+   "to": "The same set appears from the service-model side &mdash; <strong>Amazon EC2 for IaaS, Google App Engine and Windows Azure for PaaS, Gmail and Salesforce for SaaS</strong> &mdash; and the public-cloud examples add <strong>IBM Cloud, Salesforce Heroku, Microsoft Azure and Google App Engine</strong>."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "deck",
+   "why": "the generalisation is the content; that a deck makes it is not",
+   "find": "The reference deck generalises the three models into <strong>XaaS &mdash; Anything as a Service, or Everything-as-a-Service</strong>:",
+   "to": "The three models generalise into <strong>XaaS &mdash; Anything as a Service, or Everything-as-a-Service</strong>:"
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "deck",
+   "why": "the benefits are the content; whose list they are is not",
+   "find": "Benefits of XaaS</strong>, as the reference deck lists them:",
+   "to": "Benefits of XaaS</strong>:"
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "deck",
+   "why": "the two readings are the content; which source each came from is not",
+   "find": "In the reference deck it is <strong>Desktop-as-a-Service</strong>, a virtual desktop with its apps delivered from the provider's servers. In the course's other reference book the same letters appear as <strong>Data as a Service</strong>.",
+   "to": "Two readings exist: <strong>Desktop-as-a-Service</strong>, a virtual desktop with its apps delivered from the provider's servers, and <strong>Data as a Service</strong>."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "deck",
+   "why": "the table is the content; who answers with it and how good an answer it makes are not",
+   "old": "The course's reference deck answers this directly, and it is the best \"list the services of a cloud platform\" answer available:",
+   "new": "The services of a cloud platform, by layer:"
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "deck",
+   "why": "the case is the content; that a deck names it is not",
+   "old": "DBaaS is the case the reference deck names:",
+   "new": "DBaaS is the case here:"
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "deck",
+   "why": "the implementation detail is the content; which unit's deck adds it is not",
+   "old": "The Unit 6 deck adds the implementation detail:",
+   "new": "The implementation detail:"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "deck",
+   "why": "the problem and why it shapes the solution is the content; whose words state it are not",
+   "old": "The Web Services deck states the problem before the solution, and the problem is the reason the solution is shaped as it is:",
+   "new": "Web services answer a problem, and the problem is why the solution is shaped as it is:"
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "deck",
+   "why": "the two quantities and what each is are the content; whose slide names them is not; written out in full because the round-trip time sits in a <code> element, which a prose entry cannot span",
+   "find": "The deck's slide 14 identifies <code>(T1 &minus; T0)</code> as the Round Trip Time and shows the interrupt-handling time as a third quantity to be subtracted.",
+   "to": "<code>(T1 &minus; T0)</code> is the Round Trip Time, and the interrupt-handling time is a third quantity to be subtracted."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "deck",
+   "why": "the anomaly is the subject; whose slide warns about it is not",
+   "old": "which is exactly what the deck's slide 40 warns about and what vector clocks fix.",
+   "new": "which is the anomaly vector clocks fix."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the interaction and its messages are the content; whose example it is is not",
+   "old": "The deck's example interaction is ",
+   "new": "The example interaction is "
+  }
+ ]
+}

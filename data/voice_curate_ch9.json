@@ -1,0 +1,448 @@
+{
+ "_comment": [
+  "Unit 9's batch of voice edits. Same rules as voice_curate.json.",
+  "",
+  "Unit 9 has no lecture deck either, and the notes say so twice - once in a callout",
+  "addressed to whoever maintains the site, and once as a 'where it comes from in",
+  "the course' column in the Docker table, whose cells open with 'The deck's'. The",
+  "callout goes; the table cells keep the cross-reference and lose the attribution.",
+  "Those four are written out in full because the phrase to drop and the bolded term",
+  "beside it are separated by markup, which a prose entry cannot span."
+ ],
+ "edits": [
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "the callout is a note to whoever maintains the site - no lecture deck was shared, what this page was assembled from, upload one and the page gets rewritten - and none of it is about edge computing; written out in full because a deletion may span markup and this one has to take the box with it",
+   "find": "<div class=\"concept-box warn\">\n<h4>About this unit's sources</h4>\n<p><strong>There is no Chapter 9 lecture deck among the shared files.</strong> This page is written from the Chapter 6 deck's container material (which is what 9.3 and 9.4 build on), from Tanenbaum and Van Steen's discussion of edge and fog computing, from the Chapter 7 material on Lambda and managed Kubernetes, and from the syllabus list itself. Definitions of industry terms are given as such. <strong>If a Chapter 9 deck exists, upload it and this page can be rewritten from class material.</strong></p>\n</div>\n\n",
+   "to": ""
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "the definition and its difference from a virtual machine are the content; where they came from is not",
+   "old": "This sub-topic is the only one in the unit with real class material behind it. The Chapter 6 deck defines the container as ",
+   "new": "A container is defined as "
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "the difference is the content; that a source states it is not",
+   "old": ", and states the key difference from a virtual machine:",
+   "new": ", and it differs from a virtual machine:"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "the terms are the content; whose definition they follow from is not",
+   "old": "Its vocabulary, all of which falls out of the deck's definition:",
+   "new": "Its terms, all of them from that definition:"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "the cross-reference column keeps the section number; the attribution in front of it goes",
+   "find": "<td>The deck's \"single image\"",
+   "to": "<td>The \"single image\""
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "same column, same removal: the benefit is named, the deck is not",
+   "find": "<td>The deck's <strong>portability</strong>",
+   "to": "<td>The <strong>portability</strong>"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "same column, same removal",
+   "find": "<td>The deck's <strong>great ecosystem</strong>",
+   "to": "<td>The <strong>great ecosystem</strong>"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "the cross-reference is the useful part; whose statement it was is not",
+   "find": "<td>The deck's statement in 6.2.2.",
+   "to": "<td>Stated in 6.2.2."
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "a heading names its subject; where the caveat came from is not its subject",
+   "old": "9.3.3 The security caveat, from the deck",
+   "new": "9.3.3 The security caveat"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "Meltdown is the example; that it is the deck's example adds nothing",
+   "old": "(the deck's example is Meltdown)",
+   "new": "(Meltdown is the example)"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "the consequence is the content; whose list it is on is not",
+   "old": "and the last con on the deck's list follows from the same sharing:",
+   "new": "and the last con follows from the same sharing:"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "deck",
+   "why": "the flaw and its response are the content; the remark about what a question wants is advice",
+   "old": "The deck gives the flaw; the standard hardening practices are worth naming as the response, because a security question usually wants both halves.",
+   "new": "The flaw is stated above, and the standard hardening practice is the response."
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "source",
+   "why": "the progression is the content; that a textbook is the only source of it is not",
+   "old": "The course's reference on this is Tanenbaum and Van Steen, and the progression it describes is worth quoting because it is the corpus's only statement of the idea.",
+   "new": "The progression, in full:"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "source",
+   "why": "the formulation is the content; whose name is attached to it is not",
+   "old": "(Tanenbaum's formulation)",
+   "new": "(the standard formulation)"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "paper",
+   "why": "the trade applying at every step is the claim; what the exam can ask is not",
+   "old": "Fig 7.1 draws it, and the same trade applies at every step, which is why the exam can ask about any two of them and expect the same reasoning.",
+   "new": "The same trade applies at every step, so any two of them can be compared on the same reasoning."
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "paper",
+   "why": "which list matters more is a claim about the subject, not about the answer",
+   "old": "That list is a more useful exam answer than the benefits list, because it shows the trade was understood.",
+   "new": "That list matters more than the benefits list, because it is where the trade shows."
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "paper",
+   "why": "the two sentences are the content; that they close an answer is advice",
+   "old": "Two sentences, both of which are good closing paragraphs in an exam answer.",
+   "new": "Two sentences close the unit."
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "advice",
+   "why": "the central idea is the content; that it deserves precise statement is the writer's aside",
+   "old": ", and its central idea is worth stating precisely:",
+   "new": ", and its central idea is this:"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "frame",
+   "why": "the counter-movement is the subject, named as such rather than as a statement about the unit",
+   "old": "This unit is about the counter-movement, and the reason is physical.",
+   "new": "The counter-movement is this unit's subject, and the reason is physical."
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "frame",
+   "why": "the limit on all four is the content; that it is the last thing to carry out of the unit is the writer's aside",
+   "old": "The last thing worth carrying out of this unit is the honest limit on all four.",
+   "new": "The honest limit on all four is the last thing to carry away."
+  },
+  {
+   "ch": "ch9.js",
+   "find": "Units 5 to 8 are the story of consolidation: resources pooled",
+   "to": "Cloud computing consolidated resources: pooled",
+   "tell": "crossref",
+   "why": "the consolidation and its reason are the fact; which units told the story is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": " (Unit 5.1.2).",
+   "to": ".",
+   "tell": "crossref",
+   "why": "in-unit section numbers are navigation like any other"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "which is the data residency problem of Unit 8.1.4 solved by not moving the data",
+   "to": "which is the data residency problem solved by not moving the data",
+   "tell": "crossref",
+   "why": "the problem and its solution are the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "And the costs, which a good answer names rather than hides: ",
+   "to": "And the costs: ",
+   "tell": "reader",
+   "why": "'which a good answer names rather than hides' is advice about answering; the costs are the content"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "and the return of the problems this course has already solved once &mdash; <strong>unit 3's clock synchronisation and coordination</strong>",
+   "to": "and the return of problems already met once &mdash; <strong>clock synchronisation and coordination</strong>",
+   "tell": "crossref",
+   "why": "the problems and where they recur are the fact; 'this course has already solved once' and the unit are pointers"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "(Unit 3.0), they must <strong>communicate only by passing messages</strong> (Unit 1.1), they experience <strong>partial failure</strong> (Unit 4.1.2's fault tolerance), and the data they hold is",
+   "to": ", they must <strong>communicate only by passing messages</strong>, they experience <strong>partial failure</strong>, and the data they hold is",
+   "tell": "crossref",
+   "why": "each property is stated in full; the unit and section numbers are navigation"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "<strong>replicated and therefore needs a consistency rule</strong> (Unit 4.1.6)",
+   "to": "<strong>replicated and therefore needs a consistency rule</strong>",
+   "tell": "crossref",
+   "why": "the requirement is named in full; the section number is navigation"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "This is Unit 7.3.3's AWS Lambda, Azure Functions and Google Cloud Functions.",
+   "to": "The serverless platforms are AWS Lambda, Azure Functions and Google Cloud Functions.",
+   "tell": "crossref",
+   "why": "the names are the content; 'this is Unit n's' is an address"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "Unit 7.2.3's DBaaS is the same idea for data.",
+   "to": "DBaaS is the same idea for data.",
+   "tell": "crossref",
+   "why": "the idea is the fact; which unit named DBaaS is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "Serverless is the last step of a progression that runs through the whole course: ",
+   "to": "Serverless is the last step of a progression: ",
+   "tell": "crossref",
+   "why": "the progression is the content; 'runs through the whole course' is the unit's own index"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "physical servers you own (Unit 5 on-premises) &rarr; virtual machines you manage (Unit 6, Unit 7's EC2) &rarr; containers you package (Unit 6.2) &rarr; functions you only write (Unit 9.2).",
+   "to": "physical servers you own &rarr; virtual machines you manage (EC2) &rarr; containers you package &rarr; functions you only write.",
+   "tell": "crossref",
+   "why": "the four rungs are the content; each rung's unit number is navigation, and EC2 is the one name worth keeping"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "The VMs of Unit 6 and Unit 7 are the nodes here.",
+   "to": "The virtual machines are the nodes here.",
+   "tell": "crossref",
+   "why": "which machines are the nodes is the fact; the units that taught them are pointers"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "on Azure (Unit 7.3.1).",
+   "to": "on Azure.",
+   "tell": "crossref",
+   "why": "the managed services are the content; the section number is navigation"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "So the honest statement of the trade is this: virtualization puts a hypervisor between tenants and gives hardware-level isolation (Unit 6.1.10), while",
+   "to": "The trade is this: virtualization puts a hypervisor between tenants and gives hardware-level isolation, while",
+   "tell": "crossref",
+   "why": "the trade is the fact; 'the honest statement of' rates it and the section number is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "which is why the multi-tenant risks of Unit 8.4.1 are sharper for containers",
+   "to": "which is why the multi-tenant risks are sharper for containers",
+   "tell": "crossref",
+   "why": "the effect on containers is the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "&mdash; which only pays off when compute is elastic and cheap to start (Unit 5.2.1).",
+   "to": "&mdash; which only pays off when compute is elastic and cheap to start.",
+   "tell": "crossref",
+   "why": "the requirement is the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "reproducible and portable</strong> (Unit 6.2.2), which is what lets",
+   "to": "reproducible and portable</strong>, which is what lets",
+   "tell": "crossref",
+   "why": "the image's property is the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "encapsulation</strong> benefit (Unit 6.1.10) taken to its conclusion, and it removes configuration drift",
+   "to": "encapsulation</strong> benefit taken to its conclusion, and it removes configuration drift",
+   "tell": "crossref",
+   "why": "the benefit and its effect are the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "&mdash; which is also the direct answer to Unit 8's <strong>misconfiguration</strong> vulnerability.",
+   "to": "&mdash; and with it the <strong>misconfiguration</strong> vulnerability.",
+   "tell": "crossref",
+   "why": "the vulnerability is the fact; presenting it as an answer to another unit is the exam talking"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "the same requirement as Unit 8.4.2's centralised logging and SIEM.",
+   "to": "the same requirement as centralised logging and SIEM.",
+   "tell": "crossref",
+   "why": "the requirement is named in full; the section number is navigation"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "&mdash; which in this course's vocabulary means <strong>each communicating only by passing messages</strong> (Unit 1.1), over the web service interfaces of Unit 2.4, with each service's remote interface defined as in Unit 2.2.",
+   "to": "&mdash; which means <strong>each communicating only by passing messages</strong>, over web service interfaces, with each service's remote interface defined like any other remote object.",
+   "tell": "crossref",
+   "why": "the mechanism is the fact; 'in this course's vocabulary' and three section numbers are navigation"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "Each service can use the best tool for its job (Unit 1.1's heterogeneity, used deliberately).",
+   "to": "Each service can use the best tool for its job, which is heterogeneity used deliberately.",
+   "tell": "crossref",
+   "why": "the choice and the principle behind it are the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "becomes the problem from Unit 4.1.6 &mdash; and is solved with events and eventual consistency",
+   "to": "becomes the problem of consistency across services, solved with events and eventual consistency",
+   "tell": "crossref",
+   "why": "the problem and its solution are the fact; which unit named it is a pointer"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "and Unit 2 told us what that means: ",
+   "to": "",
+   "tell": "crossref",
+   "why": "'Unit 2 told us' is the unit's own index; the list that follows is the content"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "and the six ways a distributed object differs from a local one (Unit 2.0) apply to every internal call.",
+   "to": "and the six ways a distributed object differs from a local one apply to every internal call.",
+   "tell": "crossref",
+   "why": "the six differences are the content; the section number is navigation"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "and the shared-technology risk of Unit 8.4.1 is sharper (9.3.3).",
+   "to": "and the shared-technology risk is sharper.",
+   "tell": "crossref",
+   "why": "the comparison is the fact; the section numbers are navigation"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "9.4.5 How this unit's trends connect to the rest of the course",
+   "to": "9.4.5 How the trends connect to each other",
+   "tell": "crossref",
+   "why": "a heading about the unit's own structure rather than about the trends"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "First, the trends are <strong>one arc</strong>: consolidation into the cloud (Units 5&ndash;7), the problems that creates (Unit 8), and then distribution back out toward the data",
+   "to": "The trends are <strong>one arc</strong>: consolidation into the cloud, the problems that creates, and then distribution back out toward the data",
+   "tell": "crossref",
+   "why": "the arc and its three stages are the content; the unit ranges are the course's table of contents"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "<strong>Edge and fog</strong> are Unit 5's deployment and service models asked a harder question: ",
+   "to": "<strong>Edge and fog</strong> ask the deployment and service models a harder question: ",
+   "tell": "crossref",
+   "why": "the question is the content; which unit described the models is a pointer, and the sentence reads better active"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "<strong>Serverless</strong> is Unit 7.3's compute ladder completed &mdash; EC2 manages the OS for you, containers manage the runtime for you, and functions manage even the process lifetime, which is the provisioning question of Unit 6.4 with the provider doing the provisioning.",
+   "to": "<strong>Serverless</strong> completes the compute ladder: EC2 manages the OS, containers manage the runtime, and functions manage even the process lifetime, which is the provisioning question with the provider doing the provisioning.",
+   "tell": "crossref",
+   "why": "the ladder and what each rung manages are the content; two unit numbers and the second person are pointers"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "</strong> are Unit 6.2's virtualisation discussion continued past the hypervisor, and their scheduling problem is Unit 6.4's resource management at cluster scale.",
+   "to": "</strong> continue the virtualisation discussion past the hypervisor, and their scheduling problem is resource management at cluster scale.",
+   "tell": "crossref",
+   "why": "the continuation and the scheduling problem are the content; the section numbers are navigation"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "</strong> are Unit 1's fundamental challenges used deliberately: heterogeneity becomes \"each service, its own tool\", concurrency and partial failure become the normal condition, and Unit 2's communication problems become every internal call.",
+   "to": "</strong> use the fundamental challenges deliberately: heterogeneity becomes \"each service, its own tool\", concurrency and partial failure become the normal condition, and communication problems become every internal call.",
+   "tell": "crossref",
+   "why": "each challenge and what it becomes is the content; the units that named them are pointers"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "but must still synchronise the results back (Unit 3), serverless moves provisioning",
+   "to": "but must still synchronise the results back, serverless moves provisioning",
+   "tell": "crossref",
+   "why": "the qualification is the fact; the section number is navigation"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "you cannot find them by looking at one machine &mdash; you need logs, metrics and traces that follow a request across services.",
+   "to": "they cannot be found by looking at one machine &mdash; logs, metrics and traces have to follow a request across services.",
+   "tell": "reader",
+   "why": "the failures are the subject, not the reader's ability to find them"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "The counter-movement is this unit's subject, and the reason is physical.",
+   "to": "The counter-movement is driven by physics.",
+   "tell": "meta",
+   "why": "a sentence about what the unit is about; the physical reason is kept"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "Fig 9.2 is best read as an <strong>argument in four steps</strong> rather than as a stack, and this section is that argument.",
+   "to": "Fig 9.2 is an <strong>argument in four steps</strong> rather than a stack.",
+   "tell": "meta",
+   "why": "'is best read as' is reading advice, and 'this section is that argument' points at the page"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "Use the table as a checklist rather than as reading. ",
+   "to": "",
+   "tell": "meta",
+   "why": "instruction about how to read a table rather than content"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "A question on emerging trends is usually worth a few marks and asks for breadth, so the reliable structure is <strong>name the trend, define it in one line, and give one concrete example</strong> &mdash; and the four rows above are the syllabus's own four.",
+   "to": "Each trend is defined in one line and given one concrete example; the four rows are the syllabus's own four.",
+   "tell": "meta",
+   "why": "a paragraph of exam tactics - marks available, structure to use - in front of the trends themselves"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "One distinction is worth writing down because it is easy to blur: ",
+   "to": "One distinction is easy to blur: ",
+   "tell": "editorial",
+   "why": "'worth writing down' is advice; the distinction itself is the content"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "Two sentences close the unit. ",
+   "to": "",
+   "tell": "recount",
+   "why": "a lead-in that counts the sentences instead of making the point"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "Second, <strong>nothing in the course stops being true at the edge</strong>",
+   "to": "<strong>Nothing in the course stops being true at the edge</strong>",
+   "tell": "recount",
+   "why": "with the lead-in gone there is no first and second to count"
+  },
+  {
+   "ch": "ch9.js",
+   "find": "Two habits keep the answer specific: state the <em>direction</em> each trend moves computation in (toward the data for edge and fog, away from provisioning for serverless, toward smaller deployable units for cloud-native), and name <em>what it answers</em> (latency and bandwidth for edge, idle capacity and operations for serverless, release speed and independent scaling for microservices).",
+   "to": "Each trend moves computation in a <em>direction</em> and answers something specific: toward the data for edge and fog (latency and bandwidth), away from provisioning for serverless (idle capacity and operations), and toward smaller deployable units for cloud-native (release speed and independent scaling).",
+   "tell": "recount",
+   "why": "the directions and what each trend answers are the content; 'two habits keep the answer specific' is advice about answering"
+  }
+ ]
+}

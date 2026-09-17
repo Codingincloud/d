@@ -22,32 +22,34 @@ learn: `
 <h3>Mathematical Formulation</h3>
 <p>At time t=0: Fighter at (0, 50), Target on x-axis at (90, 0)</p>
 <div class="formula-box">
-d = √((x_b(t) - x_f(t))² + (y_b(t) - y_f(t))²)<br>
-sin θ = (y_b(t) - y_f(t)) / d<br>
-cos θ = (x_b(t) - x_f(t)) / d
+d = √((x<sub>b</sub>(t) - x<sub>f</sub>(t))² + (y<sub>b</sub>(t) - y<sub>f</sub>(t))²)<br>
+sin θ = (y<sub>b</sub>(t) - y<sub>f</sub>(t)) / d<br>
+cos θ = (x<sub>b</sub>(t) - x<sub>f</sub>(t)) / d
 </div>
 <p><strong>Next position of fighter at time (t+1):</strong></p>
 <div class="formula-box">
-x_f(t+1) = x_f(t) + V_p × cos θ<br>
-y_f(t+1) = y_f(t) + V_p × sin θ
+x<sub>f</sub>(t+1) = x<sub>f</sub>(t) + V<sub>p</sub> × cos θ<br>
+y<sub>f</sub>(t+1) = y<sub>f</sub>(t) + V<sub>p</sub> × sin θ
 </div>
-<p>where V_p = velocity of fighter. The angle must match the axis: cos θ is the fraction of the speed along <strong>x</strong> — it is (x_b − x_f)/d — and sin θ is the fraction along <strong>y</strong>, (y_b − y_f)/d. Swapping the two makes the fighter fly away from the bomber, which is the classic mistake in this question.</p>
+<p>where V<sub>p</sub> = velocity of fighter. The angle must match the axis: cos θ is the fraction of the speed along <strong>x</strong> — it is (x<sub>b</sub> − x<sub>f</sub>)/d — and sin θ is the fraction along <strong>y</strong>, (y<sub>b</sub> − y<sub>f</sub>)/d. Swapping the two makes the fighter fly away from the bomber, which is the classic mistake in this question.</p>
 
 <div class="worked">
 <div class="worked-head"><span>Pure pursuit — one time step, from the initial conditions given above</span><span class="meta">fighter (0, 50) · bomber (90, 0)</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n1p22">n1 p22</button></p>
 <div class="worked-givens">
-<div><span>Fighter</span><b>(x_f, y_f) = (0, 50)</b></div>
-<div><span>Bomber</span><b>(x_b, y_b) = (90, 0)</b></div>
+<div><span>Fighter</span><b>(x<sub>f</sub>, y<sub>f</sub>) = (0, 50)</b></div>
+<div><span>Bomber</span><b>(x<sub>b</sub>, y<sub>b</sub>) = (90, 0)</b></div>
 <div><span>Stop rule</span><b>hit if d ≤ 10 units</b></div>
 </div>
 <ol class="worked-steps">
-<li><span class="worked-calc">d = √[(x_b − x_f)² + (y_b − y_f)²]
+<li><span class="worked-calc">d = √[(x<sub>b</sub> − x<sub>f</sub>)² + (y<sub>b</sub> − y<sub>f</sub>)²]
   = √[(90 − 0)² + (0 − 50)²] = √(8100 + 2500) = √10600 = 102.96 units</span><span class="worked-note">d &gt; 10, so the pursuit continues — the first line of every answer is the distance check.</span></li>
-<li><span class="worked-calc">cos θ = (x_b − x_f)/d = 90/102.96  = 0.8742   (share of the speed along x)
-sin θ = (y_b − y_f)/d = −50/102.96 = −0.4856  (share along y)</span></li>
-<li><span class="worked-calc">x_f(t+1) = 0   + V_p × 0.8742  = +0.8742 V_p
-y_f(t+1) = 50 + V_p × (−0.4856) = 50 − 0.4856 V_p</span><span class="worked-note">With V_p = 20 units per step this is (17.48, 40.29) — substitute the speed your question gives.</span></li>
-<li><span class="worked-calc">New distance: √[(90 − 0.8742V_p)² + (0 − (50 − 0.4856V_p))²]</span><span class="worked-note">Recompute d each step; repeat until d ≤ 10 (hit) or the allowed time runs out (escape). This is the whole simulation loop.</span></li>
+<li><span class="worked-calc">cos θ = (x<sub>b</sub> − x<sub>f</sub>)/d = 90/102.96  = 0.8742   (share of the speed along x)
+sin θ = (y<sub>b</sub> − y<sub>f</sub>)/d = −50/102.96 = −0.4856  (share along y)</span></li>
+<li><span class="worked-calc">x<sub>f</sub>(t+1) = 0   + V<sub>p</sub> × 0.8742  = +0.8742 V<sub>p</sub>
+y<sub>f</sub>(t+1) = 50 + V<sub>p</sub> × (−0.4856) = 50 − 0.4856 V<sub>p</sub></span><span class="worked-note">With V<sub>p</sub> = 20 units per step this is (17.48, 40.29) — substitute the speed your question gives.</span></li>
+<li><span class="worked-calc">New distance: √[(90 − 0.8742V<sub>p</sub>)² + (0 − (50 − 0.4856V<sub>p</sub>))²]</span><span class="worked-note">Recompute d each step; repeat until d ≤ 10 (hit) or the allowed time runs out (escape). This is the whole simulation loop.</span></li>
 </ol>
 <div class="worked-result"><span>d = 102.96 units, still closing</span><b>cos θ = 0.8742 · sin θ = −0.4856</b></div>
 </div>
@@ -112,6 +114,61 @@ y_f(t+1) = 50 + V_p × (−0.4856) = 50 − 0.4856 V_p</span><span class="worked
 <p>Rearranging: <strong>MẌ = Kf(t) - DẊ - Kx</strong></p>
 <p><strong>Block diagram:</strong> 3 variables are added with a summer to produce MẌ → scale by 1/M to get Ẍ → integrator gives Ẋ → inverter gives -Ẋ → integrator gives -x → inverter gives x.</p>
 
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 900 342" role="img" aria-label="Analog-computer block diagram of the automobile suspension equation M X double dot plus D X dot plus K x equals K f of t. A summer labelled K f of t minus D X dot minus K x produces M X double dot, which is scaled by one over M to give X double dot; an integrator gives X dot, an inverter gives minus X dot, a second integrator gives minus x, and a second inverter gives x. Dashed feedback lines carry the damping term from X dot and the spring term from x back into the summer.">
+
+<defs><marker id="fg3c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker><marker id="fg3d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head acc"/></marker></defs>
+
+<text class="fig-t sm start" x="20" y="24">Analog wiring of  MẌ + DẊ + Kx = K f(t)</text>
+
+<rect class="fig-node pri" x="20" y="96" width="170" height="76" rx="10"/>
+<text class="fig-t sm start" x="34" y="118">Σ</text>
+<text class="fig-t mono" x="110" y="132">K f(t) − D Ẋ − K x</text>
+<text class="fig-t sm" x="110" y="156">summer</text>
+
+<path class="fig-edge" d="M190,134 H218" marker-end="url(#fg3c)"/>
+<text class="fig-t mono sm" x="206" y="152">MẌ</text>
+<rect class="fig-node" x="222" y="96" width="92" height="76" rx="10"/>
+<text class="fig-t mono" x="268" y="146">× 1/M</text>
+
+<path class="fig-edge" d="M314,134 H342" marker-end="url(#fg3c)"/>
+<text class="fig-t mono sm" x="330" y="152">Ẍ</text>
+<rect class="fig-node sec" x="346" y="96" width="92" height="76" rx="10"/>
+<text class="fig-t" x="392" y="140">∫ dt</text>
+<text class="fig-t sm" x="392" y="160">integrator</text>
+
+<path class="fig-edge" d="M438,134 H466" marker-end="url(#fg3c)"/>
+<text class="fig-t mono sm" x="454" y="152">Ẋ</text>
+<rect class="fig-node" x="470" y="96" width="92" height="76" rx="10"/>
+<text class="fig-t mono" x="516" y="146">× (−1)</text>
+
+<path class="fig-edge" d="M562,134 H590" marker-end="url(#fg3c)"/>
+<text class="fig-t mono sm" x="578" y="152">−Ẋ</text>
+<rect class="fig-node sec" x="594" y="96" width="92" height="76" rx="10"/>
+<text class="fig-t" x="640" y="140">∫ dt</text>
+<text class="fig-t sm" x="640" y="160">integrator</text>
+
+<path class="fig-edge" d="M686,134 H714" marker-end="url(#fg3c)"/>
+<text class="fig-t mono sm" x="702" y="152">−x</text>
+<rect class="fig-node" x="718" y="96" width="92" height="76" rx="10"/>
+<text class="fig-t mono" x="764" y="146">× (−1)</text>
+
+<path class="fig-edge" d="M810,134 H838" marker-end="url(#fg3c)"/>
+<circle class="fig-dot" cx="838" cy="134" r="3.5"/>
+<text class="fig-t start" x="850" y="140">x(t)</text>
+
+<path class="fig-edge acc" d="M454,138 V52 H120 V92" marker-end="url(#fg3d)"/>
+<text class="fig-t sm acc" x="287" y="44">damping D</text>
+<path class="fig-edge acc" d="M838,138 V300 H120 V176" marker-end="url(#fg3d)"/>
+<text class="fig-t sm acc" x="500" y="290">spring K</text>
+
+</svg>
+
+<figcaption>Fig 3.1 — The suspension equation wired as an analog computer. Read the solid path left to right; the two dashed lines are the feedback terms the summer needs, tapped from Ẋ and from x. Each integrator inverts, so the signal alternates between normal and negated on alternate blocks — that is the sign bookkeeping the block-diagram question is really testing.</figcaption>
+
+</figure>
+
 <h3>Computer Model of Liver</h3>
 <p>Thyroxine enters blood → carried to liver → liver converts to iodine → iodine absorbed by bile</p>
 <div class="formula-box">
@@ -131,6 +188,40 @@ y_f(t+1) = 50 + V_p × (−0.4856) = 50 − 0.4856 V_p</span><span class="worked
 
 <h2>3.6 Feedback Systems</h2>
 <p>Systems in which the <strong>output is sampled and fed back to the input</strong>.</p>
+
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 700 262" role="img" aria-label="Block diagram of a negative feedback control loop: the input r of t is compared with the fed-back output at a summing junction, the difference or error drives the process G of s to produce the output c of t, and a sensor H of s samples the output and returns it to the summing junction with a minus sign.">
+
+<defs><marker id="fg3b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+
+<text class="fig-t sm start" x="20" y="24">Negative feedback — the output is sampled and compared with the input</text>
+
+<text class="fig-t start" x="10" y="116">r(t)</text>
+<path class="fig-edge" d="M48,110 H94" marker-end="url(#fg3b)"/>
+<circle class="fig-node" cx="120" cy="110" r="22"/>
+<text class="fig-t sm" x="92" y="96">+</text>
+<text class="fig-t sm" x="100" y="154">−</text>
+<path class="fig-edge pri" d="M142,110 H218" marker-end="url(#fg3b)"/>
+<text class="fig-t sm" x="180" y="100">e(t)</text>
+<rect class="fig-node pri" x="222" y="76" width="210" height="68" rx="10"/>
+<text class="fig-t" x="327" y="104">Process G(s)</text>
+<text class="fig-t sm" x="327" y="126">furnace / servo / plant</text>
+<path class="fig-edge" d="M432,110 H514" marker-end="url(#fg3b)"/>
+<circle class="fig-dot" cx="520" cy="110" r="3.5"/>
+<path class="fig-edge" d="M520,110 H596" marker-end="url(#fg3b)"/>
+<text class="fig-t start" x="604" y="116">c(t)</text>
+<path class="fig-edge pri" d="M520,110 V212 H398" marker-end="url(#fg3b)"/>
+<rect class="fig-node sec" x="222" y="188" width="170" height="48" rx="10"/>
+<text class="fig-t" x="307" y="217">Sensor H(s)</text>
+<path class="fig-edge pri" d="M222,212 H120 V136" marker-end="url(#fg3b)"/>
+<text class="fig-t sm acc" x="168" y="202">feedback</text>
+
+</svg>
+
+<figcaption>Fig 3.2 — Negative feedback. The summing junction takes r(t) <strong>plus</strong> the sampled output and the loop closes with a minus sign at the inverting input, so a rise in the output reduces the error. Reverse that sign and you have positive feedback — the version that oscillates or runs away.</figcaption>
+
+</figure>
 <div class="example-box">
 <h4>Example: Home Heating System</h4>
 <p>A thermostat-controlled furnace: The furnace heats the room (output = room temperature). The thermostat measures temperature and turns furnace ON/OFF based on whether temperature is below/above the setting.</p>
@@ -176,6 +267,32 @@ past: [
   {year:"2019 F", marks:"6", repeats:5, q:"Explain feedback system with its application.", occ:[{year:"2014 F, 2012 C,, 2010 F, 2010 C", marks:"5", q:"Short Note: Feedback system"}, {year:"2015 F", marks:"5", q:"Explain feedback system with suitable example"}, {year:"2015 F", marks:"5", q:"Explain feedback system with suitable example"}, {year:"2011 F", marks:"4", q:"Explain feedback system and hybrid system with suitable example"}, {year:"2011 C", marks:"5+3+2", q:"What are the applications of feedback system? Explain computer model to represent it. Show GPSS block diagram"}],
    answer:`<h4>Answer</h4>
 <p>A <strong>feedback system</strong> is one where the output is sampled and fed back to the input to control system behavior.</p>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 700 262" role="img" aria-label="Block diagram of a negative feedback control loop: the input r of t is compared with the fed-back output at a summing junction, the difference or error drives the process G of s to produce the output c of t, and a sensor H of s samples the output and returns it to the summing junction with a minus sign.">
+<defs><marker id="fg3e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+<text class="fig-t sm start" x="20" y="24">Negative feedback — the output is sampled and compared with the input</text>
+<text class="fig-t start" x="10" y="116">r(t)</text>
+<path class="fig-edge" d="M48,110 H94" marker-end="url(#fg3e)"/>
+<circle class="fig-node" cx="120" cy="110" r="22"/>
+<text class="fig-t sm" x="92" y="96">+</text>
+<text class="fig-t sm" x="100" y="154">−</text>
+<path class="fig-edge pri" d="M142,110 H218" marker-end="url(#fg3e)"/>
+<text class="fig-t sm" x="180" y="100">e(t)</text>
+<rect class="fig-node pri" x="222" y="76" width="210" height="68" rx="10"/>
+<text class="fig-t" x="327" y="104">Process G(s)</text>
+<text class="fig-t sm" x="327" y="126">furnace / servo / plant</text>
+<path class="fig-edge" d="M432,110 H514" marker-end="url(#fg3e)"/>
+<circle class="fig-dot" cx="520" cy="110" r="3.5"/>
+<path class="fig-edge" d="M520,110 H596" marker-end="url(#fg3e)"/>
+<text class="fig-t start" x="604" y="116">c(t)</text>
+<path class="fig-edge pri" d="M520,110 V212 H398" marker-end="url(#fg3e)"/>
+<rect class="fig-node sec" x="222" y="188" width="170" height="48" rx="10"/>
+<text class="fig-t" x="307" y="217">Sensor H(s)</text>
+<path class="fig-edge pri" d="M222,212 H120 V136" marker-end="url(#fg3e)"/>
+<text class="fig-t sm acc" x="168" y="202">feedback</text>
+</svg>
+<figcaption>Fig 3.2 — Negative feedback. The summing junction takes r(t) <strong>plus</strong> the sampled output and the loop closes with a minus sign at the inverting input, so a rise in the output reduces the error. Reverse that sign and you have positive feedback — the version that oscillates or runs away. Draw this loop for <em>both</em> the home-heating and the autopilot example; only G(s) and H(s) change.</figcaption>
+</figure>
 <h4>Types</h4>
 <p><strong>Positive Feedback:</strong> Output is in phase with input → increases system gain. Fed to non-inverting terminal of OPAM. Can make system unstable.</p>
 <p><strong>Negative Feedback:</strong> Output is out of phase with input → decreases system gain. Fed to inverting terminal. Stabilizes the system.</p>
@@ -217,8 +334,8 @@ past: [
 <li><strong>Broad Application:</strong> Used in engineering, physics, biology, economics — virtually every field</li>
 </ol>
 <p><strong>Example — Water Reservoir:</strong></p>
-<div class="formula-box">dh(t)/dt = (Q_in(t) - Q_out(t)) / A(h(t))</div>
-<p>where h(t) = water level at time t, Q_in = inlet rate, Q_out = outlet rate, A(h) = cross-sectional area at height h. This ODE lets us simulate and predict water levels over time.</p>
+<div class="formula-box">dh(t)/dt = (Q<sub>in</sub>(t) - Q<sub>out</sub>(t)) / A(h(t))</div>
+<p>where h(t) = water level at time t, Q<sub>in</sub> = inlet rate, Q<sub>out</sub> = outlet rate, A(h) = cross-sectional area at height h. This ODE lets us simulate and predict water levels over time.</p>
 <p><strong>Example — Suspension System:</strong> MẌ + DẊ + Kx = Kf(t) describes the displacement of a vehicle over rough terrain, allowing engineers to optimize suspension parameters.</p>`},
   {year:"2025 M", marks:"4", repeats:2, q:"Describe the pure pursuit problem in continuous systems.", occ:[{year:"2012 C", marks:"5", q:"Explain pure pursuit problem"}, {year:"2010 F", marks:"6", q:"Discuss a pure pursuit problem with a suitable example"}],
    answer:`<h4>Answer</h4>
@@ -227,10 +344,10 @@ past: [
 <p><strong>Assumptions:</strong> Same 2D plane, constant fighter speed, known target path, minimum firing distance = 10 units.</p>
 <p><strong>Formulas:</strong></p>
 <ul>
-<li>Distance: d = √((x_b - x_f)² + (y_b - y_f)²)</li>
-<li>sin θ = (y_b - y_f)/d, cos θ = (x_b - x_f)/d</li>
-<li>x_f(t+1) = x_f(t) + V_p × cos θ &nbsp;← cos θ is the x-component</li>
-<li>y_f(t+1) = y_f(t) + V_p × sin θ &nbsp;← sin θ is the y-component</li>
+<li>Distance: d = √((x<sub>b</sub> - x<sub>f</sub>)² + (y<sub>b</sub> - y<sub>f</sub>)²)</li>
+<li>sin θ = (y<sub>b</sub> - y<sub>f</sub>)/d, cos θ = (x<sub>b</sub> - x<sub>f</sub>)/d</li>
+<li>x<sub>f</sub>(t+1) = x<sub>f</sub>(t) + V<sub>p</sub> × cos θ &nbsp;← cos θ is the x-component</li>
+<li>y<sub>f</sub>(t+1) = y<sub>f</sub>(t) + V<sub>p</sub> × sin θ &nbsp;← sin θ is the y-component</li>
 </ul>
 <p>If d ≤ 10 units → bomber shot down. If the fighter cannot close to 10 units within the time allowed → bomber escapes. If target path is straight → analytical solution. If curved → simulation needed.</p>`},
   {year:"2025 M", marks:"8", repeats:1, q:"Compare analog vs. hybrid simulation methods, highlighting their use in solving differential equations.", occ:[{year:"2025 M", marks:"8", q:"Compare analog vs. hybrid simulation methods"}],
@@ -409,6 +526,30 @@ mass M &#8596; inductance L&nbsp;&nbsp;&#183;&nbsp;&nbsp;damping C &#8596; resis
 <h4>Hybrid simulation</h4>
 
 <p>A <strong>hybrid model</strong> contains both continuous parts (differential equations, integrated in steps of &#916;t) and discrete parts (events that change the state instantly). The two parts are not independent: they interact, and it is exactly those interactions that the question is about.</p>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 900 380" role="img" aria-label="A continuous trajectory of state h against time, with three discrete event interactions marked. The level falls continuously to the 20 percent line, where an event switches the pump on and the slope becomes positive. It rises continuously to the 85 percent line, where an event switches the pump off and the slope becomes negative. Later, a discrete event opens a valve and the state jumps vertically down to a new value, after which the trajectory rises again.">
+<path class="fig-axis" d="M 70,320 V 40"/>
+<path class="fig-axis" d="M 70,320 H 862"/>
+<text class="fig-t sm start" x="78" y="36">state h(t)</text>
+<text class="fig-t sm end" x="856" y="340">time t</text>
+<path class="fig-edge acc" d="M 70,128 H 862"/>
+<text class="fig-t sm acc start" x="78" y="120">85 % — pump OFF</text>
+<path class="fig-edge acc" d="M 70,272 H 862"/>
+<text class="fig-t sm acc start" x="78" y="264">20 % — pump ON</text>
+<path class="fig-curve" d="M 70,170 L 250,272 L 520,128 L 690,208"/>
+<path class="fig-edge dan" d="M 690,208 V 262"/>
+<path class="fig-curve" d="M 690,262 L 850,118"/>
+<circle class="fig-dot acc" cx="250" cy="272" r="5"/>
+<circle class="fig-dot acc" cx="520" cy="128" r="5"/>
+<circle class="fig-dot acc" cx="690" cy="208" r="5"/>
+<circle class="fig-dot acc" cx="690" cy="262" r="5"/>
+<text class="fig-t sm start" x="200" y="300">event: h falls through 20 % &#8594; pump ON</text>
+<text class="fig-t sm start" x="430" y="106">event: h reaches 85 % &#8594; pump OFF</text>
+<text class="fig-t sm end" x="680" y="240">discrete event: valve opened — the state jumps</text>
+<text class="fig-t sm start" x="78" y="360">Between events the trajectory is integrated continuously; each dot is an instant at which an event changes either the value or the slope.</text>
+</svg>
+<figcaption>Fig 3.3 — <strong>Event interactions in a hybrid model</strong>, drawn on one trajectory. The amber dashed lines are the two thresholds, the indigo curve is the continuous integration between them, each dot is an instant at which an event fires, and the thick red vertical is the one interaction that is not continuous at all — a <em>state jump</em>, where the variable skips the values in between instead of passing through them. A slope change, a threshold crossing and a jump are the three shapes every interaction in the list above takes on a trajectory; the rest differ in <em>which</em> equation the event changes, not in how it looks.</figcaption>
+</figure>
 
 <h4>Possible event interactions</h4>
 
@@ -472,6 +613,76 @@ Mass balance check: X&#8321; + X&#8322; + X&#8323; = constant, so no material is
 
 <h4>2. Block diagram</h4>
 
+<p>Read it one row at a time. A row is: <em>coefficient potentiometers</em> (the ○○○ symbols) → a <em>summing inverter</em> that adds the terms and flips the algebraic sign → an <em>integrator</em>, which turns the derivative back into the state variable. Because an integrator inverts, every state variable leaves the diagram negated — that is why you see −X₁, −X₂, −X₃ at the right.</p>
+
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 712 464" role="img" aria-label="Analog-computer block diagram of the three-compartment liver model. Row one: X1 through potentiometer K12 and X2 through potentiometer K21 feed a summing inverter whose output is X1 prime, and an integrator with initial condition X1 of 0 produces minus X1. Row two: X1 through K12 and X2 through K21 plus K23 feed a summing inverter producing X2 prime, and an integrator with initial condition X2 of 0 produces minus X2. Row three: X2 through K23 feeds a summing inverter producing X3 prime, and an integrator with initial condition X3 of 0 produces minus X3.">
+
+<defs><marker id="fg3a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+
+<text class="fig-t sm" x="70" y="24">potentiometer</text>
+<text class="fig-t sm" x="303" y="24">summing inverter</text>
+<text class="fig-t sm" x="545" y="24">integrator</text>
+
+<rect class="fig-node" x="14" y="56" width="112" height="28" rx="6"/>
+<text class="fig-t mono" x="70" y="75">X₁ × K₁₂</text>
+<rect class="fig-node" x="14" y="96" width="112" height="28" rx="6"/>
+<text class="fig-t mono" x="70" y="115">X₂ × K₂₁</text>
+<path class="fig-edge pri" d="M126,70 H176 V82 H200" marker-end="url(#fg3a)"/>
+<path class="fig-edge pri" d="M126,110 H176 V98 H200" marker-end="url(#fg3a)"/>
+<rect class="fig-node pri" x="206" y="54" width="194" height="72" rx="10"/>
+<text class="fig-t sm" x="220" y="100">Σ</text>
+<text class="fig-t mono" x="310" y="95">−K₁₂X₁ + K₂₁X₂</text>
+<path class="fig-edge" d="M400,90 H464" marker-end="url(#fg3a)"/>
+<text class="fig-t sm" x="432" y="80">X₁′</text>
+<rect class="fig-node sec" x="470" y="54" width="150" height="72" rx="10"/>
+<text class="fig-t" x="545" y="86">∫ dt</text>
+<text class="fig-t sm" x="545" y="106">IC = X₁(0)</text>
+<path class="fig-edge sec" d="M620,90 H648" marker-end="url(#fg3a)"/>
+<text class="fig-t start" x="656" y="95">−X₁</text>
+
+<rect class="fig-node" x="14" y="198" width="112" height="28" rx="6"/>
+<text class="fig-t mono" x="70" y="217">X₁ × K₁₂</text>
+<rect class="fig-node" x="14" y="238" width="112" height="28" rx="6"/>
+<text class="fig-t mono" x="70" y="257">X₂ × (K₂₁+K₂₃)</text>
+<path class="fig-edge pri" d="M126,212 H176 V224 H200" marker-end="url(#fg3a)"/>
+<path class="fig-edge pri" d="M126,252 H176 V240 H200" marker-end="url(#fg3a)"/>
+<rect class="fig-node pri" x="206" y="196" width="194" height="72" rx="10"/>
+<text class="fig-t sm" x="220" y="242">Σ</text>
+<text class="fig-t mono" x="310" y="237">K₁₂X₁ − (K₂₁+K₂₃)X₂</text>
+<path class="fig-edge" d="M400,232 H464" marker-end="url(#fg3a)"/>
+<text class="fig-t sm" x="432" y="222">X₂′</text>
+<rect class="fig-node sec" x="470" y="196" width="150" height="72" rx="10"/>
+<text class="fig-t" x="545" y="228">∫ dt</text>
+<text class="fig-t sm" x="545" y="248">IC = X₂(0)</text>
+<path class="fig-edge sec" d="M620,232 H648" marker-end="url(#fg3a)"/>
+<text class="fig-t start" x="656" y="237">−X₂</text>
+
+<rect class="fig-node" x="14" y="360" width="112" height="28" rx="6"/>
+<text class="fig-t mono" x="70" y="379">X₂ × K₂₃</text>
+<path class="fig-edge pri" d="M126,374 H200" marker-end="url(#fg3a)"/>
+<rect class="fig-node pri" x="206" y="338" width="194" height="72" rx="10"/>
+<text class="fig-t sm" x="220" y="384">Σ</text>
+<text class="fig-t mono" x="303" y="379">K₂₃X₂</text>
+<path class="fig-edge" d="M400,374 H464" marker-end="url(#fg3a)"/>
+<text class="fig-t sm" x="432" y="364">X₃′</text>
+<rect class="fig-node sec" x="470" y="338" width="150" height="72" rx="10"/>
+<text class="fig-t" x="545" y="370">∫ dt</text>
+<text class="fig-t sm" x="545" y="390">IC = X₃(0)</text>
+<path class="fig-edge sec" d="M620,374 H648" marker-end="url(#fg3a)"/>
+<text class="fig-t start" x="656" y="379">−X₃</text>
+
+<text class="fig-t sm start" x="14" y="444">Three states → three integrators; a shared variable is tapped into every row that needs it.</text>
+
+</svg>
+
+<figcaption>Fig 3.4 — Analog-computer block diagram for the 2012 compartment model. Each row produces one derivative and integrates it; the potentiometer values are the transfer coefficients K₁₂, K₂₁, K₂₃ from the given equations.</figcaption>
+
+</figure>
+
+<details class="fig-source">
+<summary>Original ASCII sketch — kept for provenance</summary>
 <div class="code-block">        POT K&#8321;&#8322;                     SUMMING INVERTER
 
  X&#8321; ──&#9675;&#9675;&#9675;&#9654; ─&#9484;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9488;              INTEGRATOR
@@ -503,6 +714,7 @@ Mass balance check: X&#8321; + X&#8322; + X&#8323; = constant, so no material is
                                                                      &#9474; IC = X&#8323;(0)&#9474;
 
                                                                      &#9492;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9496;</div>
+</details>
 
 <h4>3. Procedure</h4>
 
@@ -528,6 +740,49 @@ Mass balance check: X&#8321; + X&#8322; + X&#8323; = constant, so no material is
 <p>Given: <strong>Ax'' + Bx' + Cx + D = 0</strong></p>
 <p>Rearranging: <strong>Ax'' = -Bx' - Cx - D</strong></p>
 <p>Therefore: <strong>x'' = (-Bx' - Cx - D) / A</strong></p>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 950 342" role="img" aria-label="Analog-computer block diagram of the equation A x double dot plus B x dot plus C x plus D equals zero. A constant block supplies minus D and a summer computes minus B x dot minus C x minus D; the sum is scaled by one over A to give x double dot; an integrator gives x dot, an inverter gives minus x dot, a second integrator gives minus x, and a second inverter gives x. Dashed feedback lines carry the damping term from x dot with gain B and the spring term from x back into the summer with gain C.">
+<defs><marker id="fg3f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker><marker id="fg3g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head acc"/></marker></defs>
+<text class="fig-t sm start" x="20" y="24">Analog wiring of  A x'' + B x' + C x + D = 0</text>
+<rect class="fig-node" x="20" y="112" width="76" height="44" rx="8"/>
+<text class="fig-t mono" x="58" y="140">−D</text>
+<text class="fig-t sm" x="58" y="176">constant</text>
+<path class="fig-edge" d="M96,134 H116" marker-end="url(#fg3f)"/>
+<rect class="fig-node pri" x="120" y="96" width="170" height="76" rx="10"/>
+<text class="fig-t sm start" x="134" y="118">Σ</text>
+<text class="fig-t mono" x="205" y="134">−Bẋ − Cx − D</text>
+<text class="fig-t sm" x="205" y="158">summer</text>
+<path class="fig-edge" d="M290,134 H314" marker-end="url(#fg3f)"/>
+<rect class="fig-node" x="318" y="96" width="84" height="76" rx="10"/>
+<text class="fig-t mono" x="360" y="142">× 1/A</text>
+<path class="fig-edge" d="M402,134 H426" marker-end="url(#fg3f)"/>
+<text class="fig-t mono sm" x="414" y="154">ẍ</text>
+<rect class="fig-node sec" x="430" y="96" width="84" height="76" rx="10"/>
+<text class="fig-t" x="472" y="140">∫ dt</text>
+<text class="fig-t sm" x="472" y="160">integrator</text>
+<path class="fig-edge" d="M514,134 H538" marker-end="url(#fg3f)"/>
+<text class="fig-t mono sm" x="526" y="154">ẋ</text>
+<rect class="fig-node" x="542" y="96" width="84" height="76" rx="10"/>
+<text class="fig-t mono" x="584" y="142">× (−1)</text>
+<path class="fig-edge" d="M626,134 H650" marker-end="url(#fg3f)"/>
+<text class="fig-t mono sm" x="638" y="154">−ẋ</text>
+<rect class="fig-node sec" x="654" y="96" width="84" height="76" rx="10"/>
+<text class="fig-t" x="696" y="140">∫ dt</text>
+<text class="fig-t sm" x="696" y="160">integrator</text>
+<path class="fig-edge" d="M738,134 H762" marker-end="url(#fg3f)"/>
+<text class="fig-t mono sm" x="750" y="154">−x</text>
+<rect class="fig-node" x="766" y="96" width="84" height="76" rx="10"/>
+<text class="fig-t mono" x="808" y="142">× (−1)</text>
+<path class="fig-edge" d="M850,134 H886" marker-end="url(#fg3f)"/>
+<circle class="fig-dot" cx="892" cy="134" r="3.5"/>
+<text class="fig-t start" x="902" y="140">x(t)</text>
+<path class="fig-edge acc" d="M526,138 V52 H205 V92" marker-end="url(#fg3g)"/>
+<text class="fig-t sm acc" x="600" y="44">damping gain B</text>
+<path class="fig-edge acc" d="M892,138 V300 H205 V176" marker-end="url(#fg3g)"/>
+<text class="fig-t sm acc" x="640" y="292">spring gain C</text>
+</svg>
+<figcaption>Fig 3.5 — <strong>Ax'' + Bx' + Cx + D = 0</strong> wired as an analog computer. The constant term D is the only input; the two dashed taps return the damping term (gain B, taken from ẋ) and the spring term (gain C, taken from x) to the summer, and the summer is where their minus signs are applied. Read it as the ten steps above written as a picture: because the highest derivative is on the left of the equation and the lower ones are fed back, an analog machine solves it in real time with only one summer, two integrators and two inverters.</figcaption>
+</figure>
 <p><strong>Block Diagram Construction:</strong></p>
 <ol>
 <li>Start with three signals: -Bx', -Cx, and -D</li>

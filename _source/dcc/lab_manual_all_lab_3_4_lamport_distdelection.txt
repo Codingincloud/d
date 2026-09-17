@@ -1,0 +1,423 @@
+source: Lab_Manual_all\Lab_3_4_Lamport_DistdElection.pdf
+method: pdf
+sha256: f99767b6e760aff14cacb9e46fb85a6243f87d01acebc72bddd4f059d53a8d82
+pages:  13
+ocr:    8 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+===== page 1 =====
+LAB 3 - IMPLEMENATION OF LAMPORT’S CLOCK
+ALGORITHM
+Objectives:
+ To implement Lamport’s clock algorithm in C
+programming language.
+Theory:
+In a distributed system, it is not possible in practice to
+synchronize time across entities (typically thought of as
+processes) within the system; hence, the entities can use the
+concept of a logical clock based on the events through which
+they communicate. If two entities do not exchange any
+messages, then they probably do not need to share a common
+clock; events occurring on those entities are termed as
+concurrent events. Among the processes on the same local
+machine we can order the events based on the local clock of
+the system. When two entities communicate by message
+passing, then the send event is said to 'happen before' the
+receive event, and the logical order can be established among
+the events. A distributed system is said to have partial order
+if we can have a partial order relationship among the events
+in the system. If 'totality', i.e., causal relationship among all
+events in the system can be established, then the system is
+said to have total order.
+The ordering of events is based on two situations:
+1. If two events within a same process occurred, they occurred
+in the order in which that process observes.
+2. Whenever a message is sent between processes, the event
+of sending message occurred before the event of receiving the
+message.
+Lamport generalizes the two conditions to form happened-
+before relation, denoted by --> i.e. a --> b; meaning that event
+a happened before event b.
+According to Lamport:
+• If for some process pi: a -> b, then a -> b.
+• For any message m, send(m) -> receive(m)
+
+
+===== page 2 =====
+• If a, b and c are events such that a->b and b-->c, then a ->
+c. • If a -> b, a casually affects event b.
+• If a -> e and e -> a are false, then a and e are concurrent
+events, which can be written as a || e.
+Algorithm:
+1. A process increments its counter before each event in that
+process;
+2. When a process sends a message, it includes its counter
+value with the message;
+3. On receiving a message, the receiver process sets its counter
+to be greater than the maximum of its own value and the
+received value before it considers the message received.
+Logical Clock: The criteria for the logical clocks are:
+○ [C1]: Ci (a) < Ci(b), [ Ci -> Logical Clock, If ‘a’ happened before
+‘b’, then time of ‘a’ will be less than ‘b’ in a particular process.
+]
+○ [C2]: Ci(a) < Cj(b), [ Clock value of Ci(a) is less than Cj(b) ]
+
+
+===== page 3 =====
+SOURCE CODE:
+#include<stdio.h>
+#include<conio.h>
+struct process{
+int e;
+int ts[10];
+}p[10];
+void main(){
+int i,j,n,m,t,e1,e2;
+char ch;
+clrscr();
+printf("Enter the no. of process: ");
+scanf("%d",&n);
+[image text] Figure 3.1:
+Timestamp of receiving process doesnot exceeds sending's
+Figure 3.2: Correctly ordered timestamp of sending and receiving processes.
+Here, ts (A) < ts (B) does not imply A happened before B.
+
+
+===== page 4 =====
+for(i=0;i<n;i++){
+printf("Enter the no. of events in process %d: ",i+1);
+scanf("%d",&p[i].e);
+for(j=0;j<p[i].e;j++){
+p[i].ts[j]=j+1;
+}
+}
+for(i=0;i<n;i++){
+for(j=0;j<p[i].e;j++)
+printf("%d ",p[i].ts[j]);
+printf("\n");
+}
+do{
+printf("Enter the process no & event no. from which message is
+passing
+(less than %d): ",n);
+scanf("%d %d",&m,&e1);
+printf("Enter the process no & event no. on which msg is passing
+(less than
+%d): ",n);
+scanf("%d %d",&t,&e2);
+if((p[m].ts[e1]+1)>p[t].ts[e2]){
+p[t].ts[e2]=p[m].ts[e1]+1;
+for(i=e2;i<p[t].e;i++){
+p[t].ts[i+1]=p[t].ts[i]+1;
+}
+}
+
+
+===== page 5 =====
+printf("Is there more message(y/n): ");
+fflush(0);
+scanf("%c",&ch);
+}while(ch=='y'&& ch=='Y');
+for(i=0;i<n;i++){
+for(j=0;j<p[i].e;j++)
+printf("%d ",p[i].ts[j]);
+printf("\n");
+}
+getch();
+}
+
+
+===== page 6 =====
+LAB 4 - IMPLEMENATION OF ELECTION ALGORITHMS
+Objectives:
+ To implement Bully Algorithm
+ To implement Token Ring Algorithm
+Theory:
+Bully Algorithm
+This algorithm is applicable to elect a leader in a distributed
+system connected with each other (say in a mesh topology). The
+bully algorithm is a method in distributed computing for
+dynamically selecting a coordinator by process ID number.
+Assumptions
+ The system is synchronous and uses timeout for identifying process
+failure
+Message types
+ Election Message : Sent to announce the election
+ Answer Message : Respond to the election message
+ Coordinator message: sent to announce the identity elected process
+Compared with Ring algorithm:
+ Assumes that system is synchronous
+ Uses timeout to detect process failure/crash
+ Each processor knows which processor has the higher identifier
+number and communicates with that.
+Algorithm
+ When a process P determines that the current coordinator is
+down because of message timeouts or failure of the coordinator
+to initiate a handshake, it performs the following sequence of
+actions:
+o P broadcasts an election message (inquiry) to all other processes
+with higher process IDs.
+o If P hears from no process with a higher process ID than it, it wins
+the election and broadcasts victory.
+o If P hears from a process with a higher ID, P waits a certain
+amount of time for that process to broadcast itself as the leader.
+If it does not receive this message in time, it re-broadcasts the
+election message.
+
+
+===== page 7 =====
+o If P gets an election message (inquiry) from another process with
+a lower ID it sends an "I am alive" message back and starts new
+elections.
+ Note that if P receives a victory message from a process with a
+lower ID number, it immediately initiates a new election. This is
+how the algorithm gets its name - a process with a higher ID
+number will bully a lower ID process out of the coordinator
+position as soon as it comes online.
+
+Token Ring Algorithm
+ Processes are organized in a logical ring.
+ Any process that discovers the coordinator (leader) has failed
+initiates an “election” message. This is the initiator of the
+election.
+ The message is circulated around the ring, bypassing failed
+nodes.
+ Each node adds (appends) its id:attr to the message as it passes
+it to the next node.
+ Once the message gets to the initiator, it elects the node with the
+best election attribute value.
+ It then sends a “coordinator” message with the id of the newly-
+[image text] Ele tion
+Elec Ion
+4. P3 receives reply
+5. P4 announces itself
+
+
+===== page 8 =====
+elected coordinator. Again, each node adds (appends) its id to the
+end of the message.
+ Once “coordinator” message gets back to initiator
+ election is over if “coordinator” is in id-list.
+ else the algorithm is repeated (handles election failure)
+[image text] Election: 2
+le on:
+P2 initiates election
+Coord(4)
+P2 receives "Coord",
+1.1.
+but P4 is not included
+P4 dies
+P2 selects 4 and
+announces the result
+Coord(3):
+Coordß): 2
+pej
+P3 is finally elected
+
+
+===== page 9 =====  [ocr]
+SOURCE CODE:
+# MAX as the maximum number of processes our program can be simulated
+# pStatus to store the process status; 0 for dead and 1 for alive
+# n as the number of processes
+# coordinator to store the winner of election
+MAX = 20
+pStatus = [0 for _ in range(MAX)]
+coordinator = 0
+def display():
+displays the processes, their status and the coordinator
+global coordinator
+print('
+end='
+for i in range(l, n+l):
+print(i, end='\t')
+print('\nALlVE:', end='
+for i in range(l, n+l):
+print(pStatus[i], end=Nt')
+print('\n
+print('COORDlNATOR IS', coordinator,
+# print('
+def choice():
+choice of options
+while True:
+print('
+BULLY ALGORITHM\n2.Rl NG
+print('
+\n')
+fchoice = int(input("Enter your choice: "))
+iffchoice == 1
+bully()
+elif fchoice == 2
+ring()
+elif fchoice == 3.
+display()
+elif fchoice == 4
+it(O)
+else:
+print("Please, enter valid choice!")
+def ring():
+ring election implementation"
+global coordinator, n
+
+
+===== page 10 =====  [ocr]
+condition = True
+while condition:
+print('
+print('
+\n')
+print("Enter your choice: ", end=")
+tchoice = int(input())
+if tchoice == 1
+print("\nEnter process to crash
+crash = int(input())
+if pStatus[crash]:
+pStatus[crash] = 0
+else:
+print("Process", crash, "is already dead!", end='\n')
+condition = True
+while condition:
+print("Enter election generator id: ", end=")
+gid = int(input())
+if gid == coordinator:
+print("Please, enter a valid generator id!",
+condition = (gid == coordinator)
+if crash == coordinator:
+subcoordinator = 1
+while i < (n+l):
+pid = (i + gid) % (n+l)
+if pid != 0: # since our process starts from 1 (to n)
+if pStatus[pid] and subcoordinator < pid:
+subcoordinator = pid
+print("Election message passed from", pid, ":
+coordinator = subcoordinator
+display()
+elif tchoice == 2:
+print("Enter Process ID to be activated: ",
+activate = int(input())
+if not pStatus[activate]:
+pStatus[activate] = 1
+else:
+print("Process", activate, "is already alive!",
+break
+subcoordinator = activate
+while i < (n+l):
+pid = (i + activate) % (n+l)
+#Msg", subcoordinator, end='\n')
+if pid != 0: # since our process starts from 1 (to n)
+
+
+===== page 11 =====  [ocr]
+if pStatus[pid] and subcoordinator < pid:
+subcoordinator = pid
+print("Election message passed from", pid,
+#Msg", subcoordinator, end='\n')
+coordinator = subcoordinator
+display()
+elif tchoice == 3
+display()
+condition = tchoice 4
+def bully():
+" bully election implementation"
+global coordinator
+condition = True
+while condition:
+print('
+print('
+\n')
+print("Enter your choice: ", end=")
+schoice = int(input())
+if schoice == 1
+# we manually crash the process to see if our implementation
+# can elect another leader
+print("Enter process to crash: ", end=")
+crash = int(input())
+# if the process is alive then set its status to dead
+if (pStatus[crash] != 0):
+pStatus[crash] = 0
+else:
+print('Process', crash, ' is already dead!\n')
+break
+condition = True
+while condition:
+# enter another process to initiate the election
+print("Enter election generator id: ", end=")
+gid = int(input())
+if (gid == coordinator or pStatus[gid] == 0)
+print("Enter a valid generator id!")
+condition = (gid == coordinator or pStatus[gid] == 0)
+flag = O
+# if the coordinator has crashed then we need to find another leader
+if (crash == coordinator):
+# the election generator process will send the message to all higher process
+i = gid+l
+while i <= n:
+print("Message is sent from", gid, " to", i, end='\n')
+
+
+===== page 12 =====  [ocr]
+# if the higher process is alive then it will respond
+if (pStatus[i] != 0):
+subcoordinator = i
+print("Response is sent from", i, " to", gid, end='\n')
+flag = 1
+# the highest responding process is selected as the leader
+if (flag == 1).
+coordinator = subcoordinator
+# else if no higher process are alive then the election generator process
+# is selected as leader
+else:
+coordinator = gid
+display()
+elif schoice == 2:
+# enter process to revive
+print("Enter Process ID to be activated: ", end=")
+activate = int(input())
+# if the entered process was dead then it is revived
+if (pStatus[activate] 0)
+pStatus[activate] = 1
+else:
+print("Process", activate, " is already alive!", end='\n')
+break
+# if the highest process is activated then it is the leader
+if (activate == n)
+coordinator = n
+break
+flag = 0
+# else, the activated process sends message to all higher process
+i = activate + 1
+while i <= n:
+print("Message is sent from", activate, "to", i, end='\n')
+# if higher process is active then it responds
+if (pStatus[i] != 0):
+subcoordinator = i
+print("Response is sent from", i,
+"to", activate, end='\n')
+flag = 1
+# the highest responding process is made the leader
+if flag == 1:
+coordinator = subcoordinator
+# if no higher process respond then the activated process is leader
+else:
+coordinator = activate
+display()
+elif schoice == 3
+display()
+
+
+===== page 13 =====  [ocr]
+elif schoice 4:
+pass
+condition = (schoice 4)
+if name
+main
+n = int(input("Enter number of processes: "))
+for i in range(l, n+l):
+print("Enter Process ", i, " is alive or not(0/1 ): ")
+x = int(input())
+pStatus[i] = x
+if pStatus[i]:
+coordinator = i
+display()
+choice()

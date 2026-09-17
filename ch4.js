@@ -8,6 +8,59 @@ learn: `
 <p>Customers → Arrival → Queue (Waiting Line) → Service Facility → Departure</p>
 </div>
 
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 900 190" role="img" aria-label="Structure of a queuing system drawn left to right: a calling population, which may be finite or infinite, feeds an arrival process; arrivals join the queue or waiting line, which has a discipline such as FIFO, LIFO, SIRO or priority; the service facility holds c servers; and served customers leave at departure.">
+
+<defs><marker id="fg4a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+
+<rect class="fig-node" x="16" y="18" width="124" height="64" rx="10"/>
+<text class="fig-t" x="78" y="48">Calling</text>
+<text class="fig-t" x="78" y="68">population</text>
+<text class="fig-t sm" x="78" y="104">finite / infinite</text>
+
+<path class="fig-edge" d="M140,50 H168" marker-end="url(#fg4a)"/>
+
+<rect class="fig-node pri" x="172" y="18" width="128" height="64" rx="10"/>
+<text class="fig-t" x="236" y="48">Arrival</text>
+<text class="fig-t" x="236" y="68">process</text>
+<text class="fig-t sm" x="236" y="104">Poisson / det. / general</text>
+
+<path class="fig-edge" d="M300,50 H328" marker-end="url(#fg4a)"/>
+
+<rect class="fig-node vio" x="332" y="18" width="160" height="64" rx="10"/>
+<circle class="fig-dot" cx="354" cy="34" r="6"/>
+<circle class="fig-dot" cx="374" cy="34" r="6"/>
+<circle class="fig-dot" cx="394" cy="34" r="6"/>
+<text class="fig-t" x="412" y="62">Queue</text>
+<text class="fig-t sm" x="412" y="78">(waiting line)</text>
+<text class="fig-t sm" x="412" y="104">FIFO · LIFO · SIRO · priority</text>
+
+<path class="fig-edge" d="M492,50 H520" marker-end="url(#fg4a)"/>
+
+<rect class="fig-node sec" x="524" y="18" width="176" height="64" rx="10"/>
+<text class="fig-t" x="612" y="48">Service facility</text>
+<rect class="fig-node" x="552" y="56" width="52" height="22" rx="5"/>
+<text class="fig-t sm" x="578" y="71">server 1</text>
+<rect class="fig-node" x="620" y="56" width="56" height="22" rx="5"/>
+<text class="fig-t sm" x="648" y="71">server c</text>
+<text class="fig-t sm" x="612" y="104">c servers (1, 2, … c)</text>
+
+<path class="fig-edge" d="M700,50 H728" marker-end="url(#fg4a)"/>
+
+<rect class="fig-node" x="732" y="18" width="124" height="64" rx="10"/>
+<text class="fig-t" x="794" y="53">Departure</text>
+<text class="fig-t sm" x="794" y="104">customers exit</text>
+
+<text class="fig-t sm start" x="16" y="148">Every queuing problem is these five boxes plus a choice from each row of the characteristics table:</text>
+<text class="fig-t sm start" x="16" y="166">arrival pattern · service pattern · number of servers · number of phases · discipline · capacity · population.</text>
+
+</svg>
+
+<figcaption>Fig 4.1 — Structure of a queuing system. The <strong>calling population</strong> is where customers come from, the <strong>arrival process</strong> decides when they come, the <strong>queue</strong> holds them and its <strong>discipline</strong> decides who is next, the <strong>service facility</strong> holds the servers, and <strong>departure</strong> is the exit. Mark the five boxes first, then write one sentence for each — that is the 4-mark answer.</figcaption>
+
+</figure>
+
 <h3>Elements</h3>
 <ol>
 <li><strong>Calling Population:</strong> The source of customers (finite or infinite)</li>
@@ -57,6 +110,80 @@ learn: `
 <tr><td><strong>Multiple Channel, Multiple Server</strong></td><td>Multiple queues, multiple servers</td><td>Hospital emergency department</td></tr>
 </table>
 
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 900 356" role="img" aria-label="Four queuing configurations. Single channel single server: one queue feeding one server. Multiple channel single server: two separate queues each feeding its own server. Single channel multiple servers: one shared queue feeding two servers. Multiple channel multiple servers: two queues with a pool of servers reachable from either.">
+
+<defs><marker id="fg4b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+
+<rect class="fig-node dashed" x="10" y="16" width="430" height="160" rx="12"/>
+<text class="fig-t sm start" x="24" y="38">1 · Single channel, single server</text>
+<text class="fig-t sm start" x="24" y="54">one queue → one server</text>
+<rect class="fig-node vio" x="36" y="86" width="94" height="28" rx="6"/>
+<circle class="fig-dot" cx="56" cy="100" r="5"/>
+<circle class="fig-dot" cx="74" cy="100" r="5"/>
+<circle class="fig-dot" cx="92" cy="100" r="5"/>
+<text class="fig-t sm" x="83" y="130">queue</text>
+<path class="fig-edge" d="M130,100 H214" marker-end="url(#fg4b)"/>
+<circle class="fig-node sec" cx="238" cy="100" r="20"/>
+<text class="fig-t" x="238" y="105">S</text>
+<path class="fig-edge" d="M258,100 H312" marker-end="url(#fg4b)"/>
+<text class="fig-t sm" x="336" y="105">out</text>
+
+<rect class="fig-node dashed" x="460" y="16" width="430" height="160" rx="12"/>
+<text class="fig-t sm start" x="474" y="38">2 · Multiple channel, single server</text>
+<text class="fig-t sm start" x="474" y="54">one server per queue — separate lines</text>
+<rect class="fig-node vio" x="486" y="72" width="94" height="26" rx="6"/>
+<circle class="fig-dot" cx="506" cy="85" r="5"/>
+<circle class="fig-dot" cx="524" cy="85" r="5"/>
+<rect class="fig-node vio" x="486" y="118" width="94" height="26" rx="6"/>
+<circle class="fig-dot" cx="506" cy="131" r="5"/>
+<circle class="fig-dot" cx="524" cy="131" r="5"/>
+<path class="fig-edge" d="M580,85 H674" marker-end="url(#fg4b)"/>
+<circle class="fig-node sec" cx="698" cy="85" r="19"/>
+<text class="fig-t" x="698" y="90">S</text>
+<path class="fig-edge" d="M580,131 H674" marker-end="url(#fg4b)"/>
+<circle class="fig-node sec" cx="698" cy="131" r="19"/>
+<text class="fig-t" x="698" y="136">S</text>
+
+<rect class="fig-node dashed" x="10" y="188" width="430" height="156" rx="12"/>
+<text class="fig-t sm start" x="24" y="210">3 · Single channel, multiple servers</text>
+<text class="fig-t sm start" x="24" y="226">one shared queue → a pool of servers</text>
+<rect class="fig-node vio" x="36" y="266" width="94" height="28" rx="6"/>
+<circle class="fig-dot" cx="56" cy="280" r="5"/>
+<circle class="fig-dot" cx="74" cy="280" r="5"/>
+<circle class="fig-dot" cx="92" cy="280" r="5"/>
+<path class="fig-edge" d="M130,280 H180 V250 H214" marker-end="url(#fg4b)"/>
+<path class="fig-edge" d="M130,280 H180 V310 H214" marker-end="url(#fg4b)"/>
+<circle class="fig-node sec" cx="238" cy="250" r="20"/>
+<text class="fig-t" x="238" y="255">S</text>
+<circle class="fig-node sec" cx="238" cy="310" r="20"/>
+<text class="fig-t" x="238" y="315">S</text>
+
+<rect class="fig-node dashed" x="460" y="188" width="430" height="156" rx="12"/>
+<text class="fig-t sm start" x="474" y="210">4 · Multiple channel, multiple servers</text>
+<text class="fig-t sm start" x="474" y="226">many queues, many servers — either may feed</text>
+<rect class="fig-node vio" x="486" y="244" width="84" height="26" rx="6"/>
+<circle class="fig-dot" cx="506" cy="257" r="5"/>
+<circle class="fig-dot" cx="524" cy="257" r="5"/>
+<rect class="fig-node vio" x="486" y="294" width="84" height="26" rx="6"/>
+<circle class="fig-dot" cx="506" cy="307" r="5"/>
+<circle class="fig-dot" cx="524" cy="307" r="5"/>
+<path class="fig-edge" d="M570,257 H680 V242" marker-end="url(#fg4b)"/>
+<path class="fig-edge" d="M570,257 H680 V316" marker-end="url(#fg4b)"/>
+<path class="fig-edge" d="M570,307 H700 V242" marker-end="url(#fg4b)"/>
+<path class="fig-edge" d="M570,307 H700 V316" marker-end="url(#fg4b)"/>
+<circle class="fig-node sec" cx="722" cy="242" r="18"/>
+<text class="fig-t" x="722" y="247">S</text>
+<circle class="fig-node sec" cx="722" cy="316" r="18"/>
+<text class="fig-t" x="722" y="321">S</text>
+
+</svg>
+
+<figcaption>Fig 4.2 — The four configurations of §4.3, drawn as the <em>wiring between queues and servers</em>: how many lines, how many servers, and which queue reaches which server. Use the table's wording as the definition in an exam — the picture is there so that "single channel / multiple server" stops being two interchangeable phrases. Note the common slip: <strong>channel</strong> is the queue (waiting line), <strong>server</strong> is the facility that serves, and "multiple channel, single server" means several queues each with one server — not one queue with several servers, which is panel 3.</figcaption>
+
+</figure>
+
 <h2>4.4 Kendall's Notation</h2>
 <p>A standard notation to describe characteristics of a queuing system:</p>
 <div class="formula-box">A / S / C / K / N / D</div>
@@ -96,6 +223,8 @@ learn: `
 
 <div class="worked">
 <div class="worked-head"><span>Hospital emergency — M/M/1 performance measures</span><span class="meta">worked · all seven measures from λ and μ</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n1p33">n1 p33</button></p>
 <div class="worked-givens">
 <div><span>Arrivals</span><b>72 patients / day</b></div>
 <div><span>Service time</span><b>12 min / patient</b></div>
@@ -149,10 +278,14 @@ learn: `
 <div><span>Current state</span><b>Q₀ = [1, 0] (Honda user)</b></div>
 </div>
 <ol class="worked-steps">
-<li><span class="worked-calc">Transition matrix   H      Y
-              H ⎡ 0.70   0.30 ⎤
-          P =   ⎣              ⎦
-              Y ⎢ 0.20   0.80 ⎥</span><span class="worked-note">Each ROW must add to 1: it is the distribution of the next purchase given the current one.</span></li>
+<li><span class="worked-calc">Transition matrix P — rows are the current purchase, columns the next:</span>
+<table>
+<tr><th></th><th>→ Honda</th><th>→ Yamaha</th><th>Row total</th></tr>
+<tr><td class="row-head">Honda now</td><td>0.70</td><td>0.30</td><td>1.00</td></tr>
+<tr><td class="row-head">Yamaha now</td><td>0.20</td><td>0.80</td><td>1.00</td></tr>
+<tr><td><strong>Total</strong></td><td>0.90</td><td>1.10</td><td>2.00</td></tr>
+</table>
+<span class="worked-note">Each <strong>row</strong> must add to 1: it is the distribution of the next purchase given the current one. The columns do <em>not</em> add to 1 — 0.90 and 1.10 here — and that is the quickest way to spot a matrix built the wrong way round.</span></li>
 <li><span class="worked-calc">P² = P × P
    row H: [0.70×0.70 + 0.30×0.20,  0.70×0.30 + 0.30×0.80] = [0.55, 0.45]
    row Y: [0.20×0.70 + 0.80×0.20,  0.20×0.30 + 0.80×0.80] = [0.30, 0.70]</span></li>
@@ -309,6 +442,8 @@ past: [
 <div class="worked">
 
 <div class="worked-head"><span>Event trace, first few events of a bank run</span><span class="meta">2 tellers · queue discipline FIFO</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n1p39">n1 p39</button> <button class="page-chip" type="button" data-page="n1p40">n1 p40</button></p>
 
 <div class="worked-givens">
 
@@ -481,6 +616,8 @@ T&#7522; = D&#7522; &#8722; A&#7522; = W&#7522; + ST&#7522;&nbsp;&nbsp;(time in 
 <div class="worked">
 
 <div class="worked-head"><span>Single-server library counter — 15 customers simulated by hand</span><span class="meta">FIFO · all times in minutes</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n1p41">n1 p41</button> <button class="page-chip" type="button" data-page="n1p42">n1 p42</button></p>
 
 <div class="worked-givens">
 

@@ -1,0 +1,233 @@
+[
+  {
+    "chapter": 1,
+    "year": "2025 Model",
+    "marks": "2",
+    "q": "Define a distributed system. [2 Marks]",
+    "answer_chars": 340
+  },
+  {
+    "chapter": 1,
+    "year": "2025 Model",
+    "marks": "4",
+    "q": "Explain the goals of distributed systems. [4 Marks]",
+    "answer_chars": 468
+  },
+  {
+    "chapter": 1,
+    "year": "2025 Model",
+    "marks": "4",
+    "q": "Differentiate between client-server and peer-to-peer architectures with examples. [4 Marks]",
+    "answer_chars": 357
+  },
+  {
+    "chapter": 1,
+    "year": "2025 Final",
+    "marks": "4",
+    "q": "Explain the characteristics and goals of a distributed system. [4 Marks]",
+    "answer_chars": 586
+  },
+  {
+    "chapter": 2,
+    "year": "2025 Final Exam",
+    "marks": "2",
+    "q": "Define RPC (Remote Procedure Call) and RMI (Remote Method Invocation). [2 Marks]",
+    "answer_chars": 463
+  },
+  {
+    "chapter": 2,
+    "year": "2025 Model",
+    "marks": "4",
+    "q": "Describe Remote Procedure Call (RPC) with its working mechanism. [4 Marks]",
+    "answer_chars": 735
+  },
+  {
+    "chapter": 3,
+    "year": "2025 Model",
+    "marks": "2",
+    "q": "List any two clock synchronization algorithms used in distributed systems. [2 Marks]",
+    "answer_chars": 306
+  },
+  {
+    "chapter": 3,
+    "year": "2025 Model",
+    "marks": "4",
+    "q": "Explain Lamport's logical clock with a suitable example. [4 Marks]",
+    "answer_chars": 532
+  },
+  {
+    "chapter": 3,
+    "year": "2025 Model",
+    "marks": "8",
+    "q": "Describe in detail the working and applications of the Bully election algorithm. [8 Marks]",
+    "answer_chars": 727
+  },
+  {
+    "chapter": 3,
+    "year": "2025 Final Exam",
+    "marks": "2",
+    "q": "List any two mutual exclusion algorithms. [2 Marks]",
+    "answer_chars": 481
+  },
+  {
+    "chapter": 3,
+    "year": "2025 Final Exam",
+    "marks": "4",
+    "q": "Explain Lamport's logical clock with a simple event diagram. [4 Marks]",
+    "answer_chars": 589
+  },
+  {
+    "chapter": 3,
+    "year": "2025 Final Exam",
+    "marks": "8",
+    "q": "Explain the Bully Election Algorithm with an example and event sequence. [8 Marks]",
+    "answer_chars": 905
+  },
+  {
+    "chapter": 4,
+    "year": "2025 Model",
+    "marks": "4",
+    "q": "Describe the concept of consistency in Distributed File Systems (DFS). [4 Marks]",
+    "answer_chars": 641
+  },
+  {
+    "chapter": 4,
+    "year": "2025 Model",
+    "marks": "8",
+    "q": "Explain the architecture of HDFS. Discuss how it ensures fault tolerance and scalability. [8 Marks]",
+    "answer_chars": 988
+  },
+  {
+    "chapter": 4,
+    "year": "2025 Final Exam",
+    "marks": "4",
+    "q": "Define transparency in DFS and explain naming transparency. [4 Marks]",
+    "answer_chars": 745
+  },
+  {
+    "chapter": 4,
+    "year": "2025 Final Exam",
+    "marks": "8",
+    "q": "Define Middleware. Explain the concepts related to CORBA with its architecture and services in detail. [8 Marks]",
+    "answer_chars": 1518
+  },
+  {
+    "chapter": 4,
+    "year": "2025 Final Exam",
+    "marks": "8",
+    "q": "Explain the architecture of HDFS. Discuss how it ensures fault tolerance and scalability. [8 Marks]",
+    "answer_chars": 1066
+  },
+  {
+    "chapter": 5,
+    "year": "2025 Exam / Expected",
+    "marks": "8",
+    "q": "Explain the NIST definition of cloud computing and its five essential characteristics. [8 Marks]",
+    "answer_chars": 884
+  },
+  {
+    "chapter": 5,
+    "year": "2025 Exam / Expected",
+    "marks": "6",
+    "q": "Compare IaaS, PaaS, and SaaS with suitable examples. [6 Marks]",
+    "answer_chars": 379
+  },
+  {
+    "chapter": 5,
+    "year": "2025 Exam / Expected",
+    "marks": "8",
+    "q": "Compare Public, Private, Hybrid, and Community cloud deployment models. [8 Marks]",
+    "answer_chars": 754
+  },
+  {
+    "chapter": 5,
+    "year": "2025 Exam / Expected",
+    "marks": "5",
+    "q": "Explain the evolution of cloud computing from Mainframe to Cloud. [5 Marks]",
+    "answer_chars": 513
+  },
+  {
+    "chapter": 6,
+    "year": "2025 Exam / Expected",
+    "marks": "6",
+    "q": "Define Virtualization. Explain the role and types of Hypervisor. [6 Marks]",
+    "answer_chars": 618
+  },
+  {
+    "chapter": 6,
+    "year": "2025 Exam / Expected",
+    "marks": "5",
+    "q": "Compare Virtual Machines and Containers. [5 Marks]",
+    "answer_chars": 252
+  },
+  {
+    "chapter": 6,
+    "year": "2025 Exam / Expected",
+    "marks": "8",
+    "q": "Explain the Cloud Reference Architecture with a suitable diagram. [8 Marks]",
+    "answer_chars": 728
+  },
+  {
+    "chapter": 7,
+    "year": "Expected",
+    "marks": "5",
+    "q": "Differentiate between Object Storage and Block Storage in cloud computing. [5 Marks]",
+    "answer_chars": 436
+  },
+  {
+    "chapter": 8,
+    "year": "Teacher Notes / 2025 Expected",
+    "marks": "8",
+    "q": "Identify and explain four common cloud security vulnerabilities. [8 Marks]",
+    "answer_chars": 781
+  },
+  {
+    "chapter": 8,
+    "year": "Teacher Notes / 2025 Expected",
+    "marks": "6",
+    "q": "Explain Identity and Access Management (IAM) in cloud computing. [6 Marks]",
+    "answer_chars": 732
+  },
+  {
+    "chapter": 8,
+    "year": "Teacher Notes / 2025 Expected",
+    "marks": "6",
+    "q": "Discuss Data Privacy concerns in cloud computing. [6 Marks]",
+    "answer_chars": 647
+  },
+  {
+    "chapter": 8,
+    "year": "Teacher Notes / 2025 Expected",
+    "marks": "8",
+    "q": "Discuss risk mitigation strategies for securing cloud environments. [8 Marks]",
+    "answer_chars": 508
+  },
+  {
+    "chapter": 9,
+    "year": "Expected / 2025 Exam",
+    "marks": "4",
+    "q": "Explain Serverless Computing and its advantages. [4 Marks]",
+    "answer_chars": 499
+  },
+  {
+    "chapter": 9,
+    "year": "Expected / 2025 Exam",
+    "marks": "6",
+    "q": "Compare Monolithic and Microservices architectures. [6 Marks]",
+    "answer_chars": 363
+  },
+  {
+    "chapter": 9,
+    "year": "Expected / 2025 Exam",
+    "marks": "5",
+    "q": "Explain Edge Computing and Fog Computing. How do they differ from Cloud Computing? [5 Marks]",
+    "answer_chars": 595
+  },
+  {
+    "chapter": 9,
+    "year": "Expected / 2025 Exam",
+    "marks": "5",
+    "q": "What is Kubernetes? Explain its role in container orchestration. [5 Marks]",
+    "answer_chars": 540
+  }
+]

@@ -1,0 +1,25 @@
+{
+ "_comment": [
+  "Where the reproduced figures in each unit come from. A caption no longer names",
+  "its file (tools/fix_captions.py); the chapter carries one line instead, built",
+  "from this file, so the provenance is still on the page but out of the way of",
+  "the reading. Labels are what a student would call the source, not its file name."
+ ],
+ "decks": {
+  "Chapter1_Int to Distbd_Sys.pptx": {"unit": 1, "label": "the Unit 1 class deck"},
+  "LectureMain_Ch_2_Communication_in_DS.pptx": {"unit": 2, "label": "the Unit 2 class deck"},
+  "Ch_3_Sync_and_Cordn.pptx": {"unit": 3, "label": "the Unit 3 class deck"},
+  "Chapter4_lecture_notes_all.pptx": {"unit": 4, "label": "the Unit 4 class deck"},
+  "Ref_CloudComptng.pptx": {"unit": 5, "label": "the Unit 5 reference deck"},
+  "Ch_5_Int_to_CloudComputing.ppt": {"unit": 5, "label": "the Unit 5 class deck"},
+  "Ch6_Virtlzn_Cloud-Ref-Arch_ResrcProvsnMgmt.pptx": {"unit": 6, "label": "the Unit 6 class deck"},
+  "LectureNote_Ch _8.pptx": {"unit": 8, "label": "the Unit 8 class deck"}
+ },
+ "notes": [
+  {"file": "GFS_HDFS_Lecture.pdf", "label": "the GFS and HDFS lecture notes", "units": [1, 4]},
+  {"file": "MessagePassing_refnote2.pdf", "label": "the message-passing reference notes", "units": [2]},
+  {"file": "REST_SOAP_webservices_Lecture.pdf", "label": "the REST and SOAP lecture notes", "units": [2]},
+  {"file": "Ch4_MessagingProtocol_MQTT_AMQP_For_Students.pdf", "label": "the MQTT and AMQP notes", "units": [4]},
+  {"file": "HDFS_Note_4Std_lecture.pdf", "label": "the HDFS student notes", "units": [4]}
+ ]
+}

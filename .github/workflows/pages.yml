@@ -1,0 +1,74 @@
+name: Deploy the DCC study portal to Pages
+
+# The site that is published is the Distributed & Cloud Computing portal, built
+# from `dcc-site/index.html` by `tools/build_deploy.py`. That build is what makes
+# the deploy possible at all: the portal's source references its shell one level
+# up (`../app.js`, `../assets/css/...`), so it only runs from inside this repo.
+# The build inlines the shell into `site.js`, folds the three stylesheets into
+# `site.css`, copies the fonts and the reference slides, and writes the service
+# worker and the theme sheet - the result is a self-contained folder that works
+# from any root, which is exactly what a Pages artifact has to be.
+#
+# `--sheet` needs node on PATH; a bundle that quietly lost its theme sheet is the
+# kind of drift the sheet exists to make visible, so node is installed rather
+# than the flag dropped.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time: a second push while the first is publishing replaces it
+# rather than racing it.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Informational: 42 checks read the notes, the syllabus map and the
+      # drawings' geometry. They are green locally and a failure here is a
+      # finding to look at, not a reason to leave the site unpublished.
+      - name: Checks
+        continue-on-error: true
+        run: python tools/run_checks.py --all
+
+      - name: Build the deployable bundle
+        run: python tools/build_deploy.py --entry dcc-site/index.html --out _site --sheet
+
+      - uses: actions/configure-pages@v5
+        with:
+          # Turns Pages on for the repository on the first run, so no settings
+          # have to be clicked before the first deploy.
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -178,8 +178,15 @@ def page_code() -> str:
 def check_index() -> None:
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     code = page_code()
+    # Each entry is {n, t, m, h} and used to also carry e, the emoji the
+    # chapter was labelled with in the sidebar. That pictogram is gone - the
+    # chapter number is the identifier a reader navigates by - so `e` is now
+    # optional rather than required. It is still *allowed* so an old entry does
+    # not silently stop matching; what the check actually cares about is that
+    # all eight chapters are present, in order, with weights that still total
+    # the syllabus. Those assertions are unchanged.
     meta = re.findall(
-        r"\{n:(\d+),t:'([^']*)',m:(\d+),h:(\d+),e:'([^']*)'\}", code)
+        r"\{n:(\d+),t:'([^']*)',m:(\d+),h:(\d+)(?:,e:'[^']*')?\}", code)
     if len(meta) != 8:
         err(f"index.html + its scripts: expected 8 chapter meta entries, "
             f"found {len(meta)}")
@@ -187,8 +194,8 @@ def check_index() -> None:
     chapters = [int(n) for n, *_ in meta]
     if chapters != list(range(1, 9)):
         err(f"index.html: chapter order is {chapters}, expected 1..8")
-    marks = sum(int(m) for _, _, m, _, _ in meta)
-    hours = sum(int(h) for _, _, _, h, _ in meta)
+    marks = sum(int(m) for _, _, m, _ in meta)
+    hours = sum(int(h) for _, _, _, h in meta)
     if marks != EXPECTED_MARKS_TOTAL:
         err(f"index.html: chapter weights total {marks}, expected {EXPECTED_MARKS_TOTAL}")
     if hours != EXPECTED_HOURS_TOTAL:

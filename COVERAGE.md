@@ -9,15 +9,15 @@ matches the weights already coded into `index.html`:
 
 | Ch | Topic | Weight | Hours | Notes | Quiz | Past Q | With answer | Practice |
 | :-: | :--- | :-: | :-: | ---: | :-: | :-: | :-: | :-: |
-| 1 | Concept of Simulation | 8 | 6 | 16.4 KB | 10 | 12 | 9 | 3 |
-| 2 | Monte Carlo Method | 6 | 4 | 22.6 KB | 10 | 8 | 6 | 2 |
-| 3 | Simulation of Continuous Systems | 6 | 5 | 9.1 KB | 10 | 10 | 6 | 4 |
-| 4 | Queuing System | 6 | 5 | 11.7 KB | 10 | 9 | 6 | 3 |
-| 5 | Verification & Validation | 6 | 4 | 14.0 KB | 15 | 5 | 5 | 0 |
+| 1 | Concept of Simulation | 8 | 6 | 16.4 KB | 10 | 12 | 12 | 0 |
+| 2 | Monte Carlo Method | 6 | 4 | 26.7 KB | 10 | 8 | 8 | 0 |
+| 3 | Simulation of Continuous Systems | 6 | 5 | 10.7 KB | 10 | 10 | 10 | 0 |
+| 4 | Queuing System | 6 | 5 | 11.7 KB | 10 | 9 | 9 | 0 |
+| 5 | Verification & Validation | 6 | 4 | 14.7 KB | 15 | 5 | 5 | 0 |
 | 6 | Random Number Generation | 12 | 6 | 37.2 KB | 14 | 27 | 27 | 0 |
-| 7 | Simulation Output Analysis | 6 | 5 | 8.3 KB | 10 | 6 | 4 | 2 |
-| 8 | Simulation Language | 10 | 5 | 9.6 KB | 10 | 15 | 8 | 7 |
-| | **Totals** | **60** | **40** | 129 KB | **89** | **92** | **71** | **21** |
+| 7 | Simulation Output Analysis | 6 | 5 | 9.0 KB | 10 | 6 | 6 | 0 |
+| 8 | Simulation Language | 10 | 5 | 21.7 KB | 10 | 15 | 15 | 0 |
+| | **Totals** | **60** | **40** | 148.1 KB | **89** | **92** | **92** | **0** |
 
 Chapter weights sum to 60 and lecture hours sum to 40, both verified against
 `index.html` by `tools/validate_site.py`.
@@ -29,9 +29,12 @@ suitable example" and "What is GPSS language & its application?" are one
 question in three papers). Nothing was deleted — each folded wording lives on the
 surviving card as an occurrence (`occ[]`), and where a folded wording had a model
 answer of its own, that answer is kept as a `variants[]` entry behind one click.
-The card counts model answers preserved: **71 on the cards + 15 as variants = 86**,
-the same 86 the site had before the consolidation. The groups, and the reasons for
-the look-alike pairs that were deliberately *not* merged, are in
+The card counts model answers preserved: **all 92 cards carry a model answer**, and
+**15 further answers** are kept as `variants[]` behind **13** of them — **107
+answers in total**. The consolidation itself preserved the 86 answers the site had
+at the time; the remaining 21 were written in the 2026-09-12 answer pass, which is
+why the *Practice* column above is now zero. The groups, and the reasons for the
+look-alike pairs that were deliberately *not* merged, are in
 `data/same_question_merges.json`; the raw evidence is in
 `data/duplicate_clusters.json`.
 
@@ -111,7 +114,7 @@ fails if any marker is missing from the corresponding chapter's notes.
 | ↳ three ways to validate the I/O transformation + Turing test | `Three Ways to Validate the Input–Output Transformation`, `The Turing Test in Simulation` | **new** |
 | ↳ subjective vs objective validation | `Objective vs Subjective Validation` table | **new** |
 | ↳ statistical comparison methods | `Statistical Methods for Comparing Model and System Output` | **new** |
-| ↳ Sargent's model confidence levels 0–3 | `Sargent's Model Confidence Levels` table | **new** |
+| ↳ model confidence levels 0–3 (attributed to Sargent) | `Sargent's Model Confidence Levels` table | **new** — *unsourced; flagged in §5.4 as standard literature, not class notes* |
 | ↳ sources of invalidity | `Why Validation is Difficult — Sources of Invalidity` | **new** |
 
 Risk note: the bank records only **one** Ch5 past question (2025 M, 4 marks) while the
@@ -181,7 +184,8 @@ The site's own question set has been merged with the 148-question bank in
 | Imported as new | **90** (6 further bank rows were internal duplicates and skipped) |
 | Site questions after the merge | **151** — 87 with model answers, 64 practice-only |
 | Paraphrase duplicates folded | **−5** → **146** cards, 86 with model answers, 60 practice-only. Each folded wording is kept in the survivor's `occ[]` |
-| Questions with paper-level occurrences | **50** (59 occurrences) across 8 distinct old papers |
+| Questions with paper-level occurrences | **51** (108 occurrences) across 8 distinct old papers |
+| **Current state (after consolidation + answer pass)** | **92 cards, all with a model answer, 0 practice-only** |
 
 The full per-chapter match report is in `data/qa_coverage.json`.
 
@@ -190,7 +194,7 @@ Answer-status rule used by the merge:
 | Tier | Rule | Treatment |
 | :--- | :--- | :--- |
 | **A** | repeated **2+ times** in past papers, plus every question in Ch5 and Ch6 | full model answer written |
-| **B** | everything else | imported with `answer: null` and `status: "pending"`, shown as a flagged practice question |
+| **B** | everything else | imported with `answer: null` and `status: "pending"`, shown as a flagged practice question. The 2026-09-12 answer pass has since filled every one, so no Tier-B question remains pending |
 
 ---
 

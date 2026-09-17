@@ -1,0 +1,46 @@
+{
+ "ch1.js": [
+  ["can each be replicated. Drawn from the placement and relationships described in the Chapter 1 deck, slides 17&ndash;19.",
+   "can each be replicated."],
+  ["The deck's opening slide: the technologies the course's field rests on",
+   "The technologies the course's field rests on"]
+ ],
+ "ch2.js": [
+  ["Steps 1&ndash;10 are the deck's slide 8 verbatim; the two call-sites are the deck's principle-of-RPC diagram, where",
+   "Steps 1&ndash;10 are the standard call sequence; the two call-sites are the principle-of-RPC pairing, where"],
+  ["The deck's own slide 14 shows this as one column per process; the arrangement here is the same four roles, drawn so",
+   "The same four roles are one column per process in the original figure; the arrangement here is drawn so"],
+  ["Message passing in the deck's diagram: send copies",
+   "Message passing: send copies"],
+  ["Basic MPI sending and receiving messages, from the deck: each process",
+   "Basic MPI sending and receiving messages: each process"]
+ ],
+ "ch3.js": [
+  ["The Bully algorithm's five steps, following the deck's slide 75 (P2 initiates",
+   "The Bully algorithm's five steps (P2 initiates"],
+  ["none and announces itself) and its second worked example on slides 79&ndash;80 (process 4",
+   "none and announces itself), with a second worked example (process 4"],
+  ["Ricart-Agrawala in the deck's own example: P1 and P2",
+   "Ricart-Agrawala worked through: P1 and P2"]
+ ],
+ "ch4.js": [
+  ["The same separation appears in GFS, where the deck states it explicitly: data does not flow",
+   "The same separation appears in GFS: data does not flow"]
+ ],
+ "ch5.js": [
+  ["The evolution, as the deck draws it (its slide 5). Mainframe computing",
+   "The evolution of the field. Mainframe computing"],
+  ["The three delivery models as a stack, following the deck's slides 22 and 26. The client row",
+   "The three delivery models as a stack. The client row"]
+ ],
+ "ch6.js": [
+  ["Containers versus virtual machines, following the deck's slides 29 and 31&ndash;34. Read it as one question:",
+   "Containers versus virtual machines. Read it as one question:"]
+ ],
+ "ch8.js": [
+  ["are the deck's own phase labels; the fourth phase (use) is the standard name for the step in that position, because that slide's label was not legible in the scan",
+   "are the named phases; the fourth phase (use) is the standard name for the step in that position, because the original label was not legible in the scan"],
+  ["The deck's own statement is that <em>the organisation's trust boundary will become dynamic and will move beyond its control",
+   "The organisation's <em>trust boundary becomes dynamic and moves beyond its control"]
+ ]
+}

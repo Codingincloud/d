@@ -1,0 +1,441 @@
+source: Lecture Notes - all Chapterwise\Chapter_5_Introduction to Cloud Computing\Ch_5_Int_to_CloudComputing.ppt
+method: pptx-via-powerpoint
+sha256: b57c1f2dcaf4c7265ccb42f43943c0afeb32e2a79a8f5f78c0c49315d85b9f5c
+pages:  37
+ocr:    37 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+----- slide 1 -----
+What is Cloud Computing?
+“Cloud computing is an information technology (IT) paradigm that enables ubiquitous access to shared pools of configurable system resources and higher-level services that can be rapidly provisioned with minimal management effort, often over the Internet. Cloud computing relies on sharing of resources to achieve coherence and economies of scale, similar to a public utility.”   https://en.wikipedia.org/wiki/Cloud_computing
+
+“Simply put, cloud computing is the delivery of computing services – servers, storage, databases, networking, software, analytics and more – over the Internet (“the cloud”). Companies offering these computing services are called cloud providers and typically charge for cloud computing services based on usage, similar to how you’re billed for gas or electricity at home.” https://azure.microsoft.com/en-gb/overview/what-is-cloud-computing/
+[in the slide picture] "Cloud coznputing is an information techno/o
+enab/es ubiquitous access to shared poo/s of configurab/e system
+and higher-/eve/ services that can be rapid/y provisioned with
+minima/ management effort, often over the Internet.
+re/ies on sharing of resources to achieve coherence and economies of
+sca/e,
+simi/ar to a
+ub/ic uti/i
+https://en.wikipedia.org/wiki/C/oud_ computing
+"Simp/y put, C/OUd computing is the de/ivery of computing services —
+servers, storage, databases, networking, software, ana/ytics and more —
+over the Internet ("the c/oud"). Companies offering these computing
+services are ca//ed c/oud providers and typica//y charge for c/oud
+computing services based on usage, simi/ar to how you're bi//ed for gas
+or e/ectricity at home. https://azure.microsoft.com/en-gb/overview/what-is-c/oud-computing/
+
+----- slide 2 -----
+Cloud Computing Models, Resources, Attributes
+[in the slide picture] Delivery models
+Software as a Service (SaaS)
+Platform as a Service (PaaS)
+Infrastructure as a Service (IaaS)
+Distributed infrastructure
+Resource virtualization
+Autonomous systems
+Compute & storage servers
+Networks
+eployment models
+Public cloud
+Private cloud
+Community cloud
+Hybrid cloud
+Defining attributes
+Utility computing. Pay-per-usage
+Accessible via the Internet
+Elasticity
+Applications
+
+----- slide 3 -----
+Early Models of Cloud Computing
+Basic reasoning: information and data processing can be done more efficiently on large farms of computing and storage systems accessible via the Internet. 
+Two early models:
+Grid computing – initiated by the National Labs in the early 1990s; targeted primarily at scientific computing.
+“Grid computing is the collection of computer resources from multiple locations to reach a common goal. The grid can be thought of as a distributed system with non-interactive workloads that involve a large number of files.”  from Wikipedia
+Utility computing – initiated in 2005-2006 by IT companies and targeted at enterprise computing. 
+“Utility computing is a service provisioning model in which a service provider makes computing resources and infrastructure management available to the customer as needed, and charges them for specific usage rather than a flat rate.” from Wikipedia
+[notes] Maybe show some examples online
+[in the slide picture] "Grid computing is the co//ection of computer resources from
+mu/tip/e locations to reach a common goaL The grid can be thought
+of as a distributed system with non-interactive work/oads that
+invo/ve a large number offi/es." from Wikipedia
+"Uti/ity computing is a service provisioning mode/ in which a service
+management avai/ab/e to the customer as needed, and charges
+them for specific usage rather than a f/at rate. "from Wikipedia
+
+----- slide 4 -----
+History and Evolution of Cloud Computing
+Evolution of Cloud Computing:
+Cloud computing is all about renting computing services. This idea first came in the 1950s. In making cloud computing what it is today, five technologies played a vital role. These are distributed systems and its peripherals, virtualization, web 2.0, service orientation, and utility computing.
+[in the slide picture] distributed systezns and its peripherals, virtualization,
+web 2-0, service orientation, and utility con•puting.
+
+----- slide 5 -----
+[in the slide picture] Cloud
+Computing
+2007
+Utility
+Service
+Orientation
+'•€Veb 2.0
+Virtualization
+Grid
+Computina
+Cluster
+- Iainframe
+Computino
+1950s
+Distributed
+
+----- slide 6 -----
+Cloud computing  -  Characteristics
+“Cloud Computing offers on-demand, scalable and elastic computing (and storage services). The resources used for these services can be metered and users are charged only for the resources used. “ from the Book
+ 
+Shared Resources and Resource Management: 
+Cloud uses a shared pool of resources
+Uses Internet technology to offer scalable and elastic services. 
+The term “elastic computing” refers to the ability of dynamically and on-demand acquiring computing resources and  supporting a variable workload.
+Resources are metered and users are charged accordingly. 
+It is more cost-effective due to resource-multiplexing. Lower costs for the cloud service provider are past to the cloud users.
+[notes] Difference between scalability and elasticity
+[in the slide picture] " C/oud Computing offers on-demand, sca/ab/e and e/astic
+services can be metered and users are charged on/y for the
+5. It is more cost-effective due to resource-multiplexing. Lower
+
+----- slide 7 -----
+Cloud computing (cont’d)
+Data Storage:
+Data is stored: 
+in the “cloud”, in certain cases closer to the site where it is used.
+appears to the users as if stored in a location-independent manner.
+The data storage strategy can increase reliability, as well as security, and can lower communication costs.
+
+Management:
+The maintenance and security are operated by service providers.
+The service providers can operate more efficiently due to specialisation and centralisation.
+
+----- slide 8 -----
+Types of clouds/ Deployment Models
+Public Cloud - the infrastructure is made available to the general public or a large industry group and is owned by the organization selling cloud services.
+
+Private Cloud – the infrastructure is operated solely for an organization.
+
+3.	Hybrid Cloud - composition of two or more Clouds (public, private, or community) as unique entities but bound by a standardized technology that enables data and application portability.
+
+4.	Other types: e.g., Community/Federated Cloud - the infrastructure is shared by several organizations and supports a community that has shared concerns.
+
+----- slide 9 -----
+Deployment Models
+
+Deployment models define the type of access to the cloud, i.e., how the cloud is located? 
+
+Or
+
+A cloud deployment model is a specific configuration of environment parameters such as the accessibility and proprietorship of the deployment infrastructure and storage size. This means that deployment types vary depending on who controls the infrastructure and where it’s located.
+Cloud can have any of the four types of access: Public, Private, Hybrid, and Community.
+
+----- slide 10 -----
+Public Cloud
+
+This type of cloud services is provided on a network for public use. Customers have no control over the location of the infrastructure. It is based on a shared cost model for all the users, or in the form of a licensing policy such as pay per user. Public deployment models in the cloud are perfect for organizations with growing and fluctuating demands. It is also popular among businesses of all sizes for their web applications, webmail, and storage of non-sensitive data.
+
+The public cloud deployment model is the first choice for businesses with low privacy concerns. When it comes to popular public cloud deployment models, examples are Amazon Elastic Compute Cloud (Amazon EC2 — the top service provider according to ZDNet), Microsoft Azure, Google App Engine, IBM Cloud, Salesforce Heroku and others.
+[in the slide picture] businesses with Iow privacy concerns. When it comes to popular
+
+----- slide 11 -----
+The Advantages of a Public Cloud
+
+Hassle-free infrastructure management. Having a third party running your cloud infrastructure is convenient: you do not need to develop and maintain your software because the service provider does it for you. In addition, the infrastructure setup and use are uncomplicated.
+High scalability. You can easily extend the cloud’s capacity as your company requirements increase.
+Reduced costs. You pay only for the service you use, so there’s no need to invest in hardware or software.
+24/7 uptime. The extensive network of your provider’s servers ensures your infrastructure is constantly available and has improved operation time.
+
+----- slide 12 -----
+The Disadvantages of a Public Cloud
+
+Compromised reliability. That same server network is also meant to ensure against failure But often enough, public clouds experience outages and malfunction, as in the case of the 2016 Salesforce CRM disruption that caused a storage collapse.
+Data security and privacy issues give rise to concern. Although access to data is easy, a public deployment model deprives users of knowing where their information is kept and who has access to it.
+The lack of a bespoke service. Service providers have only standardized service options, which is why they often fail to satisfy more complex requirements.
+
+----- slide 13 -----
+Private Cloud
+
+There is little to no difference between a public and a private model from the technical point of view, as their architectures are very similar. However, as opposed to a public cloud that is available to the general public, only one specific company owns a private cloud. That is why it is also called an internal or corporate model.
+The server can be hosted externally or on the premises of the owner company. Regardless of their physical location, these infrastructures are maintained on a designated private network and use software and hardware that are intended for use only by the owner company.
+A clearly defined scope of people have access to the information kept in a private repository, which prevents the general public from using it. In light of numerous breaches in recent years, a growing number of large corporations has decided on a closed private cloud model, as this minimizes data security issues.
+
+----- slide 14 -----
+Compared to the public model, the private cloud provides wider opportunities for customizing the infrastructure to the company’s requirements. A private model is especially suitable for companies that seek to safeguard their mission-critical operations or for businesses with constantly changing requirements.
+Multiple public cloud service providers, including Amazon, IBM, Cisco, Dell and Red Hat, also provide private solutions.
+
+----- slide 15 -----
+[in the slide picture] Private
+Cloud
+Leg itirnate
+access path
+bo u n d a ry
+S u b scri be r— co ntro I I ed
+security perirneter
+Blocked
+frorn vvithin the perirneter
+
+----- slide 16 -----
+The Benefits of a Private Cloud:
+All the benefits of this deployment model result from its autonomy. They are the following:
+Bespoke and flexible development and high scalability, which allows companies to customize their infrastructures in accordance with their requirements
+High security, privacy and reliability, as only authorized persons can access resources
+The Drawbacks of a Private Cloud:
+The major disadvantage of the private cloud deployment model is its cost, as it requires considerable expense on hardware, software and staff training. That is why this secure and flexible computing deployment model is not the right choice for small companies.
+
+----- slide 17 -----
+Community Cloud
+
+A community deployment model largely resembles the private one; the only difference is the set of users. Whereas only one company owns the private cloud server, several organizations with similar backgrounds share the infrastructure and related resources of a community cloud.
+If all the participating organizations have uniform security, privacy and performance requirements, this multi-tenant data center architecture helps these companies enhance their efficiency, as in the case of joint projects. A centralized cloud facilitates project development, management and implementation. The costs are shared by all users. Or
+It is a mutually shared model between organizations that belong to a particular community such as banks, government organizations, or commercial enterprises. Community members generally share similar issues of privacy, performance, and security. This type of deployment model of cloud computing is managed and hosted internally or by a third-party vendor.
+
+----- slide 18 -----
+[in the slide picture] Co rn rn u n ity
+Organization A
+Inside
+Outside
+Cloud
+Security perirneters
+Users that access local
+Cornrmunity cornpanies that
+frorn vvithin their perirmeters
+
+----- slide 19 -----
+The Strengths of a Community Cloud:
+Cost reduction
+Improved security, privacy and reliability
+Ease of data sharing and collaboration
+The Shortcomings of a Community Cloud:
+High cost compared to the public deployment model
+Sharing of fixed storage and bandwidth capacity
+
+----- slide 20 -----
+Hybrid Cloud:
+
+As is usually the case with any hybrid phenomenon, a hybrid cloud encompasses the best features of the abovementioned deployment models (public, private and community). It allows companies to mix and match the facets of the three types that best suit their requirements.
+As an example, a company can balance its load by locating mission-critical workloads on a secure private cloud and deploying less sensitive ones to a public one. The hybrid cloud deployment model not only safeguards and controls strategically important assets but does so in a cost- and resource-effective way. In addition, this approach facilitates data and application portability.
+The Benefits of a Hybrid Cloud:
+Improved security and privacy
+Enhanced scalability and flexibility
+Reasonable price
+
+----- slide 21 -----
+| Public | Private | Community | Hybrid
+Ease of setup and use | Easy | Requires IT proficiency | Requires IT proficiency | Requires IT proficiency
+Data security and privacy | Low | High | Comparatively high | High
+Data control | Little to none | High | Comparatively high | Comparatively high
+Reliability | Low | High | Comparatively high | High
+Scalability and flexibility | High | High | Fixed capacity | High
+Cost-effectiveness | The cheapest | Cost-intensive; the most expensive model | Cost is shared among community members | Cheaper than a private model but more costly than a public one
+Demand for in-house hardware | No | Depends | Depends | Depends
+
+----- slide 22 -----
+Cloud Delivery/Service Models
+Software as a Service (SaaS)   (high level)
+Platform as a Service (PaaS)
+Infrastructure as a Service (IaaS)  (low level)
+[in the slide picture] Cloud Clients
+Web browser, mobile app, thin client, terminal
+emulator
+CRM, Email, virtual desktop, communication,
+games
+Execution runtime, database, web server,
+development tools
+Virtual machines, servers, storage, load
+balancers, network
+
+----- slide 23 -----
+Infrastructure-as-a-Service (IaaS)
+Infrastructure is compute resources, CPU, VMs, storage, etc
+
+The user is able to deploy and run arbitrary software, which can include operating systems and applications.
+The user does not manage or control the underlying Cloud infrastructure but has control over operating systems, storage, deployed applications, and possibly limited control of some networking components, e.g., host firewalls. 
+
+Services offered by this delivery model include:  server hosting, storage, computing hardware, operating systems, virtual instances, load balancing, Internet access, and bandwidth provisioning. 
+
+Example: Amazon EC2
+
+----- slide 24 -----
+Platform-as-a-Service (PaaS)
+Allows a cloud user to deploy consumer-created or acquired applications using programming languages and tools supported by the service provider.
+The user:
+Has control over the deployed applications and, possibly, application hosting environment configurations.
+Does not manage or control the underlying Cloud infrastructure including network, servers, operating systems, or storage. 
+Not particularly useful when: 
+The application must be portable.
+Proprietary programming languages are used.
+The hardware and software must be customized to improve the performance of the application.
+Examples: Google App Engine, Windows Azure
+
+----- slide 25 -----
+Software-as-a-Service (SaaS)
+Applications are supplied by the service provider.
+The user does not manage or control the underlying Cloud infrastructure or individual application capabilities. 
+Services offered include: 
+Enterprise services such as: workflow management, communications, digital signature, customer relationship management (CRM), desktop software, financial management, geo-spatial, and search.
+Not suitable for real-time applications or for those where data is not allowed to be hosted externally.
+
+Examples: Gmail, Salesforce
+
+----- slide 26 -----
+The Three delivery/Service models of Cloud Computing
+[in the slide picture] Cloud Service Models
+Packaged
+S oftwa re
+Applications
+Data
+Runtime
+Middleware
+Virtualization
+Servers
+Storage
+Networking
+Infrastructure
+(as a Service)
+Figure 1.
+Platform
+Applcaoons
+Source: Microsoft Azure
+
+----- slide 27 -----
+Why cloud computing is successful when other paradigms have failed?
+It is in a better position to exploit recent advances in software, networking, storage, and processor technologies promoted by the same companies who provide Cloud services. 
+Economical reasons: It is used for enterprise computing; its adoption by industrial organizations, financial institutions, government, and so on has a huge impact on the economy. 
+Infrastructures Management reasons: 
+A single Cloud consists of a mostly homogeneous (now more heterogeneous) set of hardware and software resources.
+The resources are in a single administrative domain (AD). Security, resource management, fault-tolerance, and quality of service are less challenging than in a heterogeneous environment with resources in multiple ADs.
+
+----- slide 28 -----
+Cloud Computing Advantages
+Resources, such as CPU cycles, storage, network bandwidth, are shared.
+
+When multiple applications share a system, their peak demands for resources are not synchronized thus, multiplexing leads to a higher resource utilization.
+
+Resources can be aggregated to support data-intensive applications.
+
+Data sharing facilitates collaborative activities. Many applications require multiple types of analysis of shared data sets and multiple decisions carried out by groups scattered around the globe.
+[notes] Up to here talked a lot …
+
+----- slide 29 -----
+Cloud Computing Advantages
+Eliminates the initial investment costs for a private computing infrastructure and the maintenance and operation costs.
+
+Cost reduction:  concentration of resources creates the opportunity to pay as you go for computing.
+
+Elasticity:  the ability to accommodate workloads with very large peak-to-average ratios.
+
+User convenience:  virtualization allows users to operate in familiar environments rather than in idiosyncratic ones.
+
+----- slide 30 -----
+Challenges for cloud computing
+Availability of service: what happens when the service provider cannot deliver?
+
+Data confidentiality and auditability, a serious problem.
+
+Diversity of  services, data organization, user interfaces available at different service providers limit user mobility; once a customer is hooked to one provider it is hard to move to another. 
+
+Data transfer bottleneck; many applications are data-intensive.
+
+----- slide 31 -----
+Performance unpredictability, one of the consequences of resource sharing. 
+How to use resource virtualization and performance isolation for QoS guarantees?
+How to support elasticity, the ability to scale up and down quickly?
+
+Resource management: It is a big challenge to manage different workloads running on large data centers. Are self-organization and self-management the solution? 
+
+Security and confidentiality: major concern for sensitive applications, e.g., healthcare applications.
+
+----- slide 32 -----
+[in the slide picture] Advantages of Cloud
+No cost of infrastructure
+IVIinin•un•
+and cost
+No adn•inistrative or
+n-ranagen-lent hassles
+Easy accessibility
+Pay per use
+Reliability
+Data control
+Data backup and recovery
+Huge cloud storage
+Good internet connection
+& bandvvidth required
+D ovvntin•e
+control of
+Restricted or lin•ited
+flexibility
+Ongoing costs
+Security
+Vendor lock—in
+Technical Issues
+
+----- slide 33 -----
+Cloud activities
+Service management and provisioning including:
+Virtualization. 
+Service provisioning. 
+Call center.
+Operations management. 
+Systems management. 
+QoS management. 
+Billing and accounting, asset management. 
+SLA management.
+Technical support and backups.
+
+----- slide 34 -----
+Cloud  activities (cont’d)
+Security management including: 
+ID and authentication.
+Certification and accreditation. 
+Intrusion prevention.   
+Intrusion detection. 
+Virus protection. 
+Cryptography. 
+Physical security, incident response. 
+Access control, audit and trails, and firewalls.
+[notes] Certification and Accreditation (C&A or CnA) is a process for implementing any formal process. It is a systematic procedure for evaluating, describing, testing and authorizing systems or activities prior to or after a system is in operation. The C&A process is used extensively across the world.
+
+Certification is a comprehensive evaluation of a process, system, product, event, or skill typically measured against some existing norm or standard. 
+
+Accreditation is the formal declaration by a neutral third party that the certification program is administered in a way that meets the relevant norms or standards of certification program (such as ISO/IEC 17024).
+
+----- slide 35 -----
+Cloud activities (cont’d)
+Customer services such as: 
+Customer assistance and on-line help. 
+Subscriptions.
+Business intelligence.
+Reporting. 
+Customer preferences.
+Personalization.
+Integration services including:
+ Data management.
+ Development.
+
+----- slide 36 -----
+Ethical issues
+Paradigm shift with implications on computing ethics: 
+The control is relinquished to third party services.
+Data is stored on multiple sites administered by several organizations.
+Multiple services interoperate across the network.
+Implications:
+Unauthorized access.
+Data corruption. 
+Infrastructure failure, and service unavailability.
+
+----- slide 37 -----
+De-perimeterisation
+Systems can span the boundaries of multiple organizations and cross the security borders.
+
+The complex structure of Cloud services can make it difficult to determine who is responsible in case something undesirable happens.
+
+Identity fraud and theft are made possible by the unauthorized access to personal data in circulation and by new forms of dissemination through social networks and they could also pose a danger to Cloud Computing.
+[notes] In information security, de-perimeterisation[1] is the removal of a boundary between an organisation and the outside world. De-perimeterisation is protecting an organization's systems and data on multiple levels by using a mixture of encryption, secure computer protocols, secure computer systems and data-level authentication, rather than the reliance of an organization on its network boundary to the Internet. Successful implementation of a de-perimeterised strategy within an organization implies that the perimeter, or outer security boundary, was removed.

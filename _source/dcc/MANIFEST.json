@@ -1,0 +1,372 @@
+{
+  "Books - all\\DistributedSystems_Concepts&Design_Kindberg.pdf#1-200": {
+    "chars": 554538,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 8,
+    "out": "books_all_distributedsystems_concepts_design_kindberg_p0001-0200.txt",
+    "pages": 1067,
+    "rotation": 0,
+    "sha256": "344831445ddb68b16909969a4597cb8100bea220a303757c5ef77e4173545585"
+  },
+  "Books - all\\DistributedSystems_Concepts&Design_Kindberg.pdf#1001-1067": {
+    "chars": 147844,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 2,
+    "out": "books_all_distributedsystems_concepts_design_kindberg_p1001-1067.txt",
+    "pages": 1067,
+    "rotation": 0,
+    "sha256": "344831445ddb68b16909969a4597cb8100bea220a303757c5ef77e4173545585"
+  },
+  "Books - all\\DistributedSystems_Concepts&Design_Kindberg.pdf#201-400": {
+    "chars": 567883,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 1,
+    "out": "books_all_distributedsystems_concepts_design_kindberg_p0201-0400.txt",
+    "pages": 1067,
+    "rotation": 0,
+    "sha256": "344831445ddb68b16909969a4597cb8100bea220a303757c5ef77e4173545585"
+  },
+  "Books - all\\DistributedSystems_Concepts&Design_Kindberg.pdf#401-600": {
+    "chars": 592411,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 2,
+    "out": "books_all_distributedsystems_concepts_design_kindberg_p0401-0600.txt",
+    "pages": 1067,
+    "rotation": 0,
+    "sha256": "344831445ddb68b16909969a4597cb8100bea220a303757c5ef77e4173545585"
+  },
+  "Books - all\\DistributedSystems_Concepts&Design_Kindberg.pdf#601-800": {
+    "chars": 562526,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 1,
+    "out": "books_all_distributedsystems_concepts_design_kindberg_p0601-0800.txt",
+    "pages": 1067,
+    "rotation": 0,
+    "sha256": "344831445ddb68b16909969a4597cb8100bea220a303757c5ef77e4173545585"
+  },
+  "Books - all\\DistributedSystems_Concepts&Design_Kindberg.pdf#801-1000": {
+    "chars": 606125,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 2,
+    "out": "books_all_distributedsystems_concepts_design_kindberg_p0801-1000.txt",
+    "pages": 1067,
+    "rotation": 0,
+    "sha256": "344831445ddb68b16909969a4597cb8100bea220a303757c5ef77e4173545585"
+  },
+  "Books - all\\Distributed_Systems_Tanenbaun.pdf#1-200": {
+    "chars": 457349,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 72,
+    "out": "books_all_distributed_systems_tanenbaun_p0001-0200.txt",
+    "pages": 612,
+    "rotation": 0,
+    "sha256": "1c703cb3618454072bb5e7f55e0701d9293e435830d01aa82297f7b8c4a0d40a"
+  },
+  "Books - all\\Distributed_Systems_Tanenbaun.pdf#201-400": {
+    "chars": 453003,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 85,
+    "out": "books_all_distributed_systems_tanenbaun_p0201-0400.txt",
+    "pages": 612,
+    "rotation": 0,
+    "sha256": "1c703cb3618454072bb5e7f55e0701d9293e435830d01aa82297f7b8c4a0d40a"
+  },
+  "Books - all\\Distributed_Systems_Tanenbaun.pdf#401-600": {
+    "chars": 463919,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 73,
+    "out": "books_all_distributed_systems_tanenbaun_p0401-0600.txt",
+    "pages": 612,
+    "rotation": 0,
+    "sha256": "1c703cb3618454072bb5e7f55e0701d9293e435830d01aa82297f7b8c4a0d40a"
+  },
+  "Books - all\\Distributed_Systems_Tanenbaun.pdf#601-612": {
+    "chars": 34253,
+    "dpi": 0,
+    "method": "pdf",
+    "ocr_pages": 0,
+    "out": "books_all_distributed_systems_tanenbaun_p0601-0612.txt",
+    "pages": 612,
+    "rotation": 0,
+    "sha256": "1c703cb3618454072bb5e7f55e0701d9293e435830d01aa82297f7b8c4a0d40a"
+  },
+  "Books - all\\ref_book1_distributed-and-cloud-computing_kaiHwang.pdf#1-200": {
+    "chars": 521340,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 23,
+    "out": "books_all_ref_book1_distributed_and_cloud_computing_kaihwang_p0001-0200.txt",
+    "pages": 671,
+    "rotation": 0,
+    "sha256": "125df2b686d75df4fbc6e447406e1c330bd17f5512b797122baa6546e95c25f4"
+  },
+  "Books - all\\ref_book1_distributed-and-cloud-computing_kaiHwang.pdf#201-400": {
+    "chars": 541733,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 31,
+    "out": "books_all_ref_book1_distributed_and_cloud_computing_kaihwang_p0201-0400.txt",
+    "pages": 671,
+    "rotation": 0,
+    "sha256": "125df2b686d75df4fbc6e447406e1c330bd17f5512b797122baa6546e95c25f4"
+  },
+  "Books - all\\ref_book1_distributed-and-cloud-computing_kaiHwang.pdf#401-600": {
+    "chars": 539628,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 17,
+    "out": "books_all_ref_book1_distributed_and_cloud_computing_kaihwang_p0401-0600.txt",
+    "pages": 671,
+    "rotation": 0,
+    "sha256": "125df2b686d75df4fbc6e447406e1c330bd17f5512b797122baa6546e95c25f4"
+  },
+  "Books - all\\ref_book1_distributed-and-cloud-computing_kaiHwang.pdf#601-671": {
+    "chars": 192016,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 6,
+    "out": "books_all_ref_book1_distributed_and_cloud_computing_kaihwang_p0601-0671.txt",
+    "pages": 671,
+    "rotation": 0,
+    "sha256": "125df2b686d75df4fbc6e447406e1c330bd17f5512b797122baa6546e95c25f4"
+  },
+  "Books - all\\ref_book2_CloudComputingTheoryAndPractice.pdf#1-200": {
+    "chars": 510496,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 15,
+    "out": "books_all_ref_book2_cloudcomputingtheoryandpractice_p0001-0200.txt",
+    "pages": 415,
+    "rotation": 0,
+    "sha256": "1a6bddd5494d831faa61f0c26dc12e545f5428cfc34af0db824352311d47686a"
+  },
+  "Books - all\\ref_book2_CloudComputingTheoryAndPractice.pdf#201-400": {
+    "chars": 500866,
+    "dpi": 300,
+    "method": "pdf",
+    "ocr_pages": 24,
+    "out": "books_all_ref_book2_cloudcomputingtheoryandpractice_p0201-0400.txt",
+    "pages": 415,
+    "rotation": 0,
+    "sha256": "1a6bddd5494d831faa61f0c26dc12e545f5428cfc34af0db824352311d47686a"
+  },
+  "Books - all\\ref_book2_CloudComputingTheoryAndPractice.pdf#401-415": {
+    "chars": 35692,
+    "dpi": 0,
+    "method": "pdf",
+    "ocr_pages": 0,
+    "out": "books_all_ref_book2_cloudcomputingtheoryandpractice_p0401-0415.txt",
+    "pages": 415,
+    "rotation": 0,
+    "sha256": "1a6bddd5494d831faa61f0c26dc12e545f5428cfc34af0db824352311d47686a"
+  },
+  "Lab_Manual_all\\Lab_1_2_Sockets_JavaRMI.pdf": {
+    "chars": 12514,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 3,
+    "out": "lab_manual_all_lab_1_2_sockets_javarmi.txt",
+    "pages": 11,
+    "rotation": 0,
+    "sha256": "694fe0585dc0762213b5782870b556a20ed46d8eadfc5e79c9bd4c7d7e474e9f"
+  },
+  "Lab_Manual_all\\Lab_3_4_Lamport_DistdElection.pdf": {
+    "chars": 11861,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 8,
+    "out": "lab_manual_all_lab_3_4_lamport_distdelection.txt",
+    "pages": 13,
+    "rotation": 0,
+    "sha256": "f99767b6e760aff14cacb9e46fb85a6243f87d01acebc72bddd4f059d53a8d82"
+  },
+  "Lab_Manual_all\\Lab_5_6_Cloud_Virtlzn.pdf": {
+    "chars": 3326,
+    "dpi": 0,
+    "method": "pdf",
+    "ocr_pages": 0,
+    "out": "lab_manual_all_lab_5_6_cloud_virtlzn.txt",
+    "pages": 3,
+    "rotation": 0,
+    "sha256": "65ab48b4041237d28fb040ee5cbe5eadc527e0fe673890b6dceafacbbfebd90d"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 1 - Introduction to Distributed Systems\\Chapter1_Int to Distbd_Sys.pptx": {
+    "chars": 15611,
+    "dpi": 600,
+    "method": "pptx",
+    "ocr_pages": 26,
+    "out": "lecture_notes_all_chapterwise_chapter1_int_to_distbd_sys.txt",
+    "pages": 26,
+    "rotation": 0,
+    "sha256": "46e5da5b813f0d74657d92fbdf0b129754287fa43de97d1cc647f04c9efe320d"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 1 - Introduction to Distributed Systems\\GFS_HDFS_Lecture.pdf": {
+    "chars": 14668,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 38,
+    "out": "lecture_notes_all_chapterwise_gfs_hdfs_lecture.txt",
+    "pages": 38,
+    "rotation": 0,
+    "sha256": "8ca71f91eb8178c7fff350658bb635b79c7acd3c07c311eff47969ae44372194"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 2 - Communication in Distributed Systems\\LectureMain_Ch_2_Communication_in_DS.pptx": {
+    "chars": 24375,
+    "dpi": 600,
+    "method": "pptx",
+    "ocr_pages": 48,
+    "out": "lecture_notes_all_chapterwise_lecturemain_ch_2_communication_in_ds.txt",
+    "pages": 48,
+    "rotation": 0,
+    "sha256": "d877e57a4b40ea4c1459551c8c4ce8e10b4fa4ef7493e267c100e1a53f3bb836"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 2 - Communication in Distributed Systems\\REST_SOAP_webservices_Lecture.pdf": {
+    "chars": 5225,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 15,
+    "out": "lecture_notes_all_chapterwise_rest_soap_webservices_lecture.txt",
+    "pages": 15,
+    "rotation": 270,
+    "sha256": "cc4096c12b25ae20c2dca65b907bfd29bca4b6f4088f37e349d265d03d5775c1"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 2 - Communication in Distributed Systems\\Ref_Notes\\MessagePassing_ReferenceNote.pdf": {
+    "chars": 6030,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 9,
+    "out": "lecture_notes_all_chapterwise_messagepassing_referencenote.txt",
+    "pages": 9,
+    "rotation": 0,
+    "sha256": "36265050596dcf1650e904d73461ce54936ee6d693ad181529e64d19f207f8d9"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 2 - Communication in Distributed Systems\\Ref_Notes\\MessagePassing_refnote2.pdf": {
+    "chars": 13993,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 6,
+    "out": "lecture_notes_all_chapterwise_messagepassing_refnote2.txt",
+    "pages": 14,
+    "rotation": 0,
+    "sha256": "ba1dcc9ce0746b3a58c5d4050c7670a424a207cd4082078b74fa2c9e63d603ca"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 2 - Communication in Distributed Systems\\Ref_Notes\\REST_SOAP_webservices.pdf": {
+    "chars": 10838,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 26,
+    "out": "lecture_notes_all_chapterwise_rest_soap_webservices.txt",
+    "pages": 31,
+    "rotation": 0,
+    "sha256": "0daa75beafa40d8ec4830d4e9d6bc7f79b8421c3f6f77cab782b419b94bfed47"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 3 - Synchronization and Coordination\\Ch_3_Sync_and_Cordn.pptx": {
+    "chars": 43738,
+    "dpi": 600,
+    "method": "pptx",
+    "ocr_pages": 94,
+    "out": "lecture_notes_all_chapterwise_ch_3_sync_and_cordn.txt",
+    "pages": 94,
+    "rotation": 0,
+    "sha256": "9afd6848a07a508e72a9778ca277639279844096fcc7c37d07e64124a1a01e0b"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 4 - Distributed File systems and Middleware\\Ch4_MessagingProtocol_MQTT_AMQP_For_Students.pdf": {
+    "chars": 3097,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 7,
+    "out": "lecture_notes_all_chapterwise_ch4_messagingprotocol_mqtt_amqp_for_students.txt",
+    "pages": 7,
+    "rotation": 270,
+    "sha256": "4a5eb4df1bcfc3f4f1bb17803d83f3e72624f8f8f73282323066f1150a880906"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 4 - Distributed File systems and Middleware\\Chapter4_lecture_notes_all.pptx": {
+    "chars": 25439,
+    "dpi": 600,
+    "method": "pptx",
+    "ocr_pages": 41,
+    "out": "lecture_notes_all_chapterwise_chapter4_lecture_notes_all.txt",
+    "pages": 41,
+    "rotation": 0,
+    "sha256": "4af8726036046802cd9d2b89840eb01c1dd9b6a00372f028440a2eec64ae030e"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 4 - Distributed File systems and Middleware\\HDFS_Note_4Std_lecture.pdf": {
+    "chars": 9790,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 1,
+    "out": "lecture_notes_all_chapterwise_hdfs_note_4std_lecture.txt",
+    "pages": 5,
+    "rotation": 0,
+    "sha256": "6765bce4f3e019c55e3b64da117f57ec46864419efce4a2e1664d9b77707a458"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter 6 - Virtualization and Cloud Architecture\\Ch6_Virtlzn_Cloud-Ref-Arch_ResrcProvsnMgmt.pptx": {
+    "chars": 24026,
+    "dpi": 600,
+    "method": "pptx",
+    "ocr_pages": 47,
+    "out": "lecture_notes_all_chapterwise_ch6_virtlzn_cloud_ref_arch_resrcprovsnmgmt.txt",
+    "pages": 47,
+    "rotation": 0,
+    "sha256": "c2756a0607c6a861a23daf69e1e7718214e9bd182e1f7d5d9ca5c8b917a771c6"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter_5_Introduction to Cloud Computing\\Ch_5_Int_to_CloudComputing.ppt": {
+    "chars": 23414,
+    "dpi": 600,
+    "method": "pptx-via-powerpoint",
+    "ocr_pages": 37,
+    "out": "lecture_notes_all_chapterwise_ch_5_int_to_cloudcomputing.txt",
+    "pages": 37,
+    "rotation": 0,
+    "sha256": "b57c1f2dcaf4c7265ccb42f43943c0afeb32e2a79a8f5f78c0c49315d85b9f5c"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter_5_Introduction to Cloud Computing\\Ref_CloudComptng.pptx": {
+    "chars": 107640,
+    "dpi": 600,
+    "method": "pptx",
+    "ocr_pages": 114,
+    "out": "lecture_notes_all_chapterwise_ref_cloudcomptng.txt",
+    "pages": 114,
+    "rotation": 0,
+    "sha256": "adafb62f68612b614eb604fb1feb9b25c77e9a963f1b7ffc59e8208191f73aa2"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter_8_Security and Challenges in Cloud\\Cloud_Vulnerabilities_and_Risk_Mitigation.pdf": {
+    "chars": 2808,
+    "dpi": 0,
+    "method": "pdf",
+    "ocr_pages": 0,
+    "out": "lecture_notes_all_chapterwise_cloud_vulnerabilities_and_risk_mitigation.txt",
+    "pages": 2,
+    "rotation": 0,
+    "sha256": "3292629c2c769413726863abe3a9d41ec6746ce445f6a05def62336b4645da60"
+  },
+  "Lecture Notes - all Chapterwise\\Chapter_8_Security and Challenges in Cloud\\LectureNote_Ch _8.pptx": {
+    "chars": 14625,
+    "dpi": 600,
+    "method": "pptx",
+    "ocr_pages": 24,
+    "out": "lecture_notes_all_chapterwise_lecturenote_ch_8.txt",
+    "pages": 24,
+    "rotation": 0,
+    "sha256": "b468990fc2be4eedf262d1bfbd55bdf3a754f63d291ae439a70b65a86759fb95"
+  },
+  "syllabus_Distbd_CloudComptng.pdf": {
+    "chars": 5112,
+    "dpi": 600,
+    "method": "pdf",
+    "ocr_pages": 5,
+    "out": "syllabus_distbd_cloudcomptng.txt",
+    "pages": 5,
+    "rotation": 0,
+    "sha256": "4e6e63f35274194530f1dfac614dc934b2bf2ed3a17e48bed8c54568b3e6b348"
+  }
+}

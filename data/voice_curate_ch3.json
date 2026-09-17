@@ -1,0 +1,125 @@
+{
+ "_comment": [
+  "Unit 3's batch. Same rules as voice_curate.json.",
+  "",
+  "Unit 3's yap is mostly commentary on the unit's own shape: which sections a list",
+  "points at, which example to follow closely, what to practise. One entry fixes a",
+  "heading that the audit could not see on its own - '3.0 Time in distributed systems",
+  "&mdash; the problem this unit solves' - because the heading is glued to the sentence",
+  "before it by the sentence splitter, so the tell was reported against that sentence."
+ ],
+ "edits": [
+  {
+   "ch": "ch3.js",
+   "tell": "reader",
+   "why": "the fact is about a crashed node, not about what the reader should note",
+   "find": "Note the word <em>active</em> &mdash; a crashed node keeps its high number but cannot win.",
+   "to": "A crashed node keeps its high number but cannot win."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "meta",
+   "why": "'two points about this unit matter' announces the paragraph instead of making the point; the four requirements are the point",
+   "find": "Two points about this unit matter. Every algorithm here answers to the <strong>four requirements</strong> in 3.3.2 &mdash; safety, liveness, fairness and, for mutual exclusion, the number of messages. Those four turn a list of algorithms into a comparison.",
+   "to": "Every algorithm here answers to the <strong>four requirements</strong> in 3.3.2 &mdash; safety, liveness, fairness and, for mutual exclusion, the number of messages &mdash; and those four are what turn a list of algorithms into a comparison."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "meta",
+   "why": "'matter more here than anywhere else in the course' compares this unit with the others; the examples are the content, and 'what to practise' is advice about reading",
+   "old": "Worked examples matter more here than anywhere else in the course: the Lamport timestamp, the Bully election and the Ricart–Agrawala example all apply a rule to specific messages or processes, so the arithmetic is what to practise.",
+   "new": "The Lamport timestamp, the Bully election and the Ricart–Agrawala example all apply a rule to specific messages or processes."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "meta",
+   "why": "the heading has to name the subject; which unit solves it is the unit's own title, one line above",
+   "find": ".0 Time in distributed systems &mdash; the problem this unit solves",
+   "to": "</p>\n\n<h2>3.0 Time in distributed systems"
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "meta",
+   "why": "a sentence whose whole content is which sections the list above points at",
+   "old": "Note how the last three point straight at 3.3 and 3.4 of this unit.",
+   "new": ""
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "meta",
+   "why": "'this section and 3.2 belong together' is a comment on the notes' structure; that Lamport timestamps cannot make the decision is the fact",
+   "old": "That decision is exactly what Lamport timestamps cannot make (they order everything, and prove nothing about concurrency) and vector clocks can, which is why this section and 3.2 belong together.",
+   "new": "Lamport timestamps cannot make that decision — they order everything and prove nothing about concurrency — and vector clocks can."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "meta",
+   "why": "'the RTT correction above' points at the page; the correction in the formula is the fact",
+   "old": "which is exactly what the RTT correction above is doing.",
+   "new": "which is what the RTT correction in the formula is doing."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "meta",
+   "why": "an instruction on how to work through the algorithms, wrapped around a fact that survives it",
+   "old": "So when you assess the algorithms in this unit — the central coordinator (3.3.4), Lamport's and Ricart–Agrawala's permission schemes, and the token ring (3.3.5) — run each against these four requirements in order and name what it costs to satisfy them. The cost is almost always a message count, which is what makes the comparison worth drawing.",
+   "new": "Each of the algorithms — the central coordinator (3.3.4), Lamport's and Ricart–Agrawala's permission schemes and the token ring (3.3.5) — satisfies the four requirements at a cost, and that cost is almost always a message count."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "editorial",
+   "why": "the make failure is the content; that it is the one to quote is advice about answering",
+   "find": "The classic failure, and the one to quote when a question asks for a consequence of clock skew: in Unix, the <strong><code>make</code></strong> command is used to compile new or modified code without recompiling unchanged code.",
+   "to": "The classic failure is in Unix, where the <strong><code>make</code></strong> command is used to compile new or modified code without recompiling unchanged code."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "editorial",
+   "why": "the paragraph already shows why the estimate is an estimate; a sentence saying it is the part worth understanding adds nothing",
+   "old": "This is the part worth understanding, because it shows why the estimate is an estimate. ",
+   "new": ""
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "editorial",
+   "why": "'what matters is' rates the sentence instead of stating it",
+   "find": "What matters is the <strong>internal consistency</strong> of the clocks, not whether they are close to real time.",
+   "to": "The clocks only have to be <strong>internally consistent</strong>; they need not be close to real time."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "editorial",
+   "why": "'the distinction worth writing down' is advice; the distinction itself is the content",
+   "old": ", and that is the distinction worth writing down: ",
+   "new": ": "
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "editorial",
+   "why": "'the one to follow closely' rates the example; what the example shows is the content",
+   "old": "The first ring example is the one to follow closely, because it shows",
+   "new": "The first ring example shows"
+  },
+  {
+   "ch": "ch3.js",
+   "find": "The four sub-topics are stages of one argument rather than four separate topics. ",
+   "to": "",
+   "tell": "recount",
+   "why": "a sentence about how the sub-topics relate to each other; the four sentences that follow say what each one does"
+  },
+  {
+   "ch": "ch3.js",
+   "find": " The reading order is the order to work through: agreement on time, then ordering without time, then using the ordering, then choosing a leader.",
+   "to": "",
+   "tell": "recount",
+   "why": "reading-order advice, and the same order is already the order of the sections"
+  },
+  {
+   "ch": "ch3.js",
+   "find": "Every algorithm here answers to the <strong>four requirements</strong> in 3.3.2 &mdash; safety, liveness, fairness and, for mutual exclusion, the number of messages &mdash; and those four are what turn a list of algorithms into a comparison.",
+   "to": "Every algorithm here answers to the same <strong>four requirements</strong> &mdash; safety, liveness, fairness and, for mutual exclusion, the number of messages.",
+   "tell": "editorial",
+   "why": "the requirements are the content; the section number is navigation and the clause about turning a list into a comparison rates the notes instead of teaching"
+  }
+ ]
+}

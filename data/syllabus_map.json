@@ -1,0 +1,1674 @@
+{
+ "dcc": {
+  "course": "dcc",
+  "code": "BCE7024",
+  "title": "Distributed & Cloud Computing",
+  "topics": {
+   "1.1": "Definition and characteristics",
+   "1.2": "Goals of distributed systems",
+   "1.3": "Examples: Google File System, Hadoop, BitTorrent, etc",
+   "1.4": "Models: Client-server, Peer-to-peer, Multitier",
+   "2.1": "Remote Procedure Calls (RPC)",
+   "2.2": "Remote Method Invocation (RMI)",
+   "2.3": "Message Passing and Serialization",
+   "2.4": "Sockets and Web services (REST & SOAP)",
+   "3.1": "Clock Synchronization: Cristian's Algorithm, NTP",
+   "3.2": "Logical Clocks: Lamport's and Vector Clocks",
+   "3.3": "Mutual Exclusion Algorithms (Ricart-Agrawala, Token Ring)",
+   "3.4": "Election Algorithms (Bully, Ring)",
+   "4.1": "DFS concepts: Transparency, Naming, Replication, Consistency",
+   "4.2": "NFS, HDFS",
+   "4.3": "Middleware: CORBA, Java RMI, Messaging MQTT, AMQP",
+   "5.1": "History and evolution of cloud",
+   "5.2": "Characteristics and benefits",
+   "5.3": "Cloud service models: IaaS, PaaS, SaaS",
+   "5.4": "Cloud deployment models: Public, Private, Hybrid, Community",
+   "6.1": "Basics of virtualization: Hypervisors (Type I & II)",
+   "6.2": "Virtual Machines vs Containers",
+   "6.3": "Cloud reference architecture",
+   "6.4": "Resource management and provisioning",
+   "7.1": "Overview of AWS, Microsoft Azure, and Google Cloud",
+   "7.2": "Storage services (S3, Blob, etc.)",
+   "7.3": "Compute services (EC2, Lambda, GCE)",
+   "8.1": "Data security, privacy, and compliance",
+   "8.2": "Identity and access management (IAM)",
+   "8.3": "Service Level Agreements (SLA)",
+   "8.4": "Cloud vulnerabilities and risk mitigation",
+   "9.1": "Edge and Fog Computing",
+   "9.2": "Serverless Architecture",
+   "9.3": "Kubernetes and Docker",
+   "9.4": "Cloud-native and Microservices"
+  },
+  "covered": {
+   "1.1": [
+    {
+     "number": "1.1",
+     "title": "Definition and Characteristic",
+     "file": "ch1.js",
+     "words": 248
+    }
+   ],
+   "1.2": [
+    {
+     "number": "1.2",
+     "title": "Goals of Distributed Syste",
+     "file": "ch1.js",
+     "words": 590
+    }
+   ],
+   "1.3": [
+    {
+     "number": "1.3",
+     "title": "Examples of Distributed Syste",
+     "file": "ch1.js",
+     "words": 229
+    }
+   ],
+   "1.4": [
+    {
+     "number": "1.4",
+     "title": "Models of Distributed Syste",
+     "file": "ch1.js",
+     "words": 42
+    },
+    {
+     "number": "1.4.1",
+     "title": "Client-server",
+     "file": "ch1.js",
+     "words": 275
+    },
+    {
+     "number": "1.4.2",
+     "title": "Peer-to-peer",
+     "file": "ch1.js",
+     "words": 294
+    },
+    {
+     "number": "1.4.3",
+     "title": "Multitier",
+     "file": "ch1.js",
+     "words": 298
+    },
+    {
+     "number": "1.4.4",
+     "title": "Fundamental model",
+     "file": "ch1.js",
+     "words": 298
+    }
+   ],
+   "2.1": [
+    {
+     "number": "2.1",
+     "title": "Remote Procedure Call (RPC)",
+     "file": "ch2.js",
+     "words": 235
+    },
+    {
+     "number": "2.1.1",
+     "title": "How RPC works in ten step",
+     "file": "ch2.js",
+     "words": 433
+    },
+    {
+     "number": "2.1.2",
+     "title": "Advantages and disadvantage",
+     "file": "ch2.js",
+     "words": 315
+    },
+    {
+     "number": "2.1.3",
+     "title": "RPC issues &mdash; the five things that go wrong",
+     "file": "ch2.js",
+     "words": 232
+    },
+    {
+     "number": "2.1.4",
+     "title": "Call semantic",
+     "file": "ch2.js",
+     "words": 270
+    },
+    {
+     "number": "2.1.5",
+     "title": "Providing a reliable request&ndash;reply protocol",
+     "file": "ch2.js",
+     "words": 193
+    }
+   ],
+   "2.2": [
+    {
+     "number": "2.2",
+     "title": "Remote Method Invocation (RMI)",
+     "file": "ch2.js",
+     "words": 224
+    },
+    {
+     "number": "2.2.1",
+     "title": "What a remote invocation require",
+     "file": "ch2.js",
+     "words": 291
+    },
+    {
+     "number": "2.2.2",
+     "title": "The RMI software &mdash; five roles to name",
+     "file": "ch2.js",
+     "words": 355
+    },
+    {
+     "number": "2.2.3",
+     "title": "The remote interface &mdash; how it is declare",
+     "file": "ch2.js",
+     "words": 247
+    },
+    {
+     "number": "2.2.4",
+     "title": "Design issues in RMI",
+     "file": "ch2.js",
+     "words": 327
+    },
+    {
+     "number": "2.2.5",
+     "title": "Location transparency, and why it causes failure and latency",
+     "file": "ch2.js",
+     "words": 284
+    },
+    {
+     "number": "2.2.6",
+     "title": "Java RMI case study",
+     "file": "ch2.js",
+     "words": 265
+    }
+   ],
+   "2.3": [
+    {
+     "number": "2.3",
+     "title": "Message Passing and Serialization",
+     "file": "ch2.js",
+     "words": 46
+    },
+    {
+     "number": "2.3.1",
+     "title": "Shared memory versus distributed memory",
+     "file": "ch2.js",
+     "words": 232
+    },
+    {
+     "number": "2.3.2",
+     "title": "The message-passing model",
+     "file": "ch2.js",
+     "words": 319
+    },
+    {
+     "number": "2.3.3",
+     "title": "Collective calls and SPMD",
+     "file": "ch2.js",
+     "words": 209
+    },
+    {
+     "number": "2.3.4",
+     "title": "MPI &mdash; the real message-passing syste",
+     "file": "ch2.js",
+     "words": 224
+    },
+    {
+     "number": "2.3.5",
+     "title": "What implementing message passing actually cost",
+     "file": "ch2.js",
+     "words": 210
+    },
+    {
+     "number": "2.3.6",
+     "title": "Messaging protocols: short, eager and rendezvou",
+     "file": "ch2.js",
+     "words": 294
+    },
+    {
+     "number": "2.3.7",
+     "title": "Persistence and synchronicity &mdash; from the reference note",
+     "file": "ch2.js",
+     "words": 556
+    },
+    {
+     "number": "2.3.8",
+     "title": "Serialization",
+     "file": "ch2.js",
+     "words": 285
+    }
+   ],
+   "2.4": [
+    {
+     "number": "2.4",
+     "title": "Sockets and Web Services (REST &amp; SOAP)",
+     "file": "ch2.js",
+     "words": 0
+    },
+    {
+     "number": "2.4.1",
+     "title": "Socket",
+     "file": "ch2.js",
+     "words": 501
+    },
+    {
+     "number": "2.4.2",
+     "title": "Why web services exist",
+     "file": "ch2.js",
+     "words": 303
+    },
+    {
+     "number": "2.4.3",
+     "title": "The two generations and their stack",
+     "file": "ch2.js",
+     "words": 331
+    },
+    {
+     "number": "2.4.4",
+     "title": "SOAP versus REST &mdash; the comparison to reproduce",
+     "file": "ch2.js",
+     "words": 320
+    },
+    {
+     "number": "2.4.5",
+     "title": "A 3-tier architecture with a web service",
+     "file": "ch2.js",
+     "words": 261
+    }
+   ],
+   "3.1": [
+    {
+     "number": "3.1",
+     "title": "Clock Synchronization: Cristian's Algorithm and NTP",
+     "file": "ch3.js",
+     "words": 152
+    },
+    {
+     "number": "3.1.1",
+     "title": "Cristian's algorit",
+     "file": "ch3.js",
+     "words": 312
+    },
+    {
+     "number": "3.1.2",
+     "title": "How accurate is Cristian's algorithm, exactly?",
+     "file": "ch3.js",
+     "words": 247
+    },
+    {
+     "number": "3.1.3",
+     "title": "Network Time Protocol (NTP)",
+     "file": "ch3.js",
+     "words": 190
+    },
+    {
+     "number": "3.1.4",
+     "title": "NTP goals and synchronization mode",
+     "file": "ch3.js",
+     "words": 186
+    },
+    {
+     "number": "3.1.5",
+     "title": "The NTP offset derivation",
+     "file": "ch3.js",
+     "words": 291
+    }
+   ],
+   "3.2": [
+    {
+     "number": "3.2",
+     "title": "Logical Clocks: Lamport and Vector Clock",
+     "file": "ch3.js",
+     "words": 153
+    },
+    {
+     "number": "3.2.1",
+     "title": "Logical clocks &mdash; the ide",
+     "file": "ch3.js",
+     "words": 190
+    },
+    {
+     "number": "3.2.2",
+     "title": "Lamport's algorit",
+     "file": "ch3.js",
+     "words": 488
+    },
+    {
+     "number": "3.2.3",
+     "title": "Lamport's considerations, and the limitation",
+     "file": "ch3.js",
+     "words": 386
+    },
+    {
+     "number": "3.2.4",
+     "title": "Vector clock",
+     "file": "ch3.js",
+     "words": 524
+    },
+    {
+     "number": "3.2.5",
+     "title": "Causal ordering of messages using vector clock",
+     "file": "ch3.js",
+     "words": 297
+    }
+   ],
+   "3.3": [
+    {
+     "number": "3.3",
+     "title": "Mutual Exclusion Algorit",
+     "file": "ch3.js",
+     "words": 0
+    },
+    {
+     "number": "3.3.1",
+     "title": "Backgroun",
+     "file": "ch3.js",
+     "words": 218
+    },
+    {
+     "number": "3.3.2",
+     "title": "The four requirement",
+     "file": "ch3.js",
+     "words": 196
+    },
+    {
+     "number": "3.3.3",
+     "title": "The two approaches and the algorithm familie",
+     "file": "ch3.js",
+     "words": 244
+    },
+    {
+     "number": "3.3.4",
+     "title": "Ricart&ndash;Agrawala &mdash; the syllabus's named non-token algorit",
+     "file": "ch3.js",
+     "words": 335
+    },
+    {
+     "number": "3.3.5",
+     "title": "Token-based algorithms and the Token Ring",
+     "file": "ch3.js",
+     "words": 424
+    }
+   ],
+   "3.4": [
+    {
+     "number": "3.4",
+     "title": "Election Algorithms: Bully and Ring",
+     "file": "ch3.js",
+     "words": 200
+    },
+    {
+     "number": "3.4.1",
+     "title": "Basic concept",
+     "file": "ch3.js",
+     "words": 199
+    },
+    {
+     "number": "3.4.2",
+     "title": "The Bully algorit",
+     "file": "ch3.js",
+     "words": 852
+    },
+    {
+     "number": "3.4.3",
+     "title": "The Ring algorithm (Chang and Roberts)",
+     "file": "ch3.js",
+     "words": 708
+    },
+    {
+     "number": "3.4.4",
+     "title": "Bully versus Ring &mdash; the comparison an exam answer want",
+     "file": "ch3.js",
+     "words": 236
+    }
+   ],
+   "4.1": [
+    {
+     "number": "4.1",
+     "title": "Distributed File System concept",
+     "file": "ch4.js",
+     "words": 0
+    },
+    {
+     "number": "4.1.1",
+     "title": "What a DFS i",
+     "file": "ch4.js",
+     "words": 249
+    },
+    {
+     "number": "4.1.2",
+     "title": "The design goals &mdash; the list to open an answer wit",
+     "file": "ch4.js",
+     "words": 160
+    },
+    {
+     "number": "4.1.3",
+     "title": "Transparency",
+     "file": "ch4.js",
+     "words": 169
+    },
+    {
+     "number": "4.1.4",
+     "title": "Naming &mdash; three schemes, and the mapping underneat",
+     "file": "ch4.js",
+     "words": 382
+    },
+    {
+     "number": "4.1.5",
+     "title": "The file service architecture",
+     "file": "ch4.js",
+     "words": 379
+    },
+    {
+     "number": "4.1.6",
+     "title": "Consistency in a DFS &mdash; the exam question",
+     "file": "ch4.js",
+     "words": 616
+    },
+    {
+     "number": "4.1.7",
+     "title": "Replication",
+     "file": "ch4.js",
+     "words": 194
+    }
+   ],
+   "4.2": [
+    {
+     "number": "4.2",
+     "title": "NFS and HDFS",
+     "file": "ch4.js",
+     "words": 0
+    },
+    {
+     "number": "4.2.1",
+     "title": "SUN NFS &mdash; what it i",
+     "file": "ch4.js",
+     "words": 277
+    },
+    {
+     "number": "4.2.2",
+     "title": "Stateful versus stateless service",
+     "file": "ch4.js",
+     "words": 204
+    },
+    {
+     "number": "4.2.3",
+     "title": "NFS's design, and its three part",
+     "file": "ch4.js",
+     "words": 543
+    },
+    {
+     "number": "4.2.4",
+     "title": "HDFS &mdash; design and why it is shaped that way",
+     "file": "ch4.js",
+     "words": 281
+    },
+    {
+     "number": "4.2.5",
+     "title": "Block",
+     "file": "ch4.js",
+     "words": 271
+    },
+    {
+     "number": "4.2.6",
+     "title": "Namenodes and datanodes &mdash; the architecture",
+     "file": "ch4.js",
+     "words": 462
+    },
+    {
+     "number": "4.2.7",
+     "title": "Why the NameNode is a single point of failure, and the three remedie",
+     "file": "ch4.js",
+     "words": 305
+    },
+    {
+     "number": "4.2.8",
+     "title": "HDFS high availability, failover and fencing",
+     "file": "ch4.js",
+     "words": 332
+    },
+    {
+     "number": "4.2.9",
+     "title": "GFS, and how HDFS relates to it",
+     "file": "ch4.js",
+     "words": 561
+    }
+   ],
+   "4.3": [
+    {
+     "number": "4.3",
+     "title": "Middleware",
+     "file": "ch4.js",
+     "words": 0
+    },
+    {
+     "number": "4.3.1",
+     "title": "Heterogeneity, and why middleware exist",
+     "file": "ch4.js",
+     "words": 220
+    },
+    {
+     "number": "4.3.2",
+     "title": "CORBA",
+     "file": "ch4.js",
+     "words": 1608
+    },
+    {
+     "number": "4.3.3",
+     "title": "Java RMI as middleware",
+     "file": "ch4.js",
+     "words": 268
+    },
+    {
+     "number": "4.3.4",
+     "title": "Messaging middleware: MQTT and AMQP",
+     "file": "ch4.js",
+     "words": 615
+    }
+   ],
+   "5.1": [
+    {
+     "number": "5.1",
+     "title": "History and evolution of cloud computing",
+     "file": "ch5.js",
+     "words": 0
+    },
+    {
+     "number": "5.1.1",
+     "title": "What cloud computing is &mdash; two definitions to quote",
+     "file": "ch5.js",
+     "words": 214
+    },
+    {
+     "number": "5.1.2",
+     "title": "The basic reasoning and the two early model",
+     "file": "ch5.js",
+     "words": 218
+    },
+    {
+     "number": "5.1.3",
+     "title": "The five technologies, and the timeline",
+     "file": "ch5.js",
+     "words": 332
+    },
+    {
+     "number": "5.1.4",
+     "title": "The three axes of cloud computing",
+     "file": "ch5.js",
+     "words": 245
+    }
+   ],
+   "5.2": [
+    {
+     "number": "5.2",
+     "title": "Characteristics and benefit",
+     "file": "ch5.js",
+     "words": 0
+    },
+    {
+     "number": "5.2.1",
+     "title": "The defining characteristic",
+     "file": "ch5.js",
+     "words": 271
+    },
+    {
+     "number": "5.2.2",
+     "title": "Two more characteristics the deck name",
+     "file": "ch5.js",
+     "words": 260
+    },
+    {
+     "number": "5.2.3",
+     "title": "The benefits &mdash; the Group B, question 10 answer",
+     "file": "ch5.js",
+     "words": 471
+    },
+    {
+     "number": "5.2.4",
+     "title": "Challenges &mdash; brief here, examined in Unit 8",
+     "file": "ch5.js",
+     "words": 174
+    }
+   ],
+   "5.3": [
+    {
+     "number": "5.3",
+     "title": "Cloud service (delivery) model",
+     "file": "ch5.js",
+     "words": 585
+    },
+    {
+     "number": "5.3.1",
+     "title": "Cloud activities &mdash; what a provider actually operate",
+     "file": "ch5.js",
+     "words": 228
+    }
+   ],
+   "5.4": [
+    {
+     "number": "5.4",
+     "title": "Cloud deployment model",
+     "file": "ch5.js",
+     "words": 0
+    },
+    {
+     "number": "5.4.1",
+     "title": "What a deployment model i",
+     "file": "ch5.js",
+     "words": 393
+    },
+    {
+     "number": "5.4.2",
+     "title": "The four model",
+     "file": "ch5.js",
+     "words": 333
+    },
+    {
+     "number": "5.4.3",
+     "title": "The comparison table &mdash; the core of the Group C answer",
+     "file": "ch5.js",
+     "words": 269
+    },
+    {
+     "number": "5.4.4",
+     "title": "Advantages, disadvantages and use cases for eac",
+     "file": "ch5.js",
+     "words": 730
+    },
+    {
+     "number": "5.4.5",
+     "title": "Ethical issues and de-perimeterisation",
+     "file": "ch5.js",
+     "words": 234
+    }
+   ],
+   "6.1": [
+    {
+     "number": "6.1",
+     "title": "Basics of virtualization",
+     "file": "ch6.js",
+     "words": 0
+    },
+    {
+     "number": "6.1.1",
+     "title": "The definition, and why it is the foundation of cloud computing",
+     "file": "ch6.js",
+     "words": 203
+    },
+    {
+     "number": "6.1.2",
+     "title": "The six kinds of virtualization",
+     "file": "ch6.js",
+     "words": 549
+    },
+    {
+     "number": "6.1.3",
+     "title": "The hypervisor",
+     "file": "ch6.js",
+     "words": 266
+    },
+    {
+     "number": "6.1.4",
+     "title": "Type I versus Type II",
+     "file": "ch6.js",
+     "words": 386
+    },
+    {
+     "number": "6.1.5",
+     "title": "The roles of a hypervisor",
+     "file": "ch6.js",
+     "words": 215
+    },
+    {
+     "number": "6.1.6",
+     "title": "CPU virtualization",
+     "file": "ch6.js",
+     "words": 288
+    },
+    {
+     "number": "6.1.7",
+     "title": "Memory virtualization",
+     "file": "ch6.js",
+     "words": 440
+    },
+    {
+     "number": "6.1.8",
+     "title": "I/O virtualization",
+     "file": "ch6.js",
+     "words": 249
+    },
+    {
+     "number": "6.1.9",
+     "title": "The Xen architecture",
+     "file": "ch6.js",
+     "words": 202
+    },
+    {
+     "number": "6.1.10",
+     "title": "Benefits of virtualization",
+     "file": "ch6.js",
+     "words": 286
+    },
+    {
+     "number": "6.1.11",
+     "title": "Hypervisor vulnerabilities, and NoHype",
+     "file": "ch6.js",
+     "words": 166
+    }
+   ],
+   "6.2": [
+    {
+     "number": "6.2",
+     "title": "Virtual machines versus container",
+     "file": "ch6.js",
+     "words": 0
+    },
+    {
+     "number": "6.2.1",
+     "title": "What a virtual machine i",
+     "file": "ch6.js",
+     "words": 287
+    },
+    {
+     "number": "6.2.2",
+     "title": "What a container i",
+     "file": "ch6.js",
+     "words": 351
+    },
+    {
+     "number": "6.2.3",
+     "title": "The comparison, and the costs on each side",
+     "file": "ch6.js",
+     "words": 340
+    }
+   ],
+   "6.3": [
+    {
+     "number": "6.3",
+     "title": "Cloud reference architecture",
+     "file": "ch6.js",
+     "words": 23
+    },
+    {
+     "number": "6.3.1",
+     "title": "The provider's four layer",
+     "file": "ch6.js",
+     "words": 191
+    },
+    {
+     "number": "6.3.2",
+     "title": "The actors &mdash; the NIST reference model's terminology",
+     "file": "ch6.js",
+     "words": 228
+    }
+   ],
+   "6.4": [
+    {
+     "number": "6.4",
+     "title": "Resource management and provisioning",
+     "file": "ch6.js",
+     "words": 0
+    },
+    {
+     "number": "6.4.1",
+     "title": "The provisioning problem, and the SLA tension",
+     "file": "ch6.js",
+     "words": 157
+    },
+    {
+     "number": "6.4.2",
+     "title": "Efficient VM provisioning",
+     "file": "ch6.js",
+     "words": 163
+    },
+    {
+     "number": "6.4.3",
+     "title": "The three provisioning metho",
+     "file": "ch6.js",
+     "words": 385
+    },
+    {
+     "number": "6.4.4",
+     "title": "The software stack and runtime support",
+     "file": "ch6.js",
+     "words": 202
+    },
+    {
+     "number": "6.4.5",
+     "title": "Cloud service tasks and tren",
+     "file": "ch6.js",
+     "words": 271
+    }
+   ],
+   "7.1": [
+    {
+     "number": "7.1",
+     "title": "Overview of AWS, Microsoft Azure and Google Clou",
+     "file": "ch7.js",
+     "words": 0
+    },
+    {
+     "number": "7.1.1",
+     "title": "What a cloud platform i",
+     "file": "ch7.js",
+     "words": 201
+    },
+    {
+     "number": "7.1.2",
+     "title": "The three platfor",
+     "file": "ch7.js",
+     "words": 351
+    },
+    {
+     "number": "7.1.3",
+     "title": "What an IaaS provider actually supplie",
+     "file": "ch7.js",
+     "words": 212
+    },
+    {
+     "number": "7.1.4",
+     "title": "The advantages and disadvantages of the IaaS layer",
+     "file": "ch7.js",
+     "words": 283
+    },
+    {
+     "number": "7.1.5",
+     "title": "The pizza analogy, which makes the three models concrete",
+     "file": "ch7.js",
+     "words": 251
+    },
+    {
+     "number": "7.1.6",
+     "title": "The wider family: XaaS",
+     "file": "ch7.js",
+     "words": 483
+    }
+   ],
+   "7.2": [
+    {
+     "number": "7.2",
+     "title": "Storage service",
+     "file": "ch7.js",
+     "words": 0
+    },
+    {
+     "number": "7.2.1",
+     "title": "The three shapes of cloud storage",
+     "file": "ch7.js",
+     "words": 234
+    },
+    {
+     "number": "7.2.2",
+     "title": "How object storage is actually shape",
+     "file": "ch7.js",
+     "words": 401
+    },
+    {
+     "number": "7.2.3",
+     "title": "Databases as a service",
+     "file": "ch7.js",
+     "words": 548
+    }
+   ],
+   "7.3": [
+    {
+     "number": "7.3",
+     "title": "Compute service",
+     "file": "ch7.js",
+     "words": 0
+    },
+    {
+     "number": "7.3.1",
+     "title": "The three shapes of compute",
+     "file": "ch7.js",
+     "words": 416
+    },
+    {
+     "number": "7.3.2",
+     "title": "EC2 &mdash; the virtual machine service",
+     "file": "ch7.js",
+     "words": 296
+    },
+    {
+     "number": "7.3.3",
+     "title": "Lambda &mdash; the serverless service",
+     "file": "ch7.js",
+     "words": 223
+    },
+    {
+     "number": "7.3.4",
+     "title": "GCE, and why the three platforms look alike",
+     "file": "ch7.js",
+     "words": 200
+    },
+    {
+     "number": "7.3.5",
+     "title": "Managing a platform, and the unit's real exam value",
+     "file": "ch7.js",
+     "words": 252
+    }
+   ],
+   "8.1": [
+    {
+     "number": "8.1",
+     "title": "Data security, privacy and compliance",
+     "file": "ch8.js",
+     "words": 0
+    },
+    {
+     "number": "8.1.1",
+     "title": "The three states of data, and how each is protecte",
+     "file": "ch8.js",
+     "words": 348
+    },
+    {
+     "number": "8.1.2",
+     "title": "Data provenance &mdash; the question security cannot answer",
+     "file": "ch8.js",
+     "words": 166
+    },
+    {
+     "number": "8.1.3",
+     "title": "Data remanence and the provider's own dat",
+     "file": "ch8.js",
+     "words": 153
+    },
+    {
+     "number": "8.1.4",
+     "title": "Data privacy",
+     "file": "ch8.js",
+     "words": 566
+    },
+    {
+     "number": "8.1.5",
+     "title": "Compliance and the data life cycle",
+     "file": "ch8.js",
+     "words": 780
+    }
+   ],
+   "8.2": [
+    {
+     "number": "8.2",
+     "title": "Identity and Access Management (IAM)",
+     "file": "ch8.js",
+     "words": 0
+    },
+    {
+     "number": "8.2.1",
+     "title": "What IAM i",
+     "file": "ch8.js",
+     "words": 190
+    },
+    {
+     "number": "8.2.2",
+     "title": "Why IAM matters more in the cloud than on premise",
+     "file": "ch8.js",
+     "words": 307
+    }
+   ],
+   "8.3": [
+    {
+     "number": "8.3",
+     "title": "Service Level Agreements (SLA)",
+     "file": "ch8.js",
+     "words": 0
+    },
+    {
+     "number": "8.3.1",
+     "title": "What an SLA i",
+     "file": "ch8.js",
+     "words": 460
+    },
+    {
+     "number": "8.3.2",
+     "title": "The five SLA criteri",
+     "file": "ch8.js",
+     "words": 438
+    },
+    {
+     "number": "8.3.3",
+     "title": "The five phases of the SLA life cycle",
+     "file": "ch8.js",
+     "words": 398
+    },
+    {
+     "number": "8.3.4",
+     "title": "The five phases of SLA management in the clou",
+     "file": "ch8.js",
+     "words": 513
+    }
+   ],
+   "8.4": [
+    {
+     "number": "8.4",
+     "title": "Cloud vulnerabilities and risk mitigation",
+     "file": "ch8.js",
+     "words": 32
+    },
+    {
+     "number": "8.4.1",
+     "title": "The eight common vulnerabilitie",
+     "file": "ch8.js",
+     "words": 289
+    },
+    {
+     "number": "8.4.2",
+     "title": "The eight mitigation control are",
+     "file": "ch8.js",
+     "words": 168
+    },
+    {
+     "number": "8.4.3",
+     "title": "The shared responsibility model, and the summary principle",
+     "file": "ch8.js",
+     "words": 155
+    },
+    {
+     "number": "8.4.4",
+     "title": "How the four sub-topics fit one answer",
+     "file": "ch8.js",
+     "words": 363
+    },
+    {
+     "number": "8.4.5",
+     "title": "The two challenges in the exam answer",
+     "file": "ch8.js",
+     "words": 246
+    }
+   ],
+   "9.1": [
+    {
+     "number": "9.1",
+     "title": "Edge and Fog Computing",
+     "file": "ch9.js",
+     "words": 0
+    },
+    {
+     "number": "9.1.1",
+     "title": "Why computation moved out of the data centre again",
+     "file": "ch9.js",
+     "words": 235
+    },
+    {
+     "number": "9.1.2",
+     "title": "The three tier",
+     "file": "ch9.js",
+     "words": 400
+    },
+    {
+     "number": "9.1.3",
+     "title": "What the trends actually buy",
+     "file": "ch9.js",
+     "words": 289
+    }
+   ],
+   "9.2": [
+    {
+     "number": "9.2",
+     "title": "Serverless Architecture",
+     "file": "ch9.js",
+     "words": 0
+    },
+    {
+     "number": "9.2.1",
+     "title": "What serverless mean",
+     "file": "ch9.js",
+     "words": 476
+    },
+    {
+     "number": "9.2.2",
+     "title": "Where serverless is the right answer",
+     "file": "ch9.js",
+     "words": 150
+    }
+   ],
+   "9.3": [
+    {
+     "number": "9.3",
+     "title": "Kubernetes and Docker",
+     "file": "ch9.js",
+     "words": 0
+    },
+    {
+     "number": "9.3.1",
+     "title": "Docker, from the course's own definition of a container",
+     "file": "ch9.js",
+     "words": 299
+    },
+    {
+     "number": "9.3.2",
+     "title": "Why an orchestrator is neede",
+     "file": "ch9.js",
+     "words": 493
+    },
+    {
+     "number": "9.3.3",
+     "title": "The security caveat, from the deck",
+     "file": "ch9.js",
+     "words": 426
+    }
+   ],
+   "9.4": [
+    {
+     "number": "9.4",
+     "title": "Cloud-native and Microservice",
+     "file": "ch9.js",
+     "words": 0
+    },
+    {
+     "number": "9.4.1",
+     "title": "What cloud-native mean",
+     "file": "ch9.js",
+     "words": 351
+    },
+    {
+     "number": "9.4.2",
+     "title": "Microservices, and the monolith they replace",
+     "file": "ch9.js",
+     "words": 376
+    },
+    {
+     "number": "9.4.3",
+     "title": "How containers and orchestration support the architecture",
+     "file": "ch9.js",
+     "words": 464
+    },
+    {
+     "number": "9.4.4",
+     "title": "The trend list, in the syllabus's own ter",
+     "file": "ch9.js",
+     "words": 321
+    },
+    {
+     "number": "9.4.5",
+     "title": "How this unit's trends connect to the rest of the course",
+     "file": "ch9.js",
+     "words": 385
+    },
+    {
+     "number": "9.4.6",
+     "title": "The Group C answer, in its two halve",
+     "file": "ch9.js",
+     "words": 199
+    }
+   ]
+  },
+  "words_per_topic": {
+   "1.1": 248,
+   "1.2": 590,
+   "1.3": 229,
+   "1.4": 1207,
+   "2.1": 1678,
+   "2.2": 1993,
+   "2.3": 2375,
+   "2.4": 1716,
+   "3.1": 1378,
+   "3.2": 2038,
+   "3.3": 1417,
+   "3.4": 2195,
+   "4.1": 2149,
+   "4.2": 3236,
+   "4.3": 2711,
+   "5.1": 1009,
+   "5.2": 1176,
+   "5.3": 813,
+   "5.4": 1959,
+   "6.1": 3250,
+   "6.2": 978,
+   "6.3": 442,
+   "6.4": 1178,
+   "7.1": 1781,
+   "7.2": 1183,
+   "7.3": 1387,
+   "8.1": 2013,
+   "8.2": 497,
+   "8.3": 1809,
+   "8.4": 1253,
+   "9.1": 924,
+   "9.2": 626,
+   "9.3": 1218,
+   "9.4": 2096
+  },
+  "gaps": {},
+  "orphans": [
+   {
+    "number": "1.5",
+    "title": "Advantages and Disadvantage",
+    "file": "ch1.js",
+    "words": 302
+   },
+   {
+    "number": "1.6",
+    "title": "Main Problems and Challenge",
+    "file": "ch1.js",
+    "words": 33
+   },
+   {
+    "number": "1.7",
+    "title": "Types of Distributed Syste",
+    "file": "ch1.js",
+    "words": 192
+   },
+   {
+    "number": "1.8",
+    "title": "Resource Sharing and the Web",
+    "file": "ch1.js",
+    "words": 2377
+   }
+  ],
+  "intro": [
+   {
+    "number": "1",
+    "title": "Introduction to Distributed Syste",
+    "file": "ch1.js",
+    "words": 185
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "The three characteristics the definition implie",
+    "file": "ch1.js",
+    "words": 235
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Further characteristic",
+    "file": "ch1.js",
+    "words": 174
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Heterogeneity",
+    "file": "ch1.js",
+    "words": 273
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Reliability",
+    "file": "ch1.js",
+    "words": 179
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Security",
+    "file": "ch1.js",
+    "words": 178
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Scalability",
+    "file": "ch1.js",
+    "words": 176
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "The five layers of a gri",
+    "file": "ch1.js",
+    "words": 282
+   },
+   {
+    "number": "2",
+    "title": "Communication in Distributed Syste",
+    "file": "ch2.js",
+    "words": 171
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Where this unit sit",
+    "file": "ch2.js",
+    "words": 245
+   },
+   {
+    "number": "2.0",
+    "title": "Distributed objects &mdash; the deck's starting point",
+    "file": "ch2.js",
+    "words": 155
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Where a local object and a distributed object differ",
+    "file": "ch2.js",
+    "words": 270
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Exam-facing summary",
+    "file": "ch2.js",
+    "words": 2294
+   },
+   {
+    "number": "3",
+    "title": "Synchronization and Coordination",
+    "file": "ch3.js",
+    "words": 386
+   },
+   {
+    "number": "3.0",
+    "title": "Time in distributed systems &mdash; the problem this unit solve",
+    "file": "ch3.js",
+    "words": 158
+   },
+   {
+    "number": "3.0.1",
+    "title": "How a computer timer actually work",
+    "file": "ch3.js",
+    "words": 467
+   },
+   {
+    "number": "3.0.3",
+    "title": "Event ordering and the happened-before relation",
+    "file": "ch3.js",
+    "words": 233
+   },
+   {
+    "number": "3.0.4",
+    "title": "Causal ordering of message",
+    "file": "ch3.js",
+    "words": 218
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Exam-facing summary",
+    "file": "ch3.js",
+    "words": 3036
+   },
+   {
+    "number": "4",
+    "title": "Distributed File Systems and Middleware",
+    "file": "ch4.js",
+    "words": 232
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Exam-facing summary",
+    "file": "ch4.js",
+    "words": 614
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Extra pages from the GFS/HDFS lecture, not on the syllabu",
+    "file": "ch4.js",
+    "words": 4516
+   },
+   {
+    "number": "5",
+    "title": "Introduction to Cloud Computing",
+    "file": "ch5.js",
+    "words": 222
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Exam-facing summary",
+    "file": "ch5.js",
+    "words": 4597
+   },
+   {
+    "number": "6",
+    "title": "Virtualization and Cloud Architecture",
+    "file": "ch6.js",
+    "words": 223
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Exam-facing summary",
+    "file": "ch6.js",
+    "words": 3374
+   },
+   {
+    "number": "7",
+    "title": "Cloud Platforms and Technologie",
+    "file": "ch7.js",
+    "words": 227
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Exam-facing summary",
+    "file": "ch7.js",
+    "words": 439
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Extra slides from the reference deck, not on the syllabu",
+    "file": "ch7.js",
+    "words": 1924
+   },
+   {
+    "number": "8",
+    "title": "Security and Challenges in Clou",
+    "file": "ch8.js",
+    "words": 384
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Exam-facing summary",
+    "file": "ch8.js",
+    "words": 4016
+   },
+   {
+    "number": "9",
+    "title": "Emerging Trends in Distributed and Cloud Computing",
+    "file": "ch9.js",
+    "words": 207
+   },
+   {
+    "number": "(unnumbered)",
+    "title": "Exam-facing summary",
+    "file": "ch9.js",
+    "words": 4144
+   }
+  ],
+  "questions_in_learn": [
+   {
+    "number": "1.8",
+    "title": "Resource Sharing and the Web",
+    "file": "ch1.js",
+    "hits": [
+     {
+      "shape": "card data",
+      "text": "at some challenges remain — denial-of-service attacks and mobile code security.' } ], past: [ { year: 'Model 2025', marks: '2', repeats: 1, q: 'Define a distributed system.', occ: "
+     },
+     {
+      "shape": "card data",
+      "text": "y.' } ], past: [ { year: 'Model 2025', marks: '2', repeats: 1, q: 'Define a distributed system.', occ: [ { year: 'Model 2025', marks: '2', q: 'Define a distributed system.' } ], an"
+     },
+     {
+      "shape": "card data",
+      "text": "year: 'Model 2025', marks: '2', repeats: 1, q: 'Define a distributed system.', occ: [ { year: 'Model 2025', marks: '2', q: 'Define a distributed system.' } ], answer: ` Model answe"
+     },
+     {
+      "shape": "card data",
+      "text": ": 'Define a distributed system.', occ: [ { year: 'Model 2025', marks: '2', q: 'Define a distributed system.' } ], answer: ` Model answer &mdash; 2 marks A distributed system is a c"
+     }
+    ],
+    "count": 12
+   },
+   {
+    "number": "",
+    "title": "Exam-facing summary",
+    "file": "ch2.js",
+    "hits": [
+     {
+      "shape": "card data",
+      "text": "sing objects remotely needs remote object references and the machinery of 2.2.' } ], past: [ { year: 'Model 2025', marks: '4', repeats: 2, q: 'Describe Remote Procedure Call (RPC) "
+     },
+     {
+      "shape": "card data",
+      "text": "year: 'Model 2025', marks: '4', repeats: 2, q: 'Describe Remote Procedure Call (RPC) with its working mechanism.', occ: [ { year: 'Model 2025', marks: '4', q: 'Describe Remote Proc"
+     },
+     {
+      "shape": "card data",
+      "text": ", repeats: 2, q: 'Describe Remote Procedure Call (RPC) with its working mechanism.', occ: [ { year: 'Model 2025', marks: '4', q: 'Describe Remote Procedure Call (RPC) with its work"
+     },
+     {
+      "shape": "card data",
+      "text": "{ year: 'Model 2025', marks: '4', q: 'Describe Remote Procedure Call (RPC) with its working mechanism.' }, { year: 'Final 2025', marks: '2', q: 'Define RPC (Remote Procedure Call) "
+     }
+    ],
+    "count": 5
+   },
+   {
+    "number": "",
+    "title": "Exam-facing summary",
+    "file": "ch3.js",
+    "hits": [
+     {
+      "shape": "card data",
+      "text": "d a message to every other process and each knows who has a higher identifier.' } ], past: [ { year: 'Final 2025', marks: '2', repeats: 1, q: 'List any two mutual exclusion algorit"
+     },
+     {
+      "shape": "card data",
+      "text": "past: [ { year: 'Final 2025', marks: '2', repeats: 1, q: 'List any two mutual exclusion algorithms.', occ: [ { year: 'Final 2025', marks: '2', q: 'List any two mutual exclusion alg"
+     },
+     {
+      "shape": "card data",
+      "text": "2025', marks: '2', repeats: 1, q: 'List any two mutual exclusion algorithms.', occ: [ { year: 'Final 2025', marks: '2', q: 'List any two mutual exclusion algorithms.' } ], answer: "
+     },
+     {
+      "shape": "card data",
+      "text": "lusion algorithms.', occ: [ { year: 'Final 2025', marks: '2', q: 'List any two mutual exclusion algorithms.' } ], answer: ` Model answer &mdash; 2 marks Any two of the classic dist"
+     }
+    ],
+    "count": 17
+   },
+   {
+    "number": "",
+    "title": "Extra pages from the GFS/HDFS lecture, not on the syllabu",
+    "file": "ch4.js",
+    "hits": [
+     {
+      "shape": "card data",
+      "text": "corporate environments, focused on interoperability, with brokers and queues.' } ], past: [ { year: 'Final 2025', marks: '4', repeats: 1, q: 'Define transparency in DFS and explain"
+     },
+     {
+      "shape": "card data",
+      "text": "year: 'Final 2025', marks: '4', repeats: 1, q: 'Define transparency in DFS and explain naming transparency.', occ: [ { year: 'Final 2025', marks: '4', q: 'Define transparency in DF"
+     },
+     {
+      "shape": "card data",
+      "text": ": '4', repeats: 1, q: 'Define transparency in DFS and explain naming transparency.', occ: [ { year: 'Final 2025', marks: '4', q: 'Define transparency in DFS and explain naming tran"
+     },
+     {
+      "shape": "card data",
+      "text": "', occ: [ { year: 'Final 2025', marks: '4', q: 'Define transparency in DFS and explain naming transparency.' } ], answer: ` Model answer &mdash; 4 marks Transparency in a distribut"
+     }
+    ],
+    "count": 16
+   },
+   {
+    "number": "",
+    "title": "Exam-facing summary",
+    "file": "ch5.js",
+    "hits": [
+     {
+      "shape": "card data",
+      "text": "ared cost model for all users or a licensing policy such as pay per user.' } ], past: [ { year: '2025 (expected)', marks: '5', repeats: 1, q: 'Explain the evolution of cloud comput"
+     },
+     {
+      "shape": "card data",
+      "text": "'2025 (expected)', marks: '5', repeats: 1, q: 'Explain the evolution of cloud computing from Mainframe to Cloud.', occ: [ { year: '2025 (expected)', marks: '5', q: 'Explain the evo"
+     },
+     {
+      "shape": "card data",
+      "text": "repeats: 1, q: 'Explain the evolution of cloud computing from Mainframe to Cloud.', occ: [ { year: '2025 (expected)', marks: '5', q: 'Explain the evolution of cloud computing from "
+     },
+     {
+      "shape": "card data",
+      "text": "c: [ { year: '2025 (expected)', marks: '5', q: 'Explain the evolution of cloud computing from Mainframe to Cloud.' } ], answer: ` Model answer &mdash; 5 marks The marks are in the "
+     }
+    ],
+    "count": 24
+   },
+   {
+    "number": "",
+    "title": "Exam-facing summary",
+    "file": "ch6.js",
+    "hits": [
+     {
+      "shape": "card data",
+      "text": ". Sudden social-media popularity is the popularity-driven method\\'s case.' } ], past: [ { year: '2025 (expected)', marks: '8', repeats: 1, q: 'Explain the Cloud Reference Architect"
+     },
+     {
+      "shape": "card data",
+      "text": "'2025 (expected)', marks: '8', repeats: 1, q: 'Explain the Cloud Reference Architecture with a suitable diagram.', occ: [ { year: '2025 (expected)', marks: '8', q: 'Explain the Clo"
+     },
+     {
+      "shape": "card data",
+      "text": "repeats: 1, q: 'Explain the Cloud Reference Architecture with a suitable diagram.', occ: [ { year: '2025 (expected)', marks: '8', q: 'Explain the Cloud Reference Architecture with "
+     },
+     {
+      "shape": "card data",
+      "text": "c: [ { year: '2025 (expected)', marks: '8', q: 'Explain the Cloud Reference Architecture with a suitable diagram.' } ], answer: ` Model answer &mdash; 8 marks The reference archite"
+     }
+    ],
+    "count": 17
+   },
+   {
+    "number": "",
+    "title": "Extra slides from the reference deck, not on the syllabu",
+    "file": "ch7.js",
+    "hits": [
+     {
+      "shape": "card data",
+      "text": "own administration; the managed service takes over the operational work.' } ], past: [ { year: '2025 (expected)', marks: '5', repeats: 1, q: 'Differentiate between Object Storage a"
+     },
+     {
+      "shape": "card data",
+      "text": "xpected)', marks: '5', repeats: 1, q: 'Differentiate between Object Storage and Block Storage in cloud computing.', occ: [ { year: '2025 (expected)', marks: '5', q: 'Differentiate "
+     },
+     {
+      "shape": "card data",
+      "text": ": 1, q: 'Differentiate between Object Storage and Block Storage in cloud computing.', occ: [ { year: '2025 (expected)', marks: '5', q: 'Differentiate between Object Storage and Blo"
+     },
+     {
+      "shape": "card data",
+      "text": "{ year: '2025 (expected)', marks: '5', q: 'Differentiate between Object Storage and Block Storage in cloud computing.' } ], answer: ` Model answer &mdash; 5 marks These are the two"
+     }
+    ],
+    "count": 4
+   },
+   {
+    "number": "",
+    "title": "Exam-facing summary",
+    "file": "ch8.js",
+    "hits": [
+     {
+      "shape": "card data",
+      "text": "category producing a breach, and why the categories overlap in practice.' } ], past: [ { year: '2025 (expected)', marks: '6', repeats: 1, q: 'Discuss Data Privacy concerns in cloud"
+     },
+     {
+      "shape": "card data",
+      "text": "{ year: '2025 (expected)', marks: '6', repeats: 1, q: 'Discuss Data Privacy concerns in cloud computing.', occ: [ { year: '2025 (expected)', marks: '6', q: 'Discuss Data Privacy co"
+     },
+     {
+      "shape": "card data",
+      "text": "marks: '6', repeats: 1, q: 'Discuss Data Privacy concerns in cloud computing.', occ: [ { year: '2025 (expected)', marks: '6', q: 'Discuss Data Privacy concerns in cloud computing.'"
+     },
+     {
+      "shape": "card data",
+      "text": "ting.', occ: [ { year: '2025 (expected)', marks: '6', q: 'Discuss Data Privacy concerns in cloud computing.' } ], answer: ` Model answer &mdash; 6 marks Privacy is the subset of se"
+     }
+    ],
+    "count": 20
+   },
+   {
+    "number": "",
+    "title": "Exam-facing summary",
+    "file": "ch9.js",
+    "hits": [
+     {
+      "shape": "card data",
+      "text": "edge servers replicating web pages — but they are not a named sub-topic.' } ], past: [ { year: '2025 (expected)', marks: '5', repeats: 1, q: 'What is Kubernetes? Explain its role i"
+     },
+     {
+      "shape": "card data",
+      "text": ": '2025 (expected)', marks: '5', repeats: 1, q: 'What is Kubernetes? Explain its role in container orchestration.', occ: [ { year: '2025 (expected)', marks: '5', q: 'What is Kubern"
+     },
+     {
+      "shape": "card data",
+      "text": "repeats: 1, q: 'What is Kubernetes? Explain its role in container orchestration.', occ: [ { year: '2025 (expected)', marks: '5', q: 'What is Kubernetes? Explain its role in contain"
+     },
+     {
+      "shape": "card data",
+      "text": "cc: [ { year: '2025 (expected)', marks: '5', q: 'What is Kubernetes? Explain its role in container orchestration.' } ], answer: ` Model answer &mdash; 5 marks Kubernetes is an open"
+     }
+    ],
+    "count": 20
+   }
+  ]
+ }
+}

@@ -1,0 +1,572 @@
+{
+  "_comment": [
+    "The official syllabus of both courses, extracted by",
+    "tools/extract_syllabus.py - do not hand-edit. Every unit carries the",
+    "source file and the page it was read from, because this file is the",
+    "authority the site's scope is measured against: a topic that is not",
+    "here is not examinable, and a topic here that the site does not teach",
+    "is a gap. The two checks that keep that true are in the same tool:",
+    "the marks must sum to the paper total and the hours to the schedule."
+  ],
+  "courses": {
+    "dcc": {
+      "code": "BCE7024",
+      "title": "Distributed & Cloud Computing",
+      "source": "_source/dcc/syllabus_distbd_cloudcomptng.txt (OCR of syllabus_Distbd_CloudComptng.pdf)",
+      "marks_total": 60,
+      "hours_total": 45,
+      "units": [
+        {
+          "n": 1,
+          "title": "Introduction to Distributed Systems",
+          "hours": 4,
+          "topics": [
+            {
+              "n": "1.1",
+              "t": "Definition and characteristics"
+            },
+            {
+              "n": "1.2",
+              "t": "Goals of distributed systems"
+            },
+            {
+              "n": "1.3",
+              "t": "Examples: Google File System, Hadoop, BitTorrent, etc"
+            },
+            {
+              "n": "1.4",
+              "t": "Models: Client-server, Peer-to-peer, Multitier"
+            }
+          ],
+          "source": "syllabus_distbd_cloudcomptng.txt",
+          "page": 1,
+          "marks": 6
+        },
+        {
+          "n": 2,
+          "title": "Communication in Distributed Systems",
+          "hours": 7,
+          "topics": [
+            {
+              "n": "2.1",
+              "t": "Remote Procedure Calls (RPC)"
+            },
+            {
+              "n": "2.2",
+              "t": "Remote Method Invocation (RMI)"
+            },
+            {
+              "n": "2.3",
+              "t": "Message Passing and Serialization"
+            },
+            {
+              "n": "2.4",
+              "t": "Sockets and Web services (REST & SOAP)"
+            }
+          ],
+          "source": "syllabus_distbd_cloudcomptng.txt",
+          "page": 1,
+          "marks": 10
+        },
+        {
+          "n": 3,
+          "title": "Synchronization and Coordination",
+          "hours": 5,
+          "topics": [
+            {
+              "n": "3.1",
+              "t": "Clock Synchronization: Cristian's Algorithm, NTP"
+            },
+            {
+              "n": "3.2",
+              "t": "Logical Clocks: Lamport's and Vector Clocks"
+            },
+            {
+              "n": "3.3",
+              "t": "Mutual Exclusion Algorithms (Ricart-Agrawala, Token Ring)"
+            },
+            {
+              "n": "3.4",
+              "t": "Election Algorithms (Bully, Ring)"
+            }
+          ],
+          "source": "syllabus_distbd_cloudcomptng.txt",
+          "page": 1,
+          "marks": 6
+        },
+        {
+          "n": 4,
+          "title": "Distributed File Systems and Middleware",
+          "hours": 5,
+          "topics": [
+            {
+              "n": "4.1",
+              "t": "DFS concepts: Transparency, Naming, Replication, Consistency"
+            },
+            {
+              "n": "4.2",
+              "t": "NFS, HDFS"
+            },
+            {
+              "n": "4.3",
+              "t": "Middleware: CORBA, Java RMI, Messaging MQTT, AMQP"
+            }
+          ],
+          "source": "syllabus_distbd_cloudcomptng.txt",
+          "page": 2,
+          "marks": 6
+        },
+        {
+          "n": 5,
+          "title": "Introduction to Cloud Computing",
+          "hours": 4,
+          "topics": [
+            {
+              "n": "5.1",
+              "t": "History and evolution of cloud"
+            },
+            {
+              "n": "5.2",
+              "t": "Characteristics and benefits"
+            },
+            {
+              "n": "5.3",
+              "t": "Cloud service models: IaaS, PaaS, SaaS"
+            },
+            {
+              "n": "5.4",
+              "t": "Cloud deployment models: Public, Private, Hybrid, Community"
+            }
+          ],
+          "source": "syllabus_distbd_cloudcomptng.txt",
+          "page": 2,
+          "marks": 6
+        },
+        {
+          "n": 6,
+          "title": "Virtualization and Cloud Architecture",
+          "hours": 6,
+          "topics": [
+            {
+              "n": "6.1",
+              "t": "Basics of virtualization: Hypervisors (Type I & II)"
+            },
+            {
+              "n": "6.2",
+              "t": "Virtual Machines vs Containers"
+            },
+            {
+              "n": "6.3",
+              "t": "Cloud reference architecture"
+            },
+            {
+              "n": "6.4",
+              "t": "Resource management and provisioning"
+            }
+          ],
+          "source": "syllabus_distbd_cloudcomptng.txt",
+          "page": 2,
+          "marks": 8
+        },
+        {
+          "n": 7,
+          "title": "Cloud Platforms and Technologies",
+          "hours": 4,
+          "topics": [
+            {
+              "n": "7.1",
+              "t": "Overview of AWS, Microsoft Azure, and Google Cloud",
+              "inferred": "the scan dropped the unit digit; the number labels that survive continue the sequence inside this unit"
+            },
+            {
+              "n": "7.2",
+              "t": "Storage services (S3, Blob, etc.)",
+              "inferred": "the scan dropped the unit digit; the number labels that survive continue the sequence inside this unit"
+            },
+            {
+              "n": "7.3",
+              "t": "Compute services (EC2, Lambda, GCE)"
+            }
+          ],
+          "source": "syllabus_distbd_cloudcomptng.txt",
+          "page": 2,
+          "marks": 6
+        },
+        {
+          "n": 8,
+          "title": "Security and Challenges in Cloud",
+          "hours": 6,
+          "topics": [
+            {
+              "n": "8.1",
+              "t": "Data security, privacy, and compliance"
+            },
+            {
+              "n": "8.2",
+              "t": "Identity and access management (IAM)"
+            },
+            {
+              "n": "8.3",
+              "t": "Service Level Agreements (SLA)"
+            },
+            {
+              "n": "8.4",
+              "t": "Cloud vulnerabilities and risk mitigation"
+            }
+          ],
+          "source": "syllabus_distbd_cloudcomptng.txt",
+          "page": 2,
+          "marks": 8
+        },
+        {
+          "n": 9,
+          "title": "Emerging Trends in Distributed and Cloud Computing",
+          "hours": 4,
+          "topics": [
+            {
+              "n": "9.1",
+              "t": "Edge and Fog Computing",
+              "inferred": "the scan dropped this topic's number; counted in order inside its unit"
+            },
+            {
+              "n": "9.2",
+              "t": "Serverless Architecture",
+              "inferred": "the scan dropped this topic's number; counted in order inside its unit"
+            },
+            {
+              "n": "9.3",
+              "t": "Kubernetes and Docker",
+              "inferred": "the scan dropped this topic's number; counted in order inside its unit"
+            },
+            {
+              "n": "9.4",
+              "t": "Cloud-native and Microservices"
+            }
+          ],
+          "source": "syllabus_distbd_cloudcomptng.txt",
+          "page": 2,
+          "marks": 4
+        }
+      ],
+      "past_paper_2025": [
+        "Define a distributed system",
+        "What is the difference between IaaS and PaaS?",
+        "List any two clock synchronization algorithms used in distributed systems",
+        "What is virtualization in cloud computing?",
+        "Explain the goals of distributed systems",
+        "Differentiate between client-server and peer-to-peer architectures with examples",
+        "Describe Remote Procedure Call (RPC) with its working mechanism",
+        "Explain Lamport s logical clock with a suitable example",
+        "Describe the concept of consistency in Distributed File Systems (DFS)",
+        "What are the key features and benefits of cloud computing?",
+        "Explain the difference between a hypervisor Type I and Type II",
+        "Briefly describe two challenges in ensuring security in cloud environments",
+        "Compare and contrast the public, private, hybrid, and community cloud deployment models",
+        "Describe in detail the working and applications of the Bully election algorithm",
+        "Discuss cloud-native architecture. How do microservices, containers, and orchestration tools",
+        "Explain the architecture of HDFS. Discuss how it ensures fault tolerance and scalability"
+      ]
+    },
+    "sim": {
+      "code": "BCE7026",
+      "title": "Simulation and Modeling",
+      "source": "7BE-Computer-First-semester-Course-Structure-Syllabus-with-Electives.pdf pages 12-14",
+      "marks_total": 60,
+      "units": [
+        {
+          "n": 1,
+          "title": "Concept of simulation",
+          "hours": 6,
+          "topics": [
+            {
+              "n": "1.1",
+              "t": "Introduction"
+            },
+            {
+              "n": "1.2",
+              "t": "The system"
+            },
+            {
+              "n": "1.3",
+              "t": "Continuous and discrete systems"
+            },
+            {
+              "n": "1.4",
+              "t": "System simulation"
+            },
+            {
+              "n": "1.5",
+              "t": "Real time simulation"
+            },
+            {
+              "n": "1.6",
+              "t": "When to use simulation"
+            },
+            {
+              "n": "1.7",
+              "t": "Types of simulation model"
+            },
+            {
+              "n": "1.8",
+              "t": "Steps in simulation study"
+            },
+            {
+              "n": "1.9",
+              "t": "Phases of simulation study"
+            },
+            {
+              "n": "1.1",
+              "t": "0 Advantages of simulation"
+            },
+            {
+              "n": "1.1",
+              "t": "1 Limitations of the simulation Technique"
+            },
+            {
+              "n": "1.1",
+              "t": "2 Areas of applications"
+            }
+          ],
+          "source": "sim_syllabus.txt",
+          "page": 12
+        },
+        {
+          "n": 2,
+          "title": "Monte Carlo Method",
+          "hours": 4,
+          "topics": [
+            {
+              "n": "2.1",
+              "t": "Monte Carlo Method"
+            },
+            {
+              "n": "2.2",
+              "t": "Normally distribution random number"
+            },
+            {
+              "n": "2.3",
+              "t": "Monte Carlo Method V/S stochastic Simulation"
+            }
+          ],
+          "source": "sim_syllabus.txt",
+          "page": 12
+        },
+        {
+          "n": 3,
+          "title": "Simulation of Continuous systems",
+          "hours": 5,
+          "topics": [
+            {
+              "n": "3.1",
+              "t": "A pure Pursuit Problem"
+            },
+            {
+              "n": "3.2",
+              "t": "Continuous system models"
+            },
+            {
+              "n": "3.3",
+              "t": "Analog Computer"
+            },
+            {
+              "n": "3.4",
+              "t": "Analog Methods"
+            },
+            {
+              "n": "3.5",
+              "t": "Hybrid Simulation"
+            },
+            {
+              "n": "3.6",
+              "t": "Feedback Systems"
+            },
+            {
+              "n": "3.7",
+              "t": "Differential and Partial Differential Equations and its Engineering Purpose"
+            }
+          ],
+          "source": "sim_syllabus.txt",
+          "page": 12
+        },
+        {
+          "n": 4,
+          "title": "Queuing System",
+          "hours": 5,
+          "topics": [
+            {
+              "n": "4.1",
+              "t": "Elements of Queuing System"
+            },
+            {
+              "n": "4.2",
+              "t": "Characteristics of Queuing System"
+            },
+            {
+              "n": "4.3",
+              "t": "Types of Queuing System"
+            },
+            {
+              "n": "4.4",
+              "t": "Queuing Notation"
+            },
+            {
+              "n": "4.5",
+              "t": "Measurement of System Performance"
+            },
+            {
+              "n": "4.6",
+              "t": "Application of Queuing System"
+            },
+            {
+              "n": "4.7",
+              "t": "Markov Chain"
+            }
+          ],
+          "source": "sim_syllabus.txt",
+          "page": 13
+        },
+        {
+          "n": 5,
+          "title": "Verification & Validation of Simulation Models",
+          "hours": 5,
+          "topics": [
+            {
+              "n": "5.1",
+              "t": "Model building"
+            },
+            {
+              "n": "5.2",
+              "t": "Verification & Validation"
+            },
+            {
+              "n": "5.3",
+              "t": "Verification of Simulation Models"
+            },
+            {
+              "n": "5.4",
+              "t": "Calibration & Validation of Models"
+            }
+          ],
+          "source": "sim_syllabus.txt",
+          "page": 13
+        },
+        {
+          "n": 6,
+          "title": "Random Number",
+          "hours": 8,
+          "topics": [
+            {
+              "n": "6.1",
+              "t": "Random Numbers"
+            },
+            {
+              "n": "6.2",
+              "t": "Random Number Tables"
+            },
+            {
+              "n": "6.3",
+              "t": "Pseudo Random Numbers"
+            },
+            {
+              "n": "6.4",
+              "t": "Generation of Random Numbers"
+            },
+            {
+              "n": "6.5",
+              "t": "Mid square Random Number generator"
+            },
+            {
+              "n": "6.6",
+              "t": "Qualities of an efficient Random Number generator"
+            },
+            {
+              "n": "6.7",
+              "t": "Testing Numbers for Randomness"
+            },
+            {
+              "n": "6.8",
+              "t": "Uniformity Test"
+            },
+            {
+              "n": "6.9",
+              "t": "Chi-square Test"
+            },
+            {
+              "n": "6.1",
+              "t": "0 Testing for auto correlation"
+            },
+            {
+              "n": "6.1",
+              "t": "1 Poker Test"
+            }
+          ],
+          "source": "sim_syllabus.txt",
+          "page": 13
+        },
+        {
+          "n": 7,
+          "title": "Analysis of simulation Output",
+          "hours": 5,
+          "topics": [
+            {
+              "n": "7.1",
+              "t": "Estimation Methods"
+            },
+            {
+              "n": "7.2",
+              "t": "Simulation run statistics"
+            },
+            {
+              "n": "7.3",
+              "t": "Replication of runs"
+            },
+            {
+              "n": "7.4",
+              "t": "Elimination of internal bias"
+            }
+          ],
+          "source": "sim_syllabus.txt",
+          "page": 13
+        },
+        {
+          "n": 8,
+          "title": "Simulation Language",
+          "hours": 7,
+          "topics": [
+            {
+              "n": "8.1",
+              "t": "Basic concept of Simulation tool"
+            },
+            {
+              "n": "8.2",
+              "t": "CSSLs, GPSS"
+            },
+            {
+              "n": "8.3",
+              "t": "Discrete systems modeling and simulation"
+            },
+            {
+              "n": "8.4",
+              "t": "Continuous systems modeling and simulation"
+            },
+            {
+              "n": "8.5",
+              "t": "Structural, data and control statements hybrid simulation"
+            },
+            {
+              "n": "8.6",
+              "t": "Feedback systems: typical application"
+            },
+            {
+              "n": "8.7",
+              "t": "Laboratories",
+              "inferred": "the scan dropped this topic's number; counted in order inside its unit"
+            }
+          ],
+          "source": "sim_syllabus.txt",
+          "page": 13
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+source: Lab_Manual_all\Lab_5_6_Cloud_Virtlzn.pdf
+method: pdf
+sha256: 65ab48b4041237d28fb040ee5cbe5eadc527e0fe673890b6dceafacbbfebd90d
+pages:  3
+ocr:    0 page(s)
+rotation: 0
+dpi:    -
+----------------------------------------------------------------------
+===== page 1 =====
+Lab 5 - Install Virtual Machine and configuring Linux on it
+(Type 2 virtualization).
+Theory
+Virtualization can increase IT agility, flexibility and scalability while
+creating significant cost savings. Greater workload mobility, increased
+performance and availability of resources, and automated operations –
+they’re all benefits of virtualization that make IT simpler to manage and
+less costly to own and operate.
+Procedure
+Steps to install and configure VMWare:
+1. Download VMWare workstation trial version setup file from here
+and make sure the latest version is being downloaded and
+installed.
+2. Install VMWare on your machine. Setup is simple and requires to
+click Next button couple of times.
+3. After installation open VMWare workstation by using either start
+menu or shortcut created on the desktop.
+4. Click on ―Create a New Virtual Machine‖.
+5. With default ―Typical‖ selected click on Next button.
+6. Specify the path of the operating system set up file.
+7. In the Next step you need to specify a Key or a serial number of
+operating system. If you are using trial version then that part can
+be
+skipped.
+8. Enter the name for the virtual machine and specify a path to the
+directory where you want to create your virtual machine. It is
+recommended that the drive you‘re selecting to install virtual
+machine should have sufficient space.
+9. Specify an amount of disk space you want to allocate for a virtual
+machine. Allocate disk space according to the size of software you
+are going to install on the virtual machine.
+10. On the next screen it will show configuration you selected for a
+virtual machine.
+25 | Page
+
+
+===== page 2 =====
+11. It will allocate Hardware according to the default settings but
+you can change it by using Customize Hardware button in the
+above screen. You can specify what amount of RAM, a processor
+has to be allocated for a virtual machine. Do not allocate complete
+RAM or complete Processor for a virtual machine. Also, do not
+allocate very less RAM or processor. Leave default settings or
+allocate in such way that your application should be able to run
+on the virtual machine. Else it will result in a slow virtual
+machine.
+12. Click on the Finish button to create the virtual machine at the
+specified location and with specified resources.
+26 | Page
+
+
+===== page 3 =====
+Lab 6 - Run a Simple C Program and Java Program in Virtual
+Machine using Type2 Virtualization.
+Theory
+As the VMWare can be installed and utilized as an entirely separate
+computing unit, different programs can be run on the virtual machine as
+if it was a real computer. In this lab, a simple program in C and java
+program is executed in the Guest OS of the virtual machine thus solidifying
+the usability of virtual machine.
+Procedure for C
+1. Create a .C extension file and write program
+2. Install gcc compiler
+3. sudo apt-get install libncurses5-dev libncursesw5-dev for
+curses.h (use curses.h instead of conio.h)
+4. Compile the c program using gcc pathtofile -o filename
+5. Execute ./filename
+Procedure for Java
+6. Create a .java extension file and write program
+7. Install java using sudo apt install openjdk-8-jdk
+8. export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/
+and source the .bashrc
+9. Compile the java program using javac filename.java
+10. Execute using java filename
+27 | Page

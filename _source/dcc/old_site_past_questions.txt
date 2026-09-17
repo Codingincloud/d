@@ -1,0 +1,65 @@
+Past questions from dcc/dcc-website_v2/ (the site that preceded this one).
+
+Written by tools/import_old_site_past.py. The paper labels are the OLD
+SITE'S claims, not the syllabus's: the syllabus prints only the Model
+Question 2025. Labels naming a paper that was actually sat are marked
+[paper]; labels naming a guess at one are marked [predicted]. Only the
+person who sat the exam can settle the difference.
+
+cards: 33   paper=17   predicted=16
+
+==============================================================================
+
+### 2025 Model   [paper]   9 question(s)
+
+ch1    2 marks  Define a distributed system. [2 Marks]
+ch1    4 marks  Explain the goals of distributed systems. [4 Marks]
+ch1    4 marks  Differentiate between client-server and peer-to-peer architectures with examples. [4 Marks]
+ch2    4 marks  Describe Remote Procedure Call (RPC) with its working mechanism. [4 Marks]
+ch3    2 marks  List any two clock synchronization algorithms used in distributed systems. [2 Marks]
+ch3    4 marks  Explain Lamport's logical clock with a suitable example. [4 Marks]
+ch3    8 marks  Describe in detail the working and applications of the Bully election algorithm. [8 Marks]
+ch4    4 marks  Describe the concept of consistency in Distributed File Systems (DFS). [4 Marks]
+ch4    8 marks  Explain the architecture of HDFS. Discuss how it ensures fault tolerance and scalability. [8 Marks]
+
+### 2025 Final   [paper]   1 question(s)
+
+ch1    4 marks  Explain the characteristics and goals of a distributed system. [4 Marks]
+
+### 2025 Final Exam   [paper]   7 question(s)
+
+ch2    2 marks  Define RPC (Remote Procedure Call) and RMI (Remote Method Invocation). [2 Marks]
+ch3    2 marks  List any two mutual exclusion algorithms. [2 Marks]
+ch3    4 marks  Explain Lamport's logical clock with a simple event diagram. [4 Marks]
+ch3    8 marks  Explain the Bully Election Algorithm with an example and event sequence. [8 Marks]
+ch4    4 marks  Define transparency in DFS and explain naming transparency. [4 Marks]
+ch4    8 marks  Define Middleware. Explain the concepts related to CORBA with its architecture and services in detail. [8 Marks]
+ch4    8 marks  Explain the architecture of HDFS. Discuss how it ensures fault tolerance and scalability. [8 Marks]
+
+### 2025 Exam / Expected   [predicted]   7 question(s)
+
+ch5    8 marks  Explain the NIST definition of cloud computing and its five essential characteristics. [8 Marks]
+ch5    6 marks  Compare IaaS, PaaS, and SaaS with suitable examples. [6 Marks]
+ch5    8 marks  Compare Public, Private, Hybrid, and Community cloud deployment models. [8 Marks]
+ch5    5 marks  Explain the evolution of cloud computing from Mainframe to Cloud. [5 Marks]
+ch6    6 marks  Define Virtualization. Explain the role and types of Hypervisor. [6 Marks]
+ch6    5 marks  Compare Virtual Machines and Containers. [5 Marks]
+ch6    8 marks  Explain the Cloud Reference Architecture with a suitable diagram. [8 Marks]
+
+### Expected   [predicted]   1 question(s)
+
+ch7    5 marks  Differentiate between Object Storage and Block Storage in cloud computing. [5 Marks]
+
+### Teacher Notes / 2025 Expected   [predicted]   4 question(s)
+
+ch8    8 marks  Identify and explain four common cloud security vulnerabilities. [8 Marks]
+ch8    6 marks  Explain Identity and Access Management (IAM) in cloud computing. [6 Marks]
+ch8    6 marks  Discuss Data Privacy concerns in cloud computing. [6 Marks]
+ch8    8 marks  Discuss risk mitigation strategies for securing cloud environments. [8 Marks]
+
+### Expected / 2025 Exam   [predicted]   4 question(s)
+
+ch9    4 marks  Explain Serverless Computing and its advantages. [4 Marks]
+ch9    6 marks  Compare Monolithic and Microservices architectures. [6 Marks]
+ch9    5 marks  Explain Edge Computing and Fog Computing. How do they differ from Cloud Computing? [5 Marks]
+ch9    5 marks  What is Kubernetes? Explain its role in container orchestration. [5 Marks]

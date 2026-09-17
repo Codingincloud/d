@@ -1,0 +1,549 @@
+source: Lecture Notes - all Chapterwise\Chapter 6 - Virtualization and Cloud Architecture\Ch6_Virtlzn_Cloud-Ref-Arch_ResrcProvsnMgmt.pptx
+method: pptx
+sha256: c2756a0607c6a861a23daf69e1e7718214e9bd182e1f7d5d9ca5c8b917a771c6
+pages:  47
+ocr:    47 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+----- slide 1 -----
+Chapter 6-Virtualization and Cloud Architecture
+
+----- slide 2 -----
+Definition
+Virtualization is the ability to run multiple operating systems on a single physical system and share the underlying hardware resources.
+It is the process by which one computer hosts the appearance of many computers.
+Virtualization is used to improve IT throughput and costs by using physical resources as a pool from which virtual resources can be allocated.
+
+----- slide 3 -----
+Virtualization Architecture
+A Virtual machine (VM) is an isolated runtime environment (guest OS and applications) 
+Multiple virtual systems (VMs) can run on a single physical system
+[in the slide picture] Ap plica ti ons Appl icati ons
+ooo
+Virtualization Platform (Xen, KVM, VMware...)
+Physical Box
+
+----- slide 4 -----
+[in the slide picture] Application
+Virtualization
+Storage
+Network
+Server
+Desktop
+Data
+
+----- slide 5 -----
+[in the slide picture] Application Virtualization
+from a server.
+The server stores all personal information and other characteristics of the
+application but can still run on a local workstation through the internet.
+from a separate computer than the one on which the application is installed.
+on a server and deliver the apps to an end user's computer.
+For the user, the experience of the virtualized app is the same as using the installed
+app on a physical machine.
+
+----- slide 6 -----
+[in the slide picture] Network Virtualization
+The ability to run multiple virtual networks with each has a separate control and
+data plan.
+It co-exists together on top of one physical network. It can be managed by
+individual parties that potentially confidential to each other.
+networks—logical switches, routers, firewalls, load balancer, Virtual Private
+Network (VPN), and workload security within days or even in weeks.
+making them operate as single or multiple independent networks called Virtual
+
+----- slide 7 -----
+[in the slide picture] Desktop Virtualization
+data centre.
+It allows the user to access their desktop virtually, from any location by a different
+machine.
+Users who want specific operating systems other than Windows Server will need
+to have a virtual desktop.
+management of software installation, updates, and patches.
+access a desktop from a connected device. It separates the desktop environment
+and its applications from the physical client device used to access it.
+
+----- slide 8 -----
+[in the slide picture] Storage Virtualization
+system.
+The servers aren't aware of exactly where their data is stored, and instead function
+more like worker bees in a hive. It makes managing storage from multiple sources
+to be managed and utilized as a single repository.
+devices into what appears to be a single storage device -
+or pool of available
+storage capacity -- that is managed from a central console.
+The technology relies on software to identify available storage capacity from
+physical devices and to then aggregate that capacity as a pool of storage that can be
+used by traditional architecture servers or in a virtual environment by virtual
+machines
+
+----- slide 9 -----
+[in the slide picture] Server Virtualization
+unique and isolated virtual servers by means of a software application. Each virtual
+server can run its own operating systems independently.
+This is a kind of virtualization in which masking of server resources takes place.
+Here, the central-server(physical server) is divided into multiple different virtual
+servers by changing the identity number, processors. So, each system can operate
+its own operating systems in isolate manner.
+Where each sub-server knows the identity of the central server. It causes an
+increase in the performance and reduces the operating cost by the deployment of
+main server resources into a sub-server resource. It's beneficial in virtual
+migration, reduce energy consumption, reduce infrastructural cost, etc
+
+----- slide 10 -----
+[in the slide picture] Data Virtualization
+This is the kind of virtualization in which the data is collected from various
+sources and managed that at a single place without knowing more about the
+technical information like how data is collected, stored & formatted then arranged
+that data logically so that its virtual view can be accessed by its interested people
+and stakeholders, and users through the various cloud services remotely.
+Many big giant companies are providing their services like Oracle, IBNI, Cdata,
+etc.
+It can be used to performing various kind of tasks such as:
+Data-integration
+Business-integration
+Service-oriented architecture data-services
+Searching organizational data
+
+----- slide 11 -----
+Hypervisor
+A hypervisor, a.k.a. a virtual machine manager/monitor (VMM), or virtualization manager, is a program that allows multiple operating systems to share a single hardware host.  
+Each guest operating system appears to have the host's processor, memory, and other resources all to itself. However, the hypervisor is actually controlling the host processor and resources, allocating what is needed to each operating system in turn and making sure that the guest operating systems (called virtual machines) cannot disrupt each other.
+
+----- slide 12 -----
+[in the slide picture] The hypervisor supports hardware-level virtualization on bare metal devices like
+CPU, memory, disk and network interfaces.
+The hypervisor software sits directly between the physical hardware and its OS.
+This virtualization layer is referred to as either the VN'IN/I or the hypervisor. The
+hypervisor provides hypercalls for the guest OSes and applications.
+TYPE-I Hypervisor:
+The hypervisor runs directly on the underlying host system. It is also known as a
+"Native Hypervisor" or "Bare metal hypervisor". It does not require any base
+server operating system. It has direct access to hardware resources.
+'Hosted Hypervisor". Such kind of hypervisors doesn't run directly over the
+underlying hardware rather they run as an application in a Host system(physical
+machine)
+
+----- slide 13 -----
+Roles of the Hypervisor
+Isolating/Emulating resources
+CPU: Scheduling virtual machines
+Memory: Managing memory
+I/O: Emulating I/O devices
+Networking
+Managing virtual machines
+
+----- slide 14 -----
+[in the slide picture] The Xen Architecture: Xen is an open source hypervisor program developed by
+Cambridge University. Xen is a micro-kernel hypervisor, which separates the
+policy from the mechanism.
+The Xen hypervisor implements all the mechanisms, leaving the policy to be
+handled by Domain O.
+Xen does not include any device drivers natively. It just provides a mechanism by
+which a guest OS can have direct access to the physical devices.
+As a result, the size of the Xen hypervisor is kept rather small. Xen provides a
+virtual environment located between the hardware and the OS.
+The core components of a Xen system are the hypervisor, kernel, and applications
+
+----- slide 15 -----
+[in the slide picture] Control, 1/0 (Domain O)
+Xen Architecture
+Guest domain
+XEN (Hypervisor)
+Hardware devices
+
+----- slide 16 -----
+[in the slide picture] The guest OS, which has control ability, is called Domain 0, and the others are
+called Domain U.
+Domain 0 is a privileged guest OS of Xen. It is first loaded when Xen boots
+without any file system drivers being available.
+Domain 0 is designed to access hardware directly and manage devices. Therefore,
+one of the responsibilities of Domain 0 is to allocate and map hardware resources
+for the guest domains (the Domain U domains).
+
+----- slide 17 -----
+[in the slide picture] CPU Virtualization
+A V Nil is a duplicate of an existing computer system in which a majority of the
+V Nl instructions are executed on the host processor in native mode.
+Thus, unprivileged instructions of V IV'1s run directly on the host machine for
+higher efficiency.
+The critical instructions are divided into three categories: privileged instructions,
+control-sensitive instructions, and behavior-sensitive instructions.
+Privileged instructions execute in a privileged mode and will be trapped if
+executed outside this mode.
+Control-sensitive instructions attempt to change the configuration of resources
+used.
+Behavior-sensitive instructions have different behaviors depending on the
+configuration of resources, including the load and store operations over the
+virtual memory.
+
+----- slide 18 -----
+[in the slide picture] A CPU architecture is virtualizable if it supports the ability to run the V Nd's
+privileged and unprivileged instructions in the CPU's user mode while the V MN'I
+runs in supervisor mode.
+When the privileged instructions including control- and behavior-sensitive
+instructions of a V Nl are executed, they are trapped in the VNIIV'I.
+In this case, the VIV'INI acts as a unified mediator for hardware access from
+different VN/Is to guarantee the correctness and stability of the whole system.
+However, not all CPU architectures are virtualizable. RISC CPU architectures
+can be naturally virtualized because all control- and behavior-sensitive
+instructions are privileged instructions.
+On the contrary, x86 CPU architectures are not primarily designed to support
+virtualization.
+
+----- slide 19 -----
+[in the slide picture] Mennory Virtualization
+Virtual memory virtualization is similar to the virtual memory support provided
+by modern operating systems.
+In a traditional execution environment, the operating system maintains mappings
+of virtual memory to machine memory using page tables, which is a one-stage
+mapping from virtual memory to machine memory.
+All modern x86 CPUs include a memory management unit (IV'INIU) and
+a translation lookaside buffer (T LB) to optimize virtual memory performance.
+However, in a virtual execution environment, virtual memory virtualization
+involves sharing the physical system memory in RANI and dynamically allocating
+it to the physical memory of the V N/ls.
+
+----- slide 20 -----
+[in the slide picture] A two-stage mapping process should be maintained by the guest OS and the
+VIV/INI, respectively: virtual memory to physical memory and physical memory to
+machine memory.
+The guest OS continues to control the mapping of virtual addresses to the physical
+memory addresses of V Nfs.
+The V IV'IIV/I is responsible for mapping the guest physical memory to the actual
+
+----- slide 21 -----
+[in the slide picture] Two-level memory mapping procedure
+VMI
+Processl
+Process2
+Process 1
+VM2
+Virtual VA
+Physical PA
+Machine MA
+
+----- slide 22 -----
+[in the slide picture] 1/0 Virtualization
+devices and the shared physical hardware.
+virtualization, and direct 1/0.
+Full device approach emulates well-known, real-world devices. All the functions of
+a device or bus infrastructure, such as device enumeration, identification, interrupts,
+and DNIA, are replicated in software.
+This software is located in the VMN'I and acts as a virtual device.
+The 1/0 access requests of the guest OS are trapped in the VIVIN'I which interacts
+with the 1/0 devices.
+
+----- slide 23 -----
+[in the slide picture] Guest OS
+Device driver
+emulation
+VO Stack
+1/0 Virtualization
+• Virtual device
+remaps guest and real 1/0 addresses
+multiplexes and drives the physical device
+1/0 features. e.g., COW disks
+• Real device
+The full device enmulation approach
+
+----- slide 24 -----
+[in the slide picture] Direct 1/0 virtualization lets the VIVI access devices directly.
+It can achieve close-to-native performance without high CPU costs. However,
+current direct 1/0 virtualization implementations focus on networking for
+mainframes.
+There are a lot of challenges for commodity hardware devices.
+For example, when a physical device is reclaimed (required by workload migration)
+for later reassign-ment, it may have been set to an arbitrary state (e.g., DMA to
+some arbitrary memory locations) that can function incorrectly or even crash the
+whole system.
+Since software-based 1/0 virtualization requires a very high overhead of device
+emulation, hardware-assisted 1/0 virtualization is critical.
+
+----- slide 25 -----
+Benefits of Virtualization
+Sharing of resources helps cost reduction
+Isolation: Virtual machines are isolated from each other as if they are physically separated
+Encapsulation: Virtual machines encapsulate a complete computing environment
+Hardware Independence: Virtual machines run independently of underlying hardware
+Portability: Virtual machines can be migrated between different hosts.
+
+----- slide 26 -----
+Hypervisor Vulnerabilities
+Malicious software can run on the same server:
+Attack hypervisor
+Access/Obstruct other VMs
+26
+Physical Hardware
+Hypervisor
+OS
+OS
+Apps
+Apps
+Guest VM1
+Guest VM2
+servers
+[in the slide picture] Guest VMI
+Hypek.cusor
+
+----- slide 27 -----
+NoHype*
+NoHype removes the hypervisor
+There’s nothing to attack
+Complete systems solution
+Still retains the needs of a virtualized cloud infrastructure
+27
+Physical Hardware
+OS
+OS
+Apps
+Apps
+Guest VM1
+Guest VM2
+No hypervisor
+*NoHype: Virtualized Cloud Infrastructure without the Virtualization. E. Keller, J. Szefer, J. Rexford, R. Lee. ISCA 2010.
+[in the slide picture] Guest VMI
+Guest vrv12
+
+----- slide 28 -----
+[in the slide picture] VIRTUAL MACHINES (VMS) VS CONTAINERS
+
+----- slide 29 -----
+[in the slide picture] Architecture: Containers vs virtual machines
+@ OAP
+OBins/Lib O Bins/Lib
+8 Guest OS
+Hypervisor
+Infrastructure
+Container Engine
+Operating System
+
+----- slide 30 -----
+[in the slide picture] What is a virtual machine?
+A virtual machine (VM) is best described as a software program that emulates the functionality of a
+physical hardware or computing system. It runs on top of an emulating software, called the
+hypervisor, which replicates the functionality of the underlying physical hardware resources with a
+software environment. These resources may be referred to as the host machine, while the VM that
+runs on the hypervisor is often called a guest machine.
+The virtual machine contains all necessary elements to run the apps, including:
+e storage
+• Memory
+• Networking
+• Hardware functionality available as a virtualized system
+The VM may also contain the necessary system binaries and libraries to run the apps. The actual
+operating system (OS), however, is managed and executed using the hypervisor.
+
+----- slide 31 -----
+[in the slide picture] Idea: Create a small layer between hardware and operating system that performs
+this abstraction called the hypervisor.
+Libs
+Apps
+Guest O/S
+Virtual Machine
+
+----- slide 32 -----
+[in the slide picture] Why Virtual Machines?
+Pros:
+Separation of virtual machines in terms of computation, logic, and storage
+Capable of running VMS with different guest OSes
+Hypervisor has greater control over the amount of system resources each VM
+is allocated.
+Full isolation security
+Cons:
+1. Larger size, less portable
+
+----- slide 33 -----
+[in the slide picture] What is a container?
+Containerization creates abstraction at an OS level that allows individual, modular, and distinct
+functionality of the app to run independently. As a result, several isolated workloads—the
+containers—can dynamically operate using the same physical resources.
+A less technical definition of containers might be: a unit of software that is lightweight but still
+bundles the code, its dependencies, and the configuration altogether into a single image. Containers
+can run:
+• On top bare metal servers
+• On top hypervisors
+• In cloud infrastructure
+Containers share all necessary capabilities with the VM to operate as an isolated OS environment for
+a modular app functionality with one key difference. Using a containerization engine, such as the
+Docker Engine, containers create several isolated OS environments within the same host system
+kernel, which can be shared with other containers dedicated to run different functions of the app.
+Only bins, libraries, and other runtime components are developed or executed separately for each
+container, which makes them more resource efficient as compared to VMs.
+
+----- slide 34 -----
+[in the slide picture] Idea: Virtualize the layers above the host O/ S.
+Libraries
+Apps
+H a rdvva re
+Exannple:
+Ubuntu
+Docker
+Co nta in e r
+Engine
+CentOS
+Node
+Se rve r
+
+----- slide 35 -----
+Why Containers?
+[in the slide picture] Pros:
+1. Compartmentalization
+2. Portability - size, ease of defining a container, versioning
+3. Great Ecosystem
+4. Uses host kernel for allocation of resources
+Cons:
+All containers must run atop the same kernel
+Less secure due to sharing of underlying OS (e.g. Meltdown)
+Less flexibility w.r.t hardware requirements
+
+----- slide 36 -----
+Cloud Reference Architecture
+[in the slide picture] Cloud Provider
+Consumer
+Auditor
+Security
+Privacy
+Impact Audit
+Performance
+Service Orchestration
+Service Layer
+SaaS
+PaaS
+IaaS
+Resource Abstraction and
+Control Layer
+Physical Resource Layer
+Hardware
+Facility
+Cloud Service
+Management
+Business
+Support
+Provisioning/
+Configuration
+Portability/
+Interoperability
+Broker
+Intermediation
+Aggregation
+Arbitrage
+
+----- slide 37 -----
+[in the slide picture] Cloud
+Service
+Auditor
+Broker
+Consumer
+Developer
+Provider
+Terminology of the Reference Architecture (NIST Refernece Model)
+with the intent to express an opinion thereon.
+(2) Audits are performed to verify conformance to standards through review of
+objective evidence.
+(1)
+An entity as the principal stakeholder that maintains a business relationship
+parties.
+
+----- slide 38 -----
+Resource Management and Provisioning
+
+----- slide 39 -----
+Resource Provisioning
+[in the slide picture] Provisioning of Compute Resources (VMs)
+Providers supply cloud services by signing SLAs with end users.
+The SLAs must commit sufficient resources such as CPU, memory, and bandwidth that the user can use for a
+preset period.
+Underprovisioning of resources will lead to broken SLAs and penalties.
+Overprovisioning of resources will lead to resource underutilization, and consequently, a decrease in revenue
+for the provider.
+Deploying an autonomous system to efficiently provision resources to users is a challenging problem.
+The difficulty comes from the unpredictability of consumer demand, software and hardware failures,
+heterogeneity of services (User may take Naas,Queue Service, SaaS) , power management (heat dissipation from server), and
+conflicts in signed SLAs between consumers and service providers.
+
+----- slide 40 -----
+[in the slide picture] Efficient VM provisioning depends on the cloud architecture and management of cloud infrastructures.
+In a virtualized cluster of servers, this demands efficient installation of VMs, live VM migration, and fast
+recovery from failures.
+To deploy VMs, users treat them as physical hosts with customized operating systems for specific applications.
+For example, Amazon's EC2 (IaaS service from Amazon) uses Xen as the virtual machine monitor (VMM). The same
+VMM is used in IBM's Blue Cloud.
+In the EC2 platform, some predefined VM templates are also provided. Users can choose different kinds of
+VMS from the templates.
+IBM's Blue Cloud does not provide any VM templates. In general, any type of VM can run on top of Xen.
+Microsoft also applies virtualization in its Azure cloud platform. The provider should offer resource-economic
+services.
+
+----- slide 41 -----
+[in the slide picture] Resource Provisioning Methods
+Demand-Driven method
+Popularity-Driven method
+
+----- slide 42 -----
+[in the slide picture] Demand-Driven method
+This method adds or removes computing instances based on the current utilization level of the allocated resources.
+using one Xeon processor more than 60 percent of the time for an extended period.
+In general, when a resource has surpassed a threshold for a certain amount of time, the scheme increases that resource
+based on demand. When a resource is below a threshold for a certain amount of time, that resource could be decreased
+accordingly
+• (Defines a range for CPU utilization say for eg: 30% to 70%. if CPU utilization below 30% decreases the CPU capacity. If CPU utilization above 70% increases the CPU capacity)
+Amazon implements such an auto-scale feature in its EC2 platform.
+This method is easy to implement.
+Disadvantage: The scheme does not work out right if the workload changes abruptly.
+
+----- slide 43 -----
+[in the slide picture] Event Driven method
+This scheme adds or removes machine instances based on a specific time event.
+The scheme works better for seasonal or predicted events such as Christmastime in the West and the Lunar
+New Year in the East.
+During these events, the number of users grows before the event period and then decreases during the event
+This scheme anticipates peak traffic before it happens.
+The method results in a minimal loss of QoS, if the event is predicted correctly. Otherwise, wasted resources
+are even greater due to events that do not follow a fixed pattern.
+
+----- slide 44 -----
+[in the slide picture] Popularity-Driven method
+• In this method, the Internet searches for popularity of certain applications and creates the instances by
+popularity demand. (Currently popular applications* Facebook, Instagram, Twitter)
+The scheme anticipates increased traffic with popularity.
+Again, the scheme has a minimal loss of QoS, if the predicted popularity is correct. Resources may be wasted if
+traffic does not occur as expected.
+
+----- slide 45 -----
+Inter-Cloud Resource Management
+[in the slide picture] Cloud Service Tasks and Trends
+The top layer in the cloud service is SaaS applications for business applications.
+For example, CRM is heavily practiced in business promotion, direct sales, and marketing services.
+CRM offered the first SaaS on the cloud successfully.
+The approach is to widen market coverage by investigating customer behaviors and revealing opportunities by
+statistical analysis.
+SaaS tools also apply to distributed collaboration (Google docs), and financial and human resources management.
+These cloud services have been growing rapidly in recent years.
+PaaS is provided by Google, Salesforce.com, and Facebook (Facebook service), among others.
+IaaS is provided by Amazon, Windows Azure, and RackRack, among others.
+Collocation services require multiple cloud providers to work together to support supply chains in manufacturing.
+Network cloud services provide communications such as those by AT&T, Qwest, and AboveNet.
+
+----- slide 46 -----
+[in the slide picture] 2. Software Stack for Cloud Computing
+The overall software stacks are built from scratch to meet rigorous goals.
+Developers have to consider how to design the system to meet critical requirements such as high throughput,
+HA, and fault tolerance. (Developers need to think in designing a software that takes care of all these layers/services at different levels
+and providing these services to users in such a way the meet required throughput, HA, and fault tolerance).
+Even the operating system might be modified to meet the special requirement of cloud data processing. (Even os
+that runs at cloud data center need to be modified that takes care of all these services NaaS, LaaS etc.)
+the overall software stack structure of cloud computing software can be viewed as layers. Each layer has its
+own purpose and provides the interface for the upper layers just as the traditional software stack does.
+However, the lower layers are not completely transparent to the upper layers. (SaaS layer takes care of providing/sharing
+softwares to customers, PaaS SaaS layer takes care of providing platform to customers, IaaS layer takes care of sharing hardwares to customers)
+
+----- slide 47 -----
+[in the slide picture] 3. Runtime Support Services
+As in a cluster environment, there are also some runtime supporting services in the cloud computing
+Cluster monitoring is used to collect the runtime status of the entire cluster.
+The scheduler queues the tasks submitted to the whole cluster and assigns the tasks to the processing nodes
+according to node availability.
+The distributed scheduler for the cloud application has special characteristics that can support cloud
+applications, such as scheduling the programs written in MapReduce style.
+The runtime support system keeps the cloud cluster working properly with high efficiency.

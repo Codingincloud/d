@@ -152,6 +152,88 @@ function main() {
   ok("results are capped", SM.search(idx, 'simulation').length <= SM.SEARCH_LIMIT, SM.search(idx, 'simulation').length);
   const synth = [{ title: 'alpha', snip: 'beta' }, { title: 'gamma', snip: 'alpha beta' }];
   eq("a title hit outranks a snippet hit", SM.search(synth, 'alpha')[0].title, 'alpha');
+  // The result list draws the index's text, so an entity that reached the index
+  // shows up as `&mdash;` in the panel - a typo the reader has to decode.
+  const ent = SM.buildIndex({ 1: { learn: '<h2>Bully versus Ring &mdash; the comparison &lt;exam&gt; wants</h2><p>Ring &rarr; Bully, 2&prime; of it.</p>' } }, ['Ch']);
+  eq("an entity in a heading is read as the character it means",
+     ent[0].title, 'Bully versus Ring \u2014 the comparison <exam> wants');
+  ok("an entity in a snippet is read the same way",
+     ent[0].snip.indexOf('Ring \u2192 Bully, 2\u2032 of it.') >= 0, ent[0].snip);
+  ok("no entity survives into the index", ent.every(e => !/&[a-zA-Z]+;/.test(e.title + e.snip)));
+  ok("the key keeps the markup's own text", ent[0].key.indexOf('&mdash;') >= 0);
+
+  // --- routes: the location in the URL hash --------------------------------
+  // A view you cannot address is a view you cannot bookmark, share or return
+  // to. These pin the grammar the address bar speaks, and the round trip that
+  // keeps a reload landing where you were.
+  eq("a bare chapter routes to that chapter, Learn", SM.parseRoute('#/ch/4'), { tab: 'learn', ch: 4, q: null });
+  eq("a chapter with a tab routes to that tab", SM.parseRoute('#/ch/4/quiz'), { tab: 'quiz', ch: 4, q: null });
+  eq("the Analysis tab is chapter-free", SM.parseRoute('#/analysis'), { tab: 'analysis', ch: null, q: null });
+  eq("the mock exam is chapter-free", SM.parseRoute('#/exam'), { tab: 'exam', ch: null, q: null });
+  eq("a question link carries the chapter and the card", SM.parseRoute('#/q/6-2'), { tab: 'past', ch: 6, q: 2 });
+  eq("question index 0 is valid", SM.parseRoute('#/q/1-0'), { tab: 'past', ch: 1, q: 0 });
+
+  // Refusals: a wrong tab still shows a real page, a wrong chapter shows nothing.
+  eq("an unknown tab falls back to Learn", SM.parseRoute('#/ch/3/nonsense'), { tab: 'learn', ch: 3, q: null });
+  eq("chapter 0 is refused", SM.parseRoute('#/ch/0'), null);
+  eq("chapter 9 is refused", SM.parseRoute('#/ch/9'), null);
+  eq("garbage is refused", SM.parseRoute('#/hello/world'), null);
+  eq("the empty hash is refused", SM.parseRoute(''), null);
+  eq("no hash at all is refused", SM.parseRoute(undefined), null);
+  eq("a broken question link is refused", SM.parseRoute('#/q/six-two'), null);
+
+  eq("formatting a chapter omits the redundant Learn", SM.formatRoute({ tab: 'learn', ch: 4 }), '#/ch/4');
+  eq("formatting a tab keeps it", SM.formatRoute({ tab: 'quiz', ch: 4 }), '#/ch/4/quiz');
+  eq("formatting a question beats its tab", SM.formatRoute({ tab: 'past', ch: 6, q: 2 }), '#/q/6-2');
+  eq("formatting with no chapter defaults to 1", SM.formatRoute({ tab: 'quiz' }), '#/ch/1/quiz');
+  eq("an unknown tab formats as Learn", SM.formatRoute({ tab: 'zzz', ch: 2 }), '#/ch/2');
+
+  // The property that matters: whatever survives a round trip is the same view.
+  const addressed = ['#/ch/1', '#/ch/8', '#/ch/2/quiz', '#/ch/5/past', '#/analysis', '#/exam', '#/q/3-0'];
+  eq("every route survives parse -> format unchanged",
+     addressed.map(h => SM.formatRoute(SM.parseRoute(h))), addressed);
+  let roundTrip = true;
+  for (let n = 1; n <= 8; n++) {
+    for (const t of SM.TABS) {
+      const want = t === 'analysis' ? '#/analysis' : t === 'exam' ? '#/exam'
+        : t === 'learn' ? '#/ch/' + n : '#/ch/' + n + '/' + t;
+      if (SM.formatRoute(SM.parseRoute(want)) !== want) { roundTrip = false; }
+    }
+  }
+  ok("all 8 chapters x 5 tabs address and re-address identically", roundTrip);
+
+  // The revise layer. tools/revise_blocks.py files a block under the heading's
+  // number, or under its text as a slug where there is no number, and this is the
+  // JS half of that rule - so it is pinned here or the two halves drift and a
+  // block lands on nothing (silently: an unmatched key changes no markup).
+  eq("a numbered heading keys by its number", SM.reviseKey('2.1.1 How RPC works in ten steps'), '2.1.1');
+  eq("a two-level number keeps both parts", SM.reviseKey('3.4 Clock synchronization'), '3.4');
+  eq("an entity in the heading does not reach the key", SM.reviseKey('2.3 Message passing &amp; serialization'), '2.3');
+  eq("an unnumbered heading keys by its slug", SM.reviseKey('Where this unit sits'), 'where-this-unit-sits');
+  // The one that matters in this repository: the notes write `&mdash;` and the
+  // reference tab held a literal em dash, which is what made 11 of 79 headings
+  // look renamed to a matcher that did not decode first.
+  eq("an entity and the character it stands for key the same",
+     SM.reviseKey('Where this unit sits &mdash; an overview'),
+     SM.reviseKey('Where this unit sits \u2014 an overview'));
+  eq("punctuation in the heading collapses to one dash", SM.reviseKey('Call semantics, and when they differ'), 'call-semantics-and-when-they-differ');
+  eq("a trailing question mark does not reach the key", SM.reviseKey('What is the point?'), 'what-is-the-point');
+
+  const learn = '<h2>Unit 2</h2><p>lead</p><h2>2.1 Remote Procedure Call</h2><p>prose</p>'
+    + '<h3>2.1.1 How RPC works</h3><p>more prose</p>';
+  const injected = SM.injectRevise(learn, { '2.1': '<p>RPC in a line.</p>', '2.1.1': '<p>The ten steps.</p>' });
+  ok("a block lands after its own heading",
+     injected.indexOf('<h2>2.1 Remote Procedure Call</h2><div class="revise-lead">') === 0
+     || injected.includes('<h2>2.1 Remote Procedure Call</h2><div class="revise-lead">'));
+  ok("a block lands after an h3 too",
+     injected.includes('<h3>2.1.1 How RPC works</h3><div class="revise-lead">'));
+  ok("the section's own prose is still there", injected.includes('<p>prose</p>') && injected.includes('<p>more prose</p>'));
+  eq("two blocks are both placed", (injected.match(/revise-lead/g) || []).length, 2);
+  eq("a chapter with no blocks is returned untouched", SM.injectRevise(learn, undefined), learn);
+  eq("an unmatched key changes nothing", SM.injectRevise(learn, { '9.9': '<p>x</p>' }), learn);
+  eq("the unit title is not a section and gets nothing",
+     SM.injectRevise('<h2>Unit 2</h2><p>lead</p>', { 'unit-2': '<p>no</p>' }),
+     '<h2>Unit 2</h2><p>lead</p>');
 
   console.log("\n" + (failures.length ? failures.length + " FAILURE(S):" : "All " + checks + " engine contracts hold. OK"));
   failures.forEach(f => console.log("  - " + f));

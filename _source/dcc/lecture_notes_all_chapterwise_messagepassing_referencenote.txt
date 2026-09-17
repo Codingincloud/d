@@ -1,0 +1,285 @@
+source: Lecture Notes - all Chapterwise\Chapter 2 - Communication in Distributed Systems\Ref_Notes\MessagePassing_ReferenceNote.pdf
+method: pdf
+sha256: 36265050596dcf1650e904d73461ce54936ee6d693ad181529e64d19f207f8d9
+pages:  9
+ocr:    9 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+===== page 1 =====  [ocr]
+Introduction
+Cl In this chapter, we outlinethebasic
+concepts inmessage-passing computing.
+o Weintroduce the basic structure fmessage-
+passing programs andhow to specify message
+passing between processes.
+o We discussthese •ingeneral, and then we outline
+two specific systems, PVM and MPI
+IO Finally, we discuss how to evaluate message-
+passing parallel programs, both theoretically and
+-in practice.
+1. Basics ofrMessage Passing
+Programming
+1.1 Programming Options
+o Programming a message-passing
+multicomputercanuæ achieved by
+1. Designing a special parallel programming
+language
+2. Extending the syntax/reserved words of
+an existing sequential high-levellanguage
+to handle message passing
+0 3. Using an existing sequentialhigh-level
+language and providing a library of external-
+procedures for message passing
+
+
+===== page 2 =====  [ocr]
+1.
+Basics ofrMessage Passing
+Programming
+o We will concentrate upon the third option.
+Necessary to say explicitly what processes are
+to be executed, when to pass messages
+between concurrent processes, and whatto pass
+in the messages.
+'0 Two primary methods are needed 'in this form of
+a message-passing system:
+IWA method of creating separate processesfor
+execution on different computers
+2. A method offsending and receiving messages
+1.2Process Creation
+MPMD model
+SOU'CO
+filo
+Compile to suit
+processor
+Executabtes
+Processor O
+Source
+Processor p - 1
+
+
+===== page 3 =====  [ocr]
+1.2 ProcessCreation
+SPMD model
+C] Different processes
+are merged Sinto
+one program.
+Within the
+Basic MPl way
+program are
+control statements
+that willcustomizeExecutableg
+Source
+file
+Compile to suit
+processor
+the code; i.e.
+select different
+parts for each
+process
+Processarn
+1.2Process Creation
+MPMDmode1
+Separate programs
+for each processor.
+One processor
+executes master
+process. Other
+Tme
+processes started
+from within master
+process dynamic
+process creation.
+Process 4
+spawn
+Processorp-l
+— Star t e;ecution
+ot process 2
+- .. —Process?
+
+
+===== page 4 =====  [ocr]
+1.341essage-Passing Routines
+O Passing a message between
+processes using send()
+library calls:
+Process<
+send 2) ;
+Process 2
+Movement
+ofdata
+reav(sy, 1),
+Generiv syntax (actuat formats later)
+1.3Message-Passing Routines
+Synchronous Message Passing
+Routines that actually return whenthe message
+transferhas been completed.
+Synchronous send routine
+Waits until complete message can bezccepted by the
+receiving process before sending the message,
+Synchronous receive routine
+o Waits until the messageftus expecting arrives,
+ü Synchronous routines -intrinsically performtwo
+actions: They transfer data and they synchronize
+processes.
+
+
+===== page 5 =====  [ocr]
+1.3Wlessage-Passing Routines
+Synchronous send() and recv() using 3-way protocol
+Process IT
+Time
+Suspend
+process
+Both processes
+continue
+Process i
+Time
+Bothpror:eues
+continue
+Process 2
+occurs before
+Process 2
+Suspend
+process
+occurs before
+1.3 Message-Passing Routines
+O Asynchronous Message Passing
+o Routines that dcnoewajeforactjons to
+complete before returning. Usually
+require local storage formessages.
+o More than oneversion depending upon
+the actual semantics for returning.
+In general, they do noesynchronize
+processes butallow processes tomove
+forward sooner. Musebeused with care.
+
+
+===== page 6 =====  [ocr]
+1.3Nessage-Passing Routines
+Blocking and Nonblocking Message Passing
+Blocking - has been used to describe routines that
+do not return until the transfer is completed.
+Theroutines are"blocked" from continuing.
+O In that sense, the terms synchronous and blocking were
+synonymous.
+Non-blocking - has been used to describe routines
+that return whetheror not the message had been
+received.
+The terms blocking and nonblocking redefined jn
+systems such as MPI:
+1.3 Message-Passing Routines
+C] How message-passing routines can return
+before the message transfer has been
+completed
+o Generally, a message buffer neededbetween source
+and destination±o hold message:
+Time
+Process 1
+Message b uffer
+aeaci {i ;
+Process 2
+Continue
+recv. ; —
+process
+Read
+message buffe
+
+
+===== page 7 =====  [ocr]
+1.34essage-Passing Routines
+00nceAocaI actions completedand
+message -is safely on its way, sending
+process can continue with subsequent
+work.
+a Buffers only offinite length and a point
+could be reached when send routine held
+up becauseall available buffer space
+exhausted.
+o Then, send routinewill wait until storage
+becomes re-avajlable —i.ethen routine
+behaves as a synchronous routine.
+Message Selection
+u Message Tag
+El Used to differentiatebetween different
+types of messages being sent.
+C] Message tagjs carried within message.
+Ifrspeciaftype not required, a
+wild card message tag js used, so that the
+recv() will match with any send().
+
+
+===== page 8 =====  [ocr]
+O Example:
+a To send a message, x, with message tag
+5from a source process, 1, -to a
+destination process, 2, and assign to y:
+Process 1
+send S)
+Process 2
+Movement
+of data
+W."/aits fora niessagsfrorn processiWltlmatag of!
+O "Group" message passing routines
+Have routines that sendmessage(s) to a
+group ofprocesses or receive
+message(s) from a group ofrprocesses
+Higher efficiency than separate point-to-
+point routineszlthough notabsolutely
+necessary.
+o Broadcast
+O Sending the samenessage to all the
+processes concerned with the problem.
+D Multicast- sending the same message to a
+defined group of processes.
+Process C
+Action
+Code
+Process 1
+Process p— 1
+
+
+===== page 9 =====  [ocr]
+Scatter
+Sending each element ofan array ofrdata in
+the root to a separate process. The
+contents ofthe ith location ofthe arrayis
+sent to the ith process.
+Process 0
+dat
+Action
+Processi
+Processp 1
+da'Ea
+acaizizezf) •
+Code
+Gather
+Having one processcollectindividual values
+from a set ofprocesses.
+Process 0
+data
+Action
+Code
+Reduce
+Process<
+data
+gather() ;
+Process p —1
+data
+gather
+O Gatheroperation combined with a specified
+arithmetic orlogical operation.
+LD Example, the values could be gathere and
+then added togetherby the root:
+Process n
+daca
+Action
+reduce
+Code
+Pracess<
+daca
+reduce
+Process p —M
+daca
+—educa

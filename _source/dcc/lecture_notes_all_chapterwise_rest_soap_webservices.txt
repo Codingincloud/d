@@ -1,0 +1,513 @@
+source: Lecture Notes - all Chapterwise\Chapter 2 - Communication in Distributed Systems\Ref_Notes\REST_SOAP_webservices.pdf
+method: pdf
+sha256: 0daa75beafa40d8ec4830d4e9d6bc7f79b8421c3f6f77cab782b419b94bfed47
+pages:  31
+ocr:    26 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+===== page 1 =====
+https://www.halvorsen.blog
+Web Services
+Hans-Petter Halvorsen
+
+
+===== page 2 =====
+Problem
+How to Share Data between Devices in a Network?
+Server(s)
+Firewalls
+Security
+Clients
+Local Network/Internet
+Database
+Routers/Switches, etc.
+
+
+===== page 3 =====
+Problem
+How to Share Data between Devices in a Network?
+Database Clients
+Direct Connection between the Database and the Clients that need the Data is normally not possible, due
+to security, compatibility issues, etc. (Firewalls, Hacker Attacks, etc.)
+Direct Connection in a Local Network (behind the Firewall) is normally OK – but not over the Internet
+[image text] No access
+
+
+===== page 4 =====
+Solution: Web Service
+Internet
+Web Service Clients
+HTTP
+Database
+Web Services uses standard web protocols like HTTP, etc.
+HTTP is supported by all Web Browser, Servers and many Programming Languages
+
+
+===== page 5 =====
+Client Client Client
+Data
+Data
+Data
+Web Services
+Network/Internet
+Web Services:
+• A Standard way to get data
+Data
+over a network/Internet
+• Using standard Web
+Data
+Web Service
+protocols Normally you don't have direct
+access to a Database over a
+Server
+Web Server Database network, and especially not
+over Internet
+[image text] VVeb Services:
+
+
+===== page 6 =====
+Web Services
+• A Web service is a method of communications between two
+devices over the World Wide Web.
+• Web API
+• Standard defined by W3C
+• Cross-platform
+• Web Services can be implemented and used in most
+Programming Languages (C#/ASP.NET, PHP, LabVIEW,
+Objective-C, Java, ...)
+• Uses standard Web technology (Web protocols)
+– HTTP, REST, SOAP, XML, WSDL, JSON, ...
+
+
+===== page 7 =====
+Why Web Service?
+• Today Web Services have been very popular
+• Easy Data sharing over Internet
+• Platform-independent Communication
+• Makes it possible of integration of different systems and platforms
+• Distributed Application Development
+Internet
+Web Service Clients
+HTTP
+
+
+===== page 8 =====
+Web Services
+• Web Services 1.0: Uses SOAP
+– “Compex”
+• Web Services 2.0: Uses REST
+– Less Complex than using SOAP
+– Lightweight and Flexible
+– The preferred model today
+Internet
+Web Service Clients
+HTTP
+
+
+===== page 9 =====
+3-tier+WebService Architecture - Example
+Web Web Presentation
+Server Services Logic
+Business
+Logic
+Data
+Source
+revreS
+noitadnuoF
+maeT
+Installed on one or more Windows
+Servers in your LAN or in the Cloud
+Stored
+Procedures
+Data
+Layer
+[image text] I Microsott
+IIS
+Microsoft'
+SQL Server
+Visual Studio
+
+
+===== page 10 =====
+https://www.halvorsen.blog
+Web Services
+Details
+Hans-Petter Halvorsen
+
+
+===== page 11 =====
+Web Services
+• “SOAP Web Services”
+Web Services 1.0
+• Using the SOAP protocol (Simple Object Access Protocol)
+• XML (Extensible Markup Language)
+Visual Studio: ASP.NET ASMX Web Service
+• “RESTful Web Services”
+Web Services 2.0
+• Using the REST protocol (Representational State Transfer)
+• Uses standard HTTP methods (GET, PUT, POST, DELETE)
+(HTTP: Hypertext Transfer Protocol)
+• Uses JSON (JavaScript Object Notation) or XML
+• Visual Studio: ASP.NET Web API
+
+
+===== page 12 =====
+SOA
+• Service Oriented Architecture
+• Distributed Application Development
+• Typical example: Web Services
+Wikipedia. (2013). SOA. Available: http://en.wikipedia.org/wiki/Service-oriented_architecture
+
+
+===== page 13 =====
+Web Services
+• A method of communication between two applications or electronic devices over
+the World Wide Web (WWW)
+• Web Service is an API
+• Makes it possible of integration of different systems and platforms
+• Distributed Application Development
+• Web services are web application components.
+• Data is transmitted over a standardized interface (such as HTTP)
+Web services can be published, found, and used on the Web.
+• SOAP Web Services (SOAP - Simple Object Access Protocol)
+• REST Web Services (REST - Representational State Transfer)
+– A new and simpler version of WS
+– All major WS on the Internet today use REST?
+
+
+===== page 14 =====
+Web Service
+Internet
+Web Service Client
+HTTP
+• HTTP - Hypertext Transfer Protocol.
+• The protocol used throughout the Internet for transactions between Web servers and
+clients.
+• It is simple, tested, and supported by libraries in every modern programming language.
+• HTTP includes methods supporting all of the necessary actions for a server/client
+transaction
+
+
+===== page 15 =====
+SOAP Web Services
+WSDL (API Description)
+SOAP (Messaging)
+XML (Data)
+HTTP (Transport)
+• WSDL - Web Services Description Language
+• SOAP - Simple Object Access Protocol
+• XML – Extensible Markup Language
+• HTTP - Hypertext Transfer Protocol
+
+
+===== page 16 =====
+RESTful Web Services
+WADL (API Description)
+REST (Messaging)
+Completely optional
+and rarely used
+JSON/XML (Data)
+HTTP (Transport)
+• WADL – Web Application Description Language
+• REST - Representational State Transfer
+• XML – Extensible Markup Language
+• JSON - JavaScript Object Notation
+• HTTP - Hypertext Transfer Protocol
+
+
+===== page 17 =====
+SOAP vs. REST
+SOAP:
+• A service architecture WSDL (API Description)
+• XML based
+SOAP (Messaging)
+• Runs on HTTP but envelopes the message
+XML (Data)
+• Slower than REST
+HTTP (Transport)
+• Very mature, a lot of functionality
+• Not suitable for browser-based clients
+• More complicated
+REST:
+• A service architecture
+WADL (API Description)
+• Uses the HTTP headers to hold meta information
+REST (Messaging)
+• Can be used with XML, JSON or whatever necessary
+XML/JSON(Data)
+• Usually used with JSON due to the easily parsable content
+HTTP (Transport) • Faster than SOAP (cid:1)
+[image text] o A service a
+
+
+===== page 18 =====
+https://www.halvorsen.blog
+Web Services
+Some Basic Examples
+Hans-Petter Halvorsen
+
+
+===== page 19 =====  [ocr]
+Creating Web Service in LabVIEW
+Calculator.lvproj - Project Explorer
+File Edit View Project Operate Tools VVindow Help
+Items Files
+13' Project: Calculator.lvproj
+M Com
+New
+Depen
+Build S Export
+Import
+Add
+Find Project Items...
+Arrange By
+Expand All
+Collapse All
+Help...
+Properties
+ÄLabVlEW
+Simulation Subsystem
+Virtual Folder
+Control
+Library
+Variable
+Class
+XControl
+Web Service
+NI-DAQmx Task
+NI-DAQmx Channel
+NI-DAQmx Scale
+New...
+
+
+===== page 20 =====
+Web Service Client in LabVIEW
+Web Service Example: http://www.w3schools.com/WebServices/tempconvert.asmx
+[image text] TempConvett Web Service X
+The following operations are supported. For a formal definition, please review the Service Description.
+CelsiusToFahrenheit
+FahrenheitToCelsius
+ÄLabVlEW
+
+
+===== page 21 =====  [ocr]
+Web Service Client in LabVIEW
+Service
+Input the location of a VVSDL URL
+Web Service
+Web Service Description Language URL
+http://www.w3schools.comAVebServices/tempconvett.asmx?WSDL
+Example: http://localhost/DateService.asmx?WSDL
+Back
+S7NATlONAL
+INSTRUMENTS
+Import Web Service
+Select the methods to impert
+@ FahrenheitToCelsius
+@ CelsiusToFahrenheit
+Help
+a LabVIEW
+NATIONAL
+INSTRUM
+Check Selected
+Uncheck Selected
+Check All
+Uncheck All
+Back
+Next >
+Cancel
+Help
+
+
+===== page 22 =====
+https://www.halvorsen.blog
+Web Services in Visual
+Studio
+Examples
+Hans-Petter Halvorsen
+
+
+===== page 23 =====
+...()
+SaveData()
+GetData()
+API
+(Methods used by your Applications)
+Web Service
+SOAP WS REST WS
+ASP.NET
+ADO.NET
+Stored Procedures
+SQL
+SQL Server
+
+
+===== page 24 =====
+Web Services using Visual Studio
+3 ways to do it:
+1. ASMX Web Service (Traditional Web Wervice using
+SOAP)
+2. WCF Service
+– A general approach used to create all kind of communication
+including web services, both SOAP and REST
+3. ASP.NET Web API (The modern Web Service using REST,
+Web 2.0)
+
+
+===== page 25 =====
+ASMX Web Service in Visual Studio
+Create Empty
+ASP.NET
+Project
+Add Web Service(asmx)
+to your project
+[image text] Recert
+renvbtes
+Basa:
+4.5
+fret by: C*fe-Ä
+ASP.t$-t Erroty Web Acobcotm
+ASP,tEt Web Fcgrt6 Aocb:otion
+ASP.tct WC Web
+ASP.tET Entties Web
+Microso(t Visual Studeo
+prok(t ,
+Seerc-h Ire—taled (Ctrl+ä)
+Type: VBU'IC&
+wth Web rterfoce
+Add New Item - WebAppticatioot
+Instared
+Code
+General
+C*neral
+Razor
+Sgnan
+Web Forms
+Fcerrt$
+Sibt•erii$k
+SQL Server
+WOOfkN/
+Sæch Resut$
+t' Onlne
+t' Offre/Sb,yePorR
+TypeScrcR
+pyth:rt
+Scrt by:
+Defaut
+SQL e;erver I-kit test
+WCF Service
+WCF S.6
+WCF Setvxe (Ajax-enæqed)
+Web Forrre Server Control
+Web (ASMX)
+Vie-ud
+Visu Ct
+Vistß
+Visud
+Type: Visuo!
+A vsu.911y +$iqned class for creotha a Web
+
+
+===== page 26 =====
+Test the built-in HelloWorld() method – F5
+[image text] CalculatorService.asmx.cs -Ä X
+CalculatorService.CalculatorService
+Busing System;
+using System. Collections .Generic;
+using System.Web.Services;
+Enamespace CalculatorService
+/// Sutmary description for CalculatorService
+[WebService(namespace =
+"http://tempuri.org/") ]
+• G) HelloWorld0
+[IdebServiceBinding(ConformsTo =
+liJsiProfi1es. BasicProfi1e1_1) ]
+[System. Componentmode1.T001boxItem(fa1se)]
+// To allow this Web Service to be called from script, using ASP. UET AJAX,
+uncomment the following line.
+// [System.Web.Script.Services.ScriptService]
+O references
+public class CalculatorService
+[lilebmethod]
+public string HelloWorld()
+return "Hello World";
+
+
+===== page 27 =====
+ASP.NET Web API
+• Web API = Web Sevice, Web 2.0
+• Application Programming Interface that can be accessed via
+HTTP requests
+• ASP.NET Web API is a framework that makes it easy to build
+HTTP services that reach a broad range of clients, including
+browsers and mobile devices.
+• ASP.NET Web API is an ideal platform for building RESTful
+services on the .NET Framework.
+http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api
+
+
+===== page 28 =====
+ASP.NET Web API in Visual Studio
+You can also create a Web API project
+using the "Web API" template. The
+Web API template uses ASP.NET MVC
+to provide API help pages. I'm using
+the Empty template for this tutorial
+because I want to show Web API
+without MVC. In general, you don't
+need to know ASP.NET MVC to use
+Web API.
+[image text] New Project
+Recent
+Search Installed Te
+Type: Visual cs
+Templates
+A project template for creating ASPTIET
+appficaticns. You can create ASP-NET Web
+Vefindows Store
+Windows
+Clcud
+Reporting
+Saiver119ht
+Select a template:
+Single Pege
+Applicaticn
+Web Forms
+Facebook
+Onfrne
+Name
+Locatjore
+Click here to
+ProductsApp
+c cnjine and find tem
+applications. This template does net have any centent in
+Changc Authcntjcattcn
+Authentication: No Authentication
+Add folders and cere references for:
+Add unit tests
+Product:App.Tcsts
+
+
+===== page 29 =====
+ASP.NET Web API Example
+– Step by Step
+http://www.asp.net/web-api/overview/getting-started-with-aspnet-
+web-api/tutorial-your-first-web-api
+
+
+===== page 30 =====
+References
+• SOAP vs. REST Challenges: http://www.soapui.org/The-World-
+Of-API-Testing/soap-vs-rest-challenges.html
+• Web Service: http://en.wikipedia.org/wiki/Web_service
+[image text] e VVeb Service:
+
+
+===== page 31 =====
+Hans-Petter Halvorsen
+University of Southeast Norway
+www.usn.no
+E-mail: hans.p.halvorsen@usn.no
+Web: https://www.halvorsen.blog
+[image text] wwwousn.no

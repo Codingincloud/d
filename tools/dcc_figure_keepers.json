@@ -1,0 +1,45 @@
+{
+ "_comment": [
+  "The pictures that STAY in the DCC notes, and the sentence that needs each one.",
+  "tools/slim_dcc_figures.py moves every other screenshot out of `learn` and onto",
+  "the Reference tab. A picture earns its place here only because a sentence in its",
+  "own section points at it - remove it and the sentence dangles. The value is the",
+  "caption to give it, because the extractor's own caption for it was filler",
+  "('Figure for 2.4.5 ...') or nothing at all.",
+  "",
+  "Kept because its paragraph says 'In the diagram of the two processes, B and F can",
+  "receive remote invocations while C, D and E cannot'.",
+  "ch2/lecturemain-ch-2-communication-in-ds-s13-011.webp",
+  "Kept because its paragraph says 'The smallest sentence in the figure is the one",
+  "that matters: installed on one or more servers in your LAN or in the Cloud'.",
+  "ch2/rest-soap-webservices-lecture-p08.webp",
+  "Kept because its paragraph says 'the diagram shows stratum 1 at the top with",
+  "stratum 2 and stratum 3 layered beneath it' - a structure words carry badly.",
+  "ch3/ch-3-sync-and-cordn-s20-044.webp",
+  "Kept because its paragraph says 'What the virtual device does, in the diagram:'",
+  "and then lists the three things the picture shows.",
+  "ch6/ch6-virtlzn-cloud-ref-arch-resrcprovsnmgmt-s24-098.webp"
+ ],
+ "keep": {
+  "ch2/lecturemain-ch-2-communication-in-ds-s13-011.webp": "Each process holds objects: B and F can receive remote invocations, while C, D and E can only be invoked locally.",
+  "ch2/rest-soap-webservices-lecture-p08.webp": "The three-tier running example: the client, the web-service application tier, and behind it the data source and the server software, installed on one or more servers in the LAN or in the cloud.",
+  "ch3/ch-3-sync-and-cordn-s20-044.webp": "The NTP synchronization subnet: stratum 1 machines are connected directly to an accurate time source, and each stratum below is synchronized from the one above it.",
+  "ch6/ch6-virtlzn-cloud-ref-arch-resrcprovsnmgmt-s24-098.webp": "What the virtual device does: it remaps guest and real I/O addresses, multiplexes and drives the physical device, and adds I/O features such as copy-on-write disks."
+ },
+ "prose": [
+  {
+   "file": "ch2.js",
+   "old": "<p>The figures below are the reference note's own, and they are worth reading in this order:",
+   "new": "Five ideas matter here: a message can be stored and forwarded rather than discarded; the temporal relationship between data items decides how they are interpreted. A token bucket is how a stream is paced. A broker with conversion rules between a source and a destination client is messaging middleware; and the interleaving of two streams &mdash; a receiver reading two audio units for every video unit &mdash; is why synchronicity has to be specified rather than assumed.",
+   "_why": "The seven figures this sentence introduced have moved to the Reference tab. The reading order it gives is the useful part, so it stays - pointed at where the pictures now are.",
+   "note": "the pointer line this fix installed was retired by the voice pass (tools/voice_rewrite.py): the pictures are reachable from the Reference tab itself, which links each one back to its section, so the notes do not also narrate a reading order. The guard keeps its original purpose - 'the figures below' must not come back - and the present wording is what the check now looks for."
+  },
+  {
+   "file": "ch2.js",
+   "old": "<p>The figures below build the socket material up in order:",
+   "new": "The client and server threads each hold an endpoint object bound to a local I/O port, and the client's socket also carries the destination address and the port number expected at the server. <code>XTI</code> is the transport interface used as the alternative to sockets on other systems, and the <code>MPI</code> send and receive calls are the message-passing primitives underneath the same idea. The Java TCP classes &mdash; <code>Socket</code> and <code>ServerSocket</code>, then a complete server example &mdash; are the concrete version of the mechanism.",
+   "_why": "Same: the enumeration names what each picture shows, which is a better table of contents than the pictures were.",
+   "note": "the pointer line this fix installed was retired by the voice pass (tools/voice_rewrite.py): the pictures are reachable from the Reference tab itself, which links each one back to its section, so the notes do not also narrate a reading order. The guard keeps its original purpose - 'the figures below' must not come back - and the present wording is what the check now looks for."
+  }
+ ]
+}

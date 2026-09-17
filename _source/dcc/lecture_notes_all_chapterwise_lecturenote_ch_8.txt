@@ -1,0 +1,324 @@
+source: Lecture Notes - all Chapterwise\Chapter_8_Security and Challenges in Cloud\LectureNote_Ch _8.pptx
+method: pptx
+sha256: b468990fc2be4eedf262d1bfbd55bdf3a754f63d291ae439a70b65a86759fb95
+pages:  24
+ocr:    24 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+----- slide 1 -----
+Distributed and Cloud ComputingChapter 8 Security and Challenges in Cloud
+
+----- slide 2 -----
+Data Security
+Several aspects of data security, including:
+
+Data-in-transit
+Confidentiality + integrity using secured protocol
+Confidentiality with non-secured protocol and encryption
+Data-at-rest
+Generally, not encrypted , since data is commingled with other users’ data
+Encryption if it is not associated with applications?
+indexing and searching?
+homomorphic encryption vs. predicate encryption?
+Processing of data, including multitenancy
+For any application to process data, not encrypted
+
+----- slide 3 -----
+Data lineage
+Knowing when and where the data was located within cloud is important for audit/compliance purposes
+e.g., Amazon AWS 
+Store 	<d1, t1, ex1.s3.amazonaws.com> 
+Process 	<d2, t2, ec2.compute2.amazonaws.com>
+Restore 	<d3, t3, ex2.s3.amazonaws.com>
+Data provenance
+Computational accuracy (as well as data integrity)
+E.g., financial calculation: sum ((((2*3)*4)/6) -2) = $2.00 ?
+Correct : assuming US dollar
+How about dollars of different countries? 
+Correct exchange rate?
+Where is (or was) that system located?
+What was the state of that physical system?
+How would a customer or auditor verify that info?
+
+----- slide 4 -----
+Data remanence
+Inadvertent disclosure of sensitive information is possible
+
+Provider data and its security: storage
+To the extent that quantities of data from many companies are centralized, this collection can become an attractive target for criminals  
+Moreover, the physical security of the data centre and the trustworthiness of system administrators take on new importance.
+
+----- slide 5 -----
+Identity Access Management (IAM)
+IAM is a framework of policies and technologies
+Ensures right individuals get right access to right resources
+Core functions: Authentication, Authorization, User Management, Policy Enforcement, Auditing
+
+----- slide 6 -----
+User on Amazon Cloud
+Name
+E-mail
+Password
+Billing Address
+Shipping Address
+Credit Card
+Name
+E-mail
+Shipping Address
+Name
+Billing Address
+Credit Card
+Name
+E-mail
+Password
+Billing Address
+Shipping Address
+Credit Card
+Name
+E-mail
+Shipping Address
+[in the slide picture] ERIC-AN
+EXPRESS
+Shiver Poweßellet
+
+----- slide 7 -----
+Key Functions of IAM
+Authentication – Verifies identity (username/password, MFA)
+Authorization – Defines permissions and actions
+User Management – Manage accounts, groups, roles
+Policy Enforcement – Applies security policies
+Audit & Compliance – Logs and monitors activities
+
+----- slide 8 -----
+Organization’s trust boundary will become dynamic and will move beyond the control and will extend into the service provider domain. 
+
+Managing access for diverse user populations (employees, contractors, partners, etc.) 
+
+Increased demand for authentication
+personal, financial, medical data 
+software applications hosted in the cloud requires access control
+
+Need for higher-assurance authentication
+authentication in the cloud may mean authentication outside firewall
+ Limits of password authentication
+
+Need for authentication from mobile devices
+Why IAM is Important?
+
+----- slide 9 -----
+Data Privacy
+The concept of privacy varies widely among (and sometimes within) countries, cultures, and jurisdictions. 
+It is shaped by public expectations and legal interpretations; as such, a concise definition is elusive if not impossible. 
+Privacy rights or obligations are related to the collection, use, disclosure, storage, and destruction of personal data (or Personally Identifiable Information—PII). 
+At the end of the day, privacy is about the accountability of organizations to data subjects, as well as the transparency to an organization’s practice around personal information.
+9
+
+----- slide 10 -----
+Key Privacy Concerns
+Typically mix security and privacy
+Some considerations to be aware of:
+Storage
+Retention
+Destruction
+Auditing, monitoring and risk management
+Privacy breaches
+Who is responsible for protecting privacy?
+10
+
+----- slide 11 -----
+Storage
+The aggregation of data raises new privacy issues
+Some governments may decide to search through data without necessarily notifying the data owner, depending on where the data resides 
+Whether the cloud provider itself has any right to see and access customer data?
+Some services today track user behaviour for a range of purposes, from sending targeted advertising to improving services
+11
+
+----- slide 12 -----
+Retention
+How long is personal information (that is transferred to the cloud) retained?
+Which retention policy governs the data? 
+Does the organization own the data, or the CSP? 
+Who enforces the retention policy in the cloud, and how are exceptions to this policy (such as litigation holds) managed?
+12
+
+----- slide 13 -----
+Destruction
+How does the cloud provider destroy PII at the end of the retention period? 
+How do organizations ensure that their PII is destroyed by the CSP at the right point and is not available to other cloud users? 
+Cloud storage providers usually replicate the data across multiple systems and sites—increased availability is one of the benefits they provide. 
+How do you know that the CSP didn’t retain additional copies? 
+Did the CSP really destroy the data, or just make it inaccessible to the organization? 
+Is the CSP keeping the information longer than necessary so that it can mine the data for its own use?
+13
+
+----- slide 14 -----
+Auditing, monitoring and risk management
+How can organizations monitor their CSP and provide assurance to relevant stakeholders that privacy requirements are met when their PII is in the cloud?
+Are they regularly audited?  
+What happens in the event of an incident?
+If business-critical processes are migrated to a cloud computing model, internal security processes need to evolve to allow multiple cloud providers to participate in those processes, as needed. 
+These include processes such as security monitoring, auditing, forensics, incident response, and business continuity
+14
+
+----- slide 15 -----
+Privacy breaches
+How do you know that a breach has occurred?
+How do you ensure that the CSP notifies you when a breach occurs?
+Who is responsible for managing the breach notification process (and costs associated with the process)?
+ If contracts include liability for breaches resulting from negligence of the CSP?
+How is the contract enforced?
+How is it determined who is at fault?
+15
+
+----- slide 16 -----
+Data life cycle (in Data Compliance)
+16
+Personal information should be managed as part of the data used by the organization
+Protection of personal information should consider the impact of the cloud on each phase
+[in the slide picture] Phase 3
+Transfer
+Phase 2
+Phase 1
+Generation
+Transformation
+Phase 5
+Storage
+Phase 6
+Archival
+Phase 7
+Destruction
+
+----- slide 17 -----
+17
+[in the slide picture] Service Level Agreement
+service contract with the cloud service provider.
+SLAs provide a level of service for each service which is specified in the form of minimum level of service
+guaranteed and a target level.
+SLAs contain a number of performance metrics and the corresponding service objectives.
+service can pursue a profitable service business relationship. It outlines
+the broad
+understanding between the service provider and the service consumer for conducting business
+and forms the basis for maintaining a mutually beneficial relationship. From a legal
+perspective, the necessary terms and conditions that bind the service provider to provide
+services continually to the service consumer are formally defined in SLA.
+
+----- slide 18 -----
+[in the slide picture] Criteria
+Asailability
+Periormance
+Disaster Recovery
+Problem resolution
+Security and privacy of
+Details
+Percentage of time the service is guaranteed to be available
+Response time, Throughput
+Mean time to recover
+Process to identify problems, support options, resolution
+expectations
+Mechanisms for security of data in storage and transmission
+
+----- slide 19 -----
+[in the slide picture] LIFE CYCLE OF SLA:
+Each SLA goes through a sequence of steps starting from identification of terms and
+conditions, activation and monitoring of the stated terms and conditions, and eventual
+termination of contract once the hosting relationship ceases to exist. Such a sequence of steps
+is called SLA life cycle and consists of the following five phases:
+l. Contract definition
+2. Publishing and discovery
+3. Negotiation
+4. Operationalization
+5. De-commissioning
+
+----- slide 20 -----
+[in the slide picture] Contract Definition. Generally, service providers define a set of service offerings and
+corresponding SLAs using standard templates. These service offerings form a catalog.
+Individual SLAs for enterprises can be derived by customizing these base SLA templates.
+Publication and Discovery. Service provider advertises these base service offerings through
+standard publication media, and the customers should be able to locate the service provider
+by searching the catalog. The customers can search different competitive offerings and
+shortlist a few that fulfill their requirements for further negotiation.
+Negotiation. Once the customer has discovered a service provider who can meet their
+application hosting need, the SLA terms and conditions needs to be mutually agreed upon
+before signing the agreement for hosting the application. For a standard packaged application
+which is offered as service, this phase could be automated. For customized applications that
+are hosted on cloud platforms, this phase is manual. The service provider needs to analyze the
+application's behavior with respect to scalability and performance before agreeing on the
+specification of SLA. At the end of this phase, the SLA is mutually agreed by both customer
+and provider and is eventually signed off. SLA negotiation can utilize the WS-negotiation
+
+----- slide 21 -----
+[in the slide picture] Operationalization. SLA operation consists of SLA monitoring, SLA accounting, and
+enforcement. SLA monitoring involves measuring parameter values and calculating
+metrics defined as a part of SLA and determining the deviations. On identifying
+deviations, the concerned parties are notified. SLA accounting involves capturing
+archiving the SLA adherence for compliance.
+As part of accounting, the application's actual performance and the performance guaranteed
+as a part of SLA is reported. Apart from the frequency and the duration of the SLA breach, it
+should also provide the penalties paid for each SLA violation. SLA enforcement involves
+taking appropriate action when the runtime monitoring detects a SLA violation. Such actions
+could be notifying the concerned parties, charging the penalties besides other things. The
+different policies can be expressed using a subset of the Common Information Model (CIM)
+The CIM model is an open standard that allows expressing managed elements of data
+center via relationships and common objects.
+De-commissioning. SLA decommissioning involves termination of all activities performed
+under a particular SLA when the hosting relationship between the service provider and the
+service consumer has ended. SLA specifies the terms and conditions of contract termination
+and specifies situations under which the relationship between a service provider and a service
+consumer can be considered to be legally ended.
+
+----- slide 22 -----
+[in the slide picture] SLA MANAGEMENT IN CLOUD:
+SLA management of applications hosted on cloud platforms involves five phases.
+1. Feasibility
+2. On-boarding
+3. Pre-production
+4. Production
+5. Termination
+Feasibility Analysis
+MSP conducts the feasibility study of hosting an application on their cloud platforms. This
+study involves three kinds of feasibility: (1) technical feasibility, (2) infrastructure feasibility,
+and (3) financial feasibility. The technical feasibility of an application implies determining
+the following:
+1. Ability of an application to scale out.
+2. Compatibility of the application with the cloud platform being used within the MSP's data
+center.
+3. The need and availability of a specific hardware and software required for hosting and
+running of the application.
+4. Preliminary information about the application performance and whether they can be met by
+
+----- slide 23 -----
+[in the slide picture] On-Boarding of Application
+Once the customer and the MSP agree in principle to host the application based on the
+findings of the feasibility study, the application is moved from the customer servers to the
+hosting platform. Moving an application to the MSP's hosting platform is called on-boarding
+[10]. As part of the on-boarding activity, the MSP understands the application runtime
+characteristics using runtime profilers. This helps the MSP to identify the possible SLAs that
+can be offered to the customer for that application. This also helps in creation of the
+necessary policies (also called rule sets) required to guarantee the SLOs mentioned in the
+application SLA. The application is accessible to its end users only after the on-boarding
+activity is completed.
+Preproduction
+Once the determination of policies is completed as discussed in previous phase, the
+application is hosted in a simulated production environment. It facilitates the customer to
+verify and validate the MSP's findings on application's runtime characteristics and agree on
+the defined SLA. Once both parties agree on the cost and the terms and conditions of the
+SLA, the customer sign-off is obtained. On successful completion of this phase the MSP
+allows the application to go on-live.
+
+----- slide 24 -----
+[in the slide picture] Production
+In this phase, the application is made accessible to its end users under the agreed SLA.
+However, there could be situations when the managed application tends to behave differently
+cause sustained breach of the terms and conditions mentioned in the SLA. Additionally,
+customer may request the MSP for inclusion of new terms and conditions in the SLA. If the
+application SLA is breached frequently or if the customer requests for a new non-agreed
+SLA, the on-boarding process is performed again. In the case of the former, on-boarding
+activity is repeated to analyze the application and its policies with respect to SLA fulfillment.
+In case of the latter, a new set of policies are formulated to meet the fresh terms and
+conditions of the SLA.
+Termination
+When the customer wishes to withdraw the hosted application and does not wish to continue
+transferred to the customer and only the essential information is retained for legal
+compliance. This ends the hosting relationship between the two parties for that application,
+and the customer sign-offis obtained.

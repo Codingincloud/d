@@ -34,6 +34,8 @@ learn: `
 <h3>Method 1 — Sample-Mean Integration</h3>
 <div class="worked">
 <div class="worked-head"><span>Estimate ∫₁⁴ (x + 4)³ dx by the sample-mean method</span><span class="meta">N = 6</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p37">n2 p37</button></p>
 <div class="worked-givens">
 <div><span>a</span><b>1</b></div>
 <div><span>b</span><b>4</b></div>
@@ -43,17 +45,18 @@ learn: `
 <ol class="worked-steps">
 <li><span class="worked-calc">Exact value by calculus:
 ∫₁⁴ (x + 4)³ dx = [ (x + 4)⁴ / 4 ]₁⁴ = (8⁴ − 5⁴)/4 = (4096 − 625)/4 = 867.75</span><span class="worked-note">Compute this first — you cannot report an error without it.</span></li>
-<li><span class="worked-calc">Map each uniform Rᵢ into the interval:  xᵢ = a + (b − a)Rᵢ = 1 + 3Rᵢ
-
- i   Rᵢ      xᵢ = 1 + 3Rᵢ     f(xᵢ) = (xᵢ + 4)³
- 1   0.12      1.36                153.99
- 2   0.34      2.02                218.17
- 3   0.56      2.68                298.08
- 4   0.78      3.34                395.45
- 5   0.90      3.70                456.53
- 6   0.47      2.41                263.37
-                                ─────────
-                    Σ f(xᵢ) =      1785.59</span><span class="worked-note">xᵢ = 1 + 3Rᵢ spreads the six values evenly across [1, 4] — this is the only place the interval enters the calculation.</span></li>
+<li><span class="worked-calc">Map each uniform Rᵢ into the interval:  xᵢ = a + (b − a)Rᵢ = 1 + 3Rᵢ</span>
+<table>
+<tr><th>i</th><th>Rᵢ</th><th>xᵢ = 1 + 3Rᵢ</th><th>f(xᵢ) = (xᵢ + 4)³</th></tr>
+<tr><td>1</td><td>0.12</td><td>1.36</td><td>153.99</td></tr>
+<tr><td>2</td><td>0.34</td><td>2.02</td><td>218.17</td></tr>
+<tr><td>3</td><td>0.56</td><td>2.68</td><td>298.08</td></tr>
+<tr><td>4</td><td>0.78</td><td>3.34</td><td>395.45</td></tr>
+<tr><td>5</td><td>0.90</td><td>3.70</td><td>456.53</td></tr>
+<tr><td>6</td><td>0.47</td><td>2.41</td><td>263.37</td></tr>
+<tr><td><strong>Total</strong></td><td>—</td><td>—</td><td><strong>1785.59</strong></td></tr>
+</table>
+<span class="worked-note">xᵢ = 1 + 3Rᵢ spreads the six values evenly across [1, 4] — this is the only place the interval enters the calculation. Σ f(xᵢ) is the last column added down.</span></li>
 <li><span class="worked-calc">I ≈ (b − a)/N × Σ f(xᵢ) = 3/6 × 1785.59 = 0.5 × 1785.59 = 892.80</span></li>
 <li><span class="worked-calc">Error = |estimate − exact| = |892.80 − 867.75| = 25.05
 Relative error = 25.05 / 867.75 × 100% = 2.89%</span></li>
@@ -62,9 +65,60 @@ Relative error = 25.05 / 867.75 × 100% = 2.89%</span></li>
 </div>
 
 <h3>Method 2 — Hit-or-Miss (Rectangle) Integration</h3>
+
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 700 430" role="img" aria-label="Hit-or-miss Monte Carlo for the integral from 0 to 3 of x squared. A rectangle from x equals 0 to 3 and y equals 0 to 9 encloses the rising curve y equals x squared. Ten scattered points are plotted; the four that fall below the curve are filled and the six above it are hollow.">
+
+<rect class="fig-fill" x="70" y="60" width="490" height="300" opacity="0.06"/>
+<rect class="fig-node" x="70" y="60" width="490" height="300" fill="none"/>
+<path class="fig-fill" d="M70,360 L151.7,351.7 L233.3,326.7 L315,285 L396.7,226.7 L478.3,151.7 L560,60 L560,360 Z"/>
+<path class="fig-curve" d="M70,360 L151.7,351.7 L233.3,326.7 L315,285 L396.7,226.7 L478.3,151.7 L560,60"/>
+
+<path class="fig-axis" d="M70,60 V372"/>
+<path class="fig-axis" d="M58,360 H566"/>
+<path class="fig-grid" d="M233.3,360 V60 M396.7,360 V60 M70,260 H560 M70,160 H560"/>
+<text class="fig-t sm" x="70" y="378">0</text>
+<text class="fig-t sm" x="233.3" y="378">1</text>
+<text class="fig-t sm" x="396.7" y="378">2</text>
+<text class="fig-t sm" x="560" y="378">3</text>
+<text class="fig-t sm end" x="62" y="364">0</text>
+<text class="fig-t sm end" x="62" y="264">3</text>
+<text class="fig-t sm end" x="62" y="164">6</text>
+<text class="fig-t sm end" x="62" y="64">9</text>
+
+<circle class="fig-dot" cx="70" cy="360" r="4.5"/>
+<circle class="fig-dot" cx="496.6" cy="136.9" r="4.5"/>
+<circle class="fig-dot" cx="364.5" cy="313.4" r="4.5"/>
+<circle class="fig-dot" cx="416.9" cy="287.2" r="4.5"/>
+<circle class="fig-dot out" cx="362.4" cy="171.7" r="4.5"/>
+<circle class="fig-dot out" cx="212.1" cy="254.7" r="4.5"/>
+<circle class="fig-dot out" cx="339.5" cy="120.7" r="4.5"/>
+<circle class="fig-dot out" cx="207.5" cy="219.4" r="4.5"/>
+<circle class="fig-dot out" cx="467.2" cy="75.7" r="4.5"/>
+<circle class="fig-dot out" cx="178.9" cy="262.6" r="4.5"/>
+
+<text class="fig-t pri start" x="505" y="178">y = x²</text>
+
+<text class="fig-t sm start" x="70" y="26">Rectangle = (b − a)(F(b) − F(a)) = 3 × 9 = 27</text>
+<circle class="fig-dot" cx="86" cy="44" r="5"/>
+<text class="fig-t sm start" x="98" y="48">inside — y − x² ≤ 0, counts as n</text>
+<circle class="fig-dot out" cx="330" cy="44" r="5"/>
+<text class="fig-t sm start" x="342" y="48">outside — y − x² &gt; 0, ignored</text>
+
+<text class="fig-t sm start" x="70" y="400">The ten dots are the ten rows of the worked table below: n = 4 inside of N = 10, so</text>
+<text class="fig-t sm start" x="70" y="416">I ≈ 27 × 4/10 = 10.8 against an exact 9 — an error of 20% on ten points.</text>
+
+</svg>
+
+<figcaption>Fig 2.1 — The hit-or-miss rectangle for ∫<sub>0</sub><sup>3</sup>x²dx. The shaded area is what n/N estimates: points land uniformly in the whole rectangle, so the fraction under the curve approximates area/rectangle — here 4/10 against a true 9/27 = 1/3. The ten dots are exactly the ten rows of the worked table, so the picture and the arithmetic can be checked against each other.</figcaption>
+
+</figure>
 <p>This is the method used in the class notes, and it is the one most exam questions expect. The area is boxed into a rectangle, points are scattered through the rectangle, and a point counts if it lands <strong>below the curve</strong>.</p>
 <div class="worked">
 <div class="worked-head"><span>Estimate ∫₀³ x² dx by the hit-or-miss method</span><span class="meta">Lesson example · N = 10</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p37">n2 p37</button></p>
 <div class="worked-givens">
 <div><span>a</span><b>0</b></div>
 <div><span>b</span><b>3</b></div>
@@ -80,21 +134,22 @@ Area of rectangle = (b − a) × (F(b) − F(a)) = (3 − 0) × (9 − 0) = 27</
 <li><span class="worked-calc">Decision rule for one point (x, y):
 if  y − F(x) ≤ 0   the point is INSIDE (under the curve)
 otherwise          the point is OUTSIDE</span></li>
-<li><span class="worked-calc">Scatter the points and test each one:
-
- S.N.   x        y        y − x²     Remark
-  1    0        0          0.000     In
-  2    1.79     5.65       2.446     Out
-  3    0.87     3.16       2.403     Out
-  4    1.65     7.18       4.457     Out
-  5    0.842    4.219      3.510     Out
-  6    2.612    6.693     −0.130     In
-  7    1.803    1.399     −1.852     In
-  8    2.432    8.53       2.615     Out
-  9    2.124    2.184     −2.327     In
- 10    0.667    2.921      2.476     Out
-                           ───────
-                    n = 4 points inside, N = 10</span><span class="worked-note">x must be drawn in [0, 3] and y in [0, 9] — not both in [0, 1]. A point exactly on the curve counts as inside, which is why (0, 0) with y − x² = 0 is an "In".</span></li>
+<li><span class="worked-calc">Scatter the points and test each one:</span>
+<table>
+<tr><th>S.N.</th><th>x</th><th>y</th><th>y − x²</th><th>Remark</th></tr>
+<tr><td>1</td><td>0</td><td>0</td><td>0.000</td><td>In</td></tr>
+<tr><td>2</td><td>1.79</td><td>5.65</td><td>2.446</td><td>Out</td></tr>
+<tr><td>3</td><td>0.87</td><td>3.16</td><td>2.403</td><td>Out</td></tr>
+<tr><td>4</td><td>1.65</td><td>7.18</td><td>4.457</td><td>Out</td></tr>
+<tr><td>5</td><td>0.842</td><td>4.219</td><td>3.510</td><td>Out</td></tr>
+<tr><td>6</td><td>2.612</td><td>6.693</td><td>−0.130</td><td>In</td></tr>
+<tr><td>7</td><td>1.803</td><td>1.399</td><td>−1.852</td><td>In</td></tr>
+<tr><td>8</td><td>2.432</td><td>8.53</td><td>2.615</td><td>Out</td></tr>
+<tr><td>9</td><td>2.124</td><td>2.184</td><td>−2.327</td><td>In</td></tr>
+<tr><td>10</td><td>0.667</td><td>2.921</td><td>2.476</td><td>Out</td></tr>
+<tr><td><strong>Total</strong></td><td colspan="3">points inside (y − x² ≤ 0)</td><td><strong>4 / 10</strong></td></tr>
+</table>
+<span class="worked-note">x must be drawn in [0, 3] and y in [0, 9] — not both in [0, 1]. A point exactly on the curve counts as inside, which is why (0, 0) with y − x² = 0 is an "In".</span></li>
 <li><span class="worked-calc">I ≈ Area of rectangle × n/N = 27 × 4/10 = 10.8</span></li>
 <li><span class="worked-calc">Exact value:  ∫₀³ x² dx = [x³/3]₀³ = 27/3 = 9
 Error = |10.8 − 9| = 1.8       Relative error = 1.8/9 × 100% = 20%</span></li>
@@ -112,7 +167,7 @@ Error = |10.8 − 9| = 1.8       Relative error = 1.8/9 × 100% = 20%</span></li
 <p>Two consequences are worth remembering:</p>
 <ul>
 <li><strong>Error falls only as 1/√N</strong> — to halve the error you must take four times as many samples, and to get one extra decimal digit you need 100 times as many.</li>
-<li>The estimate is <strong>unbiased</strong>: E[I_estimate] = I, so repeating the whole experiment many times and averaging the results converges to the true value (Law of Large Numbers).</li>
+<li>The estimate is <strong>unbiased</strong>: E[I<sub>estimate</sub>] = I, so repeating the whole experiment many times and averaging the results converges to the true value (Law of Large Numbers).</li>
 <li>A <strong>confidence interval</strong> can be quoted, e.g. I ≈ estimate ± 1.96 × SE at 95% confidence.</li>
 </ul>
 <div class="concept-box tip">
@@ -150,21 +205,22 @@ Error = |10.8 − 9| = 1.8       Relative error = 1.8/9 × 100% = 20%</span></li
 <li><span class="worked-calc">πr² / (2r)² = 16π / 64 = π/4
 π ≈ 4 × (points inside circle) / (total points)</span></li>
 <li><span class="worked-calc">Map each pair of random numbers into the square:
-x = −4 + 8R₁        y = −4 + 8R₂
-
-P  R₁    R₂     x       y      x² + y²   ≤ 16 ?
-1  0.15  0.72  −2.80    1.76    10.94    Yes
-2  0.63  0.31   1.04   −1.52     3.39    Yes
-3  0.88  0.95   3.04    3.60    22.20    No
-4  0.42  0.07  −0.64   −3.44    12.24    Yes
-5  0.77  0.55   2.16    0.40     4.83    Yes
-6  0.24  0.83  −2.08    2.64    11.30    Yes
-7  0.95  0.36   3.60   −1.12    14.21    Yes
-8  0.51  0.66   0.08    1.28     1.64    Yes
-9  0.09  0.19  −3.28   −2.48    16.91    No
-10 0.70  0.44   1.60   −0.48     2.79    Yes
-                                   ──────
-                points inside = 8 of 10</span><span class="worked-note">x² + y² = 14.21 &lt; 16 is inside; x² + y² = 16.91 &gt; 16 is outside — the comparison is against r² = 16, not against r = 4.</span></li>
+x = −4 + 8R₁        y = −4 + 8R₂</span>
+<table>
+<tr><th>P</th><th>R₁</th><th>R₂</th><th>x</th><th>y</th><th>x² + y²</th><th>≤ 16 ?</th></tr>
+<tr><td>1</td><td>0.15</td><td>0.72</td><td>−2.80</td><td>1.76</td><td>10.94</td><td>Yes</td></tr>
+<tr><td>2</td><td>0.63</td><td>0.31</td><td>1.04</td><td>−1.52</td><td>3.39</td><td>Yes</td></tr>
+<tr><td>3</td><td>0.88</td><td>0.95</td><td>3.04</td><td>3.60</td><td>22.20</td><td>No</td></tr>
+<tr><td>4</td><td>0.42</td><td>0.07</td><td>−0.64</td><td>−3.44</td><td>12.24</td><td>Yes</td></tr>
+<tr><td>5</td><td>0.77</td><td>0.55</td><td>2.16</td><td>0.40</td><td>4.83</td><td>Yes</td></tr>
+<tr><td>6</td><td>0.24</td><td>0.83</td><td>−2.08</td><td>2.64</td><td>11.30</td><td>Yes</td></tr>
+<tr><td>7</td><td>0.95</td><td>0.36</td><td>3.60</td><td>−1.12</td><td>14.21</td><td>Yes</td></tr>
+<tr><td>8</td><td>0.51</td><td>0.66</td><td>0.08</td><td>1.28</td><td>1.64</td><td>Yes</td></tr>
+<tr><td>9</td><td>0.09</td><td>0.19</td><td>−3.28</td><td>−2.48</td><td>16.91</td><td>No</td></tr>
+<tr><td>10</td><td>0.70</td><td>0.44</td><td>1.60</td><td>−0.48</td><td>2.79</td><td>Yes</td></tr>
+<tr><td><strong>Total</strong></td><td colspan="5">points inside the circle</td><td><strong>8 / 10</strong></td></tr>
+</table>
+<span class="worked-note">x² + y² = 14.21 &lt; 16 is inside; x² + y² = 16.91 &gt; 16 is outside — the comparison is against r² = 16, not against r = 4.</span></li>
 <li><span class="worked-calc">π ≈ 4 × 8/10 = 3.2</span></li>
 <li><span class="worked-calc">Error = |3.2 − 3.14159| = 0.0584
 Relative error = 0.0584 / 3.14159 × 100% = 1.86%</span><span class="worked-note">Only 10 points are used so the arithmetic stays hand-workable. Because error falls as 1/√N, 10 000 points typically give π to two or three decimal places.</span></li>
@@ -174,6 +230,8 @@ Relative error = 0.0584 / 3.14159 × 100% = 1.86%</span><span class="worked-note
 
 <div class="worked">
 <div class="worked-head"><span>Estimate π from x² + y² = 36 — the class numerical</span><span class="meta">r = 6 · N = 15</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p37">n2 p37</button></p>
 <div class="worked-givens">
 <div><span>Radius r</span><b>6</b></div>
 <div><span>Square</span><b>x, y in [0, 6], area 36</b></div>
@@ -183,28 +241,33 @@ Relative error = 0.0584 / 3.14159 × 100% = 1.86%</span><span class="worked-note
 <ol class="worked-steps">
 <li><span class="worked-calc">Quarter circle in a square of side r:
 (πr²/4) / r² = π/4   →   π ≈ 4n/N</span><span class="worked-note">Written in the notes as X = Rand#(6), Y = Rand#(6) — both coordinates in [0, 6]. With r = 6 the point is inside when x² + y² − 36 ≤ 0.</span></li>
-<li><span class="worked-calc">S.N.   x       y      x² + y² − 36   Remark
- 1    0       0        −36.000      In
- 2    4.342   2.165    −12.460      In
- 3    5.601   3.005      4.401      Out
- 4    1.668   0.967    −32.283      In
- 5    4.644   3.047     −5.149      In
- 6    3.005   4.974     −2.229      In
- 7    5.098   4.234      7.916      Out
- 8    1.664   4.339    −14.404      In
- 9    4.032   0.474    −19.518      In
-10    3.317   5.963     10.560      Out
-11    3.606   1.468    −20.842      In
-12    3.937   2.874    −12.240      In
-13    0.301   5.855     −1.628      In
-14    3.418   5.646      7.560      Out
-15    0.689   0.915    −34.688      In</span><span class="worked-note">Points 1–15 are all in the first quadrant, so all the x and y values are positive. A point is inside when x² + y² − 36 ≤ 0, i.e. when x² + y² ≤ 36.</span></li>
+<li><span class="worked-calc">Test each scattered point against the quarter circle:</span>
+<table>
+<tr><th>S.N.</th><th>x</th><th>y</th><th>x² + y² − 36</th><th>Remark</th></tr>
+<tr><td>1</td><td>0</td><td>0</td><td>−36.000</td><td>In</td></tr>
+<tr><td>2</td><td>4.342</td><td>2.165</td><td>−12.460</td><td>In</td></tr>
+<tr><td>3</td><td>5.601</td><td>3.005</td><td>4.401</td><td>Out</td></tr>
+<tr><td>4</td><td>1.668</td><td>0.967</td><td>−32.283</td><td>In</td></tr>
+<tr><td>5</td><td>4.644</td><td>3.047</td><td>−5.149</td><td>In</td></tr>
+<tr><td>6</td><td>3.005</td><td>4.974</td><td>−2.229</td><td>In</td></tr>
+<tr><td>7</td><td>5.098</td><td>4.234</td><td>7.916</td><td>Out</td></tr>
+<tr><td>8</td><td>1.664</td><td>4.339</td><td>−14.404</td><td>In</td></tr>
+<tr><td>9</td><td>4.032</td><td>0.474</td><td>−19.518</td><td>In</td></tr>
+<tr><td>10</td><td>3.317</td><td>5.963</td><td>10.560</td><td>Out</td></tr>
+<tr><td>11</td><td>3.606</td><td>1.468</td><td>−20.842</td><td>In</td></tr>
+<tr><td>12</td><td>3.937</td><td>2.874</td><td>−12.240</td><td>In</td></tr>
+<tr><td>13</td><td>0.301</td><td>5.855</td><td>−1.628</td><td>In</td></tr>
+<tr><td>14</td><td>3.418</td><td>5.646</td><td>7.560</td><td>Out</td></tr>
+<tr><td>15</td><td>0.689</td><td>0.915</td><td>−34.688</td><td>In</td></tr>
+<tr><td><strong>Total</strong></td><td colspan="2">11 In + 4 Out</td><td>—</td><td><strong>11 / 15</strong></td></tr>
+</table>
+<span class="worked-note">Points 1–15 are all in the first quadrant, so all the x and y values are positive. A point is inside when x² + y² − 36 ≤ 0, i.e. when x² + y² ≤ 36.</span></li>
 <li><span class="worked-calc">n = 11 points inside,  N = 15
 Check: 11 In + 4 Out = 15 = N ✓</span></li>
 <li><span class="worked-calc">π ≈ 4 × n/N = 4 × 11/15 = 44/15 = 2.933</span></li>
 <li><span class="worked-calc">Taking the true value as π = 3.14:
-Error E = |π_actual − π_calculated| = |3.14 − 2.9333| = 0.2067
-E% = E/π_actual × 100% = 0.2067/3.14 × 100% = 6.58%</span></li>
+Error E = |π<sub>actual</sub> − π<sub>calculated</sub>| = |3.14 − 2.9333| = 0.2067
+E% = E/π<sub>actual</sub> × 100% = 0.2067/3.14 × 100% = 6.58%</span></li>
 </ol>
 <div class="worked-result"><span>π ≈ 2.933</span><b>error 0.2067 (6.58%)</b></div>
 </div>
@@ -385,7 +448,7 @@ quiz: [
   {q:"The Box-Muller transform converts:", options:["Normal to uniform","Uniform to normal","Exponential to normal","Normal to exponential"], answer:1, explanation:"Box-Muller transform converts two independent uniform random numbers into two independent standard normal random numbers."},
   {q:"In Box-Muller: Z₁ = √(-2 ln R₁) × cos(2πR₂), what distribution does Z₁ follow?", options:["Uniform(0,1)","Exponential(1)","Standard Normal N(0,1)","Poisson(1)"], answer:2, explanation:"Z₁ follows a standard normal distribution with mean 0 and variance 1."},
   {q:"Monte Carlo method primarily solves:", options:["Problems with inherent randomness","Deterministic problems using randomness","Only queuing problems","Only integration problems"], answer:1, explanation:"Monte Carlo uses random numbers as a computational tool to solve deterministic problems like computing integrals."},
-  {q:"The Central Limit Theorem method for generating normal numbers uses how many uniform numbers?", options:["6","10","12","24"], answer:2, explanation:"Sum of 12 uniform random numbers minus 6 approximates a standard normal distribution: Z = (ΣR_i) - 6."},
+  {q:"The Central Limit Theorem method for generating normal numbers uses how many uniform numbers?", options:["6","10","12","24"], answer:2, explanation:"Sum of 12 uniform random numbers minus 6 approximates a standard normal distribution: Z = (ΣR<sub>i</sub>) - 6."},
   {q:"Which is NOT a step in Monte Carlo method?", options:["Define domain of inputs","Generate random inputs","Build a time-dependent system model","Aggregate results"], answer:2, explanation:"Building a time-dependent system model is part of stochastic simulation, not Monte Carlo. Monte Carlo doesn't typically have a time component."},
   {q:"Monte Carlo error decreases as:", options:["Number of random samples increases","Step size increases","Time increases","System complexity increases"], answer:0, explanation:"Monte Carlo error decreases as the number of random samples (N) increases. The error rate is proportional to 1/√N."}
 ],
@@ -492,6 +555,8 @@ past: [
 <div class="worked">
 
 <div class="worked-head"><span>Monte Carlo estimate of &#8747;&#8321;&#7503; (1/x) dx — the sample-mean method</span><span class="meta">N = 10</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p37">n2 p37</button></p>
 
 <div class="worked-givens">
 

@@ -1,0 +1,15 @@
+{
+ "_comment": [
+  "The last tell in the notes, and with it the twelfth family reaches zero. This",
+  "heading names the paper rather than the sentence it introduces."
+ ],
+ "edits": [
+  {
+   "ch": "ch6.js",
+   "tell": "paper",
+   "why": "a heading about the sentence, not about the exam the sentence might be written in",
+   "find": "<h4>The summary sentence for an exam</h4>",
+   "to": "<h4>The summary sentence</h4>"
+  }
+ ]
+}

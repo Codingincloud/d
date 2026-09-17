@@ -1,0 +1,345 @@
+source: Lab_Manual_all\Lab_1_2_Sockets_JavaRMI.pdf
+method: pdf
+sha256: 694fe0585dc0762213b5782870b556a20ed46d8eadfc5e79c9bd4c7d7e474e9f
+pages:  11
+ocr:    3 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+===== page 1 =====
+An undertaking of Bhaktapur Municipality
+KHWOPA ENGINEERING COLLEGE
+Affiliated to Purbanchal University
+DISTRIBUTED AND CLOUD COMPUTING
+B.E. COMPUTER VII SEMESTER (Very New Course)
+LAB MANUAL
+Department of Computer Engineering
+July 2025
+
+
+===== page 2 =====
+Lab 1 - SOCKET IMPLEMENTATION FOR CLIENT SERVER
+APPLICATION
+Objectives - Demonstrate client server communication using sockets
+implementation.
+Theory - Socket programming is used for communication between the
+applications running on different JRE. Java Socket programming can be
+connection-oriented or connection less. Socket and ServerSocket classes
+are used for connection-oriented socket programming and
+DatagramSocket and DatagramPacket classes are used for connection-less
+socket programming. One socket(node) listens on a particular port at an
+IP, while another socket reaches out to the other to form a connection.
+Server forms the listener socket while the client reaches out to the server.
+The client in socket programming must know two information, IP address
+of server and Port number. When the connection is made, the server
+creates a socket object on its end of the communication. The client and the
+server can now communicate by writing to and reading from the socket.
+The java.net.Socket class represents a socket, and the
+java.net.ServerSocket class provides a mechanism for the server program
+to listen for clients and establish connections with them. The following
+steps occur when establishing a TCP connection between two computers
+using sockets –
+[image text] Setsockopt
+Bind
+Accept
+Recv
+Figure 1.1: Client-server function in socket programming
+
+
+===== page 3 =====
+ The server instantiates a ServerSocket object, denoting which port
+number communication is to occur on.
+ The server invokes the accept() method of the ServerSocket class.
+This method waits until a client connects to the server on the given
+port.
+ After the server is waiting, a client instantiates a Socket object,
+specifying the server name and the port number to connect to.
+ The constructor of the Socket class attempts to connect the client to
+the specified server and the port number. If communication is
+established, the client now has a Socket object capable of
+communicating with the server.
+ On the server side, the accept() method returns a reference to a new
+socket on the server that is connected to the client's socket.
+After the connections are established, communication can occur using I/O
+streams. Each socket has both an OutputStream and an InputStream. The
+client's OutputStream is connected to the server's InputStream, and the
+client's InputStream is connected to the server's OutputStream. TCP is a
+two-way communication protocol; hence data can be sent across both
+streams at the same time. The socket programming goes as:
+1. Socket creation:
+int sockfd = socket(domain, type, protocol)
+sockfd: socket descriptor, an integer (like a file-handle)
+domain: integer, communication domain e.g., AF_INET (IPv4
+protocol) ,
+AF_INET6 (IPv6 protocol)
+type: communication type
+SOCK_STREAM: TCP(reliable, connection oriented)
+SOCK_DGRAM: UDP(unreliable, connectionless)
+Protocol: Protocol value for Internet Protocol(IP),i.e. 0. This is the
+same
+number which appears on protocol field in the IP header of a packet.
+2. Setsockopt:
+int setsockopt(int sockfd, int level, int optname, const void *optval,
+socklen_t optlen);
+This helps in manipulating options for the socket referred by the file
+descriptor sockfd. This is completely optional, but it helps in reuse
+of address and port. Prevents errors such as address already in use.
+
+
+===== page 4 =====
+3. Bind:
+int bind(int sockfd, const struct sockaddr *address, socklen_t
+addresslen);
+After creation of the socket, bind function binds the socket to the
+address and port number specified in addr(custom data structure).
+In the example code, we bind the server to the localhost, hence we
+use INADDR_ANY to specify the IP address.
+4. Listen:
+int listen(int sockfd, int backlog);
+It puts the server socket in a passive mode, where it waits for the
+client to approach the server to make a connection. The backlog,
+defines the
+maximum length to which the queue of pending connections for
+sockfd may grow. If a connection request arrives when the queue is
+full, the client may receive an error with an indication of
+ECONNREFUSED.
+5. Accept:
+int new_socket= accept(int sockfd, struct sockaddr *addr, socklen_t
+*addrlen);
+It extracts the first connection request on the queue of pending
+connections for the listening socket, sockfd, creates a new connected
+socket, and returns a new file descriptor referring to that socket. At
+this point, connection is established between client and server, and
+they are ready to transfer data.
+6. Connect:
+int connect(int sockfd, const struct sockaddr *addr, socklen_t
+addrlen);
+The connect() system call connects the socket referred to by the file
+descriptor sockfd to the address specified by addr. Server’s address
+and port is specified in addr.
+Source Code:
+//Server Side Implementation
+
+
+===== page 5 =====
+package TCPServer;
+import java.io.*;
+import java.net.*;
+public class TCPServer{
+public static void main(String args[]) throws Exception{
+String clientSentence;
+String capitalizedSentence;
+@SuppressWarnings("resource")
+ServerSocket welcomeSocket=new ServerSocket(6789);
+while(true){
+Socket clientSocket= welcomeSocket.accept();
+System.out.println("client connected");
+BufferedReader inFromClient= new BufferedReader(new
+InputStreamReader(clientSocket.getInputStream()));
+DataOutputStream outToClient= new
+DataOutputStream(clientSocket.getOutputStream());
+clientSentence=inFromClient.readLine();
+capitalizedSentence= clientSentence.toUpperCase();
+outToClient.writeBytes(capitalizedSentence+"\n");
+clientSocket.close();
+}
+}
+};
+//Client Side Implementation
+package TCPServer;
+import java.io.*;
+import java.net.*;
+public class TCPClient{
+public static void main(String args[]) throws Exception{
+String sentence;
+String modifiedSentence;
+BufferedReader inFromUser= new BufferedReader(new
+InputStreamReader(System.in));
+Socket clientSocket= new Socket("127.0.0.1",6789);//server ip
+
+
+===== page 6 =====
+DataOutputStream outToServer= new
+DataOutputStream(clientSocket.getOutputStream());
+BufferedReader inFromServer= new BufferedReader(new
+InputStreamReader(clientSocket.getInputStream()));
+System.out.println("Write a sentence:");
+sentence= inFromUser.readLine();
+outToServer.writeBytes(sentence+"\n");
+modifiedSentence= inFromServer.readLine();
+System.out.println("From server:"+ modifiedSentence);
+clientSocket.close();
+}
+};
+[image text] Output for Server Side
+TCPSew [Java Application) 9.25:06 am)
+client connected
+Figure 1.2: Output from sewer-side code implemented
+< terminated > TCPCIient (Java Application) (29 •Aug •2021, 23814 pm)
+i am prasanna adhikari
+server:1 ADHIKARI
+
+
+===== page 7 =====
+LAB 2 - RMI IMPLEMENTATION IN JAVA
+Objectives:
+• Implement RMI in Java programming language.
+Theory:
+RMI stands for Remote Method Invocation. It is a mechanism that
+allows an object residing in one system (JVM) to access/invoke an
+object running on another JVM. RMI is used to build distributed
+applications; it provides remote communication between Java
+programs. It is provided in the package java.rmi. The RMI provides
+remote communication between the applications using two objects
+stub and skeleton. Through RMI, object running in a JVM present
+on a computer (Client side) can invoke methods on an object present
+in another JVM (Server side). RMI creates a public remote server
+object that enables client and server-side communications through
+simple method calls on the server object.
+The RMI server contains the objects whose methods are to be
+invoked remotely. The server creates several remote objects and
+makes a reference of these objects in RMI registry. The RMI registry
+is a service that runs on the RMI server. The remote objects created
+by the server are registered by the objects’ unique name in this
+registry. The
+client gets the reference of one or more remote objects from the RMI
+registry by looking up the object name. The client then invokes the
+methods on the remote object(s) to access the services of the remote
+object(s).
+RMI is a way that a programmer, using the Java programming
+language and development environment, can write object-oriented
+programming in which objects on different computers can interact
+in a distributed network. RMI is the Java version of what is generally
+known as a remote procedure call (RPC), but with the ability to pass
+one or more objects along with the request. The object can include
+information that will change the service that is performed in the
+remote computer.
+Sun Microsystems, the inventors of Java, calls this "moving
+behavior." For example, when a user at a remote computer fills out
+an expense account, the Java program interacting with the user
+
+
+===== page 8 =====
+could communicate, using RMI, with a Java program in another
+computer that always had the latest policy about expense reporting.
+In reply, that program would send back an object and associated
+method information that would enable the remote computer
+program to screen the user's expense account data in a way that was
+consistent with the latest policy. The user and the company both
+would save time by catching mistakes early. Whenever the company
+policy changed, it would require a change to a program in only one
+computer. Sun calls its object parameter-passing mechanism object
+serialization. An RMI request is a request to invoke the method of a
+remote object. The request has the same syntax as a request to
+invoke an object method in the same (local) computer. In general,
+RMI is designed to preserve the object model and its advantages
+across a network.
+Working of RMI
+The communication between client and server is handled by using
+two intermediate objects: Stub object (on client side) and Skeleton
+object (on server side).
+Stub Object
+The stub object on the client machine builds an information block
+and sends this information to the server.
+The block consists of:
+• An identifier of the remote object to be used
+• Method name which is to be invoked
+• Parameters to the remote JVM
+Skeleton Object
+The skeleton object passes the request from the stub object to the
+remote object.
+It performs following tasks
+• It calls the desired method on the real object present on the server.
+• It forwards the parameters received from the stub object to the
+method.
+
+
+===== page 9 =====
+Steps to implement Interface:
+1. Defining a remote interface
+2. Implementing the remote interface
+3. Creating Stub and Skeleton objects from the implementation class
+using rmic (rmi complier)
+4. Start the rmiregistry
+5. Create and execute the server application program
+6. Create and execute the client application program.
+[image text] arameter
+Method call
+on client
+Retum Value
+Intemet
+Invocation
+on server
+Figure 2.1:
+Working of RMI
+
+
+===== page 10 =====
+SOURCE CODE
+//Server Side
+package ds_lab2;
+import java.rmi.*;
+import java.rmi.Remote;
+//import java.rmi.server.*;
+public class HelloServer{
+public static void main(String args[]){
+try{
+/*Create the remote object */
+Remote h = new HelloImpl();
+/*Bind the remote object to the RMI registry*/
+Naming.bind("rmi://Hello", h);
+System.out.println("Object is registered.");
+System.out.println("Now server is waiting for client request ...");
+}
+catch (Exception e){
+System.out.println("Error : " + e);
+}
+}
+}
+//Client Side
+package ds_lab2;
+import java.rmi.*;
+//import java.io.*;
+public class HelloClient {
+public static void main(String args[]){
+try{
+String host = "localhost";
+/*Find the remote object in the RMI registry */
+Hello h = (Hello)Naming.lookup("rmi://"+host+"/Hello");
+System.out.println("Client: Hello!");
+System.out.println("Server: " + h.sayHello());
+}
+catch (Exception e){
+System.out.println("Error : " + e);
+}
+
+
+===== page 11 =====
+}
+}
+//Main Implementation
+package ds_lab2;
+import java.rmi.*;
+import java.rmi.server.*;
+public class HelloImpl extends UnicastRemoteObject implements
+Hello{
+private static final long serialVersionUID = 1L;
+/*Define the default constructor */
+public HelloImpl() throws RemoteException{
+super();
+}
+/*Define the remote method */
+public String sayHello() throws RemoteException{
+return "Hello! Prasanna Adhikari.";
+}
+}
+//Interface
+package ds_lab2;
+public interface Remote {
+}
+package ds_lab2;
+import java.rmi.*;
+public interface Hello extends Remote{
+/*Declare the remote method*/
+public String sayHello() throws RemoteException;
+}

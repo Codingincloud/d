@@ -250,7 +250,7 @@ learn: `
 
 </svg>
 
-<figcaption>Fig 1.1 — Steps in a simulation study. Colour marks the four phases of §1.9: problem definition (steps 1–3), translation and data (4–5), verification, validation and design (6–8), analysis to implementation (9–12).</figcaption>
+<figcaption>Fig 1.1 — Steps in a simulation study. Colour marks the four phases of §1.9: problem definition (steps 1–3), translation and data (4–5), verification, validation and design (6–8), analysis to implementation (9–12). <button class="page-chip" type="button" data-page="n1p13">n1 p13</button></figcaption>
 
 </figure>
 
@@ -329,7 +329,52 @@ past: [
 <tr><td>Phase 3</td><td>Verification, Validation & Experimental Design</td><td>Steps 6, 7, 8</td></tr>
 <tr><td>Phase 4</td><td>Analysis & Interpretation</td><td>Steps 9, 10, 11, 12</td></tr></table>`}],
    answer:`<h4>Answer</h4>
-<p><strong>The 12 steps of a simulation study</strong> — the figure in the notes draws them as one flowchart:</p>
+<p><strong>The 12 steps of a simulation study</strong> — the figure in the notes draws them as one flowchart. Draw it as the answer, then write the twelve labels and the four phase bands on it:</p>
+<figure class="figure-wrap">
+<svg class="figure" viewBox="0 0 640 934" role="img" aria-label="Flowchart of the twelve steps of a simulation study, with verification and validation loops back to the model and a more-runs loop back to the experimental design">
+<defs><marker id="fx1b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="flow-arrow-head"/></marker></defs>
+<rect class="flow-box phase1" x="92" y="22" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="50.0">1  Problem formulation</text>
+<path class="flow-arrow" d="M320.0,68 V91" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase1" x="92" y="94" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="122.0">2  Setting objectives & overall plan</text>
+<path class="flow-arrow" d="M320.0,140 V163" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase1" x="92" y="166" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="194.0">3  Model conceptualization</text>
+<path class="flow-arrow" d="M320.0,212 V235" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase1" x="92" y="238" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="266.0">4  Data collection</text>
+<path class="flow-arrow" d="M320.0,284 V307" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase1" x="92" y="310" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="338.0">5  Model translation</text>
+<path class="flow-arrow" d="M320.0,356 V379" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase2" x="92" y="382" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="410.0">6  Verification (does it work?)</text>
+<path class="flow-arrow" d="M320.0,428 V451" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase2" x="92" y="454" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="482.0">7  Validation (is it the right model?)</text>
+<path class="flow-arrow" d="M320.0,500 V523" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase2" x="92" y="526" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="554.0">8  Experimental design</text>
+<path class="flow-arrow" d="M320.0,572 V595" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase3" x="92" y="598" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="626.0">9  Production run & analysis</text>
+<path class="flow-arrow" d="M320.0,644 V667" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase3" x="92" y="670" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="698.0">10  More runs needed?</text>
+<path class="flow-arrow" d="M320.0,716 V739" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase4" x="92" y="742" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="770.0">11  Documentation & reporting</text>
+<path class="flow-arrow" d="M320.0,788 V811" marker-end="url(#fx1b)"/>
+<rect class="flow-box phase4" x="92" y="814" width="456" height="46" rx="10"/>
+<text class="flow-text" x="320.0" y="842.0">12  Implementation</text>
+<path class="flow-loop" d="M92,405.0 H52 V189.0 H89" marker-end="url(#fx1b)"/>
+<text class="flow-label" x="60" y="280.0" transform="rotate(-90 60 280.0)" text-anchor="middle">revise the model</text>
+<path class="flow-loop" d="M548,693.0 H604 V549.0 H551" marker-end="url(#fx1b)"/>
+<text class="flow-label" x="596" y="604.0" transform="rotate(90 596 604.0)" text-anchor="middle">re-run with new seeds</text>
+</svg>
+<figcaption>Fig 1.1 — Steps in a simulation study. Colour marks the four phases of §1.9: problem definition (steps 1–3), translation and data (4–5), verification, validation and design (6–8), analysis to implementation (9–12). The two dashed returns are the part the marks are really for: a <em>no</em> at verification goes back to model translation, and a <em>no</em> at validation goes back to model conceptualization. <button class="page-chip" type="button" data-page="n1p13">n1 p13</button></figcaption>
+</figure>
 <ol>
 <li><strong>Problem formulation:</strong> state clearly what problem is to be solved.</li>
 <li><strong>Setting of objectives &amp; overall plan:</strong> decide what questions the study must answer and how to answer them.</li>

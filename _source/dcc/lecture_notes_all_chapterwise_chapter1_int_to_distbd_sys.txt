@@ -1,0 +1,379 @@
+source: Lecture Notes - all Chapterwise\Chapter 1 - Introduction to Distributed Systems\Chapter1_Int to Distbd_Sys.pptx
+method: pptx
+sha256: 46e5da5b813f0d74657d92fbdf0b129754287fa43de97d1cc647f04c9efe320d
+pages:  26
+ocr:    26 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+----- slide 1 -----
+Distributed and Cloud Computing
+Khwopa Engineering College 
+
+Lecture presentation by – Er. Avijit Karn
+
+----- slide 2 -----
+[in the slide picture] VIRTUAUZED
+INFRASTRUCTURE
+VIRTUALIZED
+INßASTRUUURE
+GLOBAL DATA
+CONSISTENCY
+MULTI-MASTER, CAP
+THEOREM SOLUTIONS
+& FAULT TOLERANCE
+ACTIVE-ACTIVE
+REPLICATION
+NO SINGLE POINT
+OF FAILURE
+CLOUD COMPUTING
+& HYPERSCALE
+aws IA Azure
+ON-DEMAND RESOURCE POOLING
+NECESSITY & VALUE
+DISTRIBUTED SYSTEMS:
+THE BACKBONE OF OUR
+CONNECTED PRESENT
+REAL-TIME
+STREAMING & Al
+NETFLIX
+Spotify
+LOW-LATENCY ANALYTICS
+MOBILE EDGE & IoT
+PROCESS LOCAL, SAVE BANDWIDTH
+DECENTRALIZED WEB
+& BLOCKCHAIN
+IPFS
+% TRUSTLESS, CENSORSHIP-RESISTANT X „
+
+----- slide 3 -----
+Chapter 1: Introduction to Distributed Systems
+References:
+1. G. Coulouris, J. Dollimore and T. Kindberg;  Distributed Systems Concepts and Design,4th Edition.
+2. Andrew S. Tanenbaum and Maarten van Steen;  Distributed Systems: Principles and Paradigms, 3rd Edition.
+[notes] Notes to presenter: 
+What is your purpose for sharing this reflection?
+Is it at the end of a unit or project?  
+Are you sharing this reflection, at the attainment of a learning goal you set for yourself?  
+Is it at the end of a course?  
+
+State your purpose for the reflection or even the purpose of the learning experience or learning goal.  Be clear and be specific in stating your purpose.
+
+----- slide 4 -----
+1.1 Introduction
+Tanenbaum defines a distributed system as “a collection of autonomous computing elements that appears to its users as a single coherent system.”
+More specifically and precisely defined as “a system in which components located at networked computers communicate and coordinate their actions only by passing messages or ‘message passing’.”
+The main characteristics addressed by above definition are 
+Concurrency
+No presence of Global Clock
+Independent Failures
+Main motivation for building the DS is to share resources, either hardware or software.
+[notes] Notes to presenter: 
+Description of what you learned in your own words on one side.
+Include information about the topic 
+Details about the topic will also be helpful here.  
+Tell the story of your learning experience.  Just like a story there should always be a beginning, middle and an end.
+On the other side, you can add a graphic that provides evidence of what you learned.
+
+Feel free to use more than one slide to reflect upon your process.  It also helps to add some video of your process.
+[in the slide picture] Processor
+Memory
+
+----- slide 5 -----
+Three Tier Application as Distributed System
+[notes] Notes to presenter: 
+What did you think at first?
+What obstacles did you encounter along the way?
+How did you overcome those obstacles?
+What images can you add to support your process?
+
+This SmartArt allows you add images and text to help outline your process.  If a picture is worth a thousand words, then pictures and words should help you communicate this reflection on learning perfectly!  You can always click on Insert>SmartArt to change this graphic or select the graphic and click on the Design contextual menu to change the colors.
+
+Feel free to use more than one slide to reflect upon your process.  It also helps to add some video of your process.
+[in the slide picture] Presentation tier
+The top-most level of the application
+is the user interface. The main function
+of the interface is to translate tasks
+and results to something the user can
+understand.
+Logic tier
+This layer coordinates the
+application. processes commands.
+makes logical decisions and
+evaluations. and performs
+calculations. It also moves and
+processes data between the two
+surrounding layers.
+Data tier
+Here information is stored and retrieved
+from a database or file system. The
+information is then passed back to the
+eventually back to the user.
+>GET SALES
+TOTAL
+GET LIST OF ALL
+SALES MADE
+LAST YEAR
+QUERY
+ADD ALL SALES
+TOGETHER
+SALE 1
+SALE 2
+SALE 3
+SALE 4
+Storage
+
+----- slide 6 -----
+1.2 Examples
+Web Search
+Finance and commerce
+Creative industries and entertainment
+Healthcare
+Education
+Transport and Logistics, etc.,
+Massive Online multiplayer games
+Financial Trading
+
+----- slide 7 -----
+1.3 Main Characteristics*
+Concurrency
+Programs with shared resources run concurrently
+Elaborating, enables processes running in different machines to form a common system that is capable of executing codes on multiple machines at the same time.
+Helps to reduce latency and increase throughput.
+No Global Clock
+Synchronization is difficult across remote networks, so there is absence of global clock system.
+Only communication through message passing.
+Independent Failures
+Single site failure doesn’t contribute to whole system.
+Provides reliability, resilience, availability to end users.
+
+
+*----rest in Design Goal Slides
+
+----- slide 8 -----
+1.4 Advantages of DS
+Economics – cost effective/collection of MPXs offer better  price,
+Scalable
+Data and Resource (hardware/software) Sharing
+Flexibility – spreading workload over connected machines
+Communication – speed, reliable, inherent distribution
+Availability
+Incremental Growth – computing power can be added in small increments
+
+----- slide 9 -----
+Disadvantages
+Main concern is Security, all the connections and nodes must be secured
+Chances of loss of data while movement across nodes
+Complexity in developing software for distributed systems
+Distribution of control – administration issues, detection of faults
+
+----- slide 10 -----
+1.5 Design Goals/ Goals of DS
+4 goals must be met while designing a system to work in a distributed environment:
+
+Resource sharing 
+Sharing of available physical or non-physical resources as remote data, files, etc., in an efficient manner.
+Cost effective implementation of the system.
+Good collaboration is a must among nodes or users, along with information exchange
+There might also be increased security concerns due to above action
+
+----- slide 11 -----
+1.5 Design Goals
+Openness
+
+Define syntax and semantics, services with standard rule
+Services specified through an interface defined in IDL (Interface Definition Language)
+IDL should give description related to function name, parameters, return values, possible exceptions and uses of service, but the interface should be neutral.
+Helps to achieve interoperability ( 2 implementations working together using each other services) and  portability (application designed for one DS to be able to work properly and in a correct way in other DS with same implementations).
+Adding and removing of system components without effecting the main.
+The first step in openness is publishing the documentation of software components and interfaces of the components to make them available to software developers.
+
+----- slide 12 -----
+Design Goals…
+Transparency
+Realization of single coherent system by hiding the processes and resources.
+Different form  of Transparency
+
+Source: Tanenbaun
+[in the slide picture] Access
+Location
+Migration
+Replication
+Concurrency
+Failure
+Description
+Hide differences in data representation and how an object is
+Hide where an object is located
+in use
+Hide that an object may be shared by several independent
+users
+
+----- slide 13 -----
+1.6 Main Problems
+Heterogeneity
+Heterogeneous components must be able to interoperate, applicable to all Networks, Hardware Architectures, OS, Programming Languages and Written programs
+The above problem is masked by the below examples, to provide better heterogeneity
+Middleware
+Internet Protocols
+Mobile code
+
+----- slide 14 -----
+Middleware:
+Applies to a software layer, provides a programming abstraction, and masks the heterogeneity of the underlying networks, hardware, operating systems and programming languages. 
+CORBA (Common Object Request Broker),ODBC, JDBC, RMI are some examples.
+Supplies services so that application can exchange data in standard way.
+[in the slide picture] Machine A
+Local OS
+Machine B
+Distributed applications
+Machine C
+
+----- slide 15 -----
+Reliability
+Availability: fraction of time the system is usable, improved by redundancy.
+Need to maintain consistency and be secure 
+Fault tolerance: need to mask failures, recover from errors.
+
+Security
+Must be able to fulfill three components; Confidentiality, Integrity and Availability
+Mechanism to be adopted: Encryption, Authentication and Authorization
+Some challenges still exist; DOS attack and Mobile code security
+
+----- slide 16 -----
+Scalability
+Controlling the cost of physical resources 
+Cost should linearly increase with the system size. 
+Controlling the performance loss 
+Preventing software resources running out 
+Avoiding performance bottlenecks
+Using decentralized algorithms to avoid having performance bottlenecks.
+Caching and replication in Web are examples of providing scalability.
+
+----- slide 17 -----
+1.7 Models of Distributed System
+Architecture Models
+Client-server Model
+Peer-to-Peer Model
+Fundamental Models
+Interaction Model
+Fault/Failure Model
+Security Model
+
+----- slide 18 -----
+Contd..
+Architecture Models
+An Architectural model of a distributed system is concerned with the placement of its parts and the relationships between them. 
+
+Client-Server Model
+The client-server model is usually based on a simple request/reply protocol, implemented with send/receive primitives or using remote procedure calls (RPC) or Remote method invocation (RMI)
+The client sends a request (invocation) message to the server asking for some service; The server does the work and returns a result (e.g. the data requested) or an error code, if the work could not be performed.
+[in the slide picture] process (object): (D
+computer (node):
+
+----- slide 19 -----
+Peer-to-peer 
+All process or objects play the same role.
+Processes (objects) interact without a particular distinction between clients and servers.
+The pattern of communication depends on the particular application.
+A large number of data objects are shared; any individual computer holds only a small part of the application database.
+Processing and communication loads for access to objects are distributed across many computers and access links.
+This is the most general and flexible model.
+
+Problems with peer-to-peer:
+
+High complexity due to cleverly placed individual objects
+Retrieving the objects
+maintain a potentially large number of replicas.
+[in the slide picture] Applicat •on
+Shara
+Peers 5 .
+Applica •on
+
+----- slide 20 -----
+Fundamental Model
+Fundamental Models are concerned with a more  formal description of the properties that are common in all of the architectural models.
+
+Interaction Model
+Addresses the communication issues of messages in distributed environment.
+Communication occurs within processes.
+The processes interact by passing messages, resulting in: Communication (information flow) and Coordination (synchronization and ordering of activities) between processes
+Interaction model reflects the facts that communication takes place with delays.
+
+----- slide 21 -----
+Two variants of the interaction Model
+
+In a distributed system it is hard to set time limits on the time taken for process execution, message delivery or clock drift.
+
+Synchronous distributed systems
+
+It has a strong assumption of time 
+The time to execute each step of a process has known lower and upper bounds.
+Each message transmitted over a channel is received within a known bounded time.
+Each process has a local clock whose drift rate from real time has a known bound.
+
+Asynchronous distributed systems
+
+It has no assumption about time.
+There is no bound on process execution speeds.
+Each step may take an arbitrary long time.
+There is no bound on message transmission delays.
+A message may be received after an arbitrary long time.
+There is no bound on clock drift rates.
+The drift rate of a clock is arbitrary.
+
+----- slide 22 -----
+Contd..
+Failure Model
+Failure model defines and classifies the faults.
+Fault models are needed in order to build systems with predictable behavior in case of faults (systems that are fault-tolerant).
+such a system will function according to the predictions, only as long as the real faults behave as defined by the “fault model”.
+Omission Failures
+Arbitrary Failures
+Timing Failures
+
+Security Model
+Security model defines and classifies the forms of attacks.
+It provides a basis for analysis of threats to a system
+It is used to design of systems that are able to resist threats
+
+----- slide 23 -----
+1.8 Resource Sharing and the Web Challenges
+Resource Sharing
+Users of a system always tends to share resources like hardware (printer), data (files) and specific functioning resources (search engines).
+Service manages a collection of related resources and provides the functionality to the users. Like a file sharing is initiated by a file service providing read, write and delete operations or functions on the files.
+Services can be invoked from other computers only by communication.
+
+Web Challenges
+Dangling links presence. (resource deleted, but links present to that particular resource).
+Response to web users quite slow 
+Lack of proper User Interface.
+
+----- slide 24 -----
+1.9 Types of Distributed System
+Grid System
+A type of parallel and distributed system that enables the sharing, selection, and aggregation of geographically distributed autonomous resources dynamically at runtime depending on their availability, capability, performance, cost, and users' quality-of-service requirements.
+Grid systems have high degree of heterogeneity.
+
+Architecture:
+The fabric layer provides interface to local resources at a specific site which can be shared within a virtual organization. 
+The connectivity layer has communication protocols to support grid transactions. It supports delegation of rights from authenticated users to programs running on behalf of those users.
+The resource layer manages a single resource with the help of functions provided by connectivity layer and interfaces of fabric layer. It is responsible for access control.
+The collective layer handles access to multiple resources via resource discovery, allocation and scheduling of multiple resources along with data replication.
+The application layer consists of applications that uses the services provided by the grid computing system.
+[in the slide picture] Connectivity layet
+
+----- slide 25 -----
+Cluster System
+A type of parallel or distributed processing system, which consists of a collection of interconnected stand-alone computers cooperatively working together as a single, integrated computing resource. The computers may be standard per uniprocessor or multiprocessor. 
+A cluster can be used for providing highly scalable services such as search engines provide for users all over the Internet.
+Cluster system is generally used for parallel programming in which a single program is run in parallel on multiple computers within the system.
+The feature of cluster computing is homogeneity. It means all the computers within the cluster system must have same operating system and must be operated within the same network.
+
+----- slide 26 -----
+Cloud System
+Cloud computing system is a type of Internet-based computing that provides shared computer processing resources and data to computers and other devices on demand.
+ It enables on demand access to a shared pool of configurable computing resources.
+A number of different service model have been established
+Software as a service (SaaS) – applications provided by cloud providers
+Platform as a service (PaaS) – environment for development of web applications.
+Infrastructure as a service (IaaS) – provide technical infrastructures as servers, computing and networking resources, storage facility, archiving data, etc.

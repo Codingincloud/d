@@ -1,0 +1,90 @@
+{
+ "ch1.js": [
+  {
+   "index": 157,
+   "kind": "worth-in-exam",
+   "html": "<div class=\"concept-box asked\">\n<h4>What this unit is worth in the exam</h4>\n<ul>\n<li><strong>2 marks</strong> &mdash; &ldquo;Define a distributed system.&rdquo; This was <em>question 1</em> of Group A in the Model Question 2025, so it is the first thing on the paper.</li>\n<li><strong>4 marks</strong> &mdash; &ldquo;Explain the goals of distributed systems.&rdquo; (Group B, Model 2025)</li>\n<li><strong>4 marks</strong> &mdash; &ldquo;Differentiate between client-server and peer-to-peer architectures with examples.&rdquo; (Group B, Model 2025)</li>\n</ul>\n<p>Three of the paper's sixteen questions come from this unit, and it is only four teaching hours long &mdash; the best marks-per-hour in the course. The six-mark weight in the syllabus table is confirmed by the paper itself.</p>\n</div>\n\n\n"
+  },
+  {
+   "index": 5734,
+   "kind": "read-the-unit-roadmap",
+   "html": "<p>Read the unit in the order the deck teaches it, because each section feeds the one after: 1.1 gives the definition the paper opens with, 1.2 the goals, 1.3 the examples and 1.4 the models the rest of the course is built on. The deck's closing material sits inside those four sections rather than beside them: advantages and disadvantages are 1.1.3, the four problems are 1.2.1, resource sharing is 1.2.2, the Web is 1.3.1, and the types of system are 1.4.5. That folded material is where the second half of a multi-part question usually comes from.</p>\n"
+  }
+ ],
+ "ch2.js": [
+  {
+   "index": 159,
+   "kind": "worth-in-exam",
+   "html": "<div class=\"concept-box asked\">\n<h4>What this unit is worth in the exam</h4>\n<ul>\n<li><strong>10 marks</strong> &mdash; this is the largest single unit in the syllabus marks-distribution table, and it is not a unit you can skip.</li>\n<li><strong>4 marks</strong> &mdash; &ldquo;Describe Remote Procedure Call (RPC) with its working mechanism.&rdquo; (Group B, question 7 of the <em>Model Question 2025</em>)</li>\n</ul>\n<p>The rest of the unit has no question in the one model paper available, which is worth knowing rather than guessing about: the paper is one sample, and its Group B carries seven of eight questions while Group C carries three of four. A 10-mark unit with one 4-mark question in the sample is exactly the sort of unit a second paper picks up elsewhere, so <strong>learn 2.1 and 2.2 cold, and know 2.3 and 2.4 well enough to write a short answer</strong> &mdash; the four reference notes supplied for this unit are all on 2.3 and 2.4, which is a strong hint about where the teaching time went.</p>\n</div>\n\n"
+  },
+  {
+   "index": 6726,
+   "kind": "read-the-unit-roadmap",
+   "html": "<p>Read the unit in two passes. Sections 2.1 and 2.2 are the <em>abstractions above</em> &mdash; RPC and RMI, which hide the message behind a call, and whose whole subject is what has to be agreed for that illusion to survive failure, marshalling and concurrency. Section 2.3 is the <em>mechanism below</em>, message passing taken on its own terms, where nothing is hidden and the programmer does the work. Section 2.4 is the same idea one generation later, where the abstraction is HTTP and a resource rather than a stub and an object. A question on this unit is usually answered from one of the two passes, so knowing which one it is asking about is half the answer.</p>\n\n"
+  }
+ ],
+ "ch3.js": [
+  {
+   "index": 154,
+   "kind": "worth-in-exam",
+   "html": "<div class=\"concept-box asked\">\n<h4>What this unit is worth in the exam</h4>\n<ul>\n<li><strong>2 marks</strong> &mdash; &ldquo;List any two clock synchronization algorithms used in distributed systems.&rdquo; (<em>Group A, question 3</em> of the Model Question 2025 &mdash; the easiest two marks on that paper.)</li>\n<li><strong>4 marks</strong> &mdash; &ldquo;Explain Lamport's logical clock with a suitable example.&rdquo; (Group B, question 8)</li>\n<li><strong>8 marks</strong> &mdash; &ldquo;Describe in detail the working and applications of the Bully election algorithm.&rdquo; (<em>Group C, question 14</em> &mdash; a full long question.)</li>\n</ul>\n<p>That is <strong>14 marks of paper on a unit the syllabus weights at 6</strong>. No other unit in this course is as well represented relative to its size, and all three questions are answerable from 3.1&ndash;3.4 directly. If only one unit gets full attention, this is a strong candidate.</p>\n</div>\n\n"
+  }
+ ],
+ "ch4.js": [
+  {
+   "index": 161,
+   "kind": "read-the-unit-roadmap",
+   "html": "<p>Read the unit as one question answered at three levels. <strong>4.1</strong> defines what a distributed file system is and what consistency costs. <strong>4.2</strong> puts two real systems beside that definition &mdash; NFS, which chose simplicity and statelessness, and HDFS and GFS, which chose replication behind a single metadata server. <strong>4.3</strong> steps back to the layer all of them stand on, middleware, and names the families the syllabus expects you to recognise. The two exam questions in the box below sit at the two ends of it.</p>\n\n\n\n"
+  },
+  {
+   "index": 3523,
+   "kind": "worth-in-exam",
+   "html": "<div class=\"concept-box asked\">\n<h4>What this unit is worth in the exam</h4>\n<ul>\n<li><strong>4 marks</strong> &mdash; &ldquo;Describe the concept of consistency in Distributed File Systems (DFS).&rdquo; (Group B, question 9 of the <em>Model Question 2025</em>)</li>\n<li><strong>8 marks</strong> &mdash; &ldquo;Explain the architecture of HDFS. Discuss how it ensures fault tolerance and scalability. [4+4]&rdquo; (<em>Group C, question 16</em>)</li>\n</ul>\n<p>Twelve marks from a 6-mark unit. The Group C question is unusually specific about its two halves &mdash; <strong>architecture</strong> in 4 marks, then <strong>fault tolerance and scalability</strong> in 4 marks &mdash; and both halves are answered directly by 4.2 below, including the exact mechanisms (replication, the secondary namenode, federation, high availability). The consistency question is the one people lose marks on, because \"consistency\" sounds like it explains itself; 4.1.6 gives the definition, the reason it is hard, and the four things to name.</p>\n</div>"
+  }
+ ],
+ "ch5.js": [
+  {
+   "index": 153,
+   "kind": "read-the-unit-roadmap",
+   "html": "<p>Read the unit in the order the deck builds it: <strong>5.1</strong> says where cloud computing came from and what it is made of, <strong>5.2</strong> says what makes it cloud rather than hosting, and <strong>5.3</strong> and <strong>5.4</strong> are the two classifications every question draws on &mdash; what the provider supplies (delivery models) and who controls it (deployment models). The vocabulary of this unit is what Units 6 to 9 are written in, so a term you do not fix here will reappear unexplained later.</p>\n\n\n\n"
+  },
+  {
+   "index": 3329,
+   "kind": "worth-in-exam",
+   "html": "<div class=\"concept-box asked\">\n<h4>What this unit is worth in the exam</h4>\n<ul>\n<li><strong>2 marks</strong> &mdash; &ldquo;What is the difference between IaaS and PaaS?&rdquo; (<em>Group A, question 2</em>)</li>\n<li><strong>4 marks</strong> &mdash; &ldquo;What are the key features and benefits of cloud computing?&rdquo; (Group B, question 10)</li>\n<li><strong>8 marks</strong> &mdash; &ldquo;Compare and contrast the public, private, hybrid, and community cloud deployment models with suitable use cases.&rdquo; (<em>Group C, question 13</em>)</li>\n</ul>\n<p><strong>14 marks &mdash; the largest single-unit total on the paper.</strong> Note that the Group C question says <em>compare and contrast</em> and <em>with suitable use cases</em>: a table alone loses marks, so 5.4.3 gives the table and 5.4.4 gives the use cases, and the answer needs both halves. Unit 6's hypervisor question and Unit 8's security question both build on vocabulary introduced here.</p>\n</div>"
+  }
+ ],
+ "ch6.js": [
+  {
+   "index": 159,
+   "kind": "read-the-unit-roadmap",
+   "html": "<p>Read the unit in two halves. <strong>6.1 and 6.2</strong> are the mechanism: what a hypervisor is, the two types, how it virtualizes CPU, memory and I/O, and why a virtual machine is not the same thing as a container. <strong>6.3 and 6.4</strong> are the architecture built on it: the reference model the deck draws from the NIST picture, and the work of running the result &mdash; provisiong, scheduling, migration and the management stack. Almost every sentence in the first half is the answer to the exam question in the box, and almost every sentence in the second half is a Unit 7 or Unit 9 idea arriving early.</p>\n\n\n\n"
+  },
+  {
+   "index": 3917,
+   "kind": "worth-in-exam",
+   "html": "<div class=\"concept-box asked\">\n<h4>What this unit is worth in the exam</h4>\n<ul>\n<li><strong>4 marks</strong> &mdash; &ldquo;Explain the difference between a hypervisor Type I and Type II.&rdquo; (Group B, question 11 of the <em>Model Question 2025</em>)</li>\n</ul>\n<p>One question in the model paper, but the unit is weighted at 8 marks &mdash; the joint highest with Unit 8 &mdash; and it is the unit that explains <em>how</em> the cloud works, so its vocabulary is used by the Unit 9 question on cloud-native architectures and by Unit 8's security question (a hypervisor is an attack surface, and this unit even names the attack). Read it for the mechanism, not just the marks.</p>\n</div>"
+  }
+ ],
+ "ch7.js": [
+  {
+   "index": 855,
+   "kind": "worth-in-exam",
+   "html": "<div class=\"concept-box asked\">\n<h4>What this unit is worth in the exam</h4>\n<p>The Model Question 2025 has <strong>no question from this unit</strong>, and it is the only unit of which that is true. That does not make it optional: the syllabus weights it at <strong>6 marks</strong>, and its vocabulary is used inside the answers to other units' questions &mdash; Unit 5's IaaS question is easier to answer with EC2 named as the instance, and Unit 9's cloud-native question assumes containers and Kubernetes, which are compute services on these platforms. Learn it as the concrete half of Unit 5: <em>Unit 5 said what the models are; Unit 7 names who sells them and what they are called.</em></p>\n</div>\n\n"
+  }
+ ],
+ "ch8.js": [
+  {
+   "index": 154,
+   "kind": "worth-in-exam",
+   "html": "<div class=\"concept-box asked\">\n<h4>What this unit is worth in the exam</h4>\n<ul>\n<li><strong>4 marks</strong> &mdash; &ldquo;Briefly describe two challenges in ensuring security in cloud environments.&rdquo; (Group B, question 12 of the <em>Model Question 2025</em>)</li>\n</ul>\n<p>Eight syllabus marks, so this unit is weighted as heavily as Unit 6. Two things make it easy to answer well: <strong>the question says \"briefly describe two\"</strong>, so depth on two named challenges beats a list of eight; and the unit has a <strong>structured vocabulary</strong> &mdash; the four data-security aspects, the five IAM functions, the five SLA criteria and the eight vulnerabilities &mdash; that turns a vague answer into a specific one. Every other unit's material appears here at the point where it becomes a risk: the hypervisor of Unit 6 as an attack surface, vendor lock-in from Unit 5, and shared responsibility as the boundary between them.</p>\n</div>\n\n"
+  }
+ ],
+ "ch9.js": [
+  {
+   "index": 172,
+   "kind": "worth-in-exam",
+   "html": "<div class=\"concept-box asked\">\n<h4>What this unit is worth in the exam</h4>\n<ul>\n<li><strong>8 marks</strong> &mdash; &ldquo;Discuss cloud-native architecture. How do microservices, containers, and orchestration tools like Kubernetes support it? <strong>[4+4]</strong>&rdquo; (<em>Group C, question 15</em> of the Model Question 2025)</li>\n</ul>\n<p>A 4-mark syllabus unit carrying an 8-mark Group C question, because the question is really about two of its four sub-topics: <strong>9.4 cloud-native and microservices</strong> for the first 4 marks, and <strong>9.3 containers and orchestration</strong> for the second 4. Note the wording of the second half &mdash; <em>how do microservices, containers, and orchestration tools support it</em> &mdash; which asks for one answer per tool, not three descriptions. The 4.4 in 9.4.6 gives exactly that structure.</p>\n</div>\n\n"
+  }
+ ]
+}

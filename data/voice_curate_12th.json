@@ -1,0 +1,217 @@
+{
+ "_comment": [
+  "The twelfth tell: sentences that instruct the reader, or that frame the subject",
+  "as something to write in an answer. `tools/voice_audit.py` reports 0 for its",
+  "eleven patterns, and that number is true of those eleven - but it is a floor,",
+  "not the truth. This file is the family that stayed:",
+  "",
+  "  * sentences that open with an instruction to the reader (\"Read the tiers as a",
+  "    division of labour, not a diagram\", \"Keep the two kinds of transparency",
+  "    apart\"), and",
+  "  * sentences whose subject is the answer rather than the subject (\"the sentence",
+  "    to write in an answer is the one-line rule\", \"Two connections worth making",
+  "    in an answer\", \"the distinction students lose\").",
+  "",
+  "Written as prose - the sentence to change, the sentence to put in its place,",
+  "which tell it retires and why - and resolved to exact markup by",
+  "`tools/voice_rewrite.py --curate`, which refuses anything that is not one place",
+  "in the file. An empty `new` deletes the sentence.",
+  "",
+  "Not every imperative is a tell and none of these entries touch the ones that",
+  "are mathematics: \"Consider a circle x2 + y2 = r2 inscribed in a square of side",
+  "2r\", \"Check that the In and Out counts add up to N before you compute the",
+  "integral\" and \"Every disadvantage maps onto a step\" are teaching, and a pass",
+  "that removed them would be removing the subject."
+ ],
+ "edits": [
+  {
+   "ch": "ch1.js",
+   "tell": "direct",
+   "why": "the reader does not need to be told how to read a three-tier diagram; the tiers themselves are the fact",
+   "old": "Read the tiers as a division of labour, not a diagram: the presentation tier holds what the user sees",
+   "new": "The presentation tier holds what the user sees"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "direct",
+   "why": "a comparison whose subject is the mapping onto ten steps, not the reader's reading of it",
+   "old": "Read the same list against 2.1.1's ten steps and every disadvantage maps onto a step:",
+   "new": "Each disadvantage maps onto one of the ten steps:"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "answer",
+   "why": "the sentence is about a marked answer and what it makes a student look like, which is not a fact about transparency",
+   "old": "Keep the two kinds of transparency apart, because an answer that mixes them reads as if the student has not noticed the difference.",
+   "new": ""
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "answer",
+   "why": "a heading names the two words; that they are wanted in an answer is a claim about the paper",
+   "old": "Two words to use precisely in an answer",
+   "new": "Two words to use precisely"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "answer",
+   "why": "easy to confuse is a fact about the two properties; easy to get wrong in an answer is a fact about the marking",
+   "old": "Two properties of SPMD are easy to get wrong in an answer.",
+   "new": "Two properties of SPMD are easy to confuse."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "direct",
+   "why": "the three protocols are one trade whether or not the reader is told to read them that way",
+   "old": "Read the three protocols as one trade seen at three settings: how much buffer memory you spend to avoid waiting.",
+   "new": "The three protocols are one trade seen at three settings: how much buffer memory is spent to avoid waiting."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "answer",
+   "why": "the two phases are the content; that stating them structures an answer is strategy",
+   "old": "Every election algorithm has two phases, and stating them is a reliable way to structure an answer:",
+   "new": "Every election algorithm has two phases:"
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "answer",
+   "why": "the three message types are the content; what an answer should name is about the marking",
+   "old": "Three message types, and an answer should name all three:",
+   "new": "Three message types:"
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "answer",
+   "why": "the trade is the fact; to state it in an answer is strategy",
+   "old": "That is the trade to state in an answer: message cost per entry against a single object whose loss stops everything.",
+   "new": "That is the trade: message cost per entry against a single object whose loss stops everything."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "answer",
+   "why": "the one-line rule is the fact; that it is the sentence to write in an answer is about the paper",
+   "old": "The sentence to write in an answer is the one-line rule: CORBA's interface is defined in a neutral language",
+   "new": "The one-line rule: CORBA's interface is defined in a neutral language"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "answer",
+   "why": "what the table separates is the content; that it is the skeleton of an answer is strategy",
+   "old": "Read the table as the skeleton of any \u201cexplain cloud computing models\u201d answer, because it separates three things that are easy to blur together:",
+   "new": "The table separates three things that are easy to blur together:"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "direct",
+   "why": "a label for the section, stripped of the aside about what students lose",
+   "old": "Scalability versus elasticity - the distinction students lose.",
+   "new": "Scalability versus elasticity."
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "direct",
+   "why": "the four lists map the jobs whether or not the reader is told to read them as a map",
+   "old": "Read the four lists as a map of the jobs a provider has to staff, and notice how much of it is not computing at all.",
+   "new": "The four lists map the jobs a provider has to staff, and much of it is not computing at all."
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "deck",
+   "why": "the layer names are the model's own; where they came from is not a fact about the model",
+   "old": "The layer names are the ones the deck uses, and the client row at the top is part of its diagram because the model is defined by what reaches the user.",
+   "new": "The client row at the top is part of the model, which is defined by what reaches the user."
+  },
+  {
+   "ch": "ch6.js",
+   "tell": "answer",
+   "why": "the fact is that virtualization is a cause; the question's wording is the paper's business",
+   "old": "When a question asks why cloud computing became possible, virtualization is part of the answer.",
+   "new": "Virtualization is one reason cloud computing became possible."
+  },
+  {
+   "ch": "ch6.js",
+   "tell": "answer",
+   "why": "the two lookups are the reason; that they are the answer to a question is framing",
+   "old": "If a question asks why memory virtualization costs performance, that is the answer - two lookups where a physical machine does one -",
+   "new": "Memory virtualization costs performance because of two lookups where a physical machine does one -"
+  },
+  {
+   "ch": "ch6.js",
+   "tell": "answer",
+   "why": "one mechanism seen five times is the insight, and it stands without the claim about what turns a list into an answer",
+   "old": "The five are not five separate advantages; they are one mechanism seen five times, and stating that is what turns the list into an answer.",
+   "new": "The five are not five separate advantages; they are one mechanism seen five times."
+  },
+  {
+   "ch": "ch6.js",
+   "tell": "answer",
+   "why": "how to draw it is the instruction; in an answer is the framing",
+   "old": "How to draw it in an answer.",
+   "new": "How to draw it."
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "answer",
+   "why": "the sentence is entirely about the second rule and about turning a list into an answer",
+   "old": "That is exactly the exercise the second rule asks for - consider the impact of the cloud on each phase - and it is what turns a list of seven words into an answer.",
+   "new": ""
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "answer",
+   "why": "the connections are between the phases, not between points of an answer",
+   "old": "Two connections worth making in an answer.",
+   "new": "Two connections between the phases."
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "answer",
+   "why": "the technical half of the protection is the fact; the half of an answer is about the paper",
+   "old": "Encryption in transit, from 8.1.1, is the technical half of the answer.",
+   "new": "Encryption in transit is the technical half of the protection."
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "the sentence carries the subject; that it is what to write in an answer is framing",
+   "old": "In an answer about cloud-native architecture, one sentence carries it: containers trade isolation for density",
+   "new": "One sentence carries cloud-native architecture: containers trade isolation for density"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "the chain of roles is the content; that it answers a question is framing",
+   "old": "That chain is the answer to \u201chow do containers and orchestration support cloud-native architecture\u201d.",
+   "new": ""
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "a label for the definition, without the instruction about what an answer needs",
+   "old": "The one-line definition for an answer.",
+   "new": "The one-line definition."
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "the sentence rates answers instead of stating what the trends cost",
+   "old": "An answer that names what each trend buys and what it costs is the one that reads as understanding rather than as a list.",
+   "new": ""
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "the two roles are complementary; whether the course's syllabus pairs them, and what half an answer needs, are not facts about the tools",
+   "old": "Docker answers \u201chow does this run the same way everywhere?\u201d; Kubernetes answers \u201chow does it keep running, at the right size, when machines fail?\u201d Because the course's syllabus pairs them in one sub-topic, an answer that gives only one of the two roles has answered half the question.",
+   "new": "Docker answers \u201chow does this run the same way everywhere?\u201d; Kubernetes answers \u201chow does it keep running, at the right size, when machines fail?\u201d The two roles are complementary, and one without the other describes half the pair."
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "the Past Questions tab already carries the model answer, and the guarded pointer line is what says so",
+   "old": "The model answer is in the past-questions tab; the shape of it is this:",
+   "new": ""
+  }
+ ]
+}

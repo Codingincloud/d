@@ -1,0 +1,3028 @@
+source: Books - all\DistributedSystems_Concepts&Design_Kindberg.pdf
+method: pdf
+sha256: 344831445ddb68b16909969a4597cb8100bea220a303757c5ef77e4173545585
+pages:  1067
+ocr:    2 page(s)
+rotation: 0
+dpi:    300
+----------------------------------------------------------------------
+===== page 1001 =====
+REFERENCES 983
+EFF 1998 Electronic Frontier Foundation (1998). Cracking DES, Secrets of
+Encryption Research, Wiretap Politics & Chip Design. Sebastapol, CA:
+O’Reilly & Associates.
+Egevang and Francis 1994 Egevang, K. and Francis, P. (1994). The IP Network Address Translator
+(NAT). Internet RFC 1631.
+Eisler et al. 1997 Eisler, M., Chiu, A. and Ling, L. (1997). RPCSEC_GSS Protocol
+Specification. Sun Microsystems, Internet RFC 2203.
+El Abbadi et al. 1985 El Abbadi, A., Skeen, D. and Cristian, C. (1985). An efficient
+fault-tolerant protocol for replicated data management. In Proc. of the
+4th Annual ACM SIGACT/SIGMOD Symposium on Principles of Data
+Base Systems, Portland, OR, pp. 215–29.
+Ellis et al. 1991 Ellis, C., Gibbs, S. and Rein, G. (1991). Groupware – some issues and
+experiences.Comms. ACM, Vol. 34, No. 1, pp. 38–58.
+Ellison 1996 Ellison, C. (1996). Establishing identity without certification
+authorities. In Proc. of the6th USENIX Security Symposium, San Jose,
+CA, July, p.7.
+Ellison et al. 1999 Ellison, C., Frantz, B., Lampson, B., Rivest, R., Thomas, B. and
+Ylonen, T. (1999). SPKI Certificate Theory. Internet RFC 2693,
+September.
+Elrad et al. 2001 Elrad, T., Filman, R. and Bader A. (eds.) (2001). Theme section on
+aspect-oriented programming, Comms. ACM, Vol. 44, No. 10, pp.
+29–32.
+Emmerich 2000 Emmerich, W. (2000). Engineering Distributed Objects. New York:
+John Wiley & Sons.
+esm.cs.cmu.edu ESM project at CMU. Home page
+Eugsteret al. 2003 Eugster, P.T., Felber, P.A., Guerraoui, R. and Kermarrec A-M. (2003).
+The many faces of publish-subscribe, ACM Computing Surveys, Vol.
+35, No. 2, pp. 114–131.
+Evanset al. 2003 Evans, C. and 15 other authors (2003). Web Services Reliability
+(WS-Reliability), Fujitsu, Hitachi, NEC, Oracle Corporation, Sonic
+Software, and Sun Microsystems.
+Fall 2003 Fall, K. (2003). A delay-tolerant network architecture for challenged
+internets. In Proceedings of the ACM 2003 Conference on Applications,
+Technologies, Architectures and Protocols for Computer
+Communications (SIGCOMM 2003), Karlsruhe, Germany, August, pp.
+27–34.
+Farley 1998 Farley, J. (1998). Java Distributed Computing. Cambridge, MA:
+O’Reilly.
+Farrow 2000 Farrow, R. (2000). Distributed denial of service attacks – how Amazon,
+Yahoo, eBay and others were brought down. Network Magazine, March.
+
+
+===== page 1002 =====
+984 REFERENCES
+Ferguson and Schneier Ferguson, N. and Schneier, B. (2003). Practical Cryptography. New
+2003 York: John Wiley & Sons.
+Ferrari and Verma 1990 Ferrari, D. and Verma, D. (1990). A scheme for real-time channel
+establishment in wide-area networks. IEEE Journal on Selected Areas
+in Communications, Vol. 8, No. 4, pp. 368–79.
+Ferreira et al. 2000 Ferreira, P., Shapiro, M., Blondel, X., Fambon, O., Garcia, J.,
+Kloostermann, S., Richer, N., Roberts, M., Sandakly, F., Coulouris, G.,
+Dollimore, J., Guedes, P., Hagimont, D. and Krakowiak, S. (2000).
+PerDiS: Design, implementation, and use of a PERsistent DIstributed
+Store. In LNCS 1752: Advances in Distributed Systems. Berlin,
+Heidelberg, New York: Springer-Verlag. pp. 427–53.
+Ferris and Langworthy Ferris, C. and Langworthy, D. (eds.), Bilorusets, R. and 22 other authors
+2004 (2004). Web Services Reliable Messaging Protocol (WS-Reliable
+Messaging). BEA, IBM, Microsoft and TibCo.
+Fidge 1991 Fidge, C. (1991). Logical time in distributed computing systems. IEEE
+Computer, Vol. 24, No. 8, pp. 28–33.
+Fielding 2000 Fielding, R. (2000). Architectural Styles and the Design of
+Network-based Software Architectures. Doctoral dissertation,
+University of California, Irvine
+Fielding et al. 1999 Fielding, R., Gettys, J., Mogul, J.C., Frystyk, H., Masinter, L., Leach,
+P. and Berners-Lee, T. (1999). Hypertext Transfer Protocol –
+HTTP/1.1.Internet RFC 2616.
+Filman et al. 2004 Filman, R., Elrad, T., Clarke, S. and Aksit, M. (2004) Aspect-Oriented
+Software Development. Addison-Wesley.
+Fischer 1983 Fischer, M. (1983). The consensus problem in unreliable distributed
+systems (a brief survey). In Karpinsky, M. (ed.), Foundations of
+Computation Theory, Vol. 158 of Lecture Notes in Computer Science,
+Springer-Verlag, pp. 127–140. Yale University Technical Report
+YALEU/DCS/TR-273.
+Fischer and Lynch 1982 Fischer, M. and Lynch, N. (1982). A lower bound for the time to assure
+interactive consistency. Inf. Process. Letters, Vol. 14, No. 4, pp. 183–6.
+Fischer and Michael 1982 Fischer, M.J. and Michael, A. (1982). Sacrificing serializability to attain
+high availability of data in an unreliable network. In Proceedings of the
+Symposium on Principles of Database Systems, pp. 70–5.
+Fischer et al. 1985 Fischer, M., Lynch, N. and Paterson, M. (1985). Impossibility of
+distributed consensus with one faulty process. Journal of the ACM, Vol.
+32, No. 2, pp. 374–82.
+Fitzgerald and Rashid 1986 Fitzgerald, R. and Rashid, R.F. (1986). The integration of virtual
+memory management and interprocess communication in Accent. ACM
+Transactions on Computer Systems, Vol. 4, No. 2, pp. 147–77.
+
+
+===== page 1003 =====
+REFERENCES 985
+Flanagan 2002 Flanagan, D. (2002). Java in a Nutshell, 4th edn. Cambridge, MA:
+O’Reilly.
+Floyd 1986 Floyd, R. (1986). Short term file reference patterns in a UNIX
+environment. Technical Rep. TR 177, Rochester, NY: Dept of
+Computer Science, University of Rochester.
+Floyd and Jacobson 1993 Floyd, S. and Jacobson, V. (1993). The synchronization of periodic
+routing messages. ACM Sigcomm ’93 Symposium.
+Floyd et al. 1997 Floyd, S., Jacobson, V., Liu, C., McCanne, S. and Zhang, L. (1997). A
+reliable multicast framework for lightweight sessions and application
+level framing. IEEE/ACM Transactions on Networking, Vol. 5, No. 6,
+pp. 784–803.
+Fluhrer et al. 2001 Fluhrer, S., Mantin, I. and Shamir, A. (2001). Weaknesses in the key
+scheduling algorithm of RC4. In Proceedings of the 8th annual
+workshop on Selected Areas of Cryptography (SAC), Toronto, Canada,
+pp. 1–24.
+Ford and Fulkerson 1962 Ford, L.R. and Fulkerson, D.R. (1962). Flows in Networks. Princeton,
+NJ: Princeton University Press.
+Foster and Kesselman 2004 Foster, I. and Kesselman, C. (eds.) (2004). The Grid 2. San Francisco,
+CA: Morgan Kauffman.
+Foster et al. 2001 Foster, I., Kesselman, C. and Tuecke, S. (2001). The anatomy of the
+Grid: Enabling scalable virtual organisations. Intl. J. Supercomputer
+Applications, Vol. 15, No. 3, pp. 200–222.
+Foster et al. 2002 Foster, I., Kesselman, C., Nick, J. and Tuecke, S. (2002).Grid services
+for distributed systems integration. IEEE Computer, Vol. 35, No. 6, pp.
+37–46.
+Foster et al. 2004 Foster, I., Kesselman, C. and Tuecke, S. (2004). The Open Grid Services
+Architecture. In Foster, I. and Kesselman, C. (eds.), The Grid 2. San
+Francisco, CA: Morgan Kauffman.
+Fox et al. 1997 Fox, A., Gribble, S., Chawathe, Y., Brewer, E. and Gauthier, P. (1997).
+Cluster-based scalable network services. Proceedings of the 16th ACM
+Symposium on Operating Systems Principles, pp. 78–91.
+Fox et al. 1998 Fox, A., Gribble, S.D., Chawathe, Y. and Brewer, E.A. (1998).
+Adapting to network and client variation using active proxies: Lessons
+and perspectives. IEEE Personal Communications, Vol. 5, No. 4, pp.
+10–19.
+Fox et al. 2003 Fox, D., Hightower, J., Liao, L., Schulz, D. and Borriello, G. (2003).
+Bayesian filtering for location estimation. IEEE Pervasive Computing,
+Vol. 2, No. 3, pp. 24–33.
+fractal.ow2.org I Fractal Project. Home page.
+fractal.ow2.org II Fractal Project. Tutorial.
+
+
+===== page 1004 =====
+986 REFERENCES
+France and Rumpe 2007 France, R. and Rumpe, B. (2007). Model-driven development of
+complex software: A research roadmap. International Conference on
+Software Engineering (Future of Software Engineering session). IEEE
+Computer Society, Washington, DC, pp. 37–54.
+Fraseret al. 2003 Fraser, K.A., Hand, S.M., Harris, T.L., Leslie, I.M. and Pratt, I.A.
+(2003). The Xenoserver computing infrastructure. Technical Report
+UCAM-CL-TR-552, Computer Laboratory, University of Cambridge.
+Freed and Borenstein 1996 Freed, N. and Borenstein, N. (1996). MIME (Multipurpose Internet Mail
+Extensions) Part One: Mechanisms for Specifying and Describing the
+Format of Internet Message Bodies. September. Internet RFC 1521.
+freenet.project.org The Free Network Project.
+freepastry.org The FreePastry project.
+Frey and Roman 2007 Frey, D. and G-C Roman, G-C. (2007). Context-aware publish
+subscribe in mobile ad hoc networks. In Proceedings of the 9th
+International Conference on Coordination Models and Languages, pp.
+37–55.
+Ganeshet al. 2003 Ganesh, A. J., Kermarrec, A. and Massoulié, L. (2003). Peer-to-peer
+membership management for gossip-based protocols. IEEE
+Transactions on Computers, Vol. 52, No. 2, pp. 139–149.
+Garay and Moses 1993 Garay, J. and Moses, Y. (1993). Fully polynomial Byzantine agreement
+int+1 rounds. In Proceedings of the 25th ACM symposium on theory of
+computing, pp. 31–41.
+Garcia-Molina 1982 Garcia-Molina, H. (1982). Elections in distributed computer systems.
+IEEE Transactions on Computers, Vol. C-31, No. 1, pp. 48–59.
+Garcia-Molina and Garcia-Molina, H. and Spauster, A. (1991). Ordered and reliable
+Spauster 1991 multicast communication. ACM Transactions on Computer Systems,
+Vol. 9, No. 3, pp. 242–71.
+Garfinkel 1994 Garfinkel, S. (1994). PGP: Pretty Good Privacy. Cambridge, MA:
+O’Reilly.
+Gehrke and Madden 2004 Gehrke, J. and Madden, S. (2004). Query processing in sensor networks.
+IEEE Pervasive Computing, Vol. 3, No. 1, pp. 46–55.
+Gelernter 1985 Gelernter, D. (1985). Generative communication in Linda. ACM
+Transactions on Programming Languages and Systems, Vol. 7, No. 1,
+pp. 80–112.
+Ghemawatet al. 2003 Ghemawat, S., Gobioff, H. and Leung, S. (2003). The Google file
+system. SIGOPS Oper. Syst. Rev., Vol. 37, No. 5, pp. 29–43.
+Gibbs and Tsichritzis 1994 Gibbs, S.J. and Tsichritzis, D.C. (1994). Multimedia Programming.
+Addison-Wesley.
+
+
+===== page 1005 =====
+REFERENCES 987
+Gibson et al. 2004 Gibson, G., Courtial, J., Padgett, M.J., Vasnetsov, M., Pas’ko, V.,
+Barnett, S.M. and Franke-Arnold, S. (2004). Free-space information
+transfer using light beams carrying orbital angular momentum. Optics
+Express, Vol. 12, No. 22, pp. 5448–5456.
+Gifford 1979 Gifford, D.K. (1979). Weighted voting for replicated data. In
+Proceedings of the 7th Symposium on Operating Systems Principles, pp.
+150–62.
+glassfish.dev.java.net GlassFish Application Server. Home page.
+Gokhale and Schmidt 1996 Gokhale, A. and Schmidt, D. (1996). Measuring the performance of
+communication middleware on high-speed networks. In Proceedings of
+SIGCOMM ’96, pp. 306–17.
+Golding and Long 1993 Golding, R. and Long, D. (1993). Modeling replica divergence in a
+weak-consistency protocol for global-scale distributed databases.
+Technical report UCSC-CRL-93-09, Computer and Information
+Sciences Board, University of California, Santa Cruz.
+Goldschlag et al. 1999 Goldschlag, D., Reed, M. and Syverson, P. (1999). Onion routing for
+anonymous and private Internet connections. Communications of the
+ACM, Vol. 42, No. 2, pp. 39–41.
+Golub et al. 1990 Golub, D., Dean, R., Forin, A. and Rashid, R. (1990). UNIX as an
+application program. InProc. USENIX Summer Conference, pp.
+87–96.
+Gong 1989 Gong, L. (1989). A secure identity-based capability system. In
+Proceedings of the IEEE Symposium on Security and Privacy, Oakland,
+CA, May, pp. 56–63.
+googleblog.blogspot.com I The Official Google Blog. Powering a Google search.
+googleblog.blogspot.com II The Official Google Blog. New Search Engine: Caffeine.
+googletesting.blogspot.com The Google Testing Blog. Home page.
+Gordon 1984 Gordon, J. (1984). The Story of Alice and Bob. After dinner speech, see
+also: en.wikipedia.org/wiki/Alice_and_Bob .
+Govindan and Anderson Govindan, R. and Anderson, D.P. (1991). Scheduling and IPC
+1991 mechanisms for continuous media. ACM Operating Systems Review,
+Vol. 25, No. 5, pp. 68–80.
+Goyal and Carter 2004 Goyal, S. and Carter, J. (2004). A lightweight secure cyber foraging
+infrastructure for resource-constrained devices. In Proceedings of the
+Sixth IEEE Workshop on Mobile Computing Systems and Applications
+(WMCSA 2004), December, pp. 186–195.
+
+
+===== page 1006 =====
+988 REFERENCES
+Graumann et al. 2003 Graumann, D., Lara, W., Hightower, J. and Borriello, G. (2003).
+Real-world implementation of the Location Stack: The Universal
+Location Framework. In Proceedings of the 5th IEEE Workshop on
+Mobile Computing Systems & Applications (WMCSA 2003), Monterey,
+CA, October, pp. 122–128.
+Grace et al. 2003 Grace, P., Blair, G.S. and Samuel, S. (2003). ReMMoC: A reflective
+middleware to support mobile client interoperability. In Proceedings of
+the International Symposium on Distributed Objects and Applications
+(DOA’03), Catania, Sicily, November, pp. 1170–1187.
+Grace et al. 2008 Grace, P., Hughes, D., Porter, B., Blair, G.S., Coulson, G. and Taiani, F.
+(2008). Experiences with open overlays: A middleware approach to
+network heterogeneity. In Proceedings of the 3rd ACM Sigops/Eurosys
+European Conference on Computer Systems (Eurosys’08), Glasgow,
+Scotland, pp. 123–136.
+Gray 1978 Gray, J. (1978). Notes on database operating systems. In Operating
+Systems: an Advanced Course. Lecture Notes in Computer Science,
+Vol. 60, Springer-Verlag, pp. 394–481.
+Gray and Szalay 2002 Gray, J. and Szalay, A. (2002). The World-Wide Telescope, an
+Archetype for Online Science. Technical Report. MSR-TR-2002-75.
+Microsoft Research.
+Greenfield and Dornan Greenfield, D. and Dornan, A.(2004). Amazon: Web site to web
+2004 services, Network Magazine, October.
+Grimm 2004 Grimm, R. (2004). One.world: Experiences with a pervasive computing
+architecture.IEEE Pervasive Computing, Vol. 3, No. 3, pp. 22–30.
+Gruteser and Grunwald Gruteser, M. and Grunwald, D. (2003). Enhancing location privacy in
+2003 wireless LAN through disposable interface identifiers: a quantitative
+analysis. In Proceedings of the 1st ACM international workshop on
+Wireless mobile applications and services on WLAN hotspots (WMASH
+'03), San Diego, CA, September, pp. 46–55.
+Guerraoui et al. 1998 Guerraoui, R., Felber, P., Garbinato, B. and Mazouni, K. (1998). System
+support for object groups. In Proceedings of the ACM Conference on
+Object Oriented Programming Systems, Languages and Applications
+(OOPSLA’98).
+Gummadi et al. 2003 Gummadi, K.P., Gummadi, R., Gribble, S.D., Ratnasamy, S., Shenker,
+S. and Stoica, I. (2003). The impact of DHT routing geometry on
+resilience and proximity. In Proc. ACM SIGCOMM 2003, pp. 381–94.
+Gupta et al. 2004 Gupta, A., Sahin, O. D., Agrawal, D. and Abbadi, A. E. (2004).
+Meghdoot: Content-based publish/subscribe over P2P networks. In
+Proceedings of the 5th ACM/IFIP/USENIX International Conference on
+Middleware, Toronto, Canada, October, pp. 254–273.
+
+
+===== page 1007 =====
+REFERENCES 989
+Gusella and Zatti 1989 Gusella, R. and Zatti, S. (1989). The accuracy of clock synchronization
+achieved by TEMPO in Berkeley UNIX 4.3BSD. IEEE Transactions on
+Software Engineering, Vol. 15, No. 7, pp. 847–53.
+Guttman 1999 Guttman, E. (1999). Service location protocol: Automatic discovery of
+IP network services. IEEE Internet Computing, Vol. 3, No. 4, pp. 71–80.
+Haartsenet al. 1998 Haartsen, J., Naghshineh, M., Inouye, J., Joeressen, O.J. and Allen, W.
+(1998). Bluetooth: Vision, goals and architecture. ACM Mobile
+Computing and Communications Review, Vol. 2, No. 4, pp. 38–45.
+hadoop.apache.org Hadoop. Home page.
+Hadzilacos and Toueg 1994 Hadzilacos, V. and Toueg, S. (1994). A Modular Approach to
+Fault-tolerant Broadcasts and Related Problems. Technical report,
+Dept of Computer Science, University of Toronto.
+Hand et al. 2003 Hand, S., Harris, T., Kotsovinos, E. and Pratt, I. (2003). Controlling the
+XenoServer open platform. In Proceedings of the 6th IEEE Conference
+on Open Architectures and Network Programming (OPEN ARCH
+2003), pp. 3–11.
+Handley et al. 1999 Handley, M., Schulzrinne, H., Schooler, E. and Rosenberg, J. (1999).
+SIP: Session Initiation Protocol. Internet RFC 2543.
+Harbison 1992 Harbison, S. P. (1992). Modula-3. Englewood Cliffs, NJ: Prentice-Hall.
+Härder 1984 Härder, T. (1984). Observations on optimistic concurrency control
+schemes. Information Systems, Vol. 9, No. 2, pp. 111–20.
+Härder and Reuter 1983 Härder, T. and Reuter, A. (1983). Principles of transaction-oriented
+database recovery. ACM Computing Surveys, Vol. 15, No. 4, pp.
+287–317.
+Harrenstien et al. 1985 Harrenstien, K., Stahl, M. and Feinler, E. (1985). DOD Internet Host
+Table Specification. Internet RFC 952.
+Harter and Hopper 1994 Harter, A. and Hopper, A. (1994). A distributed location system for the
+active office. IEEE Network, Vol. 8, No. 1, pp. 62–70.
+Harteret al. 2002 Harter, A., Hopper, A., Steggles, P., Ward, A. and Webster, P. (2002).
+The anatomy of a context-aware application. Wireless Networks, Vol. 8,
+No. 2–3, pp. 187–197.
+Härtiget al. 1997 Härtig, H., Hohmuth, M., Liedtke, J., Schönberg, S. and Wolter, J.
+(1997). The performance of kernel-based systems. In Proceedings of the
+16th ACM Symposium on Operating System Principles, pp. 66–77.
+Hartman and Ousterhout Hartman, J. and Ousterhout, J. (1995). The Zebra striped network file
+1995 system. ACM Trans. on Computer Systems, Vol. 13 , No. 3, pp.
+274–310.
+
+
+===== page 1008 =====
+990 REFERENCES
+Hauch and Reiser 2000 Hauch, R. and Reiser, H. (2000). Monitoring quality of service across
+organisational boundaries. In Trends in Distributed Systems: Towards a
+Universal Service Market, Proc. Third Intl. IFIP/HGI Working
+conference, USM, September.
+Hayton et al. 1998 Hayton, R., Bacon, J. and Moody, K. (1998). OASIS: Access control in
+an open, distributed environment. In Proceedings of the IEEE
+Symposium on Security and Privacy, May, Oakland, CA, pp. 3–14.
+Hedrick 1988 Hedrick, R. (1988). Routing Information Protocol. Internet RFC 1058.
+Heidemannet al. 2001 Heidemann, J., Silva, F., Intanagonwiwat, C., Govindan, R., Estrin, D.
+and Ganesan, D. (2001). Building efficient wireless sensor networks
+with low-level naming. In Proceedings of the 18th ACM Symposium on
+Operating Systems Principles, Banff, Alberta, Canada, October, pp.
+146–159.
+Heineman and Councill Heineman, G.T. and Councill, W.T. (2001). Component-Based
+2001 Software Engineering: Putting the Pieces Together. Reading, MA:
+Addison-Wesley.
+Hennessy and Patterson Hennessy, J.L. and Patterson, D.A. (2006). Computer Architecture: A
+2006 Quantitative Approach, 4th edn. San Francisco:CA: Morgan Kaufmann.
+Henning 1998 Henning, M. (1998). Binding, migration and scalability in CORBA.
+Comms. ACM, Vol. 41, No. 10, pp. 62–71.
+Henning and Vinoski 1999 Henning, M. and Vinoski, S. (1999). Advanced CORBA Programming
+with C++. Reading, MA: Addison-Wesley.
+Herlihy 1986 Herlihy, M. (1986). A quorum-consensus replication method for
+abstract data yypes. ACM Transactions on Computer Systems, Vol. 4,
+No. 1, pp. 32–53.
+Herlihy and Wing 1990 Herlihy, M. and Wing, J. (1990). On linearizability: a correctness
+condition for concurrent objects. ACM Transactions on Programming
+Languages and Systems, Vol. 12, No. 3, pp. 463–92.
+Herrtwich 1995 Herrtwich, R.G. (1995). Achieving quality of service for multimedia
+applications. ERSADS ’95, European Research Seminar on Advanced
+Distributed Systems, l’Alpe d’Huez, France, April.
+Hightower and Borriello Hightower, J. and Borriello, G. (2001). Location systems for ubiquitous
+2001 computing. IEEE Computer, Vol. 34, No. 8, pp. 57–66.
+Hightower et al. 2002 Hightower, J., Brumitt, B. and Borriello, G. (2002). The Location Stack:
+A layered model for location in ubiquitous computing. In Proceedings
+of the 4th IEEE Workshop on Mobile Computing Systems &
+Applications (WMCSA 2002), Callicoon, NY, June, pp. 22–28.
+
+
+===== page 1009 =====
+REFERENCES 991
+Hillet al. 2000 Hill, J., Szewczyk, R., Woo, A., Hollar, S., Culler, D. and Pister, K.
+(2000). System architecture directions for networked sensors. In
+Proceedings of the Ninth ACM International Conference on
+Architectural Support for Programming Languages and Operating
+Systems (ASPLOS-IX), Cambridge, MA, November, pp. 93–104.
+Hirsch 1997 Hirsch, F.J. (1997). Introducing SSL and Certificates using SSLeay.
+World Wide Web Journal, Vol. 2, No. 3, pp. 141–173.
+Holmquist et al. 2001 Holmquist, L.E., Mattern, F., Schiele, B., Alahuhta, P., Beigl, M. and
+Gellersen, H.-W. (2001). Smart-Its Friends: A technique for users to
+easily establish connections between smart artefacts. In Proceedings of
+the Third International Conference on Ubiquitous Computing
+(Ubicomp 2001), Atlanta, GA, September –October, pp. 116–122.
+Housley 2002 Housley, R. (2002). Cryptographic Message Syntax (CMS) Algorithms.
+Internet RFC 3370.
+Howard et al. 1988 Howard, J.H., Kazar, M.L., Menees, S.G, Nichols, D.A.,
+Satyanarayanan, M., Sidebotham, R.N. and West, M.J. (1988). Scale
+and performance in a distributed file system. ACM Transactions on
+Computer Systems, Vol. 6, No. 1, pp. 51–81.
+Huang et al. 2000 Huang, A., Ling, B., Barton, J. and Fox, A. (2000). Running the Web
+backwards: Appliance data services. In Proceedings of the 9th
+international World Wide Web Conference, pp.619–31.
+Huitema 1998 Huitema, C. (1998). IPv6 – the New Internet Protocol. Upper Saddle
+River, NJ: Prentice-Hall.
+Huitema 2000 Huitema, C. (2000). Routing in the Internet, 2nd edn. Englewood Cliffs,
+NJ: Prentice-Hall.
+Hullet al. 2004 Hull, R., Clayton, B. and Melamad, T. (2004). Rapid authoring of
+mediascapes. In Proceedings of the Sixth International Conference on
+Ubiquitous Computing (Ubicomp 2004), Nottingham, England,
+September, pp. 125–142.
+hulu.com Hulu. Home page.
+Hunt et al. 2007 Hunt, G.C. and Larus, J. R., Singularity: Rethinking the Software Stack,
+In ACM SIGOPS Operating Systems Review, Vol. 41, No. 2, pp. 37–49.
+Hunter and Crawford 1998 Hunter, J. and Crawford, W. (1998). Java Servlet Programming.
+Sebastopol, CA: O’Reilly.
+Hutchinson and Peterson Hutchinson, N. and Peterson, L. (1991). The x-kernel: An architecture
+1991 for implementing network protocols. IEEE Transactions on Software
+Engineering, Vol. 17, No. 1, pp. 64–76.
+Hutchinson et al. 1989 Hutchinson, N.C., Peterson, L.L., Abbott, M.B. and O'Malley, S.W.
+(1989). RPC in the x-Kernel: Evaluating new design techniques. In
+Proc. of the 12th ACM Symposium on Operating System Principles, pp.
+91–101.
+
+
+===== page 1010 =====
+992 REFERENCES
+Hymanet al. 1991 Hyman, J., Lazar, A.A. and Pacifici, G. (1991). MARS – The
+MAGNET-II Real-Time Scheduling Algorithm. ACM SlGCOM ’91,
+Zurich.
+IEEE 1985a Institute of Electrical and Electronic Engineers (1985). Local Area
+Network – CSMA/CD Access Method and Physical Layer
+Specifications. American National Standard ANSI/IEEE 802.3, IEEE
+Computer Society.
+IEEE 1985b Institute of Electrical and Electronic Engineers (1985). Local Area
+Network – Token Bus Access Method and Physical Layer Specifications.
+American National Standard ANSI/IEEE 802.4, IEEE Computer
+Society.
+IEEE 1985c Institute of Electrical and Electronic Engineers (1985). Local Area
+Network – Token Ring Access Method and Physical Layer
+Specifications. American National Standard ANSI/IEEE 802.5, IEEE
+Computer Society.
+IEEE 1990 Institute of Electrical and Electronic Engineers (1990). IEEE Standard
+802: Overview and Architecture. American National Standard
+ANSI/IEEE 802, IEEE Computer Society.
+IEEE 1994 Institute of Electrical and Electronic Engineers (1994). Local and
+Metropolitan Area Networks – Part 6: Distributed Queue Dual Bus
+(DQDB) Access Method and Physical Layer Specifications. American
+National Standard ANSI/IEEE 802.6, IEEE Computer Society.
+IEEE 1999 Institute of Electrical and Electronic Engineers (1999). Local and
+Metropolitan Area Networks – Part 11: Wireless LAN Medium Access
+Control (MAC) and Physical Layer (PHY) Specifications. American
+National Standard ANSI/IEEE 802.11, IEEE Computer Society.
+IEEE 2002 Institute of Electrical and Electronic Engineers (2002). Wireless
+Medium Access Control (MAC) and Physical Layer (PHY)
+Specifications for Wireless Personal Area Networks (WPANs).
+American National Standard ANSI/IEEE 802.15.1, IEEE Computer
+Society.
+IEEE 2003 Institute of Electrical and Electronic Engineers (2003). Part 15.4:
+Wireless Medium Access Control (MAC) and Physical Layer (PHY)
+Specifications for Low-Rate Wireless Personal Area Networks
+(LR-WPANs). American National Standard ANSI/IEEE 802.15.4, IEEE
+Computer Society.
+IEEE 2004a Institute of Electrical and Electronic Engineers (2004). IEEE Standard
+for Local and Metropolitan Area Networks – Part 16:Air Interface for
+Fixed Broadband Wireless Access Systems. American National
+Standard ANSI/IEEE 802.16, IEEE Computer Society.
+
+
+===== page 1011 =====
+REFERENCES 993
+IEEE 2004b Institute of Electrical and Electronic Engineers (2004). Wireless LAN
+Medium Access Control (MAC) and Physical Layer (PHY)
+Specifications: Medium Access Control (MAC) Security Enhancement,.
+American National Standard ANSI/IEEE 802.11i, IEEE Computer
+Society.
+Imielinski and Navas 1999 Imielinski, T. and Navas, J.C. (1999). GPS-based geographic
+addressing, routing, and resource discovery. Comms. ACM, Vol. 42, No.
+4, pp. 86–92.
+International PGP The International PGP Home Page.
+Internet World Stats 2004 Internet World Stats. www.internetworldstats.com
+Ishii and Ullmer 1997 Ishii, H. and Ullmer, B.,(1997). Tangible bits: Towards seamless
+interfaces between people, bits and atoms. In Proceedings of the ACM
+Conference on Human Factors in Computing Systems (CHI ’97),
+Atlanta, GA, March, pp. 234–241.
+ISO 1992 International Organization for Standardization (1992). Basic Reference
+Model of Open Distributed Processing, Part 1: Overview and Guide to
+Use. ISO/IEC JTC1/SC212/WG7 CD 10746-1, International
+Organization for Standardization.
+ISO 8879 International Organization for Standardization (1986). Information
+Processing – Text and Office Systems – Standard Generalized Markup
+Language (SGML).
+ITU/ISO 1997 International Telecommunication Union / International Organization for
+Standardization (1997). Recommendation X.500 (08/97): Open Systems
+Interconnection – The Directory: Overview of Concepts, Models and
+Services.
+Iyer et al. 2002 Iyer, S., Rowstron, A. and Druschel, P. (2002). Squirrel: A decentralized
+peer-to-peer web cache. In Proceedings of the12th ACM Symposium on
+Principles of Distributed Computing (PODC 2002), pp. 213–22.
+jakarta.apache.org The Apache foundation. Apache Tomcat.
+java.sun.com I Sun Microsystems. Java Remote Method Invocation.
+java.sun.com II Sun Microsystems. Java Object Serialization Specification.
+java.sun.com III Sun Microsystems. Servlet Tutorial.
+java.sun.com IV Jordan, M. and Atkinson, M. (1999). Orthogonal Persistence for the
+Java Platform - Draft Specification. Sun Microsystems Laboratories,
+Palo Alto, CA.
+java.sun.com V Sun Microsystems, Java Security API.
+java.sun.com VI Sun Microsystems (1999). JavaSpaces technology.
+java.sun.com VII Sun Microsystems. The Java Web Services Tutorial.
+java.sun.com VIII Sun Microsystems (2003). Java Data Objects (JDO).
+
+
+===== page 1012 =====
+994 REFERENCES
+java.sun.com IX Sun Microsystems. Java Remote Object Activation Tutorial.
+java.sun.com X Sun Microsystems. JavaSpaces Service Specification.
+java.sun.com XI Sun Microsystems. Java Messaging Service (JMS) home page.
+java.sun.com XII Sun Microsystems. Enterprise JavaBeans Specification.
+java.sun.com XIII Sun Microsystems. Java Persistence API Specification.
+Johanson and Fox 2004 Johanson, B. and Fox, A. (2004). Extending tuplespaces for
+coordination in interactive workspaces. Journal of Systems and
+Software, Vol. 69, No. 3, pp. 243–266.
+Johnson and Zwaenepoel Johnson, D. and Zwaenepoel, W. (1993). The peregrine
+1993 high-performance RPC system. Software–Practice and Experience,
+Vol. 23, No. 2, pp. 201–21.
+jonas.ow2.org OW2 Consortium. JOnAS Application Server.
+Jordan 1996 Jordan, M. (1996). Early experiences with persistent Java. In
+Proceedings of the First International Workshop on Persistence and
+Java. Glasgow, Scotland, September, pp. 1–9..
+Josephet al. 1997 Joseph, A., Tauber, J. and Kaashoek, M. (1997). Mobile Computing
+with the Rover Toolkit. IEEE Transactions on Computers: Special Issue
+on Mobile Computing, Vol. 46, No. 3, pp. 337–52.
+Julet al. 1988 Jul, E., Levy, H., Hutchinson, N. and Black, A. (1988). Fine-grained
+mobility in the Emerald system. ACM Transactions on Computer
+Systems, Vol. 6, No. 1, pp. 109–33.
+jxta.dev.java.net Jxta Community. Home page.
+Kaashoek and Tanenbaum Kaashoek, F. and Tanenbaum, A. (1991). Group communication in the
+1991 Amoeba distributed operating system. In Proceedings of the 11th
+International Conference on Distributed Computer Systems, pp.
+222–30.
+Kaashoeket al. 1989 Kaashoek, F., Tanenbaum, A., Flynn Hummel, S. and Bal, H. (1989).
+An efficient reliable broadcast protocol. Operating Systems Review,
+Vol. 23, No. 4, pp. 5–20.
+Kaashoeket al. 1997 Kaashoek, M., Engler, D., Ganzer, G., Briceño, H., Hunt, R., Mazières,
+D., Pinckney, T., Grimm, R., Jannotti, J. and Mackenzie, K. (1997).
+Application performance and flexibility on exokernel systems. In
+Proceedings of the 16th ACM Symposium on Operating Systems
+Principles, pp. 52–65.
+Kahn 1967 Kahn, D. (1967). The Codebreakers: The Story of Secret Writing. New
+York: Macmillan.
+Kahn 1983 Kahn, D. (1983). Kahn on Codes. New York: Macmillan.
+Kahn 1991 Kahn, D. (1991). Seizing the Enigma. Boston: Houghton Mifflin.
+
+
+===== page 1013 =====
+REFERENCES 995
+Kaler 2002 Kaler, C. (ed.) (2002). Specification: Web Services Security
+(WS-Security).
+Kaliski and Staddon 1998 Kaliski, B. and Staddon, J. (1998). RSA Cryptography Specifications,
+Version 2.0. Internet RFC 2437.
+Kantor and Lapsley 1986 Kantor, B. and Lapsley, P. (1986). Network News Transfer Protocol: A
+Proposed Standard for the Stream-Based Transmission of News.
+Internet RFC 977.
+Kehne et al. 1992 Kehne, A., Schonwalder, J. and Langendorfer, H. (1992). A
+nonce-based protocol for multiple authentications. ACM Operating
+Systems Review, Vol. 26, No. 4, pp. 84–9.
+Keith and Wittle 1993 Keith, B.E. and Wittle, M. (1993). LADDIS: The next generation in
+NFS file server benchmarking, USENIX Association Conference
+Proceedings, Berkeley, CA, June, pp. 261–78.
+Kiciman and Fox 2000 Kiciman, E. and Fox, A. (2000). Using dynamic mediation to integrate
+COTS entities in a ubiquitous computing environment. In Proceedings
+of the Second International Symposium on Handheld and Ubiquitous
+Computing (HUC2K), Bristol, England, September, pp. 211–226.
+Kille 1992 Kille, S. (1992). Implementing X.400 and X.500: The PP and QUIPU
+Systems. Boston, MA: Artech House.
+Kindberg 1995 Kindberg, T. (1995). A sequencing service for group communication
+(abstract). In Proceedings of the 14th Annual ACM Symposium on
+Principles of Distributed Computing, p. 260. Technical Report No. 698,
+Queen Mary and Westfield College Dept. of CS, 1995.
+Kindberg 2002 Kindberg, T. (2002). Implementing physical hyperlinks using
+ubiquitous identifier resolution. In Proceedings of the Eleventh
+International World Wide Web Conference (WWW2002), Honolulu, HI,
+May pp. 191–199.
+Kindberg and Barton 2001 Kindberg, T. and Barton, J. (2001). A web-based nomadic computing
+system. Computer Networks, Vol. 35, No. 4, pp. 443–456.
+Kindberg and Fox 2001 Kindberg, T. and Fox, A. (2001). System software for ubiquitous
+computing. IEEE Pervasive Computing, Vol. 1, No. 1, pp. 70–81.
+Kindberg and Zhang 2003a Kindberg, T. and Zhang, K. (2003). Secure spontaneous device
+association. In Proceedings of the Fifth International Conference on
+Ubiquitous Computing (Ubicomp 2003), Seattle, WA, October, pp.
+124–131.
+Kindberg and Zhang 2003b Kindberg, T. and Zhang, K. (2003). Validating and securing
+spontaneous associations between wireless devices. In Proceedings of
+the 6th Information Security Conference (ISC’03), Bristol, England,
+October, pp. 44–53.
+
+
+===== page 1014 =====
+996 REFERENCES
+Kindberg et al. 1996 Kindberg, T., Coulouris, G., Dollimore, J. and Heikkinen, J. (1996).
+Sharing objects over the Internet: The Mushroom approach. In
+Proceedings of the IEEE Global Internet1996, London, England, Nov.,
+pp. 67–71.
+Kindberg et al. 2002a Kindberg, T., Barton, J., Morgan, J., Becker, G., Bedner, I., Caswell, D.,
+Debaty, P., Gopal, G., Frid, M., Krishnan, V., Morris, H., Pering, C.,
+Schettino, J. and Serra, B. (2002). People, places, things: Web presence
+for the real world. Mobile Networks and Applications (MONET), Vol. 7,
+No. 5,, pp. 365–376.
+Kindberg et al. 2002b Kindberg, T., Zhang, K. and Shanka, N. (2002). Context authentication
+using constrained channels. In Proceedings of the 4th IEEE Workshop
+on Mobile Computing Systems & Applications (WMCSA 2002),
+Callicoon, NY, June, pp. 14–21.
+Kirsch and Amir 2008 Kirsch, J. and Amir, Y. (2008). Paxos for system builders: An overview.
+In Proceedings of the 2nd Workshop on Large-Scale Distributed
+Systems and Middleware (LADIS ‘08), Vol. 341, Yorktown Heights,
+NY, pp. 1–6.
+Kistler and Satyanarayanan Kistler, J.J. and Satyanarayanan, M. (1992). Disconnected operation in
+1992 the Coda file system. ACM Transactions on Computer Systems, Vol. 10,
+No. 1, pp. 3–25.
+Kleinrock 1961 Kleinrock, L. (1961). Information Flow in Large Communication
+Networks. MIT, RLE Quarterly Progress Report, July.
+Kleinrock 1997 Kleinrock, L. (1997). Nomadicity: Anytime, anywhere in a
+disconnected world. Mobile Networks and Applications, Vol. 1, No. 4,
+pp. 351–7.
+Kohl and Neuman 1993 Kohl, J. and Neuman, C. (1993). The Kerberos Network Authentication
+Service (V5). Internet RFC 1510.
+Kon et al. 2002 Kon, F., Costa, F., Blair, G. and Campbell, R. (2002). The case for
+reflective middleware. Comms. ACM, Vol. 45, No. 6, pp. 33–38.
+Konstantas et al. 1997 Konstantas, D., Orlarey, Y., Gibbs, S. and Carbonel, O. (1997).
+Distributed music rehearsal. In Proceedings of the International
+Computer Music Conference 97, pp 54–64.
+Kopetz and Verissimo 1993 Kopetz, H. and Verissimo, P. (1993). Real time and dependability
+concepts. In Mullender, (eds.), Distributed Systems, 2nd edn. Reading,
+MA: Addison-Wesley.
+Kopetz et al. 1989 Kopetz, H., Damm, A., Koza, C., Mulazzani, M., Schwabl, W. ,Senft,
+C. and Zainlinger, R. (1989). Distributed fault-tolerant real-time
+systems – The MARS Approach. IEEE Micro, Vol. 9, No. 1, pp.
+112–26.
+Krawczyk et al. 1997 Krawczyk, H., Bellare, M. and Canetti, R. (1997). HMAC:
+Keyed-Hashing for Message Authentication. Internet RFC 2104.
+
+
+===== page 1015 =====
+REFERENCES 997
+Krummet al. 2000 Krumm, J., Harris, S., Meyers, B., Brumitt, B., Hale, M. and Shafer, S.
+(2000). Multi-camera multi-person tracking for EasyLiving. In
+Proceedings of the Third IEEE International Workshop on Visual
+Surveillance (VS’2000), Dublin, Ireland, July, pp. 3–10.
+Kshemkalyani and Singhal Kshemkalyani, A. and Singhal, M. (1991). Invariant-based verification
+1991 of a distributed deadlock detection algorithm. IEEE Transactions on
+Software Engineering, Vol. 17, No. 8, pp. 789–99.
+Kshemkalyani and Singhal Kshemkalyani, A. and Singhal, M. (1994). On characterisation and
+1994 correctness of distributed deadlock detection. Journal of Parallel and
+Distributed Computing, Vol. 22, No. 1, pp. 44–59.
+Kubiatowicz 2003 Kubiatowicz, J. (2003). Extracting guarantees from chaos,
+Communications of the ACM, vol. 46, No. 2, pp. 33–38.
+Kubiatowiczet al. 2000 Kubiatowicz, J., Bindel, D., Chen, Y., Czerwinski, S., Eaton, P., Geels,
+D., Gummadi, R., Rhea, S., Weatherspoon, H., Weimer, W., Wells, C.
+and Zhao, B. (2000). OceanStore: an architecture for global-scale
+persistent storage. In Proc. ASPLOS 2000, November, pp. 190–201.
+Kung and Robinson 1981 Kung, H.T. and Robinson, J.T. (1981). Optimistic methods for
+concurrency control. ACM Transactions on Database Systems, Vol. 6,
+No. 2, pp. 213–26.
+Kurose and Ross 2007 Kurose, J.F. and Ross, K.W. (2007). Computer Networking: A
+Top-Down Approach Featuring the Internet. Boston, MA:
+Addison-Wesley Longman.
+Ladinet al. 1992 Ladin, R., Liskov, B., Shrira, L. and Ghemawat, S. (1992). Providing
+availability using lazy replication. ACM Transactions on Computer
+Systems, Vol. 10, No. 4, pp. 360–91.
+Lai 1992 Lai, X. (1992). On the design and security of block ciphers. ETH Series
+in Information Processing, Vol. 1. Konstanz, Geemany: Hartung-Gorre
+Verlag.
+Lai and Massey 1990 Lai, X. and Massey, J. (1990). A proposal for a new block encryption
+standard. InProceedings Advances in Cryptology–Eurocrypt ’90, pp.
+389–404.
+Lamport 1978 Lamport, L. (1978). Time, clocks and the ordering of events in a
+distributed system. Comms. ACM, Vol. 21, No. 7, pp. 558–65.
+Lamport 1979 Lamport, L. (1979). How to make a multiprocessor computer that
+correctly executes multiprocess programs. IEEE Transactions on
+Computers, Vol. C-28, No. 9, pp. 690–1.
+Lamport 1986 Lamport, L. (1986). On interprocess communication, parts I and II.
+Distributed Computing, Vol. 1, No. 2, pp. 77–101.
+Lamport 1989 Lamport, L. (1989). The Part-Time Parliament. Technical Report 49,
+DEC SRC, Palo Alto, CA.
+
+
+===== page 1016 =====
+998 REFERENCES
+Lamport 1998 Lamport, L. (1998). The part-time parliament. ACM Transactions on
+Computer Systems (TOCS), Vol. 16, No. 2, pp. 133–69.
+Lamport et al. 1982 Lamport, L., Shostak, R. and Pease, M. (1982). Byzantine generals
+problem. ACM Transactions on Programming Languages and Systems,
+Vol. 4, No. 3, pp. 382–401.
+Lampson 1971 Lampson, B. (1971). Protection. In Proceedings of the 5th Princeton
+Conference on Information Sciences and Systems, p. 437. Reprinted in
+ACM Operating Systems Review. Vol. 8, No. 1, p. 18.
+Lampson 1981 Lampson, B.W. (1981). Atomic transactions. In Distributed systems:
+Architecture and Implementation. Vol 105 of Lecture Notes in Computer
+Science, Springer-Verlag,pp. 254–9.
+Lampson 1986 Lampson, B.W. (1986). Designing a global name service. In
+Proceedings of the 5th ACM Symposium on Principles of Distributed
+Computing, pp. 1–10.
+Lampsonet al. 1992 Lampson, B.W., Abadi, M., Burrows, M. and Wobber, E. (1992).
+Authentication in distributed systems: Theory and practice. ACM
+Transactions on Computer Systems, Vol. 10, No. 4, pp. 265–310.
+Langheinrich 2001 Langheinrich, M. (2001). Privacy by design – principles of
+privacy-aware ubiquitous systems. In Proceedings of the Third
+International Conference on Ubiquitous Computing (Ubicomp 2001),
+Atlanta, GA, Sep.–Oct., pp. 273–291.
+Langville and Meyer 2006 Lanville, A.M. and Meyer, C.D. (2006). Pagerank and Beyond: The
+Science of Search Engine Rankings. Princeton, NJ: Princeton University
+Press.
+Langworthy 2004 Langworthy, D. (ed.) (2004) Web Services Coordination.
+(WS-Coordination), IBM, Microsoft, BEA.
+Leach et al. 1983 Leach, P.J., Levine, P.H., Douros, B.P., Hamilton, J.A., Nelson, D.L.
+and Stumpf, B.L. (1983). The architecture of an integrated local
+network. IEEE J. Selected Areas in Communications, Vol. SAC-1, No.
+5, pp. 842–56.
+Lee and Thekkath 1996 Lee, E.K. and Thekkath, C.A. (1996). Petal: Distributed virtual disks, In
+Proc. of the 7th Intl. Conf. on Architectural Support for Prog. Langs.
+and Operating Systems, October, pp. 84–96.
+Lee et al. 1996 Lee, C., Rajkumar, R. and Mercer, C. (1996). Experiences with
+Processor Reservation and Dynamic QOS in Real-Time Mach.In
+Proceedings Multimedia Japan ’96.
+Leffler et al. 1989 Leffler, S., McKusick, M., Karels, M. and Quartermain, J. (1989). The
+Design and Implementation of the 4.3 BSD UNIX Operating System.
+Reading, MA: Addison-Wesley.
+
+
+===== page 1017 =====
+REFERENCES 999
+Leibowitz et al. 2003 Leibowitz, N., Ripeanu, M. and Wierzbicki, A. (2003). Deconstructing
+the Kazaa network. In Proc. of the 3rd IEEE Workshop on Internet
+Applications (WIAPP’03), Santa Clara, CA, p.112.
+Leineret al. 1997 Leiner, B.M., Cerf, V.G., Clark, D.D., Kahn, R.E., Kleinrock, L.,
+Lynch, D.C., Postel, J., Roberts, L.G. and Wolff, S. (1997). A brief
+history of the Internet. Comms. ACM, Vol. 40, No. 1, pp. 102–108.
+Lelandet al. 1993 Leland, W.E., Taqqu, M.S., Willinger, W. and Wilson, D.V. (1993). On
+the self-similar nature of Ethernet traffic. ACM SIGCOMM ’93, San
+Francisco.
+Leslie et al. 1996 Leslie, I., McAuley, D., Black, R., Roscoe, T., Barham, P., Evers, D.,
+Fairbairns, R. and Hyden, E. (1996). The design and implementation of
+an operating system to support distributed multimedia applications.
+ACM Journal of Selected Areas in Communication, Vol. 14, No. 7, pp.
+1280–97.
+Liedtke 1996 Liedtke, J. (1996). Towards real microkernels. Comms. ACM, Vol. 39,
+No. 9, pp. 70–7.
+Linux AFS The Linux AFS FAQ.
+Liskov 1988 Liskov, B. (1988). Distributed programming in Argus. Comms. ACM,
+Vol. 31, No. 3, pp. 300–12.
+Liskov 1993 Liskov, B. (1993). Practical uses of synchronized clocks in distributed
+systems. Distributed Computing, Vol. 6, No. 4, pp. 211–19.
+Liskov and Scheifler 1982 Liskov, B. and Scheifler, R.W. (1982). Guardians and actions:
+Linguistic support for robust, distributed programs. ACM Transactions
+on Programming Languages and Systems, Vol. 5, No. 3, pp. 381–404.
+Liskov and Shrira 1988 Liskov, B. and Shrira, L. (1988). Promises: Linguistic support for
+efficient asynchronous procedure calls in distributed systems. In
+Proceedings of the SIGPLAN ’88 Conference Programming Language
+Design and Implementation. Atlanta, GA, pp. 260–7.
+Liskov et al. 1991 Liskov, B., Ghemawat, S., Gruber, R., Johnson, P., Shrira, L. and
+Williams, M. (1991). Replication in the Harp file system. In
+Proceedings of the 13th ACM Symposium on Operating System
+Principles, pp. 226–38.
+Liu and Albitz 1998 Liu, C. and Albitz, P. (1998). DNS and BIND, third edition. O’Reilly.
+Liu and Layland 1973 Liu, C.L. and Layland, J.W. (1973). Scheduling algorithms for
+multiprogramming in a hard real-time environment. Journal of the
+ACM, Vol. 20, No. 1, pp. 46–61.
+Liuet al. 2005 Liu, J., Sacchetti, D., Sailhan, F. and Issarny, V. (2005). Group
+management for mobile ad hoc networks: Design, implementation and
+experiment. In Proceedings of the 6th international Conference on
+Mobile Data Management, New York, pp. 192–199.
+
+
+===== page 1018 =====
+1000 REFERENCES
+Liuet al. 2008 Liu, J., Rao, S.G., Li, B. and Zhang, H. (2008). Opportunities and
+challenges of peer-to-peer Internet video broadcast. In Proceedings of
+the IEEE,Special Issue on Recent Advances in Distributed Multimedia
+Communications, Vol. 96, No. 1, pp. 11–24.
+Loepere 1991 Loepere, K. (1991). Mach 3 Kernel Principles. Open Software
+Foundation and Carnegie-Mellon University.
+Lundelius and Lynch 1984 Lundelius, J. and Lynch, N. (1984). An upper and lower bound for clock
+synchronization. Information and Control, Vol. 62, No. 2/3, pp.
+190–204.
+Lvet al. 2002 Lv, Q., Cao, P., Cohen, E., Li, K.,and Shenker, S. (2002). Search and
+replication in unstructured peer-to-peer networks. In Proceedings of the
+2002 ACM SIGMETRICS International Conference on Measurement
+and Modeling of Computer Systems, Marina Del Rey, CA, pp. 258–259.
+Lynch 1996 Lynch, N. (1996). Distributed Algorithms. San Francisco, CA: Morgan
+Kaufmann.
+Ma 1992 Ma, C. (1992). Designing a Universal Name Service. Technical Report
+270, University of Cambridge.
+Macklem 1994 Macklem, R. (1994). Not quite NFS: Soft cache consistency for NFS.In
+Proceedings of the Winter ’94 USENIX Conference, San Francisco, CA,
+January, pp. 261–278.
+Madhavapeddy et al. 2003 Madhavapeddy, A., Scott, D. and Sharp, R. (2003). Context-aware
+computing with sound. In Proceedings of the Fifth International
+Conference on Ubiquitous Computing (Ubicomp 2003), Seattle, WA,
+October, pp. 315–332.
+Maekawa 1985 Maekawa, M. (1985). A N algorithm for mutual exclusion in
+decentralized systems. ACM Transactions on Computer Systems, Vol. 3,
+No. 2, pp. 145–159.
+Maffeis 1995 Maffeis, S. (1995). Adding group communication and fault tolerance to
+CORBA. In Proceedings of the 1995 USENIX Conference on
+Object-Oriented Technologies. Monterey, CA. pp. 135–146.
+Magee and Sloman 1989 Magee, J. and Sloman, M. (1989). Constructing distributed systems in
+Conic.IEEE Trans. Software Engineering Vol. 15, No. 6, pp. 663–675.
+Malkin 1993 Malkin, G. (1993). RIP Version 2 – Carrying Additional Information,
+Internet RFC 1388.
+Mamei, M. and Zambonelli, F. (2009). Programming pervasive and
+Mamei and Zambonelli
+mobile computing applications: The TOTA approach. ACM
+2009
+Transactions on Software Engineering and Methodology, Vol. 19, No.
+4, p. 263.
+maps.google.com Google Maps. Home page.
+
+
+===== page 1019 =====
+REFERENCES 1001
+Marshet al. 1991 Marsh, B., Scott, M., LeBlanc, T. and Markatos, E. (1991). First-class
+user-level threads. In Proceedings of the 13th ACM Symposium on
+Operating System Principles, pp. 110–21.
+Martinet al. 2004 Martin, T., Hsiao, M., Ha, D. and Krishnaswami, J. (2004).
+Denial-of-service attacks on battery-powered mobile computers. In
+Proceedings of the 2nd IEEE Pervasive Computing Conference,
+Orlando, FL, March, pp. 309–318.
+Marzullo and Neiger 1991 Marzullo, K. and Neiger, G. (1991). Detection of global state predicates.
+In Proceedings of the 5th International Workshop on Distributed
+Algorithms, pp. 254–72.
+Mattern 1989 Mattern, F. (1989). Virtual time and global states in distributed systems.
+In Proceedings of the Workshop on Parallel and Distributed
+Algorithms, Amsterdam, North-Holland, pp. 215–26.
+Maymounkov and Mazieres Maymounkov, P. and Mazieres, D. (2002). Kademlia: A peer-to-peer
+2002 information system based on the XOR metric. In Proceedings of
+IPTPS02, Cambridge, MA, pp. 53–65.
+mbone BIBs: Introduction to the Multicast Backbone.
+McGraw and Felden 1999 McGraw, G. and Felden, E. (1999). Securing Java. New York: John
+Wiley & Sons.
+McKusick and Quinlan McKusick, K. and Quinlan, S. (2010). GFS: Evolution or Fast-Forward.
+2010 Comms. ACM, Vol. 53, No. 3, pp. 42–49.
+Meier and Cahill 2010 Meier, R. and Cahill, V. (2010). On event-based middleware for
+location-aware mobile applications. IEEE Transactions on Software
+Engineering, Vol. 36, No. 3, pp.09–430.
+Melliar-Smith et al. 1990 Melliar-Smith, P., Moser, L. and Agrawala, V. (1990). Broadcast
+protocols for distributed systems. IEEE Transactions on Parallel and
+Distributed Systems, Vol. 1, No. 1, pp. 17–25.
+Menezes 1993 Menezes, A. (1993). Elliptic Curve Public Key Cryptosystems.
+Dordrecht, The Netherlands: Kluwer Academic Publishers.
+Menezeset al. 1997 Menezes, A., van Oorschot, O. and Vanstone, S. (1997). Handbook of
+Applied Cryptography. Boca Raton, FL: CRC Press.
+Metcalfe and Boggs 1976 Metcalfe, R.M. and Boggs, D.R. (1976). Ethernet: distributed packet
+switching for local computer networks. Comms. ACM, Vol. 19, No. , pp.
+395–403.
+Milanovic et al. 2004 Milanovic, N., Malek, M., Davidson, A. and Milutinovic, V. (2004).
+Routing and cecurity in mobile ad hoc networks. IEEE Computer, Vol.
+37, No. 2, pp. 69–73.
+Mills 1995 Mills, D. (1995). Improved algorithms for synchronizing computer
+network clocks. IEEE Transactions Networks, Vol. 3, No. 3, pp.
+245–54.
+
+
+===== page 1020 =====
+1002 REFERENCES
+Milojicic et al. 1999 Milojicic, J., Douglis, F. and Wheeler, R. (1999). Mobility, Processes,
+Computers and Agents. Reading, MA: Addison-Wesley.
+Mitchell and Dion 1982 Mitchell, J.G. and Dion, J. (1982). A comparison of two network-based
+file servers. Comms. ACM, Vol. 25, No. 4, pp. 233–45.
+Mitchell et al. 1992 Mitchell, C.J., Piper, F. and Wild, P. (1992). Digital signatures. In
+Simmons, G.J. (ed.), Contemporary Cryptology. New York: IEEE
+Press.
+Mockapetris 1987 Mockapetris, P. (1987). Domain names – concepts and facilities.
+Internet RFC 1034.
+Mogul 1994 Mogul, J.D. (1994). Recovery in Spritely NFS. Computing Systems,
+Vol. 7, No. 2, pp. 201–62.
+Mok 1985 Mok, A.K. (1985). SARTOR – A design environment for real-time
+systems. In Proc.Ninth IEEE COMP-SAC, Chicago, IL, Octobep, pp.
+174–81.
+Morin 1997 Morin, R. (ed.) (1997). MkLinux: Microkernel Linux for the Power
+Macintosh. Prime Time Freeware.
+Morriset al. 1986 Morris, J., Satyanarayanan, M., Conner, M.H., Howard, J.H., Rosenthal,
+D.S. and Smith, F.D. (1986). Andrew: A distributed personal computing
+environment. Comms. ACM, Vol. 29, No. 3, pp. 184–201.
+Moseret al. 1994 Moser, L., Amir, Y., Melliar-Smith, P. and Agarwal, D. (1994).
+Extended virtual synchrony. In Proceedings of the 14th International
+Conference on Distributed Computing Systems, pp. 56–65.
+Moseret al. 1996 Moser, L., Melliar-Smith, P., Agarwal, D., Budhia, R. and
+Lingley-Papadopoulos, C. (1996). Totem: A fault-tolerant multicast
+group communication system. Comms. ACM, Vol. 39, No. 4, pp. 54–63.
+Moseret al. 1998 Moser, L., Melliar-Smith, P. and Narasimhan, P. (1998). Consistent
+object replication in the Eternal system. Theory and Practice of Object
+Systems, Vol. 4, No. 2, pp. 81–92.
+Moss 1985 Moss, E. (1985). Nested Transactions, An Approach to Reliable
+Distributed Computing. Cambridge, MA: MIT Press.
+Multimedia Directory Multimedia Directory (2005). Scala Inc.
+Murphy et al. 2001 Murphy, A.L., Picco, G.P. and Roman, G.-C. (2001). Lime: A
+middleware for physical and logical mobility. In Proceedings of the 21st
+International Conference on Distributed Computing Systems
+(ICDCS-21), Phoenix, AZ, April, pp. 524–233.
+Muthitacharoenet al. 2002 Muthitacharoen, A., Morris, R., Gil, T.M. and Chen, B. (2002). Ivy: A
+read/write peer-to-peer file system. In Proc. Fifth Symposium on
+Operating Systems Design and Implementation (OSDI), Boston, MA,
+December, pp. 31–44.
+
+
+===== page 1021 =====
+REFERENCES 1003
+Muhl et al. 2006 Muhl, G., Fiege, L. and Pietzuch, P.R. (2006). Distributed Event-based
+Systems. Berlin, Heidelberg: Springer-Verlag.
+Myers and Liskov 1997 Myers, A.C. and Liskov, B. (1997). A decentralized model for
+information flow control, ACM Operating Systems Review, Vol. 31, No.
+5, pp. 129–42.
+Nagle 1984 Nagle, J. (1984). Congestion control in TCP/IP internetworks,
+Computer Communications Review, Vol. 14, No. 4, pp. 11–17.
+Nagle 1987 Nagle, J. (1987). On packet switches with infinite storage. IEEE
+Transactions on Communications, Vol. 35, No. 4, pp. 435–8.
+National Bureau of National Bureau of Standards (1977). Data Encryption Standard (DES).
+Standards 1977 Federal Information Processing Standards No. 46, Washington, DC: US
+National Bureau of Standards.
+nbcr.sdsc.edu National Biomedical Computation Resource, University of California,
+San Diego.
+Needham 1993 Needham, R. (1993). Names. In Mullender, S. (ed.), Distributed
+Systems,an Advanced Course, 2nd edn. Wokingham, England: ACM
+Press/Addison-Wesley. pp. 315–26.
+Needham and Schroeder Needham, R.M. and Schroeder, M.D. (1978). Using encryption for
+1978 authentication in large networks of computers. Comms. ACM, Vol. 21,
+No. 12, pp. 993–9.
+Nelson et al. 1988 Nelson, M.N., Welch, B.B. and Ousterhout, J.K. (1988). Caching in the
+Sprite network file system. ACM Transactions on Computer Systems,
+Vol. 6, No. 1, pp. 134–154.
+Neuman et al. 1999 Neuman, B.C., Tung, B. and Wray, J. (1999). Public Key Cryptography
+for Initial Authentication in Kerberos. Internet Draft
+ietf-cat-kerberos-pk-init-09.
+Neumann and Ts’o 1994 Neuman, B.C. and Ts’o, T. (1994). Kerberos: An authentication service
+for computer networks. IEEE Communications, Vol. 32, No. 9, pp.
+33–38.
+Newcomer 2002 Newcomer, E. (2002). Understanding Web Services XML, WSDL,
+SOAP and UDDI. Boston, MA: Pearson.
+Nielsen and Thatte 2001 Nielsen, H.F. and Thatte, S. (2001). Web Services Routing Protocol
+(WS-Routing). Microsoft Corporation.
+Nielsen et al. 1997 Nielsen, H., Gettys, J., Baird-Smith, A., Prud’hommeaux, E., Lie, H.
+and Lilley, C. (1997). Network performance effects of HTTP/1.1, CSS1,
+and PNG.In Proceedings of the SIGCOMM ’97, pp. 155–66.
+NIST 1994 National Institute for Standards and Technology (1994). Digital
+Signature Standard, NIST FIPS 186. US Department of Commerce.
+
+
+===== page 1022 =====
+1004 REFERENCES
+NIST 2002 National Institute for Standards and Technology (2002). Secure Hash
+Standard. NIST FIPS 180-2 + Change Notice to include SHA-224. US
+Department of Commerce.
+NIST 2004 National Institute for Standards and Technology (2004). NIST Brief
+Comments on Recent Cryptanalytic Attacks on Secure Hashing
+Functions and the Continued Security Provided by SHA-1. US
+Department of Commerce.
+nms.csail.mit.edu The Berkeley RON project. Home page.
+Noble and Satyanarayanan Noble, B. and Satyanarayanan, M. (1999). Experience with adaptive
+1999 mobile applications in Odyssey. Mobile Networks and Applications,
+Vol. 4 , No. 4, pp. 245–254.
+now.cs.berkeley.edu The Berkeley NOW project. Home page.
+Oaks and Wong 1999 Oaks, S. and Wong, H. (1999). Java Threads, 2nd edn. Sebastoplo, CA:
+O’Reilly.
+Ohkubo et al. 2003 Ohkubo, M., Suzuki, K. and Kinoshita, S. (2003). Cryptographic
+approach to ‘privacy-friendly’ tags. In Proceedings of the RFID Privacy
+Workshop, MIT.
+Okiet al. 1993 Oki, B., Pfluegl, M., Siegel, A., and Skeen, D. (1993). The Information
+Bus: an architecture for extensible distributed systems. In Proceedings
+of the Fourteenth ACM Symposium on Operating Systems Principles,
+Asheville, NC, December, NY. pp. 58–68.
+Olson and Ogbuji 2002 Olson, M. and Ogbuji, U. (2002). The Python Web services developer:
+Messaging technologies compared – Choose the best tool for the task at
+hand. IBM DeveloperWorks
+OMG 2000a Object Management Group (2000). Trading Object Service
+Specification, Vn. 1.0. Needham, MA: OMG.
+OMG 2000b Object Management Group (2000). Concurrency Control Service
+Specification. Needham, MA: OMG.
+OMG 2002a Object Management Group (2002). The CORBA IDL Specification.
+Needham, MA: OMG.
+OMG 2002b Object Management Group (2002). CORBA Security Service
+Specification Vn. 1.8. Needham, MA: OMG.
+OMG 2002c Object Management Group (2002). Value Type Semantics. Needham,
+MA: OMG.
+OMG 2002d Object Management Group (2002). Life Cycle Service, Vn. 1.2.
+Needham, MA: OMG.
+OMG 2002e Object Management Group (2002). Persistent State Service, Vn. 2.0.
+Needham, MA: OMG.
+OMG 2003 Object Management Group, (2003). Object Transaction Service
+Specification, Vn. 1.4.Needham, MA: OMG.
+
+
+===== page 1023 =====
+REFERENCES 1005
+OMG 2004a Object Management Group (2004). CORBA/IIOP 3.0.3 Specification.
+Needham, MA: OMG.
+OMG 2004b Object Management Group (2004). Naming Service Specification.
+Needham, MA: OMG.
+OMG 2004c Object Management Group (2004). Event Service Specification, Vn.
+1.2. Needham, MA: OMG.
+OMG 2004d Object Management Group (2004). Notification Service Specification,
+Vn. 1.1. Needham, MA: OMG. Technical report telecom/98-06-15.
+OMG 2004e Object Management Group (2004). CORBA Messaging. Needham, MA:
+OMG.
+Omidyar and Aldridge Omidyar, C.G. and Aldridge, A. (1993). Introduction to SDH/SONET.
+1993 IEEE Communications Magazine, Vol. 31, pp. 30–3.
+open.eucalyptus.com Eucalyptus.Home page.
+OpenNap 2001 OpenNap: Open Source Napster Server, Beta release 0.44, September
+2001.
+Oppen and Dalal 1983 Oppen, D.C. and Dalal Y.K. (1983). The Clearinghouse: a decentralized
+agent for locating named objects in a distributed environment. ACM
+Trans. on Office Systems, Vol. 1, No. 3, pp. 230–53.
+Oram 2001 Oram, A. (2001). Peer-to-Peer: Harnessing the Benefits of Disruptive
+Technologies, O’Reilly, Sebastapol, CA.
+Orfaliet al. 1996 Orfali, R., Harkey, D. and Edwards, J. (1996). The Essential Distributed
+Objects Survival Guide. New York: Wiley.
+Orfaliet al. 1997 Orfali, R., Harkey, D., and Edwards, J. (1997) Instant CORBA. New
+York: John Wiley & Sons.
+Organick 1972 Organick, E.I. (1972). The MULTICS System: An Examination of its
+Structure. Cambridge, MA: MIT Press.
+Ormanet al. 1993 Orman, H., Menze, E., O’Malley, S. and Peterson, L. (1993). A fast and
+general implementation of Mach IPC in a Network. In Proceedings of
+the Third USENIX Mach Conference, April.
+OSF Introduction to OSF DCE. The Open Group.
+Ousterhout et al. 1985 Ousterhout, J., Da Costa, H., Harrison, D., Kunze, J., Kupfer, M. and
+Thompson, J. (1985). A Trace-driven analysis of the UNIX 4.2 BSD file
+system. In Proc. of the 10th ACM Symposium Operating System
+Principles, p. 15–24.
+Ousterhout et al. 1988 Ousterhout, J., Cherenson, A., Douglis, F., Nelson, M. and Welch, B.
+(1988). The Sprite network operating system. IEEE Computer, Vol. 21,
+No. 2, pp. 23–36.
+Parker 1992 Parker, B. (1992). The PPP AppleTalk Control Protocol (ATCP).
+Internet RFC 1378.
+
+
+===== page 1024 =====
+1006 REFERENCES
+Parrington et al. 1995 Parrington, G.D., Shrivastava, S.K., Wheater, S.M. and Little, M.C.
+(1995). The design and implementation of Arjuna. USENIX Computing
+Systems Journal, Vol. 8, No. 3, pp. 255–308.
+Partridge 1992 Partridge, C. (1992). A Proposed Flow Specification. Internet RFC
+1363.
+Patel and Abowd 2003 Patel, S.N. and Abowd, G.D. (2003). A 2-way laser-assisted selection
+scheme for handhelds in a physical environment. In Proceedings of the
+Fifth International Conference on Ubiquitous Computing (Ubicomp
+2003), Seattle, WA, October, pp. 200–207.
+Patterson et al. 1988 Patterson, D., Gibson, G. and Katz, R. (1988). A case for redundant
+arrays of interactive disks. ACM International Conf. on Management of
+Data (SIGMOD), pp. 109–116.
+Peaseet al. 1980 Pease, M., Shostak, R. and Lamport, L. (1980). Reaching agreement in
+the presence of faults. Journal of the ACM, Vol. 27, No. 2, pp. 228–34.
+Pedone and Schiper 1999 Pedone, F. and Schiper, A. (1999). Generic broadcast. In Proceedings of
+the 13th International Symposium on Distributed Computing (DISC
+’99), September, pp. 94–108.
+Peng and Dabek 2010 Peng, D. and Dabex, F. (2010). Large-scale incremental processing
+using distributed transactions and notifications. In Proceedings of the
+Ninth Symposium on Operating Systems Design and Implementation
+(OSDI ’10), Vancouver, Canada, October, pp. 1–15.
+Perrig et al. 2002 Perrig, A., Szewczyk, R., Wen, V., Culler, D. and Tygar, D. (2002).
+SPINS: Security protocols for sensor networks. Wireless Networks, Vol.
+8, No. 5, pp. 521–534.
+Peterson 1988 Peterson, L. (1988). The Profile Naming Service. ACM Transactions on
+Computer Systems, Vol. 6, No. 4, pp. 341–64.
+Peterson et al. 1989 Peterson, L.L., Buchholz, N.C. and Schlichting, R.D. (1989). Preserving
+and using context information in interprocess communication. ACM
+Transactions on Computer Systems, Vol. 7, No. 3, pp. 217–46.
+Petersen et al. 1997 Petersen, K., Spreitzer, M., Terry, D., Theimer, M. and Demers, A.
+(1997). Flexible update propagation for weakly consistent replication.
+In Proceedings of the 16th ACM Symposium on Operating Systems
+Principles, pp. 288–301.
+Peterson et al. 2005 Peterson, L.L., Shenker, S. and Turner, J. (2005). Overcoming the
+Internet impasse through virtualization. Computer, Vol. 38, No. 4, pp.
+34–41.
+Pietzuch and Bacon 2002 Pietzuch, P. R. and Bacon, J. (2002). Hermes: A distributed event-based
+middleware architecture. In Proceedings of the First International
+Workshop on Distributed Event-Based Systems,Vienna, Austria,
+pp.611–618.
+
+
+===== page 1025 =====
+REFERENCES 1007
+Pike et al. 1993 Pike, R., Presotto, D., Thompson, K., Trickey, H. and Winterbottom, P.
+(1993). The use of name spaces in Plan 9. Operating Systems Review,
+Vol. 27, No. 2, pp. 72–76.
+Pike et al. 2005 Pike, R., Dorward, S., Griesemer, R. and Quinlan, S. (2005).
+Interpreting the data: Parallel analysis with Sawzall. Scientific
+Programming, Vol. 13, No. 4, pp. 277–298.
+Pinheiro et al. 2007 Pinheiro, E., Weber, W.D. and Barroso, L.A. (2007). Failure trends in a
+large disk drive population. In Proceedings of the 5th USENIX
+Conference on File and Storage Technologies, pp. 17–28.
+Plaxton et al. 1997 Plaxton, C.G., Rajaraman, R. and Richa, A.W. (1997). Accessing
+nearby copies of replicated objects in a distributed environment. In
+Proc. of theACM Symposium on Parallel Algorithms and Architectures,
+pp. 311–320.
+Ponnekanti and Fox 2004 Ponnekanti, S. and Fox, A. (2004). Interoperability among
+independently evolving web services. In Proceedings of the
+ACM/Usenix/IFIP 5th International Middleware Conference, Toronto,
+Canada, pp. 331–57.
+Ponnekanti et al. 2001 Ponnekanti, S.R., Lee, B., Fox, A., Hanrahan, P. and Winograd, T.
+(2001). ICrafter: A service framework for ubiquitous computing
+environments. In Proceedings of the Third International Conference on
+Ubiquitous Computing (Ubicomp 2001), Atlanta, GA, Sep.–Oct., pp.
+56–75.
+Popek and Goldberg 1974 Popek, G.J. and Goldberg, R.P. (1974). Formal requirements for
+virtualizable third generation architectures. Comms. ACM, Vol. 17, No.
+7, pp. 412–421.
+Popek and Walker 1985 Popek, G. and Walker, B. (eds.) (1985). The LOCUS Distributed System
+Architecture. Cambridge, MA: MIT Press.
+Postel 1981a Postel, J. (1981). Internet Protocol. Internet RFC 791.
+Postel 1981b Postel, J. (1981). Transmission Control Protocol. Internet RFC 793.
+Pottie and Kaiser 2000 Pottie, G.J. and Kaiser, W.J. (2000). Embedding the Internet: Wireless
+integrated network sensors. Comms. ACM, Vol. 43, No. 5, pp. 51–58.
+Powell 1991 Powell, D. (ed.) (1991). Delta-4: A Generic Architecture for
+Dependable Distributed Computing. Berlin and New York:
+Springer-Verlag.
+Pradhan and Chiueh 1998 Pradhan, P. and Chiueh, T. (1998). Real-time performance guarantees
+over wired and wireless LANS. In IEEE Conference on Real-Time
+Applications and Systems, RTAS’98, June, p. 29.
+Prakash and Baldoni 1998 Prakash, R. and Baldoni, R. (1998). Architecture for group
+communication in mobile systems. In Proceedings of the the 17th IEEE
+Symposium on Reliable Distributed Systems, Washington, DC, pp.
+235–242.
+
+
+===== page 1026 =====
+1008 REFERENCES
+Preneelet al. 1998 Preneel, B., Rijmen, V. and Bosselaers, A. (1998). Recent developments
+in the design of conventional cryptographic algorithms. In Computer
+Security and Industrial Cryptography, State of the Art and Evolution.
+Vol. 1528 of Lecture Notes in Computer Science, Springer-Verlag, pp.
+106–131.
+privacy.nb.ca International Cryptography Freedom.
+Radiaet al. 1993 Radia, S., Nelson, M. and Powell, M. (1993). The Spring Naming
+Service. Technical Report 93–16, Sun Microsystems Laboratories, Inc.
+Raman and McCanne 1999 Raman, S. and McCanne, S. (1999). A model, analysis, and protocol
+framework for soft state-based communication. In Proceedings of the
+ACM SIGCOMM, 1999, Cambridge, MA, pp. 15–25.
+Randall and Szydlo 2004 Randall, J. and Szydlo, M. (2004). Collisions for SHA0, MD5, HAVAL,
+MD4, and RIPEMD, but SHA1 still secure. RSA Laboratories Technical
+Note, August 31.
+Rashid 1985 Rashid, R.F. (1985). Network operating systems. In Local Area
+Networks: An Advanced Course, Lecture Notes in Computer Science,
+184, Springer-Verlag, pp. 314–40.
+Rashid 1986 Rashid, R.F. (1986). From RIG to Accent to Mach: the evolution of a
+network operating system. In Proceedings of the ACM/IEEE Computer
+Society Fall Joint Conference, ACM, November.
+Rashid and Robertson 1981 Rashid, R. and Robertson, G. (1981). Accent: a communications
+oriented network operating system kernel. ACM Operating Systems
+Review, Vol. 15, No. 5, pp. 64–75.
+Rashidet al. 1988 Rashid, R., Tevanian Jr, A., Young, M., Golub, D., Baron, R., Black, D.,
+Bolosky, W.J. and Chew, J. (1988). Machine-Independent Virtual
+Memory Management for Paged Uniprocessor and Multiprocessor
+Architectures.IEEE Transactions on Computers, Vol. 37, No. 8, pp.
+896–907.
+Ratnasamyet al. 2001 Ratnasamy, S., Francis, P., Handley, M., Karp, R. and Shenker, S.
+(2001). A scalable content-addressable network. In Proc. ACM
+SIGCOMM 2001, August, pp. 161–72.
+Raynal 1988 Raynal, M. (1988). Distributed Algorithms and Protocols. New York:
+John Wiley & Sons.
+Raynal 1992 Raynal, M. (1992). About logical clocks for distributed systems. ACM
+Operating Systems Review, Vol. 26, No. 1, pp. 41–8.
+Raynal and Singhal 1996 Raynal, M. and Singhal, M. (1996). Logical time: Capturing causality in
+distributed systems. IEEE Computer, Vol. 29, No. 2, pp. 49–56.
+Redmond 1997 Redmond, F.E. (1997). DCOM: Microsoft Distributed Component
+Model. IDG Books Worldwide.
+
+
+===== page 1027 =====
+REFERENCES 1009
+Reed 1983 Reed, D.P. (1983). Implementing atomic actions on decentralized data.
+ACM Transactions on Computer Systems, Vol. 1, No. 1, pp. 3–23.
+Rellermeyer et al. 2007 Rellermeyer, J. S., Alonso, G., and Roscoe, T. (2007). R-OSGi:
+Distributed applications through software modularization. In
+Proceedings of the ACM/IFIP/USENIX 2007 international Conference
+on Middleware, Newport Beach, CA, November, pp. 1–20.
+Rescorla 1999 Rescorla, E. (1999). Diffie-Hellman Key Agreement Method. Internet
+RFC 2631.
+research.microsoft.com Microsoft Research. Writings of Leslie Lamport.
+Rether Rether: A Real-Time Ethernet Protocol.
+Rheaet al. 2001 Rhea, S., Wells, C., Eaton, P., Geels, D., Zhao, B., Weatherspoon, H.
+and Kubiatowicz, J. (2001). Maintenance-free global data storage. IEEE
+Internet Computing, Vol. 5, No. 5, pp. 40–49.
+Rheaet al. 2003 Rhea, S., Eaton, P., Geels, D., Weatherspoon, H., Zhao, B. and
+Kubiatowicz, J. (2003). Pond: The OceanStore prototype, In
+Proceedings of the 2nd USENIX Conference on File and Storage
+Technologies (FAST ’03), pp. 1–14.
+Ricart and Agrawala 1981 Ricart, G. and Agrawala, A.K. (1981). An optimal algorithm for mutual
+exclusion in computer networks. Comms. ACM, Vol. 24, No. 1, pp.
+9–17.
+Richardson et al. 1998 Richardson, T., Stafford-Fraser, Q., Wood, K.R. and Hopper, A. (1998).
+Virtual network computing, IEEE Internet Computing, Vol. 2, No. 1,
+pp. 33–8.
+Ritchie 1984 Ritchie, D. (1984). A Stream Input Output System. AT&T Bell
+Laboratories Technical Journal, Vol. 63, No. 8, pt 2, pp. 1897–910.
+Rivest 1992a Rivest, R. (1992). The MD5 Message-Digest Algorithm.Internet RFC
+1321.
+Rivest 1992b Rivest, R. (1992). The RC4 Encryption Algorithm. RSA Data Security
+Inc.
+Rivest et al. 1978 Rivest, R.L., Shamir, A. and Adelman, L. (1978). A method of obtaining
+digital signatures and public key cryptosystems. Comms. ACM, Vol. 21,
+No. 2, pp. 120–6.
+Rodrigues et al. 1998 Rodrigues, L., Guerraoui, R. and Schiper, A. (1998). Scalable atomic
+multicast. In Proceedings IEEE IC3N ’98. Technical Report 98/257.
+École polytechnique fédérale de Lausanne.
+Romanet al. 2001 Roman, G., Huang, Q. and Hazemi, A. (2001). Consistent group
+membership in ad hoc networks. In Proceedings of the 23rd
+International Conference on Software Engineering, Washington, DC,
+pp. 381–388.
+
+
+===== page 1028 =====
+1010 REFERENCES
+Rose 1992 Rose, M.T. (1992). The Little Black Book: Mail Bonding with OSI
+Directory Services. Englewood Cliffs, NJ: Prentice-Hall.
+Rosenblum and Ousterhout Rosenblum, M. and Ousterhout, J. (1992). The design and
+1992 implementation of a log-structured file system. ACM Transactions on
+Computer Systems, Vol. 10, No. 1, pp. 26–52.
+Rosenblum and Wolf 1997 Rosenblum, D.S. and Wolf, A.L. (1997). A design framework for
+Internet-scale event observation and notification.In Proceedings of the
+sixth European Software Engineering Conference/ACM SIGSOFT Fifth
+Symposium on the Foundations of Software Engineering, Zurich,
+Switzerland, pp. 344–60.
+Rowley 1998 Rowley, A. (1998). A Security Architecture for Groupware. Doctoral
+Thesis, Queen Mary and Westfield College, University of London.
+Rowstron and Druschel Rowstron, A. and Druschel, P. (2001). Pastry: Scalable, distributed
+2001 object location and routing for large-scale peer-to-peer systems. In Proc.
+IFIP/ACM Middleware 2001, Heidelberg, Germany, Nov., pp. 329–50.
+Rowstron and Wood 1996 Rowstron, A. and Wood, A. (1996). An efficient distributed tuple space
+implementation for networks of workstations. In Proceedings of the
+Second International Euro-Par Conference, Lyon, France, pp. 510–513.
+royal.pingdom.com Royal Pingdom. Map of all Google data centre locations as of 2008.
+Rozieret al. 1988 Rozier, M., Abrossimov, V., Armand, F., Boule, I., Gien, M.,
+Guillemont, M., H6rrman, F., Kaiser, C., Langlois, S., Leonard, P. and
+Neuhauser, W. (1988). Chorus distributed operating systems.
+Computing Systems Journal, Vol. 1, No. 4, pp. 305–70.
+Rozieret al. 1990 Rozier, M., Abrossimov, V., Armand, F., Boule, I., Gien, M.,
+Guillemont, M., Herrman, F., Kaiser, C., Langlois, S., Leonard, P. and
+Neuhauser, W. (1990). Overview of the Chorus Distributed Operating
+System. Technical Report CS/TR-90-25.1, Chorus Systèmes, France.
+RTnet RTnet: Hard Real-Time Networking for Linux/RTAI.
+Salber et al. 1999 Salber, D., Dey, A.K. and Abowd, G.D. (1999). The Context Toolkit:
+Aiding the development of context-enabled applications. In
+Proceedings of the 1999 Conference on Human Factors in Computing
+Systems (CHI ’99), Pittsburgh, PA, May, pp. 434–441.
+Saltzeret al. 1984 Saltzer, J.H., Reed, D.P. and Clarke, D. (1984). End-to-end arguments
+in system design. ACM Transactions on Computer Systems, Vol. 2, No.
+4, pp. 277–88.
+Sandberg 1987 Sandberg, R. (1987). The Sun Network File System: Design,
+Implementation and Experience. Technical Report. Mountain View,
+CA: Sun Microsystems.
+Sandberg et al. 1985 Sandberg, R., Goldberg, D., Kleiman, S., Walsh, D. and Lyon, B.
+(1985). The design and implementation of the Sun Network File
+System. In Proceedings of the Usenix Conference, Portland, OR, p. 119.
+
+
+===== page 1029 =====
+REFERENCES 1011
+Sanders 1987 Sanders, B. (1987). The information structure of distributed mutual
+exclusion algorithms. ACM Transactions on Computer Systems, Vol. 5,
+No. 3, pp. 284–99.
+Sandholm and Gawor 2003 Sandholm, T. and Gawor, J. (2003). Globus Toolkit 3 Core – A Grid
+Service Container Framework. July.
+Sandhu et al. 1996 Sandhu, R., Coyne, E., Felstein, H. and Youman, C. (1996). Role-based
+access control models. IEEE Computer, Vol. 29, No. 2, pp. 38–47.
+Sansom et al. 1986 Sansom, R.D., Julin, D.P. and Rashid, R.F. (1986). Extending a
+capability based system into a network environment. Technical Report
+CMU-CS-86-116, Carnegie-Mellon University.
+Santifaller 1991 Santifaller, M. (1991). TCP/IP and NFS, Internetworking in a Unix
+Environment. Reading, MA: Addison-Wesley.
+Saroiu et al. 2002 Saroiu, S., Gummadi, P. and Gribble, S. (2002). A measurement study
+of peer-to-peer file sharing systems. In Proc.Multimedia Computing
+and Networking (MMCN), pp. 156–70.
+Sastry et al. 2003 Sastry, N., Shankar, U. and Wagner, D. (2003). Secure verification of
+location claims. In Proceedings of the ACM Workshop on Wireless
+Security (WiSe 2003), September, pp. 1–10.
+Satyanarayanan 1981 Satyanarayanan, M. (1981). A study of file sizes and functional
+lifetimes. In Proceedings of the 8th ACM Symposium on Operating
+System Principles, Asilomar, CA, pp. 96–108.
+Satyanarayanan 1989a Satyanarayanan, M. (1989). Distributed File Systems. In Mullender, S.
+(ed.), Distributed Systems,an Advanced Course, 2nd edn. Wokingham,
+England: ACM Press/Addison-Wesley. pp. 353–83.
+Satyanarayanan 1989b Satyanarayanan, M. (1989). Integrating security in a large distributed
+system. ACM Transactions on Computer Systems, Vol. 7, No. 3, pp.
+247–80.
+Satyanarayanan 2001 Satyanarayanan, M. (2001). Pervasive computing: Vision and
+challenges.IEEE Personal Communications, Vol. 8, No. 4, pp. 10–17.
+Satyanarayananet al. 1990 Satyanarayanan, M., Kistler, J.J., Kumar, P., Okasaki, M.E., Siegel,
+E.H. and Steere, D.C. (1990). Coda: A highly available file system for a
+distributed workstation environment. IEEE Transactions on Computers,
+Vol. 39, No. 4, pp. 447–59.
+Schilit et al. 1994 Schilit, B.N., Adams, N.I. and Want, R. (1994). Context-aware
+computing applications. In Proceedings of the IEEE Workshop on
+Mobile Computing Systems and Applications, Santa Cruz, CA,
+December, pp. 85–90.
+Schiper and Raynal 1996 Schiper, A. and Raynal, M. (1996). From group communication to
+transactions in distributed systems. Comms. ACM, Vol. 39, No. 4, pp.
+84–7.
+
+
+===== page 1030 =====
+1012 REFERENCES
+Schiper and Sandoz 1993 Schiper, A. and Sandoz, A. (1993). Uniform reliable multicast in a
+virtually synchronous environment. In Proceedings of the 13th
+International Conference on Distributed Computing Systems, pp.
+561–8.
+Schlageter 1982 Schlageter, G. (1982). Problems of optimistic concurrency control in
+distributed database systems. SigMOD Record, Vol. 13, No. 3, pp. 62–6.
+Schmidt 1998 Schmidt, D. (1998). Evaluating architectures for multithreaded object
+request brokers. Comms. ACM, Vol. 44, No. 10, pp. 54–60.
+Schneider 1990 Schneider, F.B. (1990). Implementing fault-tolerant services using the
+state machine approach: A tutorial. ACM Computing Surveys, Vol. 22,
+No. 4, pp. 300–19.
+Schneider 1996 Schneider, S. (1996). Security properties and CSP. In IEEE Symposium,
+on Security and Privacy, pp. 174–187.
+Schneier 1996 Schneier, B. (1996). Applied Cryptography, 2nd edn. New York: John
+Wiley & Sons.
+Schroeder and Burrows Schroeder, M. and Burrows, M. (1990). The performance of Firefly
+1990 RPC.ACM Transactions on Computer Systems, Vol. 8, No. ,. pp. 1–17.
+Schroeder et al. 1984 Schroeder, M.D., Birrell, A.D. and Needham, R.M. (1984). Experience
+with Grapevine: The growth of a distributed system, ACM Transactions
+on Computer Systems, Vol. 2, No. 1, pp. 3–23.
+Schulzrinne et al. 1996 Schulzrinne, H., Casner, S., Frederick, D. and Jacobson, V. (1996).
+RTP: A Transport Protocol for Real-Time Applications. Internet RFC
+1889.
+sector.sourceforge.net Sector/Sphere.Home page.
+Seetharamanan 1998 Seetharamanan, K. (ed.) (1998). Special Issue: The CORBA
+Connection. Comms. ACM, Vol. 41, No. 10.
+session directory User Guide to sd (Session Directory).
+Shannon 1949 Shannon, C.E. (1949). Communication theory of secrecy systems. Bell
+System Technical Journal, Vol. 28, No. 4, pp. 656–715.
+Shepler 1999 Shepler, S. (1999). NFS Version 4 Design Considerations. Internet RFC
+2624, Sun Microsystems.
+Shih et al. 2002 Shih, E., Bahl, P. and Sinclair, M. (2002). Wake on Wireless: An event
+driven energy saving strategy for battery operated devices. In
+Proceedings of the Eighth Annual ACM Conference on Mobile
+Computing and Networking, Altanta, GA, September, pp. 160–171.
+Shirky 2000 Shirky, C. (2000). What’s P2P and what’s not, 11/24/2000. Internet
+publication.
+Shoch and Hupp 1980 Shoch, J.F. and Hupp, J.A. (1980). Measured performance of an
+Ethernet local network. Comms. ACM, Vol. 23, No. 12, pp. 711–21.
+
+
+===== page 1031 =====
+REFERENCES 1013
+Shoch and Hupp 1982 Shoch, J.F. and Hupp, J.A. (1982). The ‘Worm’ programs – early
+experience with a distributed computation. Comms. ACM, Vol. 25, No.
+3, pp. 172–80.
+Shoch et al. 1982 Shoch, J.F., Dalal, Y.K. and Redell, D.D. (1982). The evolution of the
+Ethernet local area network. IEEE Computer, Vol. 15, No. 8, pp. 10–28.
+Shoch et al. 1985 Shoch, J.F., Dalal, Y.K., Redell, D.D. and Crane, R.C. (1985). The
+Ethernet. In Local Area Networks: An Advanced Course. Vol 184 of
+Lecture Notes in Computer Science. Springer-Verlag, pp. 1–33.
+Shrivastavaet al. 1991 Shrivastava, S., Dixon, G.N. and Parrington, G.D. (1991). An overview
+of the Arjuna distributed programming system. IEEE Software, pp.
+66–73.
+Singh 1999 Singh, S. (1999). The Code Book. London: Fourth Estate.
+Sinha and Natarajan 1985 Sinha, M. and Natarajan, N. (1985). A priority based distributed
+deadlock detection algorithm. IEEE Transactions on Software
+Engineering. Vol. 11, No. 1, pp. 67–80.
+Sirivianos et al. 2007 Sirivianos, M., Park, J.H., Chen R. and Yang, X. (2007). Free-riding in
+BitTorrent networks with the large view exploit. In Proceedings of the
+6th International Workshop on Peer-to-Peer Systems (IPTPS ‘07),
+Bellevue, WA.
+Spafford 1989 Spafford, E.H. (1989). The Internet worm: Crisis and aftermath.
+Comms. ACM, Vol. 32, No. 6, pp. 678–87.
+Spasojevic and Spasojevic, M. and Satyanarayanan, M. (1996). An empirical study of a
+Satyanarayanan 1996 wide-area distributed file system. ACM Transactions on Computer
+Systems, Vol. 14, No. 2, pp. 200–222.
+Spector 1982 Spector, A.Z. (1982). Performing remote operations efficiently on a
+local computer network. Comms. ACM, Vol. 25, No. 4, pp. 246–60.
+Spurgeon 2000 Spurgeon, C.E. (2000). Ethernet: The Definitive Guide. Sebastopol, CA:
+O’Reilly.
+Srikanth and Toueg 1987 Srikanth, T. and Toueg, S. (1987). Optimal clock synchronization.
+Journal ACM. Vol. 34, No. 3, pp. 626–45.
+Srinivasan 1995a Srinivasan, R. (1995). RPC: Remote Procedure Call Protocol
+Specification Version 2. Sun Microsystems. Internet RFC 1831.
+August.
+Srinivasan 1995b Srinivasan, R. (1995). XDR: External Data Representation Standard.
+Sun Microsystems. Internet RFC 1832. Network Working Group.
+Srinivasan and Mogul 1989 Srinivasan, R. and Mogul, J.D. (1989). Spritely NFS: Experiments with
+cache-consistency protocols. In Proc. of the 12th ACM Symposium on
+Operating System Principles, Litchfield Park, AZ, December, pp.
+45–57.
+
+
+===== page 1032 =====
+1014 REFERENCES
+Srisuresh and Holdrege Srisuresh, P. and Holdrege, M. (1999). IP Network Address Translator
+1999 (NAT) Terminology and Considerations. Internet RFC 2663.
+Stajano 2002 Stajano, F. (2002). Security for Ubiquitous Computing. New York: John
+Wiley & Sons.
+Stajano and Anderson 1999 Stajano, F. and Anderson, R. (1999). The resurrecting duckling:
+Security issues for adhoc wireless networks. In Proceedings of the 7th
+International Workshop on Security Protocols, pp. 172–194.
+Stallings 2002 Stallings, W. (2002). High Speed Networks – TCP/IP and ATM Design
+Principles. 2nd edn.Upper Saddle River, NJ: Prentice-Hall.
+Stallings 2005 Stallings, W. (2005). Cryptography and Network Security – Principles
+and Practice, 4th edn. Upper Saddle River, NJ: Prentice-Hall.
+Stallings 2008 Stallings, W. (2008). Operating Systems, 6th edn. Upper Saddle River,
+NJ: Prentice-Hall International.
+Steiner et al. 1988 Steiner, J., Neuman, C. and Schiller, J. (1988). Kerberos: An
+authentication service for open network systems. In Proceedings of the
+Usenix Winter Conference, Berkeley, CA.
+Stelling et al. 1998 Stelling, P., Foster, I., Kesselman, C., Lee, C. and von Laszewski, G.
+(1998). A fault detection service for wide area distributed computations.
+In Proceedings of the 7th IEEE Symposium on High Performance
+Distributed Computing, pp. 268–78.
+Stoicaet al. 2001 Stoica, I., Morris, R., Karger, D., Kaashoek, F. and Balakrishnan, H.
+(2001). Chord: A scalable peer-to-peer lookup service for internet
+applications. In Proc. ACM SIGCOMM, ‘01, August, pp. 149–60.
+Stojmenovic 2002 Stojmenovic, I. (ed.) (2002). Handbook of Wireless Networks and
+Mobile Computing. New York: John Wiley & Sons.
+Stoll 1989 Stoll, C. (1989). The Cuckoo’s Egg: Tracking a Spy Through a Maze of
+Computer Espionage. New York: Doubleday.
+Stone 1993 Stone, H. (1993). High-performance Computer Architecture,3rd edn.
+Reading, MA: Addison-Wesley.
+Stonebrakeret al. 2010 Stonebraker, M., Abadi, D., DeWitt, D. J., Madden, S., Paulson, E.,
+Pavlo, A. and Rasin, A. (2010). MapReduce and parallel DBMSs:
+Friends or foes? Comms. ACM, Vol. 53, No. 1, pp. 64–71.
+Sun 1989 Sun Microsystems Inc. (1989). NFS: Network File System Protocol
+Specification. Internet RFC 1094.
+Sun and Ellis 1998 Sun, C. and Ellis, C. (1998). Operational transformation in real-time
+group editors: Issues, algorithms, and achievements. In Proceedings of
+the Conference on Computer Supported Cooperative Work Systems, pp.
+59–68.
+
+
+===== page 1033 =====
+REFERENCES 1015
+SWAP-CA 2002 Shared Wireless Access Protocol (Cordless Access) Specification
+(SWAP-CA), Revision 2.0,1. The HomeRF Technical Committee, July
+2002.
+Szalay and Gray 2001 Szalay, A. and Gray, J. (2001) The World-Wide Telescope. Science,
+Vol. 293, No. 5537, pp. 2037–2040.
+Szalay and Gray 2004 Szalay, A. and Gray, J. (2004). Scientific Data Federation: The
+World-Wide Telescope. In Foster, I. and Kesselman, C. (eds.), The Grid
+2. San Francisco, CA: Morgan Kauffman.
+Szyperski 2002 Szyperski, C. (2002). Component Software: Beyond Object-Oriented
+Programming, 2nd edn. Reading, MA: Addison-Wesley.
+Tanenbaum 2003 Tanenbaum, A.S. (2003). Computer Networks, 4th edn. Upper Saddle
+Rivee, NJ: Prentice-Hall International.
+Tanenbaum 2007 Tanenbaum, A.S. (2007). Modern Operating Systems, 3rd edn.
+Englewood Cliffs, NJ: Prentice-Hall.
+Tanenbaum and van Tanenbaum, A. and van Renesse, R. (1985). Distributed operating
+Renesse 1985 systems. Computing Surveys, ACM, Vol. 17, No. 4, pp. 419–70.
+Tanenbaum et al. 1990 Tanenbaum, A.S., van Renesse, R., van Staveren, H., Sharp, G.,
+Mullender, S., Jansen, J. and van Rossum, G. (1990). Experiences with
+the Amoeba distributed operating system. Comms. ACM, Vol. 33, No.
+12, pp. 46–63.
+Tauferet al. 2003 Taufer, M., Crowley, M., Karanicolas, J., Cicotti, P., Chien, A. and
+Brooks, L. (2003). Moving Towards Desktop Grid Solutions for Large
+Scale Modelling in Computational Chemistry. University of California,
+San Diego.
+Terry et al. 1995 Terry, D., Theimer, M., Petersen, K., Demers, A., Spreitzer, M. and
+Hauser, C. (1995). Managing update conflicts in Bayou, a weakly
+connected replicated storage system. In Proceedings of the 15th ACM
+Symposium on Operating Systems Principles, pp. 172–183.
+TFCC IEEE Task Force on Cluster Computing.
+Thaleret al. 2000 Thaler, D., Handley, M. and Estrin, D. (2000). The Internet Multicast
+Address Allocation Architecture. Internet RFC 2908
+Thekkath et al. 1997 Thekkath, C.A., Mann, T. and Lee, E.K. (1997). Frangipani: A scalable
+distributed file system, in Proc. of the 16th ACM Symposium on
+Operating System Principles, St. Malo, France, October, pp. 224–237.
+Tokuda et al. 1990 Tokuda, H., Nakajima, T. and Rao, P. (1990). Real-time Mach: Towards
+a predictable real-time system. In Proceedings of the USENIX Mach
+Workshop, pp. 73–82.
+Topolcic 1990 Topolcic, C. (ed.) (1990). Experimental Internet Stream Protocol,
+Version 2. Internet RFC 1190.
+
+
+===== page 1034 =====
+1016 REFERENCES
+Tsoumakos and Tsoumakos, D. and Roussopoulos, N. (2006). Analysis and comparison
+Roussopoulos 2006 of P2P search methods. In Proceedings of the 1st international
+Conference on Scalable information Systems(InfoScale '06), Hong
+Kong, p.25.
+Tzou and Anderson 1991 Tzou, S.-Y. and Anderson, D. (1991). The performance of
+message-passing using restricted virtual memory remapping.
+Software–Practice and Experience, Vol. 21, pp. 251–67.
+van Renesse et al. 1989 van Renesse, R., van Staveran, H. and Tanenbaum, A. (1989). The
+performance of the Amoeba distributed operating system. Software –
+Practice and Experience, Vol. 19, No. 3, pp. 223–34.
+van Renesse et al. 1995 van Renesse, R., Birman, K., Friedman, R., Hayden, M. and Karr, D.
+(1995). A framework for protocol composition in Horus. In Proceedings
+of the PODC 1995, pp. 80–9.
+van Renesse et al. 1996 van Renesse, R., Birman, K. and Maffeis, S. (1996). Horus: A flexible
+group communication system. Comms. ACM, Vol. 39, No. 4, pp. 54–63.
+van Renesse et al. 1998 van Renesse, R., Birman, K., Hayden, M., Vaysburd, A. and Karr, D.
+(1998). Building adaptive systems using Ensemble. Software–Practice
+and Experience, Vol. 28, No. 9, pp. 963–979.
+van Steen et al. 1998 van Steen, M., Hauck, F., Homburg, P. and Tanenbaum, A. (1998).
+Locating objects in wide-area systems. IEEE Communication, Vol. 36,
+No. 1, pp. 104–109.
+Vinoski 1998 Vinoski, S. (1998). New features for CORBA 3.0. Comms. ACM, Vol.
+41, No. 10, pp. 44–52.
+Vinoski 2002 Vinoski, S. (2002). Putting the ‘Web’ into Web Services. IEEE Internet
+Computing. Vol. 6, No. 4, pp. 90–92.
+Vogels 2003 Vogels, W. (2003). Web Services are not Distributed objects. IEEE
+Internet Computing, Vol. 7, No, 6, pp. 59–66.
+Vogt et al. 1993 Vogt, C., Herrtwich, R.G. and Nagarajan, R. (1993). HeiRAT – The
+Heidelberg Resource Administration Technique: Design Philosophy
+and Goals. Kommunikation in verteilten Systemen, Munich, Informatik
+aktuell, Springer.
+Volpano and Smith 1999 Volpano, D. and Smith, G. (1999). Language issues in mobile program
+security. In Mobile Agents and Security. Vol. 1419 in Lecture Notes in
+Computer Science, Springer-Verlag, pp. 25–43. .
+von Eicken et al. 1995 von Eicken, T., Basu, A., Buch, V. and Vogels, V. (1995). U-Net: A
+user-level network interface for parallel and distributed programming.
+In Proceedings of the 15th ACM Symposium on Operating Systems
+Principles, pp. 40–53.
+Wahlet al. 1997 Wahl, M., Howes, T. and Kille, S. (1997). The Lightweight Directory
+Access Protocol (v3). Internet RFC 2251.
+
+
+===== page 1035 =====
+REFERENCES 1017
+Waldo 1999 Waldo, J. (1999). The Jini architecture for network-centric computing.
+Comms. ACM, Vol. 42, No. 7, pp. 76–82.
+Waldoet al. 1994 Waldo, J., Wyant, G., Wollrath, A. and Kendall, S. (1994). A note on
+distributed computing. In Arnold et al. 1999, pp. 307–26.
+Waldspurger et al. 1992 Waldspurger, C., Hogg, T., Huberman, B., Kephart, J. and Stornetta, W.
+(1992). Spawn: A distributed computational economy. IEEE
+Transactions on Software Engineering, Vol. 18, No. 2, pp. 103–17.
+Wanget al. 2001 Wang, N., Schmidt, D. C. and O'Ryan, C. (2001). Overview of the
+CORBA component model. InHeineman, G. T. and Councill, W.T.
+(eds), Component-Based Software Engineering: Putting the Pieces
+Together, Addison-Wesley Longman Publishing Co., Boston, MA:
+Addison-Wesley, pp. 557–571.
+Want 2004 Want, R. (2004). Enabling ubiquitous sensing with RFID. IEEE
+Computer, Vol. 37, No. 4, pp. 84–86.
+Want and Pering 2003 Want, R. and Pering, T. (2003). New horizons for mobile computing. In
+Proceedings of the First IEEE International Conference on Pervasive
+Computing and Communication (PerCom’03), Dallas-Fort Worth, TX,
+March, pp. 3–8.
+Wantet al. 1992 Want, R., Hopper, A., Falcao, V. and Gibbons, V. (1992). The Active
+Badge location system. ACM Transactions on Information Systems,
+Vol. 10, No.1, pp. 91–102.
+Wantet al. 2002 Want, R., Pering, T., Danneels, G., Kumar, M., Sundar, M. and Light, J.
+(2002). The personal server: Changing the way we think about
+ubiquitous computing. In Proceedings of the Fourth International
+Conference on Ubiquitous Computing (Ubicomp 2002), Goteborg,
+Sweden, Sep.–Oct., pp.194–209.
+Weatherspoon and Weatherspoon, H. and Kubiatowicz, J.D. (2002). Erasure coding vs.
+Kubiatowicz 2002 replication: A quantitative comparison. 1st International Workshop on
+Peer-to-Peer Systems (IPTPS ’02), Cambridge, MA, March, pp.
+328–38.
+web.mit.edu I Kerberos: The Network Authentication Protocol.
+web.mit.edu II The Three Myths of Firewalls.
+Wegner 1987 Wegner, P. (1987). Dimensions of object-based language design.
+SIGPLAN Notices, Vol. 22, No. 12, pp. 168–182.
+Weikum 1991 Weikum, G. (1991). Principles and realization strategies of multilevel
+transaction management. ACM Transactions on Database Systems, Vol.
+16, No. 1, pp. 132–40.
+Weiser 1991 Weiser, M. (1991). The computer for the 21st Century. Scientific
+American, Vol. 265, No. 3, pp. 94–104.
+
+
+===== page 1036 =====
+1018 REFERENCES
+Weiser 1993 Weiser, M. (1993). Some computer science issues in ubiquitous
+computing. Comms. ACM, Vol. 36, No. 7, pp. 74–84.
+Wellner 1991 Wellner, P.D. (1991). The DigitalDesk calculator – tangible
+manipulation on a desk-top display. In Proceedings of the 4th Annual
+ACM Symposium on User Interface Software and Technology, Hilton
+Head, SC, November, pp. 27–33.
+Wheeler and Needham Wheeler, D.J. and Needham, R.M. (1994). TEA, a Tiny Encryption
+1994 Algorithm. Technical Report 355, Two Cryptographic Notes, Computer
+Laboratory, University of Cambridge, December, pp. 1–3.
+Wheeler and Needham Wheeler, D.J. and Needham, R.M. (1997). Tea Extensions. October
+1997 1994, pp. 1–3.
+Whitakeret al. 2002 Whitaker, A., Shaw, M. and Gribble, D.G. (2002). Denali: Lightweight
+virtual machines for distributed and networked applications. Technical
+Report 02-02-01, University of Washington.
+Wiesmannet al. 2000 Wiesmann, M., Pedone, F., Schiper, A., Kemme, B. and Alonso, G.
+(2000). Understanding replication in databases and distributed systems.
+In Proceedings of the 20th International Conference on Distributed
+Computing Systems (ICDCS ’2000), Taipei, Republic of China, p. 464.
+Williams 1998 Williams, P. (1998). JetSend: An appliance communication protocol. In
+Proceedings of theIEEE International Workshop on Networked
+Appliances, (IEEE IWNA ’98), Kyoto, Japan, November, pp. 51–53.
+Winer 1999 Winer, D. (1999). The XML-RPC specification.
+Wobberet al. 1994 Wobber, E., Abadi, M., Burrows, M. and Lampson, B. (1994).
+Authentication in the Taos operating system. ACM Transactions on
+Computer Systems. Vol. 12, No. 1, pp. 3–32.
+Wright et al. 2002 Wright, M., Adler, M., Levine, B.N. and Shields, C. (2002). An analysis
+of the degradation of anonymous protocols. In Proceedings of the
+Network and Distributed Security Symposium (NDSS ’02), February.
+wsdl4j.sourceforge.org The Web Services Description Language for Java Toolkit(WSDL4J).
+Wulfet al. 1974 Wulf, W., Cohen, E., Corwin, W., Jones, A., Levin, R., Pierson, C. and
+Pollack, F. (1974). HYDRA: The kernel of a multiprocessor operating
+system. Comms. ACM, Vol. 17, No. 6, pp. 337–345.
+Wuu and Bernstein 1984 Wuu, G.T. and Bernstein, A.J. (1984). Efficient solutions to the
+replicated log and dictionary problems. In Proceedings of the Third
+Annual Symposium on Principles of Distributed Computing, pp.
+233–42.
+www.accessgrid.org The Access Grid Project.
+www.adventiq.com Adventiq Ltd. Home page featuring their KVM-over-IP technology.
+www.akamai.com Akamai. Home page.
+www.apple.com I Apple Computer. Bonjour Protocol Specifications.
+
+
+===== page 1037 =====
+REFERENCES 1019
+www.apple.com II Apple Computer. iChat video conferencing for the rest of us.
+www.beowulf.org The Beowulf Project. Resource centre.
+www.bittorrent.com The Official BitTorrent Website.
+www.bluetooth.com The Official Bluetooth SIG Website.
+www.butterfly.net The scalable, reliable and high-performance online game platform,
+GoGrid.
+www.bxa.doc.gov Bureau of Export Administration, US Department of Commerce.
+Commercial Encryption Export Controls.
+www.cdk5.net Coulouris, G., Dollimore, J. and Kindberg, T. (eds.). Distributed
+Systems, Concepts and Design: Supporting material.
+www.citrix.com Citrix Corporation. Citrix XenApp.
+www.conviva.org Conviva. Home page.
+www.coralcdn.org Coral Content Distribution Network. Home page.
+www.cren.net Corporation for Research and Educational Networking. CREN
+Certificate Authority.
+www.cryptopp.com Crypto++® Library 5.2.1.
+www.cs.cornell.edu The 3rd ACM SIGOPS International Workshop on Large Scale
+Distributed Sytems and Middlewqare (LADIS’09). Keynote by Jeff
+Dean on Large-Scale Distributed Systems at Google: Current Systems
+and Future Directions.
+www.cs.york.ac.uk/dame Distributed Aircraft Maintenance Environment (DAME).
+www.cuseeme.com CU-SeeMe Networks Inc. Home page.
+www.dancres.org Blitz open source project. Home page.
+www.doi.org International DOI Foundation. Pages on digital object identifiers.
+www.dropbox.com Dropbox file hosting service. Home page.
+www.dtnrg.org Delay Tolerant Networking Research Group. Home page.
+www.gigaspaces.com GigaSpaces. Home page.
+www.globalcrossing.net Global Crossing. IP Network Performance – monthly history.
+www.globexplorer.com Globexplorer, the world’s largest online library of aerial and satellite
+imagery.
+www.globus.org The Globus Project. Latest stable version of the Globus Toolkit.
+www.google.com I Google. Google Apps.
+www.google.com II Google. Google Maps.
+www.google.com III Google. Google Corporate Information.
+www.google.com IV Google. Google Corporate Information.Design Principles.
+www.gridmpi.org The GridMPI Project. Home page.
+www.handle.net Handle system. Home page.
+
+
+===== page 1038 =====
+1020 REFERENCES
+www.iana.org I Internet Assigned Numbers Authority. Home page.
+www.iana.org II Internet Assigned Numbers Authority. IPv4 Multicast Address Space
+Registry.
+www.ibm.com IBM. WebSphere Application Server home page.
+www.ietf.org Internet Engineering Task Force. Internet RFC Index page.
+www.iona.com Iona Technologies. Orbix.
+www.ipnsig.org InterPlaNetary Internet Project. Home page.
+www.ipoque.com Ipoque GmbH. Internet Study 2008/2009.
+www.isoc.org Robert Hobbes Zakon. Hobbe’s Internet Timeline.
+www.jbidwatcher.com JBidwatcher Project. Home page.
+www.jboss.org JBoss Open Source Community. Home page.
+www.jgroups.org JGroups Project. Home page.
+www.json.org JSON external data representation. Home page.
+www.kontiki.com Kontiki Delivery Management System. Home page.
+www.microsoft.com I Microsoft Corporation. Active Directory Services.
+www.microsoft.com II Microsoft Corporation. Windows 2000 Kerberos Authentication, White
+Paper.
+www.microsoft.com III Microsoft Corporation. NetMeeting home page.
+www.microsoft.com IV Microsoft Corporation. Azure home page.
+www.mozilla.org Netscape Corporation. SSL 3.0 Specification.
+www.mpi-forum.org Message Passing Interface (MPI) Forum. Home page.
+www.neesgrid.org NEES Grid, Building the National Virtual Collaboratory for
+Earthquake Engineering.
+www.netscape.com Netscape. Home page.
+www.nfc-forum.org Near Field Communication (NFC). Forum home page.
+www.oasis.org Web Services reliable messaging. WS-Reliablemessaging. Vn 1.1. Oasis
+standard.
+www.omg.org Object Management Group. Index to CORBA services.
+www.opengroup.org Open Group. Portal to the World of DCE.
+www.openmobilealliance.(cid:3) Open Mobile Alliance. Home page.
+org
+www.openssl.org OpenSSL Project. OpenSSL: The Open Source toolkit for SSL/TLS.
+www.openstreetmap.org OpenStreetMap.Home page.
+www.osgi.org The OSGi Alliance. Home page.
+www.ow2.org The OW2 Consortium. Home page.
+www.parc.com PARC Forum. Presentation to Marissa Mayer, VP Google.
+
+
+===== page 1039 =====
+REFERENCES 1021
+www.pgp.com PGP. Home page.
+www.progress.com Apama from Progress Software. Home page.
+www.prototypejs.org Prototype JavaScript Framework. Home page.
+www.realvnc.com RealVNC Ltd. Home page.
+www.redbooks.ibm.com IBM Redbooks. WebSphere MQ V6 Fundamentals.
+www.reed.com Read, D.P. (2000). The End of the End-to-End Argument.
+www.research.ibm.com Gryphon Project. Home page.
+www.rsasecurity.com I RSA Security Inc. Home page.
+www.rsasecurity.com II RSA Corporation (1997). DES Challenge.
+www.rsasecurity.com III RSA Corporation (2004). RSA Factoring Challenge.
+www.rtj.org Real-Time for Java TM Experts Group.
+www.secinf.net Network Security Library.
+www.sei.cmu.edu Software Engineering Instute, Carnegie Mellon. Home page of the Ultra
+Large Systems (ULS) Initiative.
+www.smart-its.org The Smart-Its Project. Home page.
+www.spec.org SPEC SFS97 Benchmark.
+www.springsource.org SpringSource Community. Spring Framework.
+www.upnp.org Universal Plug and Play. Home page.
+www.us.cdnetworks.com CDNetworks Inc. Home page.
+www.uscms.org USCMS,The Compact Muon Solenoid.
+www.verisign.com Verisign Inc. Home page.
+www.w3.org I World Wide Web Consortium. Home page.
+www.w3.org II World Wide Web Consortium. Pages on the HyperText Markup
+Language.
+www.w3.org III World Wide Web Consortium. Pages on Naming and Addressing.
+www.w3.org IV World Wide Web Consortium. Pages on the HyperText Transfer
+Protocol.
+www.w3.org V World Wide Web Consortium. Pages on the Resource Description
+Framework and other metadata schemes.
+www.w3.org VI World Wide Web Consortium. Pages on the Extensible Markup
+Language.
+www.w3.org VII World Wide Web Consortium. Pages on the Extensible Stylesheet
+Language.
+www.w3.org VIII XML Schemas. W3C Recommendation (2001).
+www.w3.org IX World Wide Web Consortium. Pages onSOAP.
+www.w3.org X World Wide Web Consortium. Pages on Canonical XML, Version 1.0.
+W3C Recommendation.
+
+
+===== page 1040 =====
+1022 REFERENCES
+www.w3.org XI World Wide Web Consortium. Pages on Web Services Description
+Language (WSDL).
+www.w3.org XII World Wide Web Consortium. Pages on XML Signature Syntax and
+Processing.
+www.w3.org XIII World Wide Web Consortium. Pages onXML key management
+specification (XKMS).
+www.w3.org XIV World Wide Web Consortium. Pages onXML Encryption Syntax and
+Processing.
+www.w3.org XV World Wide Web Consortium. Pages on Web Services Choreography
+Requirements. W3C Working Draft.
+www.w3.org XVI Burdett, D. and Kavantsas, N. WS Choreography Model Overview.
+W3C Working Draft.
+www.w3.org XVII World Wide Web Consortium. Pages onWeb Services Choreography
+Description Language Version 1.0.
+www.w3.org XVIII World Wide Web Consortium. Pages on Web Services Choreography
+Interface (WSCI).
+www.w3.org XIX World Wide Web Consortium. Pages on Device Independence.
+www.w3.org XX World Wide Web Consortium. Pages on the Semantic Web.
+www.w3.org XXI World Wide Web Consortium. Pages on the XML Binary
+Charaterization Working Group.
+www.w3.org XXII World Wide Web Consortium. Pages on the SOAP Message
+Transmission Optimization Protocol recommendations.
+www.w3.org XXIII World Wide Web Consortium. Pages on the WS-Addressing Working
+Group.
+www.w3.org XXIV World Wide Web Consortium. Pages on theGeolocation API
+Specification.
+www.wapforum.org WAP Forum. White Papers and Specifications.
+www.wlana.com The IEEE 802.11 Wireless LAN Standard.
+www.xbow.com Crossbow Technology Inc. Pages on wireless sensor networks.
+www.xen.org Xen open source community. Home page.
+www.zeroconf.org IETF Zeroconf Working Group. Home page.
+Wyckoffet al. 1998 Wyckoff, P., McLaughry, S., Lehman, T. and Ford, D. (1998). T Spaces.
+IBM Systems Journal, Vol. 37, No. 3.
+Xu and Liskov 1989 Xu, A. and Liskov, B. (1989). The design for a fault-tolerant, distributed
+implementation of Linda. In Proceedings of the 19th International
+Symposium on Fault-Tolerant Computing, Chicago, IL, June, pp.
+199–206.
+zakon.org Zakon, R.H. Hobbes’ Internet Timeline v7.0,
+
+
+===== page 1041 =====
+REFERENCES 1023
+Zhang and Kindberg 2002 Zhang, K. and Kindberg, T. (2002). An authorization infrastructure for
+nomadic computing. In Proceedings of the Seventh ACM Symposium on
+Access Control Models and Technologies, Monterey, CA, June, pp.
+107–113.
+Zhanget al. 1993 Zhang, L., Deering, S.E., Estrin, D., Shenker, S. and Zappala, D. (1993).
+RSVP – A new resource reservation protocol. IEEE Network Magazine,
+Vol. 9, No. 5, pp. 8–18.
+Zhanget al. 2005a Zhang, H., Goel, A., and Govindan, R. (2005). Improving lookup
+latency in distributed hash table systems using random sampling.
+IEEE/ACM Trans. Netw. 13, 5 (Oct. 2005), 1121–1134.
+Zhanget al. 2005b Zhang, X., Liu, J., Li, B. and Yum, T.-S. (2005).
+CoolStreaming/DONet: A data-driven overlay network for live media
+streaming. In Proceedings of IEEE INFOCOM'05, Miami, FL, USA,
+March, pp. 2102–2011.
+Zhaoet al. 2004 Zhao, B.Y., Huang, L., Stribling, J., Rhea, S.C., Joseph, A.D. and
+Kubiatowicz, J.D. (2004). Tapestry: A resilient global-scale overlay for
+service deployment, IEEE Journal on Selected Areas in
+Communications, Vol. 22, No. 1, pp. 41–53.
+Zimmermann 1995 Zimmermann, P.R. (1995). The Official PGP User’s Guide. MIT Press.
+
+
+===== page 1042 =====  [ocr]
+This page intentionally left blank
+
+
+===== page 1043 =====
+INDEX
+A in publish-subscribe245
+abort682 AES (Advance Encryption Standard)490,501
+access control479–481 agreement
+access control list480,528 in consensus and related problems660–662
+access rights72 of multicast delivery648
+access transparency23,527,546 problems of659
+ACID properties681,720 uniform650
+ack-implosion647 agreement, of multicast delivery236
+activation213 AJAX53–56
+distributed object339 alias571
+activator213 Amazon Elastic Compute Cloud (EC2)418
+active badge820,844,846,855 Amazon Elastic MapReduce419
+events838 Amazon Flexible Payments Service (FPS)419
+active bat854 Amazon Simple DB419
+active object213 Amazon Simple Queue Service (SQS)419
+active replication780–782 Amazon Simple Storage Service (S3)419
+actuator823 Amazon Web Services (AWS)418,965
+ad hoc network135,848 Amazon Elastic Compute Cloud (EC2)418
+mobile849 Amazon Elastic MapReduce419
+ad hoc routing824 Amazon Flexible Payments Service419
+adaptability25 Amazon Simple DB419
+adaptation Amazon Simple Queue Service (SQS)419
+energy-aware870 Amazon Simple Storage Service (S3)419
+of content866–869 Dynamo720,801
+to resource variations869–870 REST in418
+address resolution protocol (ARP)112 Amoeba
+address space285,287–288 multicast protocol654
+aliasing296 run server289
+inheritance290 Andrew File System (AFS)530,548–557
+region287 for Linux530
+shared region288,308 in DCE/DFS559
+admission control890,896–897 performance556
+advertisement wide-area support556
+in content-based routing252 anti-entropy protocol791,792
+1025
+
+
+===== page 1044 =====
+1026 INDEX
+Apollo Domain263 base station, wireless135,819
+applet31,50 Bayou425,792–794
+threads within298 dependency check793
+application layer93,95 merge procedure793
+application level multicast908 beacon874
+application server60,360,363 infrared834
+architectural models38,40–58 radio853
+architectural patterns51–58 bean
+brokerage57 Enterprise JavaBeans (EJB)
+layering51 366
+proxy57 Bellman-Ford routing protocols99
+reflection58 best-efforts resource scheduling888
+tiering52 big-endian order158
+ARP see address resolution protocol Bigtable927,948–954
+association821,825,827–835 architecture950–954
+direct834 interface948–950
+indirect842 load balancing954
+physical834 separation of control and data951
+problem827 tablets950
+secure spontaneous860–863 binder213
+spontaneous826 portmapper203
+associative262 rmiregistry220
+asymmetric cryptography484,491–493 birthday attack498
+asynchronous communication148,232 BitTorrent425,435,447,906–908
+in publish-subscribe244 chunk906
+asynchronous distributed system65,235,601,659, leecher907
+668, 944 optimistic unchoking908
+asynchronous invocation313 seeder906
+in CORBA347 torrent907
+persistent313 tracker906
+asynchronous operation311–314 unchoking907
+at-least-once invocation semantics199 blade server14
+ATM (Asynchronous Transfer Mode)88,90,92,95, block cipher485–486
+102,130 blocking operations148
+at-most-once invocation semantics199 Bluetooth network129,138–141
+atomic commit protocol728–740 boundary principle828
+failure model732 bridge104
+two-phase commit protocol732 broadcast233
+atomic operation676 broker overlay933
+atomic transaction see transaction brokerage57
+authentication74,474–476 brute-force attack484
+location-based863 Business to Business (B2B)414
+authentication server504 integration414
+authentication service506 byzantine failure68
+automatic identification855 byzantine generals662,665–668
+availability22,766,782–801
+C
+B cache49,766
+backbone113 coherence of cached files799
+bandwidth63 caching
+
+
+===== page 1045 =====
+INDEX 1027
+file, write-through542 Websphere MQ256–258
+files at client542 WiFi security515–517
+files at server541 World Wide Web26–33
+Google File System (GFS)938 X.500 directory service588–592
+of whole files548 Xen320–331
+validation procedure543,552 catch exception206
+callback causal ordering236,607
+in CORBA remote method invocation357 of multicast delivery651
+in Java remote method invocation223 of request handling770
+callback promise552 CDR see CORBA
+camera phone834,861,874 Common Data Representation
+CAN routing overlay425,435 cell phone see mobile phone
+capability480 certificate477–479
+cascading abort689 X.509 standard format499
+case studies certificate authority500
+Andrew File System (AFS)548–557 certificate chain478,500
+Bayou792–794 CGI see common gateway interface
+BitTorrent906–908 challenge, for authentication475
+Coda file system795–801 channel-based publish-subscribe246
+Cooltown871–878 checkpointing755
+CORBA340–358 Chord routing overlay425
+Domain Name System (DNS)576–583 Chorus317
+End System Multicast (ESM)908–912 chosen plaintext attack492
+Enterprise JavaBeans (EJB)364–372 Chubby927,940–947
+Ethernet network130 architecture943–944
+Fractal372–378 cache consistency943
+Global Name Service585–588 interface941–943
+Gnutella447–448 locks940
+Google infrastructure917–965 Paxos943,944–946
+Gossip architecture783–792 replication943
+IEEE 802.11 wireless LAN (WiFi)135 chunk, in BitTorrent906
+IEEE 802.15.1 Bluetooth wireless PAN138 cipher block chaining (CBC)485
+Internet protocols106 cipher suite512
+IP routing113 ciphertext484
+Ivy file system455–458 circuit switching network see network, circuit
+Java Messaging Service (JMS)258–262 switching
+Java remote method invocation217–225 classless interdomain routing (CIDR)115,425
+JavaSpaces271–274 clients15
+JGroups238–242 client-server5
+Kerberos505–510 client-server model46
+Message Passing Interface (MPI)178–180 clock
+Needham–Schroeder protocol504–505 accuracy599
+Network File System (NFS)536–547 agreement599
+Network Time Protocol603–606 computer64,597
+OceanStore451–455 correctness600
+Pastry routing overlay436–444 drift64,598
+Squirrel web cache449–451 faulty600
+Sun RPC201–204 global2
+Tapestry routing overlay444–445 logical608
+Tiger video file server901–906 matrix610
+Transport Layer Security (TLS)511–515 monotonicity600
+
+
+===== page 1046 =====
+1028 INDEX
+resolution598 component-based software engineering (CBSE)
+skew598 916
+synchronization see synchronization of clocks composition361
+vector609 container362–363
+cloud computing13–14,319,320,417–419,921–922, contract360
+964 definition360
+Amazon Web Services (AWS)418,965 deployment364
+Dynamo720,801 heavyweight approach365
+Eucalyptus965 lightweight approach364
+Google App Engine922,965 limitations of objects336,358–360
+Hadoop965 middleware336,358–364
+Microsoft’s Azure965 OpenCOM374
+OpenStreetMaps965 OSGi374
+Sector/Sphere965 provided interface360
+cluster, of computers13,49,923 required interface360
+Coda file system458,795–801 server-side approach365
+available volume storage group (AVSG)796 software architecture360
+Coda version vector (CVV)796 component-based software engineering (CBSE)916
+volume storage group (VSG)796 Composite Capabilities / Preferences profile (CC/PP)
+codec887 868
+collision detection133 concept-based publish-subscribe248
+commit682 concurrency2,22,23
+common gateway interface31 of file updates527
+communicating entities42–43 concurrency control683–726
+component42 comparison of methods718
+node42 conflicting operations686
+object42 Dynamo720
+process42 Google Apps719
+web services43 in CORBA concurrency control service696
+communication in distributed transaction740–743
+asynchronous148 in Dropbox719
+communicating entities42–43 in Dynamo720
+communication paradigms43–45 in Wikipedia719
+group169–174 inconsistent retrieval684
+operating system support for303–311 with locks see locks
+producer-consumer146 lost update683
+reliable71,148 operation conflict rules686,694
+roles45–48 optimistic see optimistic concurrency control
+synchronous148 by timestamp ordering see timestamp ordering
+communication channels concurrency transparency23
+performance63 conflicting operations686
+threats to74 confusion (in cryptography)487
+communication paradigms43–45 congestion control see network
+indirect communication44 congestion control
+interprocess communication43 connection
+remote invocation43 persistent309
+commuting operations782 consensus659–670,940,944
+complex event processing7 impossibility result for an asynchronous system
+in publish-subscribe248 668
+component42,60,336,358–364 in a synchronous system663
+application server363 Paxos944
+
+
+===== page 1047 =====
+INDEX 1029
+related to other problems662 Internet Inter-ORB protocol (IIOP)352
+consistency interoperable object reference (IOR)351
+Google File System (GFS)939–940 compared with URL398
+of replicated data768 persistent352
+consistency models262 transient352
+container362–363 language mapping346
+content distribution network176,909 marshalling161
+content-based publish-subscribe247 object341
+content-based routing250 object model341
+advertisement252 object request broker (ORB)340,348
+filtering251 remote method invocation341–358
+flooding250 callback357
+rendezvous252 remote object reference see CORBA
+context844 interoperable object reference
+context switch296 services352
+Context Toolkit847 concurrency control service696
+context-aware computing10,820 Event Service253
+context-awareness844–857 persistent state service523
+in publish-subscribe248 crash failure68,632
+continuous media12,886 credentials482–483
+contract, in components360 critical section633
+cookie538 cryptography74,473–477,484–493
+CoolStreaming910 and politics502
+Cooltown871–878 performance of algorithms501
+beacon874 CSMA/CA137
+Coordinated Universal Time (UTC)598 CSMA/CD131
+copy-on-write290 cut613
+CORBA consistent613
+architecture348–351 frontier613
+object adapter348 cyber foraging869
+object request broker (ORB)348
+proxy350
+skeleton350 D
+asynchronous RMI347 data centre13,923
+case study340–358 data compression887
+client and server example353–358 data link layer95
+Common Data Representation160–161 data streaming see network, data streaming
+compared with web services398 datagram97,111
+dynamic invocation interface351 data-oriented programming386,837–844
+dynamic skeleton interface351 deactivation
+efficiency compared with web services399 distributed object339
+implementation repository350 deadlock700–704
+interface definition language197,341–344 definition700
+attribute345 detection611,702
+inheritance346 distributed see distributed deadlock
+interface342 prevention701,703
+method342 timeouts703
+module342 wait-for graph700
+pseudo object351 with read-write locks700
+type344 debugging distributed programs612,619–625
+interface repository350 delay-tolerant networking see disruption-tolerant
+
+
+===== page 1048 =====
+1030 INDEX
+networking850 deactivation339
+delegation (of rights)482 interface inheritance339
+delivery failures189 inter-object communication339
+Denali320 lifecycle management339
+denial of service middleware336,337–340
+sleep deprivation torture attack858 persistence339
+denial of service attack19,75 role of class338
+deployment, of components364 distributed object model207
+DES (Data Encryption Standard)489,501 compared with web services393
+detecting failure21 distributed operating system281
+device discovery828 distributed shared memory45,262–265,523
+device management Apollo Domain263
+in Xen327–329 comparison with message passing264
+DHCP - Dynamic Host Configuration Protocol117, distributed transaction
+121,827 atomic commit protocol728–740
+Diffie–Hellman protocol862 concurrency control740–743
+diffusion (in cryptography)487 locking740
+digest function495 optimistic742
+digital signature476–477,493–500 timestamp ordering741
+in XML409 coordinator730–731
+directed diffusion850 flat728
+directory service533–535,584 nested728
+attribute584 one-phase commit protocol731
+discovery service as828 two-phase commit protocol732
+UDDI404–406 DNS see Domain Name System
+dirty read688 Domain Name System (DNS)124,576–583
+disconnected operation767,792,800–801,824 BSD implementation582
+discovery service584,828–833 domain name577
+Jini832–833 name server578–583
+serverless831 navigation580
+dispatcher211 query577
+generic in java RMI224 resource record581
+in CORBA349 zone578
+in web services398 domain transition296
+disruption tolerant network176 domain, in Xen322
+disruption-tolerant networking850 domain0322
+distance vector routing algorithm99 domainU322
+distributed deadlock743–751 downloading of code31
+edge chasing746–751 in Java remote method invocation219
+transaction priorities749 Dropbox
+phantom deadlock745 concurrency control719
+distributed event-based system6,45,242 DSL (digital subscriber line)88,103
+complex event processing7 dynamic invocation212
+event6 in CORBA351
+distributed garbage collection209,215–216 in web services387
+in Java209 dynamic invocation interface212,351,397
+distributed hash table176 dynamic skeleton212,351
+in content-based routing252 in CORBA351
+distributed multimedia system12,12 dynamic web pages30–31
+distributed object42,60,206,336,337 Dynamo
+activation339 concurrency control720
+
+
+===== page 1049 =====
+INDEX 1031
+quorum consensus801 epidemic protocol447
+replication801 eScience4
+eSquirt875–877
+Ethernet for real-time applications135
+E Ethernet hub103,105
+eager update propagation804 Ethernet network104,129,130–135
+eavesdropping attack467 Ethernet switch103,135
+eCommerce4 Eucalyptus965
+election641–646 event6
+bully algorithm644 active badge838
+for processes in a ring642 composite838
+electronic commerce concurrency608
+security needs469 heap839
+elliptic curve encryption493 in volatile system837–838
+emulation in Xen323
+of operating system316 notification243
+encapsulation93,107 ordering66
+encryption74,473–477 system, compared to tuple space840
+in XML security410 exactly once198
+End System Multicast (ESM)908–912 exception205
+performance-aware adaptation910,912 catch206
+self-organization910 in CORBA remote invocation200
+tree construction910–912 throw206
+dealing with nodes leaving912 execution environment286
+joining a tree911 Exokernel318
+membership management911 expanded ring search447
+parent selection911 external data representation158–163
+end-to-end argument60,174
+end-to-end principle908
+enemy73 F
+enemy, security threats from an75 factory method213,355
+energy consumption823,825 factory object213
+and adaptation870 fail-stop68
+and denial of service858 failure
+of communication849 arbitrary68
+of compression869 byzantine68
+of discovery protocols831 masking70
+energy-aware adaptation870 timing70
+Ensemble238 failure atomicity680,751
+Enterprise Application Integration (EAI)254 failure detector632–633
+Enterprise JavaBeans (EJB) to solve consensus669
+bean366 failure handling21,22
+bean-managed365 failure model67–71
+business interface366 atomic commit protocol732
+case study364–372 IP multicast171
+configuration by exception367 request-reply protocol189
+container-managed365 TCP155
+lifecycle management367 transaction679
+message-driven bean366 UDP151
+roles365 failure models38
+session bean366 failure transparency24
+
+
+===== page 1050 =====
+1032 INDEX
+fairness634 G
+familiar stranger854 Galileo, satellite navigation system852
+fault-tolerant average603 garbage collection611
+fault-tolerant service767,775–782 in distributed object system209
+fidelity869 local206
+FIFO ordering236 gateway89
+of multicast delivery651 generative communication, in tuple spaces45,265
+of request handling770 geographical information system855
+file global clock2
+mapped288 Global Name Service585–588
+replicated795 directory identifier585
+file group identifier535 working root586
+file operations Global Positioning System (GPS)599,852
+in directory service model534 global state610–625
+in flat file service model532 consistent614
+in NFS server4,538 predicate614
+in UNIX526 snapshot615–619
+file-sharing application425 stable614
+filter, in publish-subscribe245 Globus Toolkit417
+filtering, in content-based routing251 GLONASS852
+financial trading6–8 glyph834
+Firefly RPC308 GNS see Global Name Service585
+firewall8,125–128,392,483 Gnutella425,447–448
+flat file service530–533 Google5
+flooding, in content-based routing250 applications921
+flow control123 Caffeine918
+flow specification894 cloud computing921–922
+Fractal crawling918
+Architectural Description Language (ADL)375 data centre923
+binding373 deep searching918
+case study372–378 Google App Engine921
+client interface373 Google Apps921
+composite binding373 inverted index918
+controller375 PageRank919
+hierarchical composition375 physical model922–924
+interception377 platform as a service922
+lifecycle management376 search engine918–921
+membrane375 software as a service921
+primitive binding373 Google App Engine921,922,965
+programming with interfaces372 Google Apps921
+reflection376 concurrency control719
+server interface373 Google Earth4,948,950,961
+frame relay see network, frame relay Google File System (GFS)927,935–940
+Frangipani distributed file system562 architecture937–939
+Freenet425,429 caching938
+front end770 chunks937
+FTP95,96,106,127 consistency939–940
+full virtualization319 interface936–937
+fundamental models38,61–76 replication937
+requirements935–936
+separation of control and data938
+
+
+===== page 1051 =====
+INDEX 1033
+Google infrastructure927 for collaborative applications233
+architecture924–928 for managing replicated data771
+Bigtable927,948–954 for reliable dissemination of information233
+Chubby927,940–947 for system monitoring and management233
+Google File System (GFS)927,935–940 implementation236–238
+MapReduce927,956–960 JGroups238–242
+openness926 ordering646
+performance926,928 programming model233–235
+protocol buffers927,929–932 reliability646
+publish-subscribe927,932–933 view-synchronous773–775
+reliability925 Gryphon253
+Sawzall928,962–963 GSM mobile phone network88
+scalability924
+Google Maps4,948,961
+gossip447 H
+in End System Multicast (ESM)911 Hadoop965
+in publish-subscribe253 handheld computing818
+informed gossip253 handle system570
+gossip architecture783–792 handshake protocol, in TSL512
+gossip message785 happened-before236,607
+processing789–791 heartbeat message442
+propagating791–792 Hermes253
+query processing788 heterogeneity16,17,41,528,530
+update processing788–789 in publish-subscribe244
+GPS see Global Positioning System name service573
+grant table, in Xen328 historical notes
+Grid414–417 distributed file systems522
+computationally-intensive applications417 emergence of modern cryptography465
+data-intensive applications416 history597
+eScience4 global613
+Globus Toolkit417 of server operations in request-reply190
+middleware417 hold-back queue649
+open grid services architecture (OGSA)417 Horus238
+requirements for416 hostname568
+the World-Wide Telescope415 HTML27
+Grid computing14 HTTP30,95,96,106,107,125,192–195
+Grid middleware417 in SOAP390
+group233 over persistent connection313
+closed235 performance of309
+membership233 hub105
+membership management237,771 hybrid cryptographic protocol476,493
+non-overlapping group235 hypercall323
+object group234 hyperlink26
+open235 physical871,873–875
+overlapping658 hypervisor319,321
+overlapping group235
+process group234
+view237,771,772–775 I
+group communication44,169–174,232–238, I/O rings, in Xen328
+646–659,771–775 IANA (Internet Assigned Numbers Authority)96,577
+for a fault tolerance233 IDEA (International Data Encryption Algorithm)490,
+
+
+===== page 1052 =====
+1034 INDEX
+501 Internet address see IP address
+idempotent operation190,199,532 Internet protocol see IP
+identifier566,568 Internet telephony885
+IEEE 802 standards128 internetwork88,94,103–105
+IEEE 802.11 (WiFi) network129,135–138 interoperable Inter-ORB protocol (IIOP)352
+security515–517 interoperation
+IEEE 802.15.1 (Bluetooth) network129,138–141 spontaneous825–826
+IEEE 802.15.4 (ZigBee) network130 interprocess communication42,43
+IEEE 802.16 (WiMAX) network130 characteristics147
+IEEE 802.3 (Ethernet) network104,129,130–135 intranet8,14
+IEEE 802.4 (Token Bus) network129 invocation mechanism282
+IEEE 802.5 (Token Ring) network129 asynchronous313
+implementation repository, in CORBA350 latency306
+inconsistent retrieval684,695 operating system support for303–311
+independent failure2 performance of305–311
+indirect communication44,230 scheduling and communication as part of282
+a comparison of approaches275–276 throughput307
+distributed shared memory45,262–265 within a computer309–311
+group communication44,232–238 invocation semantics
+message queues45,254–258 at-least-once199
+publish-subscribe45,242–253 at-most-once199
+tuple space45,265–271 exactly once198
+indirection230 maybe199
+information leakage as a security threat468 invokes an operation15
+infrastructure as a service319 IOR see CORBA
+initialization vector (for a cipher)486 interoperable object reference
+i-node number537 IP95,111–122
+input parameters196 API147–158
+integrity IP address, Java API149
+in consensus and related problems660–662 IP addressing108–111
+of message queues255 IP multicast106,170–173,236,649
+of multicast delivery236,647 address allocation171
+of reliable communication71 failure model171
+intentions list751,757 Java API172
+interaction model38,62–67 router170
+interactive consistency662 IP spoofing112
+interception IPCsee interprocess communication
+Fractal377 IPv4108
+interface195–198,204,205 IPv690,105,118–120
+interface definition language (IDL)197 ISDN95
+service interface196 ISIS775
+interface definition language208 isochronous data streams886
+CORBA341–344 isolation
+CORBA IDL example197 in Xen321
+in web services400–404 Ivy file system455–458
+Sun RPC example201
+interface definition language (IDL)197
+interface repository, in CORBA350 J
+International Atomic Time599 Java
+Internet8,96,106–128 object serialization162–164
+routing protocols113–116 reflection163
+
+
+===== page 1053 =====
+INDEX 1035
+thread see thread, Java Kazaa425
+Java API Kerberos505–510
+DatagramPacket151 Kerberos authentication
+DatagramSocket152 for NFS544
+InetAddress149 kernel285
+MulticastSocket172 monolithic315
+ServerSocket155 keystream generator486
+Socket156
+Java Messaging Service (JMS)
+connection259 L
+connection factory259 L2imbo840
+JMS client258 L4 microkernel318
+JMS destination259 Lamport timestamp608
+JMS message258 LAN see network, local area
+JMS provider258 latency63
+message consumer260 layering51
+message producer260 layers175
+transaction259 layers in protocols93
+Java remote method invocation217–225 lazy update propagation803
+callback223 LDAP see lightweight directory access protocol
+client program222 leaky bucket algorithm893
+design and implementation224–225 leases223
+downloading of classes219 for callbacks223
+parameter and result passing218 in discovery services831
+remote interface217 in JavaSpaces272
+RMIregistry220 in Jini216
+servant221 leecher, in BitTorrent907
+servant classes221 lifecycle371
+server program221 lifecycle management339
+use of reflection224 Enterprise JavaBeans (EJB)367
+Java security468 Fractal376
+JavaSpaces271–274 lightweight directory access protocol592
+leases272 lightweight RPC309–311
+objects in272 Linda265
+programming model272 Bauhaus Linda267
+transaction272 multiple tuple spaces267
+JetSend841 linear-bounded arrival processes (LBAP)892
+JGroups238–242 linearizability776
+building block238,241 linearization614
+channel238,239–240 links26
+process group238 link-state routing algorithms101
+protocol stack239,241–242 little-endian order158
+Jini273 liveness property615
+discovery service832–833 load balancing
+distributed event specification247 Bigtable954
+leases216 load sharing289–290
+jitter63 local area network see network, local area
+location
+absolute854
+K authentication based upon863
+Kademlia routing overlay425,435 physical855
+
+
+===== page 1054 =====
+1036 INDEX
+relative854 maximum transfer unit (MTU)95,111,131
+semantic855 maybe invocation semantics199
+sensing852–857 MD5 message digest algorithm499,501
+stack856 media synchronization885
+location service215 medium access control protocol (MAC)95,131,134,
+location transparency23,527,546 136
+location-aware computing10 MEDYM253
+location-aware system see location, sensing Meghdoot253
+lock manager697 message
+locking destination148
+in distributed transaction740 reply188
+locks692–706 request188
+causing deadlock see deadlock message authentication code (MAC)496
+Chubby940 message broker, in message queues256
+exclusive692 message digest476
+granularity693 message passing146,178
+hierarchic705,706 Message Passing Interface (MPI)178–180
+implementation696 Message Passing Interface (MPI)178–180
+in nested transaction699 message queues45,60,254–258
+increasing concurrency704 implementation256–258
+lock manager696 integrity255
+operation conflict rules694 message broker256
+promotion695 message transformation255
+read-write694,695 programming model254–256
+read-write-commit704 reliable delivery255
+shared694 security256
+strict two-phase693 transaction255
+timeouts703 validity255
+two-phase locking693 message tampering attack467
+two-version704 message-driven bean
+logging753–755 Enterprise JavaBeans (EJB)366
+logical clock608 Message-Oriented Middleware(MOM)254
+logical time67,607–610 metadata526
+log-structured file storage (LFS)560 metropolitan area network see network, metropolitan
+loose coupling385 area
+lost reply message190 microkernel315–318
+lost update683,695 comparison with monolithic kernel316
+Microsoft Virtual Server320
+Microsoft’s Azure965
+M middleware17,52,58–61
+Mach317 application server60,363
+MAN see network, metropolitan area categories59
+man-in-the-middle attack467 component60,336,358–364
+MapReduce927,956–960 distributed object60,336,337–340
+architecture958–960 limitations60
+interface956–958 message queues60
+marshalling158 operating system support for281
+mashup (in service-oriented architecture)414 peer-to-peer60
+masking failures21,70 publish-subscribe60
+masquerading attack467 web services60
+massively multiplayer online games5–6 MIME type
+
+
+===== page 1055 =====
+INDEX 1037
+use in HTTP867 play time90
+mix zone865 resource bandwidth883
+mixing865 stream882–885,886
+mobile agent50 stream adaptation899
+mobile code17,19,50,75 stream burstiness892
+security threats467 typical bandwidths886
+mobile computing10–11,818–879 web-based884
+origin of818 multiprocessor
+mobile phone818,820,821,823 distributed memory264
+and proximity854 shared memory283
+and secure association859 Non-Uniform Memory Access (NUMA)
+user agent profile868 263
+with camera see camera phone mutual exclusion633–641
+mobileIP120–122 between processes in a ring636
+mobility by central server635
+physicalversus logical822 Maekawa’s algorithm639
+transparency24,527 token636
+model using multicast637–639
+architectural38,40–58
+failure67–71
+fundamental38,61–76 N
+interaction62–67 Nagle’s algorithm124
+physical38,39–40 name566,568
+security71–76 component571
+mote824 prefix571
+MPEG video compression886,887,892 pure566
+MTU see maximum transfer unit unbound570
+multicast233,646–659 name resolution566,569,573–574,874
+atomic651 name service566–593
+basic647 caching576,579
+causal ordering236 heterogeneity573
+causally ordered delivery651,657 navigation574–575
+FIFO ordering236 replication579
+FIFO-ordered delivery651,653 use of Chubby944
+for event notifications170 name space570
+for fault tolerance169,779,780 naming context573
+for highly available data170 naming domain572
+for replicated data174 Napster425,428–430,435
+operation169 NATsee Network Address Translation
+ordered173–174,236,651–659 navigation
+reliable173–174,236,647–651 multicast575
+to overlapping groups658 server-controlled575
+total ordering236 Near Field Communication (NFC)834,855
+totally ordered delivery651,654 Needham–Schroeder protocol504–505
+multicast group170 negative acknowledgement649
+multilateration853 Nemesis317
+multimedia882–913 nested transaction690–692,759
+admission control896–897 locking699
+continuous media12,886 provisional commit736
+data compression887 recovery759–761
+end system approach909 two-phase commit protocol736–740
+
+
+===== page 1056 =====
+1038 INDEX
+timeout actions740 Network Address Translation (NAT)116
+network network computer57
+ad hoc135,848 network discovery service830
+ATM (Asynchronous Transfer Mode)88,90,92, Network File System (NFS)430,454,455,529,
+95,102,130 536–547
+bridge104 Automounter541
+circuit switching91 benchmarks545
+congestion control102 enhancements557
+CSMA/CA137 hard and soft mounting540
+CSMA/CD131 Kerberos authentication544
+data streaming90 mount service539
+data transfer rate83 performance545
+delay-tolerant850 Spritely NFS557
+disruption-tolerant850 virtual file system (VFS)536
+frame relay91 v-node537
+gateway89 WebNFS558
+IEEE 802 standards128 Network Information Service (NIS)780
+IEEE 802.11 (WiFi)129,135–138,515–517 network of brokers249
+IEEE 802.15.1 (Bluetooth)129,138–141 network operating system280
+IEEE 802.15.4 (ZigBee)130 network partition631,807–808
+IEEE 802.16 (WiMAX)130 primary772
+IEEE 802.3 (Ethernet)104,129,130–135 virtual811–814
+IEEE 802.4 (Token Bus)129 Network Time Protocol603–606
+IEEE 802.5 (Token Ring)129 network transparency24
+Internet96,106–128 NFS see Network File System
+interplanetary850 NISsee Network Information Service
+IP multicast106 NNTP106
+IP routing113 node42
+latency83 nomadic computing871
+layer95 non-blocking send148
+local area86 nonce504
+metropolitan area87 non-preemptive scheduling300
+packet assembly95 non-repudiation470,494
+packet switching91 NQNFS (Not Quite NFS)558
+packets89 n-tiered architecture53
+performance parameters83 NTP see Network Time Protocol
+port96
+protocol see protocol
+reliability requirements84 O
+requirements83–85 object42
+router104 activation213
+routing87,98–102,113–116 active213
+scalability requirements84 distributed206
+security requirements85 model207
+TCP/IP106 exception205
+total system bandwidth83 factory213
+traffic analysis865 instantiation205
+transport address96 interface205
+tunnelling105 location215
+Ultra Wide Band855 model205
+wide area87 CORBA341
+
+
+===== page 1057 =====
+INDEX 1039
+no instantiation in web services393 output parameters196
+passive213 overlay network175
+persistent214 for multimedia908
+protection72
+reference204,205
+remote207 P
+remote reference207 packet assembly95
+signature of method205 packet switching network see network, packet
+object adapter348 switching
+object group234 packets see network, packets
+object request broker (ORB)340 page fault291
+object serialization, in Java162–164 PageRank919
+OceanStore451–455 Parallels320
+OMG (Object Management Group)340 paravirtualization320,323
+omission failure67 passive object213
+communication68 passive replication see primary-backup replication
+process68 Pastry routing overlay425,435,436–444
+one-copy serializability802 patterns51–58,916
+one-way function484 Paxos843,943,944–946
+one-way hash function498 Multi-Paxos946
+open distributed system18 peer-to-peer47–48,60,424–459
+open grid services architecture (OGSA)417 and copyright ownership429
+Open Mobile Alliance (OMA)868 BitTorrent906
+open shortest path first (OSPF)113 CoolStreaming910
+open system314 middleware425,430–433
+open systems interconnection see OSI Reference publish-subscribe249
+Model routing overlay433–436
+OpenCOM374 structured peer-to-peer445
+openness17–18,41,528,926 tuple space271
+OpenStreetMap965 ultrapeers447
+operating system279–332 unstructured peer-to-peer445–447
+architecture314–318 performance transparency24,527
+communication and invocation support303–314 persistence
+policy and mechanism314 distributed object339
+processes and threads support286–303 persistent connection192,309
+operational transformation793 persistent object214
+optimistic concurrency control707–711 persistent object store
+backward validation709 comparison with file service523
+comparison of forward and backward validation persistent Java214,524
+711 personal digital assistant (PDA)818
+examples719 personal server825
+forward validation710 Petal distributed virtual disk system562
+in distributed transaction742 PGP see Pretty Good Privacy
+starvation711 phantom deadlock745
+update phase708 physical hyperlink871,873–875
+validation708 physical layer93,95
+working phase707 physical models38,39–40
+optimistic unchocking, in BitTorrent908 physically constrained channel834,861–863
+ordered multicast236 placement48–51
+OSGi374 plaintext484
+OSI Reference Model94 Plan 9573
+
+
+===== page 1058 =====
+1040 INDEX
+platform52,281 presentation layer95
+platform as a service319,922 session layer95
+play time, for multimedia data elements90 SMTP95,106
+POP106 stack94,304
+port96 suite94
+port mapper203 TCP95,122–124
+POTS (plain old telephone system)91 TCP/IP106
+PPP95,106,108 transport92
+precedence graph808 transport layer95
+preemptive scheduling299 UDP95,107,122
+premature write689 protocol buffers927,929–932
+presentation layer95 serialization929
+Pretty Good Privacy (PGP)502 provided interface
+primary copy547 component360
+primary-backup replication778–780 provisional commit736
+principal72 proxy57,211
+privacy826,856,857,864–866 dynamic397
+proxy865 in CORBA350
+process42,286–303 in web services387,396,397
+correct632 pseudonym865
+creation289–291 pseudo-physical memory, in Xen325
+creation cost295 public key473
+multi-threaded286,287 Public key infrastructure499
+threats to73 public-key certificate476,478
+user-level285 public-key cryptography491–493
+process group234,238 publisher, in publish-subscribe243
+producer-consumer communication146 publish-subscribe45,60,242–253
+promise313 advertisement245
+protection284–285 applications243
+and type-safe language285 centralized implementation248
+by kernel285 channel-based246
+protection domain479 characteristics244
+protocol92–98 complex event processing248
+application layer93,95 concept-based248
+ARP112 content-based247
+data link layer95 content-based routing250
+dynamic composition304 decentralized implementation248
+FTP95,96,106,127 delivery guarantees245
+HTTP95,96,106,107,125 example systems253
+internetwork layer94 filter245
+IP95,111–122 Google infrastructure927,932–933
+IPv4108 implementation248–253
+IPv690,105,118–120 objects of interest247
+layers93 peer-to-peerimplementation249
+mobileIP120–122 programming model245–248
+network layer95 publisher243
+NNTP106 role of gossip253
+operating system support for304 subject-based246
+physical layer93,95 subscriber243
+POP106 subscription243
+PPP95,106,108 topic-based246,933
+
+
+===== page 1059 =====
+INDEX 1041
+type-based247 reliable communication71
+in SOAP392
+integrity71
+Q validity71
+QoSsee quality of service reliable multicast174,236,647–651
+quality of service25,41 remote interface207,208
+admission control890 in Java remote method invocation217
+management882,887–897 remote invocation15,43
+negotiation889,890–896 Google infrastructure929
+parameters890 remote method invocation44,186,204–216
+query remote procedure call44,186,195–204
+distributed processing850 request-reply protocol43,186,187–195
+spatio-temporal857 remote method invocation44,186
+quorum consensus803,809–811 binder213
+communication module209
+CORBA341–358
+R dispatcher211
+Radio Frequency IDentification see RFID distributed garbage collection215–216
+random walk447 downloading of classes212
+randomization670 dynamic invocation212
+RC4 stream cipher algorithm490 dynamic invocation interface212
+reachability614 factory method213
+Real Time Transport Protocol (RTP)90 factory object213
+real-time network135 implementation209–215
+real-time scheduling898 Java case study217–225
+receive omission failures68 null305
+recovery688–690,751–761 parameter and result passing in Java218
+cascading abort689 performance of see invocation mechanism,
+dirty read688 performance of
+from abort688 proxy211
+intentions list751,757 remote reference module210
+logging753–755 servant211
+nested transactions759–761 skeleton211
+of two-phase commit protocol758–761 remote object207
+premature write689 activator213
+shadow versions756–757 instantiation208
+strict executions690 remote object reference168,207
+transaction status752,757 compared with URI393
+recovery file751–761 in CORBA351
+reorganization755,759 remote object table210
+recovery from failure22 remote procedure call44,186,195–204
+recovery manager751 duplicate filtering198
+redundancy22 implementation200–201
+redundant arrays of inexpensive disks (RAID)560 input parameters196
+reflection58 lightweight309–311
+Fractal376 null305
+in Java163 output parameters196
+in Java remote method invocation224 performance of see invocation mechanism,
+OpenCOM374 performance of
+regionsee address space protocol buffers931
+reliable channel631 queued313
+
+
+===== page 1060 =====
+1042 INDEX
+retransmission of replies198 RMI see remote method invocation
+retry request message198 RMIRegistry220
+semantics198 roles45–48
+server stub procedure200 router103,104
+stub procedure200 router information protocol (RIP)100
+transparency199 routing see network
+remote reference module210 routing
+rendezvous, in content-based routing252 RPC see remote procedure call
+replaying attack467 RR190
+replica manager769 RRA190
+replication49,447,765–814 RSA public-key encryption algorithm485,491–493
+active780–782 RSVPsee Resource Reservation Protocol
+available copies803,805–807 run614
+with validation808
+Chubby943
+Google File System (GFS)937 S
+in tuple spaces268–270 safety property615
+of files528 sandbox model of protection468
+primary-backup778–780 satellite navigation852
+quorum consensus803,809–811 see Global Positioning System (GPS)
+transactional802–814 Sawzall928,962–963
+transparency24,767 scalability19–21,527,924
+virtual partition803,811–814 scaling transparency24,527
+reply message188 scheduler activation302
+request message188 scheduling
+request-reply protocol43,186,187–195 in Xen323–325
+doOperation187,189 Scribe253
+exchange protocols190 secret key473
+failure model189 Sector/Sphere965
+getRequest187 secure channel74
+history of server operations190 secure digest function476
+lost reply messages190 secure hash function426,495
+message identifiers189 Secure Sockets Layer see Transport Layer Security
+sendReply187 secure spontaneous device association860–863
+timeout189 security18,19
+use of TCP191 ‘Alice and Bob’ names for protagonists466
+required interface design guidelines471
+component360 eavesdropping attack467
+resolver874 in Java468
+resource2 in message queues256
+invocation upon282 information leakage models468
+sharing14–16,424 man-in-the-middle attack467
+resource management (for multimedia)897–899 masquerading attack467
+Resource Reservation Protocol (RSVP)90,896 message tampering attack467
+REST (representational state transfer)384,386,418 replaying attack467
+resurrecting duckling protocol863 threats from mobile code467
+RFC18 threats: leakage, tampering, vandalism466
+RFID (Radio Frequency IDentification)845,855,864, Transport Layer Security (TLS)511–515
+874 trusted computing base472
+RIP-1101,113 XML security406–410
+RIP-2113 security mechanism464
+
+
+===== page 1061 =====
+INDEX 1043
+security model38,71–76 CORBA IDL interface343
+security policy464 dynamic invocation212
+seeder, in BitTorrent906 implementation in CORBA353
+Semantic Web844 implemented in Java RMI217–224
+send omission failures68,148 implemented in web services394
+sender order148 Siena253
+sensitive instruction signature of method205
+behaviour sensitive322 Simple Public-key Infrastructure (SPKI)500
+control sensitive322 SIPsee Session Initiation Protocol
+privileged322 skeleton211
+virtualization322 dynamic212
+sensor823,844–857 dynamic in CORBA351
+error mode845 in CORBA350
+fusion846 in web services398
+location852–857 not needed with generic dispatcher224
+network, wireless848–852 Skype177
+sequencer654 smart dust see mote
+sequential consistency777 smart phones818,824
+serial equivalence681,685 smart space822
+serialization162 SMTP95,106
+protocol buffers929 SOAP384,387–393
+servant211,212,221,349,354,394 addressing and routing391
+servant classes221,349,354 and firewalls392
+server15 envelope389
+multi-threaded292 header390
+multi-threading architecture293 Java implementation397
+personal825 message transport390
+throughput292 messages388
+server port150 reliable communication392
+server stub procedure200 specification388
+serverless file system (xFS)561 use of HTTP390
+service15 with Java394–398
+fault-tolerant767,775–782 socket149
+highly available782–801 connect156
+service discovery11 soft state843
+see discovery service software architecture360
+service interface196,395 software as a service319,414,921
+service-oriented architecture (SOA)413–414 software interrupt295
+mashup414 Solaris
+servlet298 lightweight process301
+servlet container396 space uncoupling44,230
+session bean in tuple spaces267
+Enterprise JavaBeans (EJB)366 spatio-temporal query857
+Session Initiation Protocol885 Speakeasy842
+session key475 speaks for relation (in security)482
+session layer95 SPIN317
+SETI@home project427 SPKI see Simple Public-key Infrastructure
+SHA secure hash algorithm499,501 split device driver, in Xen327
+SHA-1 secure hash algorithm434,436,450,457 spontaneous association826
+shadow versions756–757 spontaneous interoperation11,825–826
+shared whiteboard spontaneous networking821
+
+
+===== page 1062 =====
+1044 INDEX
+discovery service584 and request-reply protocols191,308
+Spring naming service573 API154
+Spritely NFS557 failure model155
+Squirrel web cache449–451 Java API155–158
+SSL see Transport Layer Security TCP/IP see protocol, TCP/IP
+starvation634,711 TEA (Tiny Encryption Algorithm)488–489,501
+state machine268,769 TERA253
+state transfer774 termination
+stateless server533 of consensus and related problems660–662
+stream cipher486–487 termination detection611
+strict executions690 thin client56
+structured peer-to-peer445 thread42,148,286,292–303
+Structure-less CBR253 blocking receive148
+stub procedure200 C297
+in CORBA350 in client294
+subject-based publish-subscribe246 comparison with process294
+subscriber, in publish-subscribe243 creation cost295
+subscription, in publish-subscribe243 implementation300–303
+subsystem316 in server292
+Sun Network File System (NFS) see Network File Java297–300
+System kernel-level300
+Sun RPC201–204,536 on multiprocessor294
+external data representation203 multi-threading architecture293
+interface definition language201 POSIX297
+portmapper203 programming297–300
+rpcgen201 scheduling299
+supervisor284 switching296
+supervisor mode285 synchronization298
+Switched Ethernet135 worker293
+symmetric cryptography484 three-tiered architecture53,362
+symmetric processing architecture283 throw exception206
+synchronization of clocks599–606 TIB Rendezvouz253
+Berkeley algorithm603 Ticket Granting Service (TGS)506
+Cristian’s algorithm601–603 ticket, of authentication474
+external599 tiering52
+in a synchronous system601 n-tiered architecture53
+internal599 three-tiered architecture53,362
+Network Time Protocol603–606 two-tiered architecture53
+synchronization, of server operations678 Tiger video file server901–906
+synchronous communication148 time595–610
+synchronous distributed system64,235,601,625,630, logical607–610
+633,659,663 time uncoupling44,230
+system call trap285 in tuple spaces267
+system virtualization318–320 time-based data streams886
+systems of systems40 time-critical data25
+timeouts68
+timestamp
+T Lamport608
+tag see automatic identification vector609
+Tapestry routing overlay425,435,444–445 timestamp ordering711–718
+TCP95,122–124,153–158 in distributed transaction741
+
+
+===== page 1063 =====
+INDEX 1045
+multiversion715–718 transport protocol92
+operation conflicts712 trap-door function484
+read rule714 triple-DES encryption algorithm501
+write rule713 trust826,857,863
+timing failure70 trusted computing base472,826
+tit-for-tat in BitTorrent, BitTorrent trusted third party857,859,860
+tit-for-tat907 tunnelling105
+Token Bus network129 tuple space45,265–271
+Token Ring network129 compared to event system840
+tolerating failure22 distributed sharing267
+topic-based publish-subscribe246 free naming267
+torrent, in BitTorrent907 generative communication45,265
+TOTA (Tuples On The Air)840 implementation268,268–271
+total ordering236,597,609 in volatile system838–840
+of multicast delivery651 L2imbo840
+of request handling770 Linda265
+totally ordered multicast174 peer-to-peerimplementation271
+tracker, in BitTorrent906 programming model265–267
+tracking852 replication268–270
+and privacy856,864 space uncoupling267
+traffic analysis865 time uncoupling267
+traffic shaping (for multimedia data)893 TOTA840
+transaction679–692 two-phase commit protocol732–735
+abort682 nested transaction736–740
+ACID properties681,720 flat commit739
+closeTransaction682 hierarchic commit738
+failure model679 performance735
+in JavaSpaces272 recovery758–761
+in message queues255 timeout actions734
+in the Java Messagng Service (JMS)259 two-tiered architecture53
+in web services411 type-based publish-subscribe247
+openTransaction682
+recoverysee recovery
+serial equivalence685 U
+with replicated data802–814 ubiquitous computing10–11,818–879
+transaction status752,757 origin of819
+transcoding867 UDDI see universal directory and discovery service
+transparency23–25,204 UDP95,107,122,150–153
+access23,527,546 failure model151
+concurrency23 for request-reply communication308
+failure24 Java API151–153
+in remote procedure call199 use of151
+location23,527,546 UFID see unique file identifier
+mobility24,527 Ultra Large Scale distributed systems (ULS)40
+network24 Ultra Wide Band (UWB)855
+performance24,527 Ultra-Large Scale distributed systems (ULS)924
+replication24,767 ultrapeer, in peer-to-peer computing447
+scaling24,527 UMTS88
+transport address96 unchoking, in BitTorrent907
+transport layer95 unicast233
+Transport Layer Security (TLS)107,511–515 uniform property650
+
+
+===== page 1064 =====
+1046 INDEX
+Uniform Resource Identifier568 NetMeeting application884
+compared with remote object reference393 video-on-demand service884
+in web services382 view synchronous group communication238
+Uniform Resource Locator28–30,568 view, of group see group, view
+Uniform Resource Name569 view-synchronous group communication773–775
+unique file identifier (UFID)530,551 virtual circuit97
+universal directory and discovery service(UDDI) virtual file system (VFS) see Network File System
+404–406 (NFS), virtual file system
+Universal Plug and Play (UPnP)829 virtual machine17
+Universal Transfer Format163 virtual machine monitor319
+UNIX virtual memory management
+i-node537 in Xen325–326
+signal295 virtual partition811–814
+system call virtual private network (VPN)85,128
+exec289 virtual processor301
+fork290,289 virtualization
+unmarshalling158 condition for virtualization (Popek and Goldberg)
+unreliable multicast171 322
+unstructured peer-to-peer445–447 Denali320
+epidemic protocol447 full virtualization319
+expanded ring search447 hypervisor319
+Gnutella447–448 Microsoft Virtual Server320
+gossip447 Parallels320
+random walk447 paravirtualization320,323
+upcall302 sensitive instruction322
+update semantics528,554 system level318–320
+URI see Uniform Resource Indentifer virtual machine monitor319
+URL see Uniform Resource Locator VMWare320
+URN see Uniform Resource Name Xen320–331
+user mode285 virtually synchronous group communication775
+UTCsee Coordinated Universal Time VMWare320
+UTF see Universal Transfer Format Voice over IP177,885
+utility computing13–14 Skype application885
+Vonage application885
+VoIPsee Voice over IP
+V volatile system821–826
+V system voting639
+remote execution289 VPN see virtual private network
+support for groups775
+validity
+of messages queues255 W
+of multicast delivery236,648 WAN see network, wide area
+of reliable communication71 wearable computing820
+vector clock609 Web26–33
+vector timestamp609 caching449–451
+comparison610 Semantic844
+merging operation609 Web presence872
+Verisign Corporation500 Web search3,3–5
+videoconferencing884,887 web services32,43,60,384–399
+CU-SeeMe application884 choreography412
+iChat AV application884 communication patterns384
+
+
+===== page 1065 =====
+INDEX 1047
+compared with CORBA398,399 X
+compared with distributed object model393 X.500 directory service588–592
+coordination411–413 directory information tree589
+directory service404–406 LDAP592
+dispatcher398 X.509 certificate499
+dynamic invocation387 XDRsee Sun RPC
+dynamic invocation interface397 external data representation
+dynamic proxy397 Xen320–331,419
+infrastructure383 device management327–329
+Java client program396 domain322
+Java server program395 grant table328
+loose coupling385 hypercall323
+model393 hypervisor321
+no servants394 I/O rings328
+proxy387,396 isolation321
+REST (representational state transfer)384,386 pseudo-physical memory325
+service description400–404 scheduling323–325
+service interface in Java395 split device driver327
+servlet container396 virtual machine monitor320–330
+skeleton398 virtual memory management325–326
+SOAP384,387–393 XenoServer Open Platform330–331
+SOAP with Java394–398 xFS serverless file system561
+Uniform Resource Identifier382 XML (Extensible Markup Language)32,164–168
+web services description language(WSDL)400–404 canonical XML409
+binding403 elements and attributes165
+concrete part403 for interoperation844
+interface402 namespaces166
+main elements400 parsing166
+operations or messages401 schemas167
+service404 security406–410
+web-based multimedia884 digital signature409
+webcasting12 encryption410
+WebNFS558 requirements407
+Websphere MQ256 XSLT (eXtensible Style Language Transformations)
+hub-and-spoke topology258 867
+message channel257
+message channel agent257
+Message Queue Interface256 Z
+queue manager256 zero configuration networking827
+WEP WiFi security515–517 ZigBee network130
+wide area network see network, wide area
+WiFi network129,135–138,515–517
+Wikipedia
+concurrency control719
+WiMAX network130
+WLAN (wireless local area network)88
+WMAN (wireless metropolitan area network)88
+World Wide Web see Web
+WSDL see web services description language
+WWAN (wireless wide area network)88
+
+
+===== page 1066 =====  [ocr]
+This page intentionally left blank
+
+
+===== page 1067 =====
+Coulouris 5e PDF files for eBook production
+Points to note:
+1. These files were generated from FrameMaker (FM) 8 originals produced by the authors.
+2. Files have 2 colors in typography and layout. The second color is configurable in the original FM
+files. For these 5e PDFs we have chosen the same deep blue color used in the printed versions of
+the 4e.
+3. The files include some hot links:
+- all cross references to text or figures within the same chapter are clickable hot links;
+- cross-references to sections in other chapters are not;
+- Bibliographic references are not hot links;
+-web references in [] and references to the book's web site (www.cdk5.xxx) are not hot links, even
+though they have the appearance of web links. This should definitely be fixed before the files are
+distributed.
+4. In the filereferences.pdf, most of the web references are hot links.
+----------------------------
+George Coulouris
+23-4-11

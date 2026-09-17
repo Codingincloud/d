@@ -1,0 +1,3396 @@
+source: Books - all\ref_book1_distributed-and-cloud-computing_kaiHwang.pdf
+method: pdf
+sha256: 125df2b686d75df4fbc6e447406e1c330bd17f5512b797122baa6546e95c25f4
+pages:  671
+ocr:    6 page(s)
+rotation: 0
+dpi:    300
+----------------------------------------------------------------------
+===== page 601 =====
+Software agents and
+advanced sensor
+Miniaturization, power- fusion
+efficient electronics, and
+available spectrum
+Teleoperation and
+telepresence: Ability to
+monitor and control
+Physical-world
+Ability of devices located distant objects
+web
+indoors to receive
+geolocation signals Locating people and
+everyday objects
+Ubiquitous positioning
+Surveillance, security,
+healthcare, transport,
+food safety, document
+management
+Vertical-market applications
+Supply-chain helpers
+2000
+could be widely applied to personalize the interactions among humans, machines, and objects.
+Artificial intelligence, computer vision, robotics, and telepresence can make our lives more auto-
+mated in the future.
+The IoT development could become more mature and more sophisticated in the next 15 years.
+Figure 9.14 shows the major technology advances and key applications that may benefit from the
+hcaer
+ygolonhceT
+578 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+Cost reduction leading
+to diffusion into 2nd
+wave of applications
+Demand for expedited
+logistics
+RFID tags for
+facilitating routing,
+inventorying, and loss
+prevention
+2010 2020
+Time
+FIGURE 9.14
+TechnologyroadmapoftheInternetofthings.
+(Source:SRIConsultingBusinessIntelligence)
+Table 9.6 Enabling and Synergistic Technologiesfor theIoT
+EnablingTechnologies SynergisticTechnologies
+Machine-to-machineinterfaces Geotagging/geocaching
+Protocolsofelectroniccommunication Biometrics
+Microcontrollers Machinevision
+Wirelesscommunication Robotics
+RFID Augmentedreality
+Energyharvestingtechnologies Telepresenceandadjustableautonomy
+Sensorsandsensornetworks Liferecordersandpersonalblackboxes
+Actuators Tangibleuserinterfaces
+Positioningorlocationtechnology(GPS) Cleantechnologies
+Softwareengineering Mirrorworlds
+
+
+===== page 602 =====
+9.3 Enabling Technologies for the Internet of Things 579
+IoT. For example, supply chains are now better supported than before. Vertical market applications
+may represent the next wave of advances. Ubiquitous positioning is expected to become a reality as
+we move toward 2020. Beyond that, a physical IoT may be in place in a global scale. These
+advances will significantly upgrade human abilities, societal outcomes, national productivity, and
+quality of life.
+9.3.1.4 Architecture of the Internet of Things
+The IoT system is likely to have an event-driven architecture. In Figure 9.15, IoT development is
+shown with a three-layer architecture. The top layer is formed by driven applications. The appli-
+cation space of the IoT is huge, and will be discussed in Section 9.4.1. The bottom layers repre-
+sent various types of sensing devices: namely RFID tags, ZigBee or other types of sensors, and
+road-mapping GPS navigators. The sensing devices are locally or wide-area-connected in the
+form of RFID networks, sensor networks, and GPSes. Signals or information collected at these
+sensing devices are linked to the applications through the cloud computing platforms at the mid-
+dle layer.
+The signal processing clouds are built over the mobile networks, the Internet backbone, and
+various information networks at the middle layer. In the IoT, the meaning of a sensing event does
+not follow a deterministic or syntactic model. In fact, the SOA model is adoptable here. A large
+number of sensors and filters are used to collect the raw data. Various compute and storage clouds
+and grids are used to process the data and transform it into information and knowledge formats.
+The sensed information is used to put together a decision-making system for intelligence
+Application Merchandise Environment Intelligent Tele- Intelligent Smart
+layer tracking protection search medicine traffic home
+Cloud computing
+platform
+Network
+layer Mobile The Information
+telecom Internet network
+network
+Sensor GPS
+RFID network
+Sensing
+layer Road navigators
+RFID label Sensor nodes
+FIGURE9.15
+ThearchitectureofanIoTconsistingofsensingdevicesthatareconnectedtovariousapplicationsviamobile
+networks,theInternet,andprocessingclouds.
+
+
+===== page 603 =====
+580 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+applications. The middle layer is also considered as a Semantic web or grid. Some actors (services,
+components, avatars) are self-referenced.
+9.3.2 Radio-Frequency Identification (RFID)
+RFID is applied with electronic labels or RFID tags on any objects being monitored or tracked. The
+tagging may be applied to any objects, such as merchandise, tools, smartphones, computers, ani-
+mals, or people. The purpose is to identify and track the objects using radio waves or sensing sig-
+nals. Some tags can be read from tens or hundreds of meters away via a wireless reader. Most
+RFID tags contain at least two major parts. One is an integrated circuit for storing and processing
+information, modulating and demodulating a radio-frequency (RF) signal, and other special func-
+tions. The other part is an antenna for receiving and transmitting the radio signals.
+9.3.2.1 RFID Tags and Device Components
+There are generally three types of RFID tags: active RFID tags containing a battery and transmitting
+signals autonomously, passive RFID tags which have no battery and require an external source to
+provoke signal transmission, and battery-assisted passive RFID tags which require an external
+source to wake up the battery but have significantly higher forward link capability. Based on the
+radio frequency used, the passive RFID tags operate with from low frequency (LF) to high fre-
+quency (HF), ultra high frequency (UHF), and the microwave range. In terms of functionality, there
+are three major components of RFID hardware:
+(cid:129) RFID tag A tiny silicon chip attached to a small antenna.
+(cid:129) Reader antenna Used to radiate the energy and then capture the return signal sent back from
+the tag. It can be integrated with a handheld reader device or connected to the reader by cable.
+(cid:129) Reader The devicestation that talks with the tags. Areader may support one ormoreantennae.
+Resemblinganelectronicbarcode,areaderdevicecandetectsignalsevenwithoutalineofsight.
+Some RFID readers can identify multiple objects concurrently. And some RFID tag-reader archi-
+tectures support security features such as requiring a human operator to input a challenge code
+before decoding an ID. RFID devices have varying sizes, power requirements, operating frequen-
+cies, amounts of rewritable and nonvolatile storage, and software intelligence. They operate from a
+few centimeters to hundreds of meters. However, larger devices having an internal power source
+tend to operate at longer ranges. Conversely, very smaller devices have no internal power source.
+9.3.2.2 How RFID Works
+Innovations in RFID include active, semi-active, and passive RFID tags. These tags can store up to
+2 KB of data and are composed of a microchip, antenna, and battery for active and semi-passive
+tags. The tag’s components are enclosed within plastic, silicon, or sometimes glass. Data stored in
+the microchip waits to be read. The tag’s antenna receives electromagnetic energy from an RFID
+reader’s antenna. Using power from its internal battery or power harvested from the reader’s electro-
+magnetic field, the tag returns radio signals back to the reader. The reader picks up the tag’s radio
+signals and interprets the frequencies as meaningful data.
+There are two ways to couple schemes in RFID tags: inductively coupled or capacitively
+coupled. Figure 9.16 shows the RFID operations between the RFID tags (e-labels), reading/writing
+
+
+===== page 604 =====
+9.3 Enabling Technologies for the Internet of Things 581
+e-labels
+Computer
+EM
+wave
+Antenna
+RS232 USB
+WiFi or sensor
+network Read/write
+Base station devices
+FIGURE9.16
+RFIDtaggingandsignalsread/writethroughsensororWiFinetworks.
+devices, and backend computers. RFID tags are still not in widespread use by ordinary people,
+because they are expensive and bulky. They are more often used by large businesses, moving or
+shipping companies, and service companies. However, RFID tags can make our daily life or work
+much easier, more convenient, and accessible to visible or hidden objects surrounding us. These
+tags are not that expensive to produce in large quantities, and they can be made small enough to fit
+on almost any product or object.
+External RF antenna devices can illuminate the tag devices similar to radar illuminating a target.
+However, RFID is more effective at operating at shorter ranges. A variety of agencies are defining
+the standards and regulating the use of RFID. They include the International Organization for Stan-
+dardization (ISO), International Electrotechnical Commission (IEC), ASTM International, DASH7
+Alliance, and EPCglobal. RFID has many industrial applications including merchandise tracking
+and supply chain management. Its use can improve the efficiency of inventory control and accuracy
+of assembly line management. Active and semi-passive RFID tags use internal batteries to power
+their circuits. An active tag can also use its own battery to broadcast radio waves to a reader,
+whereas a semi-passive tag relies on the reader to supply its power for broadcasting.
+Active and semi-passivetagsare reservedfor reading over30to 100 meters, ifrepeater batteries
+are used to boost a tag’s range. For example, a customer finds a pair of jeans in her size on a store
+shelfwitha radiowandprovided bythe store.Shecanordertheclothingandpayviahercell phone
+withthehelpofanRFIDsetting.PassiveRFIDtagsrelyentirelyonthereaderastheirpowersource.
+Thesetagsarereadonlyupto20feetaway.Theyhavelowerproductioncosts,meaningtheycanbe
+applied to less expensive merchandise. These tags are manufactured to be disposable. Arailway car
+mayapplyactiveRFIDtags.Abottleofshampoomayuseonlyapassivetag.
+Another factor that influences the cost of RFID tags is data storage. There are three storage
+types: read-write, read-only, and write-once-read-many (WORM). A read-write tag’s data can be
+added to or overwritten. Read-only tags cannot be added to or overwritten. WORM tags can have
+additional data added once, but they cannot be overwritten. Most passive RFID tags cost 7–20
+cents each. Active and semi-passive tags are more expensive, and RFID manufacturers typically do
+not quote prices for these tags without first determining their range, storage type, and quantity.
+
+
+===== page 605 =====
+582 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+The RFID industry’s goal is to get the cost of passive RFID tags down to 5 cents each once more
+merchandisers adopt them.
+9.3.3 Sensor Networks and ZigBee Technology
+Today’s sensor networks are mostly wireless, and are known as wireless sensor networks (WSNs).
+A typical WSN consists of spatially distributed autonomous sensors to cooperatively monitor physi-
+cal or environmental conditions, such as temperature, sound, vibration, pressure, motion, or pollu-
+tants. The development of wireless sensor networks was motivated by military applications such as
+battlefield surveillance. WSN technology is now used in many industrial and civilian application
+areas, including process monitoring and control, machine health monitoring, environment and habi-
+tat monitoring, health care and home automation, and intelligent traffic control.
+9.3.3.1 Wireless Sensor Networks
+A WSN is a group of specialized transducers with a communications infrastructure intended to
+monitor and record conditions at diverse locations. Commonly monitored parameters are tempera-
+ture, humidity, pressure, wind direction and speed, illumination intensity, vibration intensity,
+sound intensity, power-line voltage, chemical concentrations, pollutant levels, and vital body
+functions. A sensor network consists of multiple detection stations called sensor nodes, each of
+which is small, lightweight, and portable. Every sensor node is equipped with a transducer,
+microcomputer, transceiver, and power source. The transducer generates electrical signals based
+on sensed data.
+The microcomputer processes and stores the sensor output. The transceiver, which can be hard-
+wired or wireless, receives commands from a central computer and transmits data to that computer.
+The power for each sensor node is derived from the electric utility or from a battery. A sensor node
+may vary in size from that of a shoebox down to a dust grain. The cost of sensor nodes also varies
+a lot, ranging from $100’s to a few pennies. Size and cost constraints on sensor nodes are often
+decided by energy, memory, computational speed, and bandwidth of the sensors used.
+9.3.3.2 Wireless Network Support for Ubiquitous Computing
+Table 9.7 compares four classes of wireless networks for ubiquitous computing. The ZigBee net-
+works are mainly used in low-cost and low-speed monitoring and control applications, such as
+those used in a wireless home area network (WHAN). The GSM/GPRS or CDMA/1 networks are
+cellular mobile networks that can cover a wide area for voice and data telecommunications. The
+WiFi networks specified in the IEEE 802.11b standard. WiFi is used for wirelessly accessing the
+Internet, reading e-mails, or conducting web page searches Bluetooth is mainly used for short-
+distance wireless connection of computer peripherals (e.g., keyboard, mouse, printers, etc.). In terms
+of data rate, WiFi is the fastest (54 Mbps for 802.11g network). The next is Bluetooth with
+720 Kbps and 115 Kbps for the 2.5G GPRS mobile network. ZigBee has the slowest rate of 20–
+250 Kbps. However, ZigBee has high reliability and low power/cost advantages.
+Network self-organization is expected in a sensor network. Given the large number of nodes
+and their potential placement in hostile locations, it is essential that the network be able to self-
+organize; manual configuration is not feasible. Moreover, nodes may fail (either from lack of
+
+
+===== page 606 =====
+9.3 Enabling Technologies for the Internet of Things 583
+Table 9.7 Wireless Networksfor Supporting UbiquitousComputing
+MarketName GSM/GPRS Bluetooth
+Standard ZigBee802.15.4 CDMA/1XRTT WiFi802.11g 802.15.1
+Applicationfocus Monitoringand Wideareavoice Web,e-mail, Cable
+control anddata video replacement
+SystemResources 4KB–32KB 18MB+ 1MB+ 250KB+
+BatteryLife(days) 100–1,000+ 1–7 0.5–5 1–7
+NetworkSize Unlimited(264) 1 32 7
+Bandwidth(Kbps) 20–250 64–128+ 54,000+ 720
+Range(meters) 1–100+ 1,000+ 1–100 1–10+
+SuccessMetrics Reliability,power, Reach,quality Speed,flexibility Cost,
+cost convenience
+energy or from physical destruction), and new nodes may join the network. Therefore, the network
+must be able to periodically reconfigure itself so that it can continue to function. Individual nodes
+may become disconnected from the rest of the network, but a high degree of connectivity must be
+maintained.
+Collaborative signal processing is desired in a sensor network. To improve detection/estimation
+performance, it is often quite useful to fuse data from multiple sensors. This data fusion requires
+the transmission of data and control messages. A user may want to query an individual node or a
+group of nodes for information collected in the region. Depending on the amount of data fusion per-
+formed, it may not be feasible to transmit a large amount of the data across the network. Instead,
+various local sink nodes will collect the data from a given area and create summary messages.
+A query may be directed to the sink node nearest to the desired location.
+9.3.3.3 Three Generations of Sensor Networks
+Table 9.8 classifies WSNs into three generations over the past 30 years. The sensors used in the
+first generation were mainly vehicle-placed or air-dropped single sensors. They were quite bulky,
+like a shoebox, and weighed in the kilograms. Networks assumed only star or point-to-point topolo-
+gies and were powered by large batteries that could last hours or days. In the second generation,
+the sensors became smaller, like a pack of playing cards, and weighed in the grams, and worked
+with AA batteries that lasted for days or weeks. They appear in client/server or P2P configurations.
+The current generation are as large as dust particles, weigh only a negligible amount, and are used
+in P2P networks for embedded and remote applications.
+Wireless ad hoc sensor networks apply a large number of (mostly stationary) sensors: Aside
+from the deployment of sensors on the ocean surface or the use of mobile, unmanned, robotic sen-
+sors in military operations, most nodes in a smart sensor network are stationary. Networks of
+10,000 or even 100,000 nodes are envisioned in the future. The scalability becomes a demand. Low
+energy use is expected in the modern sensors. Since in many applications the sensor nodes will be
+placed in a remote area, service of a node may not be possible. In this case, the lifetime of a node
+is determined by the battery life, thereby requiring reduced energy expenditures or use of solar
+energy to power the devices.
+
+
+===== page 607 =====
+584 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+Table 9.8 Three Generations of Wireless Sensor Networks
+FirstGeneration SecondGeneration ThirdGeneration
+WSNFeatures (1990s) (2000s) (2010s)
+Manufacturers Customconstructors CrossbowTechnology, Dust,Inc.,andothers
+(e.g.,forTRSS) Inc.,SensoriaCorp.,
+EmberCorp.
+PhysicalSize Largeshoeboxandup Packofcardsto Dustparticle
+shoebox
+Weight Kilograms Grams Negligible
+NodeArchitecture Separatesensing, Integratedsensing, Integratedsensing,
+processing,and processing,and processing,and
+communication communication communications
+Topology Point-to-point,star Client/server,P2P P2P
+PowerSupply Largebatteries;hours, AAbatteries;daysto Solar;monthstoyears
+Lifetime days,andlonger weeks
+Deployment Vehicle-placedorair-drop Hand-placed Embedded,sprinkled,
+singlesensors leftbehind
+9.3.3.4 ZigBee Network
+The term “ZigBee” is originated from the behavior of honeybees when they return to the beehive.
+Thisisahigh-levelcommunicationprotocolusingsmall,low-power,radio-basedsensorsasspecified
+bytheIEEE802.15.4standard.Forexample,ZigBeedevicesareappliedinWHANsinwirelesslight
+switchesandconsumerelectronicscontrolledbyshort-rangeradio.TheZigBeetechnologyissimpler
+touseandlessexpensivethanBluetoothorWiFi.TheRFappliedinZigBeeresultsinlowdatarates,
+long battery life, and secure networking. The low cost allows the technology to be widely deployed
+in wireless control and monitoring applications. The low power usage allows a longer life with
+smallerbatteries.Themeshnetworkingprovideshigheravailabilityandanextendedoperatingrange.
+TherearethreedifferenttypesofZigBeedevices,aslistedhereandshowninFigure9.28:
+(cid:129) ZigBee coordinator (ZC) This is the most capable ZigBee device serving as the coordinator or
+the root of a ZigBee network. There is exactly one coordinator in each network since it is the
+device that started the network. It is able to store information about the network, including
+acting as the trust center and repository of security keys.
+(cid:129) ZigBee Router (ZR) This can act as an intermediate router, passing on data from end device to
+end device.
+(cid:129) ZigBee End Device (ZED) This contains just enough functionality to talk to the parent node
+(either the coordinator or the router). The end device cannot relay data from other devices. This
+relationship allows the node to be asleep a significant amount of the time, thereby ensuring a
+long battery life. A ZED requires the least amount of memory, and therefore can be less
+expensive to manufacture than a ZR or ZC.
+ZigBee devices are required to conform to the IEEE 802.15.4 Wireless Personal Area Network
+(WPAN) standard. The standard specifies the lower protocol layers—the physical layer and
+the MAC at the data link layer. This standard operates in the unlicensed 2.4 GHz (worldwide),
+
+
+===== page 608 =====
+ZigBee coordinator
+ZigBee router
+ZigBee end device
+FIGURE9.17
+StructureofatypicalZigBeenetwork.
+(Source:http://mesh-matrix.com/en/technology/tech_zigbee.aspx)
+Processing 915 MHz (Americas), and 868 MHz (Europe) radio
+data acquisition bands. In the 2.4 GHz band there are 16 ZigBee
+communication
+channels, with each channel requiring 5 MHz of
+bandwidth. A typical ZigBee network is illustrated
+in Figure 9.17. The radios use direct-sequence
+spread spectrum coding, which is managed by the
+digital stream into the modulator.
+The ZigBee has a data rate of 250 Kb/second
+per channel in the 2.4 GHz band, 40 Kb/second per
+channel in the 915 MHz band, and 20 Kb/second in
+Sleep the 868 MHz band. Transmission range is between
+10 and 75 meters. The output power of the radio is
+Time generally around 1mW. The basic channel access
+mode is Carrier Sense, Multiple Access/Collision
+Avoidance (CSMA/CA). That is, the sensor nodes
+talk in the same polite way that people converse.
+They check to see that no one is talking before
+they start. Therefore, the hidden-terminal problem
+can be solved using a pair of RTS (request to send) and CTS (clear to send) handshaking signals
+to avoid collision.
+9.3.3.5 Power Management in Wireless Sensor Networks
+The sensors in most WSNs are in sleep mode a majority of the time. As illustrated in Figure 9.18,
+sleepingsensorsconsumeonlyafewµA.Theywakeupquicklytoprocessthesenseddataandreturn
+to sleepagain. Active modeis verybrief,to minimize powerconsumption.Thisperiodic application
+rewoP
+puekaW
+9.3 Enabling Technologies for the Internet of Things 585
+FIGURE9.18
+Powermanagementinatypicalsensor
+applicationpattern.
+
+
+===== page 609 =====
+586 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+pattern results in a long lifetime for the sensors (months or years) without changing batteries. Good
+powermanagementisthekeytoWSNsuccess.
+Example 9.7 Wireless Sensor Networks for Health Monitoring
+Wireless sensors offer many possibilities for measuring different parameters of the human body and most
+of them are imperceptible and comfortable to use. Wireless sensors and a large communication capacity
+make it possible to measure people without inhibiting their everyday life; such wireless measurements are
+being implemented in the Ubiquitous City. UWB and ZigBee solutions are studied widely in many coun-
+tries all over the world, and thus they have become more popular in hospital and rehabilitation environ-
+ments (seeFigure9.19).
+Eventhoughawideselectionofcommercialsensorsareavailable,manyfactors—forexample,motion
+artifactsandnoise—havetobeconsideredbeforeimplementingasensorintoanapplication.Alargenumber
+ofmeasurementsandtestingwithallusedsensorsneedstobeperformedtomakesureallresultsarereliable
+andreadytobeanalyzedbyahealthcareprofessional.Also,combiningandanalyzingalargeamountofdata
+from different sensors needs a new kind of approach. In addition, implementing a noninvasive glucose
+measurementunitintoawirelesshealthmonitoringsystemisbeingstudiedintensively.
+Hospital
+or
+medical center
+server PC
+IEEE802.15.4/
+ZigBee compliant
+communications
+Doctors
+mobile PDA
+Body
+sensor Wearable devices
+node (chest belt, wrist band, etc...) Cellular
+networks
+Patient’s
+mobile phone Doctor’s
+mobile phone
+FIGURE 9.19
+Anexampleofhowmeasureddatacanbetransferredtodoctorsormedicalprofessionalsusingawireless
+sensornetwork.
+(Source:www.infotech.oulu.fi/Annual/2007/pics/opme_19_sm.jpg)
+
+
+===== page 610 =====
+9.3 Enabling Technologies for the Internet of Things 587
+9.3.4 Global Positioning System (GPS)
+Location-based service (LBS) helps people and machines find things and determine their physical
+whereabouts. Sensors play a role in dead reckoning, but that approach does not satisfy practical
+needs for geolocation. This has triggered the creation of global positioning and navigation systems.
+The GPS was developed in 1973 by the U.S. Air Force. Similar developments also occurred in the
+European Union, Russia, and China. Generally, the GPS is augmented by other signals and cellular
+towers. Fixed or orbiting satellite transmitters broadcast timing signals and receiving device
+response signals to locate the position of moving objects.
+Radar, lidar, and sonar can all detect relative locations of things using electromagnetic, optical,
+and acoustic signals. With help from satellites, some objects can be also located by attaching active
+GPSdevicestodisclosetheirlocationsbyradio,light,and/orsound.Since1994,adegradedGPShas
+beenmadeavailableforcivilianapplicationsinprovidingreliablepositioning,navigation,andtiming
+services.ForanyonewithaGPSreceiver,thesystemwillprovideaccuratelocationandtimeinforma-
+tionforanunlimitednumberofusersinallweatherconditions,dayandnight,anywhereintheworld.
+9.3.4.1 How GPS works
+GPS consists of three parts: the space segment, control segment, and user segment. The U.S. Air
+Force develops, maintains, and operates the space and control segments. There are 24 satellites
+deployed around the Earth in fixed orbits. The satellites orbit at an altitude of approximately 20,200
+KM. GPS satellites broadcast signals from space, by which each GPS receiver calculates its 3D
+location (latitude, longitude, and altitude) plus the current time. The space segment is composed of
+24 satellites in medium Earth orbit and also includes the boosters required to launch them into
+orbit. GPS satellites circle Earth twice a day in very precise orbits and transmit signals to Earth.
+GPS devices on the ground receive these signals and use a triangulation method to calculate the
+user’s exact location. At different times, different satellites will become visible to the receiver.
+As shown in Figure 9.20, the control segment is composed of a master control station and a host
+of dedicated and shared ground antennas and monitor stations. The user segment is composed of
+hundreds of thousands of U.S. and allied military users of the secure GPS precise positioning ser-
+vices. Tens of millions of civil, commercial, and scientific users are only allowed to use a degraded
+functionality of the so-called standard positioning services that cannot be used in hostile attack pur-
+poses. Essentially, the GPS receiver compares the time a signal was transmitted by a satellite with
+the time it was received. The time difference tells the GPS receiver how far away the satellite is.
+With distance measured from several satellites, the receiver can determine the user’s position and
+display it on the unit’s electronic map.
+9.3.4.2 Passive versus Active GPSes
+The GPS tracking device makes it possible to track people, vehicles, and other assets, anywhere on
+Earth.TherearetwotypesofGPStrackingsystems:passiveandactive.Inpassivetracking,theGPS
+is just a receiver, not a transmitter. Passive GPS tracking devices lack a transmission capability to
+send theGPS data from the vehicle. Therefore, passive GPS is also known as data loggers used pri-
+marilyasrecordingdevices.ActiveGPStrackingunitsincorporateamethodtotransmituserinforma-
+tionfromavehicle.Althoughsatelliteuplinkofdataisavailable,cellulardatacommunicationisthe
+most common and cost-effective. Automatic incremental updating provides a continuous source of
+trackingthroughoutarecordingperiod.Thisprovidescurrentaswellashistoricalloggingpositions.
+
+
+===== page 611 =====
+588 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+EGNOS satellite
+GPS satellite
+Correction
+signal
+Master station
+Reference station
+FIGURE 9.20
+ThegroundGPSreceiver,whichcalculatesits3Dlocationfromfourormoresatelliteswithhelpfromafew
+groundreferencestationsandamasterstation.
+Passive GPS tracking devices store GPS location data in their internal memory which can then
+be downloaded to a computer for viewing at a later time, while active GPS tracking systems send
+the data at regular intervals to be viewed in real time. When real-time data is not required, passive
+GPS tracking devices tend to be favored more by individual consumers for their compact conveni-
+ence and affordability. Concerned parents can install a GPS tracking unit just about anywhere in
+their teens’ vehicles to monitor their driving habits and know where they’ve been going, and even
+law enforcement officials now rely on passive GPS tracking to trail criminal suspects and enhance
+civilian safety via electronic surveillance of parolees. Passive GPS tracking units also serve as a
+theft prevention and retrieval aid in consumer as well as commercial vehicles.
+9.3.4.3 Operating Principles of GPS
+Knowing the distance from the receiver to a fixed-position satellite implies that the receiver is on
+the surface of a sphere centered at the satellite. With four satellites, the receiver location is detected
+at the intersection of four sphere surfaces. The intersection of two satellite spheres is a circle in gen-
+eral. This circle could be reduced to a single point, if the two spheres merely touch on their sur-
+faces. Having found those two intersecting sphere surfaces, now we consider how the intersecting
+circle intersects with a third satellite signal sphere. A circle and a sphere surface intersect at zero,
+one, or two points. With the receiver on the surface of Earth, the receiver needs to choose the point
+which is closest to the receiver from at most two intersecting points.
+Obviously, this triangulation method may result in some errors in narrowing down to exactly
+one point with a minimum of inaccuracy. To locate the point accurately, the receiver has to use a
+fourth satellite to hone in almost precisely. The fourth satellite sphere will come very close to the
+
+
+===== page 612 =====
+9.3 Enabling Technologies for the Internet of Things 589
+final two intersecting points of three satellite spheres. The final receiver location is thus decided by
+noting the closest point calculated from the two final points to the sphere surface of the fourth satel-
+lite. In the case of no error, the precise position is located. Otherwise, some offset—say, 10 meters
+from the exact location—could be resulted from the error introduced. To further reduce the errors,
+more satellites could be involved, but this could be rather costly.
+Each satellite continually transmits messages that include the time the message was transmitted,
+preciseorbitalinformation(theephemeris),andthegeneralsystemhealthandroughorbitsofallGPS
+satellites(thealmanac).AGPSreceivercalculatesitspositionbypreciselytimingthesignalssentby
+GPSsatelliteshighaboveEarth.AGPSreceivermustbelockedontothesignalofatleastthreesatel-
+litestocalculatea2Dposition(latitudeandlongitude)andtrackmovement.Withfourormoresatel-
+litesinview,thereceivercandeterminetheuser’s3Dposition(latitude,longitude,andaltitude).
+Once the user’s position has been determined, the GPS unit can calculate other information,
+such as speed, bearing, track, trip distance, distance to destination, sunrise and sunset times, and
+more. The receiver utilizes the messages it receives to determine the transit time of each message
+and computes the distances to each satellite. These distances along with the satellites’ locations are
+used to compute the position of the receiver. This position is displayed perhaps with a moving map
+display or latitude, longitude, and elevation information. Many GPS units show derived information
+such as direction and speed calculated from positional changes.
+9.3.4.4 Triangulation Location Calculation
+This location calculation method is illustrated in Figure 9.20. The receiver uses messages received
+from four satellites to determine the satellite positions and time sent. The x, y, and z components of
+position and the time sent are designated as [x, y, z, t], where the index i = 1, 2, 3, or 4 to denote
+i i i i
+the satellite. Knowing when the message was received t , the receiver computes the message’s tran-
+ri
+sit time as t – t. Assuming the message traveled at the speed of light c, the distance traveled is
+ri i
+calculated by d = (t – t) × c.
+i ri i
+Having discussed how sphere surfaces intersect, we now formulate the equations for the case
+when errors are present. Let b denote the clock error or bias, the amount by which the receiver’s
+clock is off. The receiver has four unknowns, the three components of GPS receiver position and
+the clock bias [x, y, z, b]. The equation of the sphere surfaces is calculated by the following expres-
+sion for i = 1, 2, 3, and 4:
+ðx−xÞ2+ðy−yÞ2+ðz−zÞ2 =ð½tr +b−t(cid:2)cÞ2 (9.6)
+i i i i i
+Multidimensional root finding methods such as the Newton-Raphson method can be used. The
+approachistolinearizearoundan approximatesolution—say,[x(k),y(k),z(k),b(k)],atiterationk,then
+solve four linear equations derived from the quadratic equations above to obtain the corresponding
+values at time instance of k+1. The Newton-Raphson method converges faster than other position
+methods.Whenmorethanfoursatellitesareavailable,thecalculationcanchoosefromfourpossible
+results.Theerrorofpositioncalculationisverysensitivetotheclockerror.Therefore,inthesatellite-
+basednavigationsystem,clocksynchronizationiscriticallyimportanttominimizelocationerrors.
+Three satellites are enough to locate the receiver position, since space has three dimensions and
+a position near Earth’s surface is assumed. However, even a very small clock error multiplied by
+the light speed of satellite signals may result in a large positional error. Therefore, most receivers
+use four or more satellites to solve for the receiver’s location and time. The computed time is often
+
+
+===== page 613 =====
+590 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+hidden by most GPS applications, which use only the location information. A few specialized GPS
+applications do use the time for time transfer, traffic signal timing, and synchronization of cell
+phone base stations.
+Although four satellites are required for normal operation, if one dimensional variable is already
+known, a receiver can determine its position using only three satellites. For example, a ship or plane
+mayhaveknownelevation.SomeGPSreceiversmayuseadditionalcluesorassumptions(suchasreus-
+ingthelastknownaltitude,deadreckoning,inertialnavigation,orincludinginformationfromthevehi-
+clecomputer)togivealessaccurate(degraded)positionwhenfewerthanfoursatellitesareavailable.
+9.3.4.5 Worldwide Deployment Status
+In addition to the GPS deployed by the United States which is now open for global civilian applica-
+tions by many countries, Russia has deployed GLONASS (for Global Navigation Satellite System)
+for Russian military use exclusively. In the European Union, there is the Gallio positioning system
+(EGNSS). By 2011, China had launched 8 satellites for the 31-satellite Beidou navigation system.
+The full Beidou system will become operational by 2020.
+Civilian GPS applications include navigation, surveying, mapmaking, cellular phones, tectonics,
+disaster relief and emergency services, GPS tours, geofencing, recreation, aircraft tracking, and geo-
+tagging, among other. Military applications of GPS include navigation, target tracking, missile and
+projectile guidance, search and rescue, reconnaissance, and nuclear detonation detection, among
+others. The following example shows a civilian application.
+Example 9.8 Real-Time Vehicle Tracking Using Active GPS Devices
+Active GPS tracking systems find their applications primarily in industries and businesses. These systems
+are fast becoming the standard for companies that wish to monitor fleet vehicles as well as other heavy
+equipment. Real-time GPS tracking is practical for acquiring immediate and detailed information about
+large numbers of vehicles or objects that are being tracked. An example is a car rental business that pro-
+vides cars for many customers; real-time vehicle tracking systems could prove beneficial in supplying cur-
+rent and historical data on routes taken by all the drivers. The process is divided into the following four
+steps:
+1. GPSreceivers ineachcar assetreceive signals from anetwork ofsatellites.
+2. Thecollectedsatellite informationis senttothe communication center viamobile networks.
+3. Thecontrol centerenterscalculatedlocation informationoverglobal maps.
+4. The control center sends commands to each unit to trigger alarms, stop engines, change direction, or
+sendpersonalmessages, andsoon.
+9.4 INNOVATIVE APPLICATIONS OF THE INTERNET OF THINGS
+In this section, we will review the application domains of the IoT. In particular, case study exam-
+ples of the IoT are reported for applications in tracking, retailing, supply chain management, smart
+power grid, and smart buildings. Finally, European IoT projects are assessed along with American
+cyber-physical system (CPS) projects for general-purpose applications.
+
+
+===== page 614 =====
+9.4 Innovative Applications of the Internet of Things 591
+Table 9.9 Some ApplicationDomains of theInternet of Things
+Domain BriefDescriptions IndicativeExamples
+Growthin Activitiesinvolvingfinancialorcommercial Manufacturing,logistics,servicesector,
+industryand transactionsbetweencompaniesand banking,financialgovernmentalauthorities,
+economy organizations intermediaries,etc.
+Environment Activitiesregardingtheprotection, Agricultureandbreeding,recycling,
+andnatural monitoring,anddevelopmentofallnatural environmentalmanagementservices,
+resources resources energymanagement,etc.
+Societyand Activities/initiativesregardingthe Governmentalservicestowardcitizensand
+dailylife developmentandinclusionofsocieties, societystructures,e-inclusion(aging,
+cities,andpeople disabledpeople),etc.
+9.4.1 Applications of the Internet of Things
+Table 9.9 summarizes IoT applications in three major civilian application domains. Obviously, the
+IoT has a lot of military applications, which is beyond the scope of this book. In general, use of the
+IoT aims to promote industrial productivity and raise economical growth. The IoT plays important
+roles in environment protection, including pollution control, weather forecasting, and disaster avoid-
+ance and recovery. In terms of societal impacts, the IoT can make our lives more convenient and
+comfortable. Government services, law enforcement, and home and health improvements are the
+major beneficiaries.
+9.4.1.1 Specific Wireless Sensor Applications
+Highlighted below are several applications of sensor networks:
+(cid:129) Military sensor networks to detect and gain as much information as possible about enemy
+movements, explosions, and other phenomena of interest
+(cid:129) Sensor networks to detect and characterize chemical, biological, radiological, nuclear, and
+explosive attacks and materials
+(cid:129) Sensornetworkstodetectandmonitorenvironmentalchangesinplains,forests,oceans,andsoon
+(cid:129) Wireless traffic sensor networks to monitor vehicle traffic on highways or in congested parts of
+a city
+(cid:129) Wireless surveillance sensor networks for providing security in shopping malls, parking garages,
+and other facilities
+(cid:129) Wireless parking lot sensor networks to determine whether the lot is occupied or available
+9.4.2 Retailing and Supply-Chain Management
+IoT applications will promote business, improve our society, and enhance economical growth.
+These include specific IoT applications in railing and logistics services and supply chain manage-
+ment. Many industrial, government, and community services can benefit from these applications.
+These include activities or initiatives to promote the development of better and more efficient socie-
+ties, cities, and governments.
+
+
+===== page 615 =====
+592 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+9.4.2.1 Retailing and Logistics Services
+Emergence of RFID applications depends strongly on adoption by retailers, logistics organiza-
+tions, and package-delivery companies. In particular, retailers may tag individual objects in
+order to solve a number of problems at once: accurate inventorying, loss control, and ability to
+support unattended walk-through point of sale terminals (which promise to speed checkout
+while reducing both shoplifting and labor costs). Cold-chain auditing and assurance could
+require tagging food and medicine with temperature-sensitive materials and/or electronics; ensur-
+ing or monitoring whether perishable materials are intact and/or need attention may entail com-
+munications among things, refrigeration systems, automated data logging systems, and human
+technicians.
+For example, at the grocery store, you buy a carton of milk. The milk container would have an
+RFID tag that stores the milk’s expiration date and price. When you lift the milk from the shelf, the
+shelf would display the milk’s specific expiration date, or the information could be wirelessly sent
+to your personal digital assistant or cell phone. The idea is illustrated in Figure 9.25. As you exit
+the store, you pass through doors with an embedded tag reader. This reader would tabulate the cost
+of all the items in your shopping cart and send the grocery bill to your bank. Product manufacturers
+would know what you’ve bought and the store’s computers would know exactly how much of each
+product needs to be reordered.
+Once you get home, you would put your milk in the refrigerator, which is equipped with a tag
+reader. This smart refrigerator would be capable of tracking all of the groceries stored in it. It
+would be able to track the food you use and how often you restock your refrigerator, and could let
+you know when that milk and other food spoils. Products would also be tracked when they are
+thrown into a trash can or recycle bin. Based on the products you buy, your grocery store would
+get to know your unique preferences. Instead of receiving generic newsletters with weekly grocery
+specials, you might receive one created just for you.
+9.4.2.2 Supply Chain Management
+Supply chain management can be aided by an IoT system. The idea is to manage a whole network
+of related businesses or partners involved in product manufacturing, delivery, and services as
+required by end customers. At any given time, market forces could demand changes from suppliers,
+logistics providers, locations and customers, and any number of specialized participants in a supply
+chain. This variability has significant effects on the supply chain infrastructure, ranging from the
+foundation layers of establishing the electronic communication between the trading partners to the
+more complex configuration of the processes and the arrangement of workflows that are essential to
+a fast production process.
+A supply line combines the processes, methodologies, tools, and delivery options to guide colla-
+borative partners to work in a sequence to conduct business with high efficiency and delivery
+speed. The cooperative companies must work in lock-step quickly as the complexity and speed of
+the supply chain increase due to the effects of global competition, rapid price fluctuations, surging
+of oil prices, short product life cycles, expanded specialization, and talent scarcity. A supply chain
+is an efficient network of facilities that procures materials, transforms these materials to finished
+products, and finally distributes the finished products to customers. The following example could
+explain how the supply chain can be aided by the IoT, which is particularly tailored to promote
+business efficiency and fast growth.
+
+
+===== page 616 =====
+9.4 Innovative Applications of the Internet of Things 593
+Example 9.9 Supply Chain Management Aided by the Internet of Things
+Supply chain management is a process used by companies to ensure that their supply chain is efficient
+and cost-effective. Figure 9.21 illustrates the supply chain for the production and sale of consumer pro-
+ducts. The supply chain involves material or component suppliers, distribution centers, communication
+links, cloud data centers, a large number of retail stores, corporate headquarters (e.g., Wal-Mart), and
+bank payments. These business partners are linked by satellite, Internet, wired and wireless networks,
+truck, train, or shipping companies, and electronic banking, cloud providers, and so on. Sensors, RFID
+tags, and GPS devices could be placed everywhere along the supply chain. The idea is to promote online
+business, e-commerce, or mobiletransactions. Supply chainmanagement consists offive majorstages:
+(cid:129) Stage 1:Planningand Coordination A planorstrategy must bedevelopedto address howa goodor
+service cansatisfy the needsof customers.
+(cid:129) Stage 2:Materialand EquipmentSupplies Thisphaseinvolves building a strongrelationship withthe
+rawmaterial suppliers andplanningmethods forshipping, delivery,and payment.
+Sale scanned at
+checkout
+Store
+replenishment Store forecast
+updated
+Delivery
+to store Store demand
+generated
+Delivery loaded & Stock ordered
+dispatched from supplier
+Goods Supplier delivers
+picked to depot
+Goods received
+and unloaded
+FIGURE9.21
+Supplychainmanagementinthemultipartnerbusinessarena.
+(CourtesyIGDAcademy)
+[image text] Mitnn
+
+
+===== page 617 =====
+594 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+(cid:129) Stage 3:Manufacturing and Testing The productis tested, manufactured, andscheduled fordelivery.
+(cid:129) Stage 4:Delivery of Products Customer ordersare takenanddelivery of goodsisplanned.
+(cid:129) Stage 5:After-Sale Serviceand Returns Customers mayreturn defectiveproducts and thecompany
+addressescustomers’ demands.Supply chainsoftware is usedby manycompaniesfor efficient supply
+chainmanagement.
+9.4.3 Smart Power Grid and Smart Buildings
+Environmental protection is a global issue. Green energy is desired to save energy and to reduce the
+effects of global warming. A critical IoT application is promotion of a smart power grid.
+9.4.3.1 Smart Power Grid
+Various power companies across the United States have or are in the process of upgrading their
+power management and distribution systems. Various sensors at individual homes (smart thermo-
+stats) can collect information that is sent via a network to main stations (perhaps even local “hubs”)
+that can apply complex power management and send control signals back to the grid to save
+energy. The smart grid is made possible by applying sensing, measurement, and control devices to
+electricity production, transmission, distribution, and consumption.
+Example 9.10 A Smart Power Grid Supporting the Internet of Things
+A smart grid includes an intelligent monitoring system that keeps track of all electricity flowing in the sys-
+tem. Smart meters, a digital upgrade of current utility meters, track energy usage in real time so that both
+the customer and the utility company know how much is being used at any given time. Energy is paid for
+using “time of day” pricing, meaning electricity will cost more at peak times of use. Figure 9.22 illustrates
+IoT support of asmart power grid.
+For example, when power is least expensive the user can allow the smart grid to turn on selected
+home appliances such as washing machines or factory processes that can run at arbitrary hours. At peak
+times it could turn off selected appliances to reduce demand. More involved users would be able to use
+the smart meter to view energy usage remotely and make real-time decisions about energy consumption.
+A refrigerator or airconditioning systemcouldbeturned down remotely whileresidentsare away.
+9.4.3.2 Smart Buildings
+The IoT could enhance our lives with comfort, convenience, and security, and reduce energy costs
+and environmental impacts. The IoT has been suggested in construction of smart buildings in resi-
+dential, commercial, industrial, and government settings. This may include alarm systems, access
+controls, indoor climate controls, elevators, and so forth. We desire to diffuse IT into lighting, appli-
+ances, and furniture in buildings. A smart building can be a shopping mall or a home, a hospital or
+a high-rise office tower. Smart buildings need monitoring and regulation of heating, air condition-
+ing, lighting, and environmental changes. They can oversee building security, fire suppression, and
+elevator operations. Smart building technologies focus on bringing more detailed monitoring and
+sensing “awareness” to buildings.
+
+
+===== page 618 =====
+9.4 Innovative Applications of the Internet of Things 595
+A “smart grid” is a digital energy
+system that uses new technology to Home energy sources feed
+incorporate clean energy and provide into the same grid as major
+more efficient, reliable electricity. suppliers, and customers
+are reimbursed for energy
+contribution.
+Users view their energy usage in
+real time from any computer and
+make decisions about what is on
+Solar panels, wind or off while they are away.
+farms and other
+sources of energy
+feed into the grid.
+Users decide when outlets are
+in use; e.g., refrigerators could
+be turned to a lower setting at
+night or during the day.
+The utility The smart meter
+company is able tracks when
+to pinpoint customers use
+problems in the electricity, which
+grid so service is is more expen-
+more reliable. sive during peak
+usage hours.
+FIGURE9.22
+Smartpowergrid.
+(Source:http://impactnews.com/images/stories/CTA/2009/04/15-grid.jpg.Courtesyof:CommunityImpactNewspaper)
+9.4.4 Cyber-Physical System (CPS)
+Computers have become pervasive and ubiquitous. Computing devices appear in TV remote con-
+trols, smartphones iPods, elevators, escalators, windshield wipers, thermostats in offices/homes, and
+traffic lights at intersections. These devices are so common in our daily lives that we do not even
+think of them as computers. Technical people refer to these devices embedded systems that perform
+one or more dedicated functions. With the advent of smartphones, GPS navigators, and tablet
+computers, embedded systems are turning into a new class of intelligent systems, known as cyber-
+physical systems.
+A cyber-physical system (CPS) is an embedded system which integrates the computing process
+with the physical world as an interactive and intelligent system. CPSes appear in many computer
+and TV game systems. The best example is the popular Nintendo Wii interactive gaming system.
+Cursor-based CPSes can be found in the automotive, aerospace, health care, robotics, manufactur-
+ing, battlefield training, and consumer appliance industries, among others. Thus, a full-fledged CPS
+involves embedded computers, network monitors, and intelligent control of physical processes with
+humans in the feedback loop. In the physical world, man-machine interactions must be handled in
+real time by a CPS. Figure 9.23 shows the abstraction architecture of a typical CPS.
+A CPS features tight coordination between the system’s computational and physical elements.
+Today, most virtual reality systems tend to focus more on computational elements than on the
+intense link between the computational and physical elements. To amend this shortcoming, a CPS
+[image text] AUSTIN
+
+
+===== page 619 =====
+596 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+Sensor network
+Cyberspace of Physical world under
+embedded systems sensing and tracking
+Man-machine
+interface
+Human interaction in
+real time
+FIGURE 9.23
+ThreemajorcomponentsworkinginteractivelyandintelligentlyinaCPS.
+should be designed as a network of interacting elements with physical input and output instead of
+as a stand-alone device. The notion is extended from the concepts of robotics and sensor networks.
+The expectation from the CPS community is to improve the link between computational and physi-
+cal elements. The design objectives include the adaptability, autonomy, efficiency, functionality,
+reliability, safety, and usability of future CPSes.
+These three components interact with one another heavily. Sensor networks and man-machine
+interfaces need to be established to glue the three sectors together. In a CPS, the cyberspace and
+physical worlds are intertwined. The embedded computing, sensed real-world data, and real-time
+responses are all equally important. New understandings and techniques are needed to deal with
+this new fusion. New advances are desired to broaden the potential of CPSes in several dimensions.
+One is human intervention at the right moment, such as collision avoidance in driving a vehicle.
+Doctors need precision in robotic surgery and workers need nano-level manufacturing.
+It is desired to design CPSes to replace humans in dangerous or inaccessible environments such
+as battlefields, rescue from earthquake rubble, and deep-sea exploration. Users demand close coordi-
+nation in air traffic control and war fighting and enhanced efficiency and augmentation of human
+capabilities in health care monitoring and life-saving operations. Since 2006, the U.S. National
+Science Foundation (NSF) has identified CPS as a key area of research. The NSF and other federal
+agencies have sponsored several workshops on CPS in recent years.
+The applications of CPS typically fall under sensor-based systems and autonomous systems. For
+example, many wireless sensor networks monitor some aspect of the environment and relay the pro-
+cessed information to a central node. Other types of CPSes include autonomous automotive sys-
+tems, medical monitoring, process control systems, distributed robotics, and automatic pilot
+avionics. The following example gives new directions of CPS applications.
+Example 9.11 Distributed Robotic Garden Project at MIT
+Researchers involved in a distributed robotic garden project at MIT have experimented on a set of robots
+to tend a garden of tomato plants. This system combines collaborative work in distributed sensing (each
+plant is equipped with a sensor node monitoring its status), navigation, manipulation, and wireless net-
+working. The long-term goal is to implement an autonomous greenhouse based on autonomous robots
+
+
+===== page 620 =====
+9.5 Online Social and Professional Networking 597
+and sensors. Emphasis of the project is on scalability and robustness. The solution was fully distributed
+with simpleindividual components.
+The MIT research group constructed a mobile end-effector to manipulate the robotic garden. They
+installed intelligent pots to provide distributed sensing and data storage in the system. They consider
+plants, pots, and robots to be systems with different levels of mobility, sensing, actuation, and autonomy.
+The system transforms energy, water, and nutrients into production. The system studies important pro-
+blems in multirobot coordination, force-feedback grasping, and spatial computing. The MIT research group
+envisions the following long-term applications oftheir CPSwork:
+(cid:129) Sustainable, organicagriculture Usinga large number ofrobotsand embedding intelligenceenables
+large-scale heterogeneousplant populationsthat areless prone todeplete the soilof specificnutrients
+andmight allowfor reductionof pesticides byintelligent localcombinations ofplants. Also, on-demand
+watering canreduce waterconsumption.
+(cid:129) Autonomous farms Providing avariety of products onasmall scalein a fully autonomous fashion
+enableslong-term deployments ofhuman populations onremote areasandouterspacemissions.
+(cid:129) Greenarchitecture Fruitsandvegetablescanbecultivatedontheinsideandoutsideofbuildingswhere
+theypositivelycontributetoroomclimateandenergyefficiency,andsupporttheinhabitants’diet.
+Many scientific areas could be blended together to realize truly intelligent CPSes in addition to
+embedded and real-time systems. These areas include avionics, automobiles, power systems, control
+theory, and electro-mechanical engineering, among others. It has been suggested that CPS be a
+priority area for R&D in federal networking and information technology in the United States.
+9.5 ONLINE SOCIAL AND PROFESSIONAL NETWORKING
+Online social networking enables many socialand professionalfunctions overtheInternet.Through
+dedicated websites,P2Pconnectionscanbe easilyestablished.Socialnetworkinghasalreadytrans-
+formed the way in which people interact in cyberspace. Social networking web sites such as Face-
+book, Twitter, LinkedIn, and MySpace are popular today. They provide online services that allow
+userstocreateonlineprofile pagesand makefriendswiththosewhoare registeredon thesame web
+site. According to a recent global Internet traffic report, there were almost 1 billion registered users
+amongthetop15socialnetworks(www.ebizmba.com/articles/social-networking-websites).
+In early 2011, Facebook was ranked at the top, exceeding 600 million monthly visitors. The
+connectivity among the social network’s users and the community behind each special interest
+group can be analyzed by large-scale graph theory. A graph-theoretical approach is presented to
+analyzing social networks. The purpose is to evaluate social network profiles, user demographics,
+security measures, networking features, and search and technical support provided. As case studies,
+two social networks are examined: namely Facebook for sharing photos and making friends and
+Twitter for microblogging and exchange of ideas.
+9.5.1 Online Social Networking Characteristics
+Online social networks (OSNs) are formed with individuals or organizations over the Internet. These
+individual or organizational entities are related, connected, or associated special interests or specific
+
+
+===== page 621 =====
+598 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+interdependencies. These include personal friendships, kinships, professional orientations, common
+interests, financial exchange, like or dislike relationships, community or racial groups, religious or
+political beliefs, knowledge or prestige, and celebrity fans. In general, social networks are formed
+by complex sets of interpersonal to international relationships among members of our societies or
+communities on Earth.
+A social network is a structure representing the social relationships of individuals. In a social
+network, nodes represent the individuals, and the ties between the nodes represent the relationships
+such as friendship, kinship, and colleagueship [3]. OSN services are built to reflect the social rela-
+tionships among people. Social networking services are a communication tool among people. Before
+these services, online communities that acted as early online social network services did exist—an
+example is the bulletin board service (BBS). However, traditional online communities are group-
+oriented, which means users are organized in different groups based on different interests and
+regions, while modern social networking web sites are always individual-oriented.
+9.5.1.1 Online Social Networking Services
+An OSN offers special social or professional services through Internet access and web services.
+These social networking services are linked by Internet communication among people. Early online
+social network services include job hunting, dating, and BBSes. Traditional online communities are
+organized in different groups based on different interests and regions, while modern social network-
+ing web sites are always individual-oriented or follow P2P interactions. Here are some ideas for
+providing OSN services:
+(cid:129) Personal page or profiles for each user linked by social connections
+(cid:129) Social graph traversal along specific social links or networks
+(cid:129) Communication tools among participants or registered users
+(cid:129) Ability to share music, photos, and videos with friends or professional groups
+(cid:129) Operation of a community in special niche areas like health care, sports, and hobbies
+(cid:129) Customized software tools or databases are used in OSN services
+(cid:129) Strong customer loyalty and fast membership growth are seen
+(cid:129) Provider revenue from embedded advertisement and access to premium content
+9.5.1.2 Social Networking Properties
+In most social networks, each user has a personal page (or profile), which is linked via the user’s
+socialrelationships.Thisiswhymodernsocialnetworkingwebsitesareindividual-oriented.Oncea
+useracceptsotherusersas“friends,”hewillbeabletoaccessallpermittedcontentsonthosefriends’
+profile pages.Also, users canaccess their friends’listsoffriends,and viewtheir profile pages. This
+is an example of social graph traversal. Commonly, online social networking web sites provide two
+basiccommunicationmethods:internale-mail-likedirectmessagesandpublicmessageboards.Also,
+userscanshareinformation,suchasphotos,videos,weblinks,andarticleswithfriends.Allthepop-
+ular online social networking web sites have these four essential items, but the way they implement
+thesefeaturesisdifferentbasedonthedifferentservicemodelsandmarketorientations.
+However, logically the structure of social networks is P2P-based. Modern popular social net-
+works apply mostly a client/server architecture that is open to the general public. This has led to
+many problems such as privacy violations, service availability, system stability, network scalability,
+and response performance. The service models and functionalities of Facebook and Twitter are
+
+
+===== page 622 =====
+9.5 Online Social and Professional Networking 599
+studied. Users need to understand why they are so successful. To discover the problems they have
+caused in cyberspace, users need to generate effective solutions without degrading network
+performance.
+9.5.1.3 Representative Online Social Networks
+Table 9.10 summarizes the top 5 popular OSNs based on the number of registered users. Social net-
+working web sites such as Facebook, Twitter, and MySpace are extremely popular today. Logically,
+social networking services are P2P networks. However, most of these web sites are installed with a
+client/server architecture where the large number of servers form the data center. The five attributes
+of QoS are weighted equally to yield the overall rating with a maximum score of 5 with 5 being a
+perfect site and 3 being an average site.
+Any social network with a rating above 4.0 is considered very good. These attributes could also
+be weighted differently to yield different ranking results, depending on the application domain
+applied. This means all the data, including blog entries, photos, videos, and social network relation-
+ships, is stored and managed on central server clusters owned by the service providers. Although
+the traditional architecture has advantages in scalability, because users can access their data from
+any client including fixed machines or mobile devices, there are some implementation problems
+too. For instance, private personal information could be lost, and large server clusters need to be
+monitored during usage rush hours.
+Table 9.10 Assessmentof TopFiveSocial Networking WebSitesin April2011
+Brief
+Description
+Name and Registered Personal Privacy Networking Search Overall
+(Year) WebSite Users Profiles Security Features Support Rating
+Facebook Contentsharing 600M 4.5 4 5 4.5 4.51
+2004 withlarge
+numberofapps;
+www.facebook
+.com/
+Skype Videotelephony 521M 3 4 4 3 3.50
+2003 andinstant
+messaging;
+www.skype
+.com
+YouTube Videoclips 500M 3 3 3 4.5 3.38
+2005 forwardingand
+sharingweb
+site;www
+.youtube.com
+Twitter Micro-blogging, 175M 3 4 5 5 4.25
+2006 news,and
+alerts;www
+.twitter.com
+MySpace Customized 130M 5 3 5 4 3.75
+2003 socialservices;
+www.myspace
+.com
+
+
+===== page 623 =====
+600 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+9.5.1.4 Online Social Networks
+A typical OSN platform architecture. It is desirable to customize an OSN to sustain competition in
+this field. The social network provider should choose a brand name with its own API interfaces and
+profile variables. The chosen forum categories must be relevant to the sufficiently large user com-
+munity. The OSN platform must include specific functionalities that make it easy for users to join
+and enjoy the services. Furthermore, the provider must prove the online marketing concept to attract
+members to join and leave freely. Highly sophisticated software, virtualized data centers, or proces-
+sing and storage cloud platforms are needed.
+Asanon-demandserviceprovider,theOSNplatformshouldbeappealingtoallWeb2.0commu-
+nities. The social network community must operate reliably with high availability and performance.
+Logically, the OSN provides a P2P platform. However, modern popular social networking services
+areallbuiltwiththeclient/serverarchitectureforeasymanagementandmaintenance.Thismeansthat
+all blog entries, photos, videos, and social network relationships are stored and managed by private
+clouds ownedbythe service providers. Alarge socialnetwork site must maintain huge datacenters.
+Toserveclientsbetter,manyofthedatacentersarevirtualizedtoprovidecloudservices.
+9.5.1.5 Social Network Benefits
+Editorial web sites often include a forum already immersed in Web 2.0 services. Forums are valu-
+able but lack the attraction to deliver the same level of value as social network communities.
+A full-blown social network community can be built around a forum to result in the following four
+operational benefits:
+(cid:129) High return visit rate Users return to the social network community frequently. This opens up
+the opportunity for great page impressions and a huge advertising inventory.
+(cid:129) User loyalty Users connect to their friends and will not abandon them easily. They do not
+move over to a competing social network. Instead, they show high customer loyalty.
+(cid:129) Virtual growth Members invite their friends to the social network community. This is effective
+marketing at a low cost, and the OSN grows by itself.
+(cid:129) Business model With a social network community you can earn revenues through subscriptions
+to premium content in addition to advertising revenues.
+Twitter does not completely copy all the offline relationships onto the web sites. Hence, the
+attraction to use Twitter is far less than Facebook at present (2010). On the other hand, Facebook is
+not as open as Twitter. These features make people trust Facebook more than Twitter. Last but not
+least, Facebook is more complex in functionality than Twitter. Although Twitter has plenty of third-
+party applications, Twitter is still not convenient for beginning users. Facebook has embedded
+many common features. If someone does not like to explore third-party applications for some com-
+mon functions, she would go to Facebook instead of Twitter, based on the current trend.
+9.5.2 Graph-Theoretic Analysis of Social Networks
+Social network analysis has emerged as a key technique in modern sociology. It has also gained a
+lot of attention in anthropology, biology, communication, economics, geography, information
+science, organizational studies, social psychology, and sociolinguistics. Characterizing the existing
+relationship among a person’s social group is the main task in social network analysis. Also, users
+
+
+===== page 624 =====
+9.5 Online Social and Professional Networking 601
+are facing a so-called “small-world” society, where all people are related in a short chain of social
+acquaintances, one way or another. All social networks are not so chaotic or random as once
+assumed, but rather have underlying structures. Some of the social networking rules or behaviors
+are analyzed in this section.
+Social relationships are often mapped into directed or undirected graphs, sometimes called
+acquaintance graphs or simply social connection graphs. The nodes in a social graph correspond to
+the users or actors and the graph edges or links refer to the ties or relationships among the nodes.
+The graphs can be complex and hierarchically structured to reflect relationships at all levels. There
+can be many kinds of ties between the nodes. Social networks operate from the family level up to
+national and global levels. There are pros and cons of social networks. Most free societies welcome
+social networks. For political or religious reasons, some countries block the use of social networks
+to prevent possible abuses.
+9.5.2.1 Social Network Graph Properties
+Social networks play a critical role in problem solving, running an organization, and the degree to
+which individuals succeed in achieving their goals. A social network is simply a map of all of the
+relevant ties between all the actor nodes. The network can also be used to measure social capital—
+the value that an individual gets from the social network. These concepts are often displayed in a
+social network graph. Figure 9.24 shows an example social network graph. The black dots are the
+nodes (users) and the lines link the nodes under specified relationships.
+9.5.2.2 Node Degree, Reach, Path Length, and Betweenness
+The node degree is the number of ties of a node to other actors in the graph. The reach is defined
+as the degree any member of a network can reach other members of the network. Path length mea-
+sures the distance between pairs of nodes in the network. Average path length is the average of
+these distances between all pairs of nodes. Betweenness reveals the extent to which a node lies
+between other nodes in the network. The measure reflects the number of people with whom a per-
+son is connecting indirectly through his direct links.
+B A
+C
+D
+FIGURE9.24
+Agraphrepresentationofanexamplesocialnetwork.
+
+
+===== page 625 =====
+602 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+9.5.2.3 Closeness and Cohesion
+Closeness is the degree to which an individual is near all other individuals in a network (directly or
+indirectly). It reflects the ability to access information through network members. Thus, closeness is
+the inverse of the sum of the shortest distances between each individual and every other person in the
+network. Cohesion is the degree to which actors are connected directly to one another by cohesive
+bonds. Groups are identified as “cliques” if every individual is directly tied to every other individual.
+9.5.2.4 Social Circles or Clusters
+This refers to some structured groups. If there is less stringency of direct contact or as structurally
+cohesive blocks, a social circle can be created either loosely or tightly, depending on the stringency
+rules applied. Those nodes inside the circle of Figure 9.24 form an isolated cluster. Clustering co-
+efficient is the likelihood that two associates of a node are associates themselves.
+9.5.2.5 Centralized versus Decentralized Networks
+Centrality gives a rough indication of the social power of a node based on how well it “connects”
+the network. Betweenness, closeness, and degree are all measures of centrality. Centralized networks
+have links dispersed around one or a few nodes, while a decentralized network is one in which
+there is little variation between the number of links each node possesses.
+9.5.2.6 Bridge and Local Bridge
+An edge is a bridge if deleting it would cause its endpoints to lie in different clusters or compo-
+nents of a graph. For example, the edge between nodes C and D in Figure 9.24 is a bridge. The
+endpoints of a local bridge share no common neighbors. A local bridge is contained in a cycle.
+9.5.2.7 Prestige and Radiality
+In a social graph, prestige describes a node’s centrality. Degree prestige, proximity prestige, and
+status prestige are all measures of prestige. Radiality is the degree to which a network reaches out
+and provides novel information and influence.
+9.5.2.8 Structural Cohesion, Equivalence, and Holes
+Structural cohesion is the minimum number of members who, if removed from a group, would dis-
+connect the group. Structural equivalence refers to the extent to which nodes have a common set of
+linkages to other nodes. These nodes do not have any ties to one another. A structural hole can be
+filled by connecting one or more links to reach other nodes. This is related to social capital: By
+linking two disconnected people, you can control their communication.
+Example 9.12 Some Graph Representations of Sample Social Networks
+Figure 9.25 shows four sample social networks. In part (a), the graph corresponds to a 436-node network
+of e-mail exchanges at a corporate research laboratory. However, social network data spans many orders
+of magnitude. For example, for a large university, the e-mail exchange network could end up with a
+43,553-node network over a two-year period. Counting all instant messages over one month at MSN, one
+may end up with 240 million connections. The analysis of large-scale social networks may enable us to
+observe global behavior. In Part (b), we show the network of book recommendations. Jon Klienberg [44]
+
+
+===== page 626 =====
+9.5 Online Social and Professional Networking 603
+(a) Cooperate e-mail exchanges (courtesy of
+L. Adamic and E. Adar, 2005)
+(b) Book recommendation (courtesy of J. Leskovec,
+L. Adamic and B. Huberman 2006)
+FIGURE9.25
+Graphrepresentationsoftwosocialnetworks.
+has identified many epidemic graphs on news, opinions, political mobilization, etc. Models for cascading
+behavioris a populartopic insocialnetworks.
+9.5.3 Communities and Applications of Social Networks
+Niche communities become increasingly important and are highly valuable, particularly for special
+interest magazines, radio stations, sports web sites, sports clubs, health web portals, private clinics
+which are specialized in certain health topics, industry associations, and companies that are looking
+for new ways to interact with their customers or employees. This section discusses a few social
+network communities.
+
+
+===== page 627 =====
+604 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+9.5.3.1 Communities in Social Networks
+Very large-scale social networks result in very large-scale graphs with millions or hundreds of
+millions of user nodes. Such large graphs can often be partitioned into many smaller subgraphs, cor-
+responding to various actor communities. Six specialized social network communities are pointing
+to different sectors of our society. This list only offers a few examples. One can form many other
+communities from online social networking.
+(cid:129) Industry communities Special industrial workers or professionals are often connected with one
+another. They share knowledge and work experience.
+(cid:129) Artist communities These network communities are specifically composed to enable artists,
+musicians, or celebrities to personalize and intensify their contact with their existing fans as well
+as enabling contact among community members.
+(cid:129) Sport communities These are network communities for special interests and activities of
+athletes and sport fans. People can find friends, celebrate their passion, and exchange ideas.
+(cid:129) Health communities These are dedicated to the needs of actors concerned about health issues.
+(cid:129) Congresses and event communities These are customized to support all preparations necessary
+for congresses and events, as well as all processes thereafter.
+(cid:129) Alumni communities After completing their studies, alumni can find fellow students, stay in
+touch, and foster friendships.
+Example 9.13 Citation Graph to Partition Research Communities
+Ina2010talkatUSC,JohnHopcroft[40]identifiedtheuseoflarge-scalegraphtheorytoanalyzetheimpactof
+onlinesocialnetworking.Heidentifiedthemergingofcomputingandcommunicationsinaubiquitousfashion
+andtheexplosivegrowthofdigitaldatafromnetworkeddevicesandsensors.Accordingly,Internetsearch
+enginesarechanging.Internetqueriesshouldbeabletoaddresshigh-levelquestionssuchas“whereIshouldI
+gotocollege?”inafaster,morepersonalized,andmoreintelligentway.Heusedanexample(inFigure9.26)to
+illustratethetrackingoftheflowofideasinscientificliteratureandevolutionofcommunitiesinsocialnetworks.
+Three distinct categories of papers
+(a) Graph of referenced papers (b) Graph of referenced papers cleaned up
+FIGURE 9.26
+Partitioninginpapercitationgraphtoidentifyresearchcommunities.
+(CourtesyofYookyungJo,CornellUniversity)
+
+
+===== page 628 =====
+9.5 Online Social and Professional Networking 605
+Figure 9.26(a) shows a citation graph of referenced papers by authors working in related areas. The
+dots represent individual papers. The edges link the papers if they reference each either one way or
+mutually. Through some cleaning process, certain papers are merged due to self-citation or other con-
+cerns. The reduced citation graph in Figure 9.26(b) is obtained with referenced papers cleaned up. One
+can partition the cleaned graph into three categories of papers that are related to a similar approach or
+based onthe samesolutionmodel.
+In tracking communities in social networks, many authors have revealed interesting statistical
+properties of community structure in large social and information networks. Jure Leskovec, et al.
+[49] have indicated that the best communities are size 100−150. This data is drawn from the
+study of 70 large, sparse, real-world social networks. Such small communities are formed with
+special relationships such as family and friends, classmates, and work colleagues. These commu-
+nities may overlap in many ways. The peers could be connected inside or outside the community
+boundary. He has revealed the fact that there are more connections outside than inside for most
+people, which is intuitively valid based on the common experiences of many of us. Other inter-
+esting observations include the existence of a core in social networks. Often, the core can be
+either unique or shared.
+9.5.3.2 Social Network Application Domains
+There are an infinite number of applications for social networks. In Table 9.11, we classify those
+applications into five specific domains. Examples and their web sites are listed for our readers to
+explore. The use of social network services in an enterprise context presents the potential of having
+a major impact on the world of business and work. Social networks connect people at a low cost;
+this can be beneficial for entrepreneurs and small businesses looking to expand their contact bases.
+Table 9.11 Applications ofExisting SocialNetworks
+Domains ExamplesandWebSites
+Business LinkedInconnectsprofessionals(www.linkedin.com)andHubCultureconnects
+entrepreneurs(www.hubculture.com).
+Education TheNationalSchoolBoardsAssociationandeducationtopicscanberesearched
+online(www.ning.com).
+Government TheU.S.CentersforDiseaseControlandPreventiondemonstratedtheimportance
+ofvaccinationsonwww.whyville.net,apopularchildren’ssite.TheNationalOceanic
+andAtmosphericAdministrationhasavirtualislandonhttp://secondlife.com,where
+peoplecanexploreundergroundcavesorexploretheeffectsofglobalwarming.
+Medicalandhealth www.patientslikeme.comoffersitsmembersthechancetoconnectwithothers
+care dealingwithsimilarissuesandresearchpatientdatarelatedtotheircondition.
+www.sobercircle.com,whichhasjoinedforceswithwww.onerecovery.com,gives
+peopleinrecoverytheabilitytocommunicatewithoneanotherandstrengthen
+theirrecovery.
+Onlinedating OnlinesocialnetworkingsitessuchasFacebook,SecondLife,andMySpaceare
+quicklybecomingthenewwaytofinddatesonline.
+
+
+===== page 629 =====
+606 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+These networks often act as a customer relationship management tool for companies selling pro-
+ducts and services. Companies can also use social networks to advertize. With global operations,
+social networks can make it easier to promote business around the world.
+One example of social networking being used for business purposes is LinkedIn.com, which
+aims to interconnect professionals. Another is the use of physical spaces available to members of a
+social network. Some hub culture extends invitations only to entrepreneurs and other business suc-
+cessors to join a social network. Having a physical presence allows members to network in the real
+as well as virtual worlds, adding extra business value. Applications for social networking sites have
+extended to businesses, and brands are creating their own sector known as brand networking, which
+is based on the idea that a brand can build its consumer relationship by connecting consumers to
+the brand image on a platform.
+9.5.3.3 LinkedIn for Professional Networking
+Social networks for professional connections include LinkedIn.com, Xing.com, and Ecademy.com.
+LinkedIn is a business-oriented social networking site. LinkedIn’s main focus is to manage and
+build online and/or offline professional networks. LinkedIn has more than 80 million members in
+more than 200 countries. A new member joins LinkedIn approximately every second, and about
+half of the members are outside the United States. Executives from all Fortune 500 companies are
+LinkedIn members. This site allows registered users to maintain a list of contact details of people
+they know and trust in business. Users can invite anyone to become a member.
+9.5.3.4 Educational Applications
+The National School Boards Association reports that almost 60 percent of students who use social
+networking talk about education topics online and, surprisingly, more than 50 percent talk specifi-
+cally about schoolwork. Yet the vast majority of school districts have stringent rules against nearly
+all forms of social networking during the school day—even though students and parents report few
+problem behavior online. Social networks focused on supporting relationships between teachers and
+between teachers and their students are now used for learning, educator professional development,
+and content sharing. Ning for teachers, Learn Central, [60] TeachStreet, and other sites are being
+built to foster relationships that include educational blogs, e-portfolios, formal and ad hoc commu-
+nities, as well as communication such as chats, discussion threads, and synchronous forums.
+9.5.3.5 Government Applications
+Social networking tools serve as a quick and easy way for the government to get the opinion of the
+public and to keep the public updated on their activity. The U.S. Centers for Disease Control and
+Prevention demonstrated the importance of vaccinations on the popular children’s site Whyville and
+the National Oceanic and Atmospheric Administration has a virtual island on Second Life where
+people can explore underground caves or explore the effects of global warming. Similarly, NASA
+has taken advantage of a few social networking tools, including Twitter and Flickr. They use these
+tools to promote a vigorous and sustainable path to achieving its boldest aspirations in space.
+9.5.3.6 Health Care and Medical Applications
+Social networks are beginning to be adopted by health care professionals as a means to manage
+institutional knowledge, disseminate P2P knowledge, and highlight individual physicians and
+
+
+===== page 630 =====
+9.5 Online Social and Professional Networking 607
+institutions. The advantage of using a dedicated medical social networking site is that all the
+members are screened against the state licensing board list of practitioners. The role of social
+networks is especially of interest to pharmaceutical companies who spend approximately 32 percent
+of their marketing dollars to influence the opinion leaders of social networks.
+Anewtrendisemergingwithsocialnetworkscreatedtohelpmemberswith variousphysicaland
+mentalailments.Forpeoplesuffering fromlife-alteringdiseases,PatientsLikeMeoffersitsmembers
+thechancetoconnectwithothersdealingwithsimilarissuesandresearchpatientdatarelatedtotheir
+condition. For alcoholics and addicts, SoberCircle gives people in recovery the ability to communi-
+cate with one another and strengthen their recovery through the encouragement of others who can
+relatetotheirsituation.DailyStrengthisalsoawebsitethatofferssupportgroupsforawidearrayof
+topicsandconditions,includingthesupporttopicsofferedbyPatientsLikeMeandSoberCircle.Spark-
+Peopleofferscommunityandsocialnetworkingtoolsforpeersupportduringweightloss.
+9.5.3.7 Dating Services
+Manysocialnetworksprovideanonlineenvironmentforpeopletocommunicateandexchangeperso-
+nalinformationfordating purposes.Intentionscanvaryfromlookingforaone-timedateto looking
+for a short-term or long-term relationship. Most of these dating services require users to give out
+some personal information such as age, gender, location, interests, and perhaps a picture. Releasing
+personal information is often discouraged for safety reasons. This allows other users to search or be
+searched, but at the same time people can maintain a degree of anonymity. Online dating sites are
+similartosocialnetworksinthesensethatuserscreateprofilestomeetandcommunicatewithothers.
+Online dating sites usually require a fee, where social networks are free. This difference is one
+of the reasons the online dating industry is seeing a massive decrease in revenue due to many users
+opting to use free social networking services. Many popular online dating services such as Match.
+com, Yahoo! Personals, and eHarmony.com are seeing a decrease in users, where social networks
+such as MySpace and Facebook are experiencing an increase in users. The number of Internet users
+in the U.S. that visit online dating sites has fallen from a peak of 21 percent in 2003 to 10 percent
+in 2006. In other words, social networks are gradually taking over most of the dating services.
+9.5.3.8 Privacy Breach in Social Networks
+Many people are reluctant to join online social networks for worry about privacy breaches. Still,
+the growth of social network members is rather impressive, regardless of the fact of serious abuses
+reported every day. For example, many people charge that MyPlace has made public what should
+be private matters. As observed by Jon Klienberg, the software we use has a trace of our activ-
+ities. Anonymization may not be totally effective in protecting sensitive data in massive social
+networks. The following example explains the scenario. Active attacks can easily compromise
+privacy by creating new accounts in practice. We need better algorithmic ideas to cope with this
+problem.
+Example 9.14 Attacking an Anonymized Social Network (Jon Klienberg [44])
+Consider the attack scenario: By accident, an organization released an anonymized communication graph
+on 100 million users, as shown in Figure 9.27(a). An attacker chooses a small set of user accounts to dig
+into their private relations or activities, as shown in Figure 9.27(b). Before the data set is released, the
+
+
+===== page 631 =====
+608 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+100M nodes 100M nodes 100M nodes
+(a) A huge network (b) Three users targeted (c) Attack accounts created
+100M+12 nodes 100M+12 nodes 100M+12 nodes
+(d) Attack accounts embedded (e) Hidden subgraph H found (f) Finding the target nodes
+FIGURE 9.27
+Attacktrackinginananonymizedsocialnetwork.
+(CourtesyofJonKleinberg[44])
+attacker may create a small set of new accounts with links among them to form a subgraph H attached to
+the targeted accounts, as shown in Figure 9.27(c). When the data set is released, the organization wants
+to find H. Thisisa computationally hardproblem, asshownin Figure9.27(d).
+In fact, Kleinberg indicated that the small random graph H will likely be unique and efficiently findable
+as shown in Figure 9.27(e), because each edge has a probability of 0.5 percent to be present on a
+random graph. Once H is found, one can find the targeted nodes by following the edges from H in
+Figure 9.27(f). Onecan breachprivacy withO ((logn)1/2) new nodes.The companyshould avoid releasing
+an anonymized social network. Privacy-preserving mechanisms are still very much in demand to protect
+users from suchattacks.
+9.5.4 Facebook: The World’s Largest Social Network
+Facebook was launched by Mark Zuckerberg in 2004. Initially, Facebook was only available to
+Harvard University students. Today, anybody older than 13 years of age and with a valid e-mail
+address can register on Facebook. In March 2011, it was reported that Facebook had 600 million
+active users and a monthly growth rate of 3.57 percent [88], making Facebook the world’s largest
+social network. Figure 9.28 shows various services provided.
+The largest sector of applications is to enhance communications among the users. Social compari-
+son is welcome by job seekers. Playing social games is popular among the youngsters and retirees.
+Social selection, sending gifts, and profile enhancement facilitate more frequent social contacts. The
+tell-me-about-me, media sharing, playing, naming, dating, and social events are more traditional areas.
+[image text] IOOM+12 nodes
+
+
+===== page 632 =====
+9.5 Online Social and Professional Networking 609
+Community
+Social good
+Misc Fortunes
+Events
+Naming
+Dating
+Play with digital pet
+Enhanced
+communication Play game
+Media sharing
+Tell me about me
+Send gift
+Social comparison
+Profile
+enhancement
+Play social game
+Social selection
+FIGURE9.28
+Distributionof28.4millionFacebookapplications,averagedfortheweekendingNovember8,2007.
+(Source:TheFacebookApplicationEcosystem:WhySomeThrive-andMostDon’tAnO’ReillyRadarReportby
+ShellyD.Farnham,Ph.DCopyright©2008WaggleLabsAllrightsreserved.UsedwithPermission)
+This distribution varies with time. Once the privacy and security issues are resolved for social net-
+works, the number of registered users will grow even more in the future.
+9.5.4.1 Functionality of Facebook
+Facebook includes six essential items, as shown in Table 9.12. Facebook needs to improve in terms
+of privacy. Compared with Twitter, Facebook has stricter access control, and thus is more secure to
+use. However, one must be aware that all personal data is stored on the provider’s servers, including
+education and career information as well as personal messages and social links. Security and trust
+are the major concerns that prevent users from joining or staying active on Facebook. Users are
+willing to share more information because they like to communicate with their real-life friends.
+Without registration constraints, maintaining trust among Facebook users is a serious problem.
+Facebookusesanetworkwithauthenticationtoauthenticateusers.Anetworkisasubsetoftheusers
+onFacebookwithcertainauthentications.Forexample,tojoinauniversitynetwork,onemayhaveto
+registerwithauniversitye-mailaddress,orfollowsomeotherauthenticationmethodapprovedbythe
+networkadministrator.Thefriendsofthisusercouldidentifytheuserbyhisprofileinthenetwork.
+9.5.4.2 Architecture of the Facebook Platform
+With 600 million active users, you can imagine how many personal profiles and multimedia infor-
+mation items are shared by various social groups on Facebook. You can also imagine how much
+user traffic is flowing into the Facebook web site (www.facebook.com). The Facebook platform is
+
+
+===== page 633 =====
+610 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+Table 9.12 Functionality of FacebookFeatures
+Function Implementation
+Profilepage Combinedprofile:profilepicture,bioinformation,friendslist,user’sactivitylog,
+publicmessageboard,othercomponentsselectivelydisplayed
+Socialgraph Accessthroughuser’sfriendslistonprofilepages,withaccesscontrol
+traversal
+Communication Internale-mail-likemessage:sendandreceiveprivatemessagesamongfriends;
+tools instantmessaging:accessedonthewebpage,orthroughthird-partyclient;public
+messageboard:“Wall,”withaccesscontrol;updatestatus:ashortmessage,like
+micro-blogging,withaccesscontrol
+Sharedinformation Photoalbum:built-in,withaccesscontrol;links:postlinkstooutsideURL,will
+appearontheactivitylog;videos:embeddedoutsidevideosonprofilepage
+Accesscontrol Everyitemontheprofilepagecanbesettooneoffouraccesscontrollevels:only
+me,onlyfriends,friendsoffriends,oreveryone
+SpecialAPIs Games,calendars,mobileclients
+Your
+Pages Sites Networks
+network
+Facebook
+Ringside social application server
+integration
+Community
+Social engine
+Facebook API engine
+Open social ID, security,
+integration Ringside API rendering, Control panel
+FB integration, etc.
+Extensible API
+Social graph Open DSL (fbml,*) System apps
+- Profiles
+- Tags
+- Relationships
+Apps Apps Apps
+FIGURE 9.29
+TheFacebookarchitecturebuiltwithsocialengineserversandApplicationProgrammingInterfaces(APIs).
+(CourtesyofFacebook,Inc.2010)
+essentially a huge data center with a very large storage capacity, intelligent file systems, and search-
+ing capabilities. Figure 9.29 illustrates the structure of the Facebook platform.
+The platform is formed with a huge cluster of servers. These machines are called ringside social
+application servers. The social engine is the core of the server, which performs the functions of
+identification, security, rendering, and Facebook integration. Three specific APIs are installed to
+
+
+===== page 634 =====
+9.5 Online Social and Professional Networking 611
+facilitate user access. A community engine provides networking services to users. Requests are
+shown as pages, sites, and networks entering the Facebook server from the top. The social engine
+executes all sorts of user applications. Open DSL is used to support application execution.
+9.5.4.3 Some New Facebook Applications
+Successful Facebook applications help users to achieve such social goals as improved communica-
+tion, learning about themselves relative to others, finding people with similar interests, improving
+self-presentation, engaging in social play, and engaging in social exchanges via gifts and media.
+Facebook has greater appeal in the private and personal domain, as opposed to professional
+connections.
+In late 2010, Mark Zukerberg announced a new form of messaging over the Internet that could
+trigger a revolutionary change in Internet communication among trusted friends and social circles.
+He feels that the traditional e-mail for epistolary interpersonal communication is outmoded. He pro-
+poses a social inbox concept where users can readily access messages from friends and then sort
+them based on personal preference. This is something between instant messaging and Twitter. The
+more we text or Twitter or make friends through social networking, the less likely we want to
+express ourselves in complex ways. In other words, simplicity and convenience will dominate the
+future demands of online social networking.
+9.5.5 Twitter for Microblogging, News, and Alert Services
+Twitter is a microblogging service launched in 2006 by Jack Dorsey, Biz Stone, and Evan Wil-
+liams. Each message sent through Twitter can be no more than 140 characters in length. This idea
+originated from Short Message Service (SMS) technology over mobile devices such as smartphones.
+A user can use SMS to send a message to Twitter, and the message will be forwarded to many
+other Twitter users that are related to the sender. Twitter was built to share thoughts or ideas
+instantly. But gradually major TV networks and newspapers also started to use Twitter to provide
+updated news to the public. Twitter has become a media platform in which ordinary users can be in
+the front line of breaking news.
+9.5.5.1 Twitter Architecture and Access Control
+There are three major components in the Twitter system: crawler, indexer, and searcher. Each com-
+ponent differs in the functions it performs. They are used together through balanced coordination to
+form a complete system. Figure 9.30 shows the Twitter access architecture in eight steps. Twitter.
+com started as a status sharing site that people accessed via their mobile phones. Twitter soon
+became a Web 2.0 microblogging site for information sharing and news reporting. As of late 2010,
+Twitter had 175 million users. Furthermore, HubSpot reported that Twitter was enjoying an aston-
+ishing 18,000 percent growth rate.
+9.5.5.2 Twitter Development Trends
+Twitter’ssuccesscan beattributedto two main factors: elegance in design, and simplicity in adding
+third-party improvements. Twitter calls microblog posts from users tweets. The elegance is due to
+the character limit in tweet messages. Each tweet has a 140-character limit which is inherited from
+text messaging. A comparison between blogging and microblogging gives us a good understanding
+
+
+===== page 635 =====
+612 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+behind Twitter’s popularity. While blogging requires good writing skills and lots of content to fill
+pages,Twitterrestrictspoststo140characters,whichencouragesmanypeopletopost.
+Simplicity is provided with an HTTP-based open source API and sharing posts with third-party
+applications. Twitter’s API consists of two different parts: a Search API and a REST API. The
+REST API enables Twitter developers to access core Twitter data. This data includes tweets, time-
+lines, and user data. The Search API enables developers to query the tweets. It also provides infor-
+mation about trending topics. The usage of both APIs is subject to rate limiting. Twitter may add
+these applications to its white list and remove request limitations. The ease and flexible usage of
+Twitter APIs have encouraged many developers to write Twitter applications.
+9.5.5.3 Functionalities of Twitter
+TwitterprovidessixessentialfunctionsinTable9.13,twoofwhichareaccesscontrolandAPIapplica-
+tions.SimplicityandopennessarethekeystoTwitter’spopularity.ThecoreserviceofTwitterisvery
+User 1. The crawler sends a request to the Twitter APL.
+Stored 2. The Twitter API responds with the Twitter data.
+Twitter files 3. The crawler stores the data into files.
+API 3 7
+1, 2 4 4. The indexer reads the stored files as input.
+6, 9
+5. The indexer stores the data in a database as output.
+Crawler Indexer Searcher
+6. Users send a search query to the searcher.
+5
+8 7. The searcher reads the data from the database and
+calculates a rank.
+Database
+8. The searcher reads associated raw tweets.
+FIGURE 9.30
+Twitterarchitectureandaccessprotocolsequence.
+(CourtesyofHaoSong,USC2009)
+Table 9.13 Functionsof Twitterand TheirImplementations
+Function Implementation
+Profilepage Simpleprofile:profilepicture,bioinformation,followerslist,followinglist,user’smessage
+timeline
+Socialgraph Accessthroughthefollowingandfollower’slistsonusers’profilepages,withoutaccess
+traversal control
+Communication Internale-mail:sendprivatedirectmessagestofollowers;instantmessaging:notreally
+tools instant,canbeimplementedbydirectmessages;publicmessageboard:message
+timeline,withaccesscontrol
+Share Photoalbum:thirdparty,likeTwitpic,butnocombinedaccesscontrol;links:postlinks
+information tooutsideURL,willappearasamessageontimeline
+Accesscontrol Messagetimelineonprofilepagecanbesetaccesscontrolintwolevels:privateor
+public
+APIapplications Mobileclients,PCclients,photosharing,automaticnewsfeed
+
+
+===== page 636 =====
+9.5 Online Social and Professional Networking 613
+simple: just sending messages to a group of people. All other uses are contributed by third-party
+developers.TwitterprovidesaveryopenAPI,sothird-partydeveloperscancreatepowerfulclientsor
+specialapplicationsforTwitter.TheconnectionsonTwitterarenotofflinesocialrelationships.Users
+can follow someone they do not know in real life. Not everyone on Twitter is using his real name,
+andevenwhenrealnamesareused,thereisnoeffectivewaytoidentifyusers.Eversincelaunchedin
+2009,Twitterhasprovideda verified-accountserviceforcelebritiesandofficialagencies. However,
+therevealingofpersonalinformationonTwitterstillposesaprivacyproblem.
+Twitter cannot be regarded as a fully trusted network or a reliable acquaintance basis. Consider
+two types of accounts: public and protected accounts. Anyone can see updates at public accounts.
+For protected accounts, only the users that have been approved can see their updates. In order to
+prevent identity confusion, Twitter selects accounts from celebrities to provide verification. The ver-
+ified notice is posted on verified accounts. Twitter provides two new features, Twitter Lists and
+Location, to support this verification process. Twitter Lists allow users to create a list of Twitter
+accounts. The list can help users organize the people they follow. The lists can also support loca-
+tion-based services. Location-sensitive applications like those aided by GPS devices can be greatly
+simplified with Twitter services.
+9.5.5.4 Twitter Applications
+Many interesting Twitter applications exist. For instance, one can use the public to help determine
+business or fashion trends and identify popular music and movies. Twitter was even used during
+the 2008 presidential campaign in the United States to attract young voters to spread then-candidate
+Barack Obama’s “Change” message. Twitter also gives users the option to send their current loca-
+tions along with their tweets. Twitter provides the Twitter API for developers to request Twitter
+data. The API supports REST calls.
+Two types of APIs are supported: normal APIs and streaming APIs. Streaming APIs are for
+real-time access to the public statuses over a persistent connection. @anywhere offers a service that
+developers use to integrate external parties with Twitter. Lastly, Twitter also collects information
+about programming libraries that help create Twitter-based applications. Two specific Twitter appli-
+cations are described in the following list:
+(cid:129) Fast News Release Twitter is becoming the fastest way to spread breaking news. Massive user
+collaboration has given Twitter a clear edge over most news centers. Some news centers have
+set up Twitter accounts to encourage users to spread breaking news. For example, CNN
+maintains 45 official Twitter accounts with more than 5 million followers. During the election
+periods in various countries, Twitter attracted more attention than news centers. Some
+governments even warned Twitter.com not to enter maintenance cutoffs in order to receive
+continuous information flow. Information to Twitter may consist of photos, links, and videos
+that arrive much faster than via conventional news media.
+(cid:129) Alert Systems Twitter provides a system that can connect residents of a city with virtually no cost.
+It also increases the capabilities of an alert system by inputting more user-generated data. Some
+cities have already opted for Twitter to alert their residents. The Virginia Tech killings in 2007
+highlighted the security issues on university campuses. To integrate the e2Campus emergency
+notification network with popular social networks, Pacific University of Forest Grove, Oregon,
+implemented a Twitter-based alert system for its students, and the trend is likely to grow.
+
+
+===== page 637 =====
+614 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+9.6 BIBLIOGRAPHIC NOTES AND HOMEWORK PROBLEMS
+Wide coverage of the principles and paradigms of cloud computing are provided in [8]. Cloud
+design and security issues are covered in [70]. Buyya, et al. [9] have introduced a market-oriented
+cloud computing framework. Basic cloud research can be found in [1,34,59–62,69–71,94]. Cloud
+computing applications are studied in [28,33,48,56,59,61,63,67,68,93]. Science and research clouds
+are studied in [13,15,19–23,30,35–39,52,64,76,79]. Trust models for clouds are proposed in
+[12,24,42]. Cloud support for ubiquitous computing and mobile applications can be found in
+[6,8,16,74]. Public clouds are covered in [6,8,31,34,48,65] and private clouds in [11,72]. Cloud mash-
+ups are studied in [18,88]. Google’s experiences on MapReduce and BigTable are reported in [14].
+BryantintroducedtheDISCparadigmin[5].TheSGICyclonewasreportedin[3].Datacoloring
+andcloudwatermarkingarestudiedin[42].Grid andcloudperformance,simulation,andbenchmark
+studiescanbefoundin[9,25,33,50,51,67,68,75,89,90,93].Forsciencecloudsandapplications,read-
+ers are referred to FutureGrid [30], Grid’5000 [35], Magellan [56], Open Circus and Open Cloud
+Testbed [64], Science Clouds [76], Sky Computing [43], and Venus-C [79]. Amazon benchmarking
+results are reported in [31,32,75,80]. Cloud security is treated in [12,42,54,55,57,70,83]. Operating
+systemsupportforcloudcomputingcanbefoundin[60,62,72].Parallelbenchmarksandperformance
+evaluationofclusters,MPPs,anddistributedsystemscanbefoundinHwangandXu[41].
+The Internet of Things was treated in [45,73,78]. RFID is treated in [2,81,91,92]. Material on
+sensors and ZigBee technologies can be found in [73] and GPS in [78]. Supply chain management
+is treated in [91]. The CPS material is based on [17,47,85]. Online social networks are introduced
+in [4,7,53,86]. Social network analysis is given in [10,29,40,42,46,49,53,58,82,84]. Facebook is
+reported in [23,26,27]. Twitter is reported in [16,42,66,77]. P2P technology for trust management
+and social networking can be found in [12,24,43,51,54]. Kleinberg analyzed large-scale social
+networks in [44]. Reed assessed clouds, many cores, and clusters in [69].
+Acknowledgements
+KaiHwangofUSCistheprimaryauthorofthischapter.HewasassistedbyZhongyuanQin,Kaikun
+Dong, Vikram Dixit, and Hao Song of the University of Southern California. Judy Qiu of Indiana
+UniversityhascontributedSections9.2.1and9.2.5.
+References
+[1] M. Armbrust, A. Fox, R. Griffith, et al., Above theClouds: A Berkeley View of Cloud Computing, Tech-
+nicalReport No.UCB/EECS-2009-28, University of California at Berkley, 10February 2009.
+[2] C. Bardaki, P. Kourouthanassis, RFID-integrated retail supply chain services: Lessons learnt from the
+SMART project, in: Proceedings of the Mediterranean Conference on Information Systems (MCIS 2009),
+Athens, Greece.
+[3] M.Barrenechea, SGI CEO.HPC Cloud-Cyclone.www.sgi.com/cyclone, 2010.
+[4] J. Bishop, Understanding and Facilitating the Development of Social Networks in Online Dating Commu-
+nities: A Case Study and Model. www.jonathanbishop.com/Library/Documents/EN/docSNCEDS_Ch15
+.pdf, 2008.
+
+
+===== page 638 =====
+References 615
+[5] R. Bryant, Data Intensive Supercomputing: The Case for DISC, Technical Report, CMU CS-07-128,
+http://www.cs.cmu.edu/~bryant,2007.
+[6] J. Brodkin, Ten Cloud Computing Companies to Watch. Network World. www.cio.com/article/print/
+492885,2010.
+[7] S. Buchegger, A. Datta, A case for P2P infrastructure for social networks: Opportunities, challenges,
+in: Sixth InternationalConference onWireless on-Demand Network SystemsandServices (WONS2009).
+[8] R. Buyya, J. Broberg, A. Goscinski (Eds.), Cloud Computing: Principles and Paradigms, Wiley Press,
+New York,2011.
+[9] R.Buyya,C.Yeo,S.Venugopal,Market-oriented cloud computing: Vision,hype, and reality for delivering
+IT services as computingutilities,in:10thIEEEInternationalConferenceonHighPerformanceComputing
+andCommunications,September2008.
+[10] P. Carrington, et al., (Eds.), ModelsandMethods in Social Network Analysis, CambridgeUniversity Press,
+2005.
+[11] CERN VMdownload. http://rbuilder.cern.ch/project/cernvm/build?id=81,2010.
+[12] K.Chen,K.Hwang,G.Chen,Heuristicdiscoveryofrole-basedtrustchainsinP2Pnetworks,IEEETrans.
+Parallel Distrib. Syst.(2009)83–96.
+[13] Condor CloudComputing.www.cs.wisc.edu/condor/description.html, 2010.
+[14] J. Dean, Handling Large Datasets at Google: Current Systems and Future Directions, Invited Talk at HSF
+Panel. http://labs.google.com/people/jeff,2008.
+[15] E. Deelman, G. Singh, M. Livny, B. Berriman, J. Good, The cost of doing science on the cloud: The
+Montage example, in: Proc. of ACM/IEEE Conf. on Supercomputing, IEEE Press, Austin, TX, 2008,
+pp. 1–12.
+[16] M. Demirbas, M.A. Bayir, C.G. Akcora, Y.S. Yilmaz, H. Ferhatosmanoglu, Crowd-sourced sensing and
+collaboration using Twitter, in: IEEE International Symposium on World of Wireless Mobile and Multi-
+media Networks (WoWMoM), Montreal, 14–17June2010,pp. 1–9.
+[17] Distributed Robotics Garden, MIT. http://people.csail.mit.edu/nikolaus/drg/, 2010.
+[18] V.Dixit,CloudMashup:AgilityandScalability,EE657FinalProjectReport,Univ.ofS.Calif.,May2010.
+[19] J. Ekanayake, X. Qiu, T. Gunarathne, S. Beason, G. Fox, High performance parallel computing with
+clouds and cloud technologies, in: Cloud Computing and Software Services: Theory and Techniques,
+CRC Press(Taylor andFrancis), 2010,p. 30.
+[20] J. Ekanayake, A.S. Balkir, T. Gunarathne, et al., DryadLINQ for scientific analyses, in: Fifth IEEE Inter-
+national Conference oneScience,Oxford, England,2009.
+[21] J. Ekanayake, H. Li, B. Zhang, et al., Twister: A runtime for iterative MapReduce, in: Proceedings of the
+First Int’l WorkshoponMapReduce andItsApplications, ACM HPDC,20–25June2010, Chicago.
+[22] J. Ekanayake, T. Gunarathne, J. Qiu, Cloud technologies for bioinformatics applications, in: IEEE Trans-
+actions on Parallel and Distributed Systems, accepted to appear, http://grids.ucs.indiana.edu/ptliupages/
+publications/BioCloud_TPDS_Journal_Jan4_2010.pdf, 2011.
+[23] S. Farnham, TheFacebook Application Ecosystem, An O’Reilly Radar Report, 2008.
+[24] Q. Feng, K. Hwang, Y. Dai, Rainbow Product Ranking for Upgrading e-Commerce, IEEE Internet Com-
+put. 13(5) (2009)72–80.
+[25] D.G. Feitelson, Workload Modeling for Computer Systems Performance Evaluation, Draft Version 0.7,
+Hebrew University of Jerusalem,2006.
+[26] P. Fong, M. Anwar, Z. Zhao, A privacy preservation model for Facebook-style social network systems,
+in: European Symposium on Research in Computer Security (ESORICS 2009), 21–23 September 2009.
+[27] F. Fovet, Impact of the use of Facebook amongst students of high school age with social, emotional and
+behavioural difficulties (SEBD),in: IEEE39th Frontiers inEducation Conference, 2009.
+[28] G. Fox, S. Bae, J. Ekanayake, X. Qiu, H. Yuan, Parallel data mining from multicore to cloudy grids,
+in: High Speed and Large Scale Scientific Computing, IOS Press, Amsterdam, 2009.
+
+
+===== page 639 =====
+616 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+[29] L.Freeman, TheDevelopment of Social Network Analysis, Empirical Press,Vancouver, 2006.
+[30] FutureGrid Cyberinfrastructure to allow testing of innovative systems and applications, Home page. www
+.futuregrid.org,(accessed 13.11.10).
+[31] S.L. Garfinkel, An evaluation of Amazon’s grid computing services: EC2, S3 and SQS, in: Center for
+Research onComputation andSociety, Harvard University, Technical Report,2007.
+[32] S.Garfinkel, Commodity grid computing with Amazon’sS3 andEC2,Login32(1) (2007)7–13.
+[33] L. Gong, S.H. Sun, E.F. Watson, Performance modeling and prediction of non-dedicated network comput-
+ing,IEEETrans. Computers 51(9) (2002)1041–1055.
+[34] A. Greenberg, J. Hamilton, D.A. Maltz, P. Patel, The cost of a cloud: Research problems in data center
+networks, in: SIGCOMM Computer Communication Review, Vol. 39, No. 1, pp. 68–73, 2008, http://doi
+.acm.org/10.1145/1496091.1496103.
+[35] Grid’5000 and ALADDIN-G5K: An infrastructure distributed in 9 sites around France, for research in
+large-scale parallel and distributed systems. https://www.grid5000.fr/mediawiki/index.php/Grid5000:Home,
+(accessed20.11.10).
+[36] R. Grossman, Y. Gu, M. Sabala, et al., The open cloud testbed: Supporting open source cloud computing
+systems based on large scale high performance, in: A. Doulamis, et al., (Eds.), DynamicNetwork Services,
+Springer, Berlin Heidelberg, 2010,pp. 89–97.
+[37] R. Grossman, Y. Gu, J. Mambretti, et al., An overview of the open science data cloud, in: Proc. of the
+19thACM Int’l Symp.onHighPerformance Distributed Computing, Chicago, 2010,pp. 377–384.
+[38] T. Gunarathne, T.L. Wu, J. Qiu, G. Fox, Cloud Computing Paradigms for Pleasingly Parallel Biomedical
+Applications, in: Proceedings of the Emerging Computational Methods for the Life Sciences Workshop of
+ACMHPDC 2010Conference, Chicago, 20–25June2010.
+[39] C. Hoffa, et al., On the use of cloud computing for scientific workflows, in: IEEE Fourth International
+Conference oneScience,December 2008.
+[40] J.Hopcroft,Computersciencetheorytosupportresearchintheinformationage,in:DistinguishedLecture,
+University of SouthernCalifornia, 6 April 2010.
+[41] K. Hwang, Z. Xu, Scalable Parallel Computing: Technology, Architecture and Programmability, McGraw-
+HillBook Co.,NewYork,1998.
+[42] K. Hwang, D. Li, Trusted cloud computing with secure resources and data coloring, IEEE Internet Com-
+put.(September)(2010) 14–22.
+[43] K. Keahey, M. Tsugawa, A. Matsunaga, J. Fortes, Sky computing, IEEE Internet Comput. 13 (2009)
+43–51, doi:http://doi.ieeecomputersociety.org/10.1109/MIC.2009.94; www.nimbusproject.org/files/Sky_
+Computing.pdf.
+[44] J.Kleinberg, Algorithmic Perspectives onLarge-Scale Social Network Data, Cornell University, 2008.
+[45] G. Kortuem, F. Kawsar, D. Fitton, V. Sundramoorthy, Smart objects as building blocks for the Internet of
+things, IEEEInternet Comput. 14(1) (2010)44–51.
+[46] R. Kumar, J. Novak, A. Tomkins, Structure and evolution of online social networks, in: The 12th ACM
+SIGKDDInternational Conference onKnowledge DiscoveryandData Mining,August2006.
+[47] E.A. Lee, Cyber physical systems: Design challenges, in: 11th IEEE International Symposium on Object
+OrientedReal-Time Distributed Computing, 5–7May2008, pp.363–369.
+[48] A. Langville, C. Meyer, Google’s PageRank and Beyond: The Science of Search Engine Rankings,
+PrincetonUniversity Press, Princeton, NJ,2006.
+[49] J. Leskovec, K. Langt, A. Dagupta, M. Mahoney, Statistical properties of community structure in large
+socialandinformation networks, in: InternationalWorld WideWeb Conference,(WWW), 2008.
+[50] H.Li,Performanceevaluation ingridcomputing: A modeling andprediction perspective,in:Seventh IEEE
+InternationalSymposiumonClusterComputingandtheGrid(CCGrid2007),May2007,pp.869–874.
+[51] Z.Y. Li, G. Xie, K. Hwang, Z.C. Li, Proximity-Aware overlay network for fast and churn resilient data
+dissemination, in:IEEETransactions onParallel andDistributed Systems,Accepted to appear2011.
+
+
+===== page 640 =====
+References 617
+[52] D. Linthicum, Cloud Computing and SOA Convergence in Your Enterprise: A Step-by-Step Guide,
+Addison WesleyProfessional, 2009.
+[53] B.A. Lloyd, Professional networking on the Internet, in: Pulp and Paper Industry Technical Conference,
+Birmingham, AL,2009, pp.62–66.
+[54] X. Lou, K. Hwang, Collusive Piracy Prevention in P2P Content Delivery Networks, IEEE Trans. Compu-
+ters 58(July) (2009)970–983.
+[55] X. Lou, K. Hwang, Y. Hu, Accountable file indexing against poisoning DDoS attacks in P2P networks,
+in: IEEEGlobecom, Honolulu, 3 November 2009.
+[56] Magellan: A cloudfor science atArgonne. http://magellan.alcf.anl.gov/,(accessed 15.11.10).
+[57] L. Mei, W. Chan, T. Tse, A tale of clouds: Paradigm comparisons and some thoughts on research issues,
+in: IEEEAsia-Pacific ServicesComputing Conference, December 2008.
+[58] A. Mislove, M. Marcon, K.P. Gummadi, P. Druschel, B. Bhattacharjee, Measurement and analysis of
+onlinesocialnetworks, in:The7thACMSIGCOMMConference onInternetMeasurement,October2007.
+[59] J. Napper, P. Bientinesi, Can cloud computing reach the top500? in: Proceedings of the Combined Work-
+shops on Unconventional High Performance Computing Workshop Plus Memory Access Workshop,
+ACM, Ischia,Italy, 2009, pp.17–20.
+[60] NimbusCloud Computing.http://workspace.globus.org/,2010.
+[61] W. Norman, M. Paton, T. de Aragao, et al., Optimizing utility in cloud computing through autonomic
+workload execution, in:IEEEComputer SocietyTechnical CommitteeonData Engineering, 2009.
+[62] D. Nurmi, R. Wolski, C. Grzegorczyk, et al., Eucalyptus: A technical report on an elastic utility comput-
+ing architecture linking yourprograms touseful systems, UCSB, Santa Barbara,Technical Report, 2008.
+[63] C. Olston, B. Reed, B.U. Srivastava, et al., Pig Latin: A not-so-foreign language for data processing,
+in: Proceedings of the 2008 ACM SIGMOD Int’l Conf. on Management of Data, Vancouver, 9–12
+June 2008.
+[64] Open Cirrus, Welcome to Open Cirrus, the HP/Intel/Yahoo! Open Cloud Computing Research Testbed.
+https://opencirrus.org/,(accessed20.11.10).
+[65] M. Palankar, A. Onibokun, A. Iamnitchi, M. Ripeanu, Amazon S3 for science grids: A viable solution?
+Computer ScienceandEngineering, University ofSouthFlorida, Technical Report, 2007.
+[66] A. Passant, T. Hastrup, U. Bojars, J. Breslin, Microblogging: A semantic web and distributed approach,
+in: 4thWorkshop onScriptingfor the Semantic Webin conjunction with ESWC2008.
+[67] J.Qiu,T.Gunarathne,J.Ekanayake,etal.,Hybridcloudandclustercomputingparadigmsforlifescience
+applications,in:11thAnnualBioinformaticsOpenSourceConference(BOSC2010),Boston,9–10July2010.
+[68] J. Qiu, T. Ekanayake, T. Gunarathne, et al., Data Intensive Computing for Bioinformatics. http://grids.ucs
+.indiana.edu/ptliupages/publications/DataIntensiveComputing_BookChapter.pdf,29December 2009.
+[69] D. Reed, Clouds, clusters and ManyCore: The revolution ahead, in: IEEE International Conference on
+Cluster Computing, 29September–1October 2008.
+[70] J. Rittinghouse, J. Ransome, Cloud Computing: Implementation, Management and Security, CRC Pub-
+lisher, 2010.
+[71] B. Rochwerger, D. Breitgand, E. Levy, et al., The Reservoir Model and Architecture for Open Federated
+CloudComputing, IBMSyst. J.(2008).
+[72] V. Sanhu, The CERN Virtual Machine and Cloud Computing, B.S. Thesis at the Dept. of Physics,
+University ofVictoria, Canada, 29January 2010.
+[73] G. Santucci, The Internet of Things: Between the Revolution of the Internet and the Metamorphosis of
+Objects. http://ec.europa.eu/information_society/policy/rfid/documents/iotrevolution.pdf,2010.
+[74] M. Satyanarayanan, V. Bahl, R. Caceres, N. Davies, The case for VM-based cloudlets in mobile comput-
+ing, IEEEPervasiveComput. 8 (4) (2009)14–23.
+[75] J. Schopf, F. Berman, Performance prediction in production environments, in: 12th International Parallel
+Processing Symposium,Orlando,FL,April 1998, pp.647–653.
+
+
+===== page 641 =====
+618 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+[76] Science Clouds: Informal group of small clouds made available by various institutions on a voluntary
+basis.http://scienceclouds.org/, (accessedNovember 2010).
+[77] H. Song, Exploring Facebook and Twitter Technologies for P2P Social Networking, in: EE 657 Final
+Project Report, University of SouthernCalifornia, May2010.
+[78] H. Sundmaeker, P. Guillemin, P. Friess, S. Woelfflé, Vision and Challenges for Realising the Internet of
+Things,European Union, March2010.
+[79] Venus-C, Virtual Multidisciplinary Environmemnts Using Cloud Infrastructure. www.venus-c.eu/Pages/
+Home.aspx,(accessed November 2010).
+[80] E. Walker, Benchmarking Amazon EC2 for high-performance scientific computing, Login 33 (5) (2008)
+18–23.
+[81] E. Welbourne, L. Battle, G. Cole, et al., Building the Internet of things using RFID: the RFID ecosystem
+experience, IEEEInternet Comput. 13(3) (2009)48–55.
+[82] S. Wasserman, K. Faust, Social Networks Analysis: Methods and Applications, Cambridge University
+Press,Cambridge, 1994.
+[83] D.Watts,SmallWorlds:The Dynamics ofNetworksbetween Orderand Randomness,PrincetonUniversity
+Press,Princeton,2003.
+[84] M. Weng, A Multimedia Social Networking Community for Mobile Devices, Tisch School of The Arts,
+NewYorkUniversity, 2007.
+[85] Wikipedia,Cyber-physical systems. http://en.wikipedia.org/wiki/Cyber-physical_system,2010.
+[86] Wikipedia,Social Network. http://en.wikipedia.org/wiki/Social_network,2010.
+[87] Wikipedia,Facebook. http://en.wikipedia.org/wiki/Facebook,March3, 2011.
+[88] Wikipedia, Mashup (web app hybrid). http://en.wikipedia.org/wiki/Mashup_%28web_application_hybrid%,
+29November 2010.
+[89] Y. Wu, K. Hwang, Y. Yuan, C. Wu, Adaptive workload prediction of grid performance in confidence
+windows,IEEE Trans. Parallel Distrib.Syst.21(July) (2010)925–938.
+[90] Z. Xu, K. Hwang, Early prediction of MPP performance: SP2, T3D, and paragon experiences, J. Parallel
+Comput.22(7) (1996)917–942.
+[91] L.Yan,Y.Zhang,L.T.Yang,H.Ning,TheInternetofThings:FromRFIDtotheNext-GenerationPervasive
+NetworkedSystems,AuerbachPublications,2008.
+[92] B.Yan,G.Huang,SupplychaininformationtransmissionbasedonRFIDandInternetofthings,in:Interna-
+tional Colloquium on Computing, Communication, Control, and Management (CCCM 2009) Vol. 4, 2009,
+pp.166–169.
+[93] M. Yigitbasi, A. Iosup, D. Epema, C-Meter: a framework for performance analysis of computing clouds,
+in:International WorkshoponCloudComputing, May2009.
+[94] B.J. Zhang, Y. Ruan, T.L. Wu, J. Qiu, A. Hughes, G. Fox, Applying twister to scientific applications, in:
+International Conference on Cloud Computing (CloudCom 2010), http://grids.ucs.indiana.edu/ptliupages/
+publications/PID1510523.pdf,2010.
+HOMEWORK PROBLEMS
+Problem 9.1
+Describe the shortcomings of mobile devices and distance clouds for mobile cloud computing.
+Explain how the cloudlets developed at CMU can alleviate these shortcomings to enable mobile
+cloud computing requests submitted from handheld pervasive devices.
+
+
+===== page 642 =====
+Homework Problems 619
+Problem 9.2
+Answer the following two questions on GPSes:
+a. Compare the four satellite positioning systems developed in the United States, Russia, the
+European Union, and China, in terms of their satellite technology, deployment architecture,
+coverage areas, precision, capability, and application areas.
+b. Explain why a GPS receiver needs to use the signals from four satellites to locate a single point
+(a 3D location) on the Earth’s surface.
+Problem 9.3
+What are the differences between active RFID and passive RFID? Comment on their advantages
+and limitations. Do the same for active versus passive GPS receivers.
+Problem 9.4
+Compare Facebook and Twitter in four reported applications and discuss their relative strengths and
+weaknesses in these applications.
+Problem 9.5
+Workload traces on AuverGrid can be described with three workload patterns including sudden
+level change, sudden fluctuation, and gradual level change. What are the three load patterns and
+how would you characterize their potential impact on the performance prediction results?
+Problem 9.6
+The IoT differs from the traditional Internet in many ways. Identify their differences and describe
+their distictions in connecting entities, infrastructure and networking, and application domains.
+Problem 9.7
+Distinguish the following pairs of terminologies:
+a. Open source versus proprietary operating systems
+b. Internet of Things versus cyber-physical systems
+c. Social networks versus professional networks
+Problem 9.8
+Answer the following two questions on wireless sensor networks:
+a. Characterize three generations of wireless sensor networks in terms of their size, weight, power
+supply, deployment, and so on.
+b. Low power operation is desired in using a wireless sensor network (WSN). Plot the desired
+power distribution in using a WSN. You should explain how to minimize power consumption
+by operating the WSN in three modes periodically.
+
+
+===== page 643 =====
+620 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+Problem 9.9
+Explain how to apply the RFID technology in merchandise positioning during transportation and
+counting of the remaining goods in a supermarket.
+Problem 9.10
+Describe the following technology terms, functional modules, and cloud services associated the
+IBM Blue Cloud and RC2 cloud. You may need to get more information from IBM’s web sites or
+the IBM Journal of Research and Development for reported achievements.
+a. IBM WebSphere
+b. Tivoli Service Automation Manager (TSAM)
+c. IBM Research Compute Cloud (RC2)
+d. Tivoli provisioning manager
+e. Linux with Xen
+Problem 9.11
+Conduct research on the possible use of cloud resources for processing data collected in selected IoT
+applications (see Figure 9.19). Propose a solution scheme and the possible cloud resources needed.
+You can narrow down the scope of sensor data collected to control the complexity involved.
+Problem 9.12
+Study the performance metrics for HPC applications (Section 9.2.2) and HTC applications (Section
+9.2.3). Research how to improve their accuracy and effectiveness through analysis of real-life HPC
+and HTC benchmark experiments on data-center clusters or on cloud platforms that you have
+accessed. Suggest new or improved performance metrics that can cover more machine characteris-
+tics and application parameters identified in the benchmark experiments.
+Problem 9.13
+Briefly explain how Facebook and Twitter cope with the security, privacy and copyright violation
+issues in online social networking applications. Common protection techniques and unique solutions
+to each system should be treated, separtely.
+Problem 9.14
+Match the following 20 names or abbreviated terms in the left column with the best-match defini-
+tions or descriptions in the right column.
+Term DescriptiontoBeMappedwiththeTermsontheLeftColumn
+_____MySpace a) Theworld’slargestsocialnetworkintermsofregistereduserstoday
+_____Cloudlet b) Asocialnetworkmainlyusedforvideostripforwardingapplications
+_____Bluetooth c) AnaturalextensionoftheInternetinvolvinghumansintheloopofcontrol
+_____IoT d) Asocialnetworkformicrobloggingandnewsalertapplications
+_____WiMAX e) AradiotaggingtechnologyusedinInternetofThingsconstruction
+
+
+===== page 644 =====
+Homework Problems 621
+—cont’d
+Term DescriptiontoBeMappedwiththeTermsontheLeftColumn
+_____RFID f) Aninfrastructurethatsupportsremotecloudaccessbymobiledevices
+_____ZigBee g) AprivatecloudbuiltbyIBMforinternaluseinR&Dapplications
+_____GPS h) AnInternetextensionforinterconnectingallobjects,people,animals,andproducts
+_____Facebook i) AnInternetaccesstechnologyusedmainlyforitsspeedandflexibility
+_____YouTube j) Themostscalablewirelesssensornetwork
+_____Twitter k) AfixedwirelesstechnologyforbroadbandInternetaccess
+_____Nebula l) Asatellitetechnologyforlocation-sensitiveapplications
+_____CPS m) Awirelesstechnologyusedtoreplacecablesinshort-rangeapplications
+_____RC2 n) OneofthemostfrequentlyusedSaaSapplicationsinthebusinessworld
+_____LinkedIn o) AsocialnetworkmainlyusedinprofessionalnetworkingovertheInternet
+_____WiFi p) Asocialnetworkwebsitespecializedincustomizedsocialservices
+_____CRM q) Alargeprivatecloudusedinitiallyforaerospaceandweatherforecastingapplications
+_____Cloudlet r) ApubliccloudusedinIaaSapplicationsunderapay-as-you-gobillingsystem
+Problem 9.15
+Circle only one answer in each of the following multiple-choice questions:
+1. Which one of the following social network properties is correctly stated?
+a. The structure holes can be eliminated by filling one or more links to other nodes.
+b. The local bridge consists of only one link, like a bridge.
+c. The centrality has nothing to do with the node degree.
+2. Which design choice was NOT adopted in the Kimberley cloudlet prototype at CMU?
+a. The use of an imported virtual machine (VM) from a mobile device.
+b. A base VM is deployed in the cloudlet host machine.
+c. An imported VM, once deployed in the cloudlet, cannot be removed.
+3. Which of the following descriptions of the Internet of Things is correctly stated?
+a. The IoT does not apply GPS technology in supply chain management.
+b. A smart grid does not explore solar energy or wind power.
+c. ZigBee networks are more scalable than WiFi and Bluetooth networks.
+4. Which of the following assessments on today’s Facebook applications is correctly stated?
+a. The most popular use of Facebook today is to enhance communication.
+b. Gift sending and dating services are not supported by Facebook.
+c. Personal profiles of Twitter users are better supported than those for Facebook users.
+Problem 9.16
+Conduct a Google search for technical information on the following two large-scale private clouds.
+Describe what you have found out from reliable sources of information. Try to reveal the cloud
+platform architecture and its infrastructure bases and scope of major applications.
+a. The private cloud under development by NASA in the United States
+b. The private cloud under development by CERN in Europe
+
+
+===== page 645 =====
+622 CHAPTER 9 Ubiquitous Clouds and the Internet of Things
+Problem 9.17
+Briefly describe the following technology terms, functional modules, and cloud services associated
+with the SGI Cyclone cloud engine:
+a. Scale-up, scale-out, and hybrid management of cloud servers
+b. SGI Altix servers and ICE clusters
+c. Reported Cyclone HPC applications
+Problem 9.18
+This problem is related to Example 9.13. Prove that the identification of the attack accounts (sub-
+graph H) and the tracing of the targeted users are solvable mathematically.
+
+
+===== page 646 =====
+Index
+Pagenumbersinitalicsindicatefiguresandtables
+@Swineburne,30 Amber,321
+2128IPaddresses,13 Amdahl’slaw,47
+3Dprinting,11 AMGA(ARDAMetadataforGridApplications),309
+3Dtorusinterconnect,117–118,118 Amoeba,41,41
+80hinterrupt,147 AMQP.SeeAdvancedMessageQueuingProtocol(AMQP)
+Anabas,293
+A
+Analyticalultracentrifuge(AUC),295
+ABI.SeeApplicationBinaryInterface(ABI) AndrewFileSystem(AFS),90
+Accesscontrol,465 Aneka,203,393–398
+Accessrouters(ARs),195 advantagesof,394
+Accountingmodule,440 applicationofMayarenderingcasestudy,397–398
+ACOM,513 architectureandcomponents,394,396–398
+Activestate,160 capabilities,395
+ActiveMQ,291,292 virtualappliances,398
+Activeness,99 Anomalydetection,253–255
+Active-takeoverclusters,99 Anonymity,481,488
+Adhocconnectivity,481 Apache,529
+Adaptation,inprogrammingmodel,8 ApacheMaven,303
+Adaptivehybridmodel(AH-Model),forworkload APIs(applicationprogramminginterfaces),419
+prediction,460 grid,444
+Adaptiveworkloadprediction,458–459,458 UDDI,306
+AdvancedMessageQueuingProtocol(AMQP),291 Appliances,384
+AdvancedQueuing,308 virtual,23,398
+Agility,558 ApplicationBinaryInterface(ABI),138
+AIX/OS,72 Applicationisolation,133
+AkamaiCDN,529 Applicationlayer,52,52–53,88,419
+ALICE,554–555 incloudarchitecture,218,218
+AliEn,554 inmultitierarchitecture,282,283
+AlliancetoSaveEnergy(ASE),51 Applicationlevel
+AltixICE,550–551 checkpointingat,101–102
+Amazon,228,246,336,548 virtualization,132
+AmazonDynamo.SeeDynamo Applicationsandboxing,133
+AmazonEBS.SeeElasticBlockStore(EBS) Applicationservices,396
+AmazonEC2.SeeElasticComputeCloud(EC2) Applicationstreaming,133
+AmazonElasticMapReduce,203 Applicationtrafficsupport,208–209
+AmazonMachineImages(AMIs),380,380 Applications
+AmazonS3(SimpleStorageService),242,275–276, asynchronous,369
+382–383,383 classificationof,369
+AmazonSimpleQueue,292 data-intensive,546
+AmazonVPC,201–203,202 flexibilityindeploymentof,8
+AmazonWebServices(AWS),193,231–233,548 HPC,9
+infrastructure,232 HTC,9
+mashupon,556–557 ofIoT,590–597
+programmingon,379–387 looselysynchronous,369,371
+serviceofferings,228,229,233 scalability,45
+virtualizationsupportin,224 socialnetworking,603–608
+virtualizedresourcesin,223 third-party,244
+623
+
+
+===== page 647 =====
+624 Index
+ARCHinterconnect,114,115 BirdBath,289–288
+ASE.SeeAlliancetoSaveEnergy(ASE) Bitcoin,497
+Astrolabe,313 Bit-levelparallelism(BL),9
+Asynchronousapplications,369 BitTorrent,497,525–528,526–527,531,531
+AtomPublishingProtocol(APP),306 BLASTprogram,321
+Atonomiccomputing,26 Blobs,340,385
+Attributeauthorities,465 Blobstore,372
+Authentication,89,464–465 Blockblobs,385
+inGSI,468 Blockreports,356
+improper,50 BLP.SeeBit-levelparallelism(BL)
+mutual,468,469,469 BlueCloud,193,228,238,549–550,549
+Authorization BlueGene/L,78–79
+foraccesscontrol,465 BOINC(BerkeleyOpenInfrastructureforNetwork
+inGSI,466 Computing),87,417,420,429,444
+methods,464–465 Bootstrapagent,534
+models,465,465 Borderrouters(BRs),195
+Authorizationagentmodel,465,465 Bottlenecks,226,242
+Automation,datacenter,169–179 sequential,47
+Autonomoussystem(AS),487 BPEL.SeeBusinessProcessExecutionLanguage(BPEL)
+Auto-regression(AR)method,459,461 BPMN.SeeBusinessProcessModelingNotation(BPMN)
+Auto-scaling,380 BPSS.SeeBusinessProcessSpecificationSchema(BPSS)
+AuverGrid,458,461 Bridge,602
+Availability,49,70,95,98,176,570 Broadbandoverpowerlinetechnology,11
+cloudsand,339 Brokeringsystems,379
+ofcomputersystemtypes,96 Bufferoverflows,251
+costanalysisand,101 Bulletinboardservices(BBS),598
+failurerateand,95–96 Bush,Vannevar,547
+levelsof,99 Businessgrids,417
+node,108 Businesslogiclayer,283
+Availabilityclusters,77 BusinessProcessExecutionLanguage(BPEL),317,320
+AWS.SeeAmazonWebServices(AWS) BusinessProcessExecutionLanguageforWebServices
+Azure.SeeMicrosoftAzure (BPEL4WS),279
+AzureTable,336,341,386–387 BusinessProcessModelingNotation(BPMN),317
+BusinessProcessSpecificationSchema(BPSS),317
+B
+BusinessTransactionProtocol(BTP),317
+Backupcomponents,98 BusinessEntity,305
+Backwardrecovery,100 BusinessService,305
+Baremetal,575–576 Buyya,Rajkumar,6
+Bare-metalVM,23
+C
+Batchjobs,107
+BCubenetwork,212,212,214 Caching,372,425
+Behavior-sensitiveinstructions,147 Calendarscheduling,104
+BEinGRID,429 CAM-Chord,513
+Beowulfclusters,71 CAN(ContentAddressableNetwork),498,500–501,500,
+SeealsoComputeclusters 504,505
+BerkeleyNOW,66 cceHUB.org,297
+Betweenness,601 CDC6400,4
+BigTable,42,313,341,376–379,377 CDNs.SeeContentdeliverynetworks(CDNs)
+Binarytranslation,withfullvirtualization,141–143,142 Cell/B.E.processors,119
+BindingTemplate,305 CellularDisco,165,166
+Bioinformatics,321–323 Centralizedclusters,68
+Biometrics,577 Centralizedcomputing,6–7,193
+
+
+===== page 648 =====
+Index 625
+Centralizednetworks,602 QoSand,220–221
+Centralizedreputationsystems,258 resourceprovisioningandplatformdevelopment,
+Centralizedsystems,7 237–243
+CERN.SeeEuropeanCouncilforNuclearResearch(CERN) virtualizationsupportand,221–225,222
+Certificateauthorities(CAs),424,464,468–469 Cloudcomputing,5,7,26,35,417
+CGSP.SeeChinaGridSupportPlatform(CGSP) SeealsoClouds
+Chatter,552 advantagesof,28,36
+Checkpointfile,101 benefitsof,193
+Checkpointinterval,102,102 challenges,135
+Checkpointing,101–104 conceptof,192
+choosingoptimalinterval,102 costmodel,197–198,198
+coordinatedversusindependent,104 datacentervirtualizationfor,25–26
+forked,103 datafeaturesanddatabases,340–341
+incremental,102 definitionof,34
+kernel,library,andapplicationlevels,101–102 deploymentmodes,36
+overheads,102 designobjectives,197–198
+parallelprograms,103–104,103 ecosystems,199–200
+user-directed,103 emergenceof,135
+Checkpoints,97 emergingsoftwareenvironments,387–398
+ChemicalInformaticsGrid,288–289 extendedservices,235–237,235
+ChemistryDevelopmentKit(CDK),288–289 gridsand,456
+ChinaEducationandResearchNetwork(CERNET),434 growthof,6
+ChinaGrid,31,428,434 IaaSmodel,200–203
+ChinaGridSuperVision(CGSV),438,438 inter-cloudresourcemanagement,234–249
+ChinaGridSupportPlatform(CGSP),434–435,444,452–455 marketplaces,215
+components,453 middlewareapplications,291–294
+functionalbuildingblocks,454 mobile,558–561
+jobexecutionflow,453–455 overInternet,34–36
+ChinaGridSupportingPlatform(CGSP),440 PaaSmodel,203–206,203
+Chipmultiprocessors(CMPs),9,170 paradigm,196
+Chord,497,498–499,499–500,503,504,505–507,524 performanceof,561–576
+Chrootcommand,137 platforms,27
+Chubby,378,379 programmingandruntimesupport,341–343
+Churnresilience,489–490,512–514 qualityofservicein,572–574
+Churn-ResilientProtocol(CRP),512,513 SaaSmodel,205–206
+CICCservices,288–289 servicemodels,35,36,192–206,228
+Clientmachines,5 softwareenvironmentsfor,36–44
+Clientnodes,109 softwarestackfor,236–237
+Client/serverarchitecture,32,482,482 systemmodelsfor,27–36
+Clockrate,21 technology,11
+Closeness,602 trendsin,546–547
+Cloudarchitecture,215–227 ubiquitouscomputingand,546–561
+AmazonWebServices(AWS),231–233 vs.utilitycomputing,10–11
+challengesof,225–227 CloudExchange(CEx),248
+design,215–217 Cloudmanagementtools,200
+disasterrecoveryand,223,224–225 Cloudmanagers,199
+generic,216–217,217 Cloudmashups,206,555–558
+GoogleAppEngine(GAE),229–231 advantagesof,558
+hardwarevirtualizationand,221–223 conceptof,556–557,556
+layereddevelopmentof,218–221,218 contentfor,306
+market-oriented,219–220,220 definitionof,306
+MicrosoftAzure,233–234 experimentalresults,557–558,557
+
+
+===== page 649 =====
+626 Index
+Cloudmashups(Cont.) ClueWebdatasets,355,355
+lessonlearnedabout,558 Clustercomputeinstances,382,382
+RESTfulWebservicesand,276 Clusterjobs
+Cloudofclouds,40 managementsystems,107–109
+Cloudofgrids,40 schedulingmethods,104–106,105
+CloudOS,forvirtualizeddatacenters,172–176 types,107
+Cloudprogrammingmodels,343 Clusteroperatingsystem,29,76
+Cloudresources Clusteringcoefficient,602
+globalexchangeof,246–249 Cluster-on-Demand(COD),165,166–167,166–167
+inter-cloudmanagementof,234–249,248 Clusters,5,27,27–29,546
+provisioningof,237–243 active-takeover,99
+Cloudsecurity,249–260,339,561 architecture,28,28,75–87
+challenges,251 availability,77
+copyrightprotection,252 compute,71
+dataandsoftwareprotectiontechniques,255–257 dedicatedvs.enterprise,69
+datacoloring,256–257,256 definitionof,66
+datalock-inproblem,257 designissues,29,30,69–71
+defensestrategies,249–253,250–251 designobjectives,68–69
+distributedintrusion/anomalydetection,253 designprinciples,87–104
+firewalls,252,253 developmenttrends,66–68
+gateways,252,253 failover,99
+privacyprotection,252–253,255–256 familyclassification,71
+virtualizationand,252 fault-tolerance,99–101
+watermarking,256–257,256 GPU,83–87
+Cloudserviceproviders,546–552,548 gridsof,369
+Cloudservices,235–237 HA,71
+provisioningof,237–238 hardware,software,andmiddlewaresupport,29,83
+Cloudwatermarking,256,256–257 hotstandby,99
+Cloudera,343 integrated,159
+CloudFront,226,232 jobandresourcemanagement,104–112
+Cloudlets,558–561 Linux,41–42
+vs.clouds,559,560 loadsharingfacility(LSF)for,109–110
+conceptof,559,559 load-balancing,71
+fastVMsynthesisin,560 managementof,338
+Clouds,7,27,34–36,35,416 formassiveparallelism,66–75
+benchmarking,574–576 milestonesystems,67–68
+capabilities,336,337 monitoring,237
+vs.cloudlets,559,560 networksof,7
+datatransportand,337–339 organizationandresourcesharing,76–77
+data-intensive,369 physical,155
+developmenttrends,196 physicalvs.virtual,156–159,156
+enablingtechnologiesfor,215–216,216 resourcesharing,78
+featuresof,336–343,338–339 server,194
+versusgrids,40 shared-memory,77
+virtualgrids,419 single-systemimage,29,87–95
+hybrid,194,194,199,218 systeminterconnects,80–82,80
+performance,568–572 virtual.SeeVirtualclusters
+private,193–194,194,196,199–200,552–555 workloadbehavior,107
+public,193,194,199 CMPs.SeeChipmultiprocessors(CMPs)
+scalability,226 CNK/SLES9,73
+scienceandresearch,562–566 CNL/OS,73
+CloudWatch,232,380 Coarse-grainmultithreadedprocessor,16
+
+
+===== page 650 =====
+Index 627
+Codeinterpretation,132 Consumer-generatedmedia,11
+Cohesion,602 Containers,135,450–452
+Collaboration,483 ContentAddressableNetwork(CAN),498,500–501,
+Collaborativeplatform,33 500,504,505
+Collectivelayer,419 ContentAddressableStorage(CAS),171
+Colluders,533,535–536 Contentdeliveryapplications,5,529–532
+Collusivepiracy,490,533,535–538 Contentdeliverynetworks(CDNs),529–532
+Combinerfunction,349 deliverymethods,532
+Commoditytechnologies,8 filechunkingandhashingschemesin,531,531
+Communication,13 generationsof,530
+amongworkers,344 global,529–530,530
+internode,70 Contentdistribution,483
+intracluster,69 Contentpoisoning,533,535,535
+P2P,480–492 Content-basedsystems,307
+CommunicationasaService(CaaS),235 Continuousavailability(CA),571
+Communities,onsocialnetworks,604–605 Control,13,68
+Communityengine,611 singlepointof,88,92
+Compactclusters,68 Control-sensitiveinstructions,147
+Componentgrids,314 Convergence,oftechnologies,26
+Computation,13 Convergenceoverhead,520–521,521
+Computationpartitioning,344,349 CoopNet,497
+Computationtime,437 Coordinatedcheckpointing,104
+ComputationalChemistryGrid(CCG),295 CoordinatedTeraGridSoftwareandServices(CTSS),431
+Computationalfluiddynamics(CFD),550 Copyrightprotection,50,252–253,531,533–534,534
+Computationalgrids,7,27,30–31,71,417 Copyrightviolations,33
+Computation-intensiveapplications,425 CoralContentDistributionNetwork,497
+Computeclusters,71 CORBA,37–38,321
+Computenodes,77,88 CORBATradingService,38
+Computeresources,provisioningof,237–238 Coreswitches,210
+Computer,definitionof,6 Costeffectiveness,571–572
+Computerclusters.SeeClusters CouchDB,341
+Computerroomairconditioning(CRAC),25,208 COW(CopyonWrite)format,158
+ComputerScienceandTelecommunicationBoard CPS.SeeCyber-physicalsystems(CPS)
+(CSTB),26 CPUscavenging,419–422
+Computertechnology,platformevolution,4 CPUspeed,8,14,45
+Computingparadigms CPUvirtualization,147–148
+distinctionsamong,6–7 CPUs
+new,6 advancesin,14,14–15
+Computingsystems,classificationof,27,27 architecture,16
+Concurrency,8 dynamicallocationof,170
+Concurrentcomputing,7 multicoreCPUs,14–16
+Concurrentprogramming,7 powerefficiency,19–20
+Condor,312,320,444 schematic,15
+Condor-G,288–289,294,442,444,444 Crayinterconnect,81
+Confidencewindow,458 CrayXT5Jaguar,78,116–119
+Confidentiality,49–50 3Dtorusinterconnect,117–118,118
+Connectivitylayer,417–418 featuresof,116
+Consistency,528 hardwarepackaging,118–119
+Consistentcheckpointing,104 interconnectrouterdesign,117
+Consistenthashing,497 Cronservice,373
+Consistentsnapshots,104 CRP.SeeChurn-ResilientProtocol(CRP)
+Consumerrelationshipmanagement(CRM),35 CRUD(create,read,update,delete)operations,274,304
+
+
+===== page 651 =====
+628 Index
+Cryptography,256 Datagrids,7,27,31,31
+CSCW(computer-supportedcooperativework),492 SeealsoComputationalgrids
+CUDA(ComputeUnifiedDeviceArchitecture) Dataintegrity,49–51,255–256
+parallelprogramming,86 Datalayer,282,283
+programminginterfaces,86–87 Datalocality,487
+usagetrends,87 Datalock-inproblem,225,257
+CUDAC,86 Datamanagement
+CUDAcores,18,19 services,284
+CUDAmodel,17 usingGT4library,451–452
+Cumulus,389 DataNucleusAccess,370
+Customerrelationshipmanagement(CRM),236 Dataparallelism,319
+CuteFTP,529 Datapartitioning,344,348
+Cyber-physicalsystems(CPS),6,13,590,595–597 Dataprivacy,225–226
+Cyclicgraphs,320 Dataprotectioninfrastructure,50–51
+Cyclone,550,551 Datareplication,425–426
+Dataservices,SQLAzure,386–387
+D
+Datasources,567
+δflow,352 Datatransfertime,436
+D4Science,429 Datatransfers,parallelvs.striped,427
+DAG.SeeDirectedacrylicgraph(DAG) Datatransport,337–339
+Dally,Bill,19 Databases,304–314
+Data monitoring,313
+managementof,338 NOSQLnonrelational,341,370
+structuredandsemistructured,376 publish-subscribemodeland,307–308
+inUDDIregistry,305 relational,340–341
+Dataaccessmodels,426,427 DataGrid,417,428,431–434
+DataasaService(DaaS),235 Data-intensiveapplications,546
+Datacenters,53 Data-intensiveclouds,369
+automation,26,456 Data-intensivegridservicemodels,425–427
+cloudOSforvirtualized,172–176 Data-intensivescalablecomputing(DISC),561,
+constructionrequirements,206–207 566–567,568
+coolingsystems,207–208,208 Data-levelparallelism(DLP),9
+designof,206–208 Datingservices,onsocialnetworks,607
+green,224 DCE,41,41
+growthandcostbreakdown,25,25 DDoS.SeeDistributeddenialofservice(DDoS)
+interconnectionnetworks,208–211,214 Debugging,226
+low-costdesignphilosophy,25–26 DECPDP11,4
+managementissues,213–215 Decentralization,481
+modular,211–212,211 Decentralizedclusters,68
+networkingstructure,194–196,195 Decentralizednetworks,602
+reputation-guidedprotectionof,257–260 Dedicatedclusters,69
+serverconsolidationin,169–170 Dedicatedmode,104
+server-centricdesign,210,212–213 Degradation,209
+switch-centricdesign,210–211 Degreeofparallelism(DoP),9
+trustmanagementofvirtualized,176–179 Delegation,468–469
+virtualstoragemanagement,171–172 trust,469–470,470
+virtualization,forcloudcomputing,25–26 Delegationservice,448
+virtualizationforautomationof,169–179 DELETE,274
+warehouse-scale,206–208,207 Demand-drivenresourceprovisioning,239,240
+Datacoloring,256–257,256 Denialofservice(DoS),49,251,489
+Datadeluge,26 DepartmentofDefense(DoD),287–288
+Datadistribution,349 Dependability,8,45
+
+
+===== page 652 =====
+Index 629
+Deployment Distributedsystems,7
+dynamic,ofvirtualclusters,165–169 familiesof,7–8
+fast,158 operationallayers,52
+ofVMs,158 performanceof,45,561–576
+DevelopmentalTherapeuticsProgram(DTP),288 scalabilityanalysis,45–48
+Deviceemulation,150,151 softwareenvironmentsfor,36–44
+Digitalsignatures,468 systemavailability,48,49
+Digitalwatermarking,531 technologiesfor,13–26
+DirectCompute,86 trendstoward,40–42
+Directedacrylicgraph(DAG),359,369 workflows,314–322
+Directories Distributedtransactionprocessing,10
+global,90 Distributedvirtualenvironment(DVE),241
+homedirectory,90 DLP.SeeData-levelparallelism(DLP)
+system,90 Domainnamesystem(DNS),89,89,384
+Disasterrecovery,223,224–225 DoS.SeeDenialofservice(DoS)
+DISC.SeeData-intensivescalablecomputing(DISC) Double-precision(DP)calculations,84
+DiscoverMiddleware,321 Downtime,96,98
+Discoveryservices,304 DPFS,340
+Disktechnology,20,21 DRAMchips,20
+Distributedcomputing,6 Drives,340
+SeealsoParallelanddistributedprogramming Dryad,312–313,342,342,353,359–365,360
+vs.centralizedcomputing,193 DryadLINQ,353,354,361–365,366
+changesin,546 Dual-coreprocessor,15,16
+computerutilitiesin,10 DVE.SeeDistributedvirtualenvironment(DVE)
+discovery,registries,metadata,anddatabases, DVEmanager,241
+304–314 Dynamicbinarytranslation,132
+energyefficiencyin,51–54 Dynamicdeployment,ofvirtualclusters,165–169
+onP2Pnetwork,483 Dynamicheterogeneity,153
+systemclassification,27 Dynamicmode,105
+systemmodelsfor,27–36 Dynamicpowermanagement(DPM),53
+Distributeddatamanagementsystem,312–313 Dynamicpriority,104
+Distributeddenialofservice(DDoS),225,254–255,254, Dynamicreplication,425–426
+489,522–523 Dynamicresourcedeployment,239–241
+Distributedfilesharing,5,33,33,493–496 Dynamicvoltage-frequencyscaling(DVFS),53–54,54
+Distributedfilesystem(DFS),242,390 Dynamo,313
+Distributedhashtables(DHTs),259,480,496–497,496–497,
+519–520 E
+Distributedintrusiondetectionsystems(DIDSes),252 EarthSimulator,51
+Distributedoperatingsystems,40–42 EBS.SeeElasticBlockStore(EBS)
+Amoeba,41,41 EbXML(ElectronicBusinessusingeXtensibleMarkup
+comparisonof,41 Language),38
+DCE,41,41 EC2.SeeElasticComputeCloud(EC2)
+MOSIX2,41–42,41 EC2ComputeUnits(ECUs),382
+DistributedP2Pcomputing,33,33 Ecademy.com,606
+Distributedpowermanagement(DPM),51,54 EchelonGPUcluster,84,85–86
+Distributedprogram,7 Eclipseplug-in,370
+Distributedprogramming,7 EDG.SeeEuropeanDataGrid(EDG)
+models,42–44,43 Educationalapplications,ofsocialnetworks,605,605
+DistributedRAID,93,94 Efficiency,297
+Distributedrankingmodule,520 Efficiency,8,569–570
+Distributedreputationsystems,258 EGEE(EnablingGridsforE-SciencE),30,428–429
+Distributedstorage,226 EGEENetworkOperationsCenter(ENOC),429
+
+
+===== page 653 =====
+630 Index
+EigenTrust,517,518,521 Expendedpagetable(EPT),149–150
+ElasticBlockStore(EBS),231,242,340,383–384 Exposedclusters,69
+ElasticComputeCloud(EC2),156,202,229,238,252,380–384
+benchmarking,574–576 F
+executionenvironment,381 Fabriclayer,418
+instancetypesavailableon,381 Fabricservices,396
+performanceanalysis,574 Facebook,480,597,599,608–611,609–610
+performanceresults,240 Factors,423
+programmingon,380–382 Failback,83,99
+useof,inAWSplatform,381–382 Failbackfeature,99
+VMmanager,244 Failover,83
+ElasticComputingPlatform,548 Failoverclusters,99
+Elasticloadbalancing,203,380 Failureanalysis,511
+ElasticMapReduce,379,575 Failuredetection,83,424
+EliLilyCompany,205 Failurediagnosis,99–100
+E-mailsystems,242 Failurenotification,99
+E-mailtraffic,480 Failurerate,95–96
+Embeddedsystems,595 Failurerecovery,99–100,509–511
+EMC,177 Failures
+EMule,531,531,538 churnresilienceagainst,512–513
+Enablingtechnologies,forInternetofThings,576–590,578 costanalysis,100–101
+Enclosedclusters,69 node,510
+Encryption,467 partialvs.total,97
+Endpointreference(EPR),287 plannedvs.unplanned,96
+Energyconsumption transientvs.permanent,96–97
+reducing,52 Fastdeployment,158
+ofunusedservers,51 Fat-treeinterconnectiontopology,210,210
+Energyefficiency,51–54 Faulttolerance,37,48,51,70–71,209,356,481,509–511
+Enomaly,548 Fault-resilientsystems,98
+Enterprisebus,289–290,290 Fault-tolerantclusters,99–101
+Enterpriseclusters,69 Federationaccessmodel,426,427
+Enterprisemultitierarchitecture,282,282–283 Fermi(GF110)chip,86
+Enterpriseresourcesplanning(ERP),35 FermiGPU,17,18,19,87
+Entitycertificates,466 Filehierarchy,single,90
+Entitygroups,372 Filesharing,483,483,490,523–538
+Environmentalmonitoring,293 distributed,493–496
+Erdos-Renyirandomgraph,493 Filesystemmigration,162–163
+eSpeak,417 Files
+ESXServer,144,145 checkpoint,101
+Ethernet,22,80,80–81 global,90
+Eucalyptus,173–174,173–174,371,387–389 local,90
+EuropeanCouncilforNuclearResearch(CERN),196,552–555 remote,90
+EuropeanDataGrid(EDG),426,431–434 visibilityof,91
+architecture,432–433 File-sharingapplications
+datadistributionin,433–434,433 BitTorrent,525–528
+EuropeanGridInfrastructure,428 copyrightprotectionand,533
+EuropeanUnion,428,431–434 replicationandconsistencyin,528
+Eventscheduling,104 searchalgorithms,524–528
+Event-drivenresourceprovisioning,238–239,240 Filterservices(fs),39
+Exascalesystems,17–20,20,86 Fine-grainmultithreadedprocessor,16
+Executionmanagementservices,284 Fingertables,499–500,506–507
+Executiontime,47 Firewalls,50,252,253,484
+
+
+===== page 654 =====
+Index 631
+Fixedworkload,47 Globalaccessofsecondarystorage,447
+Fixed-workloadspeedup,47 Globaldirectory,90
+Flatclassification,436 Globalfiles,90
+Flexibility,inapplicationdeployment,8 GlobalGridForum(GGF),422
+FlexiScale,202 GlobalInformationGrid(GiG),287
+Floodingalgorithms,524–525 Globalpositioningsystem(GPS),6,11,587–590
+Flooding-baseddeliverymethods,532 operatingprinciplesof,588–589
+FMA(fusedmultiplyandadd)operations,18 passivevs.active,587–588
+Folding@Home,420 real-timevehicletrackingusing,590
+Force.com,193,203,228,229,552 triangulationlocationcalculation,589–590
+Foreignjobs,107,109 workingsof,587
+Forkedcheckpointing,103 worldwidedeploymentstatus,590
+Forwardrecovery,100 Globalreputationaggregation,516–517,520
+Foster,Ian,416 Globalreputationscore,515,518
+Foundationservices,396 Globalsnapshots,103–104
+Four-issuesuperscalarprocessor,16 GlobalHub.org,297,300
+Fread,91 GlobusContainer,451
+Freenet,505–506,506 GlobusProject,416
+Free-ridingproblem,488 GlobusSecurityInfrastructure(GSI),444,447,447,451,
+Fulldataflow,352 466–470
+Fullvirtualization,141–143 authenticationanddelegation,468–469
+Functionalparallelism,319 functionallayers,466–467,466
+FutureGrid,340,343,429,562–563,562,564 message-levelsecurity,467
+Fuzzytheory,456,456 transport-levelsecurity,467
+Fuzzytrustmodel,463 GlobusToolkit,44,44,280,294,422,433,435,439,
+FVM(Feather-WeightVirtualMachines),137 443,444
+Fwrite,91 architecture,446–449
+client-Globusinteractions,448–449,449
+G datamanagementusing,451–452
+GAE.SeeGoogleAppEngine(GAE) GT4library,446–448,447
+Gage,John,6 jobworkflow,448,448
+Gametheory,456–457,456 GLUE,444
+Gangscheduling,106 Gmail,205,231
+Gang-schedulingskew,106 Gnutella,482,482,493–496
+Gannon,Dennis,206 complexityproperties,504
+GASSmodule,447,447 embeddingChordontopof,503
+Gatewaynodes,194 filechunkingandhashingschemesin,531,531
+Gateways,252,253 floodingscheme,495,501
+GE,14 searchperformance,525
+GeForce256,17–20 GOATproject,293
+GeForce8800,17 GoCast,513
+General-purposecomputingonGPUs(GPGPU),17,85 GoFront,397–398
+Generativetopographicmapping(GTM),574 GoGrid,202,205,548
+Geographiclayout,508 Google,228,548
+GET,274 GoogleAccounts,373
+Getoperation,497 GoogleAppEngine(GAE),193,203,204–205,229–231,
+GetRight,529 336,548
+GFACtool,301–302 applications,231
+GFS.SeeGoogleFileSystem(GFS) architecture,229–230,230
+GigabitEthernet,22,25,81 cloudinfrastructure,229
+Gigabitspersecond(Gbps),14 functionalmodules,230–231
+Gilder’slaw,8 mashupon,556–557
+
+
+===== page 655 =====
+632 Index
+GoogleAppEngine(GAE)(Cont.) Gridcomputing,26
+platform,204 applicationtrends,455–470
+programmingsupport,370–379,372 economymodelfor,440,441
+serviceofferings,228 goals,416
+virtualizationsupportin,224 infrastructures,29–31,31
+virtualizedresourcesin,223 OpenGridServicesArchitecture(OGSA),44
+GoogleBigTable.SeeBigTable softwareandmiddlewarefor,443–455
+GoogleDataAPI,372 Griddataaccessmodels,426,427
+GoogleDocs,229,231 Gridfamilies,31,417,417
+GoogleEarth,231,242,376 GridInformationServices(GISes)agencies,420
+GoogleFileSystem(GFS),312–313,373–375 GridInfrastructureGroup(GIG),430
+architecture,374 Gridofclouds,40
+datamutationsequencein,374,374 Gridofgrids,314–315
+features,242,242 Gridresourcebrokers,442
+MapReduceand,351 Gridresourcemanagement,435–443
+GoogleMapReduce.SeeMapReduce jobscheduling,435–437
+GoogleSDCSecureDataConnection,372 resourcemanagementsystem(RMS),435
+Googlesearchengine,231 resourcemonitoring,437,437–438
+Googlesearchenginecluster,67 serviceaccountingandeconomymodel,439–440
+architecture,80 usingGRAM,450–451
+crossbarswitch,81 Gridresources,418–419
+GoogleWebToolkit(GWT),370 aggregating,418,420
+GossipTrust,535 allocationof,419,436,439
+Governmentapplications,ofsocialnetworks,606 brokering,440–443,441
+GPS.SeeGlobalpositioningsystem(GPS);Grids GridServiceHandles(GSHs),286,423–424,423
+GPU.SeeGraphicsprocessingunits(GPUs) Gridservicemigration,423–424,424
+GPUclusters,83–87 Gridservicemodels,425–427
+architecture,86 Gridserviceprotocolstack,417–418,418
+capabilities,83 Gridserviceproviders(GSPs),31
+components,85 GridServiceReference(GSF),286,423–424,423
+CUDAparallelprogramming,86 Gridservices,280,283–287
+design,84–85,84 accountingsystemfor,439–440,439
+GQL,370 monitoringandmeteringservices,439–440
+GRAALProject,166 Gridstandards,44,444
+GRAMmodule,448,450 GridWorkloadsArchive(GWA),458
+GRAMprotocol,445,447 Grid’5000,244–246,428,429–430,458,459,461,
+Graphicsprocessingunits(GPUs),14 563–564
+GPUcomputing,17–20,18 Gridbus,440–443
+many-core,15 GridbusResourceBroker,442
+powerefficiency,19–20 GridChem,295
+programmingmodel,17–19 GridFTP,426,447,449,451
+workingsof,17 Grids,4
+Graphs architecture,416–419
+random,493 business,417
+scale-free,493 vs.clouds,40,419
+small-world,493 ofclusters,369
+Gray,Jim,8,21,26 computational,7,30,31,71,417
+Greatglobalgrid(GGG),417,417 data,7,31,31
+Greencomputing,158 featuresof,336–339
+Greendatacenters,224 historyandservicecategories,416–419
+Greenpages,304 HPC,419
+GridAPIs,444 vs.HPCclusters,417
+
+
+===== page 656 =====
+Index 633
+information(knowledge),417 Hierarchy,virtualization,153–154
+InterGrid,241 Highavailability(HA),48,66,83,95–99
+international,428–430,429 Highavailability(HA)clusters,71
+layeredarchitecturefor,37–38,37 Highavailability(HA)systems,456
+middlewareapplications,291–294 Highlevellanguage(HLL),132
+national,428–430 Highthroughput,6
+P2P,31,417 High-bandwidthinterconnects,80–81,80
+programmingenvironment,338 High-CPUinstances,382
+security,455–470 High-fluxcomputing,6
+selfish,457,457 High-leveldataanalysislanguages
+semantic,309–312,311,417 comparisonof,366
+servicemodelings,416–427 DryadLINQ,361–365
+vs.supercomputers,419–422 PigLatin,365–368
+toolkits,44 Sawzall,365–368
+trustmodelsfor,461–463 High-memoryinstances,381,382
+typesof,417 High-performancecomputingandcommunication(HPCC),
+virtual,419–422 431
+workloadandperformanceprediction,457–461 High-performancecomputing(HPC),4–6,5,8
+GridWay,442 applications,9–10
+GSI.SeeGlobusSecurityInfrastructure(GSI) CycloneCloudfor,550–551
+GT4library,446–449,447,467 MOSIXapplicationsfor,111
+datamanagementusing,451–452 performance,561–576
+monitoringanddiscovery,452,452 resourcerequirements,169
+Guestsystems,157 High-performancevirtualstorage,158–159
+Guest-basedmanager,159 High-throughputcomputing(HTC),4,5,6,8,66,192
+Gustafson’slaw,47–48 applications,9–10
+performance,561–576
+H
+HimalayaCluster,67
+Hadoop,43,43–44,342,343,354,355–359 Histogram
+architecture,357–358,357 inDryadLINQ,362
+Kmeansclusteringfor,353 ofword-countproblem,363–364
+performanceonClueWebdataset,355 Historicalinterval,458,460
+runningajobin,358–359,358 Homedirectory,89–90
+WebVisCounterprogramimplementation,364–365 Homenode,88
+HadoopDistributedFileSystem(HDFS),242,242,355–357 Homogeneity,68–69
+Hardware,clustersand,83 Homogenousdesign,77–79
+Hardwareabstractionlevelvirtualization,132–134 Honeynets,177
+HardwareasaService(HaaS),235 Honeypots,177
+Hardwarelayer,88 Hopper,74–75
+Hardwarevirtualization,26,221–223 Horizontalscalability,570
+Hardware-assistedvirtualization,135–138,148 Hostchanneladapter(HCA),82
+Hbase,341 Hostfailure,89
+HBMmodule,447,447 Hostnode,88
+Healthcareapplications,ofsocialnetworks,606–607 Hostsystems,157
+Healthmonitoring,586,586 Host-basedIDS(HIDS),176
+Heartbeats,99 Host-basedmanager,159
+Heterogeneity,45,68 Host-basedvirtualization,141–143
+dynamic,153 Hotstandbyclusters,99
+inpeerresources,486 HPC.SeeHigh-performancecomputing(HPC)
+Hierarchicalaccessmodel,426,427 HPCgrids,419
+Hierarchicalclassification,436 HTC.SeeHigh-throughputcomputing(HTC)
+Hierarchicallystructuredoverlaynetworks,501–505,501 HTTP,274,278
+
+
+===== page 657 =====
+634 Index
+HUBzero,294,297–301 InfiniBand,22,80,80–81
+architecture,298–299,298 architecture,82,82
+contenttagging,299 interconnect,120
+futuredirections,300–301 Informationconsumption,547
+operationalfeatures,299 Informationgrids,417
+ratingsandcitations,299 Informationleakage,50
+usagemetrics,300 InformationPowerGrid,417
+usersupportarea,299–300 Informationservices,284
+wikisandblogs,300 InfrastructureasaService(IaaS),35,36,49,200–203,201,
+Humanresources(HR),35 224,227,235–236,336,572–574
+Hybridaccessmodel,426,427 RFIDand,576
+Hybridclouds,194,194,199,217 Infrastructurecloudfeatures,338
+Hybridmodel(H-Model),460,460 Infrastructurelayer,ofcloudarchitecture,218,218
+Hybridnodedesign,77–78 Infrastructureservices,284
+Hypecycle,11,12 Initialreputationaggregation,520
+Hypercalls,140,143 INRIAcluster,165,166
+Hypervisors,23,134,140–141 Instantmessaging,483
+Instructionsetarchitecture(ISA)level,130,131,132
+I
+Instruction-levelparallelism(ILP),9,14
+IaaS.SeeInfrastructureasaService(IaaS) Integratedclusters,159
+IBM,228 Integrity,49–51,50
+cloudprojects,547–548 Integrityprotection,467
+RC2Cloud,548–550 Intelhardware-assistedCPUvirtualization,147–148,148
+IBM360,4 IntelPentium4,14
+IBMBlueCloud,193,228,238,549,550 Intelx86processor.SeeX86processors
+IBMEnsembles,547 Intellectualproperty,50
+IBMGridToolbox,44 Interactivejobs,107
+IBMRoadrunner,73,119–120 InterCloudarchitecture,247,248
+architecture,119 Inter-cloudresourcemanagement,234–249
+InfiniBandinterconnect,120 Inter-clouds,40
+message-passingperformance,120 Interconnectionnetworks,208–211,214
+processorchipandcomputebladedesign, Interconnects,80,80–83
+119–120 Interfacedefinitionlanguage(IDL),37
+IBMSP2,66,67 Intergidgateway(IGG),241,241
+IBMSysplex,66 InterGrid,239,241,244–246
+ICECubecontainer,211,211 Inter-moduleconnectionnetworks,213
+Identifierspace,496 InternationalElectricotechnicalCommission(IEC),581
+Identityauthorities,465 Internationalgrids,428–430,429
+Identityspoofingattacks,523 InternationalOrganizationforStandardization(ISO),581
+Identity-basedsignatures(IBSes),533 Internet
+Illegalfiledownloads,490,531,533 developmentof,416
+ILP.SeeInstruction-levelparallelism(ILP) scalablecomputingover,4–13
+Imagemanagement,387,388 Internetclouds.SeeClouds
+Imagesservice,373 Internetcomputing,4–8
+Inactivestate,159 definitionof,7
+InChlGoogle,288–289 Internetconferencing,293
+Incrementalcheckpoint,102 Internetmicropaymentsystems,11
+Independentcheckpointing,104 InternetofThings(IoT),6,11–13
+Independentclustermanager,159 applicationsof,590–597,591
+Independentscheduling,106 architecture,579,579–580
+Independentservicemanagement,244 definitionof,7
+Indexservers,482,486,510 developmentof,6,577
+
+
+===== page 658 =====
+Index 635
+enablingtechnologiesfor,576–590,578 Jobschedulingmethods,104–106,105
+GPSand,587–590 resourcemanagementand,435–437
+mobilityandsecuritysupportfor,561,561 selfishgridsand,457
+RFIDand,579,580–582 spacesharing,105–106
+sensornetworksand,582–587,586 tiling,105,106
+technologyroadmapfor,578 timesharing,106
+ubiquitouscomputingand,576–580 Job-levelparallelism(JLP),9
+InternetProtocolSecurity(IPsec),37 Jointventures,421
+InternetSuspend-Resume(ISR),162 JoyentCloud,202
+Internettraffic,480,481 JPA.SeeJavaPersistenceAPI(JPA)
+Internodecommunication,70 JSR-311(JAX0RS),275
+Interoperability,69,226–227,462 JVM.SeeJavaVirtualMachine(JVM)
+Intrusiondetectionsystems(IDSes),50,462
+distributed,252–253 K
+host-based,176 Kmeansclustering,353,354
+network-based,176 Kadnetwork,497
+VM-based,176–179 Kademlia,499
+I/Oaddressspace,single,92,93 KaZaA,482,483,493–494,494,502–503,502,537
+I/Onode,88 Kernellayer,88
+I/Ovirtualization,150–153,152 Kernellevel,checkpointingat,101–102
+IPaddresses,2128,13 Kesselman,Carl,416
+IPv6protocol,13 Kimberley,560
+IRods,295,309 Kleinberg,Jon,607–608
+Isolatedredundancy,98 Klienrock,Leonard,6
+ITasaservice,200 Knowledgegrids,417
+ITgrowth,29 KhronosGroup,86
+IterativeMapReduce,351–355,353,371 KVM(kernel-basedVM),144,146
+J L
+Jaguar.SeeCrayXT5Jaguar LaboratoryInformationSystems(LIMS),316
+Java,37–38 LAMParchitecture,298
+JavaDataObject(JDO),370 LanguageIntegratedQuery(LINQ),361–365
+JavaMessageService(JMS),37,105,291 Latencyprocessor,84
+JavaPersistenceAPI(JPA),370 LDAP(LightweightDirectoryAccessProtocol),38
+JavaVirtualMachine(JVM),133 Libraries,checkpointingat,101–102
+JavaSpace,313 Librarysupportlevelvirtualization,132,138–140
+JBoss,280 LightweightDirectoryAccessProtocol(LDAP),392,430
+JBPMproject,280 LimeWire,537
+JDO.SeeJavaDataObject(JDO) Lindaprogrammingmodel,313
+JLP.SeeJob-levelparallelism(JLP) Linklayer,418
+JMS.SeeJavaMessageService(JMS) LinkedEnvironmentsforAtmosphericDiscovery(LEAD),
+JNDI(JiniandJavaNamingDirectoryInterface),38 302
+Jobexecutionenvironments,312–314 LinkedIn,606
+Jobmanagement,70 Linuxclusters,MOSIX2for,41–42,110
+Jobmanagementsystems(JMS),93,95,107–109 LinuxOS,72,137
+administration,107 LinuxvServer,137
+clusterjobtypes,107 Livemigration,159–162,160,165
+clusterworkloadcharacteristics,107–108 Loadbalancing,158,202,380,385
+featuresof,108–109 Loadindex,457
+migrationschemes,108 Loadinformationmanagers(LIMs),109
+Jobresponsetime,45 Loadmanagement,107
+Jobscheduler,107 Loadsharing,107
+
+
+===== page 659 =====
+636 Index
+Loadsharingfacility(LSF),109–110,554 controlflowimplementation,352
+applicationof,oncluster,110 dataandcontrolflow,348–351
+architecture,109 dataflowimplementation,350
+utilitycommands,109–110 definitionof,346
+Load-balancingclusters,71 descriptionandfeatures,42,43
+Localareanetworks(LANs),21–22,27 formalnotationofdataflow,348
+virtual,235 framework,345
+Localbridge,602 Hadoopimplementation,355–359,364–365
+Localfiles,90 iterative,351–355,353,371
+Localjobs,107 logicaldataflow,346–348,347
+competitionbetweenclusterjobsand,106 performance,575,576
+Localnode,88 problem-solvingstrategy,348
+LocalResourceManagementSystem(LRMS),389 scalability,558
+Localscheduler,448 MapReduce++,353,369,370,371
+Localscheduling,106 Mashups.SeeCloudmashups
+Localstorage,90 Massiveparallelism,17,18,19
+Localtrustscores,518,520 clusteringfor,66–75
+LocationasaService(LaaS),235 GPUclustersfor,83–87
+Locationtransparency,88,91 Massivesystems,27,27
+Location-awarerequestdistributionalgorithms(LARD), Massivelydistributedsystems,8
+312 Massivelyparallelprocessors(MPPs),5,69,369,416,546
+Location-basedservice(LBS),587 architecture,75–87
+Logisticsservices,592 designissues,69–71
+Look-aheadrandomwalk(LRW),520 packaging,77–79
+Looselysynchronousapplications,369,371 Masternode,99–100
+Low-costdesignphilosophy,25–26 Master-workermodel,349
+Lsbatch,109 Matchmaking,312
+Lshosts,109 Matrixmultiplication,86
+LSLIB(loadsharinglibrary),109 MayaGUI,398
+Lsmake,110 MCCluster,67
+Lsrun,109 MCAT,309
+Lstcsh,109 M/DB,341
+Lstools,109 MDCube(ModularizedDatacenterCube),213,214
+Lxrun,138,139 MDSmodule,447,450,452
+Meansquareerror(MSE),460
+M Meantimetofailure(MTTF),48,98,100–101,102
+Machinememory,148 Meantimetorepair(MTTR),48,98,100–101
+Machinesize,45 Medicalapplications,ofsocialnetworks,606
+Magellan,565 Megabitspersecond(Mbps),14
+Mainframecomputers,4 Megastations,70
+Malware-basedattacks,249,251 Memcache,372
+Man-in-the-middleattacks,225,251,255,255 Memex,547
+Manjrasoft,205,393–398 Memory
+Many-corechipmultiprocessors(CMPs),153,155 machine,148
+Many-coreGPUprocessors,15 physical,148
+Mapfunction,43,345–346,348 shared,77,369,370
+Mapping,344,368–370 virtual,130,148
+MapReduce,26,203,312–313,336 Memoryaccesstime,20
+architecture,357,357–358 Memorybus,77
+benchmarking,574–576 Memorycontrollers(MCs),18,84
+comparisonswith,342 Memorymanagementunit(MMU),148
+compute-dataaffinity,351 Memorymigration,162
+
+
+===== page 660 =====
+Index 637
+Memoryspace,single,92 supportforSSIclustering,94,95
+Memorytechnology,20,21 supportforvirtualization,138,138–140
+Memoryushering,111,112 virtualization,22–24
+Memoryvirtualization,148–150,149–150 Middlewarelayer,88,52,53
+Meshaccessmodel,426 Migration
+Meshnetworksensors,11 filesystem,162–163
+Messagebus,289–290,290 live,ofvirtualmachines,159–162,160,165
+Messagefiltering,291 memory,162
+Messagenotification,291 network,163–164
+Messagepassing,7 usingXen,164–165,165
+Messageprotection,466–467 Migrationoverhead,108
+Messagequeuing,308 Migrationschemes,108
+Message-levelsecurity,467 Millionsofinstructionspersecond(MIPS),14,45
+Message-orientedmiddleware,289–294 MIMD(MultipleInstructionMultipleData),368
+enterprisebus,289–290,290 MIPS.SeeMillionsofinstructionspersecond(MIPS)
+publish-subscribemodel,291 Mobilecloudcomputing,558–561
+queuingandmessagingsystems,291,292 Modulardatacenters,211–212,211
+Message-passinginterface(MPI),42–43,43,71,208,352, constructionof,211–212
+353,371 interconnectionnetworks,212–213
+benchmarking,574–576 Modularpackaging,78–79
+Kmeansclustering,354 Monadicaccessmodel,426,427
+Metadata,304,308–309 Monitoringsystems,313
+Metadatacatalogs,308–309 Monolithichypervisorarchitecture,140
+MetadataCatalogService(MCS),309 Moore’slaw,8,14,22
+METADATAtable,378–379 MOSIX,67,110–112
+Metaproblems,369 MOSIX2,41–42,110
+Microinstances,381,382 Mosso,548
+Microblogging,611–613 MotionPictureAssociationofAmerica(MPAA),533
+Micro-kernelarchitecture,140 MPI.SeeMessage-passinginterface(MPI)
+Microprocessors,advancesin,14 MPPs.SeeMassivelyparallelprocessors(MPPs)
+Microsoft,548,573 MQSeries,290
+MicrosoftAzure,193,203,229,233–234,336,548 MTTF.SeeMeantimetofailure(MTTF)
+AffinityGroups,340 MTTR.SeeMeantimetorepair(MTTR)
+featuresof,385 MuleMQ,291,292
+platform,234 Multi-corechips,26
+programmingsupport,384–387 MulticoreCPUs,14–16
+roles,341 architecture,15,16
+serviceofferings,228 schematic,15
+SQLAzure,385 virtualizationin,153–154,154
+tables,386–387 Multipleconnections,89
+virtualizationsupport,224 Multiplexing,24
+virtualizedresources,223 MultiplicityofOSimages,46,46
+MicrosoftDryad.SeeDryad MultipointControlUnit(MCU),291
+MicrosoftSharepoint,205 Multitaskingscalability,569–570
+Middleware Multithreading,9
+cloudorgridapplications,291–294 Multithreadingtechnologies,14–16,16
+clustersand,83 Multitierarchitecture,282,282–283
+grid,302,443–455 Multi-wavelength(MWL)detectors,296
+message-oriented,289–294 Mutualauthentication,468– 469, 469
+inmultitierarchitecture,283 MyGridProject,312
+opensource,444–446 Myrinet,80–81,80
+support,444–446 MySpace,599
+
+
+===== page 661 =====
+638 Index
+N Newtechnologies,hypecycleof,11,12
+NanoHUB.orggateway,296–297 NewYorkTimes,205
+Nanotechnology,296 Nexus,447,447
+Napster,482,482,493,494
+Nimbus,172,173,336,387–389,388
+NaradaBrokering,291,292–293 NimbusContextBroker,555
+NAS.SeeNetworkattachedstorage(NAS) NimbusWeb,387
+NASGrid,428 Nimrod-G,442
+Nashequilibrium,457 Nodeactiveness,99
+NationalAeronauticsandSpaceAdministration(NASA),196,
+Nodearchitecture,74,77–79
+552–555 Nodeavailability,108
+NationalEnergyResearchScientificComputingCenter Nodedegree,601
+(NERSC),565 Nodefailures,510
+Nationalgridprojects,428–430 Nonrelationaldatabases,341
+Nativemode,110 Nonuniformmemoryaccess(NUMA),46
+Nebula,552–553,553 NordicD-Grid,429
+Nebulae,18,73,74–75 NOSQL,376–379
+NEES.org,298 NOSQLnonrelationaldatabases,341,370
+.NET,229,417 No-trustsystems,522
+Net-centricservices,287–288 Nova,392
+NetSuite,548 NOWproject,66,67,75
+Networkaddresstranslator(NAT),484 NSFTeraGrid,30,417
+NetworkasaService(NaaS),235 NUMA.SeeNonuniformmemoryaccess(NUMA)
+Networkattachedstorage(NAS),21,22,163
+N-versionprogramming,98–99
+Networkbandwidth,8,45,193 NVIDIA,17,18,87
+Networkdefensetechnologies,50 NVIDIAFermiGPU,18,19
+NetworkFileSystem(NFS),90
+O
+NetworkforComputationalNanotechnology(NCN),296
+Networkinterfacecard(NIC),82 ObjectManagementGroup,444
+Networklatency,45 ObservationalMedicalOutcomesPartnership(OMOP),340
+Networklayer,52,53–54 OGCEGadgetcontainer,301,303
+Networkmigration,163–164 OGSA.SeeOpenGridServicesArchitecture(OGSA)
+Networkonchip(NoC),18,84 OGSA-DAI(GlobusDataAccessandIntegration),452
+Networkoperatingsystems,40 Onionrouting,488
+Networkproximity,487,487,507–509 Onlinepiracy,50,490
+Networkthreats,49–51,50 Onlinesocialnetworks(OSNs),546,597–600
+Network-basedIDS(NIDS),176 attacktracking,608
+Network-basedsystems,technologiesfor,13–26 benefitsof,600
+Networking
+characteristicsof,597–600
+data-center,194–196,195 communitiesandapplicationsof,603–608
+single,91,92
+Facebook,608–611
+Networks
+graph-theoreticanalysisof,600–603,601,603
+expandabilityof,209 privacybreaches,607
+localarea,21,22,27,235 representative,599,599
+overlay.SeeOverlaynetworks structureof,598
+peer-to-peer(P2P).SeePeer-to-peer(P2P)networks
+Twitter,611–613
+sensor,582–587 Onlinetransactionprocessing(OLTP),66
+social.SeeOnlinesocialnetworks(OSNs) OnStart()method,384
+storagearea,21,22,163 OnStop()method,384
+structureof,209 OpenCirrus,565
+virtualprivatenetwork(VPN),28,433 OpenCloudConsortium(OCC),565
+wide-area,22 OpenCloudTestbed,565
+Networksofclusters,7 OpenComputingLanguage,86
+
+
+===== page 662 =====
+Index 639
+OpenGatewayComputingEnvironments(OGCE)project, security,522–523
+294,301–303 structured,490–491,498–501,507,524
+gadgetcontainer,303 trustoverlaynetworks,517–519,518
+messagingservice,301 unstructured,490,492–496,509,524
+packaging,303 OVirt,199
+scientificapplicationmanagement,302–303 OWL,310
+workflows,302 OWL-Sontology,310
+OpenGridForum(OGF),438,444
+P
+OpenGridServicesArchitecture(OGSA),44,44,280,283,
+285,422–424,444 PaaS.SeePlatformasaService(PaaS)
+framework,422 Packaging,68
+GridServiceHandles(GSHs),423 Packetswitching,83
+gridservicemigration,423–424 Pageblobs,385
+interfaces,422–423,423 Pan-STARRSworkflow,318–319
+securitymodels,424,425 Parallax,171–172,172
+SemanticOGSA(S-OGSA),312 Parallelanddistributedprogramming
+OpenGridServicesInfrastructure(OGSI),284 advantagesof,343–370
+OpenMPIProject,120 definitionof,343
+OpenScienceGrid,294,303 Dryad,359–365
+OpenSocialstandards,303 DryadLINQ,361–365
+OpenSoftwareFoundation(OSF),41 Hadoop,355
+Opensourcegridmiddleware,444–446 MapReduce,345–355
+OpenSystemsInterconnection(OSI)layers,37 motivationfor,344–345
+OpenVirtualizationFormat(OVF),226 paradigms,344–345
+OpenBabelservice,288–289 PigLatin,365–368
+OpenMP,338 Sawzall,365–368
+OpenNebula,173,200,244,389–393,390 Twister,351–355
+OpenStack,391–392,392 Parallelanddistributedsystems,mappingapplicationsto,
+OpenStackCompute,392–393 368–370
+OpenStackStorage,393 Parallelcomputer,7
+OpenVZ,136–137,137,299 Parallelcomputing,6
+Operate-repaircycle,96 systemclassification,27
+Operatingsystemlevelvirtualization,132,135 Paralleldatatransfer,427
+Operatingsystems(OSs) Paralleljobs,107
+cloud,forvirtualizeddatacenters,172–176 Parallelprocessing,7
+cluster,76–77 Parallelprogramming,7
+distributed,42–44 inclusters,77
+extensions,83 CUDA,86
+network,41 models,42–44,43
+ofTop500,72–73 withSawzallandPigLatin,367–368
+Oracle,308 Parallelprograms,7,103,103
+OracleStreamsAdvancedQueuing,308 ParallelVirtualMachine(PVM),43,71,111
+OrchestrationandDirectorEngine(ODE),302 Parallelism,8
+OSextensions,135–136 SeealsoMassiveparallelism
+OSimagecount,46–47,46 bit-level,9
+OSCAR3service,288–289 data-level,9,319
+OSF.SeeOpenSoftwareFoundation(OSF) degreeofparallelism(DoP),9
+Overlaynetworks,32,32–33,492–496 functional,319
+complexityanalysis,503–505 instruction-level,9,14
+hierarchicallystructured,501–505 job-level,9
+networkproximityin,507–509 massive,17,18,19
+routingin,505–513 task-level,9
+
+
+===== page 663 =====
+640 Index
+Para-virtualization,143–145 searchalgorithms,524–528
+architecture,143–144,143 security,522
+withcompilersupport,144–145 structured,498–501,524
+forI/Ovirtualization,150 taxonomyof,490–492,491
+KVM(kernel-basedVM),144 trustandreputationmanagementin,489
+VMwareESXServerfor,144–145,145 trustoverlaynetworks,517–519
+Partialfailures,97 unstructured,492–496,524
+Partitioning,344,348,604 PeerTrust,517,518
+Partitioningfunction,349,350 Performance
+PartitionKeyproperty,386 benchmarking,574–576
+Passwords,464,468–470 bottlenecks,226,242
+PASTstorageutility,497 ofclouds,561–576
+Pastry,498,508–509 ofdistributedsystems,561–576
+Pathlength,601 ofHPC/HTCsystems,568–572
+Patterson,David,6 prediction,forgrids,457–461
+Pausedstate,160 scalable,46,70
+Peakspeed(R ),73 ofTop500,72
+peak
+PeerAuthorizationProtocol(PAP),534,536 unpredictable,226
+Peernodes,searchof,486 Performancemetrics,45–48
+Peertrustandreputationsystems,514–517 Peripheralcomponentinterconnect(PCI),82
+Peer-to-peer(P2P)computing,456,480–492 Permanentfailures,96–97
+basicconcepts,480–485 Personalcomputers(PCs),4
+challengesin,486–490 PetriNets,316
+Peer-to-peer(P2P)grids,31,417 P-Grid,497
+Peer-to-peer(P2P)networks,5,8,27,28,32,32,417, PharmaHUB.org,300
+480–492 Physicalclusters
+applications,33,483,483–485 definitionof,155
+architecture,32 vs.virtualclusters,156–159,156
+challenges,33–34 Physicalmemory,148
+characteristicsof,480 PigLatin,365–368,366–367
+vs.client/servernetworks,482,482 Piracy,50
+complexityanalysis,503–505,504 Piracyprevention,490,535–538
+contentdeliverynetworks,529–532 Piratedownloadtime,536–538
+copyrightprotectionand,533–534 Piratesuccessrate,536–538
+DHTimplementation,519–520,519 PitneyBowes,206
+fordistributedfilesharing,493–496 PKI-basedtrustmodel,462,464–465,464
+distributedhashtables(DHTs),496–497 Plannedshutdowns,96,98
+effectivesearchin,486 PlatformAbstractionLayer(PAL),396
+examplesof,483–484 PlatformasaService(PaaS),35,36,49,200,201,203–206,
+failurerecovery,509–511 204,227,235–236,336,573
+faulttolerance,509–511 Platformevolution,4–5
+filesharing,523–538 Platformlayer,ofcloudarchitecture,218,218
+free-ridingproblemin,488 Platforms,483
+hierarchicallystructured,501–505 Pleasinglyparallelapplications,369
+models,482–483,482 Plumtree,513
+networkproximityin,507–509 Pods,210
+overlaynetworks,32–33,492–505 Policyauthorities,465
+peertrustandreputationsystems,514–517,518,520–522 Popularity-drivenresourceprovisioning,238–239,240
+performance,34 Portals,294–303,338
+piracypreventionin,535–538 PortTypes,284
+proximityaware,487 POST,274
+routingin,505–507 PostgreSQL,307
+
+
+===== page 664 =====
+Index 641
+Powerconsumption,21,224 Q
+Powerefficiency Quadrics,80,80–81
+ofCPU,19–20 QuakeSim,293–294
+ofGPU,19–20
+Qualityofcloudservice(QoCS),572,574
+Powermanagement,585–586 QualityofService(QoS),196,221,247–248,487
+PowerTrust,517,518,520,520–522
+Queuing,291
+Presentationlayer,282 Queuingservices,341
+Prestige,602 Queuingsystems,292
+Primarycomponents,98 Queuingtime,436
+Privacy,252,339,341,607
+Privacyprotection,255–256 R
+Privateclouds,193–194,194,196–200,552–555
+Rackspace,548
+Privatekeygenerator(PKG),533 RackspaceCloud,202
+Privatekeys,464,469 Radiality,602
+Privateregistries,304 Radio-frequencyidentification(RFID),6,11,576,580–582,581
+Privilegedinstructions,147 Randomgraphs,493
+Proactivecontentpoisoning,535,535 Randomwalkalgorithms,525
+Problemsizescalability,45 Randomizedcolluderdetection,535–536,536
+Processspace,93 Rappturetoolkit,299
+Processingdaemon,360 Rarestfirst(RF),526
+Process-levelvirtualization,132 RC2.SeeResearchComputeCloud(RC2)
+Processorspeed,8,14,14,45 RDF.SeeResourceDescriptionFramework(RDF)
+Producer/consumermodel,437,437–438
+Reach,601
+Productiongrids,444 Read-onlyRFIDtags,580
+Professionalnetworking,606 Read-writeRFIDtags,581
+Programlibrary,340 RecordIndustryAssociationofAmerica(RIAA),533
+ProgrammableWeb.com,306 Recovery,70–71,83,100–101
+Programmingmodels Recoverytime,99
+AmazonWebServices(AWS),379–387
+Recruitmentthreshold,108
+cloud,343 Reducefunction,43,345–347,349,351,365
+GoogleAppEngine(GAE),370–379 Redundancy,70–71,95–99
+MicrosoftAzure,384–387
+isolated,98
+parallelanddistributed,42–44,343–370
+techniques,98
+Proximityneighborselection,509 Registries
+Proximityrouting,508–509
+categoriesofinformationin,304
+Proximitysubgroups,508 private,304
+Proxycertificates,466,468–469
+public,304
+Proxycredentials,464–465 serviceregistries,304–306
+Publicclouds,193,194,199 shared(semiprivate),304
+providers,202–203 UDDI,304–306
+serviceofferings,227–229,228
+Regularrandomwalk,520
+virtualizationsupportin,224 RelationalDatabaseService(RDS),232,379
+PublicKeyInfrastructure(PKI),252,424,464–465,561 Relationaldatabases,340–341
+Publickeys,464,468–469 Reliability,8,10,98–99
+Publicregistries,304 Reliability,availability,andserviceability(RAS),95–96
+PublisherAssertion,305 Remoteexecutionserver(RES),109
+Publish-subscribemodel,291,307–308,308,312
+Remotefiles,90
+PubMed,288–289
+RemoteMethodInvocation(RMI),38
+PUT,274 Remotenodes,88
+Putoperation,497 RemoteProcedureCall(RPC),37
+PVM.SeeParallelVirtualMachine(PVM) Remotestorage,90
+Python,370 Replayprevention,467
+
+
+===== page 665 =====
+642 Index
+ReplicaLocationService(RLS),309 Ringsidesocialapplicationservers,610
+Replication,528 RISCprocessors,15
+RepresentationalStateTransfer(REST),273,273–277 RLS(ReplicaLocationService),452
+architecture,275 Roadrunner.SeeIBMRoadrunner
+principlesof,273 Roboticgardenproject,596–597
+queuingservicesand,341 Rollbackrecovery,70,100
+Reputationmanagement,inP2Pnetworks,489 Rootdirectories,137
+Reputationsharing,227 Rootkits,251
+Reputationsystems,257–260,456,456 Routing,inP2Pnetworks,505–507
+forclouds,258–259 Routingefficiency,487
+designoptions,257–258,258 RowKeyproperty,386
+inP2Pnetworks,514,518,520 Run()method,384
+trustoverlaynetworks,259–260,260 RunJob(conf)function,358
+Reputationvector,520 Runtimeenvironment,451
+Reputation-basedtrustmodel,257–260,462–463 Runtimesupportservices,237
+Researchclouds,562–566
+ResearchComputeCloud(RC2),194–196 S
+Researchgrids,444 SaaS.SeeSoftwareasaService(SaaS)
+ResourceDescriptionFramework(RDF),310 SAGA(SimpleAPIforGridApplications),444
+Resourcelayer,52,53,419 Salesforce.com,205,228,229,548,552
+Resourcemanagement SAMLprotocol,466
+SeealsoGridresourcemanagement SAN.SeeStorageareanetworks(SANs)
+inter-cloud,234–249 Savitsky-Golayfilter,460
+optimizationof,170 Sawzall,365–366,365–368
+services,284 SAXPY,86
+virtualclustersand,155–169 Saxpy_serialroutine,86
+Resourcemanagementlayer,282,283 Scalability,8,10,68,176,558
+Resourcemanagementsystem(RMS),388,435–437,435 application,45
+Resourcemanager,107 cloud,226–227
+Resourcemonitoring,437,437 dimensionsof,45
+Resourceprovisioning,237–243,238 horizontal,570
+ofcomputeresources,237–238 multitasking,569–570
+demand-driven,239,240 vs.OSimagecount,46,46–47
+dynamic,239–241 ofP2Pnetworks,481,486
+event-driven,238–239,240 size,45
+methods,238–239 software,45
+popularity-driven,238–239,240 vertical,570
+ofstorageresources,242–243 Scalablecoherenceinterface(SCI),77
+underprovisioning,238 Scalablecomputing,4–13
+Resourcesharing,7,77,78 Scalableparallelcomputingenvironments,338
+Resource-pullingmodel,465,465 Scalableperformance,46,70
+REST.SeeRepresentationalStateTransfer(REST) Scaled-workloadspeedup,47
+RESTsystems,38 Scale-freegraphs,493
+RESTfulWebservices Scheduling,344
+inAmazonS3,275–276 Scienceandresearchclouds,562–566
+interactionwith,274 ScienceClouds,566
+Web2.0applicationsand,276 Sciencegateways,294,294–303,338
+Restlet,275 exemplars,295–297
+Retailing,IoTand,591–594 HUBzero,297–301
+RFID.SeeRadio-frequencyidentification(RFID) OpenGatewayComputingEnvironments(OGCE)project,
+RFIDtags,580–582 301–303
+RFT(ReliableFileTransfer),448,451 Scratchspace,91
+
+
+===== page 666 =====
+Index 643
+SDKs(softwaredevelopmentkits),419 Serviceaccounting,439–440
+SeagateBarracudaXT,20,21 Serviceavailability,225
+Searchalgorithms,524–528 Servicecomputing,7
+Sector/Sphere,336,390–391,391 Servicegrounding,310
+SecureOverlayServices(SOS),523 Servicemodels,310
+SecureShell(SSH),245 IaaS,200–203
+SecureSocketsLayer(SSL),468 PaaS,200,203–205,204
+Security,176 SaaS,200,205–206
+authentication,464–465,468–469 Servicenodes,77
+authorizationmethods,464–465 Serviceprofile,310
+cloud,225,249–260,339,561 Serviceregistries,304–306
+cluster,69 Serviceability,95
+GlobusSecurityInfrastructure(GSI),466–470 Service-levelagreements(SLAs),10,193,200,229,237,248,558
+grid,455,461–463 Service-orientedarchitecture(SOA),26,37–40,216,
+infrastructure,50–51 271–322,422
+InternetProtocolSecurity(IPsec),37 characteristicsof,272
+message-level,467 discovery,registries,metadata,anddatabases,304–314
+networkthreatsanddataintegrity,49–51 DoDnet-centricservices,287–288
+OGSAsecuritymodel,424,425 enterprisemultitierarchitecture,282–283
+P2Pnetworks,489,522–523 evolutionof,39,39–40
+piracyprevention,535–538 layeredarchitectureforWebservicesandgrids,37,37–38
+responsibilities,49 REST,273–277
+services,284 sciencegateways,294–303
+transport-level,467,469 servicesand,272–289
+trustmodels,461–463 Webservicesand,38,277–281
+trustedzones,177–179 workflowin,314–322
+VM-basedintrusiondetectionsystems,176–179 Services
+SecurityasaService(SaaS),235,260 CICC,288–289
+Securitydemand(SD),462–463 discovery,304
+Securityindex,571 grid,279,283–287
+Securityresilience,45 net-centric,287–288
+SEG(SchedulerEventGenerator),448 OGSA,284
+Selfishgrids,457 queuing,341
+Self-managementservices,285 RESTfulWebservices,273–277
+Self-organization,481 Web.SeeWebservices
+Semanticgrids,309–312,311,417 ServiceTypes,284
+SemanticOGSA(S-OGSA),312 SessionInitiationProtocol(SIP),483
+SemanticWeb,309–312,417 SETI@Home,30,87,419,429,485,492
+Semiprivateregistries,304 SGE.SeeSunGridEngine(SGE)
+Sensornetworks,582–586 SGICyclone,550–552,551
+Sensorservice(SS),39 SGIOrigin3000,66
+Sensortechnologies,6 SGIProPack5,72
+Sequentialbottleneck,47 Shadowpagetable,150
+SERENDIP,485 Sharedmemory,77,78,369,369
+Serialjobs,107 Sharedregistries,304
+Serverclusters,194–195 Shared-diskarchitecture,77,78
+Serverconsolidation,169–170 Signaturematching,253
+Servernodes,109 SIMD(singleinstruction,multipledata),9,368,369
+Server-centricdesign,210,212–213 Simon,Herbert,547
+Servers SimpleCloudAPIs,341
+energyconsumptionofunused,51 SimpleNetworkManagementProtocol(SNMP),92
+underutilizationof,170 SimpleNotificationService(SNS),379
+
+
+===== page 667 =====
+644 Index
+SimpleObjectAccessProtocol(SOAP),38,278–281,382,466 Softwarestacks,forcloudcomputing,236
+SimpleQueueService(SQS),379 Solid-statedrives(SSDs),20
+SimpleStorageService.SeeAmazonS3(SimpleStorageService) SourceForge.net,297,303
+SimpleDB,336,379,383–384 SP2ServerCluster,67,98
+SimpleGridproject,294 Space,45
+Simultaneousmultithreaded(SMT)processor,16 Spacesharing,105–106
+SingleCloudFileStorageAPI,340 Specialfunctionunits(SFUs),18
+Singleentrypoint,89 Speedperformance,5,72
+Singlefilehierarchy,90 Speedupfactor,47
+Singleinstruction,multipledata(SIMD),71 Sphere,336,390–391
+Singlememoryspace,92,92 SPMD(single-programandmultipledata),368
+Singlenetworking,91–93,92 SPRESIservices,288–289
+Singlepointofcontrol,88,92,92 Spyware,251
+Singlepointoffailure,48,97,97 SQL,340–341
+Singlepointofmanagement,92 SQLDataServices(SDS),386
+Single-chipcloudcomputer(SCC),87 SQLqueries,313
+Single-precision(SP)arithmetic,83 SQLAzure,385
+Single-systemimage(SSI),29,41,70 SSDs.SeeSolid-statedrives(SSDs)
+features,87–95 SSI.SeeSingle-systemimage(SSI)
+inMOSIX2,110–111 Stablestorage,90
+Sizescalability,45 Standardinstances,381,382
+Skip-list-basedsystems,498 Standardization,226–227,257,278
+SkipNet,504,505 Statelessinteractions,274
+SkyComputing,566 Staticmode,104
+Skype,483–484 Staticpriority,104
+Slackclusters,68 Staticreplication,425
+SLEs10,72 Stayscheme,106
+SloanDigitalSkySurvey,567 Storage
+Small-worldgraphs,493 Azure,384–387
+Smartbuildings,594 cloud,340
+Smartpowergrids,594,595 distributed,226
+SMP.SeeSymmetricmultiprocessor(SMP) local,90
+Snapshots,103–104 provisioningof,242–243,242
+SOA.SeeService-orientedarchitecture(SOA) remote,90
+SOAP.SeeSimpleObjectAccessProtocol(SOAP) stable,90
+SOAPmessages,280,280 virtual,171–172
+SOAP-basedWebservices,277–282 Storageareanetworks(SANs),21,22,163
+Socialcircles/clusters,602 StorageResourceBroker(SRB),309
+Socialengine,610 Storagetechnology,20
+Socialnetworkanalysis,600–603 Storagevirtualization,171–172,224
+Socialnetworks.SeeOnlinesocialnetworks(OSNs) Stormbotnet,497
+Software Streamingmultiprocessors(SMs),18,84
+clustersand,83 Streamingprocessors(SPs),18,19
+forgridcomputing,443–455 Stripeddatatransfer,427
+licensing,227 Structuralcohesion,602–603
+support,444–446 Structuralequivalence,602
+virtualization,221 Structuralholes,602
+SoftwareasaService(SaaS),35,36,49,192,200,205–206, Structuredoverlaynetworks,33,490–491,498,498–501,502–503
+227,229,235,343,572,574 hierarchical,501–505
+Softwarebugs,226 networkproximityin,507–509
+Softwarelayer,forvirtualization,130 searchalgorithms,524–528
+Softwarescalability,45 Subgrids,314
+
+
+===== page 668 =====
+Index 645
+Subject-pushmodel,465,465 Tera-floating-pointoperationspersecond(Tflops/second),485
+SubmitJob()function,358 TeraGrid,30,301,303,428,430–431,432
+Subscription,305 TeraGridScienceGateway,295
+SunGridEngine(SGE),440,444,446 TerraDir,504,505
+SunNiagara2,14 Tesla,17
+SunOne,417 TeslaGPU,18,87
+Supernodes,502–503,510 Tflops(terafloating-pointoperationspersecond),45
+Supercomputers,5 Third-partyapplications,244
+SeealsoTop500computersystems Throughputperwatt,8
+casestudies,112–120 Tianhe-1A,18,73,74–75,78,112–116
+datacentersand,195 ARCHfat-treeinterconnect,113
+vs.DISCsystems,567,568 architecture,112,113
+topfivein2010,73,74 hardwareimplementation,112–114
+virtual,416,419–422 LinpackBenchmarkresults,115–116
+Superscalarprocessor,15 plannedapplications,115–116
+Supplychainmanagement,592–594,593 powerconsumption,space,andcost,115
+Suspendedstate,159 softwarestack,115,115
+Sustainedspeed(R ),73 Tiling,105–106, 105
+max
+Swarm-baseddeliverymethods,532 Time,45
+Swiftworkflowsystem,321–322,322 Timesharing,106
+Switch-centricdesign,210–211 Tit-for-tat(TFT),526
+Symmetricmultiprocessor(SMP),46,144 TivoliProvisioningManager,550
+Symmetry,88,91 TivoliServiceAutomationManager(TSAM),547
+Synchronization,344,349 TLP.SeeTask-levelparallelism(TLP)
+Synchronousapplications,369 TModel,305
+Synergistictechnologies,577–579,578 Top500computersystems,5,66
+Systemavailability,45,48,49,570–571 analysisof,71–75
+Systemdefensetechnologies,50 applicationshare,74
+Systemdirectories,90 ARCHfat-treeinterconnect,114
+Systemefficiency,47,73,570 architecturalevolution,71–72,72
+Systemofsystems,40 casestudies,112–120
+Systemthroughput,45,569–570 clusterarchitecture,28
+System-areainterconnects,21,22 countryshare,74
+Systemsofsystems,273–277 CrayXT5Jaguar,116–119
+IBMRoadrunner,119–120
+T
+operatingsystems,72
+Table-lookupsearch,506,506–507 performance,72–73
+Tables,341 powerversusperformance,75,75
+Azure,386–387 shareofsysteminterconnectsin,81–83,81
+finger,499,506 Tianhe-1A,112
+Tabletlocationhierarchy,378–379,378 topfivein2010,73,74–75
+Targetchanneladapter(TCA),82 Topic-basedsystems,307
+Task-levelparallelism(TLP),9,14 Totalexecutiontime,569
+Taverna,318,319 Totalfailures,97
+Tcsh,109 ToxTreeservice,288–289
+Technologies TPS(transactionspersecond),45
+convergenceof,26 Transactionservers,533
+fusion,456–457 Transientfailures,96
+hypecycleofnew,11,12 Translationlookasidebuffer(TLB),148
+scalability,45–48 Transparency
+Telnetcommand,29 location,88,91
+TemplateVMs,157–158,244–245 inprogrammingenvironments,42,42
+
+
+===== page 669 =====
+646 Index
+Transport-levelsecurity(TLS),466–467,469 Unstructuredoverlaynetworks,33,73,509
+TreadMarks,67 URLFetchoperation,372
+Tree-baseddeliverymethods,532 Userauthentication,373
+Tree-structuresystems,498 UserDatagramProtocol(UDP),390
+Trident,337 Userinterface,77,93
+Trojanhorses,251 Userserver,107
+Trustdelegation,469–470,470 User-applicationlevelvirtualization,132–133
+Trustdelegationchain,465 User-definedtype(UDT),390
+Trustindex(TI),462–463 User-directedcheckpointing,103
+Trustmanagement Usernames,468–469
+clouds,249–260 User-orientedreputationsystems,258
+inP2Pnetworks,489,514–523 User-space(US)protocol,98
+invirtualizeddatacenters,176–179 Utilitycomputing,7,10–11,26
+Trustmatrix,515–516 UUHash,502
+Trustmodels,461–463
+V
+fuzzy,463
+generalizedmodel,462,463 Varunadatabaseservice,288–289
+PKI-based,464–465 VAXSeries,4
+reputation-based,257–260,463 VAXcluster,67
+Trustoverlaynetworks(TONs),259–260,260,517–519,518 VCenter,174
+Trustedzones,177–179,178 VCompute,175
+Tsubame,18,75 VCUDA,138–139
+TSUBAME2.0,73,74 VCuda,139–140
+Tuecke,Steve,416 Vectormachines,9
+Twister,342,343,351–355,353–355 Venus-C,566
+Twitter,480,597,599,611–613,612 Verticalscalability,570
+Two-coreCMP,15 VIOLINcluster,165,166,167–169
+Virtualappliances,23,398
+U
+Virtualclusters
+Ubiquitouscomputing,546–561 applicationpartitioningand,157
+cloudsfor,546–561 cloudcomputingand,194
+definitionof,546 dynamicdeploymentof,165–169
+InternetofThingsand,576–590 fastdeploymentandeffectivescheduling,158
+wirelesssensornetworksand,582 managementof,159
+UDDI(UniversalDescription,Discovery,andIntegration),38, migrationofmemory,files,andnetworkresources,
+304–306,305 162–165
+UDDICustodyandOwnershipTransferAPI,306 vs.physicalclusters,156,156–159
+UDDIInquiryAPI,306 resourcemanagementand,155–169
+UDDIPublisherAPI,306 trustedzonesfor,177–179
+UDDIReplicationAPI,306 Virtualdiskimages(VDIs),172
+UDDISecurityAPI,306 Virtualexecutionenvironment(VE),135
+UDDISubscriptionAPI,306 Virtualgrids,419
+UltraScanBiophysicsGateway,295–296 Virtualhierarchies,153–154
+UNICORE,444 Virtualinfrastructures,24
+Unifiednamespace,425–426 Virtualinfrastructures(VI)managers,172,173,199
+UniformResourceIdentifiers(URIs),273,275 Virtualinstructionsetarchitecture(V-ISA),132
+Uninterruptiblepowersupply(UPS),25 VirtualLANs,235
+UniversalBusinessRegistry,306 Virtualmachinemonitor(VMM),23,130,131,237,244
+UniversalDescription,Discovery,andIntegration(UDDI), binarytranslationusing,142
+278 comparisonof,134
+UNIXsemantics,91 designrequirementsandproviders,133–135
+Unplannedfailures,96 trustmanagementand,176–179
+
+
+===== page 670 =====
+Index 647
+Virtualmachine(VM)managers,243,244 structures/toolsandmechanisms,140–145
+Virtualmachines(VMs),22–24,130 VMMdesignrequirementsandproviders,133–135
+architectures,23 Virtualizationlayer,130
+bare-metal,23 Virtualizationmiddleware,22–24
+cloning,224–225 Virtualizationsoftware,221
+cloudcomputingand,193,222 Virtualizeddatacenters
+deployment,158 automation,169–179
+initializationof,156 cloudOSesfor,172–176
+managementof,243–246 serverconsolidation,169–170
+migration,159–162,160–161 storagemanagement,171–172
+ParallelVirtualMachine(PVM),43 trustmanagementin,176–179
+performanceeffects,159–162 Virtualizingintegrationmanagers,223
+primitiveoperations,23–24,24 Viruses,49
+provisioningof,237–243 VisualMainWin,138,139
+provisioningof,tovirtualclusters,156 VisualStudio,386
+states,159 VLIW(verylonginstructionword)architectures,9
+storage,171 VLSImicroprocessors,4
+synthesis,560 VMimagemanagement,387,388
+template,157–158,244–245 VMOrchestrator,199
+Virtualmemory,130,148 VMApp,153
+VirtualNetworkComputing(VNC),298 VMDriver,152
+Virtualorganizations(VOs),30,338,416,420–422,421 VMNet,153
+Virtualplatforms,30 VMwareESXServer,144–145,145,156
+VirtualPrivateCloud(VPC),201–203,202 VMwarevSphere4,173,174–176
+Virtualprivatenetworks(VPNs),28,433 VMwareWorkstation,146,152–153,174
+VirtualProcessorID(VPID),149 VNetwork,175
+Virtualreality(VR)applications,13 VoiceoverIP(VoIP),483
+Virtualrootdirectories,137 VOTables,288–289
+Virtualstorage,158–159 VSphere4,173,174–176,199
+managementof,171–172 VStorage,175
+Virtualsupercomputers,416,419–420 VT-itechnique,146
+Virtualization,6 VT-xtechnique,146
+binarytranslationwithfull,141–143
+cloudarchitectureand,221–225 W
+cloudsecurityand,251 WABI.SeeWindowsApplicationBinaryInterface(WABI)
+CPU,147–148 Wal-Martdatawarehouse,567
+datacenter,25–26 Warps,18
+fordata-centerautomation,169–179 Watermarking,256,256–257,531
+hardware-assisted,145,148 Web2.0services,5,6,26
+hardware-level,132–133 WebApplicationDescriptionLanguage(WADL),274
+host-based,141–143 Webpages,242
+forIaaS,224 Webroles,341–342,384
+implementationlevelsof,130–140,131,133 WebServiceChoreographyDescriptionLanguage(WS-CDL),
+I/O,150–153,152 317
+onLinuxorWindowsplatforms,137–138 WebServiceChoreographyInterface(WSCI),317
+memory,148–150,149–150 Webservicecore,451
+middlewaresupportfor,138,138–140 Webservices,277,422
+inmulticoreprocessors,153–154,154 application-specific,301
+atOSlevel,135–138 definitionof,277
+para-virtualization,143–145 layeredarchitecturefor,37–38,37
+inpublicclouds,224 multitierarchitecture,282–283
+storage,224 RESTful,273–277
+
+
+===== page 671 =====
+648 Index
+Webservices(Cont.) onGrid’5000,459,461
+SOAP-based,278 H-Modelfor,460
+standardization,278 Workstations,availability,98
+toolsand,38 WorldWideWebConsortium(W3C),272
+WS-*standards,281–282 WorldWideWeb(WWW),417
+WS-Iprotocolstack,278–281 WorldGrid,429
+WebServicesAtomicTransaction(WS-AtomicTransaction), Worms,251
+317 Write-once-read-many(WORM)tags,581
+WebServicesCompositeApplicationFramework WScontainers,451
+(WS-CAF),317 WSmashups,26
+WebServicesContext(WS-CTX),317 WS-*standards,281
+WebServicesConversationLanguage(WSCL),317 WS-Addressing,286
+WebServicesCoordination(WS-Coordination),317 WS-BusinessActivity,317
+WebServicesDescriptionLanguage(WSDL),37,277–278,286 WSDL.SeeWebServicesDescriptionLanguage(WSDL)
+WebServicesFlowLanguage(WSFL),317 WS-Eventing,291
+WebServicesReliableMessaging(WSRM),37 WS-Iprotocolstack,278–281,279
+WebServicesResourceFramework(WSRF),286,286,451 WS-Notification(WSN),286,291
+Webtraffic,480 WSRE(WebServiceResourceFramework),444
+WebMDSservice,452 WS-RM(ReliableMessaging),281
+WebSphere,417 WS-SecureConversation,466–467
+WebSphereCloudBurst,547 WS-Security,466–467,469
+WebSphereMQ,290,292 WS-Trust,466,469
+WebVisCounterprogram,364–365,364
+Whitepages,304 X
+Wide-areanetworking(WAN),22,27
+X.509certificates,252,468
+Windows,virtualizationon,137–138
+X.509standard,466,468
+WindowsApplicationBinaryInterface(WABI),138–139,138
+X86processors,15,25,66,146
+WindowsAzure.SeeMicrosoftAzure
+XBaya,301
+Wine,138,139 Xen,140–141,141,146,164–165,238,244
+Wirelesshomeareanetwork(WHAN),582
+XenServer,156
+Wirelesspersonalareanetwork(WPAN),584
+XeonX5670,17
+Wirelesssensorapplications,591
+Xing.com,606
+Wirelesssensornetworks(WSNs),582,584
+XLANG,317
+Workerroles,341–342,384
+XML,278–279
+WorkflowManagementCoalition,316
+XMLschemas,38
+Workflows
+XRegistry,301
+architectureandspecification,317–319
+basicconcepts,315–316
+Y
+cloudsand,337
+executionengine,319–321 YaCy,497
+Yahoo!Pipes,252
+gridsand,338
+inSOA,314–322 Yellowpages,304
+specification,318–319 YouTube,480,599
+standards,316,317
+Swiftworkflowsystem,321–322,322 Z
+Workloadmanagement,107 ZigBeecoordinator,584
+Workloadprediction ZigBeeenddevice,584
+adaptive,458,458–459 ZigBeenetworks,582–587,585
+adaptivehybridmodel(AH-Model),460 ZigBeerouter,584
+auto-regression(AR)method,459,461 ZoleraSoapInfrastructure(ZSI),280
+forgridcomputing,457–461 Zukerberg,Mark,611

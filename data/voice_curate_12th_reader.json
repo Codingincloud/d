@@ -1,0 +1,111 @@
+{
+ "_comment": [
+  "The second-person sentences that face the paper rather than the subject.",
+  "",
+  "Deliberately NOT the whole of the second person. The notes use \"you\" 74 times,",
+  "and most of it is ordinary English that would stiffen if it went: \"similar to",
+  "how you are billed for gas or electricity\" is inside a quoted definition,",
+  "\"the drift rate is how you determine ...\" is a statement about the subject, and",
+  "\"how you find out why\" is how the requirement is normally put. Removing that",
+  "would make the page more formal and less readable, which is the opposite of what",
+  "this pass is for.",
+  "",
+  "What goes is the second person that makes the sentence about the reader's",
+  "performance or about a question paper: \"shows you know the distinction the",
+  "syllabus is drawing\", \"a question may ask you to place a service\", \"You manage",
+  "everything\" where the other party is the customer and not the reader."
+ ],
+ "edits": [
+  {
+   "ch": "ch3.js",
+   "tell": "paper",
+   "why": "the sentence tells the reader what an answer demonstrates, which is strategy",
+   "find": ", Lamport timestamps and vector clocks&rdquo; shows you know the distinction the syllabus is drawing.",
+   "to": ", Lamport timestamps and vector clocks&rdquo; names both clocks and the difference between them."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the row label names who does the work, and that party is the customer",
+   "find": "<td>You manage everything: infrastructure, platform and software.</td>",
+   "to": "<td>The customer manages everything: infrastructure, platform and software.</td>"
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the row label names who does the work, and that party is the customer",
+   "find": "<tr><td><strong>You manage</strong></td>",
+   "to": "<tr><td><strong>Customer manages</strong></td>"
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the row label names who does the work, and that party is the customer",
+   "find": "you provide the table and the drinks.",
+   "to": "the customer provides the table and the drinks."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the row label names who does the work, and that party is the customer",
+   "find": "platform; you manage only the application and its configuration.",
+   "to": "platform; the customer manages only the application and its configuration."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the analogy's two parties are the restaurant and the customer, not the reader",
+   "find": ": everything is the restaurant's; you order and eat.",
+   "to": ": everything is the restaurant's, and the customer orders and eats."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the model's two parties are the vendor and the customer",
+   "find": "The vendor manages everything; you manage only your data and your account.",
+   "to": "The vendor manages everything; the customer manages only its data and its account."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the terms name who does the work, and that party is the customer",
+   "find": "a rented virtual machine is IaaS with your own DBMS on top: you size it, patch it, back it up and run its replicas.",
+   "to": "a rented virtual machine is IaaS with the customer's own DBMS on top: the customer sizes it, patches it, backs it up and runs its replicas."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "paper",
+   "why": "the sentence says what a question will ask of the reader, which belongs on the Past Questions tab",
+   "find": "Two families sit under DBaaS and a question may ask you to place a service in one:",
+   "to": "Two families sit under DBaaS, and a service belongs to one of them:"
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the column names who boots the instance, and that party is the customer",
+   "find": "You boot it, and it stays up (and bills) until you stop it.",
+   "to": "The customer boots it, and it stays up (and bills) until it is stopped."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the trade is about the customer's control, not the reader's",
+   "find": "The trade is the same as ever, pushed further: you control less.",
+   "to": "The trade is the same as ever, pushed further: the customer controls less."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the axis is how much of the stack the customer manages",
+   "find": "Compute services come in three shapes, and they differ in how much of the stack you manage &mdash;",
+   "to": "Compute services come in three shapes, and they differ in how much of the stack the customer manages &mdash;"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "paper",
+   "why": "the sentence tells the reader what an examiner is asking for, which is strategy",
+   "find": "A question that asks you to compare them is really asking for that sentence.",
+   "to": "That sentence is the comparison."
+  }
+ ]
+}

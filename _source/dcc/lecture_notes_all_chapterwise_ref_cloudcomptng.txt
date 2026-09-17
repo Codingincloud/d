@@ -1,0 +1,1593 @@
+source: Lecture Notes - all Chapterwise\Chapter_5_Introduction to Cloud Computing\Ref_CloudComptng.pptx
+method: pptx
+sha256: adafb62f68612b614eb604fb1feb9b25c77e9a963f1b7ffc59e8208191f73aa2
+pages:  114
+ocr:    114 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+----- slide 1 -----
+Cloud Computing
+
+
+Ved Parkash
+Associate Professor, CSE
+
+----- slide 2 -----
+Cloud Computing:
+
+Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale. You typically pay only for cloud services you use, helping lower your operating costs, run your infrastructure more efficiently and scale as your business needs change.
+[in the slide picture] Cloud cornputing is the delivery of cornputing
+econornies of scale. You typically pay only for
+operating costs, run your infrastructure n•ore
+
+----- slide 3 -----
+Benefits of cloud computing:
+Cost
+	Cloud computing eliminates the capital expense of buying hardware and software and setting up and running on-site datacenters—the racks of servers, the round-the-clock electricity for power and cooling, the IT experts for managing the infrastructure. It adds up fast.
+Speed
+	Most cloud computing services are provided self service and on demand, so even vast amounts of computing resources can be provisioned in minutes, typically with just a few mouse clicks, giving businesses a lot of flexibility and taking the pressure off capacity planning.
+Global scale
+	The benefits of cloud computing services include the ability to scale elastically. In cloud speak, that means delivering the right amount of IT resources—for example, more or less computing power, storage, bandwidth—right when it is needed and from the right geographic location.
+[in the slide picture] Cloud cornputing elirninates the capital expense of buying
+electricity for power and cooling, the IT experts for rnanaging
+Most cloud cornputing services are provided self service and
+on dernand, so even vast an-nounts ot cornputing resources can
+be provisioned in typically with just a few rnouse
+The benefits of cloud cornputing services include the ability
+to scale elastically. In cloud speak, that I-neans delivering the
+right arnount of IT resources—for exarnple, rnore or less
+cornputing power, storage, bandwidth—right when it is
+needed and trorn the right geographic location.
+
+----- slide 4 -----
+Productivity:
+	On-site datacenters typically require a lot of “racking and stacking”—hardware setup, software patching, and other time-consuming IT management chores. Cloud computing removes the need for many of these tasks, so IT teams can spend time on achieving more important business goals.
+Performance
+	The biggest cloud computing services run on a worldwide network of secure datacenters, which are regularly upgraded to the latest generation of fast and efficient computing hardware. This offers several benefits over a single corporate datacenter, including reduced network latency for applications and greater economies of scale.
+[in the slide picture] Prod ctivity:
+tin-re-consurning IT
+rnanagernent chores. Cloud cornputing ren-noves the
+need for rnany of these tasks, so IT tearns can spend
+tirne on achieving rnore irnportant business goals.
+Perforrnance
+The biggest cloud cornputing services run on a
+efficient cornputing hardware. This offers several
+econornies of scale.
+
+----- slide 5 -----
+Reliability
+	Cloud computing makes data backup, disaster recovery and business continuity easier and less expensive because data can be mirrored at multiple redundant sites on the cloud provider’s network.
+Security
+	Many cloud providers offer a broad set of policies, technologies and controls that strengthen your security posture overall, helping protect your data, apps and infrastructure from potential threats.
+[in the slide picture] e lability
+Cloud cornputing rnakes data backup, disaster
+expensive because data can be rnirrored at rnultiple
+apps and infrastructure frorn potential threats.
+
+----- slide 6 -----
+| Traditional Computing | Cloud Computing
+1 | Data storage on local Internal / hard drive | Data storage in the cloud or external server
+2 | Extra storage – pay for hardware, no unlimited storage | Unlimited storage – no extra hardware required
+3 | For hardware configuration, you may hire expert | No need to do hardware configuration – dynamic resources
+4 | Pay for power, electricity, AC cooling etc. | No expense on power, electricity, AC cooling etc.
+5 | If you need to add new server it will take few days and more charges apply. | Pay for use, dynamic resources allocation.
+6 | Fixed charges – installation, hardware used. | If resources are use less, then pay less
+7 | Lack of isolation – high risk of security and poor performance. | No need to worry about security / loss of data.
+8 | Backup and recovery take risky. | Backup and recovery very easy.
+9 | Extra pay for software installation & upgrade. | Automatic software upgrade available
+10 | Pay for extra hardware & other resources | On demand resources
+[in the slide picture] Traditional Cornputing
+unlirnited storage
+For hardware configuration, you I-nay
+take few days and rnore charges apply.
+security and poor perforrnance.
+Cloud Cornputing
+configuration — dynarnic resources
+Pay for use, dynarnic resources
+Autornatic software upgrade
+On dernand resources
+
+----- slide 7 -----
+Cloud Computing architecture:
+	Cloud Computing architecture comprises of many cloud components, which are loosely coupled. We can broadly divide the cloud architecture into two parts:
+Front End
+Back End
+	Each of the ends is connected through a network, usually Internet.
+Front End
+	The front end refers to the client part of cloud computing system. It consists of interfaces and applications that are required to access the cloud computing platforms, Example - Web Browser.
+Back End
+	The back End refers to the cloud itself. It consists of all the resources required to provide cloud computing services. It comprises of huge data storage, virtual machines, security mechanism, services, deployment models, servers, etc.
+[in the slide picture] Cl —ornputing arc 1
+Cloud Cornputing architecture cornprises of rnany cloud
+con•ponents, which are loosely coupled. We can broadly
+systen•. It consists of interfaces and applications that are
+required to access the cloud con•puting platforrns, Exan•ple -
+resources required to provide cloud services. It
+con•prises ot huge data storage, virtual n•achines, security
+rnechanisrn, services, deployrnent rnodels, servers, etc.
+
+----- slide 8 -----
+Cloud infrastructure consists of servers, storage devices, network, cloud management software, deployment software, and platform virtualization.
+[in the slide picture] oud infrastructure consists o servers, storage devices,
+network, cloud rnanagernent software, deployrnent software,
+and platforrn virtualization.
+Hypervisor
+Cloud Infrastructural Components
+
+----- slide 9 -----
+Hypervisor:
+	Hypervisor is a firmware or low-level program that acts as a Virtual Machine Manager. It allows to share the single physical instance of cloud resources between several tenants.
+Management Software:
+	It helps to maintain and configure the infrastructure.
+Deployment Software:
+	It helps to deploy and integrate the application on the cloud.
+Network:
+	It is the key component of cloud infrastructure. It allows to connect cloud services over the Internet. It is also possible to deliver network as a utility over the Internet, which means, the customer can customize the network route and protocol.
+[in the slide picture] Netvvork:
+It is the key cornponent of cloud infrastructure. It allows to
+
+----- slide 10 -----
+Server:
+	The server helps to compute the resource sharing and offers other services such as resource allocation and de-allocation, monitoring the resources, providing security etc.
+Storage:
+	Cloud keeps multiple replicas of storage. If one of the storage resources fails, then it can be extracted from another one, which makes cloud computing more reliable.
+[in the slide picture] de-allocation, rnonitoring the resources, providing
+another one, which rnakes cloud
+
+----- slide 11 -----
+[in the slide picture] Client Infrastructure
+Internet
+Application
+Service
+Front End
+Back End
+Runtime
+Storage
+
+----- slide 12 -----
+Infrastructural Constraints:
+	Fundamental constraints that cloud infrastructure should implement are shown in the following diagram:
+[in the slide picture] Fundarnental constraints that cloud infrastructure should
+irnple1T1ent are shown in the following diagranu•
+Transparency
+Security
+Scalability
+Intelligent
+Monitoring
+
+----- slide 13 -----
+Cluster Computing:
+	Cluster computing or High-Performance computing frameworks is a form of computing in which bunch of computers (often called nodes) that are connected through a LAN (local area network) so that, they behave like a single machine. A computer cluster help to solve complex operations more efficiently with much faster processing speed, better data integrity than a single computer and they only used for mission-critical applications.
+Some of the critical Applications of Cluster Computers are Google Search Engine, Petroleum Reservoir Simulation, Earthquake Simulation, Weather Forecasting.
+[in the slide picture] CI ornputing:
+cornputing
+bunch of cornputers (often called nodes) that are
+they behave like a single rnachine. A cornputer cluster
+help to solve cornplex operations efficiently with
+rnuch faster processing speed, better data integrity than
+a single cornputer and they only used for rnission-
+Sorne of the critical Applications of Cluster Cornputers are
+Google Search Engine, Petroleurn Reservoir Sirnulation,
+Earthquake Sirnulation, Weather Forecasting.
+
+----- slide 14 -----
+Types of Cluster computing:
+1. Load-balancing clusters: As the name implies, This system is used to distribute workload across multiple computers. That system distributes the processing load as possible across a cluster of computers.  2. High availability (HA) clusters: A high availability clusters (HA cluster) are the bunch of computers that can reliably utilise for redundant operations in the event of nodes failure in Cluster computing.3. High performance (HP) clusters: This computer networking methodology use supercomputers and Cluster computing to solve advanced computation problems.
+[in the slide picture] 1. Load-balancing clusters: As the narne irnplies,
+This systern is used to distribute workload across
+rnultiple cornputers. That systel-n distributes the
+clusters (HA cluster) are the bunch of cornputers that
+event of nodes failure in Cluster cornputing.
+3. High perforrnance (H P) clusters: This cornputer
+networking rnethodology use supercornputers and
+Cluster cornputing to solve advanced cornputation
+problerns.
+
+----- slide 15 -----
+Advantages of using Cluster computing
+	1. Cost efficiency: In a Cluster computing Cost efficiency is the ratio of cost to output, that is the connecting group of the computer as computer cluster much cheaper as compared to mainframe computers.2. Processing speed: The Processing speed of computer cluster is the same as a mainframe computer.3. Expandability: The best benefit of Cluster Computing is that it can be expanded easily by adding the additional desktop workstation to the system.4. High availability of resources: If any node fails in a computer cluster, another node within the cluster continue to provide uninterrupted processing. When a mainframe system fails, the entire system fails.
+[in the slide picture] 1. Cost efficiency: In a Cluster cornputing Cost
+connecting group of the cornputer as cornputer cluster
+rnuch cheaper as cornpared to I-nainfrarne cornputers.
+cornputer cluster is the as a rnainfrarne cornputer.
+Cornputing is that it can be expanded easily by adding
+the additional desktop workstation to the systern.
+a cornputer cluster, another node within the cluster
+continue to provide uninterrupted processing. WV hen a
+rnainfrarne systel-n fails, the entire systern fails.
+
+----- slide 16 -----
+Grid Computing:
+	Grid computing is the practice of leveraging multiple computers, often geographically distributed but connected by networks, to work together to accomplish joint tasks. It is typically run on a “data grid” a set of computers that directly interact with each other to coordinate jobs.
+How Does Grid Computing Work?
+	Grid computing works by running specialized software on every computer that participates in the data grid. The software acts as the manager of the entire system and coordinates various tasks across the grid. Specifically, the software assigns subtasks to each computer so they can work simultaneously on their respective subtasks. After the completion of subtasks, the outputs are gathered and aggregated to complete a larger-scale task. The software lets each computer communicate over the network with the other computers so they can share information on what portion of the subtasks each computer is running, and how to consolidate and deliver outputs.
+[in the slide picture] Gri Cornpu In
+Grid cornputing is the practice of leveraging rnultiple
+cornputers, often geographically distributed but connected
+by networks, to work together to accon•plish joint tasks. It
+is typically run on a "data grid" a set of cornputers that
+Grid con•puting works by running specialized software on
+every cornputer that participates in the data grid. The
+software acts as the rnanager of the entire systern and
+software assigns subtasks to each con•puter so they can
+work sin-rultaneously on their respective subtasks. After the
+cornpletion of subtasks, the outputs are gathered and
+aggregated to cornplete a larger-scale task. The software
+lets each con•puter over the network with the
+other cornputers so they can share inforrnation on what
+portion of the subtasks each con•puter is running, and how
+
+----- slide 17 -----
+In a basic grid computing system, every computer can access the resources of every other computer belonging to the network.
+[in the slide picture] puting VVorks
+02008-
+In a basic grid cornputing systern, every cornputer can access
+the resources of every other cornputer belonging to the
+netvvork.
+
+----- slide 18 -----
+Grid computing is distinguished from the cluster computing, because in Grid computing each node has heterogeneous and geographical dispersed (such as WAN) and its own resource manager and perform a different task, but in cluster computing resources are managed in a single location. Grid computing is a way of using resources optimally inside an organization.
+TYPES OF GRID:-There are many types of grid like:-
+1) COMPUTATIONAL GRID:- It acts as the resource of many computers in a network to a single problem at a time.
+2) DATA GRID:- It deals with the controlled sharing and management of distributed data of large amount.
+3) COLLABORATIVE GRID:- It is the grid which solves collaborative problems.
+4) MANUSCRIPT GRID:- This grid works well when things are presenting in large continuous blocks of text or images.
+5) MODULAR GRID:- This grid works well when columns alone don’t offer enough flexibility for complex problems.
+[in the slide picture] putlng IS IS In hed -from thecluster cofnputing,
+because in Grid cornputing each node has heterogeneous and
+geographical dispersed (such as YVAN) and its own resource
+rnanager and perforrn a different task, but in cluster cornputing
+resources are rnanaged in a single location. Grid is a
+way of using resources optirnally inside an organization.
+cornputers in a network to a single at a
+rnanagernent of distributed data of large arnount.
+collaborative problerns.
+5) MODULAR GRID:- This grid works well when colurnns alone
+don't offer enough flexibility for cornplex problerns.
+
+----- slide 19 -----
+ADVANTAGES OF GRID COMPUTING:-1) It can solve more complex problems in a very short span of time.2) It can easily combine with other organization.3) It can make better use of existing hardware.
+Distributed Computing:
+Distributed computing is a computing concept that, in its most general sense, refers to multiple computer systems working on a single problem. In distributed computing, a single problem is divided into many parts, and each part is solved by different computers. As long as the computers are networked, they can communicate with each other to solve the problem. If done properly, the computers perform like a single entity.
+The ultimate goal of distributed computing is to maximize performance by connecting users and IT resources in a cost-effective, transparent and reliable manner. It also ensures fault tolerance and enables resource accessibility in the event that one of the components fails.
+[in the slide picture] tirne.
+Distributed cornputing is a cornputing concept that, in its rnost
+general sense, refers to Inultiple cornputer systerns working on a
+single problern. In distributed cornputing, a single problern is
+divided into rnany parts, and each part is solved by different
+cornputers. As long as the cornputers are networked, they can
+conununicate with each other to solve the problern. If done
+properly, the cornputers perforrn like a single entity.
+The ultirnate goal of distributed cornputing is to rnaxirnize
+perforrnance by connecting users and IT resources in a cost-
+effective, transparent and reliable rnanner. It also ensures fault
+of the cornponents fails.
+
+----- slide 20 -----
+A distributed computing architecture consists of a number of client machines with very lightweight software agents installed with one or more dedicated distributed computing management servers. The agents running on the client machines usually detect when the machine is idle and send a notification to the management server that the machine is not in use and available for a processing job. The agents then requests an application package. When the client machine receives this application package from the management server to process, it runs the application software when it has free CPU cycles and sends the result back to the management server. When the user returns and requires the resources again, the management server returns the resources was using to perform different tasks in the user's absence.
+[in the slide picture] Istributed con•puting architec ureæonsists of a nun•ber
+of client rnachines with very lightweight software agents
+installed with one or rnore dedicated distributed
+cornputing rnanagernent servers. The agents running on
+the client rnachines usually detect when the I-nachine is idle
+and send a notification to the server that the
+Inachine is not in use and available for a processing job.
+The agents then requests an application package. WV hen
+the client receives this application package
+the rnanagernent server to process, it runs the application
+back to the n•anagernent server. VVhen the user returns and
+requires the resources again, the rnanagernent server
+returns the resources was using to different tasks
+
+----- slide 21 -----
+[in the slide picture] C] * Task Server Is
+Likely Data Sink
+Interaction Interaction
+Computing
+Node
+Data Sources and Sinks
+
+----- slide 22 -----
+Grid can be thought as a distributed system with non interactive workload that involve a large number of files.
+
+Utility Computing:
+	Utility computing is the process of providing computing service through an on-demand, pay-per-use billing method. Utility computing is a computing business model in which the provider owns, operates and manages the computing infrastructure and resources, and the subscribers accesses it as and when required on a rental or metered basis.
+[in the slide picture] rl can be thought as a distrl utedsys ern with non
+interactive workload that involve a large nurnber of
+Utility cornputing is the process of providing
+cornputing service through an on-dernand, pay-per-
+use billing rnethod. Utility cornputing is a cornputing
+business rnodel in which the provider owns, operates
+and rnanages the cornputing infrastructure and
+required on a rental or rnetered basis.
+
+----- slide 23 -----
+Utility computing is one of the most popular IT service models, primarily because of the flexibility and economy it provides. This model is based on that used by conventional utilities such as telephone services, electricity and gas. The principle behind utility computing is simple. The consumer has access to a virtually unlimited supply of computing solutions over the Internet or a virtual private network, which can be sourced and used whenever it's required. The back-end infrastructure and computing resources management and delivery is governed by the provider.
+	Utility computing solutions can include virtual servers, virtual storage, virtual software, backup and most IT solutions.
+[in the slide picture] cornputlng IS on f the—rnosEpopular-IWservice
+rnodels, prirnarily because of the flexibility and
+econorny it provides. This rnodel is based on that used
+cornputing is sirnple. The consurner has access to a
+virtually unlirnited supply of cornputing solutions over
+and cornputing resources
+rnanagernent and delivery is governed by the provider.
+Utility cornputing solutions can include virtual servers,
+virtual storage, virtual software, backup and I-nost IT
+
+----- slide 24 -----
+Pros and Cons of Cloud computing:
+Pros:
+No cost on infrastructure: Cloud computing is divided into three major categories as per the services: Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS).
+In all these categories, one thing is common that you 	don’t need to invest in hardware or any infrastructure. 	In general, every organization has to spend a lot on 	their IT infrastructure to set up and hire a specialized team.
+Servers, network devices, ISP connections, storage, and software – these are the major things on which you need to invest if we talk about general IT infrastructure.
+But if you move to cloud computing services, then you don’t need to invest in these. You simply go to a cloud services provider and buy a cloud service.
+[in the slide picture] No cost on infrastructure: Cloud cornputing is divided
+into three rnajor categories as per the services:
+Infrastructure as a Service (IaaS), Platforrn as a Service
+In all these categories, one thing is cornrnon that you don't
+infrastructure to set up and hire a specialized tean•.
+software — these are the n•ajor things on which you need to
+But if you rnove to cloud cornputing services, then you don't
+need to invest in these. You sirnply go to a
+
+----- slide 25 -----
+Minimum management and cost: By selecting the cloud, you save cost in many ways:
+	--Zero investment in infrastructure.
+	--Since you don’t own the infrastructure, you 	spend nothing on its management or staff to 	manage it.
+	--Cloud works on pay as you go model, so you 	spend only on resources that you need. Nothing 	more!
+When you opt for the cloud, the management of its infrastructure is the sole responsibility of the cloud provider and not of the user.
+[in the slide picture] Minil-nurn I-nana en-lent and cost: By selecting th
+oud, you save cost in rnany ways:
+spend nothing on its rnanagernent or staff to
+rnanage it.
+-Cloud works on pay as you go rnodel, so you
+NN hen you opt for the cloud, the rnanagernent of its
+
+----- slide 26 -----
+Forget about administrative or management hassles: Whenever there is a purchase or up-gradation of hardware, a lot of time is wasted looking for best vendors, inviting quotations, negotiating rates, taking approvals, generating POs and waiting for delivery and then in setting up the infrastructure.
+This whole process includes lots of administrative/managerial tasks that waste a lot of time.
+With cloud services, you just need to compare the best cloud service providers and their plans and buy from the one that matches your requirements. And this whole process doesn’t take much time and saves you a lot of efforts. Your system maintenance tasks are also eliminated in the cloud.
+[in the slide picture] geeabout a rninistrative omw-rnanagernent
+hassles: VVhenever there is a purchase or up-
+gradation of hardware, a lot of tirne is wasted looking
+adrninistrative/rnanagerial tasks that waste a lot of tirne.
+VVith cloud services, you just need to cornpare the best
+cloud service providers and their plans and buy frorn the
+one that rnatches your requirernents. And this whole
+process doesn't take rnuch tirne and saves you a lot of
+efforts. Your systern rnaintenance tasks are also
+elirninated in the cloud.
+
+----- slide 27 -----
+Accessibility and pay per use: Cloud resources are easily accessible from around the globe – anytime, anywhere and from any device and you have complete access to your resources.
+This decides your billing also -you only pay for what you use and how much you use. It’s like your phone or electricity bill. But with other IT infrastructure, one spends the complete amount in one go and it is very very rare that those resources are used optimally and thus, the investment goes waste.
+[in the slide picture] A essibility and pay per se: Cloud re ources are
+easily accessible frorn around the globe
+anytirne,
+anywhere and frorn any device and you have cornplete
+use and how rnuch you use. It's like your phone or
+spends the cornplete an-mount in one go and it is very very
+rare that those resources are used optirnally and thus,
+the investrnent goes waste.
+
+----- slide 28 -----
+Reliability: Your infrastructure in the cloud increases the reliability and availability of applications and services. Cloud services run on pooled and redundant infrastructure which provides you with a higher availability of IT services.
+Data control: Another primary advantage of the cloud is that it centralizes all the data from multiple projects and branch offices to a single location. You gain complete control over the data without visiting individual places for checking the information.
+Data backup & recovery: Loss of data can significantly impact your business. You might lose critical information which can cost you a huge sum of money, waste your valuable time and adversely impact your brand image.
+To prevent it, you can automatically backup all the data to the cloud on a regular basis. This helps you to recover any data in case of accidental deletion, loss because of natural calamity or if the hard drive crashes.
+[in the slide picture] iabi1ityéY6QiiGiåfrästructure—in thecloud increases the
+Data control: Another pril-nary advantage of the cloud is
+that it centralizes all the data frorn rnultiple projects and
+branch offices to a single location. You gain con•plete
+checking the inforrnation.
+irnpact your business. You rnight lose critical inforrnation
+which can cost you a huge of rnoney, waste your
+valuable tirne and adversely in•pact your brand in•age.
+To prevent it, you can autornatically backup all the data to the
+case of accidental deletion, loss because of natural calan•ity
+
+----- slide 29 -----
+Huge cloud storage: Most cloud services provide you a free, secure and huge storage space to store all your valuable information.
+Although most cloud storage services like OneDrive offer you a good amount of free storage, if you use it all, you can always go for buying more secure storage in the cloud.
+Automatic software updates: Updating a system every now and then can be a frustrating task for enterprises. The IT department needs to update the system for every individual which not only wastes time but affects productivity.
+But if you are using cloud-based applications, they will get automatically updated, without any involvement from the users.
+[in the slide picture] Hu e cloud stor
+• Most cloud services prove de ou
+valuable inforrnation.
+I-nost
+offer you a good arnount of free storage, if
+you use it all, you can always go for buying rnore secure
+Autonmatic softyvare updates: Updating a systern
+enterprises. The IT departrnent needs to update the
+systel-n for every individual which not only wastes
+get autornatically updated, without any involvernent
+frorn the users.
+
+----- slide 30 -----
+Cons of cloud computing:
+Requires good speed internet with good bandwidth: To access your cloud services, you need to have a good internet connection always with good bandwidth to upload or download files to/from the cloud
+Downtime: Since the cloud requires high internet speed and good bandwidth, there is always a possibility of service outage, which can result in business downtime. Today, no business can afford revenue or business loss due to downtime or slow down from an interruption in critical business processes.
+Limited control of infrastructure: Since you are not the owner of the infrastructure of the cloud, hence you don’t have any control or have limited access to the cloud infra.
+[in the slide picture] bandyvidth: To access your cloud services, you need to
+bandwidth to upload or download files to/ fron-l the cloud
+Doyvntirne: Since the cloud requires high internet speed
+outage, which can result in business downtin•e. Today, no
+downtin•e or slow down fron• an interruption in critical
+Lirnited control of infrastructure: Since you are not the
+have any control or have lirnited access to the cloud infra.
+
+----- slide 31 -----
+Restricted or limited flexibility: The cloud provides a huge list of services, but consuming them comes with a lot of restrictions and limited flexibility for your applications or developments. Also, platform dependency or ‘vendor lock-in’ can sometimes make it difficult for you to migrate from one provider to another.
+Ongoing costs: Although you save your cost of spending on whole infrastructure and its management, on the cloud, you need to keep paying for services as long as you use them. But in traditional methods, you only need to invest once.
+ Security: Security of data is a big concern for everyone. Since the public cloud utilizes the internet, your data may become vulnerable.
+In the case of a public cloud,  it depends on the cloud provider to take care of your data. So, before opting for cloud services, it is required that you find a provider who follows maximum compliance policies for data security.
+For complete security of data on the cloud, one needs to consider a somewhat costlier private cloud option or the hybrid cloud option, where generic data can be on the public cloud and business-critical data is kept on the private cloud.
+[in the slide picture] Restricted ovlirnit
+exibility: The cloud provid a huge
+o services, but consul-ning
+restrictions and lin-rited flexibility for your applications or
+developrnents. Also, platforrn dependency or 'vendor lock-in' can
+it difficult for you to rnigrate one provider
+whole infrastructure and its rnanagernent, on the cloud, you
+need to keep paying for services as long as you use thern. But in
+traditional rnethods, you only need to invest once.
+the public cloud utilizes the internet, your data rnay becorne
+required that you find a provider who follows rnaxirnurn
+For cornplete security of data on the cloud, one needs to consider a
+sornewhat costlier private cloud option or the hybrid cloud option,
+
+----- slide 32 -----
+Vendor Lock-in: Although the cloud service providers assure you that they will allow you to switch or migrate to any other service provider whenever you want, it is a very difficult process.
+You will find it complex to migrate all the cloud services from one service provider to another. During migration, you might end up facing compatibility, interoperability and support issues. To avoid these issues, many customers choose not to change the vendor.
+ Technical issues: Even if you are a tech whiz, the technical issues can occur, and everything can’t be resolved in-house. To avoid interruptions, you will need to contact your service provider for support. However, not every vendor provides 24/7 support to their clients.
+[in the slide picture] ou h the cloud service
+providers assure you that they will a ow you to switch
+or rnigrate to any other service provider whenever you
+You will find it cornplex to rnigrate all the cloud services
+frorn one service provider to another. During rnigration,
+you rnight end up facing cornpatibility, interoperability
+and support issues. To avoid these issues, rnany
+custorners choose not to change the vendor.
+
+----- slide 33 -----
+Advantages of Cloud | Disadvantages of Cloud
+No cost of infrastructure | Good internet connection & bandwidth required
+Minimum management and cost | Downtime
+No administrative or management hassles | Limited control of infrastructure
+Easy accessibility | Restricted or limited flexibility
+Pay per use | Ongoing costs
+Reliability | Security
+Data control | Vendor lock-in
+Data backup and recovery | Technical Issues
+Huge cloud storage | NA
+A list of advantages and disadvantages of cloud computing:
+[in the slide picture] Mininuum rnanagernent
+No adrministrative or
+rnanagen-nent hassles
+Downtirne
+Lin-üted control of
+Restricted or lirnited
+
+----- slide 34 -----
+Benefits of cloud computing
+Cloud computing offers your business many benefits. It allows you to set up what is essentially a virtual office to give you the flexibility of connecting to your business anywhere, any time. With the growing number of web-enabled devices used in today's business environment (e.g. smartphones, tablets), access to your data is even easier.
+There are many benefits to moving your business to the cloud:
+Reduced IT costs
+Moving to cloud computing may reduce the cost of managing and maintaining your IT systems. Rather than purchasing expensive systems and equipment for your business, you can reduce your costs by using the resources of your cloud computing service provider. You may be able to reduce your operating costs because:
+the cost of system upgrades, new hardware and software may be included in your contract
+you no longer need to pay wages for expert staff
+your energy consumption costs may be reduced
+there are fewer time delays.
+[in the slide picture] Bene s-of
+oud cornputing offers your business rnany benefits. It allows you
+of connecting to your business anywhere, any SAI ith the
+growing of web-enabled devices used in today's business
+environrnent (e.g. srnartphones, tablets), access to your data is even
+Moving to cloud convuting I-nay reduce the cost of rnanaging and
+rnaintaining your IT systerns. Rather than purchasing expensive
+systerns and equiprnent for your business, you can reduce your
+costs by using the resources of your cloud cornputing service
+provider. You rnay be able to reduce your operating costs because:
+
+----- slide 35 -----
+Scalability
+Your business can scale up or scale down your operation and storage needs quickly to suit your situation, allowing flexibility as your needs change. Rather than purchasing and installing expensive upgrades yourself, your cloud computer service provider can handle this for you. Using the cloud frees up your time so you can get on with running your business.
+Business continuity
+Protecting your data and systems is an important part of business continuity planning. Whether you experience a natural disaster, power failure or other crisis, having your data stored in the cloud ensures it is backed up and protected in a secure and safe location. Being able to access your data again quickly allows you to conduct business as usual, minimizing any downtime and loss of productivity.
+[in the slide picture] S billty
+installing expensive upgrades yourself, your cloud con•puter
+up your tin•e so you can get on with running your business.
+Protecting your data and systen•s is an irnportant part
+rninirnizing any downtirne and loss of productivity.
+
+----- slide 36 -----
+Collaboration efficiency
+Collaboration in a cloud environment gives your business the ability to communicate and share more easily outside of the traditional methods. If you are working on a project across different locations, you could use cloud computing to give employees, contractors and third parties access to the same files. You could also choose a cloud computing model that makes it easy for you to share your records with your advisers (e.g. a quick and secure way to share accounting records with your accountant or financial adviser).
+[in the slide picture] Collaboration in a cloud environrnent gives your
+business the ability to cornrnunicate and share rnore
+easily outside of the traditional rnethods. If you are
+could use cloud cornputing to give ernployees,
+contractors and third parties access to the sarne files.
+You could also choose a cloud cornputing rnodel that
+rnakes it easy for you to share your records with your
+
+----- slide 37 -----
+Flexibility of work practices
+Cloud computing allows employees to be more flexible in their work practices. For example, you have the ability to access data from home, on holiday, or via the commute to and from work (providing you have an internet connection). If you need access to your data while you are off-site, you can connect to your virtual office, quickly and easily.
+Access to automatic updates
+Access to automatic updates for your IT requirements may be included in your service fee. Depending on your cloud computing service provider, your system will regularly be updated with the latest technology. This could include up-to-date versions of software, as well as upgrades to servers and computer processing power.
+[in the slide picture] Cloud cornputing allows ernployees to be rnore flexible
+in their work practices. For exarnple, you have the ability
+to access data frorn horne, on holiday, or via the
+cornrnute to and frorn work (providing you have an
+Access to updates for your IT requirernents
+rnay be included in your service fee. Depending on your
+cloud cornputing service provider, your systern will
+upgrades to servers and cornputer processing power.
+
+----- slide 38 -----
+Evolution of Cloud Computing:
+Cloud computing is all about renting computing services. This idea first came in the 1950s. In making cloud computing what it is today, five technologies played a vital role. These are distributed systems and its peripherals, virtualization, web 2.0, service orientation, and utility computing.
+[in the slide picture] Cloud cornputing is all about renting
+services. This idea first carne in the 1950s. In rnaking
+cloud cornputing what it is today, five technologies
+played a vital role. These are distributed systerns and its
+
+----- slide 39 -----
+[in the slide picture] 0 /Qti0??
+
+----- slide 40 -----
+Distributed Systems:
+It is a composition of multiple independent systems but all of them are depicted as a single entity to the users. The purpose of distributed systems is to share resources and also use them effectively and efficiently. Distributed systems possess characteristics such as scalability, concurrency, continuous availability, heterogeneity, and independence in failures. But the main problem with this system was that all the systems were required to be present at the same geographical location. Thus to solve this problem, distributed computing led to three more types of computing and they were-Mainframe computing, cluster computing, and grid computing.
+[in the slide picture] It is a cornposition of rnultiple independent systerns but
+all of thern are depicted as a single entity to the users.
+The purpose of distributed systerns is to share resources
+and also use thern effectively and efficiently. Distributed
+systerns possess characteristics such as scalability,
+independence in failures. But the rnain problern with
+this systern was that all the systerns were required to be
+present at the sarne geographical location. Thus to solve
+this problern, distributed cornputing led to three rnore
+types of cornputing and they were-Mainfrarne
+cornputing, cluster cornputing, and grid cornputing.
+
+----- slide 41 -----
+Mainframe computing:Mainframes which first came into existence in 1951 are highly powerful and reliable computing machines. These are responsible for handling large data such as massive input-output operations. Even today these are used for bulk processing tasks such as online transactions etc. These systems have almost no downtime with high fault tolerance. After distributed computing, these increased the processing capabilities of the system. But these were very expensive. To reduce this cost, cluster computing came as an alternative to mainframe technology.
+Cluster computing:In 1980s, cluster computing came as an alternative to mainframe computing. Each machine in the cluster was connected to each other by a network with high bandwidth. These were way cheaper than those mainframe systems. These were equally capable of high computations. Also, new nodes could easily be added to the cluster if it was required. Thus, the problem of the cost was solved to some extent but the problem related to geographical restrictions still pertained. To solve this, the concept of grid computing was introduced.
+[in the slide picture] Mainfrarne
+cornputing:
+arnes which first carne to—existenceün 1951¯åFe highly
+responsible for handling large data such as rnassive input-output
+such as online transactions etc. These systerns have all-nost no
+downtirne with high fault tolerance. After distributed
+systern. But these were very expensive. To reduce this cost,
+cheaper than those rnainfrarne systerns. These were equally
+capable of high convutations. Also, new nodes could easily be
+added to the cluster if it was required. Thus, the problern of the
+cost was solved to sorne extent but the problern related to
+
+----- slide 42 -----
+Grid computing:
+In 1990s, the concept of grid computing was introduced. It means that different systems were placed at entirely different geographical locations and these all were connected via the internet. These systems belonged to different organizations and thus the grid consisted of heterogeneous nodes. Although it solved some problems but new problems emerged as the distance between the nodes increased. The main problem which was encountered was the low availability of high bandwidth connectivity and with it other network associated issues. Thus. cloud computing is often referred to as “Successor of grid computing”.
+[in the slide picture] onmputlng:
+In 1990s, the concept of grid cornputing was introduced. It
+rneans that different systerns were placed at entirely different
+internet. These systerns belonged to different organizations
+Although it solved sorne problerns but new problerns
+ernerged as the distance between the nodes increased. The
+rnain problern which was encountered was the low
+network associated issues. Thus. cloud con•puting is often
+referred to as "Successor of grid cornputing".
+
+----- slide 43 -----
+Virtualization:
+It was introduced nearly 40 years back. It refers to the process of creating a virtual layer over the hardware which allows the user to run multiple instances simultaneously on the hardware. It is a key technology used in cloud computing. It is the base on which major cloud computing services such as Amazon EC2, VMware vCloud, etc work on. Hardware virtualization is still one of the most common types of virtualization.
+Web 2.0:
+It is the interface through which the cloud computing services interact with the clients. It is because of Web 2.0 that we have interactive and dynamic web pages. It also increases flexibility among web pages. Popular examples of web 2.0 include Google Maps, Facebook, Twitter, etc. Needless to say, social media is possible because of this technology only. In gained major popularity in 2004.
+[in the slide picture] run rnultiple instances sinulltaneously on the hardware. It is a key
+technology used in cloud cornputing. It is the base on which rnajor
+cloud cornputing services such as Arnazon EC2, VMware vCloud,
+It is the interface through which the cloud cornputing services
+interactive and dynarnic web pages. It also increases flexibility
+Maps, Facebook, Twitter, etc. Needless to say, social is
+possible because of this technology only. In gained rnajor
+
+----- slide 44 -----
+Service orientation:
+It acts as a reference model for cloud computing. It supports low-cost, flexible, and evolvable applications. Two important concepts were introduced in this computing model. These were Quality of Service (QoS) which also includes the SLA (Service Level Agreement) and Software as a Service (SaaS).
+
+Utility computing:
+It is a computing model that defines service provisioning techniques for services such as compute services along with other major services such as storage, infrastructure, etc which are provisioned on a pay-per-use basis.
+
+Thus, the above technologies contributed to the making of cloud computing.
+[in the slide picture] It acts as a reference rnodel for cloud con•puting. It
+irnportant concepts were introduced in this cornputing
+rnodel. These were Quality of Service (QoS) which also
+includes the SLA (Service Level Agreen•ent) and Software
+It is a cornputing rnodel that defines service provisioning
+techniques tor services such as cornpute services along with
+other n•ajor services such as storage, infrastructure, etc which
+cloud con-mputing.
+
+----- slide 45 -----
+Business drivers for adopting cloud computing:
+Business Hike:
+Analyzing your moves gives fabricated results. Thus, if you view a certain range of hike in your business, it might be one of the cloud drivers. The growth in business is one of the major obligations, that any organization could ever rate.
+Therefore, based on the steps of the plan for driving the cloud services, it is prominent to boil out the business strategy by the consideration of cloud adoption.
+- Balanced Cost Structure:
+This is one of the most recognized factors, acting as a driver for cloud adoption. The number of organizations has witnessed that employing the cloud bolsters in cutting the cost, resulting in turning down of license for legacy systems.
+Depending on the cloud for acquiring cloud storage services, reduction in office space and attaining the quality, domes as the driver for cloud adoption.
+[in the slide picture] Analyzing your rnoves gives fabricated results. Thus, if you
+view a certain range of hike in your business, it n•ight be one
+rnajor obligations, that any organization could ever rate.
+cloud services, it is prorninent to boil out the business
+This is one of the n•ost recognized factors, acting as a driver
+for cloud adoption. The nun•ber of organizations has
+witnessed that ernploying the cloud bolsters in cutting the
+systerns.
+don•es as the driver for cloud adoption.
+
+----- slide 46 -----
+Improvised Productivity:
+When the organizations are adopting the means of fabricated technology, it is believed to view tremendous change in the range of productivity.
+Productivity is the factor, often considered as a driver of cloud adoption. If the cloud is structured at a significant rate, it could produce imitable results, in favour of an organization.
+- Efficiency:
+Improved Efficiency, with minimal errors, is one of the key drivers, propagating the reasons for adoption of the cloud.
+When the organization adopts any newer means of technology, it always has an underlying motive to access the medium for fulfilling the business requirement, with a hike in business and optimized cloud solutions. At its core, efficiency is about removing unnecessary steps to streamline processes in order to increase productivity or deliver on customer requirements faster
+[in the slide picture] hen the organizations are adopting the of fabricated
+technology, it is believed to view trernendous change in the
+it could produce irnitable results,
+VVhen the organization adopts any newer rneans of
+technology, it always has an underlying rnotive to access the
+I-nediurn tor fulfilling the business requirernent, with a hike
+in business and optirnized cloud solutions. At its core,
+custorner requirernents faster
+
+----- slide 47 -----
+Scalability:
+The scalable service of the cloud is one the biggest key driver, acting in the favor of organizations. The cloud-enabled services are swaddled in such a manner that one can scale the range of services as per its requirement.
+One can add on more number of services with customized features if the organization feels ready to step up. Also, the organization can step down in terms of services, if it finds it as the far-reaching target.
+[in the slide picture] Sc bility:
+enabled services are swaddled in such a rnanner that one
+can scale the range of services as per its requirernent.
+One can add on rnore nurnber of services with
+step up. Also, the organization can step down in terrns of
+
+----- slide 48 -----
+NIST Model:
+NIST is part of the U.S. Department of Commerce and works to promote the economy and public welfare by providing technical leadership for measurement and standards infrastructure.
+From the NIST definition of cloud computing, “Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources that can be rapidly provisioned and released with minimal management effort or service provider interactive.” NIST provides the following definitions of the essential characteristics and service and deployment models for cloud computing.
+[in the slide picture] N Model.
+NIST is part of the U.S. Departrnent of Conunerce and
+works to prornote the econorny and public welfare by
+providing technical leadership for rneasurernent and
+Frorn the NIST definition of cloud cornputing, "Cloud
+cornputing is a rnodel for enabling ubiquitous,
+convenient, on-dernand network access to a shared pool
+of configurable cornputing resources that can be rapidly
+provisioned and released with rninirnal rnanagernent
+service and deployrnent rnodels for cloud cornputing.
+
+----- slide 49 -----
+Essential Cloud Computing Characteristics:
+On-demand self-service: consumers can unilaterally provision computing capabilities as needed automatically without requiring human interaction with each service provider.
+Broad network access: capabilities are available over the network and accessed through standard mechanism that promote use by heterogeneous thin or thick client platforms.
+Resources pooling: The provider’s computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand
+Rapid elasticity: capabilities can be elastically provisioned and released to scale rapidly outward and inward commensurate with demand.
+Measured service: cloud systems automatically control and optimize resource use by leveraging a metering capability at some level of abstraction appropriate to the type of service.
+[in the slide picture] self-service: consurners can unilaterally provision
+cornputing capabilities as needed autornatically without
+requiring hurnan interaction with each service provider.
+Broad netyvork access: capabilities are available over the network
+and accessed through standard rnechanisrn that prornote use by
+heterogeneous thin or thick client platforrns.
+Resources pooling: The provider's resources are
+pooled to serve rnultiple consurners using a rnulti-tenant rnodel,
+with different physical and virtual resources dynarnically
+assigned and reassigned according to consurner
+released to scale rapidly outward and inward conunensurate with
+dernand.
+Measured service: cloud systerns control and
+optirnize resource use by leveraging a rnetering capability at
+sorne level of abstraction appropriate to the type of service.
+
+----- slide 50 -----
+Service Models: The many paradigms of cloud computing can be broken down into three unique service model classifications: Software as a Service (SaaS), Platform as a Service (PaaS), and Infrastructure as a Service (IaaS).
+Software as a Service (Saas)
+Platform as a Service (PaaS)
+Infrastructure as a Service (IaaS)
+
+Deployment Models:
+Private cloud
+Community cloud
+Public cloud
+Hybrid cloud
+[in the slide picture] cornputing can be broken down into three unique
+service rnodel classifications: Software as a Service
+(SaaS), Platforrn as a Service (PaaS), and Infrastructure
+
+----- slide 51 -----
+Infrastructure as a Service | IaaS
+Iaas is also known as Hardware as a Service (HaaS). It is one of the layers of the cloud computing platform. It allows customers to outsource their IT infrastructures such as servers, networking, processing, storage, virtual machines, and other resources. Customers access these resources on the Internet using a pay-as-per use model.
+In traditional hosting services, IT infrastructure was rented out for a specific period of time, with pre-determined hardware configuration. The client paid for the configuration and time, regardless of the actual use. With the help of the IaaS cloud computing platform layer, clients can dynamically scale the configuration to meet changing requirements and are billed only for the services actually used.
+
+A cloud computing service provider, such as Azure, manages the infrastructure, while you purchase, install, configure and manage your own software—operating systems, middleware and applications.
+[in the slide picture] Iaas is also known as Hardyvare as a Service (HaaS). It is one of
+the layers of the cloud cornputing platforn-m. It allows custorners
+processing, storage, virtual and other resources.
+Custorners access these resources on the Internet using a pay-as-
+per use rnodel.
+for a specific period of tirne, with pre-deterrnined hardware
+regardless of the actual use. WV ith the help of the IaaS cloud
+cornputing platforrn layer, clients can dynarnically scale the
+configuration to rneet changing requirernents and are billed only
+A cloud corn utin service rovider, such as Azure, rnanages the
+infrastructure, w ile you purchase, install, configure and rnanage
+your own software—operating systerns,
+rniddleware and
+
+----- slide 52 -----
+Hosted applications/apps | Development tools, database management, business analytics | Operating systems | Servers and storage | Networking firewalls/security | Data center physical plant/building
+[in the slide picture] Developr-nent tools,
+Operating systerns
+SaaS
+PaaS
+IaaS
+
+----- slide 53 -----
+IaaS provider provides the following services -
+Compute: Computing as a Service includes virtual central processing units and virtual main memory for the Vms that is provisioned to the end- users.
+Storage: IaaS provider provides back-end storage for storing files.
+Network: Network as a Service (NaaS) provides networking components such as routers, switches, and bridges for the Vms.
+Load balancers: It provides load balancing capability at the infrastructure layer.
+[in the slide picture] Cornpute: Cornputing as a Service includes virtual
+central processing units and virtual rnain rnernory for
+the V Ins that is provisioned to the end- users.
+Net»vork: Network as a Service (NaaS) provides
+networking cornponents such as routers, switches, and
+
+----- slide 54 -----
+Advantages of IaaS cloud computing layer
+There are the following advantages of IaaS computing layer -
+1. Shared infrastructure
+	IaaS allows multiple users to share the same physical infrastructure.
+2. Web access to the resources
+	Iaas allows IT users to access resources over the internet.
+3. Pay-as-per-use model
+	IaaS providers provide services based on the pay-as-per-use basis. The users are required to pay for what they have used.
+4. Focus on the core business
+	IaaS providers focus on the organization's core business rather than on IT infrastructure.
+5. On-demand scalability
+	On-demand scalability is one of the biggest advantages of IaaS. Using IaaS, users do not worry about to upgrade software and troubleshoot the issues related to hardware components.
+[in the slide picture] On-den-rand scalability is one of the biggest advantages of IaaS.
+troubleshoot the issues related to hardware cornponents.
+
+----- slide 55 -----
+Disadvantages of Iaas:
+1. Security
+	Security is one of the biggest issues in IaaS. Most of the IaaS providers are not able to provide 100% security.
+2. Maintenance & Upgrade
+	Although IaaS service providers maintain the software, but they do not upgrade the software for some organizations.
+3. Interoperability issues
+	It is difficult to migrate VM from one IaaS provider to the other, so the customers might face problem related to vendor lock-in.
+[in the slide picture] Although IaaS service providers rnaintain the software,
+but they do not upgrade the software for sorne
+It is difficult to I-nigrate VM frorn one IaaS provider to
+the other, so the custorners rnight face problern related
+
+----- slide 56 -----
+Top Iaas Providers who are providing IaaS cloud computing platform
+[in the slide picture] onetmagtc•
+u amazon
+'*bseöces
+Rackspace
+Netmagic
+Solutions
+Web Service
+TATA
+r;ectANce
+Communications
+Sify
+Technologies
+Reliance
+
+----- slide 57 -----
+[in the slide picture] Pizza as a Service
+Traditional
+On-premises
+(On Pr•m)
+Dining Table
+Electric Gas
+Oven
+Fire
+Pizza Dough
+Tomato Sauce
+Toppings
+Cheese
+Made at
+home
+Intrastructure
+Soda
+Top Ings
+Take & Bake
+You Manage
+Platform
+EJectric Gas
+Delivered
+Vendor Manages
+Software
+Tomato Sauco
+Dined
+Out
+
+----- slide 58 -----
+IaaS (Infra as a Service)
+	IaaS provides the infrastructure such as virtual machines and other resources like virtual-machine disk image library, block and file-based storage, firewalls, load balancers, IP addresses, virtual local area networks etc. Infrastructure as service or IaaS is the basic layer in cloud computing model.
+	Common examples: DigitalOcean, Linode, Rackspace, Amazon Web Services (AWS), Cisco Metapod, Microsoft Azure, Google Compute Engine (GCE) are some popular examples of Iaas.
+PaaS (Platform as a Service)
+	PaaS or platform as a service model provides you computing platforms which typically includes an operating system, programming language execution environment, database, web server. technically It is a layer on top of IaaS as the second thing you demand after Infrastructure is a platform.
+	Common examples: AWS Elastic Beanstalk, Windows Azure, Heroku, Force.com, Google App Engine, Apache Stratos.
+[in the slide picture] aaS provides the infrastructure such as virtual and
+other resources like virtual-rnachine disk irnage library, block
+the basic layer in cloud cornputing rnodel.
+Cornrnon exarnples: DigitalOcean, Linode, Rackspace,
+Web Services (AVVS), Cisco Metapod, Microsoft Azure,
+Google Cornpute Engine (GCE) are sorne popular exarnples of
+PaaS or platforrn as a service rnodel provides you cornputing
+platforrns which typically includes an operating systern,
+prograrnrning language execution environrnent, database, web
+you den-nand after Infrastructure is a platforrn.
+Cornrnon exarnples: AAM S Elastic Beanstalk, YVindows Azure,
+Heroku, Google App Engine, Apache Stratos.
+
+----- slide 59 -----
+SaaS (Software as a Service)
+	In a SaaS, you are provided access to application services installed at a server. You don’t have to worry about installation, maintenance or coding of that software. You can access and operate the software with just your browser. You don’t have to download or install any kind of setup or OS, the software is just available for you to access and operate. The software maintenance or setup or help will be provided by SaaS provider company and you will only have to pay for your usage.
+	Common examples: Google Apps, Microsoft office365, Google docs, Gmail, WHMCS billing software
+[in the slide picture] about installation, rnaintenance or coding of that
+rnaintenance or setup or help will be provided by SaaS
+provider cornpany and you will only have to pay for
+Cornrnon exarnples: Google Apps, Microsoft
+office365, Google docs, Grnail, N/VHMCS billing
+
+----- slide 60 -----
+Platform as a Service | PaaS
+Platform as a Service (PaaS) provides a runtime environment. It allows programmers to easily create, test, run, and deploy web applications. You can purchase these applications from a cloud 	service provider on a pay-as-per use basis and 	access them using the Internet connection. In PaaS, back end scalability is managed by the cloud service provider, so end- users do not need to worry about managing the infrastructure.
+	PaaS includes infrastructure (servers, storage, and 	networking) and platform (middleware, 	development tools, database management 	systems, business intelligence, and more) to 	support the web application life cycle.
+Example: Google App Engine, Force.com, Joyent, Azure.
+[in the slide picture] Platforrn as a Service (PaaS) provides a runtirne
+environrnent. It allows progranuners to easily create,
+these applications frorn a cloud service provider on a
+pay-as-per use basis and access thern using the Internet
+connection. In PaaS, back end scalability is rnanaged by
+worry about rnanaging the infrastructure.
+(rniddleware,
+and platforrn
+developrnent
+rnanagernent
+systerns, business intelligence, and rnore) to
+
+----- slide 61 -----
+The following diagram shows how PaaS offers an API and development tools to the developers and how it helps the end user to access business applications.
+[in the slide picture] The Ilowing-diagr
+and developrnent tools to the developers and how it
+Users
+Apps
+IDE
+Integrated Development Environment
+Developer/iSV
+Backup'
+Data Security
+Recove
+Hostin
+Scalable
+Infrastructure
+
+----- slide 62 -----
+PaaS providers provide the Programming languages, Application frameworks, Databases, and Other tools:
+Programming languages
+PaaS providers provide various programming languages for the developers to develop the applications. Some popular programming languages provided by PaaS providers are Java, PHP, Ruby, Perl, and Go.
+2. Application frameworks
+PaaS providers provide application frameworks to easily understand the application development. Some popular application frameworks provided by PaaS providers are Node.js, Drupal, Joomla, WordPress, Spring, Play, Rack, and Zend.
+3. Databases
+PaaS providers provide various databases such as ClearDB, PostgreSQL, MongoDB, and Redis to communicate with the applications.
+4. Other tools
+PaaS providers provide various other tools that are required to develop, test, and deploy the applications.
+[in the slide picture] PaaS Joviders provi
+Pro rarnnmngAanguages, A plica Ion
+eworks, Databases, and Ot er
+PaaS providers provide various prograrnrning languages for the
+developers to develop the applications. popular
+prograrnrning languages provided by PaaS providers are Java, PH P,
+PaaS providers provide application frarneworks to easily
+understand the application developrnent. popular
+application frarneworks provided by PaaS providers are Node.js,
+Drupal, Joornla, WordPress, Spring, Play, Rack, and Zend.
+PostgreSQL, MongoDB, and Redis to cornrnunicate with the
+
+----- slide 63 -----
+Advantages of PaaS
+There are the following advantages of PaaS -
+1) Simplified Development
+PaaS allows developers to focus on development and innovation without worrying about infrastructure management.
+2) Lower risk
+No need for up-front investment in hardware and software. Developers only need a PC and an internet connection to start building applications.
+3) Prebuilt business functionality
+Some PaaS vendors also provide already defined business functionality so that users can avoid building everything from very scratch and hence can directly start the projects only.
+4) Instant community
+PaaS vendors frequently provide online communities where the developer can get the ideas to share experiences and seek advice from others.
+5) Scalability
+Applications deployed can scale from one to thousands of users without any changes to the applications.
+[in the slide picture] worrying about intrastructure rnanagernent.
+No need for up-front investrnent in hardware and software. Developers
+Sorne PaaS vendors also provide already defined business functionality so
+that users can avoid building everything frorn very scratch and hence can
+PaaS vendors frequently provide online conununities where the developer
+can get the ideas to share experiences and seek advice frorn others.
+
+----- slide 64 -----
+Disadvantages of PaaS:
+Vendor lock-in
+One has to write the applications according to the platform provided by the PaaS vendor, so the migration of an application to another PaaS vendor would be a problem.
+For example, an application written in Python against API of Google, and using App Engine of Google is likely to work only in that environment.
+2) Data Privacy
+Corporate data, whether it can be critical or not, will be private, so if it is not located within the walls of the company, there can be a risk in terms of privacy of data.
+3) Integration with the rest of the systems applications
+It may happen that some applications are local, and some are in the cloud. So there will be chances of increased complexity when we want to use data which in the cloud with the local data.
+[in the slide picture] One has to write the applications according to the platforrn
+provided by the PaaS vendor, so the rnigration of an
+application to another PaaS vendor would be a problenu
+For exarnple, an application written in Python against API of
+in that environrnent.
+private, so if it is not located within the walls of the cornpany,
+there can be a risk in tern•s of privacy of data.
+It Inay happen that sorne applications are local, and sorne are
+in the cloud. So there will be chances of increased cornplexity
+
+----- slide 65 -----
+What is Software-as-a-Service (SaaS)?
+Software-as-a-Service, or SaaS for short, is a cloud-based method of providing software to users. SaaS users subscribe to an application rather than purchasing it once and installing it. Users can log into and use a SaaS application from any compatible device over the Internet. The actual application runs in cloud servers that may be far removed from a user's location.
+[in the slide picture] Wha is Softyvare—
+rnethod of providing software to users. SaaS users
+application frorn any cornpatible device over the
+that rnay be far rernoved frorn a user's location.
+
+----- slide 66 -----
+[in the slide picture] Non-SaaS Application
+Application logic runs
+on user's computer
+goo
+in the cloud
+
+----- slide 67 -----
+A SaaS application may be accessed through a browser or through an app. Online email applications that users access through a browser, such as Gmail and Office 365, are common examples of SaaS applications.
+The difference between SaaS and a software installation on a user's computer is somewhat like the difference between streaming a TV show online and buying all the seasons of the TV show on DVD.
+Someone who buys a TV show on DVD only needs to pay for it once; however, they will need to store and maintain the DVDs, and if they change their hardware – for instance, if they replace their DVD player with a Blu-ray player – then they will need to purchase the physical media again. Streaming the show instead means a third party handles all the storage and upgrades, and all a user needs to do is press play. However, streaming is dependent on an Internet connection, and users typically need to pay a recurring monthly fee to maintain their access.
+[in the slide picture] application I-nay e
+through an app. Online en-mail applications that users access
+through a browser, such as Grnail and Office 365, are
+cornrnon exarnples of SaaS applications.
+a user's cornputer is sornewhat like the difference between
+strearning a TV show online and buying all the seasons of
+Sorneone who buys a TV show on DVD only needs to pay
+for it once; however, they will need to store and rnaintain
+they will need to purchase the physical rnedia again.
+Strearning the show instead I-neans a third party handles all
+play. However, strearning is dependent on an Internet
+rnonthly fee to rnaintain their access.
+
+----- slide 68 -----
+[in the slide picture] goo
+ana
+
+----- slide 69 -----
+What does 'as a service' mean?
+Consider the difference between valet parking and renting a parking spot. Valet parking is a service, while a parking spot is a product, even though both provide the same benefit to the customer: a place to leave their car.
+Traditionally, software vendors sold their software to users as a product. However, in the SaaS model they actively provide and maintain the software for their users, via the cloud. They host and maintain the databases and code necessary for the application to run, and they run the application on their servers. Thus, SaaS is more like a service than a product.
+[in the slide picture] the sarne benefit to the custorner: a place to leave their
+users as a product. However, in the SaaS rnodel they
+actively provide and rnaintain the software for their
+users, via the cloud. They host and rnaintain the
+Thus, SaaS is rnore like a service than a product.
+
+----- slide 70 -----
+What is the cloud?
+"The cloud" refers to remote web servers in various data centers that host databases and run application code. Cloud providers deliver their services to customers or end users via the Internet. 
+
+What are the advantages and disadvantages of using SaaS?
+The SaaS model has a number of pros and cons, although for modern businesses and users the pros of SaaS often outweigh the cons. Here are some of the advantages and disadvantages of using SaaS applications:
+Advantage:
+ Access from anywhere, on any device. Typically, users can log into SaaS applications from any device and any location. This offers a great deal of flexibility – businesses can allow employees to operate all over the world, and users can access their files no matter they are. In addition, most users use multiple devices and replace them often; users don't need to reinstall SaaS applications or purchase new licenses each time they switch to a new device.
+No need for updates or installations. The SaaS provider updates and patches the application on an ongoing basis.
+Scalability. The SaaS provider handles scaling up the application, such as adding more database space or more compute power as usage increases.
+Cost savings. SaaS cuts down on internal IT costs and overhead. The SaaS provider maintains the servers and infrastructure that support the application, and the only cost to a business is the subscription cost of the application.
+[in the slide picture] What is th Iou
+c oud" refers to rernote web servers In
+iousdata-cente s at host
+custorners or end users via the Internet.
+The SaaS rnodel has a nurnber of pros and cons, although for rnodern
+businesses and users the pros of SaaS often outweigh the cons. Here are sorne
+Access frorn anyyvhere, on any device. Typically, users can log into SaaS
+applications frorn any device and any location. This offers a great deal of
+flexibility — businesses can allow ernployees to operate all over the world, and
+users can access their files no rnatter they are. In addition, rnost users use
+r-nultiple devices and replace thern often; users don't need to reinstall SaaS
+applications or purchase new licenses each tir-ne they switch to a new device.
+adding rnore database space or I-nore cornpute power as usage increases.
+provider the servers and infrastructure that support the application,
+
+----- slide 71 -----
+Disadvantage: 
+The need for stronger access control. The increased accessibility of SaaS applications also means that verifying user identity and controlling access levels becomes very important. With SaaS, organizational assets are no longer kept within an internal network, separate from the outside world. Instead, user access is based on user identity: if someone has the right login credentials, they are granted access. Strong identity verification thus becomes crucial.
+Vendor lock-in. A business may become overly reliant on the SaaS application provider. It's time-consuming and expensive to move to a new application if an organization's entire database is stored within the old application.
+Disadvantage (for enterprises): Security and compliance. With SaaS applications, the responsibility for protecting those applications and their data moves from internal IT teams to the external SaaS providers. For small to medium-sized businesses, this is less of a disadvantage, as large cloud providers typically have more resources for putting strong security in place. But this can be a challenge if a large business faces tight security or regulatory standards. In some cases businesses will be unable to assess their applications' security themselves, for instance by performing penetration testing. Essentially, they have to take the external SaaS provider's word that the application is secure.
+[in the slide picture] T e need for stronger access contro . hemncreased accessibility of
+SaaS applications also rneans that verifying user identity
+becornes very irnportant. VVith SaaS,
+separate frorn the outside world. Instead, user access is based on user
+identity: if sorneone has the right login credentials, they are granted
+access. Strong identity verification thus becornes crucial.
+Vendor lock-in. A business rnay becorne overly reliant on the SaaS
+application provider. It's tirne-consurning and expensive to rnove to a
+and their data rnoves froin internal IT tearns to the external SaaS
+providers. For srnall to rnediurn-sized businesses, this is less of a
+business faces tight security or regulatory standards. In sorne cases
+thernselves, for instance by perforrning
+
+----- slide 72 -----
+Cloud Computing Stack: 
+Cloud computing is a broad term that describes a wide range of services. We can categorise cloud services into one of three offerings: software-as-a-service (SaaS), platform-as-a-service (PaaS) and infrastructure-as-a-service (IaaS). They are called ‘as a service’ because businesses purchase them as service products from third parties. Together, they are the cloud computing stack.
+SaaS are used by end users such as employees in a business, programmers use PaaS for developing applications, and IaaS are used by network architects to design a firm’s IT systems
+[in the slide picture] d ornputing-Stac1
+Cloud cornputing is a broad terrn that describes a wide
+platforrn-as-a-service (PaaS) and infrastructure-as-a-
+businesses purchase thern as service products frorn
+third parties. Together, they are the cloud cornputing
+SaaS are used by end users such as ernployees in a
+business, progranuners use PaaS for developing
+to design a firn*s IT systerns
+
+----- slide 73 -----
+Cloud computing has commonly been referred to as a “stack” because it typically encompasses many different types of services which have been built on top of each other under a “cloud”. Cloud computing has been defined by the NIST (National Institute of Standards and Technology) as a model that enables on-demand access to a shared resource pool consisting of servers, networks, applications, services and storage which can be rapidly deployed with minimal management efforts. There are three different types of cloud computing services namely Platform as a Service or PaaS, Software as a Service or SaaS and Infrastructure as a Service or IaaS.
+[in the slide picture] rnonly been•eferred to as a
+cornputlng as
+"stack" because it typically encornpasses rnany
+of each other under a "cloud". Cloud cornputing has
+Standards and Technology) as a rnodel that enables
+on-dernand access to a shared resource pool consisting
+which can be rapidly deployed with rninirnal
+rnanagernent efforts. There are three different types of
+cloud cornputing services narnely Platforrn as a Service
+
+----- slide 74 -----
+[in the slide picture] SaaS
+PaaS
+IaaS
+End Users
+Application
+Develo ers
+Network
+Architects
+
+----- slide 75 -----
+HOW DOES CLOUD COMPUTING WORK?
+Cloud computing is an application-based software infrastructure that stores data on remote serves, which can be accessed through the internet. To understand how cloud computing works, it can be divided into front-end and backend.
+The front end enables a user to access data stored in the cloud using an internet browser or a cloud computing software. However, the primary component of cloud computing – responsible for securely storing data and information – is the backend. It comprises servers, computers, databases, and central servers.
+The central server facilitates operations by following a set of rules known as protocols. It uses a software, middleware, to ensure seamless connectivity between devices/computers linked via cloud computing. Cloud computing service providers usually maintain multiple copies of the data to mitigate instances of security threats, data loss, data breach, etc.
+[in the slide picture] Cloud cornputing is an application-based software
+infrastructure that stores data on rernote serves, which can
+cornputing works, it can be divided into front-end and
+cloud using an internet browser or a cloud cornputing
+software. However, the prirnary con•ponent of cloud
+con•puting
+inforrnation
+is the backend. It cornprises servers,
+con•puters, databases, and central servers.
+of rules known as protocols. It uses a software, rniddleware,
+cornputing service providers usually rnaintain rnultiple
+copies of the data to rnitigate instances of security threats,
+
+----- slide 76 -----
+Let's say you're an executive at a large corporation. Your particular responsibilities include making sure that all of your employees have the right hardware and software they need to do their jobs. Buying computers for everyone isn't enough -- you also have to purchase software or software licenses to give employees the tools they require. Whenever you have a new hire, you have to buy more software or make sure your current software license allows another user. It's so stressful that you find it difficult to go to sleep on your huge pile of money every night.
+Soon, there may be an alternative for executives like you. Instead of installing a suite of software for each computer, you'd only have to load one application. That application would allow workers to log into a Web-based service which hosts all the programs the user would need for his or her job. Remote machines owned by another company would run everything from e-mail to word processing to complex data analysis programs. It's called cloud computing, and it could change the entire computer industry.
+[in the slide picture] -lar e corporation. Your
+particular responsibilities include Ina cing sure that all of
+your ernployees have the right hardware and software they
+need to do their jobs. Buying con•puters for everyone isn t
+licenses to give ernployees the tools they require.
+VVhenever you have a new hire, you have to buy
+software or n•ake sure your current software license allows
+to sleep on your huge pile of rnoney every night.
+Soon, there Inay be an alternative for executives like you.
+Instead of installing a suite of software for each cornputer,
+hosts all the prograrns the user would need for his or her
+job. Ren-note I-nachines owned by another cornpany would
+run everything frorn e-rnail to word processing to cornplex
+data analysis prograrns. It's called cloud cornputing, and
+it could change the entire cornputer industry.
+
+----- slide 77 -----
+[in the slide picture] Howe•eIoudCornputing Works
+02008HowStuffV.'orks
+Database
+(Storage)
+Client
+Cornputer
+Node
+Application
+Servers
+
+----- slide 78 -----
+In a cloud computing system, there's a significant workload shift. Local computers no longer have to do all the heavy lifting when it comes to running applications. The network of computers that make up the cloud handles them instead. Hardware and software demands on the user's side decrease. The only thing the user's computer needs to be able to run is the cloud computing system's interface software, which can be as simple as a Web browser, and the cloud's network takes care of the rest.
+There's a good chance you've already used some form of cloud computing. If you have an e-mail account with a Web-based e-mail service like Hotmail, Yahoo! Mail or Gmail, then you've had some experience with cloud computing. Instead of running an e-mail program on your computer, you log in to a Web e-mail account remotely. The software and storage for your account doesn't exist on your computer -- it's on the service's computer cloud.
+[in the slide picture] stern, there's a significant workload
+rnpu
+lifting when it to running applications. The network
+instead. Hardware and software den•ands on the user's side
+decrease. The only thing the user's con•puter needs to be
+software, which can be as sin•ple as a Web browser, and
+There's a good chance you've already used sorne forrn of
+Web-based e-n•ail service like Hotn•ail, Yahoo! Mail or
+Gi-nail, then you've had sorne experience with cloud
+con•puting. Instead of running an e-n•ail prograrn on your
+
+----- slide 79 -----
+Role of network in cloud computing:
+Emerging capabilities of network have enabled cloud to successfully provide on-demand services which can unilaterally provision computing capabilities such as servers, network, OS and storage. Further, it allows resource pooling where multiple users through multiple tenant model (multiple customer utilizing the same facility) can access different physical and virtual resources. Additionally, virtualization permits applications, compute and network resources to reside anywhere, which are then accessed through the network, thus allowing these resources to be flexible and scalable. Cloud computing also has the capability to measure the services being offered through the usage of charge back or metering where it can control and optimize resource usage.The network plays a key role in the delivery of cloud-based services as it provides a means to connect every IT system and has the ability to provision and scale these resources to meet application and end-user requirements.
+[in the slide picture] Role of etworkin cl
+orn uting:
+rnerging capabilities of network ave enabled cloud to
+successfully provide on-dernand services which can
+unilaterally provision con•puting capabilities such as
+resource pooling where rnultiple users through rnultiple
+tenant n•odel (rnultiple custon•er utilizing the sarne
+Additionally, virtualization perl-nits applications, cornpute
+resources to be fTexible and scalable. Cloud cornputing also
+has the capability to rneasure the services being offered
+through the usa e of charge back or n•etering where it can
+optirnize
+services as it provides a rneans to connect every IT systen•
+I-neet application and end-user requirernents.
+
+----- slide 80 -----
+[in the slide picture] Protocols ( What is protocols? )
+set of rules that allow 2 electronics
+item to connect and exchange info. to
+one another.
+Used for storage, communication, for
+encry. ,decnyp, networking, security,
+user-login management etc etc
+
+----- slide 81 -----
+[in the slide picture] l. Gossip Protocol
+It is a communication protocol.
+Similarly referred as a epidemic protocol.
+Anti-entropy is used to repairing a data.
+The dissemination protocol used to spread
+info.
+basically it work by using flooding agent in n/w.
+
+----- slide 82 -----
+[in the slide picture] failure-detectiom- in n/w, one by one they
+tar et the system and remaining sends the
+da?a.
+Messaging - Gossip are rapidly spread &
+uses a TCP to wrap the data and transmit
+it to correct destination.
+Monitoring
+Separate mechanism to
+monitor the msg (gossip) spread on it.
+
+----- slide 83 -----
+[in the slide picture] n la eG3 protocol OSI model.
+mechanism of fragmentation (data unit
+identification, length of data and offset address).
+Exactly same like IP but basic diff. is that CNLP addr.
+Size is 20 bytes as compared to IP(4 byte).
+
+----- slide 84 -----
+[in the slide picture] r communicate with each other rout/
+algo. is used to c oose epa o route the info.
+Ex. of this types of protocols are IP and IPX.
+Routing info. Protocol (RIP) is used to know the info.
+about path/routing.
+
+----- slide 85 -----
+[in the slide picture] tion rotocol used to multi
+data to the nodes in a n/w via router.
+Can be used for streaming video, gaming over
+cloud.
+It operates on n/ w layer just like other management
+protocol like ICMP.
+
+----- slide 86 -----
+[in the slide picture] Cn/ptographic n/w protocol allow
+remote login securely over internet.
+Advantage is remote login with
+encryption & access information.
+2 versions SSH-I & SSH-2.
+
+----- slide 87 -----
+[in the slide picture] The decryption algo. is placed inside a
+remote server for decryption of user_id
+and password.
+it was a replacement of telnet, Rlogin,
+RSH because it encrypt login_id &
+password login time.
+
+----- slide 88 -----
+[in the slide picture] E" N/w traffic & packet loss issues are solved.
+Packet will be loss when new packets are
+comes via switch so data will loss so it is
+solution over it.
+Advantages — handle packet traffic on
+data-link layer, lower cost, for storaging
+the packets.
+
+----- slide 89 -----
+[in the slide picture] Used for publish subscriber system, video &
+file transfer in cloud.
+developed by jabber open source
+community in 1999 & its freeware
+pro to col.
+In dec. 201 1 Microsoft released an XMPP
+in for messenger service.
+
+----- slide 90 -----
+[in the slide picture] fo. are routed in P-t-P manner over clo
+Wire less protocol provide description format of
+data send on n/w.
+Provide a guarantees of msg delivery & work on
+application layer.
+Used in cloud but now-a-days used in Red hat,
+Microsoft, Apache etc.
+
+----- slide 91 -----
+[in the slide picture] Replaced by IGRP in 1993 because didn 't
+support of IP classes of IP4 but it supports.
+If router didn 't have a valid path to the
+desti.So it discard the packet &
+dynamically create a path.
+Features — support load balancing on
+parallel linked site.
+
+----- slide 92 -----
+[in the slide picture] Transfer the media files, audio files, metadata
+to & from the portable device over a cloud.
+Actually PTP used to transfer the media files.
+Used for downloading photographs from
+Disadvantage- not to transmit the video files so
+solution over their AVTP is used.
+
+----- slide 93 -----
+[in the slide picture] It initialized the initiators to identify the
+capability of device with respect to file
+format & functionality.
+MTP is a part of windows media player
+from windows NT MTP is used in
+Microsoft series.
+
+----- slide 94 -----
+XaaS:
+	XaaS is a general, collective term that refers to the delivery of Anything as a service or Everything-as-a-Service (XaaS). It recognizes the vast number of products, tools and technologies that vendors now deliver to users as a service over a network -- typically the internet -- rather than provide locally or on-site within an enterprise.
+	There are countless examples of XaaS, but the most common encompass the three general cloud computing models: Software as a Service (SaaS), Platform as a Service (PaaS) and Infrastructure as a Service (IaaS).
+[in the slide picture] conunon encornpass the three general cloud
+cornputing rnodels: Software as a Service (SaaS),
+Platforrn as a Service (PaaS) and Infrastructure as a
+
+----- slide 95 -----
+[in the slide picture] Everything-as-a-Service Model
+Haas
+CaaS
+MaaS
+socutuons
+SaaS
+IaaS
+DaaS
+DbaaS
+NaaS
+STaaS
+PaaS
+DRaaS
+
+----- slide 96 -----
+Hardware-as-a-Service (HaaS)
+	Managed service providers (MSP) own some hardware and install it on customers’ sites on demand. Customers utilize the hardware in accordance with service level agreements. This pay-as-you-go model is similar to leasing and can be compared to IaaS when computing resources are located at MSP’s site and provided to users as virtual equivalents of physical hardware.
+	The Haas model is especially cost-effective for small or mid-sized businesses.
+[in the slide picture] Managed service providers (MSP) own sorne hardware
+it on custorners' sites on dernand.
+Custorners utilize the hardware in accordance with
+service level agreernents. This pay-as-you-go rnodel is
+sirnilar to leasing and can be cornpared to IaaS when
+cornputing resources are located at MSP's site and
+rnid-sized businesses.
+
+----- slide 97 -----
+Communication-as-a-Service (CaaS)
+	This model includes different communication solutions such as VoIP (voice over IP or Internet telephony), IM (instant messaging), video conference applications that are hosted in the vendor’s cloud. A company can selectively deploy communication apps that best suit their current needs for a certain period and pay for this usage period only.
+	Such an approach is cost-effective and reduces expenses for short-time communication needs.
+Desktop-as-a-Service (DaaS)
+	Desktops are delivered as virtual services along with the apps needed for use. Thus, a client can work on a personal computer, using the computing capacities of third-party servers (which can be much more powerful than those of a PC).
+	A DaaS provider is typically responsible for storing, securing and backing up user data, as well as delivering upgrades for all the supported desktop apps.
+[in the slide picture] Cornrnunication—a -
+is rnodel includes different cornrnunlcation solutions
+such as VoIP (voice over IP or Internet telephony), I IVI
+(instant n•essaging), video conference applications that are
+hosted in the vendor's cloud. A cornpany can selectively
+deploy conununication apps that best suit their current
+short-tin•e needs.
+con•puter, using the con•puting capacities of third-party
+servers (which can be rnuch rnore powerful than those of a
+
+----- slide 98 -----
+Security-as-a-Service (SECaaS)
+	This is the model of outsourced security management. A provider integrates their security services into your company’s infrastructure and, as a rule, delivers them over the Internet. Such services may include anti-virus software, encryption, authentication, intrusion detection solutions and more.
+
+Healthcare-as-a-Service (HaaS)
+	With electronic medical records (EMR) and hospital information systems (HIS), the healthcare industry is transforming into Healthcare-as-a-Service. Medical treatment is becoming more data-driven and patient-centric. Thanks to the IoT, wearables and other emerging technologies, the following services are available:
+Online consultations with doctors
+Health monitoring 24/7
+Medicine delivery at your doorstep
+Lab samples collection even at home and delivery of results as soon as they are ready
+Access to your medical records 24/7
+	HaaS creates opportunities for almost all categories of citizens to get qualified medical help.
+[in the slide picture] is is the rnodel of outsourced security rnanagernent. A provider
+integrates their security services into your cornpany's infrastructure
+and, as a rule, delivers thern over the Internet. Such services rnay
+detection solutions and rnore.
+WV ith electronic rnedical records (ENI R) and hospital inforrnation
+systen-ms (HIS), the healthcare industry is transforrning into
+Healthcare-as-a-Service. Medical treatrnent is becorning rnore data-
+ernerging technologies, the following services are available:
+qualified rnedical help.
+
+----- slide 99 -----
+Transportation-as-a-Service (TaaS)
+	Important trends of modern society are mobility and freedom of transportation at different distances. There are numerous apps popping up connected with transport, so a part of this industry is transforming into an -aaS model. The most vivid examples are:
+Carsharing (you can rent a car at any place via a special app and drive anywhere you need, paying for the time you use a car, or for the distance you cover)
+Uber taxi services (you order a taxi via an app, which calculates the cost of the rout in advance). Uber is planning to test flying taxis and self-driving planes in the near future.
+	TaaS model is not only convenient but also ecologically friendly.
+[in the slide picture] Tra (TaaS)
+Irnportant trends of rnodern society are rnobility and
+freedorn of transportation at different distances. There
+are nurnerous apps popping up connected with
+transport, so a part of this industry is transforrning
+into an -aaS rnodel. The I-nost vivid exarnples are:
+the tirne you use a car, or for the distance you cover)
+
+----- slide 100 -----
+Database as a Service (DBaaS): provides access to a database platform through the cloud. Public cloud providers like AWS and Azure have DBaaS offerings.
+Malware as a Service (MaaS): uses the public cloud to help organizations guard against common attacks, such as ransomware and distributed denial of service (DDoS). VMware AppDefense is one emerging example of MaaS.
+[in the slide picture] Da : provides access to a
+database platforrn through the cloud. Public cloud
+providers like AWVS and Azure have DBaaS offerings.
+Malvvare as a Service (MaaS): uses the public cloud
+to help organizations guard against conmnon attacks,
+such as ransornware and distributed denial of service
+(DDoS). VMware AppDefense is one ernerging
+exarnple of MaaS.
+
+----- slide 101 -----
+Benefits of XaaS:
+	The market of services provided via cloud computing and the Internet is expanding at a rapid pace due to a range of advantages they provide both for organizations and end-users. The biggest benefits are:
+Scalability (outsourcing provides access to unlimited computing capacities, storage space, RAM, etc; a company can quickly and seamlessly scale its processes up and down depending on requirements and doesn’t have to worry about additional deployments or downtimes)
+Cost- and time-effectiveness (a company doesn’t purchase its personal equipment and doesn’t need to deploy it, saving much time and money; a pay-as-you-go model is also beneficial)
+Focus on core competencies (there’s no need to set up apps and programs or conduct training for employees; consequently, they can concentrate on their direct duties and achieve better performance)
+The high quality of services (since professionals support and maintain your infrastructure and systems, they provide the latest updates and all the emerging technologies, guaranteeing the quality of services)
+Better customer experience (the above-mentioned pros lead to customer satisfaction and increase customer loyalty)
+However, -aaS services are not without flaws. The biggest drawbacks are mostly related to end users and concern the security of personal data and risks of massive data loss.
+Many consumers are afraid to fully depend on cloud providers and lose control over their business. Service providers, on their part, are doing their best to address such concerns and allow organizations to migrate more workloads into the cloud.
+[in the slide picture] Imarket of services provided via c o
+rnputing•n t e Internet is
+Scalability (outsourcing provides access to unlirnited cornputing capacities,
+storage space, RAM, etc; a cornpany can quickly and searnlessly scale its
+processes up and down depending on requirernents and doesn't have to worry
+about additional deployrnents or downtirnes)
+Cost- and tirne-effectiveness (a cornpany doesn't purchase its personal
+equiprnent and doesn't need to deploy it, saving Imuch tilme and rnoney; a pay-
+as-you-go is also beneficial)
+Focus on core cornpetencies (there's no need to set up apps and prograrns or
+conduct training for consequently, they can concentrate on their
+direct duties and achieve better perforlmance)
+The high quality of services (since professionals support and your
+infrastructure and syster-ns, they provide the latest updates and all the
+elmerging technologies, guaranteeing the quality of services)
+Better custorner experience (the above-rnentioned pros lead to custorner
+satisfaction and increase custorner loyalty)
+However, -aaS services are not without flaws. The biggest drawbacks are rnostly
+rnassive data loss.
+Many consurners are afraid to fully depend on cloud providers and lose control
+address such concerns and allow organizations to rnigrate rnore workloads into
+
+----- slide 102 -----
+Deployment Models
+Deployment models define the type of access to the cloud, i.e., how the cloud is located? Or
+A cloud deployment model is a specific configuration of environment parameters such as the accessibility and proprietorship of the deployment infrastructure and storage size. This means that deployment types vary depending on who controls the infrastructure and where it’s located.
+Cloud can have any of the four types of access: Public, Private, Hybrid, and Community.
+[in the slide picture] eployrnent rnodels define the type of access to the
+A cloud deployrnent nmodel is a specific configuration
+of environrnent pararneters such as the accessibility and
+proprietorship of the deployrnent infrastructure and
+storage size. This rneans that deployrnent types vary
+Private, Hybrid, and Cornrnunity.
+
+----- slide 103 -----
+Public Cloud
+This type of cloud services is provided on a network for public use. Customers have no control over the location of the infrastructure. It is based on a shared cost model for all the users, or in the form of a licensing policy such as pay per user. Public deployment models in the cloud are perfect for organizations with growing and fluctuating demands. It is also popular among businesses of all sizes for their web applications, webmail, and storage of non-sensitive data.
+The public cloud deployment model is the first choice for businesses with low privacy concerns. When it comes to popular public cloud deployment models, examples are Amazon Elastic Compute Cloud (Amazon EC2 — the top service provider according to ZDNet), Microsoft Azure, Google App Engine, IBM Cloud, Salesforce Heroku and others.
+[in the slide picture] PublicC10ud
+public use. Custorners have no control over the location of
+the infrastructure. It is based on a shared cost rnodel for all
+the users, or in the forrn of a licensing policy such as pay per
+user. Public deployrnent rnodels in the cloud are perfect for
+organizations with growing and fluctuating den•ands. It is
+also popular arnong businesses of all sizes for their web
+applications, webrnail, and storage of non-sensitive data.
+businesses with low privacy concerns. VVhen it cornes to
+exarnples
+Elastic Con•pute Cloud (An•azon EC2
+
+----- slide 104 -----
+The Advantages of a Public Cloud
+Hassle-free infrastructure management. Having a third party running your cloud infrastructure is convenient: you do not need to develop and maintain your software because the service provider does it for you. In addition, the infrastructure setup and use are uncomplicated.
+High scalability. You can easily extend the cloud’s capacity as your company requirements increase.
+Reduced costs. You pay only for the service you use, so there’s no need to invest in hardware or software.
+24/7 uptime. The extensive network of your provider’s servers ensures your infrastructure is constantly available and has improved operation time.
+[in the slide picture] assle-free infrastructure rnanagernent.
+avlng a third party
+develop and rnaintain your software because the service provider does
+uncornplicated.
+cornpany requirernents increase.
+24/7 uptirne. The extensive network of your provider's servers ensures
+your infrastructure is constantly available and has irnproved operation
+
+----- slide 105 -----
+The Disadvantages of a Public Cloud
+Compromised reliability. That same server network is also meant to ensure against failure But often enough, public clouds experience outages and malfunction, as in the case of the 2016 Salesforce CRM disruption that caused a storage collapse.
+Data security and privacy issues give rise to concern. Although access to data is easy, a public deployment model deprives users of knowing where their information is kept and who has access to it.
+The lack of a bespoke service. Service providers have only standardized service options, which is why they often fail to satisfy more complex requirements.
+[in the slide picture] Cornprornised reliability. That sarne server network is also rneant to
+outages and rnalfunction, as in the case of the 2016
+access to data is easy, a public deployrnent rnodel deprives users of
+knowing where their inforrnation is kept and who has access to it.
+rnore cornplex requirernents.
+
+----- slide 106 -----
+Private Cloud
+There is little to no difference between a public and a private model from the technical point of view, as their architectures are very similar. However, as opposed to a public cloud that is available to the general public, only one specific company owns a private cloud. That is why it is also called an internal or corporate model.
+The server can be hosted externally or on the premises of the owner company. Regardless of their physical location, these infrastructures are maintained on a designated private network and use software and hardware that are intended for use only by the owner company.
+A clearly defined scope of people have access to the information kept in a private repository, which prevents the general public from using it. In light of numerous breaches in recent years, a growing number of large corporations has decided on a closed private cloud model, as this minimizes data security issues.
+[in the slide picture] Private Clo d
+There is little to no difference between-Q¯aiblic and a
+private frorn the technical point of view, as their
+architectures are very sin•ilar. However, as opposed to a
+called an internal or corporate n•odel.
+The server can be hosted externally or on the prernises of
+the owner cornpany. Regardless of their physical location,
+these infrastructures are n•aintained on a designated
+intended for use only by the owner cornpany.
+inforrnation kept in a private repository, which prevents the
+general public frorn using it. In light of breaches
+in recent years, a growing nun•ber of large corporations has
+
+----- slide 107 -----
+Compared to the public model, the private cloud provides wider opportunities for customizing the infrastructure to the company’s requirements. A private model is especially suitable for companies that seek to safeguard their mission-critical operations or for businesses with constantly changing requirements.
+Multiple public cloud service providers, including Amazon, IBM, Cisco, Dell and Red Hat, also provide private solutions.
+[in the slide picture] ly—the—private cloud provides wider
+e pu 1
+opportunities for custornizing the infrastructure to the cornpany's
+requirernents. A private rnodel is especially suitable for cornpanies that
+seek to safeguard their rnission-critical operations or for businesses
+with constantly changing requirernents.
+Multiple public cloud service providers, including Arnazon, IBN/I, Cisco,
+
+----- slide 108 -----
+[in the slide picture] Private
+Cloud
+Leg iti rnctte
+access path
+bo u n d a ry
+controller
+frorn vvithin the perirneter
+S u b scri be r— co led
+security perirneter
+B locked
+
+----- slide 109 -----
+The Benefits of a Private Cloud:
+All the benefits of this deployment model result from its autonomy. They are the following:
+Bespoke and flexible development and high scalability, which allows companies to customize their infrastructures in accordance with their requirements
+High security, privacy and reliability, as only authorized persons can access resources
+The Drawbacks of a Private Cloud:
+The major disadvantage of the private cloud deployment model is its cost, as it requires considerable expense on hardware, software and staff training. That is why this secure and flexible computing deployment model is not the right choice for small companies.
+[in the slide picture] autonorny. They are the following:
+Bespoke and flexible developrnent and high scalability,
+which allows cornpanies to custon•ize their infrastructures
+in accordance with their requirernents
+The n•ajor disadvantage of the private cloud deployn•ent
+rnodel is its cost, as it requires considerable expense on
+secure and flexible ITIodel is not
+the right choice for srnall cornpanies.
+
+----- slide 110 -----
+Community Cloud
+A community deployment model largely resembles the private one; the only difference is the set of users. Whereas only one company owns the private cloud server, several organizations with similar backgrounds share the infrastructure and related resources of a community cloud.
+If all the participating organizations have uniform security, privacy and performance requirements, this multi-tenant data center architecture helps these companies enhance their efficiency, as in the case of joint projects. A centralized cloud facilitates project development, management and implementation. The costs are shared by all users. Or
+It is a mutually shared model between organizations that belong to a particular community such as banks, government organizations, or commercial enterprises. Community members generally share similar issues of privacy, performance, and security. This type of deployment model of cloud computing is managed and hosted internally or by a third-party vendor.
+[in the slide picture] CornrnunityC10ud
+A largely the private
+one; the only difference is the set of users. VVhereas only one
+cornpany owns the private cloud server, several organizations
+with backgrounds share the infrastructure and related
+resources of a cornrnunity cloud.
+If all the participating organizations have uniforrn security,
+privacy and this nullti-tenant data
+center architecture helps these cornpanies enhance their
+rnanagernent
+irnplernentation. The costs are shared by all users. Or
+It is a rnutually shared I-nodel between organizations that belong
+to a particular conununity such as banks, governrnent
+organizations, or cornrnercial enterprises. Cornrnunity rnernbers
+generally share sirnilar issues of privacy, perforrnance, and
+security. This type of deployrnent rnodel of cloud cornputing is
+rnanaged and hosted internally or by a third-party vendor.
+
+----- slide 111 -----
+[in the slide picture] C o nn nn u n ity
+Organization A
+Inside
+Outside
+Users that access
+rernote cloud resources
+Security perirneters
+cloud (optional) resources
+socutuons
+Cornrnunity cornpanies that
+provide and consurne cloud resources
+frorn xæithin their perirneters
+
+----- slide 112 -----
+The Strengths of a Community Cloud:
+Cost reduction
+Improved security, privacy and reliability
+Ease of data sharing and collaboration
+The Shortcomings of a Community Cloud:
+High cost compared to the public deployment model
+Sharing of fixed storage and bandwidth capacity
+Hybrid Cloud:
+As is usually the case with any hybrid phenomenon, a hybrid cloud encompasses the best features of the abovementioned deployment models (public, private and community). It allows companies to mix and match the facets of the three types that best suit their requirements.
+As an example, a company can balance its load by locating mission-critical workloads on a secure private cloud and deploying less sensitive ones to a public one. The hybrid cloud deployment model not only safeguards and controls strategically important assets but does so in a cost- and resource-effective way. In addition, this approach facilitates data and application portability.
+[in the slide picture] uctlon
+As is usually the case with any hybrid a hybrid
+cloud encornpasses the best features of the abovernentioned
+deployrnent rnodels (public, private and conununity). It allows
+cornpanies to I-nix and I-natch the facets of the three types that
+best suit their requirernents.
+As an exarnple, a cornpany can balance its load by locatin
+deployrnent rnodel not only safeguards and controls strategically
+irnportant assets but does so in a cost- and resource-effective
+
+----- slide 113 -----
+The Benefits of a Hybrid Cloud:
+Improved security and privacy
+Enhanced scalability and flexibility
+Reasonable price
+
+----- slide 114 -----
+| Public | Private | Community | Hybrid
+Ease of setup and use | Easy | Requires IT proficiency | Requires IT proficiency | Requires IT proficiency
+Data security and privacy | Low | High | Comparatively high | High
+Data control | Little to none | High | Comparatively high | Comparatively high
+Reliability | Low | High | Comparatively high | High
+Scalability and flexibility | High | High | Fixed capacity | High
+Cost-effectiveness | The cheapest | Cost-intensive; the most expensive model | Cost is shared among community members | Cheaper than a private model but more costly than a public one
+Demand for in-house hardware | No | Depends | Depends | Depends
+[in the slide picture] Delnand for in-house
+n-rost expensive
+Inodel
+Conununity
+Cornparatively high
+Cost is shared ar-nong
+cor-nrnunity rnernbers
+rnodel but rnore costly

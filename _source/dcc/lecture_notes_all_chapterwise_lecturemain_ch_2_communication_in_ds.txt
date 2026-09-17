@@ -1,0 +1,607 @@
+source: Lecture Notes - all Chapterwise\Chapter 2 - Communication in Distributed Systems\LectureMain_Ch_2_Communication_in_DS.pptx
+method: pptx
+sha256: d877e57a4b40ea4c1459551c8c4ce8e10b4fa4ef7493e267c100e1a53f3bb836
+pages:  48
+ocr:    48 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+----- slide 1 -----
+Distributed and Cloud ComputingChapter 2 – Communication in Distributed System
+Lecture Presentation by – Er. Avijit Karn
+
+----- slide 2 -----
+Introduction
+With reference to the Object Oriented Programming model, objects that are distributed across different address spaces and are capable to work together by sharing data and invoking methods, are termed as Distributed Objects.
+Address spaces may be on same computer with multiple processes, or on multiple computers within a network.
+Also, objects are the communicating entities, which hide the underlying complexity of distributed programming.
+Providing Location Transparency, distributed objects generally communicate with RMI (Remote Method Invocation).
+
+----- slide 3 -----
+Contd..
+Local objects, whose methods are invoked only by a local process differ with distributed objects in large domain such as 
+Reference
+Request Latency
+Object Activation
+Parallelism
+Failure
+Security
+
+----- slide 4 -----
+Communication between Distributed Objects
+We discuss about the basic mechanism used for the  communication among the processes existing in the objects of a distributed environment.
+Remote Procedure Call (RPC) 
+Remote Method Invocation (RMI)
+
+----- slide 5 -----
+Remote Procedure  Call (RPC)
+An interaction between a client and server, where the client invokes a procedure remotely residing on a server.
+Server executes the procedure and pass the result back to the client; in the mid time of the call, calling of the procedure is blocked or halted, which is resumed only after getting result from server.
+Based on the single-process procedure call model, it is a high level network communication interface.
+A server process consists of a service interface which defines the procedures available for remote calling, works under request reply protocol omitting the object reference from request messages.
+
+----- slide 6 -----
+Figure: Principle of RPC between a client and server program.
+
+In the above conventional RPC, access transparency is not maintained i.e. data representation and method of an object access is not hidden.
+[in the slide picture] Wait for result
+Call remote
+procedure
+Request
+Return
+from call
+Reply
+
+----- slide 7 -----
+How modern RPC works?
+[in the slide picture] server functions
+Client
+process
+kernel
+network routines
+server Stub
+Figure Functional steps in a remote procedure call
+
+----- slide 8 -----
+The client procedure calls the client stub in the normal way.
+The client stub builds a message including parameters, name or number of procedure to be called, and calls the local operating system. The packaging of arguments into a network message is called marshalling.
+The client sends the message to the remote OS via a system call to  the local kernel. To transfer the message some protocol (either connectionless or connection-oriented) are used.
+The remote OS gives the message to the server stub.
+The server stub unpacks the parameters and calls the server.
+The server does the work and returns the result to the stub.
+The server stub packs it in a message and calls its local OS.
+The server's OS sends the message to the client's OS.
+The client's OS gives the message to the client stub.
+ The stub unpacks the result and returns to the waiting client procedure.
+[in the slide picture] 10.
+
+----- slide 9 -----
+Advantages and Disadvantages
+Benefits
+Despite being local, called Procedure can be executed in different process and machines.
+Supports process and thread-oriented models
+Provides Access Transparency
+Code reusability.
+Can be used for both local and distributed environment.
+Disadvantages
+Based on parameters call-by-value and call-by-reference only, which is not acceptable.
+Can be slower due to overheads
+Non-flexible for hardware architectures.
+
+----- slide 10 -----
+RPC Issues
+Due to the distant location of a particular caller and provider of procedure call, sometimes the normal functioning might be disrupted due to following reasons:
+The client is unable to locate the server
+The request message from the client to the server is lost (Lost request message)
+The reply message from the server to the client is lost (Lost Reply Message)
+The server crashes after receiving a request (Server Crash)
+The client crashes after sending a request (Client Crash)
+In RPC, under some above fault conditions, Call Semantics defines when and how often a remote procedure may be executed.
+
+----- slide 11 -----
+Call Semantics
+Calling semantics must be same whether procedure is implemented locally or remotely.
+Exactly once: It is hard to achieve in practice, based on use of time-outs, retransmissions, same call identifier and cache associated with the callee.
+At most once (may-be): It requests RPC only once (no reply may mean that no execution took place) 
+At least once: It keeps requesting RPC until valid response arrives at client.
+Last once: Based on timeouts, retransmitting of request for procedure call is done until result of procedure execution is received.
+Last-of-many call: Neglects orphan calls (whose caller has expired due to node crash) and only accepts the call when identifier associated with it matches to most recent call.
+
+----- slide 12 -----
+Remote Method Invocation (RMI)
+A communication mechanism among the distributed objects, where methods invocation between objects in different processes takes places, either on same machine or separated.
+Each process consists of a set of objects. These objects may receive local invocation or remote invocation or both.
+Objects receiving remote invocation are called Remote Objects.
+
+----- slide 13 -----
+Each process contains objects, some of which can receive remote invocations(B and F), others only local invocations(C,E and D)
+objects need to know the Remote object reference of an object in another process in order to invoke its methods.
+the Remote interface specifies which methods can be invoked remotely
+[in the slide picture] ocal E
+
+----- slide 14 -----
+Implementation of RMI/Architecture
+[in the slide picture] client
+bjectA proxy for
+server
+Request
+Reply
+skeleto
+& dispatch
+for B's cl
+remot
+object B
+servant
+reference module module
+Communicatiorfiemote reference
+Proxy - makes RMI transparent to ent. Class
+unmarshals results. Forwards r quest.
+RMI software - between
+application level objects
+and communication and
+modules
+
+----- slide 15 -----
+Remote Reference Module
+Responsibilities
+translation between local and remote object references  
+remote object table
+entry for each remote object held by process
+entry for each local proxy
+arriving remote object reference - creation of remote object references
+need to pass a remote object - look up in remote object table (create new remote object reference and add entry if necessary)
+
+----- slide 16 -----
+Remote Interface
+Specifies which methods of an object can be invoked remotely.
+Objects in other processes can invoke only the methods that belong to its remote interface.
+CORBA – uses IDL to specify remote interface
+JAVA – extends interface by the Remote keyword
+RMI Software
+Proxy: provides remote invocation transparency, marshal arguments, un-marshal results, send and receive messages
+Dispatcher - handles transfer of requests to correct method
+receive requests, select correct method, and pass on request message
+Skeleton- implements methods of remote interface, unmarshall arguments from request, invoke the method of the remote object, and marshal the results.
+
+----- slide 17 -----
+RMI Server and Client Programs
+Server
+classes for dispatchers, skeletons and remote objects
+initialization section for creating some remote objects
+registration of remote objects with the binder
+Client
+classes for proxies of all remote objects
+binder to look up remote object references
+cannot create remote objects by directly calling constructors - provide factory methods instead
+RMI Binder and Server Threads
+A binder in a distributed system is a separate service that maintains a table containing mappings  from textual names to remote object references
+Server Threads are implemented in order to handle the call by creating new thread in remote invocation; server with several remote objects might also allocate separate threads to handle each object
+
+----- slide 18 -----
+Remote Object and its Remote Interface
+[in the slide picture] Data
+implementation
+of methods
+
+----- slide 19 -----
+Design Issues in RMI
+Shares same design issues as discussed in RPC in terms of programming with interfaces; call semantics and level of transparency
+Mainly, 2 issues are important to deal in  making remote invocations
+Number of times the methods are invoked in response to single remote invocation
+Level of location transparency 
+Semantics
+Exactly once invocation semantics – Every method is executed exactly once. (Ideal situation)
+Maybe invocation semantics - The invoker can not determine whether or not the remote method has been executed.
+Types of failures:
+Omission failures if the invocation or result message is lost.
+Crash failures when the server containing the remote object fails. 
+Useful for applications where occasional failed invocation are acceptable.
+
+----- slide 20 -----
+At-least-once invocation semantics:
+The invoker either receives a result (in which case the user knows the method was executed at least once) or an exception.
+Types of failures:
+Retransmitting request masks omission failures.
+Crash failures when the server containing the remote object fails.
+Arbitrary failure when the remote method is invoked more than once, wrong values are stored or returned.  An idempotent operation that can be performed repeatedly with the same effect can be a solution.
+Useful if the objects in a server can be designed to have idempotent operations.
+
+----- slide 21 -----
+At-most-once invocation semantics:
+The invoker either receives a result (and the user knows the the method was executed exactly at most once) or an exception.
+All fault tolerance methods executed.
+Omission failures can be eliminated by retransmitting  request.
+Arbitrary failures can be prevented by ensuring that no method is executed more than once
+JAVA RMI and CORBA use at-most-once semantics. CORBA also use maybe semantics for methods that do not return results. SUNRPC provides at-least-once semantics.
+
+----- slide 22 -----
+Providing reliable request-reply protocol
+Fault-tolerant Measures 
+Retry request message: whether to retransmit the request message until either a reply is received or the server is assumed to have failed.
+Duplicate filtering: when retransmissions are used, whether to filter out duplicate requests at the server.
+Retransmission of results: whether to keep a history of result messages to enable lost results to be retransmitted without re-executing the operations at the server
+[in the slide picture] Invocation sernantics
+sententics
+Retrans•nzit request
+n.' es•sczcre
+Yes
+D up/icczte
+rqot appl icable
+Re—execute procedure
+or retransnzit
+Retransrnit reply
+
+----- slide 23 -----
+-Issue related to Location Transparency
+Causes failure and latency due to syntactical difference in terms of behavior when compared remote invocation with the local invocation.
+Possible solutions:
+Exceptions and exception handling are needed.
+Different invocation semantics can be employed
+
+----- slide 24 -----
+Java RMI case study
+Java RMI extends the Java object model to provide support for distributed objects in the Java language.
+It allows objects to invoke methods on remote objects using the same syntax as for local invocations.
+Type checking applies equally to remote invocations as to local ones.
+Programming distributed applications in Java RMI is simple.
+It is a single-language system.
+The programmer of a remote object must consider its behavior in a concurrent environment.
+
+----- slide 25 -----
+Files needed to create a Java RMI application
+A remote interface defines the remote interface provided by the service. Usually, it is a single line statement , specifies the service function (HelloInterface.java). (An interface is the skeleton for a public class)
+A remote object implements the remote service. It contains a constructor and required functions. (Hello.java)
+A client that invokes the remote method (HelloClient.java)
+The server offers the remote service, installs a security manager and contacts rmiregistry with an instance of the service under the name of the remote object. (HelloServer.java)
+[in the slide picture] line statement , specifies the service function (Hellolnterface.java). (An interface is the skeleton
+
+----- slide 26 -----
+HelloInterface.java
+import java.rmi.*;
+public interface HelloInterface extends Remote {
+public String say(String msg) throws
+RemoteException;
+}
+
+----- slide 27 -----
+Hello.java
+import java.rmi.*;
+import java.rmi.server.*;
+public class Hello extends
+UnicastRemoteObject implements HelloInterface {
+private String message;
+public Hello(String msg) throws RemoteException {
+message = msg;
+}
+public String say(String m) throws RemoteException {
+// return input message - reversing input and suffixing
+// our standard message
+return new StringBuffer(m).reverse().toString() + "\n" +
+message;
+}
+}
+
+----- slide 28 -----
+HelloClient.java
+HelloInterface hello =
+(HelloInterface) Naming.lookup(path);
+for (int i = 0; i < args.length; ++i)
+System.out.println(hello.say(args[i]));
+} catch(Exception e) {
+System.out.println("HelloClient exception: " + e);
+}
+}
+}
+
+----- slide 29 -----
+HelloServer.java
+import java.rmi.*;
+import java.rmi.server.*;
+public class HelloServer {
+public static void main(String args[]) {
+// Create and install a security manager
+if (System.getSecurityManager() == null)
+System.setSecurityManager(new RMISecurityManager());
+try {
+Naming.rebind("Hello", new Hello("Hello, world!"));
+System.out.println("server is running...");
+}
+catch (Exception e) {
+System.out.println("Hello server failed:" + e.getMessage());
+}
+}
+}
+
+----- slide 30 -----
+Message Passing
+[in the slide picture] Shared Memory Systems
+PEO
+• Advantages:
+• Limitations:
+PEI
+PE2
+PEN
+Easy to parallelize, all data available nearby
+certain system sizes
+
+----- slide 31 -----
+[in the slide picture] Distributed Memory Systems
+PEO
+Mem0
+Others
+PEI
+Meml
+PE2
+Mem2
+NETWORK
+PEN
+MemN
+• Locality of data is exposed, cheap to build
+• But what are the negative points?
+
+----- slide 32 -----
+[in the slide picture] Message passing
+• Work unit: Processes
+• Data units:
+• Decomposed, so that each process has its own data unit
+• No shared data
+• Coordination by: exchanging "messages" via send/recv calls
+• Analogy: mail
+• Typical clusters today:
+• Ethernet or more sophisticated network card and a interconnect
+• Messages are sent as packets over the network
+• Co-processors
+• Network Interface Card (NIC) is an example
+
+----- slide 33 -----
+[in the slide picture] Message Passing
+send
+Data
+copy
+PEO
+receive
+PEI
+
+----- slide 34 -----
+[in the slide picture] Basic Message Passing
+• We will describe a hypothetical message passing system
+• With just a few calls that define the model
+• Later, we will look at real message passing models (e.g. MPI), with a more
+complex sets of calls
+• Basic calls:
+• send(int proc, int tag, int size, char *buf);
+• recv may return the actual number of bytes received in some systems
+• tag and proc may be wildcarded in a recv:
+• recv(ANY, ANY, 1000, &buf);
+
+----- slide 35 -----
+[in the slide picture] Collective calls
+• Message passing is often, but not always, used for SPMD style of
+programming:
+• SPMD: Single process multiple data
+• All processors execute essentially the same program, and same steps, but not
+in lockstep
+• global reductions (such as max or sum)
+• syncBroadcast (often just called broadcast):
+• syncBroadcast(whoAml, dataSize, dataBuffer);
+• whoAml: sender or receiver
+
+----- slide 36 -----
+[in the slide picture] Basic MPl
+Sending and Receiving Messages
+
+----- slide 37 -----
+[in the slide picture] MPI Init and Finalize
+• MPl Init( int argc, char **argv )
+Initializes the MPl library.
+• MPl Finalize()
+Terminates use of MPl library.
+All MPl calls must occur between these two, temporally.
+A Simple subset of MPI
+• These six functions allow you to write many programs:
+Comm size
+Comm rank
+Send
+Recv
+
+----- slide 38 -----
+[in the slide picture] MPI Process Identification
+MPl Comm size( comm, &size )
+Determines the number of processes.
+MPl Comm_ranl<( comm, &pid )
+Pid is the process identifier of the caller.
+MPI Basic Send
+MPl_Send(buf, count, datatype, dest, tag, comm)
+buf: address of send buffer
+count: number of elements
+Size of (datatype)
+datatype: data type of send buffer elements
+dest: process id of destination process
+tag: message tag (ignore for now)
+comm: communicator (ignore for now)
+
+----- slide 39 -----
+[in the slide picture] MPl Basic Receive
+MPl_Recv(buf, count, datatype, source, tag, comm, &status)
+buf: address of receive buffer
+count: size of receive buffer in elements
+datatype: data type of receive buffer elements
+source process id or MPl ANY SOURCE
+tag and comm: ignore for now
+status object
+
+----- slide 40 -----
+[in the slide picture] Send/Receive Variants
+Buffers, copies, and waits
+
+----- slide 41 -----
+[in the slide picture] Involves copying data from user's data space on the source
+processor to user's data space on the other processor
+send
+PEO
+receiv
+MPl library
+Buffer space
+PEI
+Packetize
+
+----- slide 42 -----
+[in the slide picture] Implementing MPI
+• Data transfer plus synchronization
+Process O
+Process 1
+May I Send?
+Yes
+Ti me
+Requires cooperation of sender and receiver
+Cooperation not always apparent in code
+• Issues:
+Data copying cost: if you copy into MPl buffers at source and destination
+• Buffer availability and allocation
+Packetization: who will pay attention to incoming packets? Where do they go?
+• Tag matching
+Progress engine
+
+----- slide 43 -----
+[in the slide picture] Messaging protocols
+• Message consists of "envelope" (header) and data
+• Envelope contains tag, communicator, length, source information, plus
+implementation-specific private data
+• MPl implementations often use different protocols for different
+messages,
+• for a good tradeoff between performance and buffer memory
+• Short
+• Eager
+• Rendezvous
+• Header sent first
+• Message not sent until destination sends an ok-to-send reply
+
+----- slide 44 -----
+Sockets
+[in the slide picture] Communication channels are formed across a communications network with help from
+the operating system.
+Each thread creates an endpoint object that represents its end of the network channel.
+messages between the endpoints, i.e., "across the channel".
+Machine I
+Machine 2
+
+----- slide 45 -----
+[in the slide picture] The client thread's socket specifies a local IO port to be used for sending messages (or
+the IO port can be chosen by the operating system).
+The client's socket also specifies the address of the destination machine and the port
+number that is expected to be bound to the server thread's socket.
+The server's socket specifies a local IO port for receiving messages. Messages can be
+received from any client that knows both the server's machine address and the port
+number bound to the server's socket.
+The client issues a request to the server to form a connection between the two sockets.
+Once the server accepts the connection request, messages can be passed in either
+direction across the channel.
+
+----- slide 46 -----
+[in the slide picture] TCP Sockets in Java
+The java-net class library provides classes Socket and ServerSocket for TCP—based
+rnessage passing-
+Class Socket.
+A client's first step is to create a TCP socket and try to connect to the server:
+InetAddress host;
+int serverPort = 2020;
+Socket socket;
+// server's rnachine address
+// port nurnber bound to server's socket
+// client's socket
+try { host
+catch (Unknow•nHostException) {
+try { socket = newt ) // create a socket and request a
+catch (IOException e) {
+// connection to host
+The client assurnes that the server is listening for TCP connection requests on port
+serverPort. The Socket constructor throvvs an IOException if it cannot rnake a connection.
+Client creates an input strearn to receive data fron-• its socket and an output strearn to send
+data to the socket at the server's end Of the channel- (Looks like file 1/0!)
+PrintSVriter toServer = newe PrintSVri
+BufferedReader frornServer = nesv Buffered Reader(nesv
+i npu ts trearn Reader(soc ket ge t I npu ts trean-• ;
+toServer-println(" Hello");
+// send a rnessage to the server
+String line = frornServer.readLineO; // receive the server's reply
+Systen•.out-println ("Client received: " + line + fron• Server");
+toServer-c10seC); frornServer.c10seO; socket-close();
+A read operation on the InputStrecznz associated v.'ith a Socket norrnally blocks- TO set a
+one second tin•eout:
+socket-setSoTirneou 1000);
+SVhen the tirneout expires, a java-net-SocketTi•neoutException is raised and the Socket is
+still valid.
+
+----- slide 47 -----
+[in the slide picture] 6.1.2.2 Class ServerSocket. The server begins by creating a ServerSocket:
+int serverPort = 2020;
+ServerSocket listen;
+try { listen = new ServerSocket(serverPort); )
+catch (IOException e) { ...
+The server then calls the accept() method of the ServerSocket:
+method accept() waits until a client requests a connection,
+• it then returns a Socket that connects the client to the server.
+server gets input and output streams and communicates with the client.
+client, server, or both, close the connection, and the server waits for a connection
+request from another client.
+while (true) {
+Socket socket = listen.accept(); // wait for a client request
+toClient = new PrintWriter(socket.getOutputStream(),true);
+fromClient = new BufferedReader(new
+InputStreamReader(socket.getInputStream()));
+String line = fromClient.readLine();// receive a message from the client
+System.out.println("Server received " + line);
+toClient.println("Good-bye"); // send a reply to the client
+finally { if (listen != null) try { listen.close();}
+The server can create a separate thread to handle the client's requests.
+clientHandler c = new clientHandler(socket); // clientHandler extends Thread
+c.start();
+The run() method of class clientHandler uses input and output streams obtained from the
+socket to communicate with the client, exactly as shown above.
+Listing 6.2 shows a client and server program using TCP sockets:
+Message objects are serialized and passed between the client and the server.
+If the client program is executed using "java Client 2", then the client will send the
+value 2 to the server, receive the value 4 from the server, and display the message "2 x
+import java.net. *; import java.io.*;
+public final class Client {
+public static void main (String args[]) {
+ObjectOutputStream toServer = null; ObjectlnputStream fromServer=null;
+if (args.length 1) {
+System.out.println("need 1 argument"); System.exit(l
+int number = Integer.parselnt(args[()]);
+// client and server run on the same machine, known as the Local Host
+InetAddress serverHost = InetAddress.getLocalHost();
+socket = new Socket(serverHost,serverPort);
+// send a value to the server
+toServer = new ObjectOutputStream(new BufferedOutputStream
+Message msgToSend = new Message(number);
+toServer.writeObject(msgToSend); toServer.flush();
+// This will block until the corresponding ObjectOutputStream in the
+// server has written an object and flushed the header.
+fromServer = new ObjectlnputStream(new
+Message msgFromReply = (Message) fromServer.readObject();
+System.out.println (number + " x " + number +
+msgFromReply.number);
+catch (ClassNotFoundException e) {e.printStackTrace(); System.exit(l); )
+
+----- slide 48 -----
+[in the slide picture] public final class Server {
+public static void main (String args[l) {
+int serverPort = 2020; ServerSocket listen—null;
+ObjectOutputStream toClient; ObjectlnputStream fron1Client;
+try {
+listen = nes.v ServerSocket(serverPort);
+svhile (true) {
+Socket socket = listen-accept();
+toClient = new ObjectOutputStream(new BufferedOutputStream
+(socket.getOutputStream()));
+// This svill block until the corresponding ObjectOutputStreanz in the
+// client has written an object and flushed the header.
+Message msgRequest = (Nlessage) fromClient.readObject();
+// compute a reply and send it back to the client
+int number = msgRequest.number;
+toClient.s.vriteObject(new toClient.flush();
+catch (IOException e) {e.printStackTrace(); System.exit(l )
+public final class Message implements Serializable {
+public int number;
+Message(int number) { this-number = number; )

@@ -1,0 +1,57 @@
+{
+ "_comment": [
+  "Every line tools/ref_slide_notes.py wrote into the DCC Reference tab:",
+  "the position in the chapter's `slides` field, the exact text it replaced",
+  "(the `alt` it overwrote) and the exact text it put in. Verbatim, so",
+  "--restore is byte-exact, the same shape as the other tools' records.",
+  "Generated; do not hand-edit."
+ ],
+ "chapters": {
+  "ch2.js": {
+   "before": "fa508666103bfbe5c6ae4a3149dc3c950e738a450590070b4cd27d21f079a7f8",
+   "after": "7afab731ebdf1d03e1af6aea7875aad56e9549615ce96786260ab88dd6988488",
+   "edits": [
+    {
+     "index": 72690,
+     "old": "Principle of RPC between a client and server program.",
+     "new": "The client blocks on a call that looks local and is not: the request travels to the server and the reply comes back, and everything the caller does not see is the two trips."
+    },
+    {
+     "index": 72909,
+     "old": "",
+     "new": "\n<p class=\"ref-why\">The client blocks on a call that looks local and is not: the request travels to the server and the reply comes back, and everything the caller does not see is the two trips.</p>"
+    },
+    {
+     "index": 73307,
+     "old": "How modern RPC works?",
+     "new": "Count the ten steps between the client functions and the server functions - the call goes down both stubs and both kernels before any work happens, and the reply retraces the same ten in reverse."
+    },
+    {
+     "index": 73462,
+     "old": "",
+     "new": "\n<p class=\"ref-why\">Count the ten steps between the client functions and the server functions - the call goes down both stubs and both kernels before any work happens, and the reply retraces the same ten in reverse.</p>"
+    },
+    {
+     "index": 73647,
+     "old": "Page from the notes for 2.1.1 How RPC works in ten steps",
+     "new": "Message queuing rather than message waiting: the sender writes into a queue it owns and returns, and the network carries the message across later - the channel attributes below list what that transfer has to decide."
+    },
+    {
+     "index": 73874,
+     "old": "",
+     "new": "\n<p class=\"ref-why\">Message queuing rather than message waiting: the sender writes into a queue it owns and returns, and the network carries the message across later - the channel attributes below list what that transfer has to decide.</p>"
+    },
+    {
+     "index": 74245,
+     "old": "Providing reliable request-reply protocol",
+     "new": "What the three fault-tolerance measures buy: no retry and no duplicate filtering is only &#x27;Maybe&#x27;; retrying without filtering re-executes for at-least-once; adding duplicate filtering gives at-most-once."
+    },
+    {
+     "index": 74440,
+     "old": "",
+     "new": "\n<p class=\"ref-why\">What the three fault-tolerance measures buy: no retry and no duplicate filtering is only 'Maybe'; retrying without filtering re-executes for at-least-once; adding duplicate filtering gives at-most-once.</p>"
+    }
+   ]
+  }
+ }
+}

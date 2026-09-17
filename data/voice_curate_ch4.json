@@ -1,0 +1,103 @@
+{
+ "_comment": [
+  "Unit 4's batch. Same rules as voice_curate.json.",
+  "",
+  "This unit's yap is almost entirely the phrase 'the RPC mechanism from Unit 2',",
+  "attached to facts that stand on their own - a fact about NFS does not need the",
+  "unit that taught RPC in front of it. Two are page directions ('see below', 'the",
+  "pages below') and two are the reader being told what to note."
+ ],
+ "edits": [
+  {
+   "ch": "ch4.js",
+   "tell": "crossref",
+   "why": "the family of properties applied to files is the fact; which unit introduced them is a pointer",
+   "old": "Transparency in a DFS is the family of properties introduced in Unit 1, applied to files.",
+   "new": "Transparency in a DFS is the family of properties applied to files."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "crossref",
+   "why": "a sentence whose whole content is which other ideas this one is like",
+   "old": "That is the same idea as the UFID in 4.1.5's architecture and the same idea as the remote object reference in Unit 2.",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "crossref",
+   "why": "NFS being a set of remote procedures is the fact; that it is an application of Unit 2's RPC is a pointer",
+   "old": " — so NFS is an application of exactly the RPC mechanism from Unit 2",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "crossref",
+   "why": "which modules the implementation corresponds to is the course map, not the implementation",
+   "old": "It does the work of the remote reference and dispatcher modules from Unit 2. ",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "crossref",
+   "why": "'the Unit 3 problem, offered as middleware' is a pointer wrapped round a one-line description of the service",
+   "old": " — the Unit 3 problem, offered as middleware",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "crossref",
+   "why": "a sentence that only says where the same mechanism is taught in full",
+   "old": "The mechanism — proxy, dispatcher, skeleton, remote reference module and binder, with the at-most-once invocation semantics — is covered in full in Unit 2.2. ",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "crossref",
+   "why": "what the abstraction buys is the fact; the comparison with CORBA and the unit number are commentary",
+   "old": "It supplies the same thing CORBA does — a programming abstraction over the network, so that one object can call another wherever it runs (Unit 1.3's answer to heterogeneity) — but only inside a Java system.",
+   "new": "It supplies a programming abstraction over the network, so that one object can call another wherever it runs, but only inside a Java system."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "meta",
+   "why": "the consistency window and the 30 seconds are the fact; 'see below' is a page direction",
+   "old": " — see below",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "meta",
+   "why": "the two protocols are the choice; 'the choice in the table above' points at the page",
+   "old": ", and the choice of protocol is the choice in the table above",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "meta",
+   "why": "the daemon layout is the content; 'the pages below are' sends the reader to the pictures",
+   "old": "The pages below are that architecture as the lecture draws it, including the daemon layout of a real cluster: one node running the name-node daemon, and every slave node running a datanode daemon over its own local Linux filesystem, reporting to the master.",
+   "new": "The architecture includes the daemon layout of a real cluster: one node running the name-node daemon, and every slave node running a datanode daemon over its own local Linux filesystem, reporting to the master."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "reader",
+   "why": "'note the two distinct purposes' tells the reader what to note; the two purposes are the fact",
+   "old": "Note the two distinct purposes: checkpointing in normal operation, and a fallback if the primary is lost.",
+   "new": "Its two purposes are checkpointing in normal operation and a fallback if the primary is lost."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "crossref",
+   "why": "a sentence that only says where the same mechanism is taught in full; the paragraph already ends with what the implementation costs",
+   "find": " The mechanism &mdash; <strong>proxy, dispatcher, skeleton, remote reference module and binder, with the at-most-once invocation semantics</strong> &mdash; is covered in full in <strong>Unit 2.2</strong>.",
+   "to": ""
+  },
+  {
+   "ch": "ch4.js",
+   "find": "Two sentences in that list carry the whole design. ",
+   "to": "",
+   "tell": "recount",
+   "why": "the two sentences that follow are the design; being told they are the important ones adds nothing"
+  }
+ ]
+}

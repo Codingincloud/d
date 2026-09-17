@@ -1,0 +1,167 @@
+{
+ "_comment": [
+  "Unit 1's batch. Same rules as voice_curate.json.",
+  "",
+  "These are the four families the reader named ('just teach the topic dont yap'):",
+  "a sentence pointing at another unit, a sentence commenting on the section or the",
+  "reading order, a sentence addressing the reader, and a sentence rating the",
+  "material. The fix is nearly always the same shape - the pointer or the comment is",
+  "dropped and the fact it was attached to stays."
+ ],
+ "edits": [
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "the column holds what each characteristic leads to; where it bites later in the course is not what it holds",
+   "old": "Where it bites later in the course",
+   "new": "What it leads to"
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "the mutual exclusion is the subject; the unit number it is taught in is not",
+   "old": "Mutual exclusion (Unit 3) exists because two nodes may want the same resource at the same moment.",
+   "new": "Two nodes may want the same resource at the same moment, which is what mutual exclusion solves."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "the two mechanisms are the fact; which section teaches them is a table of contents, and it was standing in for the content",
+   "old": "This is the whole subject of Unit 3.1–3.2: Cristian's algorithm and NTP to get clocks close, Lamport's and vector clocks to order events when they cannot be made exact.",
+   "new": "Cristian's algorithm and NTP bring the clocks close, and Lamport's and vector clocks order events when they cannot be made exact."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "this cell is the row's answer; a unit number and a section number are not",
+   "old": "Replication and consistency in Unit 4, and the failure model in 1.4.4.",
+   "new": "Replication and consistency between copies, and the failure model of 1.4.4."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "the commercial argument is the fact; the sentence announcing that the course will reuse it is yap",
+   "find": "Two of the items matter beyond this unit because the rest of the course uses them again. <strong>Economics</strong> &mdash; a collection of microprocessors gives better price/performance than one large machine &mdash; is the commercial argument the whole course rests on, and it is the argument cloud computing renews in Unit 5.",
+   "to": "<strong>Economics</strong> &mdash; a collection of microprocessors gives better price/performance than one large machine &mdash; is the commercial argument for distributing a system."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "what middleware does is the content; which section treats it properly is navigation",
+   "old": "masks the differences inside one organisation's systems and gives an application a programming abstraction it can use directly — Unit 4.3 treats this properly, with CORBA, Java RMI, MQTT and AMQP as its families.",
+   "new": "masks the differences inside one organisation's systems and gives an application a programming abstraction it can use directly."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "that the two challenges are open is the fact; that they come back later is a reading order",
+   "old": "Two challenges remain open, and both return later in the course: ",
+   "new": "Two challenges remain open: "
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "the trust relation is the fact; which unit develops it is a pointer",
+   "old": "Unit 8 develops both in the cloud setting, where a provider and a tenant trust each other only as far as the contract says.",
+   "new": "In a cloud, a provider and a tenant trust each other only as far as the contract says."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "sharing is one of the goals; 'goal 1 of 1.2' is a section number, and the forward pointer adds nothing a student can write down",
+   "old": "Sharing is goal 1 of 1.2, and it introduces the word",
+   "new": "Sharing is one of the goals, and it introduces the word"
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "a whole sentence of course map, in which nothing is a fact about resources and services",
+   "old": "It is the same shift of vocabulary that Unit 2 formalises when it turns services into web services with a description and a protocol (2.4), and it is why sharing and services are separate subjects in Unit 1 and Unit 2.",
+   "new": ""
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "the constraint on invoking a service is the bullet; which unit begins from it is a pointer that a student cannot use",
+   "old": " — which is the sentence Unit 2 begins from.",
+   "new": "."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "a sentence that only says which units read on top of this picture",
+   "old": "Unit 2.4's web services and Unit 7's cloud application architectures are both read on top of this picture.",
+   "new": ""
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "reader",
+   "why": "the same fact as a statement; 'you can' was the table answering the reader rather than describing the two models",
+   "old": "You can put a time limit on a reply and treat a timeout as a failure.",
+   "new": "A time limit can be put on a reply, and a timeout treated as a failure."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "reader",
+   "why": "the fact is that no such limit can be assumed; the 'you cannot' form and the pointer to logical clocks are the reader's side of the table",
+   "old": "You cannot — a slow node and a dead node look identical. This is why logical clocks exist (Unit 3.2).",
+   "new": "No such limit can be assumed — a slow node and a dead node look identical."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "meta",
+   "why": "the three mechanisms are the fact; 'above' points at the table the reader is already looking at",
+   "old": "The three answers above are not interchangeable, and the difference between them is their",
+   "new": "The three are not interchangeable, and the difference between them is their"
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "meta",
+   "why": "the sentence is a comment on the section's own shape ('in this sub-topic', 'below'); naming the three systems is the same lead-in without the commentary",
+   "old": "Three systems are named in this sub-topic, and the application areas below are what motivate the whole field.",
+   "new": "GFS, HDFS and BitTorrent are the three examples, followed by the application areas that motivate the field."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "meta",
+   "why": "'see the table below' points at a table immediately beneath the sentence; the two variants are the fact",
+   "old": "It comes in two variants — see the table below.",
+   "new": "It comes in two variants."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "meta",
+   "why": "'see below' is the reading order; heterogeneity and the five layers are what the cell is for",
+   "find": "<strong>High degree of heterogeneity</strong>, and five layers &mdash; see below.",
+   "to": "<strong>High degree of heterogeneity</strong>, and five layers."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "meta",
+   "why": "the instruction to read the table against the definition is the commentary; the definition and the finding at the resource and collective layers are the content",
+   "old": "Read the five layers against the grid's definition from the table above (heterogeneous, geographically distributed, selected at runtime by availability, capability, performance, cost and quality of service) and the resource and collective layers are where those runtime decisions are actually made.",
+   "new": "Against the grid's definition (heterogeneous, geographically distributed, selected at runtime by availability, capability, performance, cost and quality of service), the resource and collective layers are where those runtime decisions are actually made."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "meta",
+   "why": "the third type is the fact; 'the rest of the course' and 'the bridge into' are comments about the course map",
+   "old": "The third is the subject of the rest of the course, so this is also the bridge into Unit 5.",
+   "new": "The third is cloud computing."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "the cloud cell should say what the three service models are; that they are examined in Unit 5 is a pointer",
+   "old": "Metered, elastic and on demand; the three service models (SaaS, PaaS, IaaS) are introduced here and examined in Unit 5.",
+   "new": "Metered, elastic and on demand; the three service models are SaaS, PaaS and IaaS."
+  },
+  {
+   "ch": "ch1.js",
+   "tell": "crossref",
+   "why": "the second half of the same pointer: the word the section introduces is the content, which unit builds on it is not",
+   "old": " that Unit 2 builds on.",
+   "new": "."
+  }
+ ]
+}

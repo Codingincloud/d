@@ -1,0 +1,38 @@
+{
+ "_comment": [
+  "The last of the twelfth tell: the four sentences the pattern still finds once",
+  "it is anchored to a sentence-opening, capitalised imperative. Every one of them",
+  "is about the reader or the paper rather than the subject, which is what makes",
+  "them worth fixing rather than exempting."
+ ],
+ "edits": [
+  {
+   "ch": "ch3.js",
+   "tell": "paper",
+   "why": "the sentence tells the reader what demonstrating a distinction shows, which is strategy rather than the two clocks",
+   "find": "; giving the physical pair and adding \"and for logical ordering, Lamport timestamps and vector clocks\" shows you know the distinction the syllabus is drawing.</p>",
+   "to": "; giving the physical pair and adding \"and for logical ordering, Lamport timestamps and vector clocks\" names both clocks and the difference between them.</p>"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "direct",
+   "why": "the definition is about configuration, which is the claim; the reader does not have to be told to notice it",
+   "find": "Notice that the definition is about <strong>configuration</strong> rather than technology:",
+   "to": "The definition is about <strong>configuration</strong> rather than technology:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "paper",
+   "why": "a heading names what the two lists are; keeping them apart in an exam is about the marking",
+   "find": "<h4>Two lists of five, and how to keep them apart in an exam</h4>",
+   "to": "<h4>Two lists of five, and how they differ</h4>"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "paper",
+   "why": "the mapping onto the rest of the course is the fact; what a question rewards is the paper's business",
+   "find": "A question that asks how the unit relates to the course rewards exactly that mapping, so keep the four lines rather than the general claim.",
+   "to": "Each of the four is the same fundamental challenge in a new setting, which is how this unit relates to the rest of the course."
+  }
+ ]
+}

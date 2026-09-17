@@ -1,0 +1,764 @@
+{
+ "_comment": [
+  "Long sentences broken into shorter ones, in two batches, applied by",
+  "`.freebuff/tmp/split_apply.py` (verified against the file, refusing any edit whose",
+  "`old` is ambiguous or whose span has markup inside it):",
+  "",
+  "  python .freebuff/tmp/split_apply.py data/sentence_splits.json          # dry run",
+  "  python .freebuff/tmp/split_apply.py data/sentence_splits.json --apply",
+  "",
+  "The FIRST batch is the eleven entries plan.md records, applied with the older",
+  "`.freebuff/tmp/apply_edits.py`: nine are in force and two were withdrawn, because",
+  "ch2's and ch9's first candidates sat inside a passage the voice catalogue had",
+  "already rewritten. tools/voice_rewrite.py records the exact replacement text, so a",
+  "later pass must not edit text inside one of those: the split reports 'a rewritten",
+  "passage has been reverted' and takes the chapter out of the gate.",
+  "",
+  "The SECOND batch is the pass that followed the reader's 'these content seem hard'",
+  "against the corrected measurement (tools/sentence_length.py now breaks on block",
+  "boundaries and excludes quotations, so the real figure was 105 sentences over 45",
+  "words rather than 149): about 120 splits across all nine units, which took the",
+  "count to 3.",
+  "",
+  "Those 3 are not an oversight. Each is a sentence whose ENTIRE text is a recorded",
+  "voice rewrite, so there is no split inside it that leaves the record intact:",
+  "  * ch2 2.3.7  'The diagrams carry five ideas: ...' (78 words)",
+  "  * ch2 2.4.1  'Sockets are built up in this order: ...' (64 words)",
+  "  * ch8 8.4.4  'The boundary between provider and customer is drawn differently",
+  "    for each service model, since ... or the reverse.' (48 words)",
+  "They are named here rather than worked around. Splitting one means a superseding",
+  "entry in data/voice_rewrites.json, applied through voice_rewrite.py --apply so its",
+  "fingerprints and indexes stay replayable - a decision about the voice record rather",
+  "than about the prose, and not one to make inside a length pass.",
+  "The THIRD batch is the pass against tools/sentence_length.py's post-rewrite count:",
+  "fifteen prose sentences over 45 words had reappeared as units 4-8 were rewritten, and",
+  "this batch splits all of them. Two needed the catalogue rather than a split: ch2 2.3.7",
+  "is a whole-sentence voice rewrite, retired with `tools/voice_rewrite.py --retire` so",
+  "the length pass could touch it, and data/dcc_figure_keepers.json's ch2 prose patch was",
+  "re-pointed at the split sentence. ch3 3.1's split first dropped the pinned term",
+  "'logical clocks' and was rewritten to keep it (the Revise-card guard caught it). After",
+  "this batch the count over 45 words is 0; the measured longest is 45."
+ ],
+ "ch1.js": [
+  [
+   "an attack on the third component directly — and the security of mobile code, where a program",
+   "an attack on the third component directly. The second is the security of mobile code, where a program"
+  ],
+  [
+   "later in this course: as the interaction style",
+   "later in this course. It is the interaction style"
+  ],
+  [
+   "may be called remotely, and inside the file service",
+   "may be called remotely. The same pattern sits inside the file service"
+  ],
+  [
+   "moved on its own — the logic tier is where servers are added as load grows, while",
+   "moved on its own. The logic tier is where servers are added as load grows, while"
+  ],
+  [
+   "kept equal, which is why consistency becomes",
+   "kept equal. That is why consistency becomes"
+  ],
+  [
+   "under agreed rules — and the connectivity layer's job",
+   "under agreed rules. The connectivity layer's job"
+  ],
+  [
+   "and bottlenecks — and the treatment has three parts:",
+   "and bottlenecks. The treatment has three parts:"
+  ],
+  [
+   "under agreed rules — and the connectivity layer",
+   "under agreed rules. The connectivity layer"
+  ]
+ ],
+ "ch2.js": [
+  [
+   "object look local, message passing admits",
+   "object look local. Message passing admits"
+  ],
+  [
+   "gives you the primitives, and web services are",
+   "gives you the primitives. Web services are"
+  ],
+  [
+   "such as JSON (2.4.3) — and a change on one side is a change on both.",
+   "such as JSON (2.4.3). And a change on one side is a change on both."
+  ],
+  [
+   "for each remote invocation; a server with several",
+   "for each remote invocation. A server with several"
+  ],
+  [
+   "where the object is, and that is the claim that fails",
+   "where the object is. That claim fails"
+  ],
+  [
+   "admits it or not, so a call dressed up",
+   "admits it or not. A call dressed up"
+  ],
+  [
+   "both are defensible: carry the difference into the language, so that",
+   "both are defensible. One carries the difference into the language, so that"
+  ],
+  [
+   "failure becomes part of the signature; or accept the difference in the semantics and choose",
+   "failure becomes part of the signature. The other accepts the difference in the semantics and chooses"
+  ],
+  [
+   "names a buffer and a size, so a program's correctness depends on both sides agreeing about layout in a way",
+   "names a buffer and a size. A program's correctness depends on both sides agreeing about layout, in a way"
+  ],
+  [
+   "hold it somewhere in the meantime; rendezvous removes that requirement by asking first — the header goes",
+   "hold it somewhere in the meantime. Rendezvous removes that requirement by asking first: the header goes"
+  ],
+  [
+   "communication: the client and server must both",
+   "communication. The client and server must both"
+  ],
+  [
+   "while waiting for a reply, failures have to be dealt with immediately because the client is waiting, and in many cases the model is simply not appropriate",
+   "while waiting for a reply, and failures have to be dealt with immediately because the client is waiting. In many cases the model is simply not appropriate"
+  ],
+  [
+   "chosen by the operating system), and also the address",
+   "chosen by the operating system). It also carries the address"
+  ],
+  [
+   "if it cannot connect; then an InputStream",
+   "if it cannot connect. Then an InputStream"
+  ],
+  [
+   "connecting that client to the server; the server gets",
+   "connecting that client to the server. The server gets"
+  ],
+  [
+   "is shaped as it is: how do you share data",
+   "is shaped as it is: sharing data between programs that were never designed to cooperate. How do you share data"
+  ],
+  [
+   "instead of a wrapper, so there is often no machine-readable description at all",
+   "instead of a wrapper. There is often no machine-readable description at all"
+  ],
+  [
+   "and Java on another; Java RMI trades",
+   "and Java on another. Java RMI trades"
+  ],
+  [
+   "cannot know whether the call happened — honest rather than careless,",
+   "cannot know whether the call happened. That is honest rather than careless,"
+  ],
+  [
+   "how they are interpreted; a",
+   "how they are interpreted. A"
+  ],
+  [
+   "is how a stream is paced; a broker",
+   "is how a stream is paced. A broker"
+  ],
+  [
+   "expected at the server's socket; the server's socket specifies",
+   "expected at the server's socket. The server's socket specifies"
+  ],
+  [
+   "if it cannot connect; an InputStream and an OutputStream",
+   "if it cannot connect. An InputStream and an OutputStream"
+  ],
+  [
+   "lightweight and flexible; the same missing contract",
+   "lightweight and flexible. The same missing contract"
+  ]
+ ],
+ "ch3.js": [
+  [
+   "each of P5, P0, P1 and P4 passes the message on, adding its own id; when the message returns to P3 it recognises its own id in the list, picks the highest id (5) and sends",
+   "each of P5, P0, P1 and P4 passes the message on, adding its own id. When the message returns to P3 it recognises its own id in the list, picks the highest id (5) and sends"
+  ],
+  [
+   "so entering costs nothing at all and the design problem moves wholesale to the token &mdash; how to find it when it is lost or its holder dies (which is an election, 3.4), and how to keep it circulating so that nobody waits for a full lap of the ring.",
+   "so entering costs nothing at all and the design problem moves wholesale to the token. Two questions follow: how to find it when it is lost or its holder dies (which is an election, 3.4), and how to keep it circulating so that nobody waits for a full lap of the ring."
+  ],
+  [
+   "up-to-date or recent data, temporal ordering of events",
+   "up-to-date or recent data. The remaining four are temporal ordering of events"
+  ],
+  [
+   "the correct results — it may decide an output",
+   "the correct results. It may decide an output"
+  ],
+  [
+   "the sender knows nothing about; taking the larger value",
+   "the sender knows nothing about. Taking the larger value"
+  ],
+  [
+   "and no two events tie — which is enough for the classic use:",
+   "and no two events tie. That is enough for the classic use:"
+  ],
+  [
+   "even when updates are delivered out of order; the solution is to assign",
+   "even when updates are delivered out of order. The solution is to assign"
+  ],
+  [
+   "then this doesn't make it so\" — these are false positives",
+   "then this doesn't make it so\". These are false positives"
+  ],
+  [
+   "for capturing causality: two events are causally related",
+   "for capturing causality. Two events are causally related"
+  ],
+  [
+   "are provably concurrent — which is how a replicated store detects",
+   "are provably concurrent. That is how a replicated store detects"
+  ],
+  [
+   "still waiting for, and Lamport timestamps cannot answer that question",
+   "still waiting for. Lamport timestamps cannot answer that question"
+  ],
+  [
+   "is therefore enough; SES orders ordinary",
+   "is therefore enough. SES orders ordinary"
+  ],
+  [
+   "the protocol's own rules; the other three are claims about progress",
+   "the protocol's own rules. The other three are claims about progress"
+  ],
+  [
+   "if j has a request with a timestamp lower than the request of i, since i cannot enter before j anyway in this case.",
+   "if j has a request with a timestamp lower than the request of i. In that case i cannot enter before j anyway."
+  ],
+  [
+   "rather than sent: since every node orders requests",
+   "rather than sent. Since every node orders requests"
+  ],
+  [
+   "standard example — and it is a method",
+   "standard example. It is a method"
+  ],
+  [
+   "new election — a process with a higher ID number will bully",
+   "new election. A process with a higher ID number will bully"
+  ],
+  [
+   "execution of the same algorithm, and if there are no active processes with higher numbers, the recovered process forces",
+   "execution of the same algorithm. If there are no active processes with higher numbers, the recovered process forces"
+  ],
+  [
+   "logically or physically; the links are unidirectional",
+   "logically or physically. The links are unidirectional"
+  ],
+  [
+   "to their right neighbours; and each process maintains",
+   "to their right neighbours. Each process maintains"
+  ],
+  [
+   "as it passes it on; when the message returns to the initiator",
+   "as it passes it on. When the message returns to the initiator"
+  ],
+  [
+   "the new coordinator's id, which again accumulates",
+   "the new coordinator's id. That message accumulates"
+  ],
+  [
+   "and announces it — and then P4 dies, so when the coordinator message",
+   "and announces it. Then P4 dies, so when the coordinator message"
+  ],
+  [
+   "with P6 as leader; P6 fails; P3 notices",
+   "with P6 as leader. P6 fails. P3 notices"
+  ],
+  [
+   "for physical clocks, and Lamport timestamps and vector clocks for logical clocks;",
+   "for physical clocks. The logical pair is Lamport timestamps and vector clocks;"
+  ],
+  [
+   "the clock condition does not hold — it may be that",
+   "the clock condition does not hold. It may be that"
+  ],
+  [
+   "for physical clocks. The logical pair is Lamport timestamps and vector clocks;",
+   "for physical clocks. For logical clocks the pair is Lamport timestamps and vector clocks;"
+  ]
+ ],
+ "ch4.js": [
+  [
+   "gets the same result &mdash; but a full answer names the others too:",
+   "gets the same result. A full answer names the others too:"
+  ],
+  [
+   "so the number of files is governed by the namenode's memory), and multiple writers or arbitrary file modifications (files may be written by a single writer, writes always at the end of the file, with no support for modifications at arbitrary offsets).",
+   "so the number of files is governed by the namenode's memory). Nor does it suit multiple writers or arbitrary file modifications: files may be written by a single writer, writes always at the end of the file, and modifications at arbitrary offsets are not supported."
+  ],
+  [
+   "a <em>reintegration</em> recovery; Plan 9 with none; xFS with striping &mdash; a different use of multiple copies, spreading one file across servers for bandwidth rather than duplicating it; and SFS with none and <em>self-certifying</em> secure channels.",
+   "a <em>reintegration</em> recovery; Plan 9 with none. xFS uses striping &mdash; a different use of multiple copies, spreading one file across servers for bandwidth rather than duplicating it; and SFS has none, with <em>self-certifying</em> secure channels."
+  ],
+  [
+   "three variations are named: servers may run on dedicated machines",
+   "three variations are named. Servers may run on dedicated machines"
+  ],
+  [
+   "be on the same machines; the operating system itself can be distributed",
+   "be on the same machines. The operating system itself can be distributed"
+  ],
+  [
+   "a part of that distribution; and a distribution layer can be interposed",
+   "a part of that distribution. A distribution layer can be interposed"
+  ],
+  [
+   "copies exist), concurrency",
+   "copies exist). The rest are concurrency"
+  ],
+  [
+   "and flush them on close, and means a file that is open on two clients",
+   "and flush them on close. A file that is open on two clients"
+  ],
+  [
+   "needs no recovery state — but a stateless server cannot remember",
+   "needs no recovery state. A stateless server, however, cannot remember"
+  ],
+  [
+   "became the standard — and it is why 4.1.5",
+   "became the standard. It is also why 4.1.5"
+  ],
+  [
+   ": an NFS server is an ordinary machine",
+   ". An NFS server is an ordinary machine"
+  ],
+  [
+   "; all client requests must be self-contained;",
+   ". All client requests must be self-contained."
+  ],
+  [
+   "machine and OS independence",
+   "Machine and OS independence"
+  ],
+  [
+   ". All client requests must be self-contained. Machine and OS independence, so it could be implemented",
+   ", and all client requests must be self-contained. Machine and OS independence means it could be implemented"
+  ],
+  [
+   ", which is the major reason behind the stateless design;",
+   " is the major reason behind the stateless design;"
+  ],
+  [
+   ", so remote files are accessed exactly as local ones;",
+   " means remote files are accessed exactly as local ones;"
+  ],
+  [
+   "and UNIX semantics maintained on the client.",
+   "with UNIX semantics maintained on the client."
+  ],
+  [
+   "mid-1980s;",
+   "mid-1980s."
+  ],
+  [
+   "fast crash recovery ,",
+   "Fast crash recovery ,"
+  ],
+  [
+   "being mounted in different places — NFS uses a set of basic",
+   "being mounted in different places. NFS uses a set of basic"
+  ],
+  [
+   "will not work well),",
+   "will not work well)."
+  ],
+  [
+   "lots of small files",
+   "Lots of small files"
+  ],
+  [
+   "(because the namenode holds filesystem metadata in memory, so the number of files is governed by the namenode's memory).",
+   "are another problem, because the namenode holds filesystem metadata in memory: the number of files is governed by the namenode's memory."
+  ],
+  [
+   "to perform the low-level I/O tasks, and it keeps track of the file's splitting",
+   "to perform the low-level I/O tasks. It keeps track of the file's splitting"
+  ],
+  [
+   "locations of each chunk's replicas — and all of it is kept",
+   "locations of each chunk's replicas. All of it is kept"
+  ],
+  [
+   "but chunk locations are not — the master asks the chunkservers instead",
+   "but chunk locations are not. The master asks the chunkservers instead"
+  ],
+  [
+   "that they can perform locally — and to hide the details",
+   "that they can perform locally. The second is to hide the details"
+  ],
+  [
+   "characteristics of the Object Request Broker — practically specifying the middleware functions",
+   "characteristics of the Object Request Broker. It practically specifies the middleware functions"
+  ],
+  [
+   "used by application objects; an object can be a client",
+   "used by application objects. An object can be a client"
+  ],
+  [
+   "a server, or both; and object interaction is through requests",
+   "a server, or both. Object interaction is through requests"
+  ],
+  [
+   "of the target, uses the adapter name to locate the object adapter",
+   "of the target. It uses the adapter name to locate the object adapter"
+  ],
+  [
+   "to locate the object adapter, which uses the object name to locate the servant.",
+   "to locate the object adapter; that adapter uses the object name to locate the servant."
+  ],
+  [
+   "or the dynamic invocation interface; invocation of a specific server method",
+   "or the dynamic invocation interface. Invocation of a specific server method"
+  ],
+  [
+   "forwarded from the object adapter; and the ORB interface can also be accessed",
+   "forwarded from the object adapter. The ORB interface can also be accessed"
+  ],
+  [
+   "mapping names of CORBA objects to servants; each adapter has its own name",
+   "mapping names of CORBA objects to servants. Each adapter has its own name"
+  ],
+  [
+   "same syntax as for local invocations, applies type checking equally",
+   "same syntax as for local invocations. It applies type checking equally"
+  ],
+  [
+   "equally to remote and local calls, and provides a binder mapping",
+   "equally to remote and local calls. It also provides a binder mapping"
+  ],
+  [
+   "means concretely: a 1-byte control header",
+   "means concretely. A 1-byte control header"
+  ],
+  [
+   "and which is not always present, and then 0–Y bytes of payload",
+   "and which is not always present. Then come 0–Y bytes of payload"
+  ],
+  [
+   "never names a receiver, which is what makes them suit",
+   "never names a receiver. That is what makes them suit"
+  ],
+  [
+   "became the standard — and why 4.1.5 can describe",
+   "became the standard. It is also why 4.1.5 can describe"
+  ]
+ ],
+ "ch5.js": [
+  [
+   "and where it sits (the deployment models, 5.4), and what makes it cloud",
+   "and where it sits (the deployment models, 5.4). The third is what makes it cloud"
+  ],
+  [
+   "cheapest or closest to use, which is how a cloud claims",
+   "cheapest or closest to use. That is how a cloud claims"
+  ],
+  [
+   "pay per use, reliability, data control (by the provider), data backup and recovery, huge cloud storage.",
+   "pay per use, reliability. The rest are data control (by the provider), data backup and recovery, and huge cloud storage."
+  ],
+  [
+   "rather than on capability: in each row",
+   "rather than on capability. In each row"
+  ],
+  [
+   "Because the complex structure of cloud services can make it difficult",
+   "The complex structure of cloud services can make it difficult"
+  ],
+  [
+   "undesirable happens, and because identity fraud and theft are made possible",
+   "undesirable happens. The second reason is that identity fraud and theft are made possible"
+  ],
+  [
+   "social networks, the traditional network boundary stops being",
+   "social networks. The traditional network boundary stops being"
+  ],
+  [
+   "suits one kind of organisation — a public cloud for",
+   "suits one kind of organisation: a public cloud for"
+  ],
+  [
+   "under one company's control, a community cloud for a joint bank or government project, and a hybrid for a private core with public burst capacity.",
+   "under one company's control. A community cloud suits a joint bank or government project, and a hybrid suits a private core with public burst capacity."
+  ]
+ ],
+ "ch6.js": [
+  [
+   "instead of a physical one being bought;",
+   "instead of a physical one being bought."
+  ],
+  [
+   "pay-per-usage is possible",
+   "Pay-per-usage is possible"
+  ],
+  [
+   "metered per virtual machine;",
+   "metered per virtual machine."
+  ],
+  [
+   "multiplexing and higher utilisation",
+   "Multiplexing and higher utilisation"
+  ],
+  [
+   "several guests share one box;",
+   "several guests share one box."
+  ],
+  [
+   "share one box. and",
+   "share one box."
+  ],
+  [
+   "a single administrative domain becomes meaningful",
+   "A single administrative domain becomes meaningful"
+  ],
+  [
+   "all to itself; however, the hypervisor is actually controlling",
+   "all to itself. In fact the hypervisor is controlling"
+  ],
+  [
+   "one machine to unrelated customers, so the security property",
+   "one machine to unrelated customers. The security property"
+  ],
+  [
+   "because the layer is the difference: a Type I hypervisor sits",
+   "because the layer is the difference. A Type I hypervisor sits"
+  ],
+  [
+   "no host operating system underneath, while a Type II hypervisor is an application",
+   "no host operating system underneath. A Type II hypervisor is an application"
+  ],
+  [
+   "and will not boot without one; that emulation is why a VM's I/O",
+   "and will not boot without one. That emulation is why a VM's I/O"
+  ],
+  [
+   "to machine memory, and modern x86 CPUs include",
+   "to machine memory. Modern x86 CPUs include"
+  ],
+  [
+   "or to the hypervisor — so its page tables may only ever map",
+   "or to the hypervisor. Its page tables may therefore only ever map"
+  ],
+  [
+   "the sentence above — it carries everything needed to run its applications",
+   "the sentence above. It carries everything needed to run its applications"
+  ],
+  [
+   ", which is where containers (6.2.2) take a different decision, and it is why",
+   ". That is where containers (6.2.2) take a different decision, and it is why"
+  ],
+  [
+   "with one key difference: using a containerization engine",
+   "with one key difference. Using a containerization engine"
+  ],
+  [
+   "but at different levels: a VM virtualizes the machine,",
+   "but at different levels. A VM virtualizes the machine,"
+  ],
+  [
+   "gets hardware-level isolation; a container virtualizes the operating system",
+   "gets hardware-level isolation. A container virtualizes the operating system"
+  ],
+  [
+   "or SaaS);",
+   "or SaaS)."
+  ],
+  [
+   "power management — heat dissipation",
+   "Power management — heat dissipation"
+  ],
+  [
+   "heat dissipation from servers; and conflicts in the signed SLAs",
+   "heat dissipation from servers, and conflicts in the signed SLAs"
+  ],
+  [
+   "to meet rigorous goals, so developers must design",
+   "to meet rigorous goals. Developers must design"
+  ],
+  [
+   "a traditional software stack does — however, the lower layers",
+   "a traditional software stack does. However, the lower layers"
+  ],
+  [
+   "becomes coordination between providers that do not share",
+   "becomes coordination between providers. They do not share"
+  ]
+ ],
+ "ch7.js": [
+  [
+   "three questions to ask of any of it:",
+   "three questions to ask of any of it."
+  ],
+  [
+   "what is rented (IaaS, PaaS or SaaS)",
+   "What is rented (IaaS, PaaS or SaaS)"
+  ],
+  [
+   ": the reference book's own case studies include",
+   ". The reference book's own case studies include"
+  ],
+  [
+   "to simplify management complexity, with Tivoli Service Automation Manager for",
+   "to simplify management complexity. Tivoli Service Automation Manager is used for"
+  ],
+  [
+   "management of service processes and",
+   "management of service processes."
+  ],
+  [
+   "WebSphere CloudBurst as another management platform.",
+   "WebSphere CloudBurst is another management platform."
+  ],
+  [
+   "refers to the delivery of anything as a service, recognising the vast number of products",
+   "refers to the delivery of anything as a service. It recognises the vast number of products"
+  ],
+  [
+   ", with servers not aware",
+   ". Servers are not aware"
+  ],
+  [
+   "records matters) and non-relational or NoSQL",
+   "records matters). The other is non-relational or NoSQL"
+  ],
+  [
+   "is used in IBM's Blue Cloud; in EC2 some predefined VM templates",
+   "is used in IBM's Blue Cloud. In EC2 some predefined VM templates"
+  ],
+  [
+   "different kinds of VMs from the templates — an image",
+   "different kinds of VMs from the templates. An image"
+  ],
+  [
+   "a CLI and SDKs, and it is organised",
+   "a CLI and SDKs. It is organised"
+  ],
+  [
+   "and the management functions — and the course's reference book lists",
+   "and the management functions. The course's reference book lists"
+  ],
+  [
+   "behind a cloud platform's software stack: developers must design for high throughput",
+   "behind a cloud platform's software stack. Developers must design for high throughput"
+  ],
+  [
+   "high availability and fault tolerance, and the layers are stacked so that each provides",
+   "high availability and fault tolerance. The layers are stacked so that each provides"
+  ],
+  [
+   "<strong>scalability</strong> (outsourcing gives access to effectively unlimited computing capacity, and a company can scale processes up and down without worrying about deployments or downtime); cost- and time-effectiveness (no equipment to buy or deploy, and a pay-as-you-go model); <strong>focus on core competencies</strong> (no need to set up applications or train staff on them); high quality of services (professionals maintain the infrastructure and provide the latest updates); and better customer experience as a consequence.",
+   "<strong>scalability</strong> &mdash; outsourcing gives access to effectively unlimited computing capacity, and a company can scale processes up and down without worrying about deployments or downtime. Then cost- and time-effectiveness: no equipment to buy or deploy, and a pay-as-you-go model. <strong>Focus on core competencies</strong>: no need to set up applications or train staff on them. High quality of services: professionals maintain the infrastructure and provide the latest updates. And better customer experience as a consequence."
+  ],
+  [
+   "in EC2 some predefined VM templates are also provided, and users can choose different kinds of VMs from the templates (an <em>image</em> &mdash; an Amazon Machine Image &mdash; is that template), whereas IBM's Blue Cloud does not provide any VM templates, since in general any type of VM can run on top of Xen.",
+   "in EC2 some predefined VM templates are also provided, and users can choose different kinds of VMs from the templates &mdash; an <em>image</em>, or Amazon Machine Image, is that template. IBM's Blue Cloud does not provide any VM templates, since in general any type of VM can run on top of Xen."
+  ],
+  [
+   "Functions for serverless; Docker for packaging and Kubernetes for orchestration;",
+   "Functions for serverless. Docker is for packaging and Kubernetes for orchestration;"
+  ]
+ ],
+ "ch8.js": [
+  [
+   "many agreements at once — a compute SLA",
+   "many agreements at once. A compute SLA"
+  ],
+  [
+   "a support SLA — and the phrase",
+   "a support SLA, all applying at once, and the phrase"
+  ],
+  [
+   "the description has four moves: the boundary between provider",
+   "the description has four moves. The boundary between provider"
+  ],
+  [
+   ": replication — the very feature that makes cloud storage reliable — is what makes",
+   ". Replication — the very feature that makes cloud storage reliable — is what makes"
+  ],
+  [
+   "a mutually beneficial relationship — and from a legal perspective, the terms",
+   "a mutually beneficial relationship. From a legal perspective, the terms"
+  ],
+  [
+   "engineering it does not — which is the whole reason providers publish",
+   "engineering it does not. That is the whole reason providers publish"
+  ],
+  [
+   "give the second; if it says \"explain SLA in cloud computing\"",
+   "give the second. If it says \"explain SLA in cloud computing\""
+  ],
+  [
+   "and the managed services underneath), and the customer is responsible",
+   "and the managed services underneath). The customer is responsible"
+  ],
+  [
+   ": the multi-tenant layer is shared by design",
+   ". The multi-tenant layer is shared by design"
+  ],
+  [
+   "is a flaw in everyone's isolation; Meltdown is the course's example; and the response is hardening",
+   "is a flaw in everyone's isolation. Meltdown is the course's example, and the response is hardening"
+  ],
+  [
+   "the boundary between provider and customer is <em>drawn differently for each service model</em> &mdash; the customer manages more in IaaS than in SaaS &mdash; the boundary is <em>not always visible</em>, so a customer may believe a control exists when it is theirs to provide or the reverse, which is why breaches so often trace to a misconfiguration rather than to a broken control.",
+   "the boundary between provider and customer is <em>drawn differently for each service model</em>, since the customer manages more in IaaS than in SaaS; the boundary is <em>not always visible</em>, so a customer may believe a control exists when it is theirs to provide, or the reverse. That is why breaches so often trace to a misconfiguration rather than to a broken control."
+  ],
+  [
+   "than in SaaS, and it is not always",
+   "than in SaaS. It is not always"
+  ]
+ ],
+ "ch9.js": [
+  [
+   "the data leaving a jurisdiction), and it fails entirely when the device",
+   "the data leaving a jurisdiction). It also fails entirely when the device"
+  ],
+  [
+   "bandwidth (the volume), and sometimes privacy or legal compliance",
+   "bandwidth (the volume). Sometimes it also costs privacy or legal compliance"
+  ],
+  [
+   "weaker physical security (a device in the field can be stolen or opened),",
+   "weaker physical security (a device in the field can be stolen or opened)."
+  ],
+  [
+   "updates across a fleet",
+   "Updates across a fleet"
+  ],
+  [
+   "differs from a virtual machine: using a containerization engine",
+   "differs from a virtual machine: the difference is where the isolation comes from. Using a containerization engine"
+  ],
+  [
+   "sharper for containers, and why \"shared technology risks\" is a named vulnerability",
+   "sharper for containers. It is also why \"shared technology risks\" is a named vulnerability"
+  ],
+  [
+   "from the host's, so a workload needing",
+   "from the host's. A workload needing"
+  ],
+  [
+   "patched — or put genuinely untrusted workloads in a sandboxed runtime or a virtual machine.",
+   "patched. For genuinely untrusted workloads, put them in a sandboxed runtime or a virtual machine."
+  ],
+  [
+   "services, each owning its own data and communicating over a network interface",
+   "services. Each owns its own data and communicates over a network interface"
+  ],
+  [
+   "partition, and microservices move complexity out of the code",
+   "partition. Microservices move complexity out of the code"
+  ],
+  [
+   "rolling updates — which is what makes running",
+   "rolling updates. That is what makes running"
+  ],
+  [
+   "which can be shared with other containers dedicated to running different functions of the app, so that only binaries, libraries and other runtime components are developed or executed separately for each container, which makes them more resource-efficient compared to VMs.",
+   "which can be shared with other containers dedicated to running different functions of the app. Only binaries, libraries and other runtime components are developed or executed separately for each container, which makes them more resource-efficient compared to VMs."
+  ]
+ ]
+}

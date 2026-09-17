@@ -1,0 +1,243 @@
+source: Lecture Notes - all Chapterwise\Chapter 4 - Distributed File systems and Middleware\Ch4_MessagingProtocol_MQTT_AMQP_For_Students.pdf
+method: pdf
+sha256: 4a5eb4df1bcfc3f4f1bb17803d83f3e72624f8f8f73282323066f1150a880906
+pages:  7
+ocr:    7 page(s)
+rotation: 270
+dpi:    600
+----------------------------------------------------------------------
+===== page 1 =====  [ocr]
+Introduction
+oooooooooooo
+CoAP
+oooooooooooo
+MQTT
+oooooooo
+oooooooo
+XMPP
+ooo
+Comparison
+ooo
+Message Queuing Telemetry Transport (MQTT)
+messaging protocol designed for
+Publish-subscribe lightweight
+devices.
+Protocol that is designed for unreliable networks
+or
+intermittent connectivity
+Exchange of data with the cloud in a
+manner.
+Very popular and widespread for IoT and M2M applications
+standard.
+
+
+===== page 2 =====  [ocr]
+Introduction
+oooooooooooo
+CoAP
+oooooooooooo
+MQTT
+oooooooo
+Application
+MQTT
+TCP
+oooooooo
+XMPP
+ooo
+Comparison
+ooo
+MQTT protocol stack
+A variant MQTT-SN (Sensor Networks)
+can use other transport
+protocols such as UDP or Bluetooth.
+
+
+===== page 3 =====  [ocr]
+Introduction
+oooooooooooo
+MQTT model
+CoAP
+oooooooooooo
+MQTT
+oooooooo
+Broker
+XMPP
+ooo
+Comparison
+ooo
+oooooooo
+subscribe
+topic: l'/temp"
+subscribe
+topic: l'/temp"
+topic: "/status"
+that receives the data from publishers and
+Broker: a
+O
+forwards it to the interested subscribers.
+Publisher: a client that sends data to the Broker.
+O
+Subscriber: a client that is registered on the Broker to
+receive updates from specific sources.
+
+
+===== page 4 =====  [ocr]
+Introduction
+oooooooooooo
+CoAP
+oooooooooooo
+MQTT
+oooooooo
+Broker
+oooooooo
+PUBLISH II/tem
+PUBACK
+XMPP
+ooo
+Client B
+Comparison
+ooo
+MQTT message model
+Client A
+CONNECT
+CONNACK
+SUBSCRIBE Il/templl
+SUBACK
+PUBLISH "item
+PUBACK
+Example of interaction among Broker,
+Subscriber (Client A) and Publisher (Client B)
+
+
+===== page 5 =====  [ocr]
+Introduction
+oooooooooooo
+CoAP
+oooooooooooo
+MQTT
+oooooooo
+oooooooo
+XMPP
+ooo
+0-X bytes
+Payload
+not always
+p resent
+Comparison
+ooo
+MQTT message format
+1 byte
+Control
+Header
+1 to 4 bytes
+Packet
+Length
+0-Y bytes
+Variable
+Length Header
+not always
+Fixed header
+always present
+The Size Of the Variable Length Header
+depends from the
+message type
+The payload contains the data to send
+(e.g., CONNACK does not
+The payload
+may not be present
+have payload).
+
+
+===== page 6 =====  [ocr]
+Introduction
+oooooooooooo
+Advanced Message Queuing
+and
+CoAP
+oooooooooooo
+MQTT
+oooooooo
+AMQP
+oooooooo
+XMPP
+ooo
+Comparison
+ooo
+Protocol (AMQP)
+O
+messaging protocol designed for
+Lightweight
+but
+M2M messaging.
+Binary,
+application layer protocol.
+Generally used in
+corporate environments
+interoperability
+Focuses on
+Support for both
+publish-subscribe
+and
+req u est.- p o n
+models.
+standard.
+
+
+===== page 7 =====  [ocr]
+Introduction
+oooooooooooo
+CoAP
+oooooooooooo
+MQTT
+oooooooo
+AMQP Broker
+AMQP
+oooooooo
+queues
+queuez
+queue2
+queue3
+queue.
+queue,
+XMPP
+ooo
+Subscribe %
+SubscrEber2
+Subscriber*
+Subscribers
+Comparison
+ooo
+M essa ge
+distribution model
+publish messages
+Publisherl
+exchange
+direct
+topic
+fanout
+bindings
+routing key
+routin attern
+routing key
+route mesa e
+unconditionally
+request
+send message
+subscribe
+send messa&é
+subscribe
+send message
+subscribe
+send message
+sub5cribe
+send message
+Exchange: a
+routing agent that runs on a virtual host
+residing on a broker's server.
+Q Llec.le:
+named FIFO buffer
+that stores messages on behalf of
+applications temporarily.
+Bindings: relationships between
+message exchanges and
+message queues.

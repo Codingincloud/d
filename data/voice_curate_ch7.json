@@ -1,0 +1,243 @@
+{
+ "_comment": [
+  "Unit 7's second batch. The earlier batch for this unit retired the deck and",
+  "textbook talk; this one retires the unit pointers, of which this unit has the",
+  "most in the portal - including a whole closing section that was organised around",
+  "what each other unit needs from these platform names ('Unit 5 (IaaS versus PaaS):",
+  "IaaS is EC2 ...'). The names are the content and they stay; the address book",
+  "around them goes."
+ ],
+ "edits": [
+  {
+   "ch": "ch7.js",
+   "new": "A cloud provider is",
+   "old": "From the course's own material, the providers are the actors in Unit 5's definitions: a cloud provider is",
+   "tell": "crossref",
+   "why": "the definition of a cloud provider is the fact; which unit's definitions it came from is provenance, and the value is quoted in full"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "This is vendor lock-in with the mechanism attached:",
+   "old": "This is the same vendor lock-in as Unit 5's challenge list, but now with the mechanism attached:",
+   "tell": "crossref",
+   "why": "the vendor lock-in and the mechanism are the content; which unit's list it matches is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "why a cloud reference architecture includes a portability/interoperability management function",
+   "old": "why the reference architecture in Unit 6 includes a portability/interoperability management function",
+   "tell": "crossref",
+   "why": "the portability function is the fact; which unit's reference architecture carries it is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "",
+   "old": " That is the bridge from this unit to Unit 9.",
+   "tell": "crossref",
+   "why": "a sentence whose whole content is which unit reads on from here"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "The service-model definitions say the same thing in formal language",
+   "old": "Unit 5's service-model definitions say the same thing in formal language",
+   "tell": "crossref",
+   "why": "the definitions' content is the fact; which unit states them is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "the cloud-scale version of desktop virtualization.",
+   "old": "the cloud-scale version of the desktop virtualization in Unit 6.",
+   "tell": "crossref",
+   "why": "desktop virtualisation at cloud scale is the fact; the unit number is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "the storage interface is the REST style.",
+   "old": "this is the REST style from Unit 2.4 used as the storage interface.",
+   "tell": "crossref",
+   "why": "the storage interface being REST is the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "exactly the GFS/HDFS access pattern, and for the same reason.",
+   "old": "exactly the GFS/HDFS access pattern from Unit 4.2.9, and for the same reason.",
+   "tell": "crossref",
+   "why": "the access pattern is the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "availability is the probability the data can be reached right now.",
+   "old": "availability is the probability you can reach it right now.",
+   "tell": "reader",
+   "why": "availability is a property of the data, not of the reader"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "Storage virtualization",
+   "old": "Storage virtualization, one unit later",
+   "tell": "crossref",
+   "why": "the definition of storage virtualization is the content; which unit defined it, and 'one unit later', are pointers"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "Storage virtualization is aggregating physical storage",
+   "old": "Unit 6.1.2 defined storage virtualization as aggregating physical storage",
+   "tell": "crossref",
+   "why": "the definition is the content; the unit that gave it is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "Google's wide-column store;",
+   "old": "Google's wide-column store, from Unit 4's reading;",
+   "tell": "crossref",
+   "why": "which store it is is the content; whose reading it came from is provenance"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "which is precisely the boundary an SLA puts around, and the shared responsibility model splits.",
+   "old": "which is precisely the boundary Unit 8.3 puts an SLA around and Unit 8.1 splits with the shared responsibility model.",
+   "tell": "crossref",
+   "why": "the boundary is the fact; the unit and section numbers are pointers"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "which is the same axis as the VM-versus-container comparison",
+   "old": "which is the same axis as Unit 6's VM-versus-container comparison",
+   "tell": "crossref",
+   "why": "the axis is the fact; the unit number is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "this is access control in practice.",
+   "old": "this is Unit 8's IAM/access-control material in practice.",
+   "tell": "crossref",
+   "why": "what the security group is is the fact; the unit and section are pointers"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "Google built and open-sourced Kubernetes)",
+   "old": "Google built and open-sourced Kubernetes, which is Unit 9.3)",
+   "tell": "crossref",
+   "why": "who built and open-sourced it is the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "All three platforms converge on the same catalogue:",
+   "old": "All three platforms converge on the same catalogue because of Unit 3's lesson rather than marketing:",
+   "tell": "crossref",
+   "why": "the reason the catalogue converges is the fact; 'Unit 3's lesson rather than marketing' is a pointer and a comparison"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "which is a fault-domain decision applied as a design rule:",
+   "old": "which is a fault-domain decision from Unit 1's independent-failures characteristic, applied as a design rule:",
+   "tell": "crossref",
+   "why": "the design rule is the fact; which unit's characteristic it comes from is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "The concrete names for each topic",
+   "old": "How to use this unit in answers for other units",
+   "tell": "meta",
+   "why": "the section is a list of concrete names; a heading about answering other units' questions is the exam talking"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "The concrete names behind each topic:",
+   "old": "Unit 7 supplies the concrete names that make other units' answers read as though they were studied rather than memorised.",
+   "tell": "crossref",
+   "why": "a sentence about what the unit supplies to other units' answers, rather than about platforms"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "IaaS is EC2; PaaS is Google App Engine or Windows Azure.",
+   "old": "Unit 5 (IaaS versus PaaS): IaaS is EC2, PaaS is Google App Engine or Windows Azure.",
+   "tell": "crossref",
+   "why": "the row's content is the platform names; the unit's name in front of it is an address"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "Xen is the Type I hypervisor behind EC2 and IBM Blue Cloud.",
+   "old": "Unit 6 (hypervisor types): Xen is the Type I hypervisor behind EC2 and IBM Blue Cloud.",
+   "tell": "crossref",
+   "why": "the row's content is which hypervisor stands behind which platform"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "EC2 auto-scaling is the demand-driven provisioning method, with its 30–70% CPU rule.",
+   "old": "Unit 6 (provisioning): EC2 auto-scaling is the demand-driven method with its 30–70% CPU rule.",
+   "tell": "crossref",
+   "why": "the row's content is the auto-scaling rule"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "GKE, EKS and AKS are the managed Kubernetes services, and Lambda is the serverless example.",
+   "old": "Unit 9 (cloud-native): GKE, EKS and AKS are the managed Kubernetes services, and Lambda is the serverless example.",
+   "tell": "crossref",
+   "why": "the row's content is the managed Kubernetes services and the serverless example"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "The security group is where access control is enforced on an instance.",
+   "old": "Unit 8 (security): the security group is where IAM is enforced on an instance.",
+   "tell": "crossref",
+   "why": "the row's content is where access control is enforced"
+  },
+  {
+   "ch": "ch7.js",
+   "new": "The distinction is who administers the database.",
+   "old": "The distinction worth writing down is who administers the database.",
+   "tell": "editorial",
+   "why": "'worth writing down' is advice; the distinction itself is the content"
+  },
+  {
+   "ch": "ch7.js",
+   "find": "From the course's own material, the providers are the actors in Unit 5's definitions: ",
+   "tell": "crossref",
+   "to": "",
+   "why": "provenance and a pointer in front of a definition that states itself: the provider is defined in full here"
+  },
+  {
+   "ch": "ch7.js",
+   "find": "why the reference architecture in Unit 6 includes a ",
+   "tell": "crossref",
+   "to": "why a cloud reference architecture includes a ",
+   "why": "the portability function is the fact; which unit's diagram carries it is a pointer"
+  },
+  {
+   "ch": "ch7.js",
+   "find": "this is the <em>REST</em> style from Unit 2.4 used as the storage interface.",
+   "tell": "crossref",
+   "to": "the storage interface is <em>REST</em>.",
+   "why": "the interface being REST is the fact; the section number and the comparison are pointers"
+  },
+  {
+   "ch": "ch7.js",
+   "find": "Unit 6.1.2 defined <strong>storage virtualization</strong> as aggregating",
+   "tell": "crossref",
+   "to": "<strong>Storage virtualization</strong> is aggregating",
+   "why": "the definition is the content; which unit stated it is a pointer, and the term keeps its emphasis"
+  },
+  {
+   "ch": "ch7.js",
+   "find": "<p>Unit 7 supplies the <em>concrete names</em> that make other units' answers read as though they were studied rather than memorised. IaaS is EC2; PaaS is Google App Engine or Windows Azure. Xen is the Type I hypervisor behind EC2 and IBM Blue Cloud. EC2 auto-scaling is the demand-driven provisioning method, with its 30–70% CPU rule. GKE, EKS and AKS are the managed Kubernetes services, and Lambda is the serverless example. The security group is where access control is enforced on an instance. Naming one platform per concept costs a few words and shows the syllabus was understood as a whole.</p>\n",
+   "tell": "crossref",
+   "to": "",
+   "why": "a sentence about what this unit supplies to other units' answers rather than about platforms; the heading above it already says what the list is"
+  },
+  {
+   "ch": "ch7.js",
+   "find": "The distinction worth writing down is ",
+   "tell": "editorial",
+   "to": "The distinction is ",
+   "why": "'worth writing down' is advice; the distinction itself is the content"
+  },
+  {
+   "ch": "ch7.js",
+   "find": " over the <em>REST</em> interface from Unit 2.4 rather than",
+   "tell": "crossref",
+   "to": " over the <em>REST</em> interface rather than",
+   "why": "that the service is reachable over one interface rather than another is the fact; the section number is a pointer"
+  }
+ ]
+}

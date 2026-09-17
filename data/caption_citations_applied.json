@@ -1,0 +1,44 @@
+{
+ "ch1.js": {
+  "before": "b2ab8d88ee75dc89",
+  "after": "0a6a04e119f4dbd4",
+  "entries": 2,
+  "alts_synced": 0
+ },
+ "ch2.js": {
+  "before": "987125cb01a7f136",
+  "after": "d13c78a642c13bad",
+  "entries": 4,
+  "alts_synced": 0
+ },
+ "ch3.js": {
+  "before": "b0d26a9c4c63684b",
+  "after": "203329f5114039b6",
+  "entries": 3,
+  "alts_synced": 0
+ },
+ "ch4.js": {
+  "before": "cf5cdbc8eabdeece",
+  "after": "a7840d2007eeeb21",
+  "entries": 1,
+  "alts_synced": 0
+ },
+ "ch5.js": {
+  "before": "06f92a61a8d78a31",
+  "after": "cd6b3740dd454e4a",
+  "entries": 2,
+  "alts_synced": 0
+ },
+ "ch6.js": {
+  "before": "34040d605dcb3d1b",
+  "after": "4844705643aebf1e",
+  "entries": 1,
+  "alts_synced": 0
+ },
+ "ch8.js": {
+  "before": "2462212d49114b29",
+  "after": "5ff9e061e0de959d",
+  "entries": 2,
+  "alts_synced": 0
+ }
+}

@@ -25,7 +25,14 @@ for stream in (sys.stdout, sys.stderr):
     if hasattr(stream, "reconfigure"):
         stream.reconfigure(encoding="utf-8", errors="replace")
 
-EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\uFE0F]")
+# Emoji, dingbats and the symbols-and-arrows block. The class used to stop at
+# U+27BF, which left U+2B00-U+2BFF uncovered - and the source bank's own
+# importance marker, U+2B50 (a star), lives there. So "CHAPTER 6: Random Number
+# <star> MOST IMPORTANT" was the one heading that kept its emoji all the way to
+# the Analysis tab. U+2B00-U+2BFF is entirely emoji-presentation characters, so
+# nothing legitimate is caught by widening the class; arrows below it (U+2190-
+# U+21FF) are deliberately NOT included, since the notes use them as notation.
+EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\uFE0F]")
 WS = re.compile(r"\s+")
 
 

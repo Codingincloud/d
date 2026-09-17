@@ -1,0 +1,57 @@
+source: Lecture Notes - all Chapterwise\Chapter_8_Security and Challenges in Cloud\Cloud_Vulnerabilities_and_Risk_Mitigation.pdf
+method: pdf
+sha256: 3292629c2c769413726863abe3a9d41ec6746ce445f6a05def62336b4645da60
+pages:  2
+ocr:    0 page(s)
+rotation: 0
+dpi:    -
+----------------------------------------------------------------------
+===== page 1 =====
+Cloud Vulnerabilities and Risk Mitigation
+1. Common Cloud Vulnerabilities
+Vulnerability Description
+Data Breaches Unauthorized access to sensitive data due to misconfigured storage,
+weak access controls, or poor encryption. Example: Publicly accessible
+object storage exposing customer records.
+Insecure APIs Weak authentication/authorization or improper input validation in
+management APIs can be exploited for data exposure and privilege
+escalation.
+Misconfigurations Human errors (overly permissive buckets, open security groups, weak
+firewall rules) often lead to accidental exposure.
+Account Hijacking Compromised credentials (phishing, brute force, token theft) enable
+attackers to abuse resources or exfiltrate data.
+DoS/DDoS Volumetric or application-layer attacks overwhelm services, causing
+downtime and unexpected scaling costs.
+Insider Threats Malicious or negligent insiders misuse legitimate access; hard to detect
+without strong monitoring and least privilege.
+Shared Technology Risks Multi-tenant infrastructure and hypervisor flaws may enable
+cross-tenant attacks if not patched and isolated properly.
+Compliance/Legal Risks Data residency and regulatory requirements (GDPR, HIPAA) may be
+violated due to improper region selection or lack of controls.
+
+
+===== page 2 =====
+2. Risk Mitigation Strategies
+Control Area Practices
+Data Security Encrypt data in transit and at rest; manage keys with KMS/HSM; apply
+tokenization and anonymization for sensitive fields.
+Identity & Access Management Enforce least privilege; MFA for all users; shortnlived credentials;
+(IAM) RBAC/ABAC; periodic access reviews; deny-by-default.
+Secure APIs Use OAuth 2.0/JWT; validate inputs and outputs; apply rate limiting and
+WAF; log and monitor all API calls.
+Configuration Management Continuous posture management (AWS Config, Azure Defender, GCP
+SCC); vulnerability scans; IaC with policy-as-code and
+prendeployment checks.
+Threat Detection & Monitoring Centralized logging and SIEM; anomaly detection; alerting on highnrisk
+events; EDR for workloads.
+Resilience to DoS/DDoS CDN and Anycast; autoscaling; managed DDoS protection; WAF rules
+for L7; rate limiting and surge protection.
+Vendor & Shared Responsibility Select certified providers (ISO 27001, SOC 2, FedRAMP); understand
+shared responsibilities; review SLAs and audit reports.
+Training & Awareness Regular security training; phishing simulations; secure coding
+programs; incident response drills.
+3. Summary
+Cloud platforms introduce unique risks, but a layered defense—encryption, strong IAM, secure APIs,
+continuous monitoring, configuration governance, DDoS resilience, vendor diligence, and staff
+training—reduces exposure and supports compliance. Align controls to the shared responsibility model and
+your regulatory context.

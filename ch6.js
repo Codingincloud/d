@@ -27,7 +27,7 @@ learn: `
 
 <h2>6.4 Generation of Random Numbers</h2>
 <h3>Linear Congruential Method (LCM) — Most Important!</h3>
-<div class="formula-box">X_{n+1} = (a × X_n + c) mod m</div>
+<div class="formula-box">X<sub>n+1</sub> = (a × X<sub>n</sub> + c) mod m</div>
 <p>where:</p>
 <ul>
 <li><strong>X₀</strong> = seed (starting value)</li>
@@ -40,6 +40,8 @@ learn: `
 
 <div class="worked">
 <div class="worked-head"><span>LCM — the numbers the 2025 model question gives</span><span class="meta">2025 M · 8 marks</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p05">n2 p05</button></p>
 <div class="worked-givens">
 <div><span>Seed X₀</span><b>27</b></div>
 <div><span>Multiplier a</span><b>17</b></div>
@@ -64,6 +66,8 @@ R₅ = 2 / 100 = 0.02</span><span class="worked-note">The sequence has closed on
 
 <div class="worked">
 <div class="worked-head"><span>LCM — the numbers worked in class</span><span class="meta">Lesson example</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p05">n2 p05</button></p>
 <div class="worked-givens">
 <div><span>Seed X₀</span><b>30</b></div>
 <div><span>Multiplier a</span><b>12</b></div>
@@ -155,6 +159,8 @@ X₂ = (12 × 11 + 5) mod 26 = 137 mod 26 = 7       R₂ = 7/26 = 0.27</span><sp
 <div class="formula-box">Xₙ₊₁ = (a₁ Xₙ + b₁) mod m₁   ·   Yₙ₊₁ = (a₂ Yₙ + b₂) mod m₂   ·   Zₙ = (Xₙ + Yₙ) mod m,  m = max(m₁, m₂)</div>
 <div class="worked">
 <div class="worked-head"><span>Combined LCM — combined output Zₙ</span><span class="meta">Lesson example</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p10">n2 p10</button></p>
 <div class="worked-givens">
 <div><span>a₁, b₁, m₁</span><b>5, 1, 16</b></div>
 <div><span>X₀</span><b>1</b></div>
@@ -192,6 +198,8 @@ R₃ = 1 / 16 = 0.0625</span></li>
 </ol>
 <div class="worked">
 <div class="worked-head"><span>Mid-square — 4-digit seed X₀ = 1234</span><span class="meta">Lesson example</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p06">n2 p06</button></p>
 <div class="worked-givens">
 <div><span>Seed X₀</span><b>1234</b></div>
 <div><span>Digits kept</span><b>4</b></div>
@@ -214,6 +222,65 @@ middle 4 digits → 1809</span><span class="worked-note">3030² is only 7 digits
 <div class="worked-result"><span>Random numbers</span><b>5227, 3215, 3362, 3030, 1809</b></div>
 </div>
 <div class="concept-box warn">
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 660 320" role="img" aria-label="Mid-square extraction drawn as two digit strips. In the first strip the seed 1234 squared gives 1 522 756, padded to eight digits as 0 1 5 2 2 7 5 6, and the middle four digits 5 2 2 7 are highlighted to give the next value 5227. In the second strip 5227 squared gives 27 321 529 and the middle four digits 3 2 1 5 are highlighted to give 3215.">
+
+<text class="fig-t sm start" x="20" y="26">Mid-square method — square the seed, pad to 2n digits, keep the middle n</text>
+
+<text class="fig-t sm start" x="60" y="58">X₀ = 1234    →    1234² = 1 522 756    →    pad to 8 digits</text>
+
+<rect class="fig-node" x="60" y="66" width="44" height="48" rx="6"/>
+<text class="fig-t mono" x="82" y="97">0</text>
+<rect class="fig-node" x="108" y="66" width="44" height="48" rx="6"/>
+<text class="fig-t mono" x="130" y="97">1</text>
+<rect class="fig-node solid" x="156" y="66" width="44" height="48" rx="6"/>
+<text class="fig-t mono on-solid" x="178" y="97">5</text>
+<rect class="fig-node solid" x="204" y="66" width="44" height="48" rx="6"/>
+<text class="fig-t mono on-solid" x="226" y="97">2</text>
+<rect class="fig-node solid" x="252" y="66" width="44" height="48" rx="6"/>
+<text class="fig-t mono on-solid" x="274" y="97">2</text>
+<rect class="fig-node solid" x="300" y="66" width="44" height="48" rx="6"/>
+<text class="fig-t mono on-solid" x="322" y="97">7</text>
+<rect class="fig-node" x="348" y="66" width="44" height="48" rx="6"/>
+<text class="fig-t mono" x="370" y="97">5</text>
+<rect class="fig-node" x="396" y="66" width="44" height="48" rx="6"/>
+<text class="fig-t mono" x="418" y="97">6</text>
+
+<path class="fig-edge pri" d="M156,122 V130 H344 V122"/>
+<text class="fig-t sm pri" x="250" y="146">middle 4 of 8  →  X₁ = 5227</text>
+<text class="fig-t sm end" x="52" y="97">pad</text>
+
+<text class="fig-t sm start" x="60" y="190">X₁ = 5227    →    5227² = 27 321 529    →    already 8 digits</text>
+
+<rect class="fig-node" x="60" y="198" width="44" height="48" rx="6"/>
+<text class="fig-t mono" x="82" y="229">2</text>
+<rect class="fig-node" x="108" y="198" width="44" height="48" rx="6"/>
+<text class="fig-t mono" x="130" y="229">7</text>
+<rect class="fig-node solid" x="156" y="198" width="44" height="48" rx="6"/>
+<text class="fig-t mono on-solid" x="178" y="229">3</text>
+<rect class="fig-node solid" x="204" y="198" width="44" height="48" rx="6"/>
+<text class="fig-t mono on-solid" x="226" y="229">2</text>
+<rect class="fig-node solid" x="252" y="198" width="44" height="48" rx="6"/>
+<text class="fig-t mono on-solid" x="274" y="229">1</text>
+<rect class="fig-node solid" x="300" y="198" width="44" height="48" rx="6"/>
+<text class="fig-t mono on-solid" x="322" y="229">5</text>
+<rect class="fig-node" x="348" y="198" width="44" height="48" rx="6"/>
+<text class="fig-t mono" x="370" y="229">2</text>
+<rect class="fig-node" x="396" y="198" width="44" height="48" rx="6"/>
+<text class="fig-t mono" x="418" y="229">9</text>
+
+<path class="fig-edge pri" d="M156,254 V262 H344 V254"/>
+<text class="fig-t sm pri" x="250" y="278">middle 4 of 8  →  X₂ = 3215</text>
+
+<text class="fig-t sm start" x="20" y="308">The pad is not decoration: 3030² is only 7 digits, and an unpadded square puts the window in the wrong place.</text>
+
+</svg>
+
+<figcaption>Fig 6.1 — Mid-square extraction, on the same seed as the worked example. The window is always the <em>middle</em> n digits of the 2n-digit square, so an n-digit seed that squares to fewer than 2n digits must be padded on the left first. Highlighted digits are the ones that survive into the next value.</figcaption>
+
+</figure>
+
 <h4>Problems with Mid-Square</h4>
 <p>Can degenerate to 0 (once 0000 appears, all subsequent values are 0). Short period. Not recommended for serious simulation.</p>
 </div>
@@ -262,6 +329,8 @@ middle 4 digits → 1809</span><span class="worked-note">3030² is only 7 digits
 
 <div class="worked">
 <div class="worked-head"><span>Chi-square test on 50 two-digit random numbers</span><span class="meta">10 intervals · α = 0.05</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p20">n2 p20</button></p>
 <div class="worked-givens">
 <div><span>N</span><b>50</b></div>
 <div><span>Intervals n</span><b>10 (width 10)</b></div>
@@ -305,20 +374,22 @@ H₁: they are not uniformly distributed</span><span class="worked-note">α = 0.
 <li>Choose the position i and the lag m (the question usually supplies them, e.g. "the 3rd, 8th, 13th … numbers", which means i = 3 and m = 5)</li>
 <li>Find the largest M with <strong>i + (M + 1)m ≤ N</strong></li>
 <li>Form the products RᵢRᵢ₊ₘ, Rᵢ₊ₘRᵢ₊₂ₘ, … up to Rᵢ₊ₘₘRᵢ₊₍ₘ₊₁₎ₘ — there are <strong>M + 1</strong> of them</li>
-<li>Compute ρ̂, then σ_ρ̂, then Z₀</li>
-<li>Compare |Z₀| with Z_{α/2}</li>
+<li>Compute ρ̂, then σ<sub>ρ̂</sub>, then Z₀</li>
+<li>Compare |Z₀| with Z<sub>α/2</sub></li>
 </ol>
 <div class="formula-box">ρ̂ = [ 1/(M+1) · Σₖ₌₀ᴹ (Rᵢ₊ₖₘ × Rᵢ₊₍ₖ₊₁₎ₘ) ] − 0.25
-σ_ρ̂ = √[ (13M + 7) / (12(M + 1)) ]
-Z₀ = ρ̂ / σ_ρ̂        reject H₀ if |Z₀| &gt; Z_{α/2}</div>
-<p>The constant <strong>0.25</strong> is the value the sum would have for perfectly independent numbers (the mean of RᵢRᵢ₊ₘ is ¼), so ρ̂ measures the deviation from independence. At α = 0.05, Z_{0.025} = 1.96.</p>
+σ<sub>ρ̂</sub> = √[ (13M + 7) / (12(M + 1)) ]
+Z₀ = ρ̂ / σ<sub>ρ̂</sub>        reject H₀ if |Z₀| &gt; Z<sub>α/2</sub></div>
+<p>The constant <strong>0.25</strong> is the value the sum would have for perfectly independent numbers (the mean of RᵢRᵢ₊ₘ is ¼), so ρ̂ measures the deviation from independence. At α = 0.05, Z<sub>0.025</sub> = 1.96.</p>
 <div class="worked">
 <div class="worked-head"><span>Auto-correlation at lag 5, starting at the 3rd number</span><span class="meta">2014 F · 2012 C · 2010 C</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p23">n2 p23</button></p>
 <div class="worked-givens">
 <div><span>N</span><b>30</b></div>
 <div><span>Start position i</span><b>3</b></div>
 <div><span>Lag m</span><b>5</b></div>
-<div><span>Z_{α/2}</span><b>1.96</b></div>
+<div><span>Z<sub>α/2</sub></span><b>1.96</b></div>
 </div>
 <p>The 30 numbers, read left to right as R₁ … R₃₀:</p>
 <div class="formula-box">R₁–R₅    0.12  0.01  0.23  0.28  0.89
@@ -348,15 +419,15 @@ R₂₃ R₂₈ = 0.05 × 0.36 = 0.0180
                         ──────
                  Σ = 0.2774</span><span class="worked-note">Five products, because M + 1 = 5.</span></li>
 <li><span class="worked-calc">ρ̂ = 0.2774 / 5 − 0.25 = 0.05548 − 0.25 = −0.1945</span></li>
-<li><span class="worked-calc">σ_ρ̂ = √[ (13 × 4 + 7) / (12 × 5) ] = √(59/60) = √0.9833 = 0.9916</span></li>
-<li><span class="worked-calc">Z₀ = ρ̂ / σ_ρ̂ = −0.1945 / 0.9916 = −0.196</span></li>
+<li><span class="worked-calc">σ<sub>ρ̂</sub> = √[ (13 × 4 + 7) / (12 × 5) ] = √(59/60) = √0.9833 = 0.9916</span></li>
+<li><span class="worked-calc">Z₀ = ρ̂ / σ<sub>ρ̂</sub> = −0.1945 / 0.9916 = −0.196</span></li>
 <li><span class="worked-calc">|Z₀| = 0.196 ≤ 1.96  →  fail to reject H₀</span></li>
 </ol>
 <div class="worked-result"><span>Z₀ = −0.196</span><b>the numbers are independent — no auto-correlation at lag 5</b></div>
 </div>
 <div class="concept-box important">
 <h4>Do not use m where M belongs</h4>
-<p>Two different symbols are in play and swapping them is the usual mistake: <strong>m is the lag</strong> (5 here) and <strong>M is the number of steps along the lag minus one</strong> (4 here). σ_ρ̂ uses M, and the divisor of ρ̂ is <strong>M + 1</strong>, which is also the count of products. If your divisor and your product count disagree, one of them is wrong.</p>
+<p>Two different symbols are in play and swapping them is the usual mistake: <strong>m is the lag</strong> (5 here) and <strong>M is the number of steps along the lag minus one</strong> (4 here). σ<sub>ρ̂</sub> uses M, and the divisor of ρ̂ is <strong>M + 1</strong>, which is also the count of products. If your divisor and your product count disagree, one of them is wrong.</p>
 </div>
 
 <h2>6.11 Poker Test</h2>
@@ -371,6 +442,8 @@ R₂₃ R₂₈ = 0.05 × 0.36 = 0.0180
 
 <div class="worked">
 <div class="worked-head"><span>Poker test on 1000 three-digit numbers</span><span class="meta">2011 F · 3 categories</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p28">n2 p28</button></p>
 <div class="worked-givens">
 <div><span>N</span><b>1000</b></div>
 <div><span>Digits per number</span><b>3</b></div>
@@ -387,14 +460,15 @@ One pair       →  10 × 3 × 9 = 270  →  P = 270/1000 = 0.270
 Three of a kind→  10         = 10   →  P = 10/1000  = 0.010
                  ─────────────────────────────────────────
                  total = 1000/1000 = 1.000</span><span class="worked-note">Read "one pair" as: choose the repeated digit (10), choose which of the 3 positions holds the odd digit (3), choose that odd digit (9) — which is why 000 and 111 fall under "three of a kind", not here.</span></li>
-<li><span class="worked-calc">Observed counts, converted to the expected frequencies Eᵢ = P × N:
-
-Category          Oᵢ    Eᵢ = P × 1000    Oᵢ − Eᵢ    (Oᵢ − Eᵢ)²   (Oᵢ − Eᵢ)²/Eᵢ
-All different    680        720           −40        1600          2.222
-One pair         289        270           +19         361          1.337
-Three of a kind   31         10           +21         441         44.100
-                 ───        ───                                    ──────
-                 1000       1000                            χ² = 47.659</span><span class="worked-note">ΣOᵢ = 1000 = N ✓ and ΣEᵢ = 1000 ✓, so the table is complete.</span></li>
+<li><span class="worked-calc">Observed counts, converted to the expected frequencies Eᵢ = P × N:</span>
+<table>
+<tr><th>Category</th><th>Oᵢ</th><th>Eᵢ = P × 1000</th><th>Oᵢ − Eᵢ</th><th>(Oᵢ − Eᵢ)²</th><th>(Oᵢ − Eᵢ)²/Eᵢ</th></tr>
+<tr><td class="row-head">All different</td><td>680</td><td>720</td><td>−40</td><td>1600</td><td>2.222</td></tr>
+<tr><td class="row-head">One pair</td><td>289</td><td>270</td><td>+19</td><td>361</td><td>1.337</td></tr>
+<tr><td class="row-head">Three of a kind</td><td>31</td><td>10</td><td>+21</td><td>441</td><td>44.100</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>1000</strong></td><td><strong>1000</strong></td><td>—</td><td>—</td><td><strong>47.659</strong></td></tr>
+</table>
+<span class="worked-note">ΣOᵢ = 1000 = N ✓ and ΣEᵢ = 1000 ✓, so the table is complete. The last column adds down to χ² = 47.659.</span></li>
 <li><span class="worked-calc">Rejection region: χ²(α, k − 1) = χ²(0.05, 2) = 5.991</span><span class="worked-note">df is the number of categories minus one = 3 − 1 = 2. It is not the number of digits.</span></li>
 </ol>
 <div class="worked-result"><span>χ² = 47.659 &gt; 5.991</span><b>Reject H₀ — the digit patterns are not random</b></div>
@@ -405,21 +479,23 @@ Three of a kind   31         10           +21         441         44.100
 <p>The <strong>run test</strong> checks independence using only the <em>order</em> of the numbers, never their values. A <strong>run</strong> is a maximal succession of numbers moving in the same direction.</p>
 <h3>Procedure</h3>
 <ol>
-<li>Write the sequence R₁, R₂, …, R_N</li>
+<li>Write the sequence R₁, R₂, …, R<sub>N</sub></li>
 <li>Mark each adjacent difference as <strong>+</strong> (the number rose) or <strong>−</strong> (it fell)</li>
 <li>Count the total number of runs <strong>a</strong> — each maximal block of identical signs is one run</li>
 <li>Compute the expected number of runs and its standard deviation</li>
-<li>Compute Z₀ and compare it with Z_{α/2}</li>
+<li>Compute Z₀ and compare it with Z<sub>α/2</sub></li>
 </ol>
-<div class="formula-box">μ_a = (2N − 1)/3 &nbsp;&nbsp;&nbsp; σ²_a = (16N − 29)/90 &nbsp;&nbsp;&nbsp; Z₀ = (a − μ_a)/σ_a</div>
-<p><strong>Decision:</strong> if −Z_{α/2} ≤ Z₀ ≤ Z_{α/2} the numbers are independent. At α = 0.05, Z_{α/2} = 1.96; at α = 0.02, Z_{α/2} = 2.33.</p>
+<div class="formula-box">μ<sub>a</sub> = (2N − 1)/3 &nbsp;&nbsp;&nbsp; σ²_a = (16N − 29)/90 &nbsp;&nbsp;&nbsp; Z₀ = (a − μ<sub>a</sub>)/σ<sub>a</sub></div>
+<p><strong>Decision:</strong> if −Z<sub>α/2</sub> ≤ Z₀ ≤ Z<sub>α/2</sub> the numbers are independent. At α = 0.05, Z<sub>α/2</sub> = 1.96; at α = 0.02, Z<sub>α/2</sub> = 2.33.</p>
 <div class="worked">
-<div class="worked-head"><span>Run test — a 10-number sequence</span><span class="meta">α = 0.05, Z_{α/2} = 1.96</span></div>
+<div class="worked-head"><span>Run test — a 10-number sequence</span><span class="meta">α = 0.05, Z<sub>α/2</sub> = 1.96</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p21">n2 p21</button></p>
 <div class="worked-givens">
 <div><span>N</span><b>10</b></div>
 <div><span>Signs counted</span><b>N − 1 = 9</b></div>
 <div><span>α</span><b>0.05</b></div>
-<div><span>Z_{α/2}</span><b>1.96</b></div>
+<div><span>Z<sub>α/2</sub></span><b>1.96</b></div>
 </div>
 <div class="formula-box">0.42, 0.18, 0.65, 0.03, 0.79, 0.55, 0.32, 0.11, 0.88, 0.61</div>
 <ol class="worked-steps">
@@ -436,10 +512,10 @@ sign string:  − + − + − − − + −</span><span class="worked-note">Nine
 [−] [+ ] [−] [+ ] [− − −] [+ ] [−]
 
 number of runs  a = 7</span></li>
-<li><span class="worked-calc">μ_a = (2N − 1)/3 = (2 × 10 − 1)/3 = 19/3 = 6.333
+<li><span class="worked-calc">μ<sub>a</sub> = (2N − 1)/3 = (2 × 10 − 1)/3 = 19/3 = 6.333
 σ²_a = (16N − 29)/90 = (160 − 29)/90 = 131/90 = 1.456
-σ_a = √1.456 = 1.207</span></li>
-<li><span class="worked-calc">Z₀ = (a − μ_a)/σ_a = (7 − 6.333)/1.207 = 0.667/1.207 = 0.55</span></li>
+σ<sub>a</sub> = √1.456 = 1.207</span></li>
+<li><span class="worked-calc">Z₀ = (a − μ<sub>a</sub>)/σ<sub>a</sub> = (7 − 6.333)/1.207 = 0.667/1.207 = 0.55</span></li>
 <li><span class="worked-calc">−1.96 ≤ 0.55 ≤ 1.96  →  fail to reject H₀</span></li>
 </ol>
 <div class="worked-result"><span>Z₀ = 0.55</span><b>the sequence shows no evidence of dependence</b></div>
@@ -447,10 +523,12 @@ number of runs  a = 7</span></li>
 
 <div class="worked">
 <div class="worked-head"><span>Run test — the 40-number sequence from class</span><span class="meta">N = 40 · α = 0.05</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p21">n2 p21</button></p>
 <div class="worked-givens">
 <div><span>N</span><b>40</b></div>
 <div><span>Signs counted</span><b>N − 1 = 39</b></div>
-<div><span>Z_{α/2}</span><b>1.96</b></div>
+<div><span>Z<sub>α/2</sub></span><b>1.96</b></div>
 </div>
 <div class="formula-box">0.41 0.68 0.89 0.94 0.74 0.41 0.55 0.62 0.36 0.27
 0.19 0.72 0.75 0.08 0.54 0.02 0.01 0.36 0.16 0.28
@@ -466,10 +544,10 @@ H₁: they are not independent</span></li>
 
 runs:  +++ | −−++ | −−−++ | −+ | −−+ | −+ | −−+ | −−+ | −+ | −−+ | +−
 number of runs  a = 24</span><span class="worked-note">With N = 40 there are 39 signs. Count in blocks of similar signs rather than one by one — a single missed sign changes a.</span></li>
-<li><span class="worked-calc">μ_a = (2 × 40 − 1)/3 = 79/3 = 26.33
+<li><span class="worked-calc">μ<sub>a</sub> = (2 × 40 − 1)/3 = 79/3 = 26.33
 σ²_a = (16 × 40 − 29)/90 = 611/90 = 6.789
-σ_a = √6.789 = 2.61</span></li>
-<li><span class="worked-calc">Z₀ = (a − μ_a)/σ_a = (24 − 26.33)/2.61 = −2.33/2.61 = −0.89</span></li>
+σ<sub>a</sub> = √6.789 = 2.61</span></li>
+<li><span class="worked-calc">Z₀ = (a − μ<sub>a</sub>)/σ<sub>a</sub> = (24 − 26.33)/2.61 = −2.33/2.61 = −0.89</span></li>
 <li><span class="worked-calc">−1.96 ≤ −0.89 ≤ 1.96  →  fail to reject H₀</span></li>
 </ol>
 <div class="worked-result"><span>Z₀ = −0.89</span><b>the numbers are independent</b></div>
@@ -480,23 +558,25 @@ number of runs  a = 24</span><span class="worked-note">With N = 40 there are 39 
 </div>
 
 <h2>6.13 Kolmogorov–Smirnov (K–S) Test</h2>
-<p>The K–S test compares the <strong>empirical cumulative distribution</strong> F_n(x) with the <strong>theoretical cumulative distribution</strong> F(x). For numbers on [0,1), F(x) = x. Unlike chi-square it needs <strong>no grouping into intervals</strong>, which makes it the stronger test — and it can be applied to any hypothesised distribution, not just the uniform.</p>
+<p>The K–S test compares the <strong>empirical cumulative distribution</strong> F<sub>n</sub>(x) with the <strong>theoretical cumulative distribution</strong> F(x). For numbers on [0,1), F(x) = x. Unlike chi-square it needs <strong>no grouping into intervals</strong>, which makes it the stronger test — and it can be applied to any hypothesised distribution, not just the uniform.</p>
 <h3>Procedure</h3>
 <ol>
-<li>Sort the N numbers in ascending order: R₁ ≤ R₂ ≤ … ≤ R_N</li>
-<li>For each i, the empirical CDF <em>after</em> R_i is i/N and <em>before</em> R_i is (i − 1)/N; the theoretical value is F(R_i) = R_i</li>
+<li>Sort the N numbers in ascending order: R₁ ≤ R₂ ≤ … ≤ R<sub>N</sub></li>
+<li>For each i, the empirical CDF <em>after</em> R<sub>i</sub> is i/N and <em>before</em> R<sub>i</sub> is (i − 1)/N; the theoretical value is F(R<sub>i</sub>) = R<sub>i</sub></li>
 <li>Compute both deviations for every i and keep the largest absolute one</li>
 <li>Compare D with the critical value</li>
 <li>If D ≤ the critical value, fail to reject H₀ — the numbers are uniformly distributed</li>
 </ol>
-<div class="formula-box">D = max<sub>i</sub> { |i/N − R_i| , |R_i − (i − 1)/N| } &nbsp;&nbsp;&nbsp; D<sub>critical</sub> = D_α / √N</div>
-<p>For large samples D_0.05 = 1.36 and D_0.01 = 1.63; small samples (N &lt; 35) use the exact table, which gives about 0.41 for N = 10 at α = 0.05.</p>
+<div class="formula-box">D = max<sub>i</sub> { |i/N − R<sub>i</sub>| , |R<sub>i</sub> − (i − 1)/N| } &nbsp;&nbsp;&nbsp; D<sub>critical</sub> = D<sub>α</sub> / √N</div>
+<p>For large samples D<sub>0.05</sub> = 1.36 and D<sub>0.01</sub> = 1.63; small samples (N &lt; 35) use the exact table, which gives about 0.41 for N = 10 at α = 0.05.</p>
 <div class="worked">
 <div class="worked-head"><span>K–S test — one-sample, N = 10</span><span class="meta">2011 C · 2010 C</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p30">n2 p30</button></p>
 <div class="worked-givens">
 <div><span>N</span><b>10</b></div>
 <div><span>α</span><b>0.05</b></div>
-<div><span>D_α = 1.36</span><b>for large N</b></div>
+<div><span>D<sub>α</sub> = 1.36</span><b>for large N</b></div>
 </div>
 <div class="formula-box">0.24, 0.89, 0.11, 0.61, 0.23, 0.86, 0.41, 0.64, 0.50, 0.65</div>
 <ol class="worked-steps">
@@ -505,7 +585,7 @@ H₁: they are not uniformly distributed</span></li>
 <li><span class="worked-calc">Sort the numbers — they must be ascending before anything is tabulated:
 0.11, 0.23, 0.24, 0.41, 0.50, 0.61, 0.64, 0.65, 0.86, 0.89</span></li>
 <li><table>
-<tr><th>i</th><th>R_i</th><th>i/N</th><th>F(R_i) = R_i</th><th>|i/N − R_i|</th><th>(i−1)/N</th><th>|R_i − (i−1)/N|</th></tr>
+<tr><th>i</th><th>R<sub>i</sub></th><th>i/N</th><th>F(R<sub>i</sub>) = R<sub>i</sub></th><th>|i/N − R<sub>i</sub>|</th><th>(i−1)/N</th><th>|R<sub>i</sub> − (i−1)/N|</th></tr>
 <tr><td>1</td><td>0.11</td><td>0.1</td><td>0.11</td><td>0.01</td><td>0.0</td><td><strong>0.11</strong></td></tr>
 <tr><td>2</td><td>0.23</td><td>0.2</td><td>0.23</td><td>0.03</td><td>0.1</td><td><strong>0.13</strong></td></tr>
 <tr><td>3</td><td>0.24</td><td>0.3</td><td>0.24</td><td>0.06</td><td>0.2</td><td>0.04</td></tr>
@@ -520,50 +600,57 @@ H₁: they are not uniformly distributed</span></li>
 <li><span class="worked-calc">D⁺ = max(i/N − Rᵢ)  = 0.15   (at i = 8)
 D⁻ = max(Rᵢ − (i−1)/N) = 0.13   (at i = 2)
 D  = max(D⁺, D⁻) = 0.15</span></li>
-<li><span class="worked-calc">Critical value for large samples: D_critical = D_α / √N = 1.36 / √10 = 1.36 / 3.162 = 0.430
+<li><span class="worked-calc">Critical value for large samples: D<sub>critical</sub> = D<sub>α</sub> / √N = 1.36 / √10 = 1.36 / 3.162 = 0.430
 (small-sample exact table for N = 10 ≈ 0.41)</span></li>
 </ol>
 <div class="worked-result"><span>D = 0.15 &lt; 0.430</span><b>fail to reject H₀ — consistent with a uniform [0,1) generator</b></div>
 </div>
 
 <div class="worked">
-<div class="worked-head"><span>K–S test — the short sequence worked in class</span><span class="meta">D_α = 0.565 given</span></div>
+<div class="worked-head"><span>K–S test — the short sequence worked in class</span><span class="meta">D<sub>α</sub> = 0.565 given</span></div>
+
+<p class="page-src">Source page: <button class="page-chip" type="button" data-page="n2p30">n2 p30</button></p>
 <div class="worked-givens">
 <div><span>N</span><b>6</b></div>
 <div><span>α</span><b>0.05</b></div>
-<div><span>D_α</span><b>0.565 (given)</b></div>
+<div><span>D<sub>α</sub></span><b>0.565 (given)</b></div>
 </div>
 <div class="formula-box">0.63, 0.49, 0.24, 0.57, 0.71, 0.89</div>
 <ol class="worked-steps">
 <li><span class="worked-calc">H₀: the numbers are uniformly distributed on [0, 1)
 H₁: they are not uniformly distributed</span></li>
 <li><span class="worked-calc">Sorted:  0.24, 0.49, 0.57, 0.63, 0.71, 0.89</span></li>
-<li><span class="worked-calc">i   Rᵢ     i/N     i/N − Rᵢ    Rᵢ − (i−1)/N
-1   0.24   0.167   −0.073          0.24
-2   0.49   0.333   −0.163          0.32
-3   0.57   0.500   −0.070          0.24
-4   0.63   0.667    0.037          0.13
-5   0.71   0.833    0.123          0.043
-6   0.89   1.000    0.110          0.057</span><span class="worked-note">i/N is 1/6, 2/6, 3/6 … not 0.2, 0.4 — with N = 6 the thirds have to be exact enough to compare with Rᵢ.</span></li>
+<li><span class="worked-calc">Tabulate the two deviations at every i — keep the sign, because D⁺ and D⁻ are the largest value <em>within</em> each column:</span>
+<table>
+<tr><th>i</th><th>Rᵢ</th><th>i/N</th><th>i/N − Rᵢ</th><th>Rᵢ − (i−1)/N</th></tr>
+<tr><td>1</td><td>0.24</td><td>0.167</td><td>−0.073</td><td>0.240</td></tr>
+<tr><td>2</td><td>0.49</td><td>0.333</td><td>−0.157</td><td>0.320</td></tr>
+<tr><td>3</td><td>0.57</td><td>0.500</td><td>−0.070</td><td>0.240</td></tr>
+<tr><td>4</td><td>0.63</td><td>0.667</td><td>0.037</td><td>0.130</td></tr>
+<tr><td>5</td><td>0.71</td><td>0.833</td><td>0.123</td><td>0.043</td></tr>
+<tr><td>6</td><td>0.89</td><td>1.000</td><td>0.110</td><td>0.057</td></tr>
+<tr><td><strong>Max</strong></td><td colspan="2">largest value in each column</td><td><strong>0.123</strong></td><td><strong>0.320</strong></td></tr>
+</table>
+<span class="worked-note">i/N is 1/6, 2/6, 3/6 … not 0.2, 0.4 — with N = 6 the thirds have to be exact enough to compare with Rᵢ. Row 2 is the largest <em>negative</em> gap (0.333 − 0.49 = −0.157); D⁺ takes the largest positive gap, which is row 5.</span></li>
 <li><span class="worked-calc">D⁺ = max(i/N − Rᵢ)   = 0.123
 D⁻ = max(Rᵢ − (i−1)/N) = 0.32
 D  = max(0.123, 0.32) = 0.32</span></li>
-<li><span class="worked-calc">Test:  D &lt; D_α  →  0.32 &lt; 0.565  →  do not reject H₀</span></li>
+<li><span class="worked-calc">Test:  D &lt; D<sub>α</sub>  →  0.32 &lt; 0.565  →  do not reject H₀</span></li>
 </ol>
 <div class="worked-result"><span>D = 0.32 &lt; 0.565</span><b>the random numbers are uniform</b></div>
 </div>
 <div class="concept-box tip">
 <h4>Two K–S forms, one idea</h4>
-<p>The <strong>one-sample</strong> test above compares the numbers with a claimed distribution; the <strong>two-sample</strong> test compares two data sets against each other, using D_α = C(α) × √[(n₁ + n₂)/(n₁n₂)] with C(0.05) = 1.36 — for n₁ = n₂ = 124 that gives D_α = 0.172. Both use the same statistic and the same decision rule.</p>
+<p>The <strong>one-sample</strong> test above compares the numbers with a claimed distribution; the <strong>two-sample</strong> test compares two data sets against each other, using D<sub>α</sub> = C(α) × √[(n₁ + n₂)/(n₁n₂)] with C(0.05) = 1.36 — for n₁ = n₂ = 124 that gives D<sub>α</sub> = 0.172. Both use the same statistic and the same decision rule.</p>
 </div>
 
 <h3>Choosing the Right Test</h3>
 <table>
 <tr><th>Test</th><th>What it verifies</th><th>Statistic</th><th>Critical value</th></tr>
 <tr><td>Frequency / Chi-Square</td><td>Uniformity across grouped intervals</td><td>χ² = Σ(Oᵢ − Eᵢ)²/Eᵢ</td><td>χ²(α, k − 1)</td></tr>
-<tr><td>Kolmogorov–Smirnov</td><td>Uniformity of the whole CDF, no grouping</td><td>D = max |F_n − F|</td><td>D_α/√N (1.36 at α = 0.05)</td></tr>
-<tr><td>Auto-Correlation</td><td>Independence of numbers separated by lag l</td><td>Z₀ = ρ̂/σ_ρ̂</td><td>Z_{α/2} (1.96)</td></tr>
-<tr><td>Run Test</td><td>Independence — order of up and down moves</td><td>Z₀ = (a − μ_a)/σ_a</td><td>Z_{α/2} (1.96)</td></tr>
+<tr><td>Kolmogorov–Smirnov</td><td>Uniformity of the whole CDF, no grouping</td><td>D = max |F<sub>n</sub> − F|</td><td>D<sub>α</sub>/√N (1.36 at α = 0.05)</td></tr>
+<tr><td>Auto-Correlation</td><td>Independence of numbers separated by lag l</td><td>Z₀ = ρ̂/σ<sub>ρ̂</sub></td><td>Z<sub>α/2</sub> (1.96)</td></tr>
+<tr><td>Run Test</td><td>Independence — order of up and down moves</td><td>Z₀ = (a − μ<sub>a</sub>)/σ<sub>a</sub></td><td>Z<sub>α/2</sub> (1.96)</td></tr>
 <tr><td>Poker Test</td><td>Independence of digit patterns inside each number</td><td>χ² = Σ(Oᵢ − Eᵢ)²/Eᵢ</td><td>χ²(α, k − 1)</td></tr>
 <tr><td>Gap Test</td><td>Length of gaps between numbers in a chosen range</td><td>χ² = Σ(Oᵢ − Eᵢ)²/Eᵢ</td><td>χ²(α, k − 1)</td></tr>
 </table>
@@ -584,9 +671,9 @@ quiz: [
   {q:"In multiplicative congruential method, c equals:", options:["1","The seed","0","Infinity"], answer:2, explanation:"In multiplicative congruential method, c=0 (no increment). Formula: Xₙ₊₁ = (a×Xₙ) mod m."},
   {q:"In the Poker test for 3-digit numbers, P(all different) =", options:["0.720","0.270","0.010","0.500"], answer:0, explanation:"P(all different) = 10×9×8/10³ = 720/1000 = 0.720."},
   {q:"Which is NOT a quality of a good RNG?", options:["Uniformity","Independence","Short period","Reproducibility"], answer:2, explanation:"A good RNG should have a LONG period, not a short one. Short period means the sequence repeats quickly."},
-  {q:"In the run test, the expected number of runs for N = 10 numbers is:", options:["6.33","5.00","7.50","9.00"], answer:0, explanation:"μ_a = (2N − 1)/3 = (2×10 − 1)/3 = 19/3 = 6.333, with σ²_a = (16N − 29)/90 = 131/90 = 1.456."},
-  {q:"The Kolmogorov–Smirnov statistic D is:", options:["The sum of squared differences between observed and expected frequencies","The maximum absolute deviation between the empirical and theoretical cumulative distributions","The correlation between numbers separated by a lag","The total number of runs up and down"], answer:1, explanation:"D = max |F_n(x) − F(x)|, the largest gap between the observed and theoretical CDFs. It needs no grouping into intervals, which makes it stronger than chi-square."},
-  {q:"For the K–S test with N = 10 at α = 0.05, the critical value is approximately:", options:["1.96","0.430 (1.36/√10)","9.488","0.15"], answer:1, explanation:"D_critical = D_α/√N = 1.36/√10 = 0.430; the exact small-sample table gives about 0.41 for N = 10."},
+  {q:"In the run test, the expected number of runs for N = 10 numbers is:", options:["6.33","5.00","7.50","9.00"], answer:0, explanation:"μ<sub>a</sub> = (2N − 1)/3 = (2×10 − 1)/3 = 19/3 = 6.333, with σ²_a = (16N − 29)/90 = 131/90 = 1.456."},
+  {q:"The Kolmogorov–Smirnov statistic D is:", options:["The sum of squared differences between observed and expected frequencies","The maximum absolute deviation between the empirical and theoretical cumulative distributions","The correlation between numbers separated by a lag","The total number of runs up and down"], answer:1, explanation:"D = max |F<sub>n</sub>(x) − F(x)|, the largest gap between the observed and theoretical CDFs. It needs no grouping into intervals, which makes it stronger than chi-square."},
+  {q:"For the K–S test with N = 10 at α = 0.05, the critical value is approximately:", options:["1.96","0.430 (1.36/√10)","9.488","0.15"], answer:1, explanation:"D<sub>critical</sub> = D<sub>α</sub>/√N = 1.36/√10 = 0.430; the exact small-sample table gives about 0.41 for N = 10."},
   {q:"Chi-square and Kolmogorov–Smirnov both test uniformity. What does the run test check that they cannot?", options:["The mean of the numbers","The order/independence of the sequence","The variance of the numbers","The period of the generator"], answer:1, explanation:"Chi-square and K–S only look at how the values are distributed; they ignore the order in which they appear. The run test analyses the sequence of up and down moves, so it detects dependence."}
 ],
 
@@ -598,9 +685,9 @@ past: [
 <tr><th>Test</th><th>Property tested</th><th>Statistic and decision rule</th></tr>
 <tr><td><strong>Frequency test</strong></td><td>Uniformity</td><td>Counts of values in k equal intervals; expected N/k. A gross check, usually replaced by chi-square.</td></tr>
 <tr><td><strong>Chi-square test</strong></td><td>Uniformity</td><td>χ² = Σ(Oᵢ − Eᵢ)²/Eᵢ compared with χ²(α, k−1). If χ² &lt; table value, accept the numbers as random.</td></tr>
-<tr><td><strong>Kolmogorov–Smirnov test</strong></td><td>Uniformity (whole distribution)</td><td>D = max |F_n(x) − F(x)| compared with D_α/√N. Needs no grouping, so it is stronger than chi-square.</td></tr>
-<tr><td><strong>Auto-correlation test</strong></td><td>Independence between values a lag l apart</td><td>ρ̂ = (1/M) Σ Rᵢ Rᵢ₊ₗ − 0.25, then Z₀ = ρ̂ / σ_ρ̂ compared with Z_{α/2} = 1.96.</td></tr>
-<tr><td><strong>Run test (runs up and down)</strong></td><td>Independence from the order of the values</td><td>Count the runs a, then Z₀ = (a − μ_a)/σ_a with μ_a = (2N−1)/3, σ²_a = (16N−29)/90, compared with 1.96.</td></tr>
+<tr><td><strong>Kolmogorov–Smirnov test</strong></td><td>Uniformity (whole distribution)</td><td>D = max |F<sub>n</sub>(x) − F(x)| compared with D<sub>α</sub>/√N. Needs no grouping, so it is stronger than chi-square.</td></tr>
+<tr><td><strong>Auto-correlation test</strong></td><td>Independence between values a lag l apart</td><td>ρ̂ = (1/M) Σ Rᵢ Rᵢ₊ₗ − 0.25, then Z₀ = ρ̂ / σ<sub>ρ̂</sub> compared with Z<sub>α/2</sub> = 1.96.</td></tr>
+<tr><td><strong>Run test (runs up and down)</strong></td><td>Independence from the order of the values</td><td>Count the runs a, then Z₀ = (a − μ<sub>a</sub>)/σ<sub>a</sub> with μ<sub>a</sub> = (2N−1)/3, σ²_a = (16N−29)/90, compared with 1.96.</td></tr>
 <tr><td><strong>Gap test</strong></td><td>Independence, from the lengths of gaps</td><td>Chi-square on the observed gap lengths against the theoretical geometric distribution.</td></tr>
 <tr><td><strong>Poker test</strong></td><td>Independence of digit patterns</td><td>Classify numbers by their digit patterns (all different, one pair, three of a kind) and apply chi-square.</td></tr>
 </table>
@@ -641,10 +728,10 @@ past: [
 <ol start='4'>
 <li>Compute the standard deviation of ρ̂ and the test statistic:</li>
 </ol>
-<div class='formula-box'>σ_ρ̂ = √(13M + 7) / (12(M + 1)) &nbsp;&nbsp;&nbsp; Z₀ = ρ̂ / σ_ρ̂</div>
-<p>With M = 5: σ_ρ̂ = √(13×5 + 7)/(12×6) = √72/72 = 8.485/72 = <strong>0.1178</strong>.</p>
+<div class='formula-box'>σ<sub>ρ̂</sub> = √(13M + 7) / (12(M + 1)) &nbsp;&nbsp;&nbsp; Z₀ = ρ̂ / σ<sub>ρ̂</sub></div>
+<p>With M = 5: σ<sub>ρ̂</sub> = √(13×5 + 7)/(12×6) = √72/72 = 8.485/72 = <strong>0.1178</strong>.</p>
 <ol start='5'>
-<li>Compare |Z₀| with Z_{α/2} = Z_{0.025} = <strong>1.96</strong> for a two-tailed test at α = 0.05.</li>
+<li>Compare |Z₀| with Z<sub>α/2</sub> = Z<sub>0.025</sub> = <strong>1.96</strong> for a two-tailed test at α = 0.05.</li>
 </ol>
 <h4>Decision</h4>
 <ul>
@@ -847,27 +934,27 @@ past: [
    answer:`<h4>Answer</h4>
 <p><strong>Purpose:</strong> the run test examines the <em>order</em> of the numbers rather than their values, so it detects dependence that chi-square cannot see.</p>
 <p><strong>Formula:</strong></p>
-<div class="formula-box">μ_a = (2N − 1)/3 &nbsp;&nbsp; σ²_a = (16N − 29)/90 &nbsp;&nbsp; Z₀ = (a − μ_a)/σ_a</div>
+<div class="formula-box">μ<sub>a</sub> = (2N − 1)/3 &nbsp;&nbsp; σ²_a = (16N − 29)/90 &nbsp;&nbsp; Z₀ = (a − μ<sub>a</sub>)/σ<sub>a</sub></div>
 <p>where <strong>a</strong> = total number of runs (maximal blocks of consecutive + and − signs) and N = number of observations.</p>
 <h4>Steps</h4>
 <ol>
 <li>Compare each number with the next one and write <strong>+</strong> if it increases, <strong>−</strong> if it decreases.</li>
 <li>Count the runs: every maximal block of identical signs counts as one run.</li>
-<li>Compute μ_a and σ_a from N.</li>
-<li>Compute Z₀ = (a − μ_a)/σ_a.</li>
-<li>Compare with Z_{α/2} = 1.96 (two-tailed, α = 0.05).</li>
+<li>Compute μ<sub>a</sub> and σ<sub>a</sub> from N.</li>
+<li>Compute Z₀ = (a − μ<sub>a</sub>)/σ<sub>a</sub>.</li>
+<li>Compare with Z<sub>α/2</sub> = 1.96 (two-tailed, α = 0.05).</li>
 </ol>
 <h4>Illustration of the counting step</h4>
 <p>For the 10-number sequence 0.42, 0.18, 0.65, 0.03, 0.79, 0.55, 0.32, 0.11, 0.88, 0.61 the signs are<br>
 − + − + − − − + −<br>
 which group into [−] [+] [−] [+] [− − −] [+] [−] → <strong>a = 7</strong>.</p>
-<p>With N = 10: μ_a = 19/3 = 6.333, σ²_a = 131/90 = 1.456, σ_a = 1.207, so<br>
+<p>With N = 10: μ<sub>a</sub> = 19/3 = 6.333, σ²_a = 131/90 = 1.456, σ<sub>a</sub> = 1.207, so<br>
 Z₀ = (7 − 6.333)/1.207 = <strong>0.55</strong>. Since |0.55| &lt; 1.96 we <strong>fail to reject H₀</strong> — no evidence of dependence.</p>
 <h4>Applying it to the given 40 numbers</h4>
 <p>Carry out steps 1 and 2 on all 40 values to obtain a (the number of runs). With N = 40:</p>
 <ul>
-<li>μ_a = (2 × 40 − 1)/3 = 79/3 = 26.333</li>
-<li>σ²_a = (16 × 40 − 29)/90 = 611/90 = 6.789, so σ_a = 2.606</li>
+<li>μ<sub>a</sub> = (2 × 40 − 1)/3 = 79/3 = 26.333</li>
+<li>σ²_a = (16 × 40 − 29)/90 = 611/90 = 6.789, so σ<sub>a</sub> = 2.606</li>
 <li>Z₀ = (a − 26.333)/2.606</li>
 </ul>
 <p><strong>Conclusion rule:</strong> if −1.96 ≤ Z₀ ≤ 1.96 the sequence is accepted as random (independent); otherwise reject H₀ and declare the numbers non-random. For example, a = 24 gives Z₀ = (24 − 26.333)/2.606 = −0.90 → random; a = 38 gives Z₀ = +4.48 → clearly not random.</p>`},
@@ -922,9 +1009,9 @@ Z₀ = (7 − 6.333)/1.207 = <strong>0.55</strong>. Since |0.55| &lt; 1.96 we <s
    answer:`<h4>Answer</h4>
 <p>The <strong>auto-correlation test</strong> detects dependence between numbers a fixed distance apart. Taking the 3rd, 8th, 13th … values means the lag is l = 5, and only those values are used, so the sequence of 30 numbers yields the series R₃, R₈, R₁₃, R₁₈, R₂₃, R₂₈.</p>
 <h4>Formulas</h4>
-<div class='formula-box'>ρ̂ = (1/M) Σ Rᵢ Rᵢ₊ₗ − 0.25 &nbsp;&nbsp;&nbsp; σ_ρ̂ = √(13M + 7)/(12(M + 1)) &nbsp;&nbsp;&nbsp; Z₀ = ρ̂/σ_ρ̂</div>
+<div class='formula-box'>ρ̂ = (1/M) Σ Rᵢ Rᵢ₊ₗ − 0.25 &nbsp;&nbsp;&nbsp; σ<sub>ρ̂</sub> = √(13M + 7)/(12(M + 1)) &nbsp;&nbsp;&nbsp; Z₀ = ρ̂/σ<sub>ρ̂</sub></div>
 <p>Here M = 5 pairs: (R₃,R₈), (R₈,R₁₃), (R₁₃,R₁₈), (R₁₈,R₂₃), (R₂₃,R₂₈).</p>
-<p>σ_ρ̂ = √(13×5 + 7)/(12×6) = √72/72 = 8.485/72 = <strong>0.1178</strong>; the critical value is Z₀.₀₂₅ = <strong>1.96</strong>.</p>
+<p>σ<sub>ρ̂</sub> = √(13×5 + 7)/(12×6) = √72/72 = 8.485/72 = <strong>0.1178</strong>; the critical value is Z₀.₀₂₅ = <strong>1.96</strong>.</p>
 <h4>Worked illustration of the arithmetic</h4>
 <p>The same formula on a small self-contained example — 10 numbers with lag l = 2, giving M = 8 pairs:</p>
 <p>Numbers: 0.42, 0.18, 0.65, 0.03, 0.79, 0.55, 0.32, 0.11, 0.88, 0.61</p>
@@ -940,10 +1027,10 @@ Z₀ = (7 − 6.333)/1.207 = <strong>0.55</strong>. Since |0.55| &lt; 1.96 we <s
 <tr><td>(0.11, 0.61)</td><td>0.0671</td></tr>
 </table>
 <p>Σ = 1.4704, so ρ̂ = (1/8)(1.4704) − 0.25 = 0.1838 − 0.25 = <strong>−0.0662</strong></p>
-<p>σ_ρ̂ = √(13×8 + 7)/(12×9) = √111/108 = 10.535/108 = <strong>0.0975</strong></p>
+<p>σ<sub>ρ̂</sub> = √(13×8 + 7)/(12×9) = √111/108 = 10.535/108 = <strong>0.0975</strong></p>
 <p>Z₀ = −0.0662/0.0975 = <strong>−0.679</strong></p>
 <h4>Decision</h4>
-<p>|Z₀| = 0.679 ≤ 1.96, so the null hypothesis of independence is not rejected: the values are <strong>not auto-correlated</strong> — the numbers are independent at the 5% level. The same three steps (form the lag-5 pairs, compute ρ̂, divide by σ_ρ̂ and compare with 1.96) give the answer for the 30 numbers of the question.</p>`},
+<p>|Z₀| = 0.679 ≤ 1.96, so the null hypothesis of independence is not rejected: the values are <strong>not auto-correlated</strong> — the numbers are independent at the 5% level. The same three steps (form the lag-5 pairs, compute ρ̂, divide by σ<sub>ρ̂</sub> and compare with 1.96) give the answer for the 30 numbers of the question.</p>`},
   {year:"2011 F", marks:"6", repeats:1, q:"Using multiplicative congruential method, find period for a=13, m=64, X₀=1,2,3,4.",
    answer:`<h4>Answer</h4>
 <p><strong>Formula:</strong> Xₙ₊₁ = (13 × Xₙ) mod 64</p>
@@ -956,13 +1043,13 @@ Z₀ = (7 − 6.333)/1.207 = <strong>0.55</strong>. Since |0.55| &lt; 1.96 we <s
 <p>All seeds produce <strong>period = 16</strong> (which is m/4 = 64/4 = 16).</p>`},
   {year:"2011 C", marks:"2+5", repeats:1, q:"What does the Kolmogorov–Smirnov test indicate? Perform the K–S test with data 0.24, 0.89, 0.11, 0.61, 0.23, 0.86, 0.41, 0.64, 0.50, 0.65 (α = 0.05).",
    answer:`<h4>Answer</h4>
-<p><strong>What the K–S test indicates:</strong> it measures the largest vertical gap between the empirical cumulative distribution F_n(x) of the sample and the theoretical cumulative distribution F(x) of the hypothesised distribution (here the uniform distribution on [0,1), so F(x) = x). A small D means the sample could plausibly have come from that distribution; a large D means it could not. Unlike the chi-square test it needs no grouping into intervals, which is why it is considered more powerful.</p>
-<div class="formula-box">D = max<sub>i</sub> { |i/N − R_i| , |R_i − (i − 1)/N| } &nbsp;&nbsp;&nbsp; D<sub>critical</sub> = D_α/√N</div>
+<p><strong>What the K–S test indicates:</strong> it measures the largest vertical gap between the empirical cumulative distribution F<sub>n</sub>(x) of the sample and the theoretical cumulative distribution F(x) of the hypothesised distribution (here the uniform distribution on [0,1), so F(x) = x). A small D means the sample could plausibly have come from that distribution; a large D means it could not. Unlike the chi-square test it needs no grouping into intervals, which is why it is considered more powerful.</p>
+<div class="formula-box">D = max<sub>i</sub> { |i/N − R<sub>i</sub>| , |R<sub>i</sub> − (i − 1)/N| } &nbsp;&nbsp;&nbsp; D<sub>critical</sub> = D<sub>α</sub>/√N</div>
 <h4>Step 1 — sort the 10 numbers</h4>
 <p>0.11, 0.23, 0.24, 0.41, 0.50, 0.61, 0.64, 0.65, 0.86, 0.89</p>
 <h4>Step 2 — compute the deviations (N = 10)</h4>
 <table>
-<tr><th>i</th><th>R_i</th><th>i/N</th><th>|i/N − R_i|</th><th>(i−1)/N</th><th>|R_i − (i−1)/N|</th></tr>
+<tr><th>i</th><th>R<sub>i</sub></th><th>i/N</th><th>|i/N − R<sub>i</sub>|</th><th>(i−1)/N</th><th>|R<sub>i</sub> − (i−1)/N|</th></tr>
 <tr><td>1</td><td>0.11</td><td>0.1</td><td>0.01</td><td>0.0</td><td><strong>0.11</strong></td></tr>
 <tr><td>2</td><td>0.23</td><td>0.2</td><td>0.03</td><td>0.1</td><td><strong>0.13</strong></td></tr>
 <tr><td>3</td><td>0.24</td><td>0.3</td><td>0.06</td><td>0.2</td><td>0.04</td></tr>
@@ -976,7 +1063,7 @@ Z₀ = (7 − 6.333)/1.207 = <strong>0.55</strong>. Since |0.55| &lt; 1.96 we <s
 </table>
 <h4>Step 3 — the statistic and the critical value</h4>
 <p>The largest deviation in the table is <strong>D = 0.15</strong> (at i = 8).</p>
-<p>D_critical = D_0.05/√N = 1.36/√10 = 1.36/3.162 = <strong>0.430</strong> (the exact small-sample table gives ≈ 0.41 for N = 10).</p>
+<p>D<sub>critical</sub> = D<sub>0.05</sub>/√N = 1.36/√10 = 1.36/3.162 = <strong>0.430</strong> (the exact small-sample table gives ≈ 0.41 for N = 10).</p>
 <h4>Conclusion</h4>
 <p>Since 0.15 &lt; 0.430, we <strong>fail to reject H₀</strong>. The sample is statistically consistent with a uniform [0,1) distribution — the numbers can be accepted as random.</p>`},
   {year:"2011 C", marks:"2+3", repeats:1, q:"What do you mean by pseudo random number? How do these random numbers help in simulation?", occ:[{year:"2025 M", marks:"2", q:"What does pseudo-random number mean?"}],
@@ -1107,13 +1194,13 @@ Z₀ = (7 − 6.333)/1.207 = <strong>0.55</strong>. Since |0.55| &lt; 1.96 we <s
 <h4>Steps</h4>
 <ol>
 <li><strong>State the hypotheses.</strong> H₀: the numbers follow the theoretical distribution F(x) (for random numbers on [0,1), F(x) = x). H₁: they do not.</li>
-<li><strong>Sort the sample</strong> in ascending order: R₁ ≤ R₂ ≤ … ≤ R_N.</li>
-<li><strong>Compute the empirical CDF</strong> at each point: F_n(R_i) = i/N, and note that just before R_i it is (i − 1)/N.</li>
-<li><strong>Compute the theoretical CDF</strong> F(R_i) = R_i for each i.</li>
+<li><strong>Sort the sample</strong> in ascending order: R₁ ≤ R₂ ≤ … ≤ R<sub>N</sub>.</li>
+<li><strong>Compute the empirical CDF</strong> at each point: F<sub>n</sub>(R<sub>i</sub>) = i/N, and note that just before R<sub>i</sub> it is (i − 1)/N.</li>
+<li><strong>Compute the theoretical CDF</strong> F(R<sub>i</sub>) = R<sub>i</sub> for each i.</li>
 <li><strong>Compute both deviations</strong> at every i and take the maximum absolute value:<br>
-D = max over i of { |i/N − R_i| , |R_i − (i − 1)/N| }.</li>
-<li><strong>Obtain the critical value</strong> D_critical = D_α/√N (D_0.05 = 1.36, D_0.01 = 1.63 for large N; use the exact table when N &lt; 35).</li>
-<li><strong>Decide.</strong> If D ≤ D_critical, fail to reject H₀ — the numbers are uniformly distributed. If D &gt; D_critical, reject H₀ — the generator is not producing the required distribution.</li>
+D = max over i of { |i/N − R<sub>i</sub>| , |R<sub>i</sub> − (i − 1)/N| }.</li>
+<li><strong>Obtain the critical value</strong> D<sub>critical</sub> = D<sub>α</sub>/√N (D<sub>0.05</sub> = 1.36, D<sub>0.01</sub> = 1.63 for large N; use the exact table when N &lt; 35).</li>
+<li><strong>Decide.</strong> If D ≤ D<sub>critical</sub>, fail to reject H₀ — the numbers are uniformly distributed. If D &gt; D<sub>critical</sub>, reject H₀ — the generator is not producing the required distribution.</li>
 </ol>
 <h4>Interpretation</h4>
 <p>D is simply the largest vertical distance between the two cumulative curves, so the test is sensitive to the entire shape of the distribution rather than to a few intervals. It requires no grouping, works for small samples, and can test any hypothesised distribution — but it is only valid when the parameters of F(x) are the true theoretical ones and not estimated from the sample.</p>`},
@@ -1172,8 +1259,8 @@ D = max over i of { |i/N − R_i| , |R_i − (i − 1)/N| }.</li>
    answer:`<h4>Answer</h4>
 <p>Taking the 2nd, 9th, 16th … values means the lag is l = 7. From a sequence of 40 numbers the series is R₂, R₉, R₁₆, R₂₃, R₃₀, R₃₇, giving the M = 5 pairs (2,9), (9,16), (16,23), (23,30), (30,37).</p>
 <h4>Formulas and constants</h4>
-<div class='formula-box'>ρ̂ = (1/M) Σ Rᵢ Rᵢ₊ₗ − 0.25 &nbsp;&nbsp;&nbsp; σ_ρ̂ = √(13M + 7)/(12(M + 1)) &nbsp;&nbsp;&nbsp; Z₀ = ρ̂/σ_ρ̂</div>
-<p>With M = 5: σ_ρ̂ = √(13×5 + 7)/(12×6) = √72/72 = <strong>0.1178</strong></p>
+<div class='formula-box'>ρ̂ = (1/M) Σ Rᵢ Rᵢ₊ₗ − 0.25 &nbsp;&nbsp;&nbsp; σ<sub>ρ̂</sub> = √(13M + 7)/(12(M + 1)) &nbsp;&nbsp;&nbsp; Z₀ = ρ̂/σ<sub>ρ̂</sub></div>
+<p>With M = 5: σ<sub>ρ̂</sub> = √(13×5 + 7)/(12×6) = √72/72 = <strong>0.1178</strong></p>
 <p>At α = 0.05 the two-tailed critical value is Z₀.₀₂₅ = <strong>1.96</strong>.</p>
 <h4>Procedure</h4>
 <ol>
@@ -1191,6 +1278,6 @@ D = max over i of { |i/N − R_i| , |R_i − (i − 1)/N| }.</li>
 <tr><td>Z₀ &lt; −1.96</td><td>Reject H₀ — the values alternate (negative auto-correlation).</td></tr>
 </table>
 <p><strong>Numerical meaning of ρ̂:</strong> ρ̂ measures the correlation between the value at position i and the value at position i + 7. It is compared against the theoretical value 0.25 (the expected product of two independent uniform values) rather than against 0, which is why 0.25 is subtracted in the formula. A value of ρ̂ close to zero after this correction means no correlation; a large positive ρ̂ means the generator carries a hidden trend across the sequence, which would invalidate the independence assumption of every replication in the study.</p>
-<p>For a 10-mark answer, state the formulas, show the five products in a table, compute ρ̂ and σ_ρ̂, obtain Z₀, and finish with the comparison against 1.96 and the written conclusion.</p>`}
+<p>For a 10-mark answer, state the formulas, show the five products in a table, compute ρ̂ and σ<sub>ρ̂</sub>, obtain Z₀, and finish with the comparison against 1.96 and the written conclusion.</p>`}
 ]
 };

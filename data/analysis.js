@@ -182,7 +182,7 @@ window.ANALYSIS = {
    "questions": 1
   },
   "6": {
-   "title": "Random Number ⭐ MOST IMPORTANT",
+   "title": "Random Number MOST IMPORTANT",
    "weight": 12,
    "questions": 36
   },

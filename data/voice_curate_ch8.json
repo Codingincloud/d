@@ -1,0 +1,481 @@
+{
+ "_comment": [
+  "Unit 8's batch of voice edits. Same rules as voice_curate.json.",
+  "",
+  "Security is the unit a reader is most likely to be examined on and least likely",
+  "to want told about the paper, so the paper-facing sentences here are rewritten",
+  "into the claims they were pointing at rather than deleted: 'Two consequences",
+  "follow, and both are examinable' becomes 'Two consequences follow'."
+ ],
+ "edits": [
+  {
+   "ch": "ch8.js",
+   "tell": "frame",
+   "why": "the sentence is a remark on the row above it; 'note that' asks the reader to pay attention instead of saying it",
+   "old": "Note that this is a ",
+   "new": "This is a "
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "four aspects, three of them states of data, is the structure; whose list it is and what it is good for are not",
+   "old": "The deck separates data security into four aspects, and the first three are the states data can be in. This is the cleanest structure for the opening of a security answer:",
+   "new": "Data security has four aspects, and the first three are the states data can be in:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "a column heading names what the column holds, not where the words came from",
+   "old": "What the deck says",
+   "new": "The mechanism"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the questions are the content; that a deck asks them is not",
+   "old": "The deck then asks the questions that follow:",
+   "new": "The questions that follow:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the example is the content, stated as the fact rather than as the deck's",
+   "old": "The deck's example is Amazon AWS:",
+   "new": "Amazon AWS is the example:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "why the example is worth reading is the claim; whose example it is is not",
+   "old": "The deck's example is deliberately mundane, and it is worth reproducing because it shows how far the problem reaches:",
+   "new": "The example is deliberately mundane, and it shows how far the problem reaches:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the risk of centralisation is the subject; who states it is not",
+   "old": "The deck then states the risk of centralisation plainly:",
+   "new": "The risk of centralisation:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "whose conclusion it is does not change the conclusion",
+   "old": "And the deck's conclusion:",
+   "new": "The conclusion:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the concerns are the content, stated rather than reported",
+   "old": "The deck warns that these concerns ",
+   "new": "These concerns "
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "that five concerns follow is the fact; the warning and the caution are not",
+   "old": ", and lists five to be aware of.",
+   "new": ", and five of them follow."
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the questions each concern raises are the content; what an answer can quote is strategy",
+   "old": " Each one comes with the questions an examination answer can quote, which is the fastest way to show understanding:",
+   "new": " Each comes with the questions it raises:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "a column heading names what the column holds, not where the words came from",
+   "old": "The questions the deck raises",
+   "new": "The questions it raises"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the two rules are the content; whose rules they are is not",
+   "old": ", and the deck's two rules are that ",
+   "new": ", and two rules govern it: "
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the phases forming a cycle is the content; whose slide drew it is not",
+   "old": "The slide's seven phases are drawn as a cycle:",
+   "new": "The seven phases form a cycle:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "what the phases require of the reader is the content; 'the teaching is in' is the writer's aside",
+   "old": "The deck gives the phase names and two rules; the teaching is in taking the phase names one at a time and asking what the cloud changes at each.",
+   "new": "The phase names and the two rules are the whole of it; what matters is taking the phases one at a time and asking what the cloud changes at each."
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the reason is in the rule itself; that a deck says it is not",
+   "old": "which is why the deck says personal information must be managed ",
+   "new": "which is why personal information must be managed "
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the core functions are the content; that a deck names them is not",
+   "old": "The deck names its ",
+   "new": "The "
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the examples are the content; whose examples they are is not",
+   "old": "the deck's examples are ",
+   "new": "the examples are "
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "what illustrates what, stated as the fact",
+   "old": "The deck illustrates IAM with an identity that spans services",
+   "new": "An identity that spans services illustrates IAM"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "five reasons is the content, without whose list it is",
+   "old": "The deck's five reasons:",
+   "new": "Five reasons:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the two definitions are the content; the instruction about marks is strategy",
+   "old": "Write it in the deck's own vocabulary and you cannot lose marks:",
+   "new": "In these terms:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the phrase carries the point; whose phrase it is does not",
+   "old": "and the deck's phrase ",
+   "new": "and the phrase "
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the sequence is the content; that a deck describes it is not",
+   "old": "The deck describes the sequence an SLA goes through from identification of terms to termination.",
+   "new": "An SLA goes through a sequence from identification of terms to termination."
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the fact about WS-negotiation is the content; that a deck notes it is not",
+   "old": "The deck notes that ",
+   "new": ""
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "deck",
+   "why": "the challenges are the content; whose choices they are, and that they are safe ones, are not",
+   "old": "Those two are also the deck's own top-of-list challenges from Unit 5.2.4",
+   "new": "Those two are the top-of-list challenges from Unit 5.2.4"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "paper",
+   "why": "the mechanism behind a risk is the content; how many marks each earns is not",
+   "old": "— a vulnerability list is worth few marks, while two vulnerabilities with their mechanism and their control is worth full marks, which is exactly what the paper's Group B question asks for.",
+   "new": "— a list of names says little, while two vulnerabilities with their mechanism and their control say a great deal."
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "paper",
+   "why": "two consequences are the content; that they are examinable is not",
+   "old": "Two consequences follow, and both are examinable:",
+   "new": "Two consequences follow:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "paper",
+   "why": "a heading names its subject; the paper is not its subject",
+   "old": "The exam framing",
+   "new": "What the framing has to do"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "paper",
+   "why": "why the topic changes is the claim; how examinable it is, is not",
+   "old": "This is the most examinable part of 8.2, because it explains why a familiar topic becomes a different problem.",
+   "new": "This is the part of 8.2 that changes most in the cloud, because a familiar topic becomes a different problem."
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "paper",
+   "why": "the sentence itself is the content; the mark it earns is not",
+   "old": "For an exam answer, one sentence earns that mark cleanly:",
+   "new": "One sentence says it cleanly:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "paper",
+   "why": "what the table holds is the content; who supplies it and how examinable it is are not",
+   "old": "This is the reference sheet the course supplies as a table, and it is the most directly examinable material in the unit — eight vulnerabilities, eight control areas, and one summary principle.",
+   "new": "The reference sheet for the unit is one table: eight vulnerabilities, eight control areas, and one summary principle."
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "paper",
+   "why": "working the chain through an actual question is the content; the paper's question is not the point of it",
+   "old": "The chain is easier to trust once it has been run against the paper's actual question, so here it is worked.",
+   "new": "Worked through a real question:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "paper",
+   "why": "a heading names its subject; that it is the exam answer is not its subject",
+   "old": "8.4.5 The two challenges in the exam answer",
+   "new": "8.4.5 The two challenges worked through"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "advice",
+   "why": "the two levels are the content; that they are the detail to remember is strategy",
+   "old": "The two-level structure is the detail worth remembering:",
+   "new": "Two levels are the whole structure:"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "frame",
+   "why": "the link to the earlier units is the content, without the sentence about what the unit is",
+   "old": ": this unit is where the hypervisor of 6.1.10 becomes an attack surface",
+   "new": ": the hypervisor of 6.1.10 becomes an attack surface"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "This is where Unit 6's hypervisor isolation becomes a security control rather than a performance feature.",
+   "to": "This is where hypervisor isolation becomes a security control rather than a performance feature.",
+   "tell": "crossref",
+   "why": "the isolation becoming a control is the fact; which unit taught the isolation is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "It connects directly to Unit 6's storage virtualization, where",
+   "to": "It connects directly to storage virtualization, where",
+   "tell": "crossref",
+   "why": "the consequence of not knowing where the blocks are is the fact; the unit number is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "This is where Unit 8.2's IAM decides who may run it.",
+   "to": "This is where IAM decides who may run it.",
+   "tell": "crossref",
+   "why": "in-unit section numbers are navigation like any other"
+  },
+  {
+   "ch": "ch8.js",
+   "find": ", and the two problems Unit 8.1 already named: <strong>provenance</strong> (8.1.2) and <strong>remanence</strong> (8.1.3)",
+   "to": ", and two problems already named: <strong>provenance</strong> and <strong>remanence</strong>",
+   "tell": "crossref",
+   "why": "the two problems are the content; which section named them is navigation"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "the Glacier and archive tiers from Unit 7.2.2",
+   "to": "the Glacier and archive tiers",
+   "tell": "crossref",
+   "why": "the tiers are the fact; which unit listed them is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "which is the de-perimeterisation of Unit 5.4.5 made operational",
+   "to": "which is de-perimeterisation made operational",
+   "tell": "crossref",
+   "why": "the boundary moving is the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": ", not only a performance document &mdash; which is why the auditor actor from Unit 6.3.2 exists.",
+   "to": ", not only a performance document &mdash; which is why the auditor actor exists.",
+   "tell": "crossref",
+   "why": "the auditor actor is the fact; the unit that introduced it is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "which is Unit 7's bucket with the wrong policy attached",
+   "to": "which is an object-storage bucket with the wrong policy attached",
+   "tell": "crossref",
+   "why": "the bucket with the wrong policy is the fact; the unit number is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "Every cloud service is an API (Unit 7.3.4), so",
+   "to": "Every cloud service is an API, so",
+   "tell": "crossref",
+   "why": "in-unit section numbers are navigation like any other"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "This is Unit 6.1.11's statement of the same threat: ",
+   "to": "The statement of the threat is the same: ",
+   "tell": "crossref",
+   "why": "the threat and its response are quoted in full; where they were first stated is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "This is why Unit 7.3.5's regions and zones are a compliance decision and not only a latency one.",
+   "to": "This is why regions and zones are a compliance decision and not only a latency one.",
+   "tell": "crossref",
+   "why": "the point about regions is the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "and why the auditor actor from Unit 6.3.2 exists.",
+   "to": "and why the auditor actor exists.",
+   "tell": "crossref",
+   "why": "the auditor actor is the fact; the unit number is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "and de-perimeterisation from Unit 5.4.5 to explain why the boundary moved in the first place",
+   "to": "and de-perimeterisation, to explain why the boundary moved in the first place",
+   "tell": "crossref",
+   "why": "the two things the answer needs are the content; the section number is a pointer"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "(Unit 6.1.11: malicious software",
+   "to": "(malicious software",
+   "tell": "crossref",
+   "why": "the quoted definition is the fact; the pointer in front of it is navigation - the parenthesis stays, so the quote still reads as a quote"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "the top-of-list challenges from Unit 5.2.4",
+   "to": "among the challenges",
+   "tell": "crossref",
+   "why": "'top-of-list' and the unit number only mean something if the unit's list is to hand; the span stops before the dash so the entry sits inside the one it supersedes"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "The distinction matters in an exam because ",
+   "to": "",
+   "tell": "reader",
+   "why": "'in an exam' addresses the paper rather than the subject; the two answers themselves are the content"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "&mdash; and a strong answer mentions integrity, not just secrecy, because",
+   "to": "&mdash; and integrity matters as much as secrecy, because",
+   "tell": "reader",
+   "why": "'a strong answer mentions' is advice; what integrity adds is the fact"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "You cannot destroy what you cannot locate.",
+   "to": "What cannot be located cannot be destroyed.",
+   "tell": "reader",
+   "why": "the fact is about the data, not the reader"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "And <strong>the cloud multiplies the copies while shortening the list of places you can point at</strong>: ",
+   "to": "And <strong>cloud storage multiplies the copies while shortening the list of places to point at</strong>: ",
+   "tell": "reader",
+   "why": "the copies and the obligation belong to the organisation's data, not the reader's"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "in a backup you cannot see and in a cache you did not design",
+   "to": "in a backup the customer cannot see and in a cache nobody designed",
+   "tell": "reader",
+   "why": "the backup and the cache are the provider's, not the reader's"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "The five rows group into three questions, which is the neatest way to hold them in memory: ",
+   "to": "The five rows group into three questions: ",
+   "tell": "reader",
+   "why": "the grouping is the content; 'the neatest way to hold them in memory' is study advice"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "<strong>what happens when you don't get it</strong> (disaster recovery and mean time to recover, problem resolution)",
+   "to": "<strong>what happens when the service fails</strong> (disaster recovery and mean time to recover, problem resolution)",
+   "tell": "reader",
+   "why": "the failure is the service's, not the reader's"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "Two habits make this unit much easier to answer.",
+   "to": "Two habits hold the section together.",
+   "tell": "meta",
+   "why": "the sentence comments on how hard the unit is to answer rather than on the subject"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "Worked through a real question: <em>\"Briefly describe two challenges in ensuring security in cloud environments\"</em> wants two, described, not eight named ",
+   "to": "Two of the challenges carry the most weight ",
+   "tell": "meta",
+   "why": "a paragraph of exam tactics in front of the two challenges; the two and why they matter are kept"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "&mdash; and the two that carry the most marks from this unit are ",
+   "to": "&mdash; ",
+   "tell": "meta",
+   "why": "which two the examiner rewards is exam talk; the pair itself is named next"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "what matters is taking the phases one at a time and asking what the cloud changes at each.",
+   "to": "the cloud changes something at each phase.",
+   "tell": "editorial",
+   "why": "'what matters is taking ... one at a time' is advice about how to read; the claim that follows is the content"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "is the whole point: a failure can be covered by one and excluded by another",
+   "to": "is the point: a failure can be covered by one and excluded by another",
+   "tell": "editorial",
+   "why": "'the whole point' rates the phrase; the observation that follows is the content"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "\"we use HTTPS\" is the first answer and \"we encrypt the payload even over an untrusted channel\" is the second &mdash; and integrity matters as much as secrecy, because",
+   "to": "Integrity matters as much as secrecy, because",
+   "tell": "reader",
+   "why": "the two answers and what they cover are the content; counting them off as first and second is the exam talking, and 'you get' addresses the reader rather than the service"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "<strong>what you get</strong> (availability, performance)",
+   "to": "<strong>what is delivered</strong> (availability, performance)",
+   "tell": "reader",
+   "why": "the two answers and what they cover are the content; counting them off as first and second is the exam talking, and 'you get' addresses the reader rather than the service"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "The shared responsibility model in 8.4.3 is where all four meet, so it is worth reading twice.",
+   "to": "The shared responsibility model is where all four meet.",
+   "tell": "recount",
+   "why": "where the four meet is the fact; which section it is in and how often to read it are not"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "Two habits hold the section together. First, <strong>attach a concrete mechanism to every named risk</strong> — a list of names says little, while two vulnerabilities with their mechanism and their control say a great deal. Second, <strong>reach back into the earlier units</strong>: the hypervisor of 6.1.10 becomes an attack surface, storage virtualisation becomes multi-tenancy, and the provider's promise becomes an SLA. Naming that link is what makes a security answer specific to the cloud rather than a general list of security advice.",
+   "to": "<strong>What makes cloud security specific:</strong> the hypervisor is an attack surface, storage virtualisation is multi-tenancy, and the provider's promise is an SLA.",
+   "tell": "recount",
+   "why": "the paragraph was two habits for writing an answer around one fact - the three links into the rest of the subject - so the fact is stated and the habits go"
+  },
+  {
+   "ch": "ch8.js",
+   "find": "Two sentences pull that together and either is a good closing line. ",
+   "to": "",
+   "tell": "recount",
+   "why": "a lead-in that announces the two sentences and rates them as closing lines"
+  }
+ ]
+}

@@ -1,0 +1,492 @@
+source: Lecture Notes - all Chapterwise\Chapter 2 - Communication in Distributed Systems\Ref_Notes\MessagePassing_refnote2.pdf
+method: pdf
+sha256: ba1dcc9ce0746b3a58c5d4050c7670a424a207cd4082078b74fa2c9e63d603ca
+pages:  14
+ocr:    6 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+===== page 1 =====
+Distributed Systems
+Communication (II)
+[2]Communication (II)
+1. LayeredProtocols
+2. RemoteProcedureCall
+3. RemoteObjectInvocation
+4. Message-orientedCommunication
+5. Stream-orientedCommunication
+[3]Persistence and Synchronicity in Communication (1)
+Assumption–communication systemorganized asfollows:
+– applicationsareexecutedonhosts,
+– eachhostconnectedtoonecommunication server,
+– buffersmaybeplacedeitheronhostsorinthecommunicationserversofthe
+underlying network,
+– example: ane-mailsystem.
+persistent vstransient communication,
+asynchronouscommunication – sender continues immediately after it has sub-
+mitted itsmessagefortransmission,
+synchronouscommunication – the sender blocked until its message is stored in
+alocalbufferatthereceivinghostoractuallydeliveredtothereceiver.
+[4]Persistence and Synchronicity in Communication (2)
+Client/server computing generally based on a model of synchronous communi-
+cation:
+– clientandservertobeactiveatthetimeofcommunication,
+– clientissuesrequestandblocksuntilreplyreceived,
+
+
+===== page 2 =====
+Communication (II)
+– server essentially waits only for incoming requests and subsequently pro-
+cessesthem.
+Drawbacksofsynchronouscommunication:
+– clientcannotdoanyotherworkwhilewaitingforreply,
+– failurestobedealtwithimmediately(theclientiswaiting),
+– inmanycasesthemodelsimplynotappropriate(mail,news).
+[5]Persistence and Synchronicity in Communication (3)
+Messaging interface
+Sending host Communication server Communication server Receiving host
+Buffer independent
+Application p R r o o u g t r i a n m g o h f o c s o ts mmunicating p R r o o u g t r i a n m g Application
+To other (remote)
+communication
+server
+OS OS OS OS
+Local buffer Local network Internetwork Local buffer
+Incoming message
+General organization of a communication system in which hosts are connected
+throughanetwork.
+– queuedmessagessentamongprocesses,
+– sendernotstoppedinwaitingforimmediatereply,
+– faulttoleranceoftenensuredbymiddleware.
+[6]Persistence and Synchronicity in Communication (4)
+Persistentvs. transientcommunication
+Persistentcommunication
+A message is stored at a communication server as long as it takes to deliver it at
+thereceiver.
+Transientcommunication
+Amessageisdiscardedbyacommunicationserverassoonasitcannotbedelivered
+atthenextserveroratthereceiver.
+[7]Persistence and Synchronicity in Communication (5)
+2
+
+
+===== page 3 =====
+Communication (II)
+Post
+Pony and rider
+office
+Post Post
+office office
+Post
+Mail stored and sorted, to office
+be sent out depending on destination
+and when pony and rider available
+Persistentcommunication oflettersbackinthedaysofthePonyExpress.
+[8]Persistence and Synchronicity in Communication (6)
+Differentformsofcommunication:
+A an s d e c n o d n s t i m nu e e s s sage A ru n st n o in p g ped A an s d e w nd a s it s m u e n s t s il a a g c e cepted A ru n st n o in p g ped
+A Message is sto A red a. persistentasynchronous,
+at B's location for Accepted
+Time later delivery Time
+B B
+B starts and B is not B starts and b. persistentsynchronous,
+B is not receives running receives
+running message message
+(a) (b)
+c. transientasynchronous,
+A sends message Send request and wait
+and continues until received
+A M se e n s t s o a n g l e y i c f a B n i b s e A d. receipt-based transient syn-
+running Request ACK
+Time is received Time chronous,
+B B
+B receives Running, but doing Process
+message something else request
+(c) (d) e. delivery-based transient syn-
+Send request and wait until Send request chronous,
+accepted and wait for reply
+A A
+R is e r q e u ce e i s v t ed Accepted R is e r q e u ce e i s v t ed Accepted f. response-based transient syn-
+Time Time
+B B
+Running, but doing Process Running, but doing Process chronous,
+something else request something else request
+(e) (f)
+[9]Message-Oriented Transient Communication
+– socketinterfaceintroduced inBerkeleyUNIX,
+3
+
+
+===== page 4 =====
+Communication (II)
+– anothertransportlayerinterface: XTI,X/OpenTransportInterface,formerly
+calledtheTransportLayerInterface(TLI),developedbyAT&T
+socket
+Communicationendpointtowhichanapplicationwritedatathataretobesentover
+theunderlying networkandfromwhichincomingdatacanberead.
+[10]Berkeley Sockets (1)
+SocketprimitivesforTCP/IP.
+[11]Berkeley Sockets (2)
+Server
+socket bind listen accept read write close
+Synchronization point Communication
+socket connect write read close
+Client
+Connection-oriented communication patternusingsockets.
+[12]The Message-Passing Interface (MPI) (1)
+4
+[image text] Send
+Receive
+Meaning
+Create a new communication endpoint
+Announce willingness to accept connections
+Block caller until a connection request arrives
+Actively attempt to establish a connection
+Release the connection
+acce t
+
+
+===== page 5 =====
+Communication (II)
+MPI
+Groupofmessage-orientedprimitivesthatwouldallowdeveloperstoeasilywrite
+highlyefficientapplications.
+Socketsinsufficientbecause:
+– atthewronglevelofabstractionsupportingonlysendandreceiveprimitives,
+– designedtocommunicateusinggeneral-purposeprotocolstackssuchasTCP/IP,
+not suitable in high-speed interconnection networks, such as those used in
+COWsandMPPs(withdifferentformsofbufferingandsynchronization).
+[13]The Message-Passing Interface (MPI) (2)
+MPIassumptions:
+– communication within aknowngroupofprocesses,
+– eachgroupwithassignedid,
+– eachprocesswithingagroup alsowithassignedid,
+– allseriousfailures(processcrashes,networkpartitions)assumedasfataland
+without anyrecovery,
+– a (groupID, processID) pair used to identify source and destination of the
+message,
+– onlyreceipt-basedtransientsynchronouscommunication(d)notsupported,
+othersupported.
+[14]The Message-Passing Interface (3)
+5
+[image text] MPl
+bsend
+ssend
+sendrecv
+isend
+irecv
+Meaning
+Check if there is an incomin messa e, but do not block
+
+
+===== page 6 =====
+Communication (II)
+Someofthemostintuitive message-passingprimitivesofMPI.
+[15]The Message-Oriented Persistent Communication
+Message-queueingsystems=Message-OrientedMiddleware(MOM)
+TheessenceofMOMsystems:
+– offertheintermediate-term storagecapacityformessages,
+– target to support message transfers that are allowed to take minutes instead
+ofsecondsormilliseconds,
+– noguaranteesaboutwhenorevenifthemessagewillbeactuallyread,
+– thesenderandreceivercanexecutecompletelyindependently.
+[16]Message-Queuing Model
+Basicinterfacetoaqueueinamessage-queuingsystem.
+Mostqueuingsystemsalsoallowaprocesstoinstallhandlersascallbackfunctions.
+[17]Architecture of Message-Queuing Systems (1)
+Look-up
+Sender transport-level Receiver
+address of queue
+Queuing Queue-level Queuing
+layer address layer
+Local OS Address look-up Local OS
+database
+Transport-level
+address
+Network
+6
+[image text] put
+poll
+Notify
+Meaning
+Append a message to a specified queue
+Block until the specified queue is nonempty, and remove the first message
+Check a specified queue for messages, and remove the first. Never block
+Ql..lel..le-le\/el
+
+
+===== page 7 =====
+Communication (II)
+Therelationship betweenqueue-leveladdressingandnetwork-leveladdressing.
+sourcequeue,destinationqueue,adatabaseofqueuenamestonetworklocations
+mapping.
+[18]Architecture of Message-Queuing Systems (2)
+Sender A
+Application
+Application
+Receive
+queue
+R2
+Message
+Send queue
+Application
+R1
+Receiver B
+Application
+Router
+Thegeneralorganization ofamessage-queuingsystemwithrouters:
+– maygrowintooverlaynetwork,
+– mayneeddynamicrouting schemes.
+Queuemanagers:
+– normallyinteractdirectlywithapplications,
+– someoperateasroutersorrelays.
+[19]Message Brokers
+7
+
+
+===== page 8 =====
+Communication (II)
+Database with
+Source client Message broker conversion rules Destination client
+Broker
+program
+Queuing
+layer
+OS OS OS
+Network
+Thegeneralorganization ofamessagebroker inamessage-queuingsystem.
+Messagebroker
+Acts as an application-level gateway in a message-queuing system. Its main pur-
+pose it to convert incoming messages to a format that can be understood by the
+destinationapplication. Itmayprovideroutingcapabilities.
+[20]Notes on Message-Queuing Systems
+– with message brokers it may be necessary to accept a certain loss of infor-
+mationduringtransformation,
+– attheheartofamessagebroker liesadatabaseofconversionrules,
+– generalmessage-queuingsystemsarenotaimedatsupportingonlyendusers,
+– theyaresetuptoenablepersistentcommunication,
+– rangeofapplications:
+– e-mail,workflow,groupware, batchprocessing,
+– integration ofacollectionofdatabasesordatabaseapplications.
+[21]Example: IBM MQSeries
+8
+
+
+===== page 9 =====
+Communication (II)
+Client's receive
+Sending client Routing table Send queue queue Receiving client
+Queue Queue
+Program manager manager Program
+MQ Interface
+Stub S s e t r u v b er MCAMCA MCAMCA S s e t r u v b er Stub
+RPC Local network
+(synchronous) Internetwork
+To other remote
+Message passing queue managers
+(asynchronous)
+Generalorganization ofIBM’sMQSeriesmessage-queuingsystem.
+[22]Channels
+Someattributesassociatedwithmessagechannelagents.
+[23]Message Transfer (1)
+Alias table Routing table
+LA1 QMC QMB SQ1 Alias table Routing table
+LA2 QMD QMC SQ1 LA1 QMA QMA SQ1
+QMD SQ2 LA2 QMD QMC SQ1
+QMD SQ1
+SQ2
+SQ1
+QMA SQ1
+QMB
+Routing table SQ1 QMC Routing table
+QMA SQ1 QMA SQ1
+QMC SQ2 SQ2 QMB SQ1
+QMB SQ1
+QMD SQ1
+Alias table
+LA1 QMA SQ1
+LA2 QMC
+QMD
+9
+[image text] II SQI
+Server
+Transport type
+FIFO delivery
+Message length
+Setup retry count
+Delivery retries
+Description
+Determines the transport protocol to be used
+Indicates that messages are to be delivered in the order they are sent
+Maximum length of a single message
+Specifies maximum number of retries to start up the remote MCA
+Maximum times MCA will try to put received message into queue
+QMA SQI
+QMC SQI
+LAI QMC
+SQI III
+LAI QMA
+QMA S 1
+
+
+===== page 10 =====
+Communication (II)
+The general organization of an MQSeries queuing network using routing tables
+andaliases. Byusinglogicalnames,incombinationwithnameresolutiontolocal
+queues,itispossibletoputamessageinaremotequeue.
+[24]Message Transfer (2)
+PrimitivesavailableinanIBMMQSeriesMQI.
+[25]Stream-Oriented Communication
+– formsofcommunication inwhichtimingplaysacrucialrole,
+– example:
+– an audio stream built up as a sequence of 16-bit samples each repre-
+senting the amplitude of the sound wave as it is done through PCM
+(PulseCodeModulation),
+– audiostreamrepresentsCDquality,i.e. 44100Hz,
+– samplestobeplayedatintervalsofexactly1/44100,
+– whichfacilitiesadistributedsystemshouldoffertoexchangetime-dependent
+information suchasaudioandvideostreams?
+– supportfortheexchangeoftime-dependentinformation=supportfor
+continuousmedia,
+– continuous (representation) media vs. discrete (representation) me-
+dia.
+[26]Support for Continuous Media
+Incontinuousmedia:
+10
+[image text] MQopen
+MQclose
+MQput
+MQget
+Description
+Open a (possibly remote) queue
+Close a queue
+Put a message into an opened queue
+Get a message from a (local) queue
+
+
+===== page 11 =====
+Communication (II)
+– temporal relationships between data items fundamental to correctly inter-
+preting thedata,
+– timing iscrucial.
+Asynchronoustransmissionmode
+Data items in a stream are transmitted one after the other, but there are no further
+timingconstraintsonwhentransmissionofitemsshouldtakeplace.
+Synchronoustransmissionmode
+Maximumend-to-enddelaydefinedforeachunitinadatastream.
+Isochronoustransmissionmode
+It is necessary that data units are transferred on time. Data transfer is subject to
+bounded(delay)jitter.
+[27]Data Stream (1)
+Sending process Receiving process
+Program
+Stream
+OS OS
+Network
+(a)
+Camera
+Display
+OS Stream OS
+Network
+(b)
+a. Settingupastreambetweentwoprocessesacrossanetwork,
+b. Settingupastreamdirectlybetweentwodevices.
+– stream sequence of data units, may be considered as a virtual connection
+betweenasourceandasink,
+– simplestreamvs. complexstream(consistingofseveralrelatedsub-streams).
+11
+
+
+===== page 12 =====
+Communication (II)
+[28]Data Stream (2)
+Sink
+Stream
+Intermediate
+node, possibly
+Source with filters
+Lower bandwidth
+Anexampleofmulticasting astreamtoseveralreceivers.
+– problem with receivers having different requirements with respect to the
+qualityofthestream,
+– filters to adjust the quality of an incoming stream, differently for outgoing
+streams.
+[29]Specifying QoS (1)
+Aflowspecification.
+Time-dependent requirements among other Quality of Service (QoS) require-
+ments.
+[30]Specifying QoS (2)
+12
+[image text] Characteristics of the Input
+Maximum data unit size (bytes)
+Token bucket rate (bytes/sec)
+Maximum transmission rate (bytes/sec)
+Service Required
+Loss sensitivity (bytes)
+Loss interval (gsec)
+Burst loss sensitivity (data units)
+Minimum delay noticed (psec)
+Maximum delay variation (psec)
+Quality of guarantee
+
+
+===== page 13 =====
+Communication (II)
+Application
+Irregular stream One token is added
+of data units to the bucket everyD T
+Regular stream
+Theprincipleofatokenbucketalgorithm.
+– tokensgeneratedataconstantrate,
+– tokensbufferedinabucketwhichhaslimitedcapacity.
+[31]Setting Up a Stream
+Sender process
+RSVP-enabled host
+Policy RSVP process
+Application
+control
+Application
+data stream
+RSVP
+program
+Local OS
+Reservation requests
+Data link layer Admission from other RSVP hosts
+control
+Data link layer
+data stream
+Internetwork
+Local network
+Setup information to
+other RSVP hosts
+The basic organization of RSVP (Resource reSerVation Protocol), transport-level
+protocolforresourcereservationinadistributedsystem.
+[32]Synchronization Mechanisms (1)
+13
+
+
+===== page 14 =====
+Communication (II)
+Receiver's machine
+Application
+Procedure that reads
+two audio data units for
+each video data unit
+Incoming stream
+OS
+Network
+Theprincipleofexplicitsynchronization ontheleveldataunits.
+Givenacomplexstream,howtokeepthedifferentsubstreamsinsynch?
+[33]Synchronization Mechanisms (2)
+Application tells
+Receiver's machine middleware what
+to do with incoming
+Multimedia control Application streams
+is part of middleware
+Middleware layer
+Incoming stream OS
+Network
+Theprincipleofsynchronizationassupportedbyhigh-levelinterfaces.
+Multiplexofallsubstreamsintoasinglestreamanddemultiplexingatthereceiver.
+Synchronizationishandledatmultiplexing/demultiplexing point (MPEG).
+14

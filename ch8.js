@@ -212,6 +212,65 @@ REJ       TERMINATE 1   // a rejected soap leaves
 <tr><td>Used in GPSS, SIMSCRIPT</td><td>Used when many events occur continuously</td></tr>
 </table>
 
+<figure class="figure-wrap">
+
+<svg class="figure wide" viewBox="0 0 900 352" role="img" aria-label="Comparison of the two clock-advancing approaches. On the top axis for next-event time advance the clock jumps from t0 at the start to t1 an arrival, to t2 a departure, to t3 an arrival, to t4 a departure and to t5 the end, skipping the idle stretches in between. On the bottom axis for fixed-increment time advance the clock steps by a constant delta t at every tick whether or not an event occurs.">
+
+<defs>
+<marker id="fg8a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker>
+<marker id="fg8b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head acc"/></marker>
+</defs>
+
+<text class="fig-t sm start" x="20" y="26">Next-event time advance — the clock jumps to the time of the next scheduled event</text>
+
+<path class="fig-axis" d="M60,100 H845"/>
+<path class="fig-edge pri thin" d="M60,100 V86 M120,100 V86 M250,100 V86 M420,100 V86 M620,100 V86 M790,100 V86"/>
+<circle class="fig-dot" cx="60" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="120" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="250" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="420" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="620" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="790" cy="100" r="4.5"/>
+
+<text class="fig-t sm" x="60" y="122">t₀</text>
+<text class="fig-t sm" x="120" y="122">t₁</text>
+<text class="fig-t sm" x="250" y="122">t₂</text>
+<text class="fig-t sm" x="420" y="122">t₃</text>
+<text class="fig-t sm" x="620" y="122">t₄</text>
+<text class="fig-t sm" x="790" y="122">t₅</text>
+
+<text class="fig-t sm" x="60" y="142">start</text>
+<text class="fig-t sm" x="120" y="142">arrival</text>
+<text class="fig-t sm" x="250" y="142">departure</text>
+<text class="fig-t sm" x="420" y="142">arrival</text>
+<text class="fig-t sm" x="620" y="142">departure</text>
+<text class="fig-t sm" x="790" y="142">end</text>
+
+<path class="fig-edge pri" d="M124,74 H246" marker-start="url(#fg8a)" marker-end="url(#fg8a)"/>
+<path class="fig-edge pri" d="M254,74 H416" marker-start="url(#fg8a)" marker-end="url(#fg8a)"/>
+<path class="fig-edge pri" d="M424,74 H616" marker-start="url(#fg8a)" marker-end="url(#fg8a)"/>
+<path class="fig-edge pri" d="M624,74 H786" marker-start="url(#fg8a)" marker-end="url(#fg8a)"/>
+<text class="fig-t sm start" x="20" y="60">the clock jumps — nothing between two events is ever simulated</text>
+
+<text class="fig-t sm start" x="20" y="200">Fixed-increment time advance — the clock moves on by the same Δt every step</text>
+
+<path class="fig-axis" d="M60,270 H845"/>
+<path class="fig-edge thin" d="M60,270 V258 M92,270 V258 M124,270 V258 M156,270 V258 M188,270 V258 M220,270 V258 M252,270 V258 M284,270 V258 M316,270 V258 M348,270 V258 M380,270 V258 M412,270 V258 M444,270 V258 M476,270 V258 M508,270 V258 M540,270 V258 M572,270 V258 M604,270 V258 M636,270 V258 M668,270 V258 M700,270 V258 M732,270 V258 M764,270 V258 M796,270 V258 M828,270 V258"/>
+<circle class="fig-dot acc" cx="156" cy="270" r="4.5"/>
+<circle class="fig-dot acc" cx="444" cy="270" r="4.5"/>
+<text class="fig-t sm acc" x="108" y="252">Δt</text>
+<text class="fig-t sm acc" x="156" y="292">event</text>
+<text class="fig-t sm acc" x="444" y="292">event</text>
+
+<text class="fig-t sm start" x="20" y="322">A step is taken every Δt whether or not anything happens — simpler to code, but it burns time</text>
+<text class="fig-t sm start" x="20" y="340">in the idle stretches, and it can step straight over an event that falls between two ticks.</text>
+
+</svg>
+
+<figcaption>Fig 8.1 — The two clock-advancing approaches of §8.3 drawn on the same time base. Top: the event list decides the next clock value, so the clock only ever sits at an event time. Bottom: the clock is a counter 0, Δt, 2Δt, … and events are noticed only when a tick lands on them. The middle table of §8.3 is this picture in words — next-event skips idle periods, fixed-increment cannot.</figcaption>
+
+</figure>
+
 <h2>8.4 Continuous Systems Modeling and Simulation</h2>
 <p>Continuous simulation languages (CSSLs) model systems where state changes continuously over time. Models are specified as sets of <strong>differential equations</strong>.</p>
 <p><strong>Numerical methods</strong> (Euler, Runge-Kutta) are used to solve the equations at each time step.</p>
@@ -329,7 +388,7 @@ past: [
 <li><strong>Transaction-based:</strong> Temporary entities (transactions) flow through blocks, representing customers, parts, messages</li>
 <li><strong>Built-in facilities and storages:</strong> Pre-defined server resources (single-server facilities, multi-server storages)</li>
 <li><strong>Automatic statistics:</strong> Queue lengths, utilizations, wait times are automatically tracked</li>
-<li><strong>Visual block diagrams:</strong> Each block has a standard symbol (triangle for GENERATE, circle for TERMINATE, etc.)</li>
+<li><strong>Visual block diagrams:</strong> Each block has a standard symbol — the <strong>semicircle</strong> for GENERATE, the <strong>circle</strong> for TERMINATE, the <strong>diamond</strong> for TRANSFER/TEST (Fig 8.3)</li>
 <li><strong>Event scheduling:</strong> Automatic next-event time advance</li>
 <li><strong>Easy to learn:</strong> High-level abstraction makes modeling intuitive</li>
 </ol>`},
@@ -339,6 +398,50 @@ past: [
 <p>A type of simulation where the system <strong>state changes only at discrete points in time</strong> called events. Between events, the system state remains unchanged. The simulation tracks individual events (arrivals, departures, failures) and processes them chronologically.</p>
 <p><strong>Components:</strong> System state, simulation clock, event list, statistical counters, initialization routine, timing routine, event routines, report generator.</p>
 <h4>Two Approaches for Advancing Simulation Clock</h4>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 900 352" role="img" aria-label="Comparison of the two clock-advancing approaches. On the top axis for next-event time advance the clock jumps from t0 at the start to t1 an arrival, to t2 a departure, to t3 an arrival, to t4 a departure and to t5 the end, skipping the idle stretches in between. On the bottom axis for fixed-increment time advance the clock steps by a constant delta t at every tick whether or not an event occurs.">
+<defs>
+<marker id="fg8i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker>
+</defs>
+<text class="fig-t sm start" x="20" y="26">Next-event time advance — the clock jumps to the time of the next scheduled event</text>
+<path class="fig-axis" d="M60,100 H845"/>
+<path class="fig-edge pri thin" d="M60,100 V86 M120,100 V86 M250,100 V86 M420,100 V86 M620,100 V86 M790,100 V86"/>
+<circle class="fig-dot" cx="60" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="120" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="250" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="420" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="620" cy="100" r="4.5"/>
+<circle class="fig-dot" cx="790" cy="100" r="4.5"/>
+<text class="fig-t sm" x="60" y="122">t₀</text>
+<text class="fig-t sm" x="120" y="122">t₁</text>
+<text class="fig-t sm" x="250" y="122">t₂</text>
+<text class="fig-t sm" x="420" y="122">t₃</text>
+<text class="fig-t sm" x="620" y="122">t₄</text>
+<text class="fig-t sm" x="790" y="122">t₅</text>
+<text class="fig-t sm" x="60" y="142">start</text>
+<text class="fig-t sm" x="120" y="142">arrival</text>
+<text class="fig-t sm" x="250" y="142">departure</text>
+<text class="fig-t sm" x="420" y="142">arrival</text>
+<text class="fig-t sm" x="620" y="142">departure</text>
+<text class="fig-t sm" x="790" y="142">end</text>
+<path class="fig-edge pri" d="M124,74 H246" marker-start="url(#fg8i)" marker-end="url(#fg8i)"/>
+<path class="fig-edge pri" d="M254,74 H416" marker-start="url(#fg8i)" marker-end="url(#fg8i)"/>
+<path class="fig-edge pri" d="M424,74 H616" marker-start="url(#fg8i)" marker-end="url(#fg8i)"/>
+<path class="fig-edge pri" d="M624,74 H786" marker-start="url(#fg8i)" marker-end="url(#fg8i)"/>
+<text class="fig-t sm start" x="20" y="60">the clock jumps — nothing between two events is ever simulated</text>
+<text class="fig-t sm start" x="20" y="200">Fixed-increment time advance — the clock moves on by the same Δt every step</text>
+<path class="fig-axis" d="M60,270 H845"/>
+<path class="fig-edge thin" d="M60,270 V258 M92,270 V258 M124,270 V258 M156,270 V258 M188,270 V258 M220,270 V258 M252,270 V258 M284,270 V258 M316,270 V258 M348,270 V258 M380,270 V258 M412,270 V258 M444,270 V258 M476,270 V258 M508,270 V258 M540,270 V258 M572,270 V258 M604,270 V258 M636,270 V258 M668,270 V258 M700,270 V258 M732,270 V258 M764,270 V258 M796,270 V258 M828,270 V258"/>
+<circle class="fig-dot acc" cx="156" cy="270" r="4.5"/>
+<circle class="fig-dot acc" cx="444" cy="270" r="4.5"/>
+<text class="fig-t sm acc" x="108" y="252">Δt</text>
+<text class="fig-t sm acc" x="156" y="292">event</text>
+<text class="fig-t sm acc" x="444" y="292">event</text>
+<text class="fig-t sm start" x="20" y="322">A step is taken every Δt whether or not anything happens — simpler to code, but it burns time</text>
+<text class="fig-t sm start" x="20" y="340">in the idle stretches, and it can step straight over an event that falls between two ticks.</text>
+</svg>
+<figcaption>Fig 8.1 — The two clock-advancing approaches drawn on the same time base; the same figure as §8.3. Top: the event list decides the next clock value, so the clock only ever sits at an event time. Bottom: the clock is a counter 0, Δt, 2Δt, … and events are noticed only when a tick lands on them. The table below is this picture in words — next-event skips idle periods, fixed-increment cannot.</figcaption>
+</figure>
 <table>
 <tr><th>Next-Event Time Advance</th><th>Fixed-Increment Time Advance</th></tr>
 <tr><td>Clock jumps to the time of next scheduled event</td><td>Clock advances by fixed amount Δt each step</td></tr>
@@ -392,7 +495,7 @@ past: [
 
 <figure class="figure-wrap">
 
-<svg class="figure" viewBox="0 0 640 592" role="img" aria-label="Flow chart of a discrete-event simulation model: main program calls initialization, then the timing routine advances the clock, an event routine updates the state and counters and schedules new events, the loop repeats while the event list is not empty, and the report generator runs at the end">
+<svg class="figure" viewBox="0 0 646 592" role="img" aria-label="Flow chart of a discrete-event simulation model: main program calls initialization, then the timing routine advances the clock, an event routine updates the state and counters and schedules new events, the loop repeats while the event list is not empty, and the report generator runs at the end">
 
 <defs><marker id="fx8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="flow-arrow-head"/></marker></defs>
 
@@ -454,14 +557,50 @@ past: [
 
 </svg>
 
-<figcaption>The timing routine and the event routine form the loop that is executed once per event. When the event list is empty the clock has no next event to jump to, so control leaves the loop and the report generator is called.</figcaption>
+<figcaption>Fig 8.2 — The timing routine and the event routine form the loop that is executed once per event. When the event list is empty the clock has no next event to jump to, so control leaves the loop and the report generator is called.</figcaption>
 
 </figure>
 
 <p><strong>Two ways to advance the clock</strong> (often asked with this question): <em>next-event time advance</em>, where the clock jumps to the smallest scheduled event time and idle periods are skipped — the method used above and by GPSS, SIMSCRIPT and Arena; and <em>fixed-increment time advance</em>, where the clock advances by a constant &#916;t and all events due in that interval are processed. The second is simpler to program but wastes time during idle periods and can process events in the wrong order unless &#916;t is small.</p>`},
-  {year:"2015 F", marks:"5", repeats:3, q:"Draw different types of GPSS block-diagram symbols and explain with GPSS block-diagram of manufacturing shop.", occ:[{year:"2015 F", marks:"5", q:"Draw different types of GPSS block-diagram symbols and explain · with the help of GPSS block- diagram of manufacturing shop"}, {year:"2014 F", marks:"4", q:"Explain in details of GPSS block diagram symbols"}, {year:"2014 F", marks:"4", q:"Explain in details of GPSS block diagram symbols"}],
+  {year:"2015 F", marks:"5", repeats:3, src:["n2p50","n2p55"], q:"Draw different types of GPSS block-diagram symbols and explain with GPSS block-diagram of manufacturing shop.", occ:[{year:"2015 F", marks:"5", q:"Draw different types of GPSS block-diagram symbols and explain · with the help of GPSS block- diagram of manufacturing shop"}, {year:"2014 F", marks:"4", q:"Explain in details of GPSS block diagram symbols"}, {year:"2014 F", marks:"4", q:"Explain in details of GPSS block diagram symbols"}],
    answer:`<h4>Answer</h4>
 <h4>GPSS Block Symbols</h4>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 880 376" role="img" aria-label="The standard GPSS block symbols drawn side by side. GENERATE is a semicircle sitting flat on the line, TERMINATE a circle, SEIZE a rectangle with a notch cut into its left edge, RELEASE the same rectangle with the notch on its right edge, ADVANCE, QUEUE, DEPART, ENTER and LEAVE are plain rectangles, and TRANSFER is a diamond.">
+<path class="fig-node pri" d="M 40,124 Q 96,28 152,124 Z"/>
+<text class="fig-t" x="96" y="146">GENERATE</text>
+<text class="fig-t sm" x="96" y="164">creates transactions</text>
+<circle class="fig-node" cx="268" cy="100" r="24"/>
+<text class="fig-t" x="268" y="146">TERMINATE</text>
+<text class="fig-t sm" x="268" y="164">destroys transactions</text>
+<path class="fig-node pri" d="M 384,76 L 496,76 L 496,124 L 384,124 L 400,100 Z"/>
+<text class="fig-t" x="440" y="146">SEIZE</text>
+<text class="fig-t sm" x="440" y="164">capture a facility</text>
+<path class="fig-node sec" d="M 556,76 L 668,76 L 652,100 L 668,124 L 556,124 Z"/>
+<text class="fig-t" x="612" y="146">RELEASE</text>
+<text class="fig-t sm" x="612" y="164">free the facility</text>
+<rect class="fig-node" x="728" y="76" width="112" height="48" rx="6"/>
+<text class="fig-t" x="784" y="146">ADVANCE</text>
+<text class="fig-t sm" x="784" y="164">delay (service time)</text>
+<rect class="fig-node" x="40" y="272" width="112" height="48" rx="6"/>
+<text class="fig-t" x="96" y="342">QUEUE</text>
+<text class="fig-t sm" x="96" y="360">start timing the wait</text>
+<rect class="fig-node" x="212" y="272" width="112" height="48" rx="6"/>
+<text class="fig-t" x="268" y="342">DEPART</text>
+<text class="fig-t sm" x="268" y="360">stop timing the wait</text>
+<rect class="fig-node" x="384" y="272" width="112" height="48" rx="6"/>
+<text class="fig-t" x="440" y="342">ENTER</text>
+<text class="fig-t sm" x="440" y="360">enter a storage</text>
+<rect class="fig-node" x="556" y="272" width="112" height="48" rx="6"/>
+<text class="fig-t" x="612" y="342">LEAVE</text>
+<text class="fig-t sm" x="612" y="360">leave a storage</text>
+<polygon class="fig-node vio" points="784,268 832,296 784,324 736,296"/>
+<text class="fig-t" x="784" y="342">TRANSFER</text>
+<text class="fig-t sm" x="784" y="360">branch / route</text>
+</svg>
+<figcaption>Fig 8.3 — The standard GPSS block symbols. GENERATE is the <strong>semicircle sitting flat on the line</strong> (not a triangle), TERMINATE the <strong>circle</strong>, and TRANSFER the <strong>diamond</strong> — the only diamond in the set. SEIZE and RELEASE are the same rectangle with the notch on different edges: on the left for SEIZE, on the right for RELEASE. ADVANCE, QUEUE, DEPART, ENTER and LEAVE are plain rectangles and are told apart by their names, not their shape. Draw the shapes first and label each one; that alone is the first half of the marks.</figcaption>
+</figure>
+
 <table>
 <tr><th>Block</th><th>Symbol</th><th>Function</th></tr>
 <tr><td>GENERATE</td><td>Semicircle (flat side down)</td><td>Create transactions</td></tr>
@@ -474,6 +613,61 @@ past: [
 <tr><td>TRANSFER</td><td>◇ (Diamond)</td><td>Route/branch</td></tr>
 </table>
 <h4>Manufacturing Shop Model</h4>
+<p>Drawn with the Fig 8.3 symbols, the two stations are two runs of the same seven-block skeleton — <em>GENERATE → QUEUE → SEIZE → DEPART → ADVANCE → RELEASE</em> — with the second run ending in TERMINATE:</p>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 800 336" role="img" aria-label="GPSS block diagram of the manufacturing shop. Row one: GENERATE 8,3 creates a part, it joins the MACHQ queue, captures MACHINE, and leaves the queue. Row two: ADVANCE 6,2 machines it, RELEASE MACHINE frees the machine, it joins the INSPQ queue and captures INSPECTOR. Row three: DEPART INSPQ leaves the queue, ADVANCE 2,1 inspects it, RELEASE INSPECTOR frees the inspector, and TERMINATE 1 removes the part.">
+<defs><marker id="fg8d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+<path class="fig-node pri" d="M 20,76 Q 105,-8 190,76 Z"/>
+<text class="fig-t" x="105" y="49">GENERATE</text>
+<text class="fig-t mono" x="105" y="65">8,3</text>
+<rect class="fig-node" x="214" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="299" y="49">QUEUE</text>
+<text class="fig-t mono" x="299" y="65">MACHQ</text>
+<path class="fig-node pri" d="M 408,20 L 578,20 L 578,76 L 408,76 L 422,48 Z"/>
+<text class="fig-t" x="493" y="49">SEIZE</text>
+<text class="fig-t mono" x="493" y="65">MACHINE</text>
+<rect class="fig-node" x="602" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="687" y="49">DEPART</text>
+<text class="fig-t mono" x="687" y="65">MACHQ</text>
+<rect class="fig-node" x="20" y="140" width="170" height="56" rx="8"/>
+<text class="fig-t" x="105" y="169">ADVANCE</text>
+<text class="fig-t mono" x="105" y="185">6,2</text>
+<path class="fig-node sec" d="M 214,140 L 384,140 L 370,168 L 384,196 L 214,196 Z"/>
+<text class="fig-t" x="299" y="169">RELEASE</text>
+<text class="fig-t mono" x="299" y="185">MACHINE</text>
+<rect class="fig-node" x="408" y="140" width="170" height="56" rx="8"/>
+<text class="fig-t" x="493" y="169">QUEUE</text>
+<text class="fig-t mono" x="493" y="185">INSPQ</text>
+<path class="fig-node pri" d="M 602,140 L 772,140 L 772,196 L 602,196 L 616,168 Z"/>
+<text class="fig-t" x="687" y="169">SEIZE</text>
+<text class="fig-t mono" x="687" y="185">INSPECTOR</text>
+<rect class="fig-node" x="20" y="260" width="170" height="56" rx="8"/>
+<text class="fig-t" x="105" y="289">DEPART</text>
+<text class="fig-t mono" x="105" y="305">INSPQ</text>
+<rect class="fig-node" x="214" y="260" width="170" height="56" rx="8"/>
+<text class="fig-t" x="299" y="289">ADVANCE</text>
+<text class="fig-t mono" x="299" y="305">2,1</text>
+<path class="fig-node sec" d="M 408,260 L 578,260 L 564,288 L 578,316 L 408,316 Z"/>
+<text class="fig-t" x="493" y="289">RELEASE</text>
+<text class="fig-t mono" x="493" y="305">INSPECTOR</text>
+<circle class="fig-node" cx="687" cy="288" r="38"/>
+<text class="fig-t" x="687" y="289">TERMINATE</text>
+<text class="fig-t mono" x="687" y="305">1</text>
+<path class="fig-edge" d="M 190,48 H 214" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 384,48 H 408" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 578,48 H 602" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 772,48 H 786 V 108 H 105 V 140" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 190,168 H 214" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 384,168 H 408" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 578,168 H 602" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 772,168 H 786 V 228 H 105 V 260" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 190,288 H 214" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 384,288 H 408" marker-end="url(#fg8d)"/>
+<path class="fig-edge" d="M 578,288 H 602" marker-end="url(#fg8d)"/>
+</svg>
+<figcaption>Fig 8.4 — The manufacturing shop as a GPSS block diagram. Read it in three rows: the part is created and machined in the first two rows, then inspected in the second station of rows two and three. The shapes are the Fig 8.3 symbols, and the operand sits under each block's name, so the picture and the listing below it are the same model — that is what "explain with the GPSS block-diagram of the manufacturing shop" is asking for.</figcaption>
+</figure>
+
 <ol>
 <li><strong>GENERATE</strong> 8,3 — Parts arrive every 8±3 minutes</li>
 <li><strong>QUEUE</strong> MACHQ — Enter machine queue</li>
@@ -493,6 +687,64 @@ past: [
 <h4>Hospital Patient Flow Model</h4>
 <p><strong>System:</strong> Patients arrive → register → wait → see doctor → get treatment → leave</p>
 <h4>GPSS Block Diagram</h4>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 800 456" role="img" aria-label="GPSS block diagram of hospital patient flow. Row one: GENERATE 15,5 creates a patient, the patient joins the REGLINE queue, captures the CLERK, and leaves the queue. Row two: ADVANCE 3,1 registers the patient, RELEASE CLERK frees the clerk, the patient joins the DOCLINE queue and captures the DOCTOR. Row three: DEPART DOCLINE leaves the queue, ADVANCE 10,3 is the consultation, RELEASE DOCTOR frees the doctor, and ADVANCE 5,2 is the treatment and pharmacy time. Row four: TERMINATE 1 removes the patient.">
+<defs><marker id="fg8e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+<path class="fig-node pri" d="M 20,76 Q 105,-8 190,76 Z"/>
+<text class="fig-t" x="105" y="49">GENERATE</text>
+<text class="fig-t mono" x="105" y="65">15,5</text>
+<rect class="fig-node" x="214" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="299" y="49">QUEUE</text>
+<text class="fig-t mono" x="299" y="65">REGLINE</text>
+<path class="fig-node pri" d="M 408,20 L 578,20 L 578,76 L 408,76 L 422,48 Z"/>
+<text class="fig-t" x="493" y="49">SEIZE</text>
+<text class="fig-t mono" x="493" y="65">CLERK</text>
+<rect class="fig-node" x="602" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="687" y="49">DEPART</text>
+<text class="fig-t mono" x="687" y="65">REGLINE</text>
+<rect class="fig-node" x="20" y="140" width="170" height="56" rx="8"/>
+<text class="fig-t" x="105" y="169">ADVANCE</text>
+<text class="fig-t mono" x="105" y="185">3,1</text>
+<path class="fig-node sec" d="M 214,140 L 384,140 L 370,168 L 384,196 L 214,196 Z"/>
+<text class="fig-t" x="299" y="169">RELEASE</text>
+<text class="fig-t mono" x="299" y="185">CLERK</text>
+<rect class="fig-node" x="408" y="140" width="170" height="56" rx="8"/>
+<text class="fig-t" x="493" y="169">QUEUE</text>
+<text class="fig-t mono" x="493" y="185">DOCLINE</text>
+<path class="fig-node pri" d="M 602,140 L 772,140 L 772,196 L 602,196 L 616,168 Z"/>
+<text class="fig-t" x="687" y="169">SEIZE</text>
+<text class="fig-t mono" x="687" y="185">DOCTOR</text>
+<rect class="fig-node" x="20" y="260" width="170" height="56" rx="8"/>
+<text class="fig-t" x="105" y="289">DEPART</text>
+<text class="fig-t mono" x="105" y="305">DOCLINE</text>
+<rect class="fig-node" x="214" y="260" width="170" height="56" rx="8"/>
+<text class="fig-t" x="299" y="289">ADVANCE</text>
+<text class="fig-t mono" x="299" y="305">10,3</text>
+<path class="fig-node sec" d="M 408,260 L 578,260 L 564,288 L 578,316 L 408,316 Z"/>
+<text class="fig-t" x="493" y="289">RELEASE</text>
+<text class="fig-t mono" x="493" y="305">DOCTOR</text>
+<rect class="fig-node" x="602" y="260" width="170" height="56" rx="8"/>
+<text class="fig-t" x="687" y="289">ADVANCE</text>
+<text class="fig-t mono" x="687" y="305">5,2</text>
+<circle class="fig-node" cx="105" cy="408" r="38"/>
+<text class="fig-t" x="105" y="409">TERMINATE</text>
+<text class="fig-t mono" x="105" y="425">1</text>
+<path class="fig-edge" d="M 190,48 H 214" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 384,48 H 408" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 578,48 H 602" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 772,48 H 786 V 108 H 105 V 140" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 190,168 H 214" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 384,168 H 408" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 578,168 H 602" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 772,168 H 786 V 228 H 105 V 260" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 190,288 H 214" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 384,288 H 408" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 578,288 H 602" marker-end="url(#fg8e)"/>
+<path class="fig-edge" d="M 772,288 H 786 V 348 H 105 V 380" marker-end="url(#fg8e)"/>
+</svg>
+<figcaption>Fig 8.5 — Hospital patient flow as a GPSS block diagram. The two service stations are the same seven-block skeleton used twice: the registration clerk (rows one and two) and the doctor (rows two and three), with the pharmacy time as a bare ADVANCE because no single server is named for it. Follow the wrap arrows at the right edge to read the rows in order.</figcaption>
+</figure>
+
 <ol>
 <li><strong>GENERATE</strong> 15,5 — Patients arrive every 15±5 minutes</li>
 <li><strong>QUEUE</strong> REGLINE — Enter registration queue</li>
@@ -530,6 +782,40 @@ past: [
 <p>Block-oriented language for discrete-event simulation. Transactions flow through blocks.</p>
 <p><strong>Key Blocks:</strong> GENERATE (create), TERMINATE (destroy), SEIZE/RELEASE (use server), ADVANCE (delay), QUEUE/DEPART (queue tracking)</p>
 <h4>Example: Bank Queue Model</h4>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 800 216" role="img" aria-label="GPSS block diagram of a bank queue. Row one: GENERATE 5,2 creates a customer, the customer joins the WAIT queue, captures the TELLER, and leaves the queue. Row two: ADVANCE 4,1 is the service, RELEASE TELLER frees the teller, and TERMINATE 1 removes the customer.">
+<defs><marker id="fg8f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+<path class="fig-node pri" d="M 20,76 Q 105,-8 190,76 Z"/>
+<text class="fig-t" x="105" y="49">GENERATE</text>
+<text class="fig-t mono" x="105" y="65">5,2</text>
+<rect class="fig-node" x="214" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="299" y="49">QUEUE</text>
+<text class="fig-t mono" x="299" y="65">WAIT</text>
+<path class="fig-node pri" d="M 408,20 L 578,20 L 578,76 L 408,76 L 422,48 Z"/>
+<text class="fig-t" x="493" y="49">SEIZE</text>
+<text class="fig-t mono" x="493" y="65">TELLER</text>
+<rect class="fig-node" x="602" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="687" y="49">DEPART</text>
+<text class="fig-t mono" x="687" y="65">WAIT</text>
+<rect class="fig-node" x="20" y="140" width="170" height="56" rx="8"/>
+<text class="fig-t" x="105" y="169">ADVANCE</text>
+<text class="fig-t mono" x="105" y="185">4,1</text>
+<path class="fig-node sec" d="M 214,140 L 384,140 L 370,168 L 384,196 L 214,196 Z"/>
+<text class="fig-t" x="299" y="169">RELEASE</text>
+<text class="fig-t mono" x="299" y="185">TELLER</text>
+<circle class="fig-node" cx="493" cy="168" r="38"/>
+<text class="fig-t" x="493" y="169">TERMINATE</text>
+<text class="fig-t mono" x="493" y="185">1</text>
+<path class="fig-edge" d="M 190,48 H 214" marker-end="url(#fg8f)"/>
+<path class="fig-edge" d="M 384,48 H 408" marker-end="url(#fg8f)"/>
+<path class="fig-edge" d="M 578,48 H 602" marker-end="url(#fg8f)"/>
+<path class="fig-edge" d="M 772,48 H 786 V 108 H 105 V 140" marker-end="url(#fg8f)"/>
+<path class="fig-edge" d="M 190,168 H 214" marker-end="url(#fg8f)"/>
+<path class="fig-edge" d="M 384,168 H 408" marker-end="url(#fg8f)"/>
+</svg>
+<figcaption>Fig 8.6 — The bank-queue example as a block diagram. The seven blocks are the generic skeleton; only the two numbers (5,2 and 4,1) and the two names (WAIT, TELLER) change from model to model, which is the point to make when a question asks for "GPSS in brief with a suitable example".</figcaption>
+</figure>
+
 <ol>
 <li><strong>GENERATE</strong> 5,2 — Customers arrive every 5±2 minutes</li>
 <li><strong>QUEUE</strong> WAIT — Enter waiting line</li>
@@ -651,7 +937,43 @@ past: [
 </table>
 
 <h4>Block diagram of the model</h4>
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 800 216" role="img" aria-label="GPSS block diagram of a petrol pump at a filling station. Row one: GENERATE 8,3 creates a car, the car joins the PUMPQ queue, captures the PUMP, and leaves the queue. Row two: ADVANCE 6,2 is the refuelling and payment time, RELEASE PUMP frees the pump, and TERMINATE 1 removes the car.">
+<defs><marker id="fg8g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+<path class="fig-node pri" d="M 20,76 Q 105,-8 190,76 Z"/>
+<text class="fig-t" x="105" y="49">GENERATE</text>
+<text class="fig-t mono" x="105" y="65">8,3</text>
+<rect class="fig-node" x="214" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="299" y="49">QUEUE</text>
+<text class="fig-t mono" x="299" y="65">PUMPQ</text>
+<path class="fig-node pri" d="M 408,20 L 578,20 L 578,76 L 408,76 L 422,48 Z"/>
+<text class="fig-t" x="493" y="49">SEIZE</text>
+<text class="fig-t mono" x="493" y="65">PUMP</text>
+<rect class="fig-node" x="602" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="687" y="49">DEPART</text>
+<text class="fig-t mono" x="687" y="65">PUMPQ</text>
+<rect class="fig-node" x="20" y="140" width="170" height="56" rx="8"/>
+<text class="fig-t" x="105" y="169">ADVANCE</text>
+<text class="fig-t mono" x="105" y="185">6,2</text>
+<path class="fig-node sec" d="M 214,140 L 384,140 L 370,168 L 384,196 L 214,196 Z"/>
+<text class="fig-t" x="299" y="169">RELEASE</text>
+<text class="fig-t mono" x="299" y="185">PUMP</text>
+<circle class="fig-node" cx="493" cy="168" r="38"/>
+<text class="fig-t" x="493" y="169">TERMINATE</text>
+<text class="fig-t mono" x="493" y="185">1</text>
+<path class="fig-edge" d="M 190,48 H 214" marker-end="url(#fg8g)"/>
+<path class="fig-edge" d="M 384,48 H 408" marker-end="url(#fg8g)"/>
+<path class="fig-edge" d="M 578,48 H 602" marker-end="url(#fg8g)"/>
+<path class="fig-edge" d="M 772,48 H 786 V 108 H 105 V 140" marker-end="url(#fg8g)"/>
+<path class="fig-edge" d="M 190,168 H 214" marker-end="url(#fg8g)"/>
+<path class="fig-edge" d="M 384,168 H 408" marker-end="url(#fg8g)"/>
+</svg>
+<figcaption>Fig 8.7 — The petrol pump drawn in GPSS symbols. Everything above the TERMINATE is one facility and one queue; the figure is the "any discrete system" answer in its smallest honest form, and the note that follows says which two blocks change if a second pump is added.</figcaption>
+</figure>
 
+
+<details class="fig-source">
+<summary>Show the hand-typed block diagram this figure replaces</summary>
 <div class="code-block">   &#9661;  GENERATE 8,3        ; cars arrive every 8 &#177; 3 minutes
 
    &#9634;  QUEUE    PUMPQ       ; join the queue at the pump
@@ -671,6 +993,7 @@ past: [
 
 
    START 200             ; simulate 200 cars</div>
+</details>
 
 <ol>
 
@@ -722,11 +1045,57 @@ past: [
 <p>If investment at time t affects GDP at t, t+1, and t+2 with weights 0.5, 0.3, 0.2:</p>
 <p>GDP(t) = 0.5×Investment(t) + 0.3×Investment(t-1) + 0.2×Investment(t-2)</p>
 <p>The total effect of one unit of investment = 0.5+0.3+0.2 = 1.0 (spread over 3 periods).</p>`},
-  {year:"2011 C", marks:"2", repeats:1, q:"Show the GPSS block diagram to represent soap quality testing system",
+  {year:"2011 C", marks:"2", repeats:1, src:["n2p57"], q:"Show the GPSS block diagram to represent soap quality testing system",
    answer:`<h4>Answer</h4>
 
 <p>In a soap quality-testing system each manufactured bar of soap is taken from the production line, tested for weight, hardness and lather, and either accepted or rejected. The model is a single-server inspection station with two exits.</p>
 
+<figure class="figure-wrap">
+<svg class="figure wide" viewBox="0 0 800 352" role="img" aria-label="GPSS block diagram of a soap quality-testing system. Row one: GENERATE 30,10 creates a soap bar, the bar joins the TESTQ queue, captures the TESTER, and leaves the queue. Row two: ADVANCE 12,3 is the testing time, RELEASE TESTER frees the tester, and TRANSFER 0.10,,REJECT is the diamond that splits the flow. The fall-through exit goes down to TERMINATE 1 for accepted bars, and the REJECT exit goes right and down to TERMINATE 2 for rejected bars.">
+<defs><marker id="fg8h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fig-head pri"/></marker></defs>
+<path class="fig-node pri" d="M 20,76 Q 105,-8 190,76 Z"/>
+<text class="fig-t" x="105" y="49">GENERATE</text>
+<text class="fig-t mono" x="105" y="65">30,10</text>
+<rect class="fig-node" x="214" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="299" y="49">QUEUE</text>
+<text class="fig-t mono" x="299" y="65">TESTQ</text>
+<path class="fig-node pri" d="M 408,20 L 578,20 L 578,76 L 408,76 L 422,48 Z"/>
+<text class="fig-t" x="493" y="49">SEIZE</text>
+<text class="fig-t mono" x="493" y="65">TESTER</text>
+<rect class="fig-node" x="602" y="20" width="170" height="56" rx="8"/>
+<text class="fig-t" x="687" y="49">DEPART</text>
+<text class="fig-t mono" x="687" y="65">TESTQ</text>
+<rect class="fig-node" x="20" y="140" width="170" height="56" rx="8"/>
+<text class="fig-t" x="105" y="169">ADVANCE</text>
+<text class="fig-t mono" x="105" y="185">12,3</text>
+<path class="fig-node sec" d="M 214,140 L 384,140 L 370,168 L 384,196 L 214,196 Z"/>
+<text class="fig-t" x="299" y="169">RELEASE</text>
+<text class="fig-t mono" x="299" y="185">TESTER</text>
+<polygon class="fig-node vio" points="493,122 578,168 493,214 408,168"/>
+<text class="fig-t" x="493" y="169">TRANSFER</text>
+<text class="fig-t mono" x="493" y="185">0.10,,REJECT</text>
+<circle class="fig-node" cx="493" cy="288" r="38"/>
+<text class="fig-t" x="493" y="289">TERMINATE</text>
+<text class="fig-t mono" x="493" y="305">1</text>
+<circle class="fig-node" cx="687" cy="288" r="38"/>
+<text class="fig-t" x="687" y="289">TERMINATE</text>
+<text class="fig-t mono" x="687" y="305">2</text>
+<text class="fig-t sm" x="493" y="340">90 % fall through &#8594; accepted</text>
+<text class="fig-t sm" x="687" y="340">10 % branch &#8594; rejected</text>
+<path class="fig-edge" d="M 190,48 H 214" marker-end="url(#fg8h)"/>
+<path class="fig-edge" d="M 384,48 H 408" marker-end="url(#fg8h)"/>
+<path class="fig-edge" d="M 578,48 H 602" marker-end="url(#fg8h)"/>
+<path class="fig-edge" d="M 772,48 H 786 V 108 H 105 V 140" marker-end="url(#fg8h)"/>
+<path class="fig-edge" d="M 190,168 H 214" marker-end="url(#fg8h)"/>
+<path class="fig-edge" d="M 384,168 H 408" marker-end="url(#fg8h)"/>
+<path class="fig-edge" d="M 493,214 V 250" marker-end="url(#fg8h)"/>
+<path class="fig-edge acc" d="M 578,168 H 687 V 250" marker-end="url(#fg8h)"/>
+<text class="fig-t sm acc start" x="698" y="215">REJECT</text>
+</svg>
+<figcaption>Fig 8.8 — Soap quality testing in GPSS symbols. The one new shape compared with Fig 8.7 is the <strong>TRANSFER diamond</strong>, and it is the only block in these models with two exits: the fall-through to <strong>TERMINATE 1</strong> and the labelled branch to <strong>TERMINATE 2</strong>. The operand is the <em>rejected</em> fraction, so <strong>0.10</strong> sends 10 % of the bars to REJECT and lets the 90 % good ones fall through — the same convention as the §8.2 worked model, which writes that split as <code>TRANSFER 0.1,ACC,REJ</code>. Mark both exits and write the branch target on the diagram, because an unlabelled branch is where the marks are lost.</figcaption>
+</figure>
+<details class="fig-source">
+<summary>Show the hand-typed block diagram this figure replaces</summary>
 <div class="code-block">   &#9661;  GENERATE 30,10        ; a soap bar arrives every 30 &#177; 10 minutes
 
    &#9634;  QUEUE    TESTQ        ; join the testing queue
@@ -739,7 +1108,7 @@ past: [
 
    &#9634;  RELEASE  TESTER       ; free the tester
 
-&#9671;  TRANSFER 0.90,,REJECT    ; 90 % pass &#8594; continue, 10 % go to REJECT
+&#9671;  TRANSFER 0.10,,REJECT    ; the operand is the rejected fraction: 10 % &#8594; REJECT
 
 &#9675;  TERMINATE 1            ; ACCEPTED bars leave the system
 
@@ -750,6 +1119,7 @@ REJECT&#9675;  TERMINATE 2      ; REJECTED bars leave and are counted separately
 
 
    START 500                 ; run until 500 bars have been tested</div>
+</details>
 
 <table class="comparison-table">
 
@@ -763,7 +1133,7 @@ REJECT&#9675;  TERMINATE 2      ; REJECTED bars leave and are counted separately
 
 <tr><td>ADVANCE 12,3</td><td>Inspection time of one bar</td></tr>
 
-<tr><td>TRANSFER 0.90,,REJECT</td><td>Splits the flow randomly: 90 % accepted, 10 % routed to the REJECT label</td></tr>
+<tr><td>TRANSFER 0.10,,REJECT</td><td>Splits the flow randomly: the first operand is the <em>rejected</em> fraction, so 10 % are routed to the REJECT label and the other 90 % fall through to be accepted</td></tr>
 
 <tr><td>TERMINATE 1 / TERMINATE 2</td><td>Two exit counters, so accepted and rejected bars are reported separately</td></tr>
 
@@ -879,7 +1249,7 @@ REJECT&#9675;  TERMINATE 2      ; REJECTED bars leave and are counted separately
 <tr><td><strong>Event Routines</strong></td><td>Define processing logic for each event type. When an event occurs, its routine is called to update system state.</td></tr>
 </table>
 <p><strong>Advantages:</strong> English-like syntax, flexible entity management, powerful set operations, built-in statistics.</p>`},
-  {year:"2010 C", marks:"2+8", repeats:1, q:"Define state descriptor and discrete event. How do you simulate a telephone system, explain with its states", occ:[{year:"2010 C", marks:"2+8", q:"Define state descriptor and discrete event. How do you simulate a .telephone system, explain with its states"}],
+  {year:"2010 C", marks:"2+8", repeats:1, src:["n2p58"], q:"Define state descriptor and discrete event. How do you simulate a telephone system, explain with its states", occ:[{year:"2010 C", marks:"2+8", q:"Define state descriptor and discrete event. How do you simulate a .telephone system, explain with its states"}],
    answer:`<h4>Answer</h4>
 
 <h4>Definitions (2 marks)</h4>
@@ -998,6 +1368,26 @@ B = (A&#178;/2) / (1 + A + A&#178;/2) = 0.5 / 2.5 = <strong>0.20</strong></span>
 
 </div>
 
-<p><strong>Where the model extends:</strong> if callers are made to wait instead of being lost (a queuing, not a loss, system) the state descriptor is unchanged but the ARRIVAL routine must place the call in a queue and the COMPLETION routine must serve the first waiting call; if callers <em>retry</em> after being blocked, the arrival process becomes dependent on the blocking history and the model becomes far richer.</p>`}
+<p><strong>Where the model extends:</strong> if callers are made to wait instead of being lost (a queuing, not a loss, system) the state descriptor is unchanged but the ARRIVAL routine must place the call in a queue and the COMPLETION routine must serve the first waiting call; if callers <em>retry</em> after being blocked, the arrival process becomes dependent on the blocking history and the model becomes far richer.</p>
+
+<h4>5. The same system as the class notes write it in GPSS</h4>
+
+<p>The notes simulate the telephone exchange as a <em>waiting</em> (queuing) system rather than a lost-call one, which is the other half of the same model: a call that finds every line busy waits in a queue instead of being dropped, so the answer above describes the lost-call variant and this program the queuing variant. Note how directly the block names follow the event routines — GENERATE is the ARRIVAL routine, ADVANCE is the holding time, and TERMINATE 1 counts the calls out.</p>
+
+<div class="code-block">GENERATE 3,1      ; calls arrive every 3 &#177; 1 time unit
+
+QUEUE    Callque  ; joins the queue if every line is busy
+
+SEIZE    Phoneline ; a line is seized when one is available
+
+DEPART   Callque  ; the call leaves the queue
+
+ADVANCE  5,2      ; call duration 5 &#177; 2 time units
+
+RELEASE  Phoneline ; the line is released
+
+TERMINATE 1       ; the call leaves the system</div>
+
+<p class="page-src">The operands above are handwritten on the notes' page — <button class="page-chip" type="button" data-page="n2p58" title="Class notes, n2 p58 — telephone system GPSS program and the CSSL definition">n2 p58</button> — so check them against the page rather than against this copy.</p>`}
 ]
 };

@@ -1,0 +1,174 @@
+{
+ "_comment": [
+  "Unit 5's batch. Same rules as voice_curate.json.",
+  "",
+  "This is the unit with the most forward pointers in the portal: almost every",
+  "paragraph of 5.2 and 5.4 ends by naming the unit that returns to it. The fact",
+  "stays in every case; the unit number and the 'this is the bridge into' framing",
+  "go. One heading ('5.2.4 Challenges &mdash; brief here, examined in Unit 8') and one",
+  "sentence that lists four figures by name are quoted in full as `find`/`to`."
+ ],
+ "edits": [
+  {
+   "ch": "ch5.js",
+   "tell": "editorial",
+   "why": "'worth one line of its own' rates the paragraph; the five pieces are the content",
+   "old": "What each of the five contributes is worth one line of its own, because the list is really asking what a cloud is made of.",
+   "new": "What each of the five contributes:"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "what distributed systems allow is the fact; the unit that taught it is a pointer",
+   "old": "re what allow one service to run across many machines at all (Unit 1)",
+   "new": "llow one service to run across many machines at all"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the isolation and multiplexing are the contribution; which unit is their subject is a pointer",
+   "old": ", which is the subject of Unit 6",
+   "new": ""
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the interface idea is the contribution; the section numbers it is taught in are navigation",
+   "old": " (Unit 2.4 and the delivery models in 5.3).",
+   "new": "."
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "location transparency applied to data is the fact; which unit it comes from is a pointer",
+   "old": "from Unit 1, ",
+   "new": ""
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the objection is the fact; which unit raises it is a pointer",
+   "old": "and the objection in Unit 8, where relinquishing control becomes a security question.",
+   "new": "and the objection that relinquishing control becomes a security question."
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the claim about cloud storage is the fact; 'the cloud's version of Unit 1's location transparency' is the same idea wearing a pointer",
+   "old": "the cloud's version of Unit 1's location transparency",
+   "new": "location transparency applied to data"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the security question is the fact; the unit number is a pointer",
+   "old": "Unit 8's",
+   "new": "the"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "meta",
+   "why": "a sentence commenting on how the two lists read rather than on what they say",
+   "old": "Both are easy to skim and both are where the unit's later arguments come from. ",
+   "new": ""
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the two that reappear are the fact; the unit, section and 'end of this chapter' are navigation",
+   "old": "Vendor lock-in and loss of control are the two that reappear in Unit 8 as diversity of services and data confidentiality, and in the de-perimeterisation discussion at the end of this chapter.",
+   "new": "Vendor lock-in and loss of control are the two that reappear as diversity of services and data confidentiality, and in the de-perimeterisation discussion."
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the heading names its subject; 'brief here, examined in Unit 8' is a reading order",
+   "old": "5.2.4 Challenges — brief here, examined in Unit 8",
+   "new": "5.2.4 Challenges"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the challenges sitting beside the advantages is the fact; 'because Unit 8 returns to them' is a pointer",
+   "old": "The challenges sit beside the advantages, one line each, because Unit 8 returns to them:",
+   "new": "The challenges sit beside the advantages, one line each:"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "a line whose whole content is a section number in another unit",
+   "old": "This is Unit 6's 6.4.",
+   "new": ""
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "a sentence mapping two topics onto later unit numbers; the topics are already named in the lists it follows",
+   "old": "SLA management and billing and accounting from the first list are the two that return as topics in Unit 8 (8.3), and identity and authentication in the second is 8.2's IAM.",
+   "new": ""
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "what a provider needs is the fact; 'the honest answer to' and the unit number are the framing around it",
+   "old": "That is the honest answer to \"what does it take to be a cloud provider\": the virtualized infrastructure of Unit 6 is necessary and nowhere near sufficient, and the parts a customer actually judges the service on are in the middle list.",
+   "new": "The virtualized infrastructure is necessary and nowhere near sufficient; the parts a customer actually judges the service on are in the middle list."
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the two controls are the fact; 'the bridge into Unit 8' and the section numbers are navigation",
+   "old": "This is the bridge into Unit 8: once the perimeter is gone, identity and access management (8.2) and data-level security (8.1) are the only controls left.",
+   "new": "Once the perimeter is gone, identity and access management and data-level security are the only controls left."
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "meta",
+   "why": "which layer controls what is the fact; 'in the figure below' is a page direction",
+   "old": "in the figure below show the difference:",
+   "new": "show"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "meta",
+   "why": "'the definition below' is a page direction; which terms the definition is stated in is the fact",
+   "old": "Only the first is about a deployment model specifically; the rest are the infrastructure the four models are configurations of, which is why the definition below",
+   "new": "The four models are configurations of one infrastructure, so the definition"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "editorial",
+   "why": "the fit of PaaS is the fact; 'add that' and 'that sentence is what makes it a comparison' are advice about answering",
+   "old": "Add that PaaS is a poor fit when the application must be portable or must run on customised hardware — that sentence is what makes it a comparison rather than two definitions.",
+   "new": "PaaS is a poor fit when the application must be portable or must run on customised hardware."
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "meta",
+   "why": "the sentence lists the pictures and how to read them, which is the Reference tab's job now that each picture carries its own note there; none of it is a fact about deployment models",
+   "find": "Four figures illustrate this section: the <strong>private cloud</strong> diagram with its legitimate access path and its boundary, the <strong>components of a cloud infrastructure</strong> &mdash; servers, storage devices, network, cloud management software and deployment software &mdash; the <strong>infrastructural constraints</strong> page that sits beside this material, and a research figure showing a <strong>computing node as both data source and data sink</strong> with the task servers it interacts with.",
+   "to": ""
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the column holding this table's rows is section numbers inside the unit; a row pointing at another unit is not a section reference",
+   "find": "<td>Unit 6</td>",
+   "to": "<td>&mdash;</td>"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "editorial",
+   "why": "'worth one line of its own' rates the paragraph; the five pieces are the content",
+   "find": "What each of the five contributes is worth one line of its own, because the list is really asking what a cloud is <em>made of</em>.",
+   "to": "What each of the five contributes:"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "crossref",
+   "why": "the two that reappear are the fact; the unit, the section numbers and 'end of this chapter' are navigation",
+   "find": "Vendor lock-in and loss of control are the two that reappear in Unit 8 as <em>diversity of services</em> and <em>data confidentiality</em>, and in the de-perimeterisation discussion at the end of this chapter.",
+   "to": "Vendor lock-in and loss of control are the two that reappear as <em>diversity of services</em> and <em>data confidentiality</em>, and in the de-perimeterisation discussion."
+  }
+ ]
+}

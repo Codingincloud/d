@@ -1,0 +1,191 @@
+{
+ "_comment": [
+  "Unit 2's batch. Same rules as voice_curate.json.",
+  "",
+  "Unit 2 is where the reader's own example lives: 'Unit 1 established that the",
+  "components of a distributed system communicate only by passing messages'. It was",
+  "the opener of the unit, and it is the shape of the whole family - a sentence whose",
+  "subject is the writing, the course or the reading order rather than the material.",
+  "Each one here is replaced by the fact it was standing in front of.",
+  "",
+  "Two entries are written as exact markup (`find`/`to`) because their span carries",
+  "<strong> tags; the tool refuses those as prose, which is the rule working."
+ ],
+ "edits": [
+  {
+   "ch": "ch2.js",
+   "tell": "meta",
+   "why": "the section says what message passing cannot do and what this unit supplies; 'where this unit sits' says neither",
+   "old": "Where this unit sits",
+   "new": "Passing messages is the base"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "crossref",
+   "why": "the reader's own example: the fact is about components, not about what Unit 1 did",
+   "find": "Unit 1 established that the components of a distributed system communicate <em>only by passing messages</em>.",
+   "to": "The components of a distributed system communicate <em>only by passing messages</em>."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "reader",
+   "why": "'that is a negative statement about what they cannot do' comments on the previous sentence instead of stating the limit",
+   "old": "That is a negative statement about what they cannot do — they cannot share memory or read each other's clocks.",
+   "new": "They cannot share memory or read each other's clocks."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "meta",
+   "why": "'builds on that base' is the course map; what the unit supplies is the fact",
+   "old": "This unit builds on that base: the programming abstractions that make message passing look like an ordinary call, and the mechanisms underneath them.",
+   "new": "The programming abstractions that make message passing look like an ordinary call come next, along with the mechanisms underneath them."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "crossref",
+   "why": "the third column is the consequence for a distributed object; the column header already says so",
+   "old": "The first column is the local-object reality; the third column is why every mechanism later in this unit exists.",
+   "new": "The first column is the local-object reality; the third is the consequence for a distributed object."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "crossref",
+   "why": "the IDL's language neutrality is the fact; the unit it answers a question in, and where CORBA is taught, are navigation",
+   "old": ", which is Unit 1.3's heterogeneity answer applied to objects — and it is why CORBA is the middleware example in 4.3.2.",
+   "new": "."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "crossref",
+   "why": "the single-language limit is the fact; which pane of which unit lists it is a pointer",
+   "old": ", which is why it appears here as a language's own mechanism and in 4.3.3 as a middleware family with that same limitation.",
+   "new": "."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "crossref",
+   "why": "the application tier exposed as an API is the fact; the figure number, the unit it comes from and the unit it leads to are the bridge talk around it",
+   "old": "This is the multitier model from Unit 1 (Fig 1.1) with the application tier exposed to the world as an API, and it is the bridge from this unit to Unit 5: once the application tier is a web service, where it runs stops mattering, and that is the beginning of cloud computing.",
+   "new": "The application tier is exposed to the world as an API: once it is a web service, where it runs stops mattering."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "crossref",
+   "why": "the layers are the three tiers; 'Unit 1's' is a pointer and 'they read in this order' is a reading order",
+   "old": "The layers are Unit 1's tiers with the middle one exposed to the network, and they read in this order.",
+   "new": "The layers are the three tiers with the middle one exposed to the network."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "crossref",
+   "why": "the implementation detail is the fact; 'can be moved into a cloud in Unit 5' is a pointer to a later unit",
+   "old": "whether the machine behind that connection is yours or a provider's is an implementation detail — and a design that cannot tell the difference is exactly the one that can be moved into a cloud in Unit 5.",
+   "new": "whether the machine behind that connection is yours or a provider's is an implementation detail — and a design that cannot tell the difference can be run anywhere."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "meta",
+   "why": "two mechanisms are the fact; 'the two halves of this unit's programming model' is a comment on the unit's structure",
+   "old": "Two mechanisms are used for communication between distributed objects, and they are the two halves of this unit's programming model: ",
+   "new": "Two mechanisms are used for communication between distributed objects: "
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "meta",
+   "why": "'see below' points at the row two rows down; the fact is that a lost reply is repaired by keeping results",
+   "old": "Retransmit, or keep a history of results (see below).",
+   "new": "Retransmit, or keep a history of results."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "meta",
+   "why": "the sentence is about the example's position on the page; four files is the fact",
+   "old": "Four files make a Java RMI application, and the Hello example below is the one to reproduce:",
+   "new": "Four files make a Java RMI application:"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "meta",
+   "why": "'this sub-topic' comments on the section's place in the unit; what sits underneath is the fact",
+   "old": "This sub-topic is about the two things underneath: ",
+   "new": "Two things sit underneath: "
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "meta",
+   "why": "'in this unit' is the unit's map again; every mechanism in the subject has to serialize",
+   "old": "Every mechanism in this unit eventually has to put a structured value",
+   "new": "Every mechanism here has to put a structured value"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "editorial",
+   "why": "'the list is short enough to be reproduced as it stands' rates the list instead of stating the trade",
+   "old": " — and the list is short enough to be reproduced as it stands.",
+   "new": "."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "editorial",
+   "why": "the table's five roles are the content; 'the one to reproduce when explaining' is advice about answering",
+   "old": "This table is the one to reproduce when explaining RMI's architecture. ",
+   "new": ""
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "editorial",
+   "why": "'the thing to know' rates the contrast; that two implementations matter is the fact",
+   "old": "Two implementations matter here, and the contrast between them is the thing to know:",
+   "new": "Two implementations of it matter here:"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "editorial",
+   "why": "'worth writing out' is advice; the contrast itself is the fact",
+   "old": "The contrast worth writing out is not which mechanism is better but ",
+   "new": "The contrast is not which mechanism is better but "
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "editorial",
+   "why": "'not a ranking' rates the rows; what the rows are is a trade",
+   "old": "The last two rows are a trade, not a ranking.",
+   "new": "The last two rows buy different things."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "editorial",
+   "why": "'the useful detail' rates the clause; the clause itself is the content",
+   "old": "That \"still valid\" clause is the useful detail: a timeout tells you the peer did not answer in time, not that the channel is broken.",
+   "new": "A timeout tells you the peer did not answer in time, not that the channel is broken."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "editorial",
+   "why": "'explains the adjectives' and 'is what makes it weaker' are commentary around the two halves of one comparison",
+   "old": "That one difference explains the adjectives: fewer layers to parse, fewer bytes on the wire and no tooling needed to read the interface make REST lightweight and flexible, while the same missing contract is what makes it weaker where a service must be described to a machine before it can be called.",
+   "new": "Fewer layers to parse, fewer bytes on the wire and no tooling needed to read the interface make REST lightweight and flexible; the same missing contract makes it weaker where a service must be described to a machine before it can be called."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "meta",
+   "why": "the sentence's job was to send the reader to the pictures and fix a reading order; the ideas those pictures carry are the content, so they stay and the pointer goes",
+   "find": "The pictures for this section are on the <a href=\"#/ch/2/reference\">Reference</a> tab, and they are worth reading in this order: the <strong>post office and the pony express</strong>, which is the note's illustration of what it means for a message to be stored and forwarded rather than discarded; the <strong>temporal relationships between data items</strong>, which is the idea that correct interpretation depends on when items arrived; the <strong>token bucket</strong>, the standard picture of a stream being paced; a <strong>broker with conversion rules</strong> between a source and a destination client, which is messaging middleware from Unit 4.3.4 drawn early; and the <strong>interleaving of two streams</strong>, where a receiver reads two audio units for every video unit &mdash; the concrete case of why synchronicity has to be specified rather than assumed.",
+   "to": "The diagrams carry five ideas: a message can be <strong>stored and forwarded</strong> rather than discarded; the <strong>temporal relationship between data items</strong> decides how they are interpreted; a <strong>token bucket</strong> is how a stream is paced; a <strong>broker with conversion rules</strong> between a source and a destination client is messaging middleware; and the <strong>interleaving of two streams</strong> &mdash; a receiver reading two audio units for every video unit &mdash; is why synchronicity has to be specified rather than assumed."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "meta",
+   "why": "same shape for the socket material: the order is a reading order, the sequence of interfaces is the content",
+   "find": "The pictures for this section are on the <a href=\"#/ch/2/reference\">Reference</a> tab, and build the socket material up in this order: the client and server threads with their endpoint sockets and ports, the <code>MPI</code> sending-and-receiving page that shows the message-passing primitives underneath the same idea, the client thread's local I/O port, the <code>XTI</code> transport interface as the alternative to sockets on other systems, and then the Java TCP classes in the order they build up &mdash; <code>Socket</code> and <code>ServerSocket</code>, then a complete server example.",
+   "to": "Sockets are built up in this order: the client and server threads with their endpoint sockets and ports; the <code>MPI</code> sending-and-receiving page, which shows the message-passing primitives underneath the same idea; the client thread's local I/O port; the <code>XTI</code> transport interface as the alternative to sockets on other systems; and the Java TCP classes &mdash; <code>Socket</code> and <code>ServerSocket</code>, then a complete server example."
+  },
+  {
+   "ch": "ch2.js",
+   "find": "\n\n<h2>Passing messages is the base</h2>\n<p>",
+   "to": "\n\n<p>",
+   "tell": "meta",
+   "why": "the paragraph under this heading says the same thing in its first sentence, so the heading only announced what the sentence was about; the unit's own title is the opener"
+  }
+ ]
+}

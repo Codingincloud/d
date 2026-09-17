@@ -1,0 +1,37 @@
+{
+  "_about": "Slides whose topic the syllabus does not cover. They match nothing in the notes, so the matcher files them where the noise points - a slide about routing defaults landed under a heading about pizza. Each group is collected into one labelled section at the end of a unit instead: nothing is discarded, nothing is mis-filed, and the set is small enough to read through and check. Removing a group from this file puts its slides back into the ordinary match.",
+  "groups": [
+    {
+      "unit": 7,
+      "heading": "Extra slides from the reference deck, not on the syllabus",
+      "intro": "The reference deck's slides 79&ndash;93 are a survey of networking protocols &mdash; what a protocol is, the gossip or epidemic protocol, OSI and CNLP fragmentation, routing with IP/IPX/RIP, multicast, SSH and SFTP, packet loss, XMPP, wireless protocols, IGRP, PTP and MTP. The syllabus names <em>none</em> of them: search the printed sub-topics for protocol, OSI, routing, gossip, CNLP or MTP and there is no match, and no question on the Model Question 2025 concerns them. They are kept here because they are your teacher's material and worth seeing once, in one place, labelled for what they are &mdash; rather than scattered through the unit, where a slide about routing defaults sits under a heading about pizza. Nothing here is examinable from this syllabus; the messaging and web-service material that <em>is</em> examinable is Unit 2.",
+      "figures": {
+        "ch5/ref-cloudcomptng-s80-132.webp": "What a protocol is: a set of rules that let two devices connect and exchange information, used for storage, communication, encryption, networking, security and login management.",
+        "ch5/ref-cloudcomptng-s81-133.webp": "The gossip (epidemic) protocol: an anti-entropy repair mechanism that spreads information through a network by flooding.",
+        "ch5/ref-cloudcomptng-s82-134.webp": "Gossip used for failure detection and messaging: nodes gradually report on the rest of the system while data is spread rapidly, wrapped in TCP to reach the right destination, with a separate monitoring mechanism.",
+        "ch5/ref-cloudcomptng-s83-135.webp": "CNLP and the OSI model: fragmentation by data-unit identification, length and offset address; identical in shape to IP, with a 20-byte address instead of IP's 4 bytes.",
+        "ch5/ref-cloudcomptng-s84-136.webp": "Routing: a routing algorithm chooses a path for the information, with IP and IPX as examples and RIP as the protocol that reports what the path is.",
+        "ch5/ref-cloudcomptng-s85-137.webp": "A multicast protocol that sends data to many nodes through a router, used for streaming video and gaming over the cloud.",
+        "ch5/ref-cloudcomptng-s86-138.webp": "A cryptographic network protocol for secure remote login over the Internet, giving remote access with encryption and access control.",
+        "ch5/ref-cloudcomptng-s87-139.webp": "The decryption algorithm sits on the remote server, which decrypts the user id and password: the replacement for Telnet and rlogin.",
+        "ch5/ref-cloudcomptng-s88-140.webp": "Network traffic and packet loss: packets are lost when new packets arrive through a switch, so data is lost as well.",
+        "ch5/ref-cloudcomptng-s89-141.webp": "XMPP: publish-subscribe messaging, video and file transfer in the cloud, developed by the Jabber open-source community in 1999.",
+        "ch5/ref-cloudcomptng-s90-142.webp": "Wireless protocols: data routed point-to-point over the cloud, with a described data format on the network and guarantees attached to delivery.",
+        "ch5/ref-cloudcomptng-s91-143.webp": "IGRP: replaced in 1993 for not supporting the IP classes of IPv4, and what happens when a router has no valid path to the destination.",
+        "ch5/ref-cloudcomptng-s92-144.webp": "PTP: transferring media, audio files and metadata to and from a portable device over the cloud.",
+        "ch5/ref-cloudcomptng-s93-145.webp": "MTP: the initiators identify the device's capabilities for file format and functionality; part of Windows Media Player, used across the Microsoft range."
+      }
+    },
+    {
+      "unit": 4,
+      "heading": "Extra pages from the GFS/HDFS lecture, not on the syllabus",
+      "intro": "These four pages of <em>GFS_HDFS_Lecture.pdf</em> describe <strong>MapReduce job execution</strong> &mdash; the JobTracker and TaskTracker daemons, how a Hadoop job is split into map and reduce tasks, a Yahoo! cluster from 2010, and YARN replacing the JobTracker's two roles. The syllabus's Unit 4.2 is <strong>NFS, HDFS</strong> and nothing else: MapReduce, YARN, JobTracker and TaskTracker appear nowhere in the printed sub-topics, and no question on the Model Question 2025 asks about them. They are separated out for the same reason as the protocol slides above &mdash; the HDFS pages of this same lecture, the NameNode and DataNode ones, are in section 4.2.6 where they belong, and these are a different subject that the matcher had no home for.",
+      "figures": {
+        "ch1/gfs-hdfs-lecture-p33.webp": "JobTracker and TaskTracker: one JobTracker per cluster acts as the middleman between the application and Hadoop, deciding the execution plan for the application.",
+        "ch1/gfs-hdfs-lecture-p35.webp": "Hadoop jobs and tasks: a job is a unit of work submitted by a client, Hadoop divides it into map and reduce tasks, and the input data into fixed-size input splits with one map task per split.",
+        "ch1/gfs-hdfs-lecture-p36.webp": "Hadoop in practice at Yahoo! in 2010: about 40 nodes per rack sharing one switch, 16 GB of RAM per node, gigabit Ethernet, and 70% of disk space allocated to HDFS with a 64 GB NameNode heap and a replication factor of 3.",
+        "ch1/gfs-hdfs-lecture-p37.webp": "YARN, or MapReduce 2: the JobTracker/TaskTracker arrangement becomes a bottleneck in clusters of thousands of nodes, so YARN splits the JobTracker's job scheduling and task-progress monitoring into two separate daemons."
+      }
+    }
+  ]
+}

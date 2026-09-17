@@ -1,0 +1,36 @@
+{
+  "ch3/ch-3-sync-and-cordn-s57-054.webp": {
+    "unit": 3,
+    "section": "3.3.4",
+    "caption": "Ricart-Agrawala in the deck's own example: P1 and P2 both request the resource, timestamps (11,1) and (15,2) decide the order, and the lower timestamp enters first.",
+    "why": "The deck's example of Ricart-Agrawala ordering, not the unit intro; its own text frame is only the word 'Example:'"
+  },
+  "ch3/ch-3-sync-and-cordn-s34-046.webp": {
+    "unit": 3,
+    "section": "3.2.2",
+    "why": "The deck's slide 34 is 'Example: Lamport's Algorithm' - three processes with drifting clocks, corrected - and it sits inside the Lamport run (33-40) that 3.2.2 and 3.2.3 describe. The matcher filed it under 3.1 because its only text frame is the example heading, which shares no vocabulary with either section."
+  },
+  "ch3/ch-3-sync-and-cordn-s45-048.webp": {
+    "unit": 3,
+    "section": "3.2.4",
+    "why": "The deck's slide 45 is 'Vector Clock: Example', between 3.2.4's two other vector-clock slides (43 and 46). Its picture carries almost no recoverable text - the OCR is the words 'Time' and a glyph - so the matcher had nothing to place it by and dropped it under 3.1."
+  },
+  "ch2/lecturemain-ch-2-communication-in-ds-s33-020.webp": {
+    "unit": 2,
+    "section": "2.3.2",
+    "caption": "Message passing in the deck's diagram: send copies the data out of the sender's buffer and receive delivers it at the destination process, drawn as PE0 to PE1.",
+    "why": "The deck's slides 32 ('Message passing', the model and its analogy), 33 (this send/copy/receive diagram) and 34 ('Basic Message Passing', the send/recv calls) are one run describing the message-passing model, so 33 belongs with 32 and 34 in 2.3.2 rather than under 2.3.5. The slide carries no text frame, so the matcher had only its picture to go on."
+  },
+  "ch2/lecturemain-ch-2-communication-in-ds-s36-023.webp": {
+    "unit": 2,
+    "section": "2.3.4",
+    "caption": "Basic MPI sending and receiving messages, from the deck: each process names its peer and a tag, and the message is matched by that pair.",
+    "why": "The deck's slide 36 is 'Basic MPI Sending and Receiving Messages' and sits inside the MPI run - 37, 38 and 39 are all in 2.3.4 - while the matcher put it in 2.4.1 Sockets, where it stands alone between the sockets slides 44 and 45. Its text frame is empty, so the placement came from its picture's words alone."
+  },
+  "ch1/chapter1-int-to-distbd-sys-s02-001.webp": {
+    "unit": 1,
+    "section": "1.1 Definition and Characteristics",
+    "caption": "The deck's opening slide: the technologies the course's field rests on - virtualized infrastructure, global data consistency, multi-master and CAP-theorem solutions with fault tolerance, active-active replication, cloud computing and hyperscale, on-demand resource pooling, real-time streaming - under the deck's own line, that distributed systems are the backbone of our connected present.",
+    "why": "This is the deck's title slide, a collage of the whole course rather than an illustration of the three characteristics the definition implies, which is where the matcher put it. Its home is the opening of the unit, before 1.1's sub-sections, which is why it is pinned to the plain 1.1 section by its exact label."
+  }
+}

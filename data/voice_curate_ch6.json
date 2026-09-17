@@ -1,0 +1,146 @@
+{
+ "_comment": [
+  "Unit 6's second batch - the yap families the reader named next.",
+  "",
+  "Every entry here is a short span rather than a whole sentence: the pointer is a",
+  "clause inside a fact (\"the reason availability can be promised in a contract",
+  "(Unit 8.3)\"), so cutting the clause leaves the fact exact. That is also why the",
+  "spans avoid markup: a rewrite is refused when it has to touch text inside a tag,",
+  "and choosing the smallest span is what keeps these resoluble."
+ ],
+ "edits": [
+  {
+   "ch": "ch6.js",
+   "new": "Every defining attribute of cloud computing follows from this sentence.",
+   "old": "Every defining attribute in Unit 5 follows from this sentence.",
+   "tell": "crossref",
+   "why": "the attributes follow from the definition of a cloud; which unit states them is a pointer"
+  },
+  {
+   "ch": "ch6.js",
+   "new": " (the management characteristic, and the shared-responsibility question)",
+   "old": " (5.2's management characteristic, and Unit 8's shared-responsibility question)",
+   "tell": "crossref",
+   "why": "the two ideas are the fact; section and unit numbers are navigation"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "can be promised in a contract.",
+   "old": "can be promised in a contract (Unit 8.3).",
+   "tell": "crossref",
+   "why": "the contract is the fact; the section number is a pointer"
+  },
+  {
+   "ch": "ch6.js",
+   "new": ":",
+   "old": ", or for Unit 9's emerging trends:",
+   "tell": "crossref",
+   "why": "'or for Unit 9's emerging trends' is the second half of a pointer; the list itself is the content"
+  },
+  {
+   "ch": "ch6.js",
+   "new": " (efficient VM provisioning)",
+   "old": " (this unit's 6.4.2 returns to it as \"efficient VM provisioning\")",
+   "tell": "meta",
+   "why": "the fairness question is the fact; 'this unit's 6.4.2 returns to it' is a page direction"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "The security consequence is architectural:",
+   "old": "The security consequence sits in this unit because it is architectural:",
+   "tell": "meta",
+   "why": "the consequence is architectural is the fact; 'sits in this unit' is a comment on the notes' layout"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "Five benefits, each a cloud property restated at the machine level:",
+   "old": "Five benefits, and they are a good closing list for the 6.1 material - each one is a cloud property from Unit 5 restated at the machine level:",
+   "tell": "crossref",
+   "why": "the five benefits are cloud properties restated at the machine level; the unit number and the 'good closing list' are commentary"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "the reasoning behind the multi-tenancy risk",
+   "old": "the reasoning behind Unit 8's multi-tenancy risk",
+   "tell": "crossref",
+   "why": "the multi-tenancy risk is the fact; the unit number is a pointer"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "The three delivery models, as the customer sees them.",
+   "old": "The three delivery models from Unit 5 - the cloud as the customer sees it.",
+   "tell": "crossref",
+   "why": "the delivery models are the content; which unit introduced them is navigation"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "Physical-security controls are controls on this layer.",
+   "old": "Unit 8's physical-security controls are controls on this layer.",
+   "tell": "crossref",
+   "why": "the controls are on this layer is the fact; the unit that teaches them is a pointer"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "and SLA verification depends on it.",
+   "old": "and SLA verification in Unit 8 depends on it.",
+   "tell": "crossref",
+   "why": "what depends on the auditor is the fact; the unit number is a pointer"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "The trade-off it exposes is this:",
+   "old": "The point to take from it is the trade-off it exposes:",
+   "tell": "editorial",
+   "why": "'the point to take from it' rates the sentence; the trade-off it names is the content"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "the earliest form of multi-cloud, and the limit of the single-provider picture:",
+   "old": "the earliest form of what Unit 9 calls multi-cloud, and it is the honest limit of the single-provider picture this unit has drawn:",
+   "tell": "crossref",
+   "why": "the limit of the single-provider picture is the fact; the unit that names multi-cloud, and 'this unit has drawn', are pointers"
+  },
+  {
+   "ch": "ch6.js",
+   "new": "Model answers to past questions are on the Past Questions tab.",
+   "old": "Questions on this unit, with model answers, are on the Past Questions tab.",
+   "tell": "meta",
+   "why": "the navigation line should name its destination, not the unit"
+  },
+  {
+   "ch": "ch6.js",
+   "find": "Five benefits, and they are a good closing list for the 6.1 material &mdash; each one is a cloud property from Unit 5 restated at the machine level:",
+   "tell": "crossref",
+   "to": "Five benefits, each a cloud property restated at the machine level:",
+   "why": "the list is the content; 'a good closing list for the 6.1 material' rates it and points at the unit"
+  },
+  {
+   "ch": "ch6.js",
+   "find": "The three delivery models from Unit 5 &mdash; the cloud as the customer sees it.",
+   "tell": "crossref",
+   "to": "The three delivery models, as the customer sees them.",
+   "why": "the layer's contents are the fact; which unit introduced the models is a pointer"
+  },
+  {
+   "ch": "ch6.js",
+   "find": "and <strong>SLA</strong> verification in Unit 8 depends on it.",
+   "tell": "crossref",
+   "to": "and <strong>SLA</strong> verification depends on it.",
+   "why": "what the auditor makes possible is the fact; the unit number is a pointer, so it goes and the bold stays"
+  },
+  {
+   "ch": "ch6.js",
+   "find": "which is why a hypervisor is both a layer of protection and a layer worth attacking (Unit 8).",
+   "tell": "crossref",
+   "to": "which is why a hypervisor is both a layer of protection and a layer worth attacking.",
+   "why": "the reason the interface matters is the fact; the unit that covers attacks is a pointer"
+  },
+  {
+   "ch": "ch6.js",
+   "find": "Three things in that definition are worth pulling out. ",
+   "to": "",
+   "tell": "recount",
+   "why": "a lead-in that announces the three points instead of making them"
+  }
+ ]
+}

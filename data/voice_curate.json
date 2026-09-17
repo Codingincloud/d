@@ -1,0 +1,251 @@
+{
+ "_comment": [
+  "Edits written as prose: the sentence to change, the sentence to put in its",
+  "place, which tell it retires and why. `voice_rewrite.py --curate` resolves each",
+  "one against the chapter file and appends the exact-HTML entry to",
+  "data/voice_rewrites.json, refusing anything that is not one place in the file and",
+  "anything whose replacement would touch text inside a tag. `new` may be empty,",
+  "which deletes the sentence (and the whitespace after it). A refusal says so and",
+  "leaves the catalogue alone, so this file is always safe to re-run."
+ ],
+ "edits": [
+  {
+   "ch": "ch1.js",
+   "tell": "answer",
+   "why": "the table below is the subject; that the course reuses the words is not",
+   "old": "to have the properties below. They are the vocabulary the rest of the course is written in:",
+   "new": "to have the properties below:"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "answer",
+   "why": "why the object view comes first is a fact about RPC and RMI, not about the course's words",
+   "old": "The object-oriented view comes first, before any of RPC or RMI, because it is the vocabulary the rest of the unit assumes.",
+   "new": "The object-oriented view comes first, because RPC and RMI are described in its terms."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "answer",
+   "why": "the reader's own example: the order is a fact about a remote invocation, not about answering",
+   "old": "Those three requirements are the vocabulary to answer an RMI question with, and the order they come in is the order of the problem.",
+   "new": "The three requirements are listed in the order a remote invocation meets them."
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "answer",
+   "why": "which pair is worth learning is advice; that there are two definitions is the fact",
+   "old": "adds the vocabulary for it, and the pair of definitions below is the one to know.",
+   "new": "supplies the two definitions below."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "answer",
+   "why": "the terms are the content; calling them the course's vocabulary is about the course",
+   "old": "The vocabulary is the shared-memory vocabulary extended to a distributed setting:",
+   "new": "The terms are the shared-memory ones, extended to a distributed setting:"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "answer",
+   "why": "the sentence states the link to Unit 1; that it is vocabulary to note is not part of it",
+   "old": "Note the vocabulary: this is",
+   "new": "This is"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the distinction between local and remote, stated rather than narrated",
+   "old": "The deck's framing is worth keeping because it is precise about what is local and what is not:",
+   "new": "The distinction is exact:"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "paper",
+   "why": "a heading names the topic; how to open an answer with it is not the topic",
+   "old": "The design goals — the list to open an answer with",
+   "new": "The design goals"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the eight goals are the content; that the deck lists them is not",
+   "old": "The deck lists eight DFS concepts, requirements or design goals. They are the standard skeleton of any DFS answer, so they are worth giving one line each rather than reciting:",
+   "new": "Eight DFS concepts, requirements and design goals:"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the ambition itself, without the claim about whose words it is in",
+   "old": "The design ambition, in the deck's words, is that",
+   "new": "The design ambition is that"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "why NFS is described that way is about the design, not about the deck",
+   "old": "This is why NFS is described in the deck as having",
+   "new": "This is why NFS is described as having"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "which slides it followed adds nothing to the figure",
+   "old": ", following the deck's slides 6–9.",
+   "new": "."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "a sentence about who does not give a number teaches the reader nothing",
+   "old": "The deck does not give the number; the textbook does, and quoting it is worth a mark.",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the table records it; whose table it is does not matter",
+   "old": "The deck's comparison table records how each system handles it:",
+   "new": "The comparison table records how each system handles it:"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the reason the design has a reason is state; that the deck set it up is not",
+   "old": ", and the deck sets up the choice before describing NFS so that the decision has a reason.",
+   "new": "."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the characteristics, without the running order of the material they came from",
+   "old": "The deck lists NFS's characteristics, in the order it gives them:",
+   "new": "NFS's characteristics:"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the four dimensions are the content",
+   "old": ", and the deck lists the four dimensions:",
+   "new": ":"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "what qualifies is the subject; that the deck notes it is not",
+   "old": "The deck notes that a range of software qualifies to a certain extent:",
+   "new": "A range of software qualifies to a certain extent:"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "what implements them is the claim",
+   "old": " — the deck lists them and notes that ",
+   "new": " — "
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the protocol set, stated rather than introduced",
+   "old": "The deck introduces it as a comparison of four protocols — ",
+   "new": "It is one of four messaging protocols — "
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "which two the material treats in detail is not about the subject",
+   "old": " — and then treats two of them in detail.",
+   "new": "."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the architecture, with the broker fronting the queues as a fact rather than as a diagram",
+   "old": " — the deck's diagram shows one broker fronting several numbered queues",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the comparison is of the protocols, not of what the deck did with them",
+   "old": "as the other two protocols compared in the deck — CoAP for constrained devices",
+   "new": "as the other two protocols compared — CoAP for constrained devices"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "source",
+   "why": "the section is the citation; that the book is recommended is course admin",
+   "old": "(the course's first recommended textbook, Section 12.3)",
+   "new": "(Section 12.3)"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "paper",
+   "why": "the cross-reference is the useful part; which paper asks it is not",
+   "old": " — this is the exam question",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "paper",
+   "why": "a heading names the topic",
+   "old": "Consistency in a DFS — the exam question",
+   "new": "Consistency in a DFS"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "paper",
+   "why": "that the sentences are examinable is not one of the sentences",
+   "old": ", and both are examinable",
+   "new": ""
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "paper",
+   "why": "what the table is, said directly",
+   "old": "This table is likely examinable on its own:",
+   "new": "The comparison:"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "paper",
+   "why": "the fault and the mechanisms, without the paper's phrasing of the question",
+   "old": "That is the fault the whole of HDFS's recovery design is aimed at, and the exam's \"how does HDFS ensure fault tolerance\" half wants these mechanisms named:",
+   "new": "That is the fault HDFS's recovery design is aimed at, and these are the mechanisms that answer it:"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "frame",
+   "why": "the defaults and the reason they move, without the aside about a note",
+   "old": "Hence the 64/128 MB defaults, and the note that the figure will keep being revised upward as transfer speeds grow.",
+   "new": "Hence the 64/128 MB defaults: the figure is revised upward as transfer speeds grow."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "advice",
+   "why": "what finishes an answer is the writer's plan; the two points are the content",
+   "old": "Two further points finish the answer.",
+   "new": "Two further points follow."
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "advice",
+   "why": "a heading names its subject; where to start is not its subject",
+   "old": "The definition to start with",
+   "new": "The definition"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the table records it; whose table it is does not matter",
+   "old": "the DFS comparison table in the deck records",
+   "new": "the DFS comparison table records"
+  },
+  {
+   "ch": "ch4.js",
+   "tell": "deck",
+   "why": "the protocol being binary is the content; how it was framed is not",
+   "old": ", hence the \"lightweight but\" framing in the deck.",
+   "new": "."
+  }
+ ]
+}

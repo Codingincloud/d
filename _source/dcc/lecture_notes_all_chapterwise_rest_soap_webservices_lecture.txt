@@ -1,0 +1,249 @@
+source: Lecture Notes - all Chapterwise\Chapter 2 - Communication in Distributed Systems\REST_SOAP_webservices_Lecture.pdf
+method: pdf
+sha256: cc4096c12b25ae20c2dca65b907bfd29bca4b6f4088f37e349d265d03d5775c1
+pages:  15
+ocr:    15 page(s)
+rotation: 270
+dpi:    600
+----------------------------------------------------------------------
+===== page 1 =====  [ocr]
+Web Services
+Problem
+How to Share Data between Devices in a Network?
+Server(s)
+Firewalls
+Security
+Local Network/lnternet
+Database
+i i-x.x.xx.xxx:-öa
+Routers/Switches, etc
+Clients
+
+
+===== page 2 =====  [ocr]
+Problem
+How to Share Data between Devices in a Network?
+Database
+No access
+Clients
+Direct Connection between the Database and the Clients that need the Data is normally not possible, due
+to security, compatibility issues, etc. (Firewalls, Hacker Attacks, etc.)
+Direct Connection in a Local Network (behind the Firewall) is normally 0K — but not over the Internet
+
+
+===== page 3 =====  [ocr]
+Solution: Web Service
+Internet
+Web Service
+HTT p
+Database
+Clients
+Web Services uses standard web protocols like HTTP, etc.
+HTTP is supported by all Web Browser, Servers and many Programming Languages
+
+
+===== page 4 =====  [ocr]
+Client
+Data
+Web Services:
+A Standard way to get data
+over a network/lnternet
+' Using standard Web
+protocols
+Client
+Data
+Network/lnternet
+Data
+Web Service
+Client
+o
+Data
+Web Services
+Server
+Web Server
+ata
+Database
+Normally you don't have direct
+access to a Database over a
+network, and especially not
+over Internet
+
+
+===== page 5 =====  [ocr]
+Web Services
+o A Web service is a method of communications between two
+devices over the World Wide Web.
+Web
+o Standard defined by W3C
+o Cross-platform
+o Web Services can be implemented and used in most
+Programming Languages PHP, LabVIEW,
+Objective-C, Java,
+Uses standard Web technology (Web protocols)
+- HTTP, REST, SOAP, XML, WSDL, JSON,
+
+
+===== page 6 =====  [ocr]
+Why Web Service?
+Today Web Services have been very popular
+Easy Data sharing over Internet
+o Platform-independent Communication
+Makes it possible of integration of different systems and platforms
+e Distributed Application Development
+Internet
+VVeb Service
+HTT p
+Clients
+
+
+===== page 7 =====  [ocr]
+Web Services
+o Web Services 1.0: Uses SOAP
+— "Compex"
+Web Services 2.0: Uses REST
+— Less Complex than using SOAP
+— Lightweight and Flexible
+— The preferred model today
+Internet
+Web Service
+H TTp
+Clients
+
+
+===== page 8 =====  [ocr]
+3-tier+WebService Architecture - Example
+Installed on one or more Windows
+Servers in your LAN or in the Cloud
+Web
+I Mictosott
+IIS
+Microsoft•
+SQL Server
+Services
+Business
+Logic
+Stored
+Procedures
+Data
+Data
+Layer
+Source
+Presentation
+Logic
+Visual Studio
+
+
+===== page 9 =====  [ocr]
+Web Services
+Web Services 2.0
+Web Services
+' "SOAP Web Services"
+' Using the SOAP protocol (Simple Object Access Protocol)
+' XML (Extensible Markup Language)
+Visual Studio: ASP.NET ASMX Web Service
+"RESTful Web Services"
+Using the REST protocol (Representational State Transfer)
+Uses standard HTTP methods (GET, PUT, POST, DELETE)
+(HTTP: Hypertext Transfer Protocol)
+Uses JSON (JavaScript Object Notation) or XML
+Visual Studio: ASPoNET Web API
+
+
+===== page 10 =====  [ocr]
+SOA
+e Service Oriented Architecture
+Distributed Application
+o Typical exarnple: Services
+Wikipedia. (2013). SOA. Available: http://en.wikipedia.org/wiki/Service-oriented architecture
+
+
+===== page 11 =====  [ocr]
+Web Services
+A method of communication between two applications or electronic devices over
+the World Wide Web (WWW)
+Web Service is an API
+Makes it possible of integration of different systems and platforms
+Distributed Application Development
+Web services are web application components.
+Data is transmitted over a standardized interface (such as HTTP)
+Web services can be published, found, and used on the Web.
+o SOAP Web Services (SOAP - Simple Object Access Protocol)
+REST Web Services (REST - Representational State Transfer)
+— A new and simpler version of WS
+— All major WS on the Internet today use REST?
+
+
+===== page 12 =====  [ocr]
+Web Service
+Internet
+Web Service
+H TTp
+HTTP - Hypertext Transfer Protocol.
+Client
+The protocol used throughout the Internet for transactions between Web servers and
+clients.
+' It is simple, tested, and supported by libraries in every modern programming language.
+HTTP includes methods supporting all of the necessary actions for a server/client
+transaction
+
+
+===== page 13 =====  [ocr]
+SOAP Web Services
+- Web Services Description Language
+0 WSDL
+Simple Object Access Protocol
+SOAP -
+Extensible Markup Language
+XML-
+Hypertext Transfer Protocol
+o HTTp _
+WSDL (API Description)
+SOAP (Messaging)
+XML (Data)
+HTTP (Transport)
+
+
+===== page 14 =====  [ocr]
+RESTful Web Services
+Completely optional
+and rarely used
+WADL (API Description)
+7
+REST (Messaging)
+JSON/XML (Data)
+HTTP (Transport)
+o WADL— Web Application Description Language
+Representational State Transfer
+REST-
+Extensible Markup Language
+XML-
+- JavaScript Object Notation
+JSON
+Hypertext Transfer Protocol
+e HTTp _
+
+
+===== page 15 =====  [ocr]
+SOAP vs. REST
+SOAP:
+A service a
+' XML based
+Runs on HTTP but envelopes the message
+Slower than REST
+Very mature, a lot of functionality
+Not suitable for browser-based clients
+More complicated
+REST:
+WSDL (API Description)
+SOAP (Messaging)
+XML (Data)
+HTTP (Transport)
+WADL (API Description)
+REST (Messaging)
+XML/JSON(Data)
+HTTP (Transport)
+' A service architecture
+' Uses the HTTP headers to hold meta information
+Can be used with XML, JSON or whatever necessary
+' Usually used with JSON due to the easily parsable content
+Faster than SOAP

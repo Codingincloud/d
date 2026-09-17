@@ -1,0 +1,684 @@
+source: Lecture Notes - all Chapterwise\Chapter 1 - Introduction to Distributed Systems\GFS_HDFS_Lecture.pdf
+method: pdf
+sha256: 8ca71f91eb8178c7fff350658bb635b79c7acd3c07c311eff47969ae44372194
+pages:  38
+ocr:    38 page(s)
+rotation: 0
+dpi:    600
+----------------------------------------------------------------------
+===== page 1 =====  [ocr]
+GFS / HDFS
+
+
+===== page 2 =====  [ocr]
+Learning objectives
+Explain the design considerations behind GFS/HDFS
+Explain the basic procedures for data replication,
+recovery from failure, reading and writing
+Design
+alternative strategies to handle the issues
+GFS/HDFS was created for
+Decide whether GFS/HDFS is a good fit given a
+usage scenario
+strategies for handling small files
+Implement
+
+
+===== page 3 =====  [ocr]
+GFS introduction
+Hadoop is heavily inspired by it.
+One way (not the only way) to design a
+distributed file
+15
+
+
+===== page 4 =====  [ocr]
+History of MapReduce &
+Google
+o Developed by engineers at
+around
+2003
+o Built on principles in parallel and distributed
+processing
+Seminal Google papers
+The Google file system by Sanjay Ghemawat, Howard Gobioff,
+and Shun-Tak Leung (2003)
+MapReduce: Simplified Data Processing on Large Clusters, by
+Jeffrey Dean and Sanjay Ghemawat (2004)
+Yahoo! paper.
+The Hadoop distributedfile system by Konstantin Shvachko,
+Hairong Kuang, Sanjay Radia, and Robert Chansler (2010)
+16
+
+
+===== page 5 =====  [ocr]
+What is a file system?
+o File deterrnine
+how data is stored and
+retrieved
+Distributed file systems
+manage the storage
+across a network of machines
+o Added connplexity due to the netvvork
+GFS
+(Google) and
+(Hadoop) are distributed
+HDFS
+file syster-ns
+HDFS inspired by GFS
+
+
+===== page 6 =====  [ocr]
+GFS Assum tions
+based on Google's main use cases (at the time)
+o Hardware failures are common (commodity hardware)
+Files are large (GB/TB) and their number is limited (millions,
+not billions)
+o Two main types of reads: large streaming reads and
+small
+random reads
+o Workloads with sequential writes that append data to files
+o Once written, files are
+seldom modified (!=append) again;
+random modification in files possible, but not efficient in GFS
+o High sustained bandwidth trumps Iow latency
+18
+
+
+===== page 7 =====  [ocr]
+Disclaimer
+GFS/HDFS are not a good fit for:
+Low latency data access (in the ms range)
+o Solutions: HBase, Hive, .
+Many small files
+o Solution: stuffing of binary files
+Constantly changing data
+o Not all details of GFS are public knowledge (HDFS
+developers "filled in" the details)
+
+
+===== page 8 =====  [ocr]
+user level processes:
+they can run on the
+same physical machine
+GFS architecture
+way, not the only way.
+several clients
+Application
+(file name, chunk index)
+GFS client
+(chunk handle,
+chunk locations)
+(chunk handle, byte range)
+chunk data
+Data does not(!) flow
+across the GFS master
+GFS master
+File namespace
+/foo/bar
+chunk 2ef0
+a single master
+(metadata)
+Legend:
+Data messages
+Control messages
+Instructions to chunkserver
+Chunkserver state
+GFS chunkserver
+Linux file system
+GFS chunkserver
+Linux file system
+several data
+servers
+29
+Image source: http://static.googleusercontent.com/me ia/research.googIe.com/en//archive/gfs-sosp2003.pdf
+
+
+===== page 9 =====  [ocr]
+GFS•. files
+
+
+===== page 10 =====  [ocr]
+Files on GFS
+(e.g. Web
+single file
+contain many objects
+can
+documents)
+(64MB) with
+into fixed size chunks
+o Files are divided
+unique 64 bit identifiers
+o IDs assigned by GFS master at chunk creation time
+chunkservers store chunks on local disk as "normal'
+Linux files
+o Reading & writing of data specified by the tuple
+(chunk handle, byte range)
+22
+
+
+===== page 11 =====  [ocr]
+File information at
+Master level
+replicated (by default 3 times) across all chunk servers
+o Files are
+maintains all file system metadata
+Master
+o Namespace, access control information, mapping from file
+garbage collection of orphaned
+to chunks chunk locations
+chunks, chunk migration,
+distributed systems are complex!
+Heartbeat
+messages between master and chunk servers
+Is the chunk server still alive What chunks are stored at the
+chunkserver?
+To read/write data
+client communicates with master (metadata
+operations) and chunk servers (data)
+23
+
+
+===== page 12 =====  [ocr]
+Files on GFS
+Clients
+cache metadata
+o Clients do not
+cache file data
+Seek time: 10ms (0.01s)
+0 Transfer rate: IOOMB/s
+0 What is the chunk size to
+make the seek time 1% of
+the transfer rate?
+not cache file data (responsibility of
+0 Chunkservers do
+Linux's buffer cache)
+the underlying file system
+o Advantages of (large) fixed-size chunks:
+Disk seek time small compared to transfer time
+o A single file can be
+larger than a node's disk space
+Fixed Size makes
+allocation computations easy
+24
+
+
+===== page 13 =====  [ocr]
+GFS: Master
+25
+
+
+===== page 14 =====  [ocr]
+One master
+o Single master sümplüfües the design
+tremendOUSly
+o Chunk placement and replication with
+global
+knOwledge
+o Single master in a large cluster can a
+bottleneck
+0 Goal:
+minimize the number of reads and writes
+(thus metadata vs. data)
+26
+
+
+===== page 15 =====  [ocr]
+Application
+(file name, chunk index)
+GFS client
+(chunk handle,
+chunk locations)
+(chunk handle, byte range)
+chunk data
+A read operation (in detail)
+1.
+GFS master
+File namespace
+/foo/bar
+chunk 2ef0
+Legend:
+Data messages
+Control messages
+Instructions to chunkserver
+Chunkserver state
+Client translates filenarne and byte
+offset specified by the application into
+a chunk index within the file.
+Sends request to master.
+27
+Image source: http://static.googIeusercontent.com/media/research.googIe.com/en//archive/gfs-sosp2003.pdf
+
+
+===== page 16 =====  [ocr]
+A read operation (in detail)
+Application
+(file name, chunk index)
+GFS client
+(chunk handle,
+chunk locations)
+(chunk handle, byte range)
+chunk data
+GFS master
+File namespace
+/foo/bar
+chunk 2ef0
+Legend:
+Data messages
+Control messages
+Instructions to chunkserver
+Chunkserver state
+GFS chunkserver
+Linux file system
+GFS chunkserver
+Linux file system
+2. Master replies with chunk handle and
+locations.
+29
+Image source: http://static.googleusercontent.com/me ia/research.googIe.com/en//archive/gfs-sosp2003.pdf
+
+
+===== page 17 =====  [ocr]
+A read operation (in detail)
+Application
+(file name, chunk index)
+GFS client
+(chunk handle,
+chunk locations)
+(chunk handle, byte range)
+chunk data
+3. Client caches the metadata.
+4. Client sends a data request to one Of
+GFS
+the replicas (the closest one). Byte
+File
+range indicates wanted part of the
+chunk. More than one chunk can be
+included in a single request.
+Chunkserver state
+GFS chunkserver
+Linux file system
+GFS chunkserver
+Linux file system
+29
+Image source: http://static.googleusercontent.com/me ia/research.googIe.com/en//archive/gfs-sosp2003.pdf
+
+
+===== page 18 =====  [ocr]
+A read operation (in detail)
+5. Contacted Chunk server replies with
+Application
+(file name, chunk index)
+GFS client
+(chunk handle,
+chunk locations)
+(chunk handle, byte range)
+chunk data
+the requested data.
+chunk 2ef0
+File namespace
+Legend:
+Instructions to chunkserver
+Chunkserver state
+Data messages
+Control messages
+GFS chunkserver
+Linux file system
+GFS chunkserver
+Linux file system
+39
+Image source: http://static.googleusercontent.com/me ia/research.googIe.com/en//archive/gfs-sosp2003.pdf
+
+
+===== page 19 =====  [ocr]
+Metadata on the master
+3 types of metadata
+e Files and chunk namespaces
+e Mapping from files to chunks
+o Locations of each chunk's replicas
+o All metadata is kept in master's memory (fast random access)
+e Sets limits on the entire system's capacity
+Operation log
+is kept on master's local disk: in case Of the
+master's crash, master state can be recovered
+Namespaces and mappings are logged
+e Chunk locations are
+not logged
+31
+
+
+===== page 20 =====  [ocr]
+SHI-1(11-.10 :SAO
+
+
+===== page 21 =====  [ocr]
+Chunks
+0 1 chunk = 64MB or 128MB (can be changed); chunk stored
+plain Linux file on a chunk server
+as a
+Advantages of large (but not too large) chunk size
+need for
+interaction
+Reduced
+e 1 request per chunk suits the target workloads
+Client can cache all the chunk locations
+for a multi-TB
+working set
+on the master (kept in mennory)
+Reduced size of metadata
+hotspot for popular
+0 Disadvantage: Chunk server can becorne
+file(s)
+Question: how could the hotspot issue be solved?
+
+
+===== page 22 =====  [ocr]
+Chunk locations
+persistent record of chunk
+o Master does
+keep a
+not
+replica locations
+Master
+polls
+chunkservers about their chunks at startup
+periodic
+o Master keeps up to date through
+messages
+o Master/chunkservers easily kept in sync when chunk
+servers leave/ join/fail/restart [regular event]
+o Chunkserver has the final word over what chunks it
+has
+34
+
+
+===== page 23 =====  [ocr]
+writes to operation
+Operation log
+master
+recovery
+checkpoint
+too
+creation;
+large
+log file reset
+log
+1
+log
+size?
+o Persistent record of critical metadata changes
+o Critical to the recovery Of the systerTl
+Changes to metadata are only made visible to clients after
+they have been written to the operation log
+crashed!
+e Operation log replicated on multiple remote machines
+Before
+responding to client operation, log record must
+flashed locally and remotely
+have been
+Master recovers its file systern frorn checkpoint + operation
+35
+
+
+===== page 24 =====  [ocr]
+writes to operation
+Operation log
+master
+recovery
+checkpoint
+too
+creation;
+large
+log file reset
+log
+1
+log
+size?
+o Persistent record of critical metadata changes
+o Critical to the recovery Of the systerTl
+mv file namel file name2
+get file namel
+get file namel
+crashed!
+master
+operation log
+Question: when does the master relay the nevv informatiOn to
+the clients? Before or after having written it to the op. log?
+36
+
+
+===== page 25 =====  [ocr]
+Chunk replica placement
+Creation of (initially empty) chunks
+Use under-utilised chunk servers; spread across racks
+o Linnit nunnber Of recent creations on each chunk server
+Re-replication
+o Started once the available replicas fall belovv setting
+o Master instructs chunkserver to copy chunk data
+directly from existing valid replica
+o Number of active clone operations/bandwidth is limited
+Re-balancing
+Changes in replica distribution for better load balancing;
+gradual filling of new chunk servers
+37
+
+
+===== page 26 =====  [ocr]
+GFS: Data integrity
+38
+
+
+===== page 27 =====  [ocr]
+Garbage collection
+Question: how can a file be deleted from the cluster?
+Deletion logged by master
+File renamed to a hidden file, deletion timestamp kept
+Of the master's file systerTl narnespace
+Periodic scan
+e Hidden files older than 3 days are deleted master's
+memory (no further connection between file and its chunk)
+Periodic scan of the master's chunk namespace
+e Orphaned chunks (not reachable any file) are
+identified, their metadata deleted
+messages used to synchronise
+deletion between
+HeartBeat
+39
+
+
+===== page 28 =====  [ocr]
+Stale replica detection
+Scenario: a chunkserver misses a change ("mutation")
+applied to a chunk, e.g. a chunk was appended
+o Master maintains a chunk versüon number to
+distinguish UP-to-date and stale replicas
+o Before an operation on a chunk, master ensures
+that version number is advanced
+o Stale replicas are in the garbage
+collection cycle
+40
+
+
+===== page 29 =====  [ocr]
+Data corruption
+e Data corruption or loss can occur at the read and write stage
+Question: how can chunk servers detect whether or not
+their stored data is corrupt?
+e Alternative: compare replicas across chunk servers
+o Chunk is broken into
+64KB blocks
+each has a 32 bit
+checksum
+e Kept in
+and stored persistently
+memory
+Read requests: chunkserver verifies checksum of data
+blocks that overlap read range (i.e. corruptions not send to
+clients)
+41
+
+
+===== page 30 =====  [ocr]
+HDFS: Hadoop
+Distributed File System
+
+
+===== page 31 =====  [ocr]
+GFS vs.
+GFS
+Master
+operation log
+chunk
+HDFS
+random file writes possible
+multiple writer, multiple reader
+model
+chunk: 64KB data and 32bit
+checksum pieces
+default block size: 64MB
+HDFS
+N arneNode
+DataNode
+journal, edit log
+block
+only append is possible
+Single writer, multiple reader model
+per HDFS block, two files created on
+a DataNode: data file & metadata file
+(checksums, timestamp)
+default block size: 128MB
+
+
+===== page 32 =====  [ocr]
+Hadoop's architecture
+O.X and l.x
+NameNode
+educe
+Master of HDFS, directs the slave DataN0de
+daemons to perform Iow-level 1/0 tasks
+o Keeps track of file splitting into blocks,
+replication, block location, etc.
+Secondary NameNode
+takes snapshots of the
+N a nn eNode
+DataNode
+each slave machine hosts a DataNode
+daemOrn
+44
+
+
+===== page 33 =====  [ocr]
+educe
+JobTracker and Task Tracker
+JobTracker (job scheduling + task progress monitoring)
+One
+JobTracker
+per Hadoop cluster
+between your application and Hadoop (single point
+Middleman
+of contact)
+execution plan for the application (files to
+o Deterrnines the
+process, assignment of nodes to tasks, task monitoring)
+Takes care of (supposed) task failures
+TaskTracker
+One
+TaskTracker per DataNode
+Manages individual tasks
+Keeps in touch with the JobTracker (via HeartBeats) -
+progress report & signals empty task slots
+45
+sendS
+
+
+===== page 34 =====  [ocr]
+educe
+JobTracker and Task Tracker
+namenode
+namenodedaemon
+job submission node
+jobtracker
+tasktracker
+datanode daemon
+Linux file system
+ooo
+slave node
+tasktracker
+datanode daemon
+Linux file system
+slave node
+tasktracker
+datanode daemon
+Linux file system
+slave node
+Image source: http://lintooI.glt%ub.io/MapReduceAlgorithms/
+
+
+===== page 35 =====  [ocr]
+educe
+What about the jobs?
+unit of work to be performed (by a client)
+Hadoop job
+Input data
+MapReduce program
+Configuration information
+Hadoop divides job into tasks (two types: map, reduce)
+Hadoop divides input data into fixed size input splits
+One map task per split
+One map function call for each record in the split
+Splits are processed in
+(if enough DataNodes exist)
+parallel
+Job execution controlled by JobTracker and Task Trackers
+47
+
+
+===== page 36 =====  [ocr]
+Hadoop in practice: Yahoo!
+(2010)
+40 nodes/rack sharing one IP switch
+16GB RAM
+per cluster node, I-gigabit Ethernet
+0 70% of disk space allocated to HDFS
+Remainder: operating system, data emitted by
+Mappers (not in HDFS)
+64GB RAM
+NameNode
+up to
+net storage (replication: 3)
+Total storage 9.8PB 3.393
+60 million files
+63 million blocks
+0 54,000 blocks hosted per DataNode
+1-2 nodes lost per day
+Time for cluster to re-replicate
+HDFS cluster with 3,500 nodes
+lost blocks: 2 minutes
+48
+
+
+===== page 37 =====  [ocr]
+YARN (MapReduce 2)
+o JobTracker/TaskTrackers setup becomes a bottleneck
+in clusters with thousands of nodes
+o As answer YARN has been developed (
+Yet Another
+Resource Negotiator
+o YARN splits the JobTracker's tasks (job scheduling and
+task progress monitoring) into two daemons:
+Resource manager
+Application master (negotiates with RM for cluster
+resources; each Hadoop job has a dedicated master)
+49
+
+
+===== page 38 =====  [ocr]
+YARN Advantages
+Scalabülüty: larger clusters are supported
+Availability: high availability (high uptime)
+supported
+more fine-grained use Of resources
+Utülizatüon:
+Multitenancy: MapRedue is just one application
+among many
+50

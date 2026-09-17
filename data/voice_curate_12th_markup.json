@@ -1,0 +1,177 @@
+{
+ "_comment": [
+  "The same twelfth-tell pass as data/voice_curate_12th.json, written out in exact",
+  "markup. `--curate` refuses an entry whose span crosses a tag - the words are the",
+  "same but the `find` has to carry the `<strong>` - and those refusals are the",
+  "entries here. Every `find` is checked to occur exactly once in its chapter before",
+  "anything is written.",
+  "",
+  "The rule is unchanged: a sentence whose subject is the reader, the answer, the",
+  "paper or the material is not teaching the subject, and it goes; a sentence whose",
+  "subject is the subject stays. \"Consider a replicated database system\" keeps its",
+  "imperative - it is a worked example being set up, not an instruction to the reader."
+ ],
+ "edits": [
+  {
+   "ch": "ch1.js",
+   "tell": "direct",
+   "why": "the three tiers are the fact; how to read them is not",
+   "find": "<p>Read the tiers as a division of labour, not a diagram: the <strong>presentation tier</strong>",
+   "to": "<p>The <strong>presentation tier</strong>"
+  },
+  {
+   "ch": "ch2.js",
+   "tell": "direct",
+   "why": "the order of the three parts is a fact about the section, not an instruction",
+   "find": "Read them as one sequence: what a socket is, then what its two ends contain, then what a program that uses it looks like.",
+   "to": "The three parts are one sequence: what a socket is, then what its two ends contain, then what a program that uses it looks like."
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "direct",
+   "why": "a heading that tells the reader what to do to a sentence instead of naming what the box is about",
+   "find": "<h4>Read that last sentence twice</h4>",
+   "to": "<h4>The requirement, and its limit</h4>"
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "direct",
+   "why": "the four properties divide a certain way, which is the claim",
+   "find": "<p>Note how the four divide. ",
+   "to": "<p>The four divide into two kinds. "
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "answer",
+   "why": "the three message types are the content; what an answer should name is the marking",
+   "find": "<p><strong>Three message types</strong>, and an answer should name all three:</p>",
+   "to": "<p><strong>Three message types</strong>:</p>"
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "answer",
+   "why": "the trade is the fact; to state it in an answer is strategy",
+   "find": "That is the trade to state in an answer: <strong>message cost per entry</strong>",
+   "to": "That is the trade: <strong>message cost per entry</strong>"
+  },
+  {
+   "ch": "ch3.js",
+   "tell": "direct",
+   "why": "the three rules really are one rule; the reader does not have to be told how to read them",
+   "find": "<p>Read the three rules as one rule about messages: ",
+   "to": "<p>The three rules are one rule about messages: "
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "direct",
+   "why": "a closing instruction; the use cases are cited by name and number instead",
+   "find": " Read it, then add the use cases from 5.4.4.</p>",
+   "to": " The use cases in 5.4.4 follow from the same comparison.</p>"
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "direct",
+   "why": "where the trade is visible in the table is a fact about the table",
+   "find": "<p>Read the table down a column rather than across a row, because the four models are four settings of one trade: ",
+   "to": "<p>Read down a column and the four models are four settings of one trade: "
+  },
+  {
+   "ch": "ch5.js",
+   "tell": "direct",
+   "why": "a heading names the two properties; what students lose is about the marking",
+   "find": "<h4>Scalability versus elasticity &mdash; the distinction students lose</h4>",
+   "to": "<h4>Scalability versus elasticity</h4>"
+  },
+  {
+   "ch": "ch6.js",
+   "tell": "answer",
+   "why": "how to draw it is the instruction; in an answer is the framing",
+   "find": "<h4>How to draw it in an answer</h4>",
+   "to": "<h4>How to draw it</h4>"
+  },
+  {
+   "ch": "ch6.js",
+   "tell": "answer",
+   "why": "the two lookups are the reason, which is a fact about memory virtualization",
+   "find": "If a question asks why memory virtualization costs performance, that is the answer &mdash; two lookups where a physical machine does one &mdash;",
+   "to": "Memory virtualization costs performance because of two lookups where a physical machine does one &mdash;"
+  },
+  {
+   "ch": "ch6.js",
+   "tell": "answer",
+   "why": "the same function one layer apart is the fact; what satisfies a mark scheme is about the marking",
+   "find": "Say both sentences and the mark scheme is satisfied: the same function, one layer apart.",
+   "to": "The two are the same function, one layer apart."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "answer",
+   "why": "an instruction about answering, where naming the service is what matters",
+   "find": "Write the full name in any answer.",
+   "to": "The full name is the pattern: the same three services appear under whichever vendor's label."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "the analogy is about the customer, not about the reader",
+   "find": "Take and bake: the vendor delivers the dough, sauce, toppings and cheese; you supply the table, oven and fire.",
+   "to": "Take and bake: the vendor supplies the dough, sauce, toppings and cheese; the customer supplies the table, oven and fire."
+  },
+  {
+   "ch": "ch7.js",
+   "tell": "reader",
+   "why": "a table label names who manages what, and the second party is the customer",
+   "find": "<strong>You manage</strong> the operating system, runtime and application;",
+   "to": "<strong>Customer manages</strong> the operating system, runtime and application;"
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "direct",
+   "why": "two of the five being about cost is the observation; telling the reader to notice it is not",
+   "find": "Notice that only two of the five are about speed.",
+   "to": "Only two of the five are about speed."
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "direct",
+   "why": "the number is the point, and the sentence can make it without instructing the reader",
+   "find": "<p>Learn one number to make the availability row mean something. ",
+   "to": "<p>One number makes the availability row mean something. "
+  },
+  {
+   "ch": "ch8.js",
+   "tell": "answer",
+   "why": "the sentence is about the second rule and about what turns a list into an answer",
+   "find": " That is exactly the exercise the second rule asks for &mdash; <em>consider the impact of the cloud on each phase</em> &mdash; and it is what turns a list of seven words into an answer.",
+   "to": ""
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "a column heading names the column; an answer is the paper's business",
+   "find": "<th>The one-line definition for an answer</th>",
+   "to": "<th>The one-line definition</th>"
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "the caption should say what the figure shows, not what it answers",
+   "find": " That chain is the answer to \"how do containers and orchestration support cloud-native architecture\".",
+   "to": ""
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "the sentence carries the subject; that it is the one to write in an answer is framing",
+   "find": "In an answer about cloud-native architecture, one sentence carries it: ",
+   "to": "One sentence carries cloud-native architecture: "
+  },
+  {
+   "ch": "ch9.js",
+   "tell": "answer",
+   "why": "the two roles are complementary, and what half an answer needs is not a fact about the tools",
+   "find": "Because the course's syllabus pairs them in one sub-topic, an answer that gives only one of the two roles has answered half the question.",
+   "to": "The two roles are complementary, and one without the other describes half the pair."
+  }
+ ]
+}
