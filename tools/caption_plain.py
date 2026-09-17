@@ -66,11 +66,13 @@ CITE = re.compile(
 def read(p: pathlib.Path) -> str:
     """No newline translation: these chapter files are CRLF and a byte-exact write
     depends on the platform's idea of a line ending, not this file's."""
-    return p.read_text(encoding="utf-8", newline="")
+    with open(p, encoding="utf-8", newline="") as handle:
+        return handle.read()
 
 
 def write(p: pathlib.Path, text: str) -> None:
-    p.write_text(text, encoding="utf-8", newline="")
+    with open(p, "w", encoding="utf-8", newline="") as handle:
+        handle.write(text)
 
 
 def plain(s: str) -> str:

@@ -122,11 +122,13 @@ def plain(s: str) -> str:
 def read(p: pathlib.Path) -> str:
     """Read with no newline translation: these chapter files are CRLF, and a byte
     round trip must not depend on the platform. Same rule as tools/revise_blocks.py."""
-    return p.read_text(encoding="utf-8", newline="")
+    with open(p, encoding="utf-8", newline="") as handle:
+        return handle.read()
 
 
 def write(p: pathlib.Path, text: str) -> None:
-    p.write_text(text, encoding="utf-8", newline="")
+    with open(p, "w", encoding="utf-8", newline="") as handle:
+        handle.write(text)
 
 
 def learn_field(text: str) -> tuple[int, int]:

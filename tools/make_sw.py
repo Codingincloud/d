@@ -232,7 +232,8 @@ def write_worker(out_dir: Path) -> int:
         print(f"make_sw: {out_dir} does not exist - build the bundle first")
         return 1
     source, urls, version = render(out_dir)
-    (out_dir / "sw.js").write_text(source, encoding="utf-8", newline="\n")
+    with open((out_dir / "sw.js"), "w", encoding="utf-8", newline="\n") as handle:
+        handle.write(source)
     print(f"wrote {out_dir / 'sw.js'} - {version}, {len(urls)} files precached")
     return 0
 

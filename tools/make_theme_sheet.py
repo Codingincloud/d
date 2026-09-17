@@ -206,7 +206,8 @@ def write_sheet(dest):
     if not dest.parent.exists():
         print(f"{dest.parent} does not exist - build the bundle first")
         return 1
-    dest.write_text(html(rs), encoding="utf-8", newline="\n")
+    with open(dest, "w", encoding="utf-8", newline="\n") as handle:
+        handle.write(html(rs))
     print(f"wrote {dest} - {len(rs)} rows, {len(rs) * 2} cells, "
           f"every mode at both widths")
     return 0

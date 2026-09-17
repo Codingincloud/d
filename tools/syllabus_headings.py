@@ -89,11 +89,13 @@ def plain(s: str) -> str:
 
 
 def read(p: pathlib.Path) -> str:
-    return p.read_text(encoding="utf-8", newline="")
+    with open(p, encoding="utf-8", newline="") as handle:
+        return handle.read()
 
 
 def write(p: pathlib.Path, text: str) -> None:
-    p.write_text(text, encoding="utf-8", newline="")
+    with open(p, "w", encoding="utf-8", newline="") as handle:
+        handle.write(text)
 
 
 def chapters() -> list[pathlib.Path]:

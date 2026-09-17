@@ -122,7 +122,8 @@ def main():
             print("could not find any [data-theme] block to insert after")
             return 1
         src = src[:last.end()] + "\n" + want + src[last.end():]
-        TOKENS.write_text(src, encoding="utf-8", newline="")
+        with open(TOKENS, "w", encoding="utf-8", newline="") as handle:
+            handle.write(src)
         print(f'inserted [data-theme="custom"] after {last.group(0)[:24]}...')
         return 0
 
@@ -158,7 +159,8 @@ def main():
         print('REFUSING TO WRITE: the substitution changed the number of token blocks.')
         return 1
 
-    TOKENS.write_text(out, encoding="utf-8", newline="")
+    with open(TOKENS, "w", encoding="utf-8", newline="") as handle:
+        handle.write(out)
     print(f'regenerated [data-theme="custom"] '
           f'({data["kind"]}, --bg {data["t"]["bg"]}, --pri {data["t"]["pri"]})')
     return 0

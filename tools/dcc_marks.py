@@ -266,7 +266,8 @@ def main() -> int:
         print(f"{OUT.name} is current")
         return 0
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(text, encoding="utf-8", newline="\n")
+    with open(OUT, "w", encoding="utf-8", newline="\n") as handle:
+        handle.write(text)
     print(f"wrote {OUT} - {len(doc['marked_slides'])} marked slides")
     return 0
 

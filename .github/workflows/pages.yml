@@ -45,6 +45,10 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # 3.12 on purpose, not by accident: it is what Ubuntu 24.04 ships as
+      # `python3`, and pinning it here is what caught the dozen tools that used
+      # `Path.read_text(newline=...)`, a keyword that only exists from 3.13. A
+      # runner on the newest interpreter would have hidden that permanently.
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'

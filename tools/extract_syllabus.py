@@ -225,7 +225,8 @@ def snapshot_sim() -> int:
               f"        record for the Simulation scope. Re-snapshot with\n"
               f"        `python tools/extract_syllabus.py --snapshot-sim`.\n" + "-" * 70 + "\n")
     SIM_TEXT.parent.mkdir(parents=True, exist_ok=True)
-    SIM_TEXT.write_text(header + "\n".join(body), encoding="utf-8", newline="\n")
+    with open(SIM_TEXT, "w", encoding="utf-8", newline="\n") as handle:
+        handle.write(header + "\n".join(body))
     print(f"wrote {SIM_TEXT}")
     return 0
 
@@ -371,7 +372,8 @@ def main() -> int:
         print(f"{OUT.name} is current")
         return 0
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(text, encoding="utf-8", newline="\n")
+    with open(OUT, "w", encoding="utf-8", newline="\n") as handle:
+        handle.write(text)
     print(f"wrote {OUT}")
     return 0
 

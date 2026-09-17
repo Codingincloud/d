@@ -90,7 +90,8 @@ TAG = re.compile(r"<[^>]+>")
 
 
 def read(p: pathlib.Path) -> str:
-    return p.read_text(encoding="utf-8", newline="")
+    with open(p, encoding="utf-8", newline="") as handle:
+        return handle.read()
 
 
 def plain(s: str) -> str:

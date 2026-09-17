@@ -466,7 +466,8 @@ def cmd_apply() -> int:
             print("  " + p, file=sys.stderr)
         print("  refusing to apply: the plan fails the guard (run --check)", file=sys.stderr)
         return 1
-    OUT.write_text(render_js(), encoding="utf-8", newline="")
+    with open(OUT, "w", encoding="utf-8", newline="") as handle:
+        handle.write(render_js())
     print(f"  wrote {OUT.relative_to(ROOT)} ({OUT.stat().st_size} bytes), "
           f"{len(plan().get('topics', {}))} topic(s) on the page")
     return 0

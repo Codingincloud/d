@@ -105,11 +105,13 @@ def read(p: pathlib.Path) -> str:
     reported every file as LF-only - and makes a byte-exact round trip depend on
     the platform rather than on the code.
     """
-    return p.read_text(encoding="utf-8", newline="")
+    with open(p, encoding="utf-8", newline="") as handle:
+        return handle.read()
 
 
 def write(p: pathlib.Path, text: str) -> None:
-    p.write_text(text, encoding="utf-8", newline="")
+    with open(p, "w", encoding="utf-8", newline="") as handle:
+        handle.write(text)
 
 
 def plain(s: str) -> str:
