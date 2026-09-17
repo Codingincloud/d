@@ -66,9 +66,24 @@ jobs:
           python tools/run_checks.py --all 2>&1 | tee checks.log
           if grep -qE '^FAILED: ' checks.log; then
             echo "::warning title=The checks reported a failure::$(grep -m1 -E '^FAILED: ' checks.log)"
+            # The failing step's own lines follow that line, indented by two
+            # spaces, and they are the reason. They go out as annotations because
+            # the runner's log cannot be read from outside the Actions page.
+            awk '/^FAILED: /{on=1;next} on && /^  /{print;next} on{exit}' checks.log \
+              | head -10 | while IFS= read -r line; do echo "::warning::$line"; done
+            printf '::warning::environment: %s, %s, ch9.js bytes %s CRLF %s\n' \
+              "$(python --version 2>&1)" "$(node --version 2>&1)" \
+              "$(wc -c < dcc-site/ch9.js)" "$(grep -c $'\r' dcc-site/ch9.js)"
           else
             tail -1 checks.log | sed 's/^/::notice title=Checks::/'
           fi
+          {
+            echo '### The gate'
+            echo
+            echo '```'
+            tail -25 checks.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
           exit 0
 
       - name: Build the deployable bundle
