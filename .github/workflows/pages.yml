@@ -12,6 +12,14 @@ name: Deploy the DCC study portal to Pages
 # `--sheet` needs node on PATH; a bundle that quietly lost its theme sheet is the
 # kind of drift the sheet exists to make visible, so node is installed rather
 # than the flag dropped.
+#
+# ONE-TIME SETUP. Publishing through Actions needs Pages switched on for the
+# repository once (Settings -> Pages -> Source: GitHub Actions). The workflow
+# token cannot do that itself: creating the Pages site is refused with
+# "Resource not accessible by integration", which is what the first run here did.
+# So the build job asks whether Pages is enabled and skips the deploy with a note
+# in the run summary if it is not, rather than failing red on a step that only
+# the repository owner can fix.
 
 on:
   push:
@@ -32,16 +40,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      pages_enabled: ${{ steps.pages.outputs.enabled }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '22'
 
       # Informational: 42 checks read the notes, the syllabus map and the
       # drawings' geometry. They are green locally and a failure here is a
@@ -53,22 +63,47 @@ jobs:
       - name: Build the deployable bundle
         run: python tools/build_deploy.py --entry dcc-site/index.html --out _site --sheet
 
-      - uses: actions/configure-pages@v5
-        with:
-          # Turns Pages on for the repository on the first run, so no settings
-          # have to be clicked before the first deploy.
-          enablement: true
+      - name: Is Pages enabled?
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/${GITHUB_REPOSITORY}/pages" >/dev/null 2>&1; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "enabled=false" >> "$GITHUB_OUTPUT"
+          owner="${GITHUB_REPOSITORY_OWNER,,}"
+          repo="${GITHUB_REPOSITORY#*/}"
+          {
+            echo "### Pages is not enabled for this repository yet"
+            echo
+            echo "The bundle built successfully, and the deploy was skipped because publishing"
+            echo "through Actions has to be switched on once by the repository owner:"
+            echo
+            echo "1. Open **Settings → Pages**."
+            echo "2. Under *Build and deployment*, set **Source** to **GitHub Actions**."
+            echo "3. Re-run this workflow (Actions → this run → *Re-run all jobs*)."
+            echo
+            echo "The site will then be published at https://${owner}.github.io/${repo}/"
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "::notice title=Pages is not enabled::Settings -> Pages -> Source: GitHub Actions, then re-run this workflow."
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+        if: steps.pages.outputs.enabled == 'true'
+
+      - uses: actions/upload-pages-artifact@v5
+        if: steps.pages.outputs.enabled == 'true'
         with:
           path: _site
 
   deploy:
     needs: build
+    if: needs.build.outputs.pages_enabled == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
