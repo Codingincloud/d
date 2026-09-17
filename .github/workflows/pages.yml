@@ -55,10 +55,21 @@ jobs:
 
       # Informational: 42 checks read the notes, the syllabus map and the
       # drawings' geometry. They are green locally and a failure here is a
-      # finding to look at, not a reason to leave the site unpublished.
+      # finding to look at, not a reason to leave the site unpublished - so the
+      # step itself ends green either way, and a failure is announced as a
+      # warning naming the check that failed. Without that line the runner's log
+      # is the only place to find out, and a green job quietly hides a red check.
       - name: Checks
         continue-on-error: true
-        run: python tools/run_checks.py --all
+        run: |
+          set +e
+          python tools/run_checks.py --all 2>&1 | tee checks.log
+          if grep -qE '^FAILED: ' checks.log; then
+            echo "::warning title=The checks reported a failure::$(grep -m1 -E '^FAILED: ' checks.log)"
+          else
+            tail -1 checks.log | sed 's/^/::notice title=Checks::/'
+          fi
+          exit 0
 
       - name: Build the deployable bundle
         run: python tools/build_deploy.py --entry dcc-site/index.html --out _site --sheet
