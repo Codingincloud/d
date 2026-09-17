@@ -99,8 +99,6 @@ _audit/*
 # swallow a real folder called `distributed/` or the like.
 dist/
 simulation-study-portal.zip
-dist-dcc/
-dcc-study-portal.zip
 
 # _site/ is the same bundle written by the Pages workflow
 # (.github/workflows/pages.yml). It is a build output like dist/, and the
