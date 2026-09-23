@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simulation & Modeling — Study Portal | BCE7026</title>
-<meta name="description" content="Study portal for Simulation & Modeling BCE7026 — Purbanchal University. Chapter notes with worked numericals, quizzes, 92 past-question cards with model answers, a full mock exam and a printable PDF.">
+<title>Distributed &amp; Cloud Computing — Study Portal | BCE7024</title>
+<meta name="description" content="Study portal for Distributed &amp; Cloud Computing BCE7024 — Purbanchal University. Chapter notes built from the class lecture notes and the syllabus, quizzes, and past questions with model answers.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" id="themeColor" content="#f0f4f8">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231b1a17'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' font-weight='600' fill='%23fbfaf8' text-anchor='middle'%3ESM%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231b1a17'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' font-weight='600' fill='%23fbfaf8' text-anchor='middle'%3EDCC%3C/text%3E%3C/svg%3E">
 <style>
 /* ==========================================================================
    THE APP FRAME. Markup structure and the chrome around the content only.
@@ -371,9 +371,13 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
      Fonts are bundled locally (Inter + JetBrains Mono, latin / latin-ext /
      greek subsets) so the portal works offline from file://. Newsreader is
      still declared in fonts.css but no rule asks for it, so it never loads. -->
-<link rel="stylesheet" href="assets/fonts/fonts.css">
-<link rel="stylesheet" href="assets/css/tokens.css">
-<link rel="stylesheet" href="assets/css/foundation.css">
+<!-- The design layer is shared with the Simulation portal and lives at the
+     project root, one level up. Loading it from there rather than keeping a
+     second copy is the whole point: the accessibility, responsive and print
+     work done on these sheets applies to both courses at once. -->
+<link rel="stylesheet" href="site.css">
+
+
 <script>
 /* The reading mode AND the layout width are decided HERE, before the first
    style resolution, and not in app.js.
@@ -432,21 +436,21 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
           ca=hex.exec(c[0]||''),cs=hex.exec(c[1]||'');
       var ok=P.t&&MODES[P.t]?P.t:'';
       if(ca&&cs){
-        localStorage.setItem('sm-accent','#'+ca[1].toLowerCase());
-        localStorage.setItem('sm-surface','#'+cs[1].toLowerCase());
+        localStorage.setItem('dcc-accent','#'+ca[1].toLowerCase());
+        localStorage.setItem('dcc-surface','#'+cs[1].toLowerCase());
         /* Two colours and no mode can only mean Custom - the alternative is a
            palette sitting in storage that nothing was asked to display. */
         if(!ok)ok='custom';
       }
-      if(ok)localStorage.setItem('sm-theme',ok);
-      if(P.w==='full'||P.w==='comfort')localStorage.setItem('sm-width',P.w);
+      if(ok)localStorage.setItem('dcc-theme',ok);
+      if(P.w==='full'||P.w==='comfort')localStorage.setItem('dcc-width',P.w);
     })();
 
-    var t=localStorage.getItem('sm-theme');
+    var t=localStorage.getItem('dcc-theme');
     if(!MODES[t])t='light';
     document.documentElement.setAttribute('data-theme',t);
     document.documentElement.setAttribute('data-width',
-      localStorage.getItem('sm-width')==='full'?'full':'comfort');
+      localStorage.getItem('dcc-width')==='full'?'full':'comfort');
 
     /* THE ONE MODE THIS SCRIPT CANNOT COMPUTE ITSELF.
 
@@ -465,9 +469,9 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
        itself produce. Bump CV with VERSION in custom-theme.js. */
     var chrome=MODES[t], CV=1;
     if(t==='custom'){
-      var p=JSON.parse(localStorage.getItem('sm-custom-palette')||'null');
-      if(p&&p.v===CV&&p.pairs&&p.a===localStorage.getItem('sm-accent')
-         &&p.s===localStorage.getItem('sm-surface')){
+      var p=JSON.parse(localStorage.getItem('dcc-custom-palette')||'null');
+      if(p&&p.v===CV&&p.pairs&&p.a===localStorage.getItem('dcc-accent')
+         &&p.s===localStorage.getItem('dcc-surface')){
         for(var i=0;i<p.pairs.length;i++)
           document.documentElement.style.setProperty(p.pairs[i][0],p.pairs[i][1]);
         if(p.bg)chrome=p.bg;
@@ -485,10 +489,10 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
   <aside class="sidebar" id="sidebar">
     <div class="s-head">
       <a class="brand" href="#/ch/1">
-        <span class="monogram" aria-hidden="true">SM</span>
+        <span class="monogram" aria-hidden="true">DCC</span>
         <span class="brand-t">
-          <strong>Simulation &amp; Modeling</strong>
-          <span>BCE7026 · Sem VII</span>
+          <strong>Distributed &amp; Cloud Computing</strong>
+          <span>BCE7024 · Sem VII</span>
         </span>
       </a>
     </div>
@@ -498,9 +502,9 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
         <span class="sp-label">Progress</span>
         <span class="sp-val" id="xpVal">0 XP</span>
       </div>
-      <div class="sp-bar" role="progressbar" aria-label="Chapter completion" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0" id="xpBar"><i id="xpFill" style="width:0%"></i></div>
+      <div class="sp-bar" role="progressbar" aria-label="Chapter completion" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0" id="xpBar"><i id="xpFill" style="width:0%"></i></div>
       <dl class="sp-stats">
-        <div class="sp-stat"><dt><b id="statChap">0/8</b><span>chapters read</span></dt></div>
+        <div class="sp-stat"><dt><b id="statChap">0/9</b><span>chapters read</span></dt></div>
         <div class="sp-stat"><dt><b id="statQuiz">0</b><span>quizzes taken</span></dt></div>
         <div class="sp-stat"><dt><b id="statPct">0%</b><span>quiz accuracy</span></dt></div>
         <div class="sp-stat"><dt><b id="streakBadge">0</b><span>day streak</span></dt></div>
@@ -520,8 +524,8 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
         </button>
         <div class="crumb">
           <span class="crumb-n" id="chNo">Ch 1</span>
-          <span class="ch-ti" id="chTi">Concept of Simulation</span>
-          <span class="ch-badge" id="chBd">8 marks</span>
+          <span class="ch-ti" id="chTi">Introduction to Distributed Systems</span>
+          <span class="ch-badge" id="chBd">6 marks</span>
         </div>
       </div>
 
@@ -550,6 +554,26 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
         <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.6S9.7 4.6 6.2 4.6H4v13.1h2.2c3.5 0 5.8 2 5.8 2s2.3-2 5.8-2H20V4.6h-2.2C14.3 4.6 12 6.6 12 6.6Z"/><path d="M12 6.6v13.1"/></svg>
         Learn<span class="tab-badge done" data-badge="learn" hidden></span>
       </button>
+      <!-- The teaching layer, second because it is the first thing to read. Every
+           syllabus sub-topic opens as a summary card - a definition panel, the
+           points that have to be stated as a table, a numbered run-through, the
+           traps and the answer skeleton - with the written teaching, in the same
+           five parts under every topic, one click below it. It is drawn from
+           data/teach.js (window.TEACH), which tools/teach_notes.py writes and
+           guards: a summary point, a term or a number that the unit's own notes do
+           not carry never reaches the page. -->
+      <button class="tab-btn" id="tab-teach" role="tab" data-tab="teach" aria-controls="panel-teach" aria-selected="false">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 14.4a5.1 5.1 0 1 1 4.8 0v2.2a1.3 1.3 0 0 1-1.3 1.3h-2.2a1.3 1.3 0 0 1-1.3-1.3Z"/><path d="M10.2 21.4h3.6"/><path d="M12 8.4v3.4"/><path d="M10.3 10.1h3.4"/></svg>
+        Learn Effectively<span class="tab-badge" data-badge="teach" hidden></span>
+      </button>
+      <!-- The byte-size layer: one fixed-size card per syllabus sub-topic. It sits
+           directly after Learn because it is the other way into the same material -
+           Learn for the depth, Revise for the night before - and it is drawn from
+           data/rev.js (window.REV), which tools/rev_summaries.py writes and guards. -->
+      <button class="tab-btn" id="tab-revise" role="tab" data-tab="revise" aria-controls="panel-revise" aria-selected="false">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4l1.9 5.7 5.7 1.9-5.7 1.9L12 18.6l-1.9-5.7L4.4 11l5.7-1.9Z"/></svg>
+        Revise<span class="tab-badge" data-badge="revise" hidden></span>
+      </button>
       <button class="tab-btn" id="tab-quiz" role="tab" data-tab="quiz" aria-controls="panel-quiz" aria-selected="false">
         <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.2 5.6 7.8 8.6 4.8"/><path d="M4 12.4 5.6 14 8.6 11"/><path d="M4 18.6 5.6 20 8.6 17"/><path d="M11.8 6.4H20"/><path d="M11.8 12.4H20"/><path d="M11.8 18.6H20"/></svg>
         Quiz<span class="tab-badge accent" data-badge="quiz" hidden></span>
@@ -558,22 +582,24 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
         <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.6 3.5H7.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V8.4Z"/><path d="M13.6 3.5v4.9h4.9"/><path d="M9 13.2h6"/><path d="M9 16.6h4"/></svg>
         Past Questions<span class="tab-badge accent" data-badge="past" hidden></span>
       </button>
+      <button class="tab-btn" id="tab-reference" role="tab" data-tab="reference" aria-controls="panel-reference" aria-selected="false">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.2"/><path d="M12 10.6v5.6"/><path d="M12 8.1v.1"/></svg>
+        Reference<span class="tab-badge" data-badge="reference" hidden></span>
+      </button>
       <button class="tab-btn" id="tab-analysis" role="tab" data-tab="analysis" aria-controls="panel-analysis" aria-selected="false">
         <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16"/><path d="M7.2 20v-5.4"/><path d="M12 20V9.6"/><path d="M16.8 20V6"/></svg>
         Analysis
       </button>
-      <button class="tab-btn" id="tab-exam" role="tab" data-tab="exam" aria-controls="panel-exam" aria-selected="false">
-        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.25"/><path d="M12 7.4V12l3.1 1.9"/></svg>
-        Mock Exam
-      </button>
     </div>
 
     <main class="content-area" id="contentArea" tabindex="-1" aria-label="Chapter content">
-      <div class="tab-panel active" id="panel-learn" role="tabpanel" aria-labelledby="tab-learn"><p style="color:var(--t3)">Loading…</p></div>
+      <div class="tab-panel" id="panel-learn" role="tabpanel" aria-labelledby="tab-learn"><p style="color:var(--t3)">Loading…</p></div>
+      <div class="tab-panel" id="panel-teach" role="tabpanel" aria-labelledby="tab-teach"></div>
+      <div class="tab-panel" id="panel-revise" role="tabpanel" aria-labelledby="tab-revise"></div>
       <div class="tab-panel" id="panel-quiz" role="tabpanel" aria-labelledby="tab-quiz"></div>
       <div class="tab-panel" id="panel-past" role="tabpanel" aria-labelledby="tab-past"></div>
+      <div class="tab-panel" id="panel-reference" role="tabpanel" aria-labelledby="tab-reference"></div>
       <div class="tab-panel" id="panel-analysis" role="tabpanel" aria-labelledby="tab-analysis"></div>
-      <div class="tab-panel" id="panel-exam" role="tabpanel" aria-labelledby="tab-exam"></div>
     </main>
 
     <div class="fab-wrap">
@@ -621,18 +647,27 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
     <p class="xv-hint">Drag to pan &middot; pinch to zoom</p>
   </dialog>
 </div>
-<script src="ch1.js"></script><script src="ch2.js"></script><script src="ch3.js"></script><script src="ch4.js"></script>
-<script src="ch5.js"></script><script src="ch6.js"></script><script src="ch7.js"></script><script src="ch8.js"></script>
-<script src="data/analysis.js"></script>
-<script src="data/note_pages.js"></script>
-<script src="custom-theme.js"></script>
-<script src="engine.js"></script>
-<script src="modules/progress.js"></script>
-<script src="modules/search.js"></script>
-<script src="modules/quiz.js"></script>
-<script src="modules/past.js"></script>
-<script src="modules/exam.js"></script>
-<script src="app.js"></script>
+<!-- course.js first: engine.js and app.js read window.COURSE as they load, so
+     the course has to exist before them. -->
+<script defer src="site.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- No modules/exam.js: this course has no mock exam yet, and a module that is
+     not loaded is a module that cannot half-work. app.js feature-detects it. -->
+
 <!-- The offline marker. tools/build_deploy.py swaps it for the service-worker
      registration; keep it on the source page and keep the page worker-free.
      A worker registered against the source tree would cache the directory that
@@ -640,6 +675,28 @@ a:hover{text-decoration:underline;text-underline-offset:2px}
      then serve yesterday's chapter out of the browser cache. In the bundle
      there is one script, one sheet, and a cache name derived from their bytes,
      so a rebuild cannot be served stale. -->
-<!--offline-->
+<script>
+/* Offline support. Generated into the bundle by tools/build_deploy.py, which
+   replaces the marker comment in the entry page - the source page carries the
+   marker and no worker, because there is nothing worth caching before the build:
+   that page loads its content as 17 separate blocking scripts. (The marker's own
+   text is deliberately not repeated here: this snippet is what replaces it, and
+   a copy of it would make "does the bundle still contain the marker?" true
+   forever.)
+
+   Registered relative to the page, so the worker's SCOPE is the bundle
+   directory and nothing outside it can be intercepted; on GitHub Pages, where
+   the bundle lives at /<repo>/, a root-absolute /sw.js would not even exist.
+
+   updateViaCache:'none' is not optional. Pages serves sw.js with its own 10
+   minute cache, and the browser re-validates the worker script through the HTTP
+   cache by default - so a rebuild could sit unseen for ten minutes on a device
+   that has the old worker, which is exactly the device that needs the fix. */
+if('serviceWorker' in navigator && (location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1')){
+  window.addEventListener('load',function(){
+    navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).catch(function(){});
+  });
+}
+</script>
 </body>
 </html>
